@@ -18,14 +18,22 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:key="doubletap_lockscreen_screen"
-    android:title="@string/doubletap_lockscreen_screen_title">
+    android:key="doubletap_poweroff_screen"
+    android:title="@string/doubletap_poweroff_screen_title">
 
-    <SwitchPreference
-        android:key="doubletap_lockscreen"
+    <com.android.settings.carbon.SecureSettingSwitchPreference
+        android:key="double_tap_sleep_lockscreen"
         android:title="@string/doubletap_lockscreen_title"
         android:summary="@string/doubletap_lockscreen_summary"
         app:keywords="@string/keywords_gesture"
-        app:controller="org.carbonrom.carbonfibers.fragments.gestures.DoubleTapLockscreenPreferenceController"
+        android:defaultValue="false"
         app:allowDividerAbove="true" />
+
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/doubletap_statusbar_title"
+        android:summary="@string/doubletap_statusbar_summary"
+        app:keywords="@string/keywords_gesture"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
