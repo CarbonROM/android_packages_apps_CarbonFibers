@@ -48,7 +48,7 @@ public class Gestures extends GestureSettings implements Indexable {
     private static final String KEY_PICK_UP = "gesture_pick_up_input_summary";
     private static final String KEY_PREVENT_RINGING = "gesture_prevent_ringing_summary";
     private static final String KEY_GESTURE_GLOBAL_ACTIONS_PANEL = "gesture_global_actions_panel_summary";
-    private static final String KEY_DOUBLETAP_LOCKSCREEN = "gesture_doubletap_lockscreen_summary";
+    private static final String KEY_DOUBLETAP_POWER_OFF = "gesture_doubletap_poweroff_summary";
     private static final String KEY_SWIPE_TO_SCREENSHOT = "gesture_swipe_to_screenshot_summary";
     private static final String KEY_TAP_TO_FLASHLIGHT = "double_tap_power_flashlight_summary";
     private static final String KEY_GESTURE_VOLUME_SKIPTRACK = "gesture_volume_skiptrack_summary";
@@ -96,7 +96,7 @@ public class Gestures extends GestureSettings implements Indexable {
                     keys.add(KEY_PICK_UP);
                     keys.add(KEY_PREVENT_RINGING);
                     keys.add(KEY_GESTURE_GLOBAL_ACTIONS_PANEL);
-                    keys.add(KEY_DOUBLETAP_LOCKSCREEN);
+                    keys.add(KEY_DOUBLETAP_POWER_OFF);
                     keys.add(KEY_SWIPE_TO_SCREENSHOT);
                     keys.add(KEY_TAP_TO_FLASHLIGHT);
                     keys.add(KEY_GESTURE_VOLUME_SKIPTRACK);

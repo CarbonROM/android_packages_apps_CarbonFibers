@@ -230,9 +230,17 @@
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold</string>
 
     <!-- Lock screen double tap -->
-    <string name="doubletap_lockscreen_screen_title">Double tap to switch screen off</string>
+    <string name="doubletap_poweroff_screen_title">Double tap to switch screen off</string>
     <string name="doubletap_lockscreen_title">Double tap to sleep on lockscreen</string>
     <string name="doubletap_lockscreen_summary">Double tap on lockscreen to turn screen off</string>
+    <!--Double Tap to Sleep Statusbar-->
+    <string name="doubletap_statusbar_title">Double tap to sleep on status bar</string>
+    <string name="doubletap_statusbar_summary">Double tap on status bar to turn screen off</string>
+    <!-- Preference info strings -->
+    <string name="doubletap_poweroff_disabled">Off</string>
+    <string name="doubletap_poweroff_all">On (Lockscreen and status bar)</string>
+    <string name="doubletap_poweroff_sb">On (Status bar)</string>
+    <string name="doubletap_poweroff_ls">On (Lockscreen)</string>
 
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Swipe to screenshot</string>
