@@ -30,7 +30,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class DoubleTapLockscreenSettings extends DashboardFragment {
+public class DoubleTapPowerOffSettings extends DashboardFragment {
 
     private static final String TAG = "DoubletapLockscreen";
 
@@ -51,7 +51,7 @@ public class DoubleTapLockscreenSettings extends DashboardFragment {
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.doubletap_lockscreen;
+        return R.xml.doubletap_poweroff;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
@@ -60,7 +60,7 @@ public class DoubleTapLockscreenSettings extends DashboardFragment {
                 public List<SearchIndexableResource> getXmlResourcesToIndex(
                         Context context, boolean enabled) {
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.doubletap_lockscreen;
+                    sir.xmlResId = R.xml.doubletap_poweroff;
                     return Arrays.asList(sir);
                 }
             };
