@@ -93,4 +93,9 @@
     <!-- Three finger gesture  -->
     <string name="three_finger_gesture_title">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe with three fingers to screenshot</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app on headset connection</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+
 </resources>
