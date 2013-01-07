@@ -26,4 +26,9 @@
         android:entries="@array/screen_off_animation_entries"
         android:entryValues="@array/screen_off_animation_values" />
 
+    <org.carbonrom.carbonfibers.preferences.SystemSettingSwitchPreference
+        android:key="headset_connect_player"
+        android:title="@string/headset_connect_player_title"
+        android:summary="@string/headset_connect_player_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>
