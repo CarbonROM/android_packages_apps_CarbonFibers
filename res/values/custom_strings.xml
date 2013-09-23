@@ -34,6 +34,9 @@
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display number of pending notifications</string>
 
+    <string name="status_bar_transparent_on_keyguard_title">Translucent lockscreen status bar</string>
+    <string name="status_bar_transparent_on_keyguard_summary">Makes the status bar translucent on the lockscreen</string>
+
     <!-- Lock Screen Shortcuts -->
     <string name="lockscreen_shortcuts_settings">Lockscreen shortcuts</string>
 

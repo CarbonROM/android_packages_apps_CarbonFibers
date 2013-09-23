@@ -51,9 +51,11 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
 
     private static final String STATUS_BAR_BATTERY = "status_bar_battery";
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
+    private static final String STATUS_BAR_TRANSPARENT_ON_KEYGUARD = "status_bar_transparent_on_keyguard";
 
     private ListPreference mStatusBarBattery;
     private CheckBoxPreference mStatusBarNotifCount;
+    private CheckBoxPreference mStatusBarTransparentOnKeyguard;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,6 +76,11 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
                 Settings.System.STATUS_BAR_NOTIF_COUNT, 0) == 1);
         mStatusBarNotifCount.setOnPreferenceChangeListener(this);
 
+        mStatusBarTransparentOnKeyguard = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_TRANSPARENT_ON_KEYGUARD);
+        mStatusBarTransparentOnKeyguard.setChecked(Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_TRANSPARENT_ON_KEYGUARD, 1) == 1);
+        mStatusBarTransparentOnKeyguard.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -91,6 +98,9 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
         } else if (preference == mStatusBarNotifCount) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_NOTIF_COUNT, value ? 1 : 0);
+        } else if (preference == mStatusBarTransparentOnKeyguard) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_TRANSPARENT_ON_KEYGUARD, value ? 1 : 0);
         } else {
             return false;
         }
