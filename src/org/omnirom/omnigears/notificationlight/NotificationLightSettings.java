@@ -116,9 +116,13 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
         mEnabledPref = (CheckBoxPreference)
                 findPreference(Settings.System.NOTIFICATION_LIGHT_PULSE);
+        mEnabledPref.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.NOTIFICATION_LIGHT_PULSE, 0) != 0);
         mEnabledPref.setOnPreferenceChangeListener(this);
         mCustomEnabledPref = (CheckBoxPreference)
                 findPreference(Settings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
+        mCustomEnabledPref.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE, 0) != 0);
         mCustomEnabledPref.setOnPreferenceChangeListener(this);
 
         mDefaultPref = (ApplicationLightPreference) findPreference(DEFAULT_PREF);
@@ -351,6 +355,18 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mEnabledPref || preference == mCustomEnabledPref) {
             getActivity().invalidateOptionsMenu();
+
+            boolean enabled = (Boolean) objValue;
+
+            if (preference == mEnabledPref){
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.NOTIFICATION_LIGHT_PULSE, enabled?1:0);
+                mApplicationPrefList.setEnabled(enabled && mCustomEnabledPref.isChecked());
+            } else if(preference == mCustomEnabledPref){
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE, enabled?1:0);
+                mApplicationPrefList.setEnabled(enabled);
+            }
         } else {
             ApplicationLightPreference lightPref = (ApplicationLightPreference) preference;
             updateValues(lightPref.getKey(), lightPref.getColor(),
