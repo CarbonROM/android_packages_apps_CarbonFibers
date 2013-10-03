@@ -191,6 +191,11 @@
     <string name="auto_brightness_menu_remove">Remove</string>
     <string name="sensor_category">Sensor</string>
 
+    <!-- button settings -->
+    <string name="button_volume_keys_title">Volume</string>
+    <string name="button_volume_wake_title">Volume button wake</string>
+    <string name="button_volume_wake_summary">Pressing a volume button will wake your device</string>
+
 </resources>
 
 
