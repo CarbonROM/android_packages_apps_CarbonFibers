@@ -82,7 +82,7 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
         mAutomaticSensitivity = (ListPreference) findPreference(KEY_AUTOMATIC_SENSITIVITY);
         float currentSensitivity = Settings.System.getFloat(resolver,
             Settings.System.AUTO_BRIGHTNESS_RESPONSIVENESS, 1.0f);
-                    
+
         int currentSensitivityInt = (int) (currentSensitivity * 100);
         mAutomaticSensitivity.setValue(String.valueOf(currentSensitivityInt));
         updateAutomaticSensityDescription(currentSensitivityInt);
