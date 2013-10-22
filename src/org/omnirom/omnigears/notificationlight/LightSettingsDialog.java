@@ -60,8 +60,12 @@ public class LightSettingsDialog extends AlertDialog implements
     private Spinner mPulseSpeedOn;
     private Spinner mPulseSpeedOff;
     private LayoutInflater mInflater;
-
-    private OnColorChangedListener mListener;
+    private boolean mMultiColor = true;
+    private Spinner mColorList;
+    private LinearLayout mColorListView;
+    private LinearLayout mColorPanelView;
+    private ColorPanelView mNewListColor;
+    private LedColorAdapter mLedColorAdapter;
 
     /**
      * @param context
@@ -87,6 +91,7 @@ public class LightSettingsDialog extends AlertDialog implements
             int initialSpeedOff, boolean onOffChangeable) {
         super(context);
 
+        mMultiColor = getContext().getResources().getBoolean(R.bool.config_has_multi_color_led);
         init(initialColor, initialSpeedOn, initialSpeedOff, onOffChangeable);
     }
 
@@ -112,6 +117,11 @@ public class LightSettingsDialog extends AlertDialog implements
         mColorPicker = (ColorPickerView) layout.findViewById(R.id.color_picker_view);
         mHexColorInput = (EditText) layout.findViewById(R.id.hex_color_input);
         mNewColor = (ColorPanelView) layout.findViewById(R.id.color_panel);
+        mColorPanelView = (LinearLayout) layout.findViewById(R.id.color_panel_view);
+
+        mColorListView = (LinearLayout) layout.findViewById(R.id.color_list_view);
+        mColorList = (Spinner) layout.findViewById(R.id.color_list_spinner);
+        mNewListColor = (ColorPanelView) layout.findViewById(R.id.color_list_panel);
 
         mColorPicker.setOnColorChangedListener(this);
         mColorPicker.setColor(color, true);
@@ -136,8 +146,27 @@ public class LightSettingsDialog extends AlertDialog implements
         mPulseSpeedOn.setEnabled(onOffChangeable);
         mPulseSpeedOff.setEnabled((speedOn != 1) && onOffChangeable);
 
+        mColorList = (Spinner) layout.findViewById(R.id.color_list_spinner);
+        mLedColorAdapter = new LedColorAdapter(
+                R.array.entries_led_colors,
+                R.array.values_led_colors);
+        mColorList.setAdapter(mLedColorAdapter);
+        mColorList.setSelection(mLedColorAdapter.getColorPosition(color));
+        mColorList.setOnItemSelectedListener(mColorListListener);
+
         setView(layout);
         setTitle(R.string.edit_light_settings);
+
+        // show and hide the correct UI depending if we have multi-color led or not
+        if (mMultiColor){
+            mColorListView.setVisibility(View.GONE);
+            mColorPicker.setVisibility(View.VISIBLE);
+            mColorPanelView.setVisibility(View.VISIBLE);
+        } else {
+            mColorListView.setVisibility(View.VISIBLE);
+            mColorPicker.setVisibility(View.GONE);
+            mColorPanelView.setVisibility(View.GONE);
+        }
     }
 
     private AdapterView.OnItemSelectedListener mSelectionListener = new AdapterView.OnItemSelectedListener() {
@@ -145,6 +174,21 @@ public class LightSettingsDialog extends AlertDialog implements
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
             mPulseSpeedOff.setEnabled(getPulseSpeedOn() != 1);
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent) {
+        }
+    };
+
+    private AdapterView.OnItemSelectedListener mColorListListener = new AdapterView.OnItemSelectedListener() {
+
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+            int color = mLedColorAdapter.getColor(position);
+            if (color != -1){
+                mNewListColor.setColor(color);
+            }
         }
 
         @Override
@@ -173,10 +217,6 @@ public class LightSettingsDialog extends AlertDialog implements
 
         mNewColor.setColor(color);
         mHexColorInput.setText(String.format(Locale.US, format, color & mask));
-
-        if (mListener != null) {
-            mListener.onColorChanged(color);
-        }
     }
 
     public void setAlphaSliderVisible(boolean visible) {
@@ -185,7 +225,11 @@ public class LightSettingsDialog extends AlertDialog implements
     }
 
     public int getColor() {
-        return mColorPicker.getColor();
+        if (mMultiColor){
+            return mColorPicker.getColor();
+        } else {
+            return mNewListColor.getColor();
+        }
     }
 
     @SuppressWarnings("unchecked")
@@ -280,6 +324,75 @@ public class LightSettingsDialog extends AlertDialog implements
         }
     }
 
+    class LedColorAdapter extends BaseAdapter implements SpinnerAdapter {
+        private ArrayList<Pair<String, Integer>> mColors;
+
+        public LedColorAdapter(int ledColorResource, int ledValueResource) {
+            mColors = new ArrayList<Pair<String, Integer>>();
+
+            String[] color_names = getContext().getResources().getStringArray(ledColorResource);
+            String[] color_values = getContext().getResources().getStringArray(ledValueResource);
+
+            for(int i = 0; i < color_values.length; ++i) {
+                try {
+                    int color = Color.parseColor(color_values[i]);
+                    mColors.add(new Pair<String, Integer>(color_names[i], color));
+                } catch (IllegalArgumentException ex) {
+                    // Number format is incorrect, ignore entry
+                }
+            }
+        }
+
+        /**
+         * Will return the position of the spinner entry with the specified
+         * color. Returns -1 if there is no such entry.
+         */
+        public int getColorPosition(int color) {
+            for (int position = 0; position < getCount(); ++position) {
+                if (getItem(position).second.equals(color)) {
+                    return position;
+                }
+            }
+
+            return -1;
+        }
+
+        public int getColor(int position) {
+            Pair<String, Integer> item = getItem(position);
+            if (item != null){
+                return item.second;
+            }
+            return -1;
+        }
+
+        @Override
+        public int getCount() {
+            return mColors.size();
+        }
+
+        @Override
+        public Pair<String, Integer> getItem(int position) {
+            return mColors.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View view, ViewGroup parent) {
+            if (view == null) {
+                view = mInflater.inflate(R.layout.led_color_item, null);
+            }
+
+            Pair<String, Integer> entry = getItem(position);
+            ((TextView) view.findViewById(R.id.textViewName)).setText(entry.first);
+
+            return view;
+        }
+    }
+
     @Override
     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
     }
@@ -299,9 +412,6 @@ public class LightSettingsDialog extends AlertDialog implements
                 }
                 mColorPicker.setColor(color);
                 mNewColor.setColor(color);
-                if (mListener != null) {
-                    mListener.onColorChanged(color);
-                }
             } catch (IllegalArgumentException ex) {
                 // Number format is incorrect, ignore
             }
