@@ -28,6 +28,7 @@ import android.text.TextWatcher;
 import android.text.InputFilter;
 import android.text.InputFilter.LengthFilter;
 import android.util.Pair;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnFocusChangeListener;
@@ -51,6 +52,7 @@ import java.util.Locale;
 public class LightSettingsDialog extends AlertDialog implements
         ColorPickerView.OnColorChangedListener, TextWatcher, OnFocusChangeListener {
 
+    private static final String TAG = "LightSettingsDialog";
     private final static String STATE_KEY_COLOR = "LightSettingsDialog:color";
 
     private ColorPickerView mColorPicker;
@@ -186,9 +188,7 @@ public class LightSettingsDialog extends AlertDialog implements
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
             int color = mLedColorAdapter.getColor(position);
-            if (color != -1){
-                mNewListColor.setColor(color);
-            }
+            mNewListColor.setColor(color);
         }
 
         @Override
@@ -255,7 +255,6 @@ public class LightSettingsDialog extends AlertDialog implements
             for(int i = 0; i < time_values.length; ++i) {
                 times.add(new Pair<String, Integer>(time_names[i], Integer.decode(time_values[i])));
             }
-
         }
 
         /**
@@ -345,7 +344,7 @@ public class LightSettingsDialog extends AlertDialog implements
 
         /**
          * Will return the position of the spinner entry with the specified
-         * color. Returns -1 if there is no such entry.
+         * color. Returns 0 if there is no such entry.
          */
         public int getColorPosition(int color) {
             for (int position = 0; position < getCount(); ++position) {
@@ -354,7 +353,7 @@ public class LightSettingsDialog extends AlertDialog implements
                 }
             }
 
-            return -1;
+            return 0;
         }
 
         public int getColor(int position) {
@@ -362,6 +361,8 @@ public class LightSettingsDialog extends AlertDialog implements
             if (item != null){
                 return item.second;
             }
+
+            // -1 is white
             return -1;
         }
 
