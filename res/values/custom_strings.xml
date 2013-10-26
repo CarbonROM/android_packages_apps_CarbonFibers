@@ -150,6 +150,10 @@
     <string name="button_volume_wake_title">Volume button wake</string>
     <string name="button_volume_wake_summary">Pressing a volume button will wake your device</string>
 
+    <!-- Network speed -->
+    <string name="show_network_speed">Network speed indicator</string>
+    <string name="show_network_speed_summary">Show network speed in statusbar</string>
+
 </resources>
 
 
