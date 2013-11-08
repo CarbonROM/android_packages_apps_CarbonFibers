@@ -18,6 +18,9 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+
     <string name="bars_and_menus_settings">Bars and menus</string>
     <string name="bars_and_menus_category_status_bar_title">Status bar</string>
     <string name="status_bar_battery_title">Battery style</string>
