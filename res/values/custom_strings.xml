@@ -34,9 +34,6 @@
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display number of pending notifications</string>
 
-    <string name="status_bar_transparent_on_keyguard_title">Translucent lockscreen status bar</string>
-    <string name="status_bar_transparent_on_keyguard_summary">Makes the status bar translucent on the lockscreen</string>
-
     <!-- String for IconPicker -->
     <string name="icon_picker_title">Choose icon source</string>
     <string name="icon_picker_system_icons_title">System icons</string>
