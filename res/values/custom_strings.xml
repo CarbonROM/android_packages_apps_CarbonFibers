@@ -158,6 +158,9 @@
     <string name="button_volume_keys_title">Volume</string>
     <string name="button_volume_wake_title">Volume button wake</string>
     <string name="button_volume_wake_summary">Pressing a volume button will wake your device</string>
+    <string name="button_headsethook_title">Headset</string>
+    <string name="button_headsethook_launch_voice_title">Headset launches voice</string>
+    <string name="button_headsethook_launch_voice_summary">Pressing the headset button will launch voice controls</string>
 
     <!-- Network speed -->
     <string name="show_network_speed">Network speed indicator</string>
