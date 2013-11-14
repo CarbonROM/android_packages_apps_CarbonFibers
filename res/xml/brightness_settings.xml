@@ -38,6 +38,14 @@
                 android:key="button_brightness_category"
                 android:title="@string/button_brightness_category">
 
+                <Preference
+                        android:key="button_auto_brightness"
+                        android:title="@string/button_auto_brightness"
+                        android:summary="@string/button_auto_brighness_summary"/>
+                <Preference
+                        android:key="button_manual_brightness"
+                        android:title="@string/button_manual_brightness"
+                        android:summary="@string/button_manual_brightness_summary"/>
                 <CheckBoxPreference
                         android:key="button_no_brightness"
                         android:title="@string/button_no_brightness"
@@ -47,13 +55,9 @@
                         android:title="@string/button_link_brightness"
                         android:summary="@string/button_link_brightness_summary"/>
                 <Preference
-                        android:key="button_auto_brightness"
-                        android:title="@string/button_auto_brightness"
-                        android:summary="@string/button_auto_brighness_summary"/>
-                <Preference
-                        android:key="button_manual_brightness"
-                        android:title="@string/button_manual_brightness"
-                        android:summary="@string/button_manual_brightness_summary"/>
+                        android:key="button_timeout"
+                        android:title="@string/button_timeout_title" />
+
         </PreferenceCategory>
 
         <PreferenceCategory

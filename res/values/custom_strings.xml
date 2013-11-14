@@ -122,7 +122,7 @@
     <string name="button_link_brightness_summary">Buttons brightness will use the same value as the screen</string>
     <string name="button_manual_brightness">Manual level</string>
     <string name="button_manual_brightness_summary">Button brightness level for manual mode</string>
-    <string name="dialog_manual_brightness_title">Button brightness</string>
+    <string name="dialog_manual_brightness_title">Manual button brightness</string>
     <!-- Automatic brightness customization -->
     <string name="auto_brightness_setup_title">Automatic brightness</string>
     <string name="light_sensor_current_value">Current light sensor value: <xliff:g id="light_level">%d</xliff:g> lux</string>
@@ -144,6 +144,14 @@
     <string name="auto_brightness_menu_split">Split</string>
     <string name="auto_brightness_menu_remove">Remove</string>
     <string name="sensor_category">Sensor</string>
+    <string name="button_timeout_title">Timeout</string>
+    <plurals name="button_timeout_time">
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
+    </plurals>
+    <string name="button_timeout_enabled">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="button_timeout_disabled">Disabled</string>
+    <string name="dialog_button_timeout_title">Button brightness timeout</string>
 
     <!-- button settings -->
     <string name="button_volume_keys_title">Volume</string>
