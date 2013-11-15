@@ -265,8 +265,16 @@
     <string name="recent_clear_all_button_location_bottom_left">Bottom left</string>
     <string name="recent_clear_all_button_location_bottom_right">Bottom right</string>
 
+    <!-- Contextual Notification Panel Header -->
     <string name="notification_drawer_category_title">Notification drawer</string>
     <string name="custom_statusbar_header_title">Contextual notification panel header</string>
     <string name="custom_statusbar_header_summary">Sets the background of the notification panel header to an image based on the current date and time</string>
+
+    <!-- Volume default -->
+    <string name="button_volume_default_none">None</string>
+    <string name="button_volume_default_ringer">Ringer</string>
+    <string name="button_volume_default_media">Media</string>
+    <string name="button_volume_default_title">Volume default</string>
+    <string name="button_volume_default_summary">Choose which volume gets changed by default</string>
 
 </resources>

@@ -41,6 +41,14 @@
             android:summary="@string/button_volume_wake_summary"
             android:defaultValue="false" />
 
+        <ListPreference
+            android:key="button_volume_default_screen"
+            android:title="@string/button_volume_default_title"
+            android:summary="@string/button_volume_default_summary"
+            android:entries="@array/button_volume_default_entries"
+            android:entryValues="@array/button_volume_default_values"
+            android:defaultValue="0" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
