@@ -163,6 +163,10 @@
     <string name="show_network_speed">Network speed indicator</string>
     <string name="show_network_speed_summary">Show network speed in statusbar</string>
 
+    <!-- Status Bar Activity Indicators -->
+    <string name="show_activity_indicators_on_status_bar_title">Network activity indicator</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Show network activity in statusbar</string>
+
     <!-- Hardware keys -->
     <string name="button_keys_title">Keys</string>
     <string name="keys_bindings_title">Key actions</string>

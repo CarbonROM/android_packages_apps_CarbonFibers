@@ -55,12 +55,14 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_TRAFFIC = "status_bar_traffic";
     private static final String RECENT_MENU_CLEAR_ALL = "recent_menu_clear_all";
     private static final String RECENT_MENU_CLEAR_ALL_LOCATION = "recent_menu_clear_all_location";
+    private static final String STATUS_BAR_NETWORK_ACTIVITY = "status_bar_network_activity";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
     private CheckBoxPreference mStatusBarTraffic;
     private CheckBoxPreference mRecentClearAll;
     private ListPreference mRecentClearAllPosition;
+    private CheckBoxPreference mStatusBarNetworkActivity;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -102,6 +104,11 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
              mRecentClearAllPosition.setValue(recentClearAllPosition);
         }
         mRecentClearAllPosition.setOnPreferenceChangeListener(this);
+
+        mStatusBarNetworkActivity = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_NETWORK_ACTIVITY);
+        mStatusBarNetworkActivity.setChecked(Settings.System.getInt(resolver,
+            Settings.System.STATUS_BAR_NETWORK_ACTIVITY, 0) == 1);
+         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -127,6 +134,10 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
         } else if (preference == mRecentClearAllPosition) {
             String value = (String) objValue;
             Settings.System.putString(resolver, Settings.System.CLEAR_RECENTS_BUTTON_LOCATION, value);
+        } else if (preference == mStatusBarNetworkActivity) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver,
+                Settings.System.STATUS_BAR_NETWORK_ACTIVITY, value ? 1 : 0);
         } else {
             return false;
         }

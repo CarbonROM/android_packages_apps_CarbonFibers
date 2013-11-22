@@ -43,6 +43,12 @@
             android:summary="@string/show_network_speed_summary"
             android:defaultValue="false" />
 
+    <CheckBoxPreference
+            android:key="status_bar_network_activity"
+            android:title="@string/show_activity_indicators_on_status_bar_title"
+            android:summary="@string/show_activity_indicators_on_status_bar_summary"
+            android:defaultValue="false" />
+
     <PreferenceCategory
             android:key="category_recent_panel"
             android:title="@string/bars_and_menus_category_recent_panel_title"/>
