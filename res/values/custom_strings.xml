@@ -203,6 +203,11 @@
     <string name="dialog_no_home_key_title">No home action</string>
     <string name="no_home_key">You have no button assigned to the \"Home\" action! This can make your device unusable!</string>
 
+    <!-- Power Menu Options-->
+    <string name="bars_and_menus_category_power_menu_title">Power menu</string>
+    <string name="power_menu_toggle_screenshot_title">Show Screenshot</string>
+    <string name="power_menu_toggle_screenshot_summary">Tick or untick to show/hide screenshot option in Power Menu</string>
+
     <!-- Active Display Notifications -->
     <string name="ad_settings_title">Active display</string>
     <string name="ad_settings_summary">Change active display settings</string>

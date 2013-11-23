@@ -68,4 +68,16 @@
             android:defaultValue="2"
             android:dependency="recent_menu_clear_all" />
 
+    <!-- Power Menu -->
+    <PreferenceCategory
+            android:key="category_power_menu"
+            android:title="@string/bars_and_menus_category_power_menu_title">
+
+    <CheckBoxPreference
+            android:key="power_menu_screenshot"
+            android:title="@string/power_menu_toggle_screenshot_title"
+            android:summary="@string/power_menu_toggle_screenshot_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
