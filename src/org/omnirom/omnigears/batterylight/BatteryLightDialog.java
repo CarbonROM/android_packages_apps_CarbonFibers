@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.omnirom.omnigears.notificationlight;
+package org.omnirom.omnigears.batterylight;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -51,18 +51,16 @@ import java.util.ArrayList;
 import java.util.IllegalFormatException;
 import java.util.Locale;
 
-public class LightSettingsDialog extends AlertDialog implements
+public class BatteryLightDialog extends AlertDialog implements
         ColorPickerView.OnColorChangedListener, TextWatcher, OnFocusChangeListener {
 
-    private static final String TAG = "LightSettingsDialog";
-    private final static String STATE_KEY_COLOR = "LightSettingsDialog:color";
+    private static final String TAG = "BatteryLightDialog";
+    private final static String STATE_KEY_COLOR = "BatteryLightDialog:color";
 
     private ColorPickerView mColorPicker;
 
     private EditText mHexColorInput;
     private ColorPanelView mNewColor;
-    private Spinner mPulseSpeedOn;
-    private Spinner mPulseSpeedOff;
     private LayoutInflater mInflater;
     private boolean mMultiColor = true;
     private Spinner mColorList;
@@ -71,38 +69,17 @@ public class LightSettingsDialog extends AlertDialog implements
     private ColorPanelView mNewListColor;
     private LedColorAdapter mLedColorAdapter;
 
-    /**
-     * @param context
-     * @param initialColor
-     * @param initialSpeedOn
-     * @param initialSpeedOff
-     */
-    protected LightSettingsDialog(Context context, int initialColor, int initialSpeedOn,
-            int initialSpeedOff) {
-        super(context);
-
-        init(initialColor, initialSpeedOn, initialSpeedOff, true);
-    }
-
-    /**
-     * @param context
-     * @param initialColor
-     * @param initialSpeedOn
-     * @param initialSpeedOff
-     * @param onOffChangeable
-     */
-    protected LightSettingsDialog(Context context, int initialColor, int initialSpeedOn,
-            int initialSpeedOff, boolean onOffChangeable) {
+    protected BatteryLightDialog(Context context, int initialColor) {
         super(context);
 
         mMultiColor = getContext().getResources().getBoolean(R.bool.config_has_multi_color_led);
-        init(initialColor, initialSpeedOn, initialSpeedOff, onOffChangeable);
+        init(initialColor);
     }
 
-    private void init(int color, int speedOn, int speedOff, boolean onOffChangeable) {
+    private void init(int color) {
         // To fight color banding.
         getWindow().setFormat(PixelFormat.RGBA_8888);
-        setUp(color, speedOn, speedOff, onOffChangeable);
+        setUp(color);
     }
 
     /**
@@ -113,10 +90,10 @@ public class LightSettingsDialog extends AlertDialog implements
      * @param speedOn - the flash time in ms
      * @param speedOff - the flash length in ms
      */
-    private void setUp(int color, int speedOn, int speedOff, boolean onOffChangeable) {
+    private void setUp(int color) {
         mInflater = (LayoutInflater) getContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View layout = mInflater.inflate(R.layout.dialog_light_settings, null);
+        View layout = mInflater.inflate(R.layout.dialog_battery_settings, null);
 
         mColorPicker = (ColorPickerView) layout.findViewById(R.id.color_picker_view);
         mHexColorInput = (EditText) layout.findViewById(R.id.hex_color_input);
@@ -131,24 +108,6 @@ public class LightSettingsDialog extends AlertDialog implements
         mColorPicker.setColor(color, true);
 
         mHexColorInput.setOnFocusChangeListener(this);
-        mPulseSpeedOn = (Spinner) layout.findViewById(R.id.on_spinner);
-        PulseSpeedAdapter pulseSpeedAdapter = new PulseSpeedAdapter(
-                R.array.notification_pulse_length_entries,
-                R.array.notification_pulse_length_values,
-                speedOn);
-        mPulseSpeedOn.setAdapter(pulseSpeedAdapter);
-        mPulseSpeedOn.setSelection(pulseSpeedAdapter.getTimePosition(speedOn));
-        mPulseSpeedOn.setOnItemSelectedListener(mSelectionListener);
-
-        mPulseSpeedOff = (Spinner) layout.findViewById(R.id.off_spinner);
-        pulseSpeedAdapter = new PulseSpeedAdapter(R.array.notification_pulse_speed_entries,
-                R.array.notification_pulse_speed_values,
-                speedOff);
-        mPulseSpeedOff.setAdapter(pulseSpeedAdapter);
-        mPulseSpeedOff.setSelection(pulseSpeedAdapter.getTimePosition(speedOff));
-
-        mPulseSpeedOn.setEnabled(onOffChangeable);
-        mPulseSpeedOff.setEnabled((speedOn != 1) && onOffChangeable);
 
         mColorList = (Spinner) layout.findViewById(R.id.color_list_spinner);
         mLedColorAdapter = new LedColorAdapter(
@@ -159,7 +118,7 @@ public class LightSettingsDialog extends AlertDialog implements
         mColorList.setOnItemSelectedListener(mColorListListener);
 
         setView(layout);
-        setTitle(R.string.edit_light_settings);
+        setTitle(R.string.edit_battery_settings);
 
         // show and hide the correct UI depending if we have multi-color led or not
         if (mMultiColor){
@@ -172,18 +131,6 @@ public class LightSettingsDialog extends AlertDialog implements
             mColorPanelView.setVisibility(View.GONE);
         }
     }
-
-    private AdapterView.OnItemSelectedListener mSelectionListener = new AdapterView.OnItemSelectedListener() {
-
-        @Override
-        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            mPulseSpeedOff.setEnabled(getPulseSpeedOn() != 1);
-        }
-
-        @Override
-        public void onNothingSelected(AdapterView<?> parent) {
-        }
-    };
 
     private AdapterView.OnItemSelectedListener mColorListListener = new AdapterView.OnItemSelectedListener() {
 
@@ -231,97 +178,6 @@ public class LightSettingsDialog extends AlertDialog implements
             return mColorPicker.getColor();
         } else {
             return mNewListColor.getColor();
-        }
-    }
-
-    @SuppressWarnings("unchecked")
-    public int getPulseSpeedOn() {
-        return ((Pair<String, Integer>) mPulseSpeedOn.getSelectedItem()).second;
-    }
-
-    @SuppressWarnings("unchecked")
-    public int getPulseSpeedOff() {
-        // return 0 if 'Always on' is selected
-        return getPulseSpeedOn() == 1 ? 0 : ((Pair<String, Integer>) mPulseSpeedOff.getSelectedItem()).second;
-    }
-
-    class PulseSpeedAdapter extends BaseAdapter implements SpinnerAdapter {
-        private ArrayList<Pair<String, Integer>> times;
-
-        public PulseSpeedAdapter(int timeNamesResource, int timeValuesResource) {
-            times = new ArrayList<Pair<String, Integer>>();
-
-            String[] time_names = getContext().getResources().getStringArray(timeNamesResource);
-            String[] time_values = getContext().getResources().getStringArray(timeValuesResource);
-
-            for(int i = 0; i < time_values.length; ++i) {
-                times.add(new Pair<String, Integer>(time_names[i], Integer.decode(time_values[i])));
-            }
-        }
-
-        /**
-         * This constructor apart from taking a usual time entry array takes the
-         * currently configured time value which might cause the addition of a
-         * "Custom" time entry in the spinner in case this time value does not
-         * match any of the predefined ones in the array.
-         *
-         * @param timeNamesResource The time entry names array
-         * @param timeValuesResource The time entry values array
-         * @param customTime Current time value that might be one of the
-         *            predefined values or a totally custom value
-         */
-        public PulseSpeedAdapter(int timeNamesResource, int timeValuesResource, Integer customTime) {
-            this(timeNamesResource, timeValuesResource);
-
-            // Check if we also need to add the custom value entry
-            if (getTimePosition(customTime) == -1) {
-                times.add(new Pair<String, Integer>(getContext().getResources()
-                        .getString(R.string.custom_time), customTime));
-            }
-        }
-
-        /**
-         * Will return the position of the spinner entry with the specified
-         * time. Returns -1 if there is no such entry.
-         *
-         * @param time Time in ms
-         * @return Position of entry with given time or -1 if not found.
-         */
-        public int getTimePosition(Integer time) {
-            for (int position = 0; position < getCount(); ++position) {
-                if (getItem(position).second.equals(time)) {
-                    return position;
-                }
-            }
-
-            return -1;
-        }
-
-        @Override
-        public int getCount() {
-            return times.size();
-        }
-
-        @Override
-        public Pair<String, Integer> getItem(int position) {
-            return times.get(position);
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return position;
-        }
-
-        @Override
-        public View getView(int position, View view, ViewGroup parent) {
-            if (view == null) {
-                view = mInflater.inflate(R.layout.pulse_time_item, null);
-            }
-
-            Pair<String, Integer> entry = getItem(position);
-            ((TextView) view.findViewById(R.id.textViewName)).setText(entry.first);
-
-            return view;
         }
     }
 

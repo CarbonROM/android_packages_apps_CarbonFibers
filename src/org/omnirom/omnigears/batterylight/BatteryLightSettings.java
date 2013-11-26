@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.omnirom.omnigears.notificationlight;
+package org.omnirom.omnigears.batterylight;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -23,6 +23,7 @@ import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -38,14 +39,20 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private static final String LOW_COLOR_PREF = "low_color";
     private static final String MEDIUM_COLOR_PREF = "medium_color";
     private static final String FULL_COLOR_PREF = "full_color";
+    private static final String REALLY_FULL_COLOR_PREF = "really_full_color";
+    private static final String BATTERY_LIGHT_PREF = "battery_light_enabled";
+    private static final String BATTERY_PULSE_PREF = "battery_light_pulse";
 
     private boolean mMultiColorLed;
-    private CheckBoxPreference mEnabledPref;
+    private SwitchPreference mEnabledPref;
+    private CheckBoxPreference mPulsePref;
     private PreferenceGroup mColorPrefs;
-    private ApplicationLightPreference mLowColorPref;
-    private ApplicationLightPreference mMediumColorPref;
-    private ApplicationLightPreference mFullColorPref;
+    private BatteryLightPreference mLowColorPref;
+    private BatteryLightPreference mMediumColorPref;
+    private BatteryLightPreference mFullColorPref;
+    private BatteryLightPreference mReallyFullColorPref;
     private static final int MENU_RESET = Menu.FIRST;
+    private int mLowBatteryWarningLevel;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,20 +60,36 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.battery_light_settings);
 
         PreferenceScreen prefSet = getPreferenceScreen();
+        ContentResolver resolver = getContentResolver();
+
+        mLowBatteryWarningLevel = getResources().getInteger(
+                com.android.internal.R.integer.config_lowBatteryWarningLevel);
+
+        mEnabledPref = (SwitchPreference)prefSet.findPreference(BATTERY_LIGHT_PREF);
+        mEnabledPref.setChecked(Settings.System.getInt(resolver,
+                        Settings.System.BATTERY_LIGHT_ENABLED, 1) != 0);
+        mEnabledPref.setOnPreferenceChangeListener(this);
+
+        mPulsePref = (CheckBoxPreference)prefSet.findPreference(BATTERY_PULSE_PREF);
+        mPulsePref.setChecked(Settings.System.getInt(resolver,
+                        Settings.System.BATTERY_LIGHT_PULSE, 1) != 0);
 
         // Does the Device support changing battery LED colors?
         if (getResources().getBoolean(com.android.internal.R.bool.config_multiColorBatteryLed)) {
             setHasOptionsMenu(true);
 
             // Low, Medium and full color preferences
-            mLowColorPref = (ApplicationLightPreference) prefSet.findPreference(LOW_COLOR_PREF);
+            mLowColorPref = (BatteryLightPreference) prefSet.findPreference(LOW_COLOR_PREF);
             mLowColorPref.setOnPreferenceChangeListener(this);
 
-            mMediumColorPref = (ApplicationLightPreference) prefSet.findPreference(MEDIUM_COLOR_PREF);
+            mMediumColorPref = (BatteryLightPreference) prefSet.findPreference(MEDIUM_COLOR_PREF);
             mMediumColorPref.setOnPreferenceChangeListener(this);
 
-            mFullColorPref = (ApplicationLightPreference) prefSet.findPreference(FULL_COLOR_PREF);
+            mFullColorPref = (BatteryLightPreference) prefSet.findPreference(FULL_COLOR_PREF);
             mFullColorPref.setOnPreferenceChangeListener(this);
+
+            mReallyFullColorPref = (BatteryLightPreference) prefSet.findPreference(REALLY_FULL_COLOR_PREF);
+            mReallyFullColorPref.setOnPreferenceChangeListener(this);
         } else {
             prefSet.removePreference(prefSet.findPreference("colors_list"));
         }
@@ -85,19 +108,25 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         if (mLowColorPref != null) {
             int lowColor = Settings.System.getInt(resolver, Settings.System.BATTERY_LIGHT_LOW_COLOR,
                     res.getInteger(com.android.internal.R.integer.config_notificationsBatteryLowARGB));
-            mLowColorPref.setAllValues(lowColor, 0, 0, false);
+            mLowColorPref.setColor(lowColor);
         }
 
         if (mMediumColorPref != null) {
             int mediumColor = Settings.System.getInt(resolver, Settings.System.BATTERY_LIGHT_MEDIUM_COLOR,
                     res.getInteger(com.android.internal.R.integer.config_notificationsBatteryMediumARGB));
-            mMediumColorPref.setAllValues(mediumColor, 0, 0, false);
+            mMediumColorPref.setColor(mediumColor);
         }
 
         if (mFullColorPref != null) {
             int fullColor = Settings.System.getInt(resolver, Settings.System.BATTERY_LIGHT_FULL_COLOR,
                     res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
-            mFullColorPref.setAllValues(fullColor, 0, 0, false);
+            mFullColorPref.setColor(fullColor);
+        }
+
+        if (mReallyFullColorPref != null) {
+            int reallyFullColor = Settings.System.getInt(resolver, Settings.System.BATTERY_LIGHT_REALLY_FULL_COLOR,
+                    res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
+            mReallyFullColorPref.setColor(reallyFullColor);
         }
     }
 
@@ -116,6 +145,8 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver, Settings.System.BATTERY_LIGHT_MEDIUM_COLOR, color);
         } else if (key.equals(FULL_COLOR_PREF)) {
             Settings.System.putInt(resolver, Settings.System.BATTERY_LIGHT_FULL_COLOR, color);
+        } else if (key.equals(REALLY_FULL_COLOR_PREF)) {
+            Settings.System.putInt(resolver, Settings.System.BATTERY_LIGHT_REALLY_FULL_COLOR, color);
         }
     }
 
@@ -148,14 +179,35 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
                 res.getInteger(com.android.internal.R.integer.config_notificationsBatteryMediumARGB));
         Settings.System.putInt(resolver, Settings.System.BATTERY_LIGHT_FULL_COLOR,
                 res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
+        Settings.System.putInt(resolver, Settings.System.BATTERY_LIGHT_REALLY_FULL_COLOR,
+                res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
         refreshDefault();
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        ApplicationLightPreference lightPref = (ApplicationLightPreference) preference;
-        updateValues(lightPref.getKey(), lightPref.getColor());
-
+        if (preference == mEnabledPref) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BATTERY_LIGHT_ENABLED, value ? 1:0);
+        } else {
+            BatteryLightPreference lightPref = (BatteryLightPreference) preference;
+            updateValues(lightPref.getKey(), lightPref.getColor());
+        }
         return true;
     }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if (preference == mPulsePref) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BATTERY_LIGHT_PULSE, checked ? 1:0);
+
+            return true;
+        }
+
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
 }

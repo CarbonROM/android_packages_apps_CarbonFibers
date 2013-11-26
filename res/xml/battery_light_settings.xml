@@ -17,14 +17,14 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <SwitchPreference
+        android:key="battery_light_enabled"
+        android:title="@string/battery_light_enable"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="general_section"
         android:title="@string/notification_light_general_title">
-
-        <CheckBoxPreference
-            android:key="battery_light_enabled"
-            android:title="@string/battery_light_title"
-            android:defaultValue="true" />
 
         <CheckBoxPreference
             android:key="battery_light_pulse"
@@ -39,19 +39,24 @@
         android:title="@string/battery_light_list_title"
         android:dependency="battery_light_enabled" >
 
-        <org.omnirom.omnigears.notificationlight.ApplicationLightPreference
+        <org.omnirom.omnigears.batterylight.BatteryLightPreference
             android:key="low_color"
             android:title="@string/battery_light_low_color_title"
             android:persistent="false" />
 
-        <org.omnirom.omnigears.notificationlight.ApplicationLightPreference
+        <org.omnirom.omnigears.batterylight.BatteryLightPreference
             android:key="medium_color"
             android:title="@string/battery_light_medium_color_title"
             android:persistent="false" />
 
-        <org.omnirom.omnigears.notificationlight.ApplicationLightPreference
+        <org.omnirom.omnigears.batterylight.BatteryLightPreference
             android:key="full_color"
             android:title="@string/battery_light_full_color_title"
+            android:persistent="false" />
+
+        <org.omnirom.omnigears.batterylight.BatteryLightPreference
+            android:key="really_full_color"
+            android:title="@string/battery_light_really_full_color_title"
             android:persistent="false" />
 
     </PreferenceCategory>

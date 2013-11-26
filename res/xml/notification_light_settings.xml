@@ -17,25 +17,19 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <SwitchPreference
+        android:key="notification_light_pulse"
+        android:title="@string/notification_light_enable" />
+
     <PreferenceCategory
         android:key="general_section"
         android:title="@string/notification_light_general_title">
-
-        <CheckBoxPreference
-            android:key="notification_light_pulse"
-            android:title="@string/notification_pulse_title" />
 
         <org.omnirom.omnigears.notificationlight.ApplicationLightPreference
             android:key="default"
             android:title="@string/notification_light_default_value"
             android:persistent="false"
             android:dependency="notification_light_pulse" />
-
-        <CheckBoxPreference
-            android:key="notification_light_pulse_custom_enable"
-            android:title="@string/notification_light_use_custom"
-            android:dependency="notification_light_pulse" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -55,6 +49,11 @@
             android:dependency="notification_light_pulse" />
 
     </PreferenceCategory>
+
+    <SwitchPreference
+        android:key="notification_light_pulse_custom_enable"
+        android:title="@string/notification_light_use_custom"
+        android:dependency="notification_light_pulse" />
 
     <PreferenceCategory
         android:key="applications_list"

@@ -61,9 +61,7 @@
     <string name="dialog_test_button">Dismiss</string>
 
     <!-- Lights settings screen, notification light settings -->
-    <string name="display_lights_settings_title">Display &amp; lights</string>
-    <string name="lights_category_title">Lights</string>
-    <string name="notification_pulse_title">Notification light</string>
+    <string name="notification_light_enable">Enable</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_applist_title">Applications</string>
     <string name="notification_light_phonelist_title">Phone</string>
@@ -91,12 +89,14 @@
     <string name="led_color_red">Red</string>
 
     <!-- Battery light settings  -->
-    <string name="battery_light_title">Battery light</string>
+    <string name="battery_light_enable">Enable</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
     <string name="battery_light_list_title">Colors</string>
     <string name="battery_light_low_color_title">Battery low</string>
     <string name="battery_light_medium_color_title">Charging</string>
-    <string name="battery_light_full_color_title">Fully charged</string>
+    <string name="battery_light_full_color_title">Charged (90%)</string>
+    <string name="battery_light_really_full_color_title">Charged (100%)</string>
+    <string name="edit_battery_settings">Edit battery settings</string>
 
     <!-- brightness settings -->
     <string name="brightness_settings_title">Brightness setup</string>

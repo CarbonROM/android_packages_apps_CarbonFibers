@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.omnirom.omnigears.notificationlight;
+package org.omnirom.omnigears.ui;
 
 import android.content.Context;
 import android.graphics.Canvas;
