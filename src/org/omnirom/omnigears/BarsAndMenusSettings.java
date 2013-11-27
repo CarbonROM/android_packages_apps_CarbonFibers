@@ -57,6 +57,7 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
     private static final String RECENT_MENU_CLEAR_ALL_LOCATION = "recent_menu_clear_all_location";
     private static final String STATUS_BAR_NETWORK_ACTIVITY = "status_bar_network_activity";
     private static final String POWER_MENU_SCREENSHOT = "power_menu_screenshot";
+    private static final String STATUS_BAR_CUSTOM_HEADER = "custom_status_bar_header";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
@@ -65,6 +66,7 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
     private ListPreference mRecentClearAllPosition;
     private CheckBoxPreference mStatusBarNetworkActivity;
     private CheckBoxPreference mScreenshotPowerMenu;
+    private CheckBoxPreference mStatusBarCustomHeader;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -110,12 +112,18 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
         mStatusBarNetworkActivity = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_NETWORK_ACTIVITY);
         mStatusBarNetworkActivity.setChecked(Settings.System.getInt(resolver,
             Settings.System.STATUS_BAR_NETWORK_ACTIVITY, 0) == 1);
-         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
+        mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
 
         mScreenshotPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_SCREENSHOT);
         mScreenshotPowerMenu.setChecked(Settings.System.getInt(resolver,
                 Settings.System.SCREENSHOT_IN_POWER_MENU, 0) == 1);
         mScreenshotPowerMenu.setOnPreferenceChangeListener(this);
+        mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
+
+        mStatusBarCustomHeader = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CUSTOM_HEADER);
+        mStatusBarCustomHeader.setChecked(Settings.System.getInt(resolver,
+            Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 1);
+        mStatusBarCustomHeader.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -148,6 +156,10 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
         } else if (preference == mScreenshotPowerMenu) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver, Settings.System.SCREENSHOT_IN_POWER_MENU, value ? 1 : 0);
+        } else if (preference == mStatusBarCustomHeader) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver,
+                Settings.System.STATUS_BAR_CUSTOM_HEADER, value ? 1 : 0);
         } else {
             return false;
         }
