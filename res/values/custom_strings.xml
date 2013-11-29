@@ -35,8 +35,8 @@
     <string name="status_bar_battery_status_percentage">Percentage</string>
     <string name="status_bar_battery_status_circle">Circle</string>
     <string name="status_bar_battery_status_circle_percentage">Circle with percentage</string>
-    <string name="status_bar_notif_count_title">Show notification count</string>
-    <string name="status_bar_notif_count_summary">Display number of pending notifications</string>
+    <string name="status_bar_notif_count_title">Notification count</string>
+    <string name="status_bar_notif_count_summary">Show number of pending notifications</string>
 
     <!-- String for IconPicker -->
     <string name="icon_picker_title">Choose icon source</string>
@@ -205,8 +205,8 @@
 
     <!-- Power Menu Options-->
     <string name="bars_and_menus_category_power_menu_title">Power menu</string>
-    <string name="power_menu_toggle_screenshot_title">Show Screenshot</string>
-    <string name="power_menu_toggle_screenshot_summary">Tick or untick to show/hide screenshot option in Power Menu</string>
+    <string name="power_menu_toggle_screenshot_title">Screenshot</string>
+    <string name="power_menu_toggle_screenshot_summary">Show screenshot option in Power Menu</string>
 
     <!-- Active Display Notifications -->
     <string name="ad_settings_title">Active display</string>
@@ -253,13 +253,13 @@
     <string name="ad_pocket_mode_off">Off</string>
     <string name="ad_pocket_mode_notifications">Notifications only</string>
     <string name="ad_pocket_mode_always">Always</string>
-    <string name="bars_and_menus_category_recent_panel_title" >Recents menu</string>
+    <string name="bars_and_menus_category_recent_panel_title" >Recents view</string>
 
     <!--  Recents clear all -->
-    <string name="show_recent_clear_all_button_title">Show clear all button</string>
-    <string name="show_recent_clear_all_button_summary">Tick to show or untick to hide the clear all button within the recent applications screen</string>
+    <string name="show_recent_clear_all_button_title">Clear all button</string>
+    <string name="show_recent_clear_all_button_summary">Show clear all button within the recent applications view</string>
     <string name="recent_clear_all_button_location_title">Clear all button position</string>
-    <string name="recent_clear_all_button_location_summary">Choose in which corner the clear all recent apps button is shown</string>
+    <string name="recent_clear_all_button_location_summary">Choose position of the clear all button</string>
     <string name="recent_clear_all_button_location_top_left">Top left</string>
     <string name="recent_clear_all_button_location_top_right">Top right</string>
     <string name="recent_clear_all_button_location_bottom_left">Bottom left</string>
