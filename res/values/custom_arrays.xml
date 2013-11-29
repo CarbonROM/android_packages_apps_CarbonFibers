@@ -78,7 +78,7 @@
         <item>@string/auto_brightness_sensitivity_veryhigh</item>
     </string-array>
 
-    <string-array name="auto_brightness_sensitivity_values">
+    <string-array name="auto_brightness_sensitivity_values" translatable="false">
         <item>150</item>
         <item>125</item>
         <item>100</item>
@@ -190,7 +190,7 @@
         <item>3</item>
     </string-array>
 
-    <string-array name="button_volume_default_entries" translatbale="false">
+    <string-array name="button_volume_default_entries" translatable="false">
         <item>@string/button_volume_default_none</item>
         <item>@string/button_volume_default_media</item>
         <item>@string/button_volume_default_ringer</item>
