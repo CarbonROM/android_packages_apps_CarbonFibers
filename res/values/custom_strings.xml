@@ -207,6 +207,8 @@
     <string name="bars_and_menus_category_power_menu_title">Power menu</string>
     <string name="power_menu_toggle_screenshot_title">Screenshot</string>
     <string name="power_menu_toggle_screenshot_summary">Show screenshot option in Power Menu</string>
+    <string name="power_menu_toggle_screenrecord_title">Screen Record</string>
+    <string name="power_menu_toggle_screenrecord_summary">Show screen Record option in Power Menu</string>
 
     <!-- Active Display Notifications -->
     <string name="ad_settings_title">Active display</string>

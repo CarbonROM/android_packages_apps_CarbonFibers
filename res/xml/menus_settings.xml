@@ -30,6 +30,12 @@
             android:title="@string/power_menu_toggle_screenshot_title"
             android:summary="@string/power_menu_toggle_screenshot_summary"
             android:defaultValue="false" />
+
+    <CheckBoxPreference
+            android:key="power_menu_screenrecord"
+            android:title="@string/power_menu_toggle_screenrecord_title"
+            android:summary="@string/power_menu_toggle_screenrecord_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
 </PreferenceScreen>
