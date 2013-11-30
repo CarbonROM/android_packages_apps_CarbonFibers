@@ -36,6 +36,7 @@ import java.util.prefs.PreferenceChangeListener;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.media.AudioSystem;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -145,6 +146,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             }
             String currentDefault = Settings.System.getString(resolver, Settings.System.VOLUME_KEYS_DEFAULT);
 
+            if (!Utils.isVoiceCapable(getActivity())) {
+                removeListEntry(mVolumeDefault, String.valueOf(AudioSystem.STREAM_RING));
+            }
+
             if (currentDefault == null) {
                 currentDefault = mVolumeDefault.getEntryValues()[mVolumeDefault.getEntryValues().length - 1].toString();
             }
@@ -181,7 +186,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             prefScreen.removePreference(keysHomeCategory);
             prefScreen.removePreference(keysMenuCategory);
             prefScreen.removePreference(keysAssistCategory);
-            prefScreen.removePreference(keysAppSwitchCategory);           
+            prefScreen.removePreference(keysAppSwitchCategory);
         } else {
             mEnableCustomBindings = (SwitchPreference) prefScreen.findPreference(
                     KEYS_ENABLE_CUSTOM);
@@ -519,5 +524,22 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             AlertDialog alertDialog = alertDialogBuilder.create();
             alertDialog.show();
         }
+    }
+
+    public void removeListEntry(ListPreference list, String valuetoRemove) {
+        ArrayList<CharSequence> entries = new ArrayList<CharSequence>();
+        ArrayList<CharSequence> values = new ArrayList<CharSequence>();
+
+        for (int i = 0; i < list.getEntryValues().length; i++) {
+            if (list.getEntryValues()[i].toString().equals(valuetoRemove)) {
+                continue;
+            } else {
+                entries.add(list.getEntries()[i]);
+                values.add(list.getEntryValues()[i]);
+            }
+        }
+
+        list.setEntries(entries.toArray(new CharSequence[entries.size()]));
+        list.setEntryValues(values.toArray(new CharSequence[values.size()]));
     }
 }
