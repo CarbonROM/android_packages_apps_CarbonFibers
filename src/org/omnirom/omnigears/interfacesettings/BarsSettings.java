@@ -16,62 +16,40 @@
  *
  */
 
-package org.omnirom.omnigears;
+package org.omnirom.omnigears.interfacesettings;
 
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
+import com.android.settings.R;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.preference.CheckBoxPreference;
-import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
-import android.provider.MediaStore;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
 
-import java.util.List;
-
-public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
+public class BarsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "BarsAndMenusSettings";
+    private static final String TAG = "BarsSettings";
 
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
     private static final String STATUS_BAR_TRAFFIC = "status_bar_traffic";
-    private static final String RECENT_MENU_CLEAR_ALL = "recent_menu_clear_all";
-    private static final String RECENT_MENU_CLEAR_ALL_LOCATION = "recent_menu_clear_all_location";
     private static final String STATUS_BAR_NETWORK_ACTIVITY = "status_bar_network_activity";
-    private static final String POWER_MENU_SCREENSHOT = "power_menu_screenshot";
-    private static final String STATUS_BAR_CUSTOM_HEADER = "custom_status_bar_header";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
     private CheckBoxPreference mStatusBarTraffic;
-    private CheckBoxPreference mRecentClearAll;
-    private ListPreference mRecentClearAllPosition;
     private CheckBoxPreference mStatusBarNetworkActivity;
-    private CheckBoxPreference mScreenshotPowerMenu;
-    private CheckBoxPreference mStatusBarCustomHeader;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.bars_and_menus_settings);
+        addPreferencesFromResource(R.xml.bars_settings);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
@@ -98,32 +76,12 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
         mStatusBarTraffic.setChecked(Settings.System.getInt(resolver,
             Settings.System.STATUS_BAR_TRAFFIC, 0) == 1);
         mStatusBarTraffic.setOnPreferenceChangeListener(this);
-        mRecentClearAll = (CheckBoxPreference) prefSet.findPreference(RECENT_MENU_CLEAR_ALL);
-        mRecentClearAll.setChecked(Settings.System.getInt(resolver,
-            Settings.System.SHOW_CLEAR_RECENTS_BUTTON, 1) == 1);
-        mRecentClearAll.setOnPreferenceChangeListener(this);
-        mRecentClearAllPosition = (ListPreference) prefSet.findPreference(RECENT_MENU_CLEAR_ALL_LOCATION);
-        String recentClearAllPosition = Settings.System.getString(resolver, Settings.System.CLEAR_RECENTS_BUTTON_LOCATION);
-        if (recentClearAllPosition != null) {
-             mRecentClearAllPosition.setValue(recentClearAllPosition);
-        }
-        mRecentClearAllPosition.setOnPreferenceChangeListener(this);
 
         mStatusBarNetworkActivity = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_NETWORK_ACTIVITY);
         mStatusBarNetworkActivity.setChecked(Settings.System.getInt(resolver,
             Settings.System.STATUS_BAR_NETWORK_ACTIVITY, 0) == 1);
         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
-
-        mScreenshotPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_SCREENSHOT);
-        mScreenshotPowerMenu.setChecked(Settings.System.getInt(resolver,
-                Settings.System.SCREENSHOT_IN_POWER_MENU, 0) == 1);
-        mScreenshotPowerMenu.setOnPreferenceChangeListener(this);
         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
-
-        mStatusBarCustomHeader = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CUSTOM_HEADER);
-        mStatusBarCustomHeader.setChecked(Settings.System.getInt(resolver,
-            Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 1);
-        mStatusBarCustomHeader.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -143,23 +101,10 @@ public class BarsAndMenusSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,
                 Settings.System.STATUS_BAR_TRAFFIC, value ? 1 : 0);
-        } else if (preference == mRecentClearAll) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(resolver, Settings.System.SHOW_CLEAR_RECENTS_BUTTON, value ? 1 : 0);
-        } else if (preference == mRecentClearAllPosition) {
-            String value = (String) objValue;
-            Settings.System.putString(resolver, Settings.System.CLEAR_RECENTS_BUTTON_LOCATION, value);
         } else if (preference == mStatusBarNetworkActivity) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,
                 Settings.System.STATUS_BAR_NETWORK_ACTIVITY, value ? 1 : 0);
-        } else if (preference == mScreenshotPowerMenu) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(resolver, Settings.System.SCREENSHOT_IN_POWER_MENU, value ? 1 : 0);
-        } else if (preference == mStatusBarCustomHeader) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(resolver,
-                Settings.System.STATUS_BAR_CUSTOM_HEADER, value ? 1 : 0);
         } else {
             return false;
         }
