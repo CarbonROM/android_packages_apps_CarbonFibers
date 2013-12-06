@@ -20,13 +20,13 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="ok">OK</string>
     <string name="reset">Réinitialiser</string>
-    <string name="bars_and_menus_settings">Barres et menus</string>
+    <string name="bars_and_menus_settings">Barre et menu</string>
     <string name="active_display_settings">ActiveDisplay</string>
     <string name="bars_and_menus_category_status_bar_title">Barre de statut</string>
     <string name="status_bar_battery_title">Style de la batterie</string>
     <string name="status_bar_toggle_brightness">Contrôle du rétroéclairage</string>
     <string name="status_bar_toggle_brightness_summary">Ajuster la luminosité du rétroéclairage en glissant dans la barre de statut</string>
-    <string name="status_bar_toggle_info">Luminosité automatique activé</string>
+    <string name="status_bar_toggle_info">Luminosité automatique activée</string>
     <string name="status_bar_signal_text_title">Style du statut du signal</string>
     <string name="status_bar_style_icon">Icône</string>
     <string name="status_bar_style_hidden">Masqué</string>
@@ -34,8 +34,8 @@
     <string name="status_bar_battery_status_percentage">Pourcentage</string>
     <string name="status_bar_battery_status_circle">Cercle</string>
     <string name="status_bar_battery_status_circle_percentage">Cercle avec pourcentage</string>
-    <string name="status_bar_notif_count_title">Afficher le compteur de notification</string>
-    <string name="status_bar_notif_count_summary">Afficher le nombre de notification en attente</string>
+    <string name="status_bar_notif_count_title">Afficher le compteur de notifications</string>
+    <string name="status_bar_notif_count_summary">Afficher le nombre de notifications en attente</string>
     <string name="icon_picker_title">Source de l\'icône</string>
     <string name="icon_picker_system_icons_title">Icônes système</string>
     <string name="icon_picker_gallery_title">Galerie</string>
@@ -80,9 +80,9 @@
     <string name="battery_low_pulse_title">Clignoter si la batterie est faible</string>
     <string name="battery_light_list_title">Couleurs</string>
     <string name="battery_light_low_color_title">Batterie faible</string>
-    <string name="battery_light_medium_color_title">Chargé</string>
-    <string name="battery_light_full_color_title">Chargé (90%)</string>
-    <string name="battery_light_really_full_color_title">Chargé (100%)</string>
+    <string name="battery_light_medium_color_title">Chargée</string>
+    <string name="battery_light_full_color_title">Chargée (90%)</string>
+    <string name="battery_light_really_full_color_title">Chargée (100%)</string>
     <string name="edit_battery_settings">Éditer les paramètres de la batterie</string>
     <string name="brightness_settings_title">Ajustement de la luminosité</string>
     <string name="screen_current_value">Valeur actuelle de l\'écran\u00A0: <xliff:g id="screen_level">%d</xliff:g></string>
@@ -133,7 +133,7 @@
         <item quantity="other"><xliff:g id="seconds">%d</xliff:g> secondes</item>
     </plurals>
     <string name="button_timeout_enabled">Activé pour <xliff:g id="timeout">%s</xliff:g></string>
-    <string name="button_timeout_disabled">Désactivée</string>
+    <string name="button_timeout_disabled">Désactivé</string>
     <string name="dialog_button_timeout_title">Durée d\éclairage des boutons</string>
     <string name="button_volume_keys_title">Volume</string>
     <string name="button_volume_wake_title">Réveil avec boutons Volume</string>
@@ -178,7 +178,9 @@
     <string name="no_home_key">Vous n\'avez pas assigné de bouton à l\'action \"Home\"\u00A0! Cela peut rendre votre appareil inutilisable\u00A0!</string>
     <string name="bars_and_menus_category_power_menu_title">Menu marche/arrêt</string>
     <string name="power_menu_toggle_screenshot_title">Capture d\'écran</string>
-    <string name="power_menu_toggle_screenshot_summary">Cocher ou décocher pour afficher ou masquer les options de capture d\'écran dans le menu marche/arrêt</string>
+    <string name="power_menu_toggle_screenshot_summary">Afficher les options de capture d\'écran dans le menu marche/arrêt</string>
+    <string name="power_menu_toggle_screenrecord_title">Capture vidéo</string>
+    <string name="power_menu_toggle_screenrecord_summary">Afficher les options de capture vidéo de l\'écran dans le menu marche/arrêt</string>
     <string name="ad_settings_title">ActiveDisplay</string>
     <string name="ad_settings_summary">Définir les paramètres d\'ActiveDisplay</string>
     <string name="ad_enable_title">Activer</string>
@@ -197,11 +199,11 @@
     <string name="ad_brightness_title">Luminosité des notifications</string>
     <string name="ad_customizations_title">Personnalisation</string>
     <string name="ad_excluded_apps_title">Applications exclues</string>
-    <string name="ad_excluded_apps_summary">Les applications exclues ne seront pas afficher</string>
+    <string name="ad_excluded_apps_summary">Les applications exclues ne seront pas affichées</string>
     <string name="ad_show_date_title">Afficher la date</string>
     <string name="ad_show_ampm_title">Afficher AM/PM</string>
     <string name="ad_sunlight_mode_title">Mode haute luminosité</string>
-    <string name="ad_brightness_summary">Niveau de luminosité pour l\'affichage des notifications lorsque la luminosité automatique n\'est pas activé</string>
+    <string name="ad_brightness_summary">Niveau de luminosité pour l\'affichage des notifications lorsque la luminosité automatique n\'est pas activée</string>
     <string name="ad_show_date_summary">Afficher la date au dessus de la l\'heure</string>
     <string name="ad_show_ampm_summary">Afficher l\'indicateur AM/PM après l\'heure lors que le format 12h est utilisé</string>
     <string name="ad_sunlight_mode_summary">Inverser les couleurs dans les endroits avec une lumière vive, comme la lumière du soleil</string>
@@ -222,18 +224,18 @@
     <string name="ad_pocket_mode_off">Désactivé</string>
     <string name="ad_pocket_mode_notifications">Seulement les notifications</string>
     <string name="ad_pocket_mode_always">Toujours</string>
-    <string name="bars_and_menus_category_recent_panel_title" >Menu récents</string>
-    <string name="show_recent_clear_all_button_title">Afficher le bouton de nettoyage</string>
-    <string name="show_recent_clear_all_button_summary">Cocher pour afficher le bouton de nettoyage des applications dans le menu des applications récentes</string>
-    <string name="recent_clear_all_button_location_title">Position du bouton de nettoyage</string>
-    <string name="recent_clear_all_button_location_summary">Définir dans quel coin placer le bouton de nettoyage des applications récentes</string>
+    <string name="bars_and_menus_category_recent_panel_title">Applications récentes</string>
+    <string name="show_recent_clear_all_button_title">Bouton de fermeture rapide</string>
+    <string name="show_recent_clear_all_button_summary">Afficher le bouton de fermeture rapide des applications dans la fenêtre des applications récentes</string>
+    <string name="recent_clear_all_button_location_title">Position du bouton</string>
+    <string name="recent_clear_all_button_location_summary">Définir dans quel coin de l\'écran placer le bouton de fermeture rapide</string>
     <string name="recent_clear_all_button_location_top_left">En haut à gauche</string>
     <string name="recent_clear_all_button_location_top_right">En haut à droite</string>
     <string name="recent_clear_all_button_location_bottom_left">En bas à gauche</string>
     <string name="recent_clear_all_button_location_bottom_right">En bas en droite</string>
     <string name="notification_drawer_category_title">Barre de notification</string>
-    <string name="custom_statusbar_header_title">En-tête contextuel de la barre des notifications</string>
-    <string name="custom_statusbar_header_summary">Définir l\'arrière plan de la barre des notifications avec une image basé la date et l\'heure courante</string>
+    <string name="custom_statusbar_header_title">En-tête contextuel</string>
+    <string name="custom_statusbar_header_summary">Définir l\'arrière plan de la barre des notifications avec une image basé sur la date et l\'heure courante</string>
     <string name="button_volume_default_none">Aucun</string>
     <string name="button_volume_default_ringer">Sonnerie</string>
     <string name="button_volume_default_media">Média</string>
