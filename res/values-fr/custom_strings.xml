@@ -196,6 +196,7 @@
     <string name="ad_pocket_mode_summary">Afficher ActiveDisplay lorsque vous sortez l\'appareil de votre poche</string>
     <string name="ad_redisplay_title">Ré-afficher les notifications</string>
     <string name="ad_timeout_title">Durée d\'affichage</string>
+    <string name="ad_threshold_title">Seuil de proximité</string>
     <string name="ad_brightness_title">Luminosité des notifications</string>
     <string name="ad_customizations_title">Personnalisation</string>
     <string name="ad_excluded_apps_title">Applications exclues</string>
@@ -207,6 +208,8 @@
     <string name="ad_show_date_summary">Afficher la date au dessus de la l\'heure</string>
     <string name="ad_show_ampm_summary">Afficher l\'indicateur AM/PM après l\'heure lors que le format 12h est utilisé</string>
     <string name="ad_sunlight_mode_summary">Inverser les couleurs dans les endroits avec une lumière vive, comme la lumière du soleil</string>
+    <string name="ad_turnoff_mode_title">Éteindre l\'écran</string>
+    <string name="ad_turnoff_mode_summary">Éteindre l\'écran si l\'appareil a été activé par ActiveDisplay et qu\'il est remis dans la poche</string>
     <string name="ad_redisplay_never">Jamais</string>
     <string name="ad_redisplay_1m">1 minute</string>
     <string name="ad_redisplay_5m">5 minutes</string>
@@ -221,8 +224,14 @@
     <string name="ad_timeout_10s">10 secondes</string>
     <string name="ad_timeout_15s">15 secondes</string>
     <string name="ad_timeout_25s">25 secondes</string>
+    <string name="ad_threshold_0s">Instantané</string>
+    <string name="ad_threshold_1s">1 seconde</string>
+    <string name="ad_threshold_2s">2 secondes</string>
+    <string name="ad_threshold_3s">3 secondes</string>
+    <string name="ad_threshold_4s">4 secondes</string>
+    <string name="ad_threshold_5s">5 secondes</string>
     <string name="ad_pocket_mode_off">Désactivé</string>
-    <string name="ad_pocket_mode_notifications">Seulement les notifications</string>
+    <string name="ad_pocket_mode_notifications">Notifications uniquement</string>
     <string name="ad_pocket_mode_always">Toujours</string>
     <string name="bars_and_menus_category_recent_panel_title">Applications récentes</string>
     <string name="show_recent_clear_all_button_title">Bouton de fermeture rapide</string>
