@@ -90,6 +90,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private int mDefaultColor;
     private int mDefaultLedOn;
     private int mDefaultLedOff;
+    private boolean mNotificationPulseEnabled;
     private PackageManager mPackageManager;
     private PreferenceGroup mApplicationPrefList;
     private SwitchPreference mEnabledPref;
@@ -114,11 +115,13 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 com.android.internal.R.integer.config_defaultNotificationLedOn);
         mDefaultLedOff = resources.getInteger(
                 com.android.internal.R.integer.config_defaultNotificationLedOff);
+        mNotificationPulseEnabled = resources.getBoolean(
+                com.android.internal.R.bool.config_intrusiveNotificationLed);
 
         mEnabledPref = (SwitchPreference)
                 findPreference(Settings.System.NOTIFICATION_LIGHT_PULSE);
         mEnabledPref.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.NOTIFICATION_LIGHT_PULSE, 0) != 0);
+                Settings.System.NOTIFICATION_LIGHT_PULSE, mNotificationPulseEnabled ? 1 : 0) != 0);
         mEnabledPref.setOnPreferenceChangeListener(this);
         mCustomEnabledPref = (SwitchPreference)
                 findPreference(Settings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);

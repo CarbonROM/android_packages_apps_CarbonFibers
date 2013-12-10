@@ -53,6 +53,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private BatteryLightPreference mReallyFullColorPref;
     private static final int MENU_RESET = Menu.FIRST;
     private int mLowBatteryWarningLevel;
+    private boolean mBatteryLightEnabled;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,15 +65,17 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
         mLowBatteryWarningLevel = getResources().getInteger(
                 com.android.internal.R.integer.config_lowBatteryWarningLevel);
+        mBatteryLightEnabled = getResources().getBoolean(
+                com.android.internal.R.bool.config_intrusiveBatteryLed);
 
         mEnabledPref = (SwitchPreference)prefSet.findPreference(BATTERY_LIGHT_PREF);
         mEnabledPref.setChecked(Settings.System.getInt(resolver,
-                        Settings.System.BATTERY_LIGHT_ENABLED, 1) != 0);
+                        Settings.System.BATTERY_LIGHT_ENABLED, mBatteryLightEnabled ? 1 : 0) != 0);
         mEnabledPref.setOnPreferenceChangeListener(this);
 
         mPulsePref = (CheckBoxPreference)prefSet.findPreference(BATTERY_PULSE_PREF);
         mPulsePref.setChecked(Settings.System.getInt(resolver,
-                        Settings.System.BATTERY_LIGHT_PULSE, 1) != 0);
+                        Settings.System.BATTERY_LIGHT_PULSE, mBatteryLightEnabled ? 1 : 0) != 0);
 
         // Does the Device support changing battery LED colors?
         if (getResources().getBoolean(com.android.internal.R.bool.config_multiColorBatteryLed)) {
