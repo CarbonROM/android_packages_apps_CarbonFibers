@@ -39,7 +39,7 @@
             android:key="button_volume_wake_screen"
             android:title="@string/button_volume_wake_title"
             android:summary="@string/button_volume_wake_summary"
-            android:defaultValue="false" />
+            android:persistent="false"/>
 
         <ListPreference
             android:key="button_volume_default_screen"
@@ -47,7 +47,7 @@
             android:summary="@string/button_volume_default_summary"
             android:entries="@array/button_volume_default_entries"
             android:entryValues="@array/button_volume_default_values"
-            android:defaultValue="0" />
+            android:persistent="false"/>
 
     </PreferenceCategory>
 
@@ -58,7 +58,6 @@
         <SwitchPreference
             android:key="keys_enable_custom"
             android:title="@string/keys_enable_custom_title"
-            android:defaultValue="false"
             android:persistent="false" />
     </PreferenceCategory>
    

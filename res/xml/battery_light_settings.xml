@@ -20,7 +20,7 @@
     <SwitchPreference
         android:key="battery_light_enabled"
         android:title="@string/battery_light_enable"
-        android:defaultValue="true" />
+        android:persistent="false"/>
 
     <PreferenceCategory
         android:key="general_section"
@@ -29,8 +29,8 @@
         <CheckBoxPreference
             android:key="battery_light_pulse"
             android:title="@string/battery_low_pulse_title"
-            android:defaultValue="true"
-            android:dependency="battery_light_enabled" />
+            android:dependency="battery_light_enabled"
+            android:persistent="false" />
 
     </PreferenceCategory>
 

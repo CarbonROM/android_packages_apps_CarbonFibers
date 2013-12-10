@@ -49,11 +49,13 @@
                 <CheckBoxPreference
                         android:key="button_no_brightness"
                         android:title="@string/button_no_brightness"
-                        android:summary="@string/button_no_brightness_summary"/>
+                        android:summary="@string/button_no_brightness_summary"
+                        android:persistent="false"/>
                 <CheckBoxPreference
                         android:key="button_link_brightness"
                         android:title="@string/button_link_brightness"
-                        android:summary="@string/button_link_brightness_summary"/>
+                        android:summary="@string/button_link_brightness_summary"
+                        android:persistent="false"/>
                 <Preference
                         android:key="button_timeout"
                         android:title="@string/button_timeout_title" />

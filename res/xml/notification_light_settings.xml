@@ -19,7 +19,8 @@
 
     <SwitchPreference
         android:key="notification_light_pulse"
-        android:title="@string/notification_light_enable" />
+        android:title="@string/notification_light_enable" 
+        android:persistent="false"/>
 
     <PreferenceCategory
         android:key="general_section"
@@ -53,7 +54,8 @@
     <SwitchPreference
         android:key="notification_light_pulse_custom_enable"
         android:title="@string/notification_light_use_custom"
-        android:dependency="notification_light_pulse" />
+        android:dependency="notification_light_pulse" 
+        android:persistent="false"/>
 
     <PreferenceCategory
         android:key="applications_list"
