@@ -49,4 +49,14 @@
             android:summary="@string/show_activity_indicators_on_status_bar_summary"
             android:defaultValue="false" />
 
+    <!-- Navigation bar -->
+    <PreferenceCategory
+            android:key="category_navigation_bar"
+            android:title="@string/bars_and_menus_category_navigation_bar_title"/>
+
+    <PreferenceScreen
+        android:key="navigation_ring"
+        android:fragment="org.omnirom.omnigears.interfacesettings.NavRing"
+        android:title="@string/navigation_ring_title" />
+
 </PreferenceScreen>
