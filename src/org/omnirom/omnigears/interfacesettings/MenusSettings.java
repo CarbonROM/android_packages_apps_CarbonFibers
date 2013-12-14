@@ -31,6 +31,7 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
+import android.net.ConnectivityManager;
 
 public class MenusSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -39,9 +40,16 @@ public class MenusSettings extends SettingsPreferenceFragment implements
 
     private static final String POWER_MENU_SCREENSHOT = "power_menu_screenshot";
     private static final String POWER_MENU_SCREENRECORD = "power_menu_screenrecord";
+    private static final String POWER_MENU_MOBILE_DATA = "power_menu_mobile_data";
+    private static final String POWER_MENU_AIRPLANE_MODE = "power_menu_airplane_mode";
+    private static final String POWER_MENU_SOUND_TOGGLES = "power_menu_sound_toggles";
+
 
     private CheckBoxPreference mScreenshotPowerMenu;
     private CheckBoxPreference mScreenrecordPowerMenu;
+    private CheckBoxPreference mMobileDataPowerMenu;
+    private CheckBoxPreference mAirplaneModePowerMenu;
+    private CheckBoxPreference mSoundTogglesPowerMenu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -58,6 +66,28 @@ public class MenusSettings extends SettingsPreferenceFragment implements
         mScreenshotPowerMenu.setChecked(Settings.System.getInt(resolver,
                 Settings.System.SCREENSHOT_IN_POWER_MENU, 0) == 1);
         mScreenshotPowerMenu.setOnPreferenceChangeListener(this);
+
+        mMobileDataPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_MOBILE_DATA);
+        Context context = getActivity();
+        ConnectivityManager cm = (ConnectivityManager)
+                context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if(cm.isNetworkSupported(ConnectivityManager.TYPE_MOBILE)) {
+            mMobileDataPowerMenu.setChecked(Settings.System.getInt(resolver,
+                Settings.System.MOBILE_DATA_IN_POWER_MENU, 0) == 1);
+            mMobileDataPowerMenu.setOnPreferenceChangeListener(this);
+        } else {
+            prefSet.removePreference(mMobileDataPowerMenu);
+        }
+
+        mAirplaneModePowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_AIRPLANE_MODE);
+        mAirplaneModePowerMenu.setChecked(Settings.System.getInt(resolver,
+                Settings.System.AIRPLANE_MODE_IN_POWER_MENU, 1) == 1);
+        mAirplaneModePowerMenu.setOnPreferenceChangeListener(this);
+
+        mSoundTogglesPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_SOUND_TOGGLES);
+        mSoundTogglesPowerMenu.setChecked(Settings.System.getInt(resolver,
+                Settings.System.SOUND_TOGGLES_IN_POWER_MENU, 1) == 1);
+        mSoundTogglesPowerMenu.setOnPreferenceChangeListener(this);
 
         mScreenrecordPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_SCREENRECORD);
         if(mHasScreenRecord) {
@@ -81,6 +111,15 @@ public class MenusSettings extends SettingsPreferenceFragment implements
         } else if (preference == mScreenrecordPowerMenu) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver, Settings.System.SCREENRECORD_IN_POWER_MENU, value ? 1 : 0);
+        } else if (preference == mMobileDataPowerMenu) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver, Settings.System.MOBILE_DATA_IN_POWER_MENU, value ? 1 : 0);
+        } else if (preference == mAirplaneModePowerMenu) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver, Settings.System.AIRPLANE_MODE_IN_POWER_MENU, value ? 1 : 0);
+        } else if (preference == mSoundTogglesPowerMenu) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver, Settings.System.SOUND_TOGGLES_IN_POWER_MENU, value ? 1 : 0);
         } else {
             return false;
         }
