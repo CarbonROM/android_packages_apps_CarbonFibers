@@ -115,6 +115,12 @@
             android:key="navigation_bar"
             android:fragment="org.omnirom.omnigears.interfacesettings.NavBar"
             android:title="@string/navigation_bar_title" />
+
+        <PreferenceScreen
+            android:key="navigation_bar_dimen"
+            android:fragment="org.omnirom.omnigears.interfacesettings.NavBarDimen"
+            android:title="@string/navbar_dimen_title" />
+
         <PreferenceScreen
             android:key="navigation_ring"
             android:fragment="org.omnirom.omnigears.interfacesettings.NavRing"
