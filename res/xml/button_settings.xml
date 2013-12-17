@@ -55,6 +55,12 @@
         android:key="button_keys"
         android:title="@string/button_keys_title" >
 
+        <CheckBoxPreference
+            android:key="virtual_key_haptic_feedback"
+            android:title="@string/virtual_key_haptic_feedback_title"
+            android:summary="@string/virtual_key_haptic_feedback_summary"
+            android:persistent="false"/>
+
         <SwitchPreference
             android:key="keys_enable_custom"
             android:title="@string/keys_enable_custom_title"

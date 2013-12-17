@@ -206,6 +206,8 @@
     <string name="keys_action_double">Double tap</string>
     <string name="dialog_no_home_key_title">No home action</string>
     <string name="no_home_key">You have no button assigned to the \"Home\" action! This can make your device unusable!</string>
+    <string name="virtual_key_haptic_feedback_title">Vibrate on touch</string>
+    <string name="virtual_key_haptic_feedback_summary">Enable depends on \"Vibrate on touch\" in sound settings</string>
 
     <!-- Power Menu Options-->
     <string name="bars_and_menus_category_power_menu_title">Power menu</string>
