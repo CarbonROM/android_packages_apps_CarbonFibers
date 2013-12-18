@@ -271,7 +271,7 @@
     <!-- Recents clear all -->
     <string name="show_recent_clear_all_button_title">Mostra pulsante chiudi</string>
     <string name="show_recent_clear_all_button_summary">Fare clic per mostrare o nascondere il pulsante chiudi all\'interno della schermata delle applicazioni recenti</string>
-    <string name="recent_clear_all_button_location_title">Scegli la posizione del pulsante chiudi</string>
+    <string name="recent_clear_all_button_location_title">Posizione pulsante chiudi</string>
     <string name="recent_clear_all_button_location_summary">Scegli in quale angolo verrà visualizzato il pulsante chiudi all\'interno delle applicazioni recenti</string>
     <string name="recent_clear_all_button_location_top_left">In alto a sinistra</string>
     <string name="recent_clear_all_button_location_top_right">In alto a destra</string>
@@ -295,5 +295,66 @@
     <string name="button_volume_default_media">Media</string>
     <string name="button_volume_default_title">Volume predefinito</string>
     <string name="button_volume_default_summary">Scegli quale volume verrà cambiato come impostazione predefinita</string>
+<!-- Navigation ring shortcuts -->
+    <string name="navigation_ring_title">Collegamenti di avvio rapido</string>
+    <string name="navring_target_reset_message">Eliminare tutti i collegamenti della barra di navigazione creati e ripristinare le impostazioni predefinite?</string>
+    <string name="navring_target_reset">I collegamenti della barra di navigazione saranno ripristinati ai valori predefiniti</string>
+    <string name="navring_action_open_ime_switcher">Apri cambio IME</string>
+    <string name="navring_action_kill_app">Chiudi applicazioni</string>
+    <string name="navring_action_none">Nessuno</string>
+    <string name="navring_action_take_screenshot">Fare uno screenshot</string>
+    <string name="navring_action_ring_vibrate">Suoneria/Vibrazione</string>
+    <string name="navring_action_ring_silent">Suoneria/Silenzioso</string>
+    <string name="navring_action_ring_vibrate_silent">Suoneria/Vibrazione/Silenzioso</string>
+    <string name="navring_action_screen_off">Schermo spento</string>
+    <string name="navring_action_torch">Toggle Torcia</string>
+    <string name="navring_action_google_now">Google Now</string>
+    <string name="navring_choose_action_title">Scegli azione</string>
+
+    <!-- String for IconPicker -->
+    <string name="icon_picker_title">Scegli fonte icone</string>
+    <string name="icon_picker_system_icons_title">Icone di sistema</string>
+    <string name="icon_picker_gallery_title">Galleria</string>
+    <string name="icon_picker_pack_title">Pacchetto di icone</string>
+
+    <!-- Lock Screen Shortcuts -->
+    <string name="lockscreen_target_info">Trascina il cursore per definire i collegamenti</string>
+    <string name="lockscreen_target_title">Collegamenti rapidi lockscreen</string>
+    <string name="lockscreen_target_summary">Visualizza o modifica i collegamenti rapidi della lockscreen</string>
+    <string name="lockscreen_target_reset">I collegamenti rapidi della lockscreen sono stati ripristinati ai valori di default</string>
+    <string name="lockscreen_target_reset_title">Resetta</string>
+    <string name="lockscreen_target_reset_message">Eliminare tutti collegamenti rapidi della lockscreen creati dall\'utente e ripristinarli ai valori di default?</string>
+    <string name="lockscreen_target_empty">Vuoto</string>
+    <string name="lockscreen_target_edit_title">Modifica il collegamento e l\'icona</string>
+    <string name="lockscreen_target_edit_msg">Seleziona o modifica l\'applicazione desiderata o l\'attività con l\'icona associata</string>
+
+    <!-- Lock screen shortcuts -->
+    <string name="picker_activities">Attività</string>
+    <string name="select_custom_app_title">Seleziona un\'applicazione personalizzata</string>
+    <string name="select_custom_activity_title">Selezion un\'attività personalizzata</string>
+    <string name="icon_picker_choose_icon_title">Scegli icona</string>
+    <string name="icon_picker_alarm">Sveglia</string>
+    <string name="icon_picker_browser">Browser</string>
+    <string name="icon_picker_calendar">Calendario</string>
+    <string name="icon_picker_camera">Fotocamera</string>
+    <string name="icon_picker_chrome">Chrome</string>
+    <string name="icon_picker_contacts">Contatti</string>
+    <string name="icon_picker_email">Email</string>
+    <string name="icon_picker_email2">Email Holo</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Galleria</string>
+    <string name="icon_picker_google_small">Google (piccolo)</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Hangouts</string>
+    <string name="icon_picker_maps">Maps</string>
+    <string name="icon_picker_movie">Video</string>
+    <string name="icon_picker_music">Musica</string>
+    <string name="icon_picker_nav_normal">Navigazione</string>
+    <string name="icon_picker_phone">Telefono</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">Rss</string>
+    <string name="icon_picker_search">Ricerca</string>
+    <string name="icon_picker_sms">Messaggi</string>
+    <string name="icon_picker_twitter">Twitter</string>
 
 </resources>
