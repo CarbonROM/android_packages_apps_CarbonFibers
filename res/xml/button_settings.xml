@@ -49,6 +49,12 @@
             android:entryValues="@array/button_volume_default_values"
             android:persistent="false"/>
 
+        <CheckBoxPreference
+            android:key="button_volume_music_control"
+            android:title="@string/button_volume_music_control_title"
+            android:summary="@string/button_volume_music_control_summary"
+            android:persistent="false"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory

@@ -73,6 +73,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     
     private static final String BUTTON_VOLUME_WAKE = "button_volume_wake_screen";
     private static final String BUTTON_VOLUME_DEFAULT = "button_volume_default_screen";
+    private static final String BUTTON_VOLUME_MUSIC_CONTROL = "button_volume_music_control";
     private static final String CATEGORY_HEADSETHOOK = "button_headsethook";
     private static final String BUTTON_HEADSETHOOK_LAUNCH_VOICE = "button_headsethook_launch_voice";
 
@@ -112,6 +113,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final int KEY_MASK_APP_SWITCH = 0x10;
 
     private CheckBoxPreference mVolumeWake;
+    private CheckBoxPreference mVolumeMusicControl;
     private SwitchPreference mEnableCustomBindings;
     private ListPreference mBackPressAction;
     private ListPreference mBackLongPressAction;
@@ -162,6 +164,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             }
             mVolumeDefault.setValue(currentDefault);
             mVolumeDefault.setOnPreferenceChangeListener(this);
+
+            mVolumeMusicControl = (CheckBoxPreference) findPreference(BUTTON_VOLUME_MUSIC_CONTROL);
+            mVolumeMusicControl.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.VOLUME_MUSIC_CONTROL, 0) != 0);
         } else {
             prefScreen.removePreference(volumeCategory);
         }
@@ -401,7 +407,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.VIRTUAL_KEYS_HAPTIC_FEEDBACK, checked ? 1:0);
-
+            return true;
+        } else if (preference == mVolumeMusicControl) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.VOLUME_MUSIC_CONTROL, checked ? 1:0);
             return true;
         }
 
