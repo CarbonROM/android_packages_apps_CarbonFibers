@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 The OmniROM Project
+
+  Parts Copyright (C) 2012-2013 The CyanogenMod Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ok">Oke</string>
+    <string name="reset">Reset</string>
+
+    <string name="bars_and_menus_settings">Balken en menu\'s</string>
+    <string name="active_display_settings">ActiveDisplay</string>
+    <string name="bars_and_menus_category_status_bar_title">Statusbalk</string>
+    <string name="bars_and_menus_category_navigation_bar_title">Navigatiebalk</string>
+    <string name="status_bar_battery_title">Batterij stijl</string>
+    <string name="status_bar_toggle_brightness">Helderheid</string>
+    <string name="status_bar_toggle_brightness_summary">Pas de scherm helderheid aan door over de statusbalk te schuiven</string>
+    <string name="status_bar_toggle_info">Automatische helderheid is ingeschakeld</string>
+    <string name="status_bar_signal_text_title">Signaalstatus stijl</string>
+    <string name="status_bar_style_icon">Pictogram</string>
+    <string name="status_bar_style_hidden">Verborgen</string>
+    <string name="status_bar_signal_text_show_text">Tekst</string>
+    <string name="status_bar_battery_status_percentage">Percentage</string>
+    <string name="status_bar_battery_status_circle">Cirkel</string>
+    <string name="status_bar_battery_status_circle_percentage">Cirkel met percentage</string>
+    <string name="status_bar_notif_count_title">Notificatie aantal</string>
+    <string name="status_bar_notif_count_summary">Toon het aantal ongelezen notificaties</string>
+
+    <!-- String for IconPicker -->
+    <string name="icon_picker_title">Kies pictogram bron</string>
+    <string name="icon_picker_system_icons_title">Systeempictogram</string>
+    <string name="icon_picker_gallery_title">Galerij</string>
+    <string name="icon_picker_pack_title">Pictogrampakket</string>
+
+    <string name="profile_applist_title">Apps</string>
+    <string name="profile_choose_app">Kies app</string>
+    <string name="profiles_add">Voeg toe</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Notificatie-led instellingen</string>
+    <string name="pulse_speed_title">Notificatie-led lengte en snelheid</string>
+    <string name="color_list_title">Kleur</string>
+    <string name="default_time">Normaal</string>
+    <string name="custom_time">Aangepast</string>
+    <string name="dialog_test">Test</string>
+    <string name="dialog_delete_title">Verwijder</string>
+    <string name="dialog_delete_message">Verwijder geselecteerde item?</string>
+    <string name="dialog_test_message">Zet het scherm uit om een notificatie te bekijken of annuleer deze popup om de test te stoppen</string>
+    <string name="dialog_test_button">Annuleer</string>
+
+    <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_enable">Inschakelen</string>
+    <string name="notification_light_general_title">Algemeen</string>
+    <string name="notification_light_applist_title">Apps</string>
+    <string name="notification_light_phonelist_title">Telefoon</string>
+    <string name="notification_light_use_custom">Gebruik aangepaste waarde</string>
+    <string name="notification_light_enabled">Ingeschakeld</string>
+    <string name="notification_light_disabled">Uitgeschakeld</string>
+    <string name="notification_light_default_value">Standaard</string>
+    <string name="notification_light_missed_call_title">Gemist gesprek</string>
+    <string name="notification_light_voicemail_title">Voicemail</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Altijd aan</string>
+    <string name="pulse_length_very_short">Zeer kort</string>
+    <string name="pulse_length_short">Kort</string>
+    <string name="pulse_length_normal">Normaal</string>
+    <string name="pulse_length_long">Lang</string>
+    <string name="pulse_length_very_long">Zeer lang</string>
+    <string name="pulse_speed_very_fast">Zeer snel</string>
+    <string name="pulse_speed_fast">Snel</string>
+    <string name="pulse_speed_normal">Normaal</string>
+    <string name="pulse_speed_slow">Langzaam</string>
+    <string name="pulse_speed_very_slow">Zeer langzaam</string>
+
+    <string name="led_color_green">Groen</string>
+    <string name="led_color_red">Rood</string>
+
+    <!-- Battery light settings  -->
+    <string name="battery_light_enable">Inschakelen</string>
+    <string name="battery_low_pulse_title">Knipper indien de batterij bijna leeg is</string>
+    <string name="battery_light_list_title">Kleuren</string>
+    <string name="battery_light_low_color_title">Batterij bijna leeg</string>
+    <string name="battery_light_medium_color_title">Opladen</string>
+    <string name="battery_light_full_color_title">Opgeladen (90%)</string>
+    <string name="battery_light_really_full_color_title">Volledig opgeladen (100%)</string>
+    <string name="edit_battery_settings">Batterij-instellingen aanpassen</string>
+
+    <!-- brightness settings -->
+    <string name="brightness_settings_title">Helderheidinstellingen</string>
+    <string name="screen_current_value">Huidige helderheid: <xliff:g id="screen_level">%d</xliff:g></string>
+    <string name="button_current_value">Huidige knopwaarde: <xliff:g id="button_level">%d</xliff:g></string>
+
+    <string name="auto_brightness_sensitivity_title">Gevoeligheidsinstellingen</string>
+    <string name="auto_brightness_sensitivity_summary">Normaal</string>
+    <string name="auto_brightness_sensitivity_verylow">Heel laag</string>
+    <string name="auto_brightness_sensitivity_low">Leeg</string>
+    <string name="auto_brightness_sensitivity_medium">Normaal</string>
+    <string name="auto_brightness_sensitivity_high">Hoog</string>
+    <string name="auto_brightness_sensitivity_veryhigh">Heel hoog</string>
+
+    <string name="screen_brightness_category">Scherm</string>
+    <string name="screen_auto_brightness">Automatische waardes</string>
+    <string name="screen_auto_brighness_summary">Schermhelderheid automatisch bepalen</string>
+    <string name="button_auto_brightness">Automatische waardes</string>
+    <string name="button_auto_brighness_summary">Knoppenhelderheid automatisch bepalen</string>
+    <string name="button_brightness_category">Knoppen</string>
+    <string name="button_no_brightness">Donkere modus</string>
+    <string name="button_no_brightness_summary">Geen knoppenhelderheid</string>
+    <string name="button_link_brightness">Link naar scherm</string>
+    <string name="button_link_brightness_summary">Knoppen helderheid zullen de zelfde waarde als het scherm gebruiken</string>
+    <string name="button_manual_brightness">Handmatige waardes</string>
+    <string name="button_manual_brightness_summary">Handmatige waardes voor de knoppen</string>
+    <string name="dialog_manual_brightness_title">Handmatige knoppen helderheid</string>
+    <!-- Automatic brightness customization -->
+    <string name="auto_brightness_setup_title">Automatische scherm helderheid</string>
+    <string name="light_sensor_current_value">Huidige helderheid sensor waarde: <xliff:g id="light_level">%d</xliff:g> lux</string>
+    <string name="auto_brightness_dialog_title">Automatische helderheid waardes</string>
+    <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g></string>
+    <string name="auto_brightness_last_level_format"><xliff:g id="level">%1$d</xliff:g>+</string>
+    <string name="auto_brightness_adjust_button">Aanpassen</string>
+    <string name="auto_brightness_close_button">Sluiten</string>
+    <string name="auto_brightness_reset_button">Reset</string>
+    <string name="auto_brightness_split_dialog_title">Tussen helderheid waarde</string>
+    <string name="auto_brightness_level_dialog_title">Helderheid level</string>
+    <string name="auto_brightness_lux">Omgevingshelderheid (lux)</string>
+    <string name="auto_brightness_backlight">Helderheid</string>
+    <string name="auto_brightness_reset_dialog_title">Reset waardes?</string>
+    <string name="auto_brightness_reset_confirmation">Alle helderheidwaardes worden naar de standaard gereset.</string>
+    <string name="auto_brightness_split_lux_format">Tussen positie (tussen <xliff:g id="min">%1$d</xliff:g> en <xliff:g id="max">%2$d</xliff:g> lux)</string>
+    <string name="auto_brightness_level_options">Opties voor helderheidwaardes</string>
+    <string name="auto_brightness_menu_edit">Bewerken</string>
+    <string name="auto_brightness_menu_split">Tussen</string>
+    <string name="auto_brightness_menu_remove">Verwijder</string>
+    <string name="sensor_category">Sensor</string>
+    <string name="button_timeout_title">Timeout</string>
+    <plurals name="button_timeout_time">
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> seconde</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconden</item>
+    </plurals>
+    <string name="button_timeout_enabled">Ingeschakeld voor <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="button_timeout_disabled">Uitgeschakeld</string>
+    <string name="dialog_button_timeout_title">Knoppenhelderheid timeout</string>
+
+    <!-- button settings -->
+    <string name="button_volume_keys_title">Volume</string>
+    <string name="button_volume_wake_title">Volumeknop ontwaken</string>
+    <string name="button_volume_wake_summary">Maak je apparaat wakker door op de volumeknop te drukken</string>
+    <string name="button_headsethook_title">Koptelefoon</string>
+    <string name="button_headsethook_launch_voice_title">Koptelefoon start microfoon</string>
+    <string name="button_headsethook_launch_voice_summary">Drukken op de koptelefoonknop start de microfoon</string>
+
+    <!-- Network speed -->
+    <string name="show_network_speed">Netwerksnelheidsindicator</string>
+    <string name="show_network_speed_summary">Toon de netwerksnelheid in de statusbalk</string>
+
+    <!-- Status Bar Activity Indicators -->
+    <string name="show_activity_indicators_on_status_bar_title">Netwerk activiteiten indicator</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Laat de netwerk activiteiten indicator in de statusbalk zien</string>
+
+    <!-- Hardware keys -->
+    <string name="button_keys_title">Knoppen</string>
+    <string name="keys_bindings_title">Knop acties</string>
+    <string name="button_keys_back_title" >Terugknop</string>
+    <string name="button_keys_home_title" >Home-knop</string>
+    <string name="button_keys_menu_title" >Menu-knop</string>
+    <string name="button_keys_assist_title" >Zoekknop</string>
+    <string name="button_keys_appSwitch_title" >Recente apps-knop</string>
+    <string name="keys_enable_custom_title">Aangepaste acties</string>
+    <string name="keys_back_press_title">Terugknop</string>
+    <string name="keys_back_long_press_title">Terugknop (ingedrukt houden)</string>
+    <string name="keys_home_press_title">Home-knop</string>
+    <string name="keys_home_long_press_title">Home-knop (ingedrukt houden)</string>
+    <string name="keys_home_double_tap_title">Home-knop (dubbele tik)</string>
+    <string name="keys_menu_press_title">Menu-knop</string>
+    <string name="keys_menu_long_press_title">Menu-knop (ingedrukt houden)</string>
+    <string name="keys_assist_press_title">Zoek knop</string>
+    <string name="keys_assist_long_press_title">Zoek knop (ingedrukt houden)</string>
+    <string name="keys_app_switch_press_title">App switch knop</string>
+    <string name="keys_app_switch_long_press_title">App switch knop (ingedrukt houden)</string>
+    <string name="keys_action_nothing">Geen actie</string>
+    <string name="keys_action_menu">Open/sluit menu</string>
+    <string name="keys_action_app_switch">Recente apps switcher</string>
+    <string name="keys_action_search">Zoek assistent</string>
+    <string name="keys_action_voice_search">Spraakgestuurd zoeken</string>
+    <string name="keys_action_in_app_search">In-app zoeken</string>
+    <string name="keys_action_home">Home-knop</string>
+    <string name="keys_action_back">Back knop</string>
+    <string name="keys_action_last_app">Terug naar laatste app</string>
+    <string name="keys_action_kill_app">Sluit app</string>
+    <string name="keys_action_normal">Normaal indrukken</string>
+    <string name="keys_action_long">Ingedrukt houden</string>
+    <string name="keys_action_double">Dubbele tik</string>
+    <string name="dialog_no_home_key_title">Geen home actie</string>
+    <string name="no_home_key">Je hebt geen knop toegewezen aan de \"Home"\ actie! Dit kan je apparaat onbruikbaar maken!</string>
+
+    <!-- Power Menu Options-->
+    <string name="bars_and_menus_category_power_menu_title">Power-menu</string>
+    <string name="power_menu_toggle_screenshot_title">Schermafbeelding</string>
+    <string name="power_menu_toggle_screenshot_summary">Toon schermafbeelding optie in power-menu</string>
+    <string name="power_menu_toggle_screenrecord_title">Schermopname</string>
+    <string name="power_menu_toggle_screenrecord_summary">Toon schermopname optie in power-menu</string>
+
+    <!-- Active Display Notifications -->
+    <string name="ad_settings_title">Actieve weergave</string>
+    <string name="ad_settings_summary">Actieve weergave instellingen aanpassen</string>
+    <string name="ad_enable_title">Inschakelen</string>
+    <string name="ad_enable_summary_on">Actieve weergave ingeschakeld</string>
+    <string name="ad_enable_summary_off">Actieve weergave uitgeschakeld</string>
+    <string name="ad_text_title">Notificatietekst</string>
+    <string name="ad_text_summary">Toon notificatietekst om de ring heen.</string>
+    <string name="ad_all_notifications_title">Alle notificaties</string>
+    <string name="ad_all_notifications_summary">Toon alle notificaties inclusief huidige &amp; niet verwijderbare notificaties.</string>
+    <string name="ad_hide_low_priority_title">Verberg lage prioriteit</string>
+    <string name="ad_hide_low_priority_title">Verberg lage prioriteit</string>
+    <string name="ad_hide_low_priority_summary">Verberg notificaties met lage prioriteit zoals die van Google Now.</string>
+    <string name="ad_pocket_mode_summary">Toon Actieve weergave notificaties wanneer je je apparaat uit je broekzak haalt.</string>
+    <string name="ad_pocket_mode_title">Broekzak modus</string>
+    <string name="ad_redisplay_title">Her-toon notificatie</string>
+    <string name="ad_timeout_title">Scherm timeout</string>
+    <string name="ad_threshold_title">Limiet voor proximity</string>
+    <string name="ad_brightness_title">Notificatiehelderheid</string>
+    <string name="ad_customizations_title">Aanpassingen</string>
+    <string name="ad_excluded_apps_title">Uitgesloten apps</string>
+    <string name="ad_excluded_apps_summary">Uitgesloten apps zullen niet worden getoond in Actieve weergave.</string>
+    <string name="ad_show_date_title">Toon datum</string>
+    <string name="ad_show_ampm_title">Toon AM/PM</string>
+    <string name="ad_sunlight_mode_title">Zonlicht-mode</string>
+    <string name="ad_brightness_summary">Helderheids level voor notificaties wanneer automatische helderheid is uitgeschakeld.</string>
+    <string name="ad_show_date_summary">Toon datum boven de klok</string>
+    <string name="ad_show_ampm_summary">Toon AM/PM naast de klok wanneer 12 uur formaat wordt gebruikt</string>
+    <string name="ad_sunlight_mode_summary">De kleuren in gebieden met fel licht zoals in zonlicht aanpassen.</string>
+    <string name="ad_turnoff_mode_title">Zet scherm uit</string>
+    <string name="ad_turnoff_mode_summary">Zet scherm uit wanneer het apparaat weer in de broekzak wordt gedaan en aan was gezet door Actieve weergave.</string>
+    <string name="ad_redisplay_never">Nooit</string>
+    <string name="ad_redisplay_1m">1 minuut</string>
+    <string name="ad_redisplay_5m">5 minuten</string>
+    <string name="ad_redisplay_15m">15 minuten</string>
+    <string name="ad_redisplay_30m">30 minuten</string>
+    <string name="ad_redisplay_1h">1 uur</string>
+    <string name="ad_redisplay_2h">2 uur</string>
+    <string name="ad_redisplay_5h">5 uur</string>
+    <string name="ad_timeout_3s">3 seconden</string>
+    <string name="ad_timeout_5s">5 seconden</string>
+    <string name="ad_timeout_8s">8 seconden</string>
+    <string name="ad_timeout_10s">10 seconden</string>
+    <string name="ad_timeout_15s">15 seconden</string>
+    <string name="ad_timeout_25s">25 seconden</string>
+    <string name="ad_threshold_0s">Direct</string>
+    <string name="ad_threshold_1s">1 seconde</string>
+    <string name="ad_threshold_2s">2 seconden</string>
+    <string name="ad_threshold_3s">3 seconden</string>
+    <string name="ad_threshold_4s">4 seconden</string>
+    <string name="ad_threshold_5s">5 seconden</string>
+    <string name="ad_pocket_mode_off">Uit</string>
+    <string name="ad_pocket_mode_notifications">Alleen notificaties</string>
+    <string name="ad_pocket_mode_always">Altijd</string>
+    <string name="bars_and_menus_category_recent_panel_title" >Recent bekeken</string>
+
+    <!--  Recents clear all -->
+    <string name="show_recent_clear_all_button_title">Sluit recente apps-knop</string>
+    <string name="show_recent_clear_all_button_summary">Laat de sluit alles knop zien in het recente apps overzicht</string>
+    <string name="recent_clear_all_button_location_title">Sluit alles knop positie</string>
+    <string name="recent_clear_all_button_location_summary">Kies een positie voor de sluit alles knop</string>
+    <string name="recent_clear_all_button_location_top_left">Linksboven</string>
+    <string name="recent_clear_all_button_location_top_right">Rechtsboven</string>
+    <string name="recent_clear_all_button_location_bottom_left">Linksonder</string>
+    <string name="recent_clear_all_button_location_bottom_right">Rechtsonder</string>
+
+    <!-- Memory Indicator -->
+    <string name="show_recents_memory_indicator_title">Ram indicator</string>
+    <string name="show_recents_memory_indicator_summary">Toon een ram geheugen indicator in het recente apps overzicht</string>
+    <string name="recents_memory_indicator_location_title">Ram indicator positie</string>
+    <string name="recents_memory_indicator_location_summary">Kies positie van de geheugen indicator</string>
+
+    <!-- Contextual Notification Panel Header -->
+    <string name="notification_drawer_category_title">Notificatieoverzicht</string>
+    <string name="custom_statusbar_header_title">Contextuele bovenkant notificatiepaneel</string>
+    <string name="custom_statusbar_header_summary">Pas achtergrond van de bovenkant van het notificatiepaneel aan naar huidige tijd en datum</string>
+
+    <!-- Volume default -->
+    <string name="button_volume_default_none">Geen</string>
+    <string name="button_volume_default_ringer">Telefoon</string>
+    <string name="button_volume_default_media">Media</string>
+    <string name="button_volume_default_title">Standaardvolume</string>
+    <string name="button_volume_default_summary">Kies welk volume standaard wordt aangepast</string>
+
+    <!-- Navigation ring shortcuts -->
+    <string name="navigation_ring_title">Snelstarten snelkoppelingen</string>
+    <string name="navring_target_reset_message">Verwijder alle gebruiker gemaakte navigatiebalk snelkoppelingen en verander naar standaard?</string>
+    <string name="navring_target_reset">Reset navigatiebalk snelkoppeling naar standaard</string>
+    <string name="navring_action_open_ime_switcher">Open IME switcher</string>
+    <string name="navring_action_kill_app">Sluit app</string>
+    <string name="navring_action_none">Geen</string>
+    <string name="navring_action_take_screenshot">Maak schermafbeelding</string>
+    <string name="navring_action_ring_vibrate">Geluid/trillen</string>
+    <string name="navring_action_ring_silent">Geluid/stil</string>
+    <string name="navring_action_ring_vibrate_silent">Geluid/trillen/stil</string>
+    <string name="navring_action_screen_off">Scherm uit</string>
+    <string name="navring_action_torch">Zaklamp aan/uit</string>
+    <string name="navring_action_google_now">Google Now</string>
+    <string name="navring_choose_action_title">Kies actie</string>
+
+    <!-- String for IconPicker -->
+    <string name="icon_picker_title">Kies pictogram bron</string>
+    <string name="icon_picker_system_icons_title">Systeempictogram</string>
+    <string name="icon_picker_gallery_title">Galerij</string>
+    <string name="icon_picker_pack_title">Pictogrampakket</string>
+
+    <!-- Lock Screen Shortcuts -->
+    <string name="lockscreen_target_info">Sleep de slider naar doelen om een snelkoppelingen te maken</string>
+    <string name="lockscreen_target_title">Slider snelkoppelingen</string>
+    <string name="lockscreen_target_summary">Bekijk of verander vergrendelscherm snelkoppelingen</string>
+    <string name="lockscreen_target_reset">Vergrendelscherm snelkoppelingen resetten naar standaard</string>
+    <string name="lockscreen_target_reset_title">Resetten</string>
+    <string name="lockscreen_target_reset_message">Verwijder de door gebruikers gemaakte vergrendelscherm snelkoppelingen en reset naar standaard?</string>
+    <string name="lockscreen_target_empty">Leeg</string>
+    <string name="lockscreen_target_edit_title">Verander pictogram &amp; snelkoppeling</string>
+    <string name="lockscreen_target_edit_msg">Kies of verander de gekozen app of activiteit en het pictogram</string>
+
+    <!-- Lock screen shortcuts -->
+    <string name="picker_activities">Activiteiten</string>
+    <string name="select_custom_app_title">Kies andere app</string>
+    <string name="select_custom_activity_title">Kies andere activiteit</string>
+    <string name="icon_picker_choose_icon_title">Kies pictogram</string>
+    <string name="icon_picker_alarm">Alarm</string>
+    <string name="icon_picker_browser">Browser</string>
+    <string name="icon_picker_calendar">Calender</string>
+    <string name="icon_picker_camera">Camera</string>
+    <string name="icon_picker_chrome">Chrome</string>
+    <string name="icon_picker_contacts">Contacten</string>
+    <string name="icon_picker_email">E-mail</string>
+    <string name="icon_picker_email2">E-mail Holo</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Galerij</string>
+    <string name="icon_picker_google_small">Google (klein)</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Hangouts</string>
+    <string name="icon_picker_maps">Maps</string>
+    <string name="icon_picker_movie">Films</string>
+    <string name="icon_picker_music">Muziek</string>
+    <string name="icon_picker_nav_normal">Navigatie</string>
+    <string name="icon_picker_phone">Telefoon</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">Rss</string>
+    <string name="icon_picker_search">Zoeken</string>
+    <string name="icon_picker_sms">Berichten</string>
+    <string name="icon_picker_twitter">Twitter</string>
+
+</resources>
