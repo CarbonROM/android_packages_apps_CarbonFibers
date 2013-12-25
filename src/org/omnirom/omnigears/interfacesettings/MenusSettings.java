@@ -37,6 +37,7 @@ public class MenusSettings extends SettingsPreferenceFragment implements
     private static final String TAG = "MenusSettings";
     private ContentResolver resolver;
 
+    private static final String POWER_MENU_CATEGORY = "category_power_menu";
     private static final String POWER_MENU_SCREENSHOT = "power_menu_screenshot";
     private static final String POWER_MENU_SCREENRECORD = "power_menu_screenrecord";
 
@@ -51,21 +52,20 @@ public class MenusSettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
         resolver = getActivity().getContentResolver();
 
-        boolean mHasScreenRecord = getActivity().getResources().getBoolean(
-                com.android.internal.R.bool.config_enableScreenrecordChord);
-
         mScreenshotPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_SCREENSHOT);
         mScreenshotPowerMenu.setChecked(Settings.System.getInt(resolver,
                 Settings.System.SCREENSHOT_IN_POWER_MENU, 0) == 1);
         mScreenshotPowerMenu.setOnPreferenceChangeListener(this);
 
         mScreenrecordPowerMenu = (CheckBoxPreference) prefSet.findPreference(POWER_MENU_SCREENRECORD);
-        if(mHasScreenRecord) {
+        if (!getResources().getBoolean(com.android.internal.R.bool.config_enableScreenrecordChord)) {
+            PreferenceGroup powerMenuCategory = (PreferenceGroup)
+                findPreference(POWER_MENU_CATEGORY);
+            powerMenuCategory.removePreference(mScreenrecordPowerMenu);
+        } else {
             mScreenrecordPowerMenu.setChecked(Settings.System.getInt(resolver,
                     Settings.System.SCREENRECORD_IN_POWER_MENU, 0) == 1);
             mScreenrecordPowerMenu.setOnPreferenceChangeListener(this);
-        } else {
-            prefSet.removePreference(mScreenrecordPowerMenu);
         }
     }
 
