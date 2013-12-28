@@ -360,4 +360,7 @@
     <string name="icon_picker_sms">Messaging</string>
     <string name="icon_picker_twitter">Twitter</string>
 
+    <!-- Status Bar QS Quick pulldown -->
+    <string name="qs_quick_pulldown_title">Quick Settings pulldown</string>
+    <string name="qs_quick_pulldown_summary">Access Quick Settings by pulling down on the right side of the status bar</string>
 </resources>
