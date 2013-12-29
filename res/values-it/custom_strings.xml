@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--  Copyright (C) 2013 The OmniROM Project
 
   Parts Copyright (C) 2012-2013 The CyanogenMod Project
@@ -158,8 +158,8 @@
     <string name="button_volume_wake_title">Attiva con il pulsante volume</string>
     <string name="button_volume_wake_summary">Premendo un pulsante del volume si attiverà il tuo dispositivo</string>
     <string name="button_headsethook_title">Auricolari</string>
-    <string name="button_headsethook_launch_voice_title">Comandi vocali auriculare</string>
-    <string name="button_headsethook_launch_voice_summary">Premendo il pulsante dell\'auricolare si lanceranno i comandi vocali</string>
+    <string name="button_headsethook_launch_voice_title">Comandi vocali auricolare</string>
+    <string name="button_headsethook_launch_voice_summary">Premendo il pulsante dell\'auricolare si eseguiranno i comandi vocali</string>
 
     <!-- Network speed -->
     <string name="show_network_speed">Mostra velocità della rete</string>
@@ -204,13 +204,21 @@
     <string name="keys_action_double">Doppio tocco</string>
     <string name="dialog_no_home_key_title">Nessuna azione tasto Home</string>
     <string name="no_home_key">Non hai assegnato nessuna azione al tasto \"Home\"! Questo può rendere il dispositivo inutilizzabile!</string>
+    <string name="virtual_key_haptic_feedback_title">Vibrazione e tocco</string>
+    <string name="virtual_key_haptic_feedback_summary">Attivare le dipendenze di \"Vibrazione e tocco\" nelle impostazioni audio</string>
 
     <!-- Power Menu Options-->
     <string name="bars_and_menus_category_power_menu_title">Menu di spegnimento</string>
     <string name="power_menu_toggle_screenshot_title">Mostra screenshot</string>
-    <string name="power_menu_toggle_screenshot_summary">Mostra l\'opzione di screenshot nel menu di spegnimento</string>
+    <string name="power_menu_toggle_screenshot_summary">Mostra l\'opzione di Screenshot nel menu di spegnimento</string>
     <string name="power_menu_toggle_screenrecord_title">Mostra registra schermo</string>
-    <string name="power_menu_toggle_screenrecord_summary">Mostra l\'opzione registra schermo nel menu di spegnimento</string>
+    <string name="power_menu_toggle_screenrecord_summary">Mostra l\'opzione Registra schermo nel menu di spegnimento</string>
+<string name="power_menu_toggle_mobile_data_title">Dati</string>
+    <string name="power_menu_toggle_mobile_data_summary">Mostra l\'opzione Dati nel menu di spegnimento</string>
+    <string name="power_menu_toggle_airplane_mode_title">Modalità aereo</string>
+    <string name="power_menu_toggle_airplane_mode_summary">Mostra l\'opzione Modalità aereo nel menu di spegnimento</string>
+    <string name="power_menu_toggle_sound_toggles_title">Audio</string>
+    <string name="power_menu_toggle_sound_toggles_summary">Mostra l\'opzione Audio nel menu di spegnimento</string>
 
     <!-- Active Display Notifications -->
     <string name="ad_settings_title">Active display</string>
@@ -356,5 +364,8 @@
     <string name="icon_picker_search">Ricerca</string>
     <string name="icon_picker_sms">Messaggi</string>
     <string name="icon_picker_twitter">Twitter</string>
+    <!-- Status Bar QS Quick pulldown -->
+    <string name="qs_quick_pulldown_title">Impostazioni rapide barra di stato</string>
+    <string name="qs_quick_pulldown_summary">Accedi alle impostazioni rapide effettuando uno swipe verso il basso sul lato destro della barra di stato</string>
 
 </resources>
