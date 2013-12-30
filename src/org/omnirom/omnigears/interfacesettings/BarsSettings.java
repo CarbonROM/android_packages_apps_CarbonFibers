@@ -25,6 +25,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.RemoteException;
+import android.os.SystemProperties;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
@@ -89,7 +90,11 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
 
-        boolean hasNavBar = getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
+        boolean hasNavBar = getResources().getBoolean(
+                com.android.internal.R.bool.config_showNavigationBar);
+        // Also check, if users without navigation bar force enabled it.
+        hasNavBar = hasNavBar || (SystemProperties.getInt("qemu.hw.mainkeys", 1) == 0);
+
         // Hide navigation bar category on devices without navigation bar
         if (!hasNavBar) {
             prefSet.removePreference(findPreference(CATEGORY_NAVBAR));
