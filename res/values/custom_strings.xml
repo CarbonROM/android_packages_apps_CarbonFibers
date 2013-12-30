@@ -378,4 +378,9 @@
     <string name="quick_pulldown_left">Left</string>
     <string name="quick_pulldown_right">Right</string>
 
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Cursor control</string>
+    <string name="volume_key_cursor_control_on">Left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Right/left</string>
+
 </resources>
