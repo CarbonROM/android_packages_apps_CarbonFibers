@@ -370,7 +370,12 @@
     <string name="icon_picker_sms">Messaging</string>
     <string name="icon_picker_twitter">Twitter</string>
 
-    <!-- Status Bar QS Quick pulldown -->
-    <string name="qs_quick_pulldown_title">Quick Settings pulldown</string>
-    <string name="qs_quick_pulldown_summary">Access Quick Settings by pulling down on the right side of the status bar</string>
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Quick pulldown</string>
+    <string name="summary_quick_pulldown">Quickly pulldown quicksettings with one finger</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_centre">Centre</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
+
 </resources>

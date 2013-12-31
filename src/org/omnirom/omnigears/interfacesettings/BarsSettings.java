@@ -27,6 +27,7 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.SystemProperties;
 import android.preference.CheckBoxPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
@@ -43,15 +44,14 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
     private static final String STATUS_BAR_TRAFFIC = "status_bar_traffic";
     private static final String STATUS_BAR_NETWORK_ACTIVITY = "status_bar_network_activity";
-    private static final String STATUS_BAR_QS_QUICK_PULLDOWN = "status_bar_qs_quick_pulldown";
-
+    private static final String QUICK_PULLDOWN = "quick_pulldown";
     private static final String CATEGORY_NAVBAR = "category_navigation_bar";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
     private CheckBoxPreference mStatusBarTraffic;
     private CheckBoxPreference mStatusBarNetworkActivity;
-    private CheckBoxPreference mStatusBarQsPulldown;
+    private ListPreference mQuickPulldown;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -90,6 +90,12 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
 
+        mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
+        mQuickPulldown.setOnPreferenceChangeListener(this);
+        int statusQuickPulldown = Settings.System.getInt(getContentResolver(),
+                Settings.System.QS_QUICK_PULLDOWN, 0);
+        mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
+
         boolean hasNavBar = getResources().getBoolean(
                 com.android.internal.R.bool.config_showNavigationBar);
         // Also check, if users without navigation bar force enabled it.
@@ -99,11 +105,6 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         if (!hasNavBar) {
             prefSet.removePreference(findPreference(CATEGORY_NAVBAR));
         }
-
-        mStatusBarQsPulldown = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_QS_QUICK_PULLDOWN);
-        mStatusBarQsPulldown.setChecked(Settings.System.getInt(resolver,
-            Settings.System.STATUS_BAR_QS_QUICK_PULLDOWN, 0) == 1);
-        mStatusBarQsPulldown.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -128,10 +129,10 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,
                 Settings.System.STATUS_BAR_NETWORK_ACTIVITY, value ? 1 : 0);
-        } else if (preference == mStatusBarQsPulldown) {
-            boolean value = (Boolean) objValue;
+        } else if (preference == mQuickPulldown) {
+            int statusQuickPulldown = Integer.valueOf((String) objValue);
             Settings.System.putInt(resolver,
-                Settings.System.STATUS_BAR_QS_QUICK_PULLDOWN, value ? 1 : 0);
+                Settings.System.QS_QUICK_PULLDOWN, statusQuickPulldown);
         } else {
             return false;
         }
