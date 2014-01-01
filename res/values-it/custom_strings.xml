@@ -210,15 +210,15 @@
     <!-- Power Menu Options-->
     <string name="bars_and_menus_category_power_menu_title">Menu di spegnimento</string>
     <string name="power_menu_toggle_screenshot_title">Mostra screenshot</string>
-    <string name="power_menu_toggle_screenshot_summary">Mostra l\'opzione di Screenshot nel menu di spegnimento</string>
+    <string name="power_menu_toggle_screenshot_summary">Mostra l\'opzione di screenshot nel menu di spegnimento</string>
     <string name="power_menu_toggle_screenrecord_title">Mostra registra schermo</string>
-    <string name="power_menu_toggle_screenrecord_summary">Mostra l\'opzione Registra schermo nel menu di spegnimento</string>
-<string name="power_menu_toggle_mobile_data_title">Dati</string>
-    <string name="power_menu_toggle_mobile_data_summary">Mostra l\'opzione Dati nel menu di spegnimento</string>
+    <string name="power_menu_toggle_screenrecord_summary">Mostra l\'opzione registra schermo nel menu di spegnimento</string>
+    <string name="power_menu_toggle_mobile_data_title">Connessione dati</string>
+    <string name="power_menu_toggle_mobile_data_summary">Mostra l\'opzione connessione dati nel menu di spegnimento</string>
     <string name="power_menu_toggle_airplane_mode_title">Modalità aereo</string>
-    <string name="power_menu_toggle_airplane_mode_summary">Mostra l\'opzione Modalità aereo nel menu di spegnimento</string>
-    <string name="power_menu_toggle_sound_toggles_title">Audio</string>
-    <string name="power_menu_toggle_sound_toggles_summary">Mostra l\'opzione Audio nel menu di spegnimento</string>
+    <string name="power_menu_toggle_airplane_mode_summary">Mostra la modalità aereo nel menu di spegnimento</string>
+    <string name="power_menu_toggle_sound_toggles_title">Toggle Audio</string>
+    <string name="power_menu_toggle_sound_toggles_summary">Mostra i toggle audio nel menu di spegnimento</string>
 
     <!-- Active Display Notifications -->
     <string name="ad_settings_title">Active display</string>
