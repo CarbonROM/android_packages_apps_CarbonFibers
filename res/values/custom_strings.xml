@@ -373,6 +373,10 @@
     <string name="icon_picker_sms">Messaging</string>
     <string name="icon_picker_twitter">Twitter</string>
 
+    <!-- QuickSettings: Dynamic Row -->
+    <string name="qs_configurable_title">QuickSettings configurable</string>
+    <string name="qs_configurable_summary">Enable/disable dynamic row changes</string>
+
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Quick pulldown</string>
     <string name="summary_quick_pulldown">Quickly pulldown quicksettings with one finger</string>

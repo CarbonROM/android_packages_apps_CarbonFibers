@@ -57,6 +57,12 @@
                 android:entryValues="@array/quick_pulldown_values"
                 android:persistent="false" />
 
+        <CheckBoxPreference
+                android:key="quicksettings_dynamic_row"
+                android:title="@string/qs_configurable_title"
+                android:summary="@string/qs_configurable_summary"
+                android:persistent="false"/>
+
     </PreferenceCategory>
 
     <!-- Navigation bar -->
