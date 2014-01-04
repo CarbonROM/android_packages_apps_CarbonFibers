@@ -383,4 +383,8 @@
     <string name="volume_key_cursor_control_on">Left/right</string>
     <string name="volume_key_cursor_control_on_reverse">Right/left</string>
 
+    <!-- Quick Swipe -->
+    <string name="quick_swipe_title">Quick swipe</string>
+    <string name="quick_swipe_summary">Quickly swipe between quick settings and notification drawer</string>
+
 </resources>
