@@ -288,7 +288,7 @@
     </string-array>
 
     <!--- Volume key cursor control -->
-    <string-array name="volume_key_cursor_control_entries">
+    <string-array name="volume_key_cursor_control_entries" translatable="false">
         <item>@string/disabled</item>
         <item>@string/volume_key_cursor_control_on</item>
         <item>@string/volume_key_cursor_control_on_reverse</item>
