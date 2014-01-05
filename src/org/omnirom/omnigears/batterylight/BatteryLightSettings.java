@@ -153,7 +153,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         }
     }
 
-    @Override
+    /*@Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.add(0, MENU_RESET, 0, R.string.reset)
                 .setIcon(R.drawable.ic_settings_backup) // use the backup icon
@@ -185,7 +185,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Settings.System.putInt(resolver, Settings.System.BATTERY_LIGHT_REALLY_FULL_COLOR,
                 res.getInteger(com.android.internal.R.integer.config_notificationsBatteryFullARGB));
         refreshDefault();
-    }
+    }*/
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {

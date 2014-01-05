@@ -4,17 +4,9 @@
     android:layout_height="wrap_content"
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:gravity="center_vertical"
+    android:paddingStart="5dp"
+    android:paddingEnd="?android:attr/scrollbarSize"
     android:background="?android:attr/selectableItemBackground" >
-
-    <ImageView
-        android:id="@+android:id/icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="4dip"
-        android:maxWidth="36dip"
-        android:maxHeight="36dip"
-        android:adjustViewBounds="true"
-        android:layout_gravity="center" />
 
     <RelativeLayout
         android:layout_width="0dip"

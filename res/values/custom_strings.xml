@@ -72,6 +72,7 @@
     <string name="notification_light_default_value">Default</string>
     <string name="notification_light_missed_call_title">Missed call</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
+    <string name="notification_light_screen_on_title">Show when screen is on</string>
 
     <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Always on</string>
@@ -479,4 +480,5 @@
     <string name="clock_date_style_normal">Normal</string>
     <string name="clock_date_style_lowercase">Lowercase</string>
     <string name="clock_date_style_uppercase">Uppercase</string>
+
 </resources>
