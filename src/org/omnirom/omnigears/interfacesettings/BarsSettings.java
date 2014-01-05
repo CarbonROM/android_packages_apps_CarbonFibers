@@ -61,13 +61,15 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-        mStatusBarBrightnessControl = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
-        mStatusBarBrightnessControl.setChecked((Settings.System.getInt(resolver,Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, 0) == 1));
+        mStatusBarBrightnessControl =
+                (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
+        mStatusBarBrightnessControl.setChecked((Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, 0) == 1));
         mStatusBarBrightnessControl.setOnPreferenceChangeListener(this);
 
         try {
-            if (Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.SCREEN_BRIGHTNESS_MODE) == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
+            if (Settings.System.getInt(resolver, Settings.System.SCREEN_BRIGHTNESS_MODE)
+                    == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
                 mStatusBarBrightnessControl.setEnabled(false);
                 mStatusBarBrightnessControl.setSummary(R.string.status_bar_toggle_info);
             }
@@ -80,23 +82,25 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         mStatusBarNotifCount.setOnPreferenceChangeListener(this);
 
         mStatusBarTraffic = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_TRAFFIC);
-        mStatusBarTraffic.setChecked(Settings.System.getInt(resolver,
-            Settings.System.STATUS_BAR_TRAFFIC, 0) == 1);
+        int intState = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_TRAFFIC, 0);
+        intState = setStatusBarTrafficSummary(intState);
+        mStatusBarTraffic.setChecked(intState > 0);
         mStatusBarTraffic.setOnPreferenceChangeListener(this);
 
-        mStatusBarNetworkActivity = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_NETWORK_ACTIVITY);
+        mStatusBarNetworkActivity =
+                (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_NETWORK_ACTIVITY);
         mStatusBarNetworkActivity.setChecked(Settings.System.getInt(resolver,
-            Settings.System.STATUS_BAR_NETWORK_ACTIVITY, 0) == 1);
+                Settings.System.STATUS_BAR_NETWORK_ACTIVITY, 0) == 1);
         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
 
         mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
-        int statusQuickPulldown = Settings.System.getInt(getContentResolver(),
-                Settings.System.QS_QUICK_PULLDOWN, 0);
+        int statusQuickPulldown =
+                Settings.System.getInt(resolver, Settings.System.QS_QUICK_PULLDOWN,0);
         mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
 
-        boolean hasNavBar = getResources().getBoolean(
-                com.android.internal.R.bool.config_showNavigationBar);
+        boolean hasNavBar =
+                getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
         // Also check, if users without navigation bar force enabled it.
         hasNavBar = hasNavBar || (SystemProperties.getInt("qemu.hw.mainkeys", 1) == 0);
 
@@ -112,29 +116,48 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
+    @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mStatusBarBrightnessControl) {
             boolean value = (Boolean) objValue;
-            Settings.System.putInt(resolver,Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, value ? 1 : 0);
+            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL,
+                    value ? 1 : 0);
         } else if (preference == mStatusBarNotifCount) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_NOTIF_COUNT, value ? 1 : 0);
         } else if (preference == mStatusBarTraffic) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(resolver,
-                Settings.System.STATUS_BAR_TRAFFIC, value ? 1 : 0);
+
+            // Increment the state and then update the label
+            int intState = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_TRAFFIC, 0);
+            intState++;
+            intState = setStatusBarTrafficSummary(intState);
+            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_TRAFFIC, intState);
+            if (intState > 1) {return false;}
         } else if (preference == mStatusBarNetworkActivity) {
             boolean value = (Boolean) objValue;
-            Settings.System.putInt(resolver,
-                Settings.System.STATUS_BAR_NETWORK_ACTIVITY, value ? 1 : 0);
+            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_NETWORK_ACTIVITY,
+                    value ? 1 : 0);
         } else if (preference == mQuickPulldown) {
             int statusQuickPulldown = Integer.valueOf((String) objValue);
-            Settings.System.putInt(resolver,
-                Settings.System.QS_QUICK_PULLDOWN, statusQuickPulldown);
+            Settings.System.putInt(resolver, Settings.System.QS_QUICK_PULLDOWN,
+                    statusQuickPulldown);
         } else {
             return false;
         }
         return true;
+    }
+
+    private int setStatusBarTrafficSummary(int intState) {
+        // These states must match com.android.systemui.statusbar.policy.Traffic
+        if (intState == 1) {
+            mStatusBarTraffic.setSummary(R.string.show_network_speed_bits);
+        } else if (intState == 2) {
+            mStatusBarTraffic.setSummary(R.string.show_network_speed_bytes);
+        } else {
+            mStatusBarTraffic.setSummary(R.string.show_network_speed_summary);
+            return 0;
+        }
+        return intState;
     }
 }

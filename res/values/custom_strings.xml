@@ -168,6 +168,8 @@
     <!-- Network speed -->
     <string name="show_network_speed">Network speed indicator</string>
     <string name="show_network_speed_summary">Show network speed in statusbar</string>
+    <string name="show_network_speed_bits">Show speed as bits per second</string>
+    <string name="show_network_speed_bytes">Show speed as Bytes per second</string>
 
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Network activity indicator</string>
