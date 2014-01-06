@@ -23,6 +23,7 @@
     <string name="bars_and_menus_settings">Menu e barra notif.</string>
     <string name="active_display_settings">Active display</string>
     <string name="bars_and_menus_category_status_bar_title">Barra di stato</string>
+    <string name="bars_and_menus_category_navigation_bar_title">Barra di navigazione</string>
     <string name="status_bar_battery_title">Stile batteria</string>
     <string name="status_bar_toggle_brightness">Controllo della luminosità</string>
     <string name="status_bar_toggle_brightness_summary">Regola la luminosità facendo scorrere tutta la barra di stato</string>
@@ -157,6 +158,8 @@
     <string name="button_volume_keys_title">Volume</string>
     <string name="button_volume_wake_title">Attiva con il pulsante volume</string>
     <string name="button_volume_wake_summary">Premendo un pulsante del volume si attiverà il tuo dispositivo</string>
+    <string name="button_volume_music_control_title">Controllo musica</string>
+    <string name="button_volume_music_control_summary">Premi a lungo il pulsante del volume per cambiare la canzone da schermo spento.</string>
     <string name="button_headsethook_title">Auricolari</string>
     <string name="button_headsethook_launch_voice_title">Comandi vocali auricolare</string>
     <string name="button_headsethook_launch_voice_summary">Premendo il pulsante dell\'auricolare si eseguiranno i comandi vocali</string>
@@ -364,8 +367,17 @@
     <string name="icon_picker_search">Ricerca</string>
     <string name="icon_picker_sms">Messaggi</string>
     <string name="icon_picker_twitter">Twitter</string>
-    <!-- Status Bar QS Quick pulldown -->
-    <string name="qs_quick_pulldown_title">Impostazioni rapide barra di stato</string>
-    <string name="qs_quick_pulldown_summary">Accedi alle impostazioni rapide effettuando uno swipe verso il basso sul lato destro della barra di stato</string>
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">QuickSettings rapidi</string>
+    <string name="summary_quick_pulldown">Accedi rapidamente ai QuicksSettings usando un solo dito</string>
+    <string name="quick_pulldown_off">Disattivo</string>
+    <string name="quick_pulldown_centre">Centrato</string>
+    <string name="quick_pulldown_left">Sinistra</string>
+    <string name="quick_pulldown_right">Destra</string>
+
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Cursore di controllo</string>
+    <string name="volume_key_cursor_control_on">Sinistra/Destra</string>
+    <string name="volume_key_cursor_control_on_reverse">Destra/Sinistra</string>
 
 </resources>
