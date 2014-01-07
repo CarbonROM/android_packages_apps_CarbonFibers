@@ -203,6 +203,7 @@
     <string name="keys_action_back">Back button</string>
     <string name="keys_action_last_app">Switch to last app</string>
     <string name="keys_action_kill_app">Kill app</string>
+    <string name="keys_action_sleep">Go to sleep</string>
     <string name="keys_action_normal">Normal press</string>
     <string name="keys_action_long">Long press</string>
     <string name="keys_action_double">Double tap</string>

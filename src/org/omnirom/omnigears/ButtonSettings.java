@@ -104,6 +104,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final int ACTION_BACK = 7;
     private static final int ACTION_LAST_APP = 8;
     private static final int ACTION_KILL_APP = 9;
+    private static final int ACTION_SLEEP = 10;
 
     // Masks for checking presence of hardware keys.
     // Must match values in frameworks/base/core/res/res/values/config.xml
