@@ -370,7 +370,17 @@
     <string name="icon_picker_sms">Zprávy</string>
     <string name="icon_picker_twitter">Twitter</string>
 
-    <!-- Status Bar QS Quick pulldown -->
-    <string name="qs_quick_pulldown_title">Rychlé nastavení stažením</string>
-    <string name="qs_quick_pulldown_summary">Přístup k rychlému nastavení tahem dolů na pravé straně stavové lišty</string>
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Rychlé vysunutí nabídky</string>
+    <string name="summary_quick_pulldown">Nastavení rychlého vysunutí nabídky jedním prstem</string>
+    <string name="quick_pulldown_off">Vypnuto</string>
+    <string name="quick_pulldown_centre">Střed</string>
+    <string name="quick_pulldown_left">Vlevo</string>
+    <string name="quick_pulldown_right">Vpravo</string>
+
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Ovládání kurzoru</string>
+    <string name="volume_key_cursor_control_on">Doleva/doprava</string>
+    <string name="volume_key_cursor_control_on_reverse">Doprava/Doleva</string>
+
 </resources>
