@@ -88,7 +88,6 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         mStatusBarNetworkActivity.setChecked(Settings.System.getInt(resolver,
             Settings.System.STATUS_BAR_NETWORK_ACTIVITY, 0) == 1);
         mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
-        mStatusBarNetworkActivity.setOnPreferenceChangeListener(this);
 
         mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
