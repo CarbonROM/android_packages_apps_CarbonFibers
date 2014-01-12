@@ -167,7 +167,8 @@
     <!-- Network speed -->
     <string name="show_network_speed">Mostra velocità della rete</string>
     <string name="show_network_speed_summary">Mostra la velocità della rete dati nella barra di stato</string>
-
+    <string name="show_network_speed_bits">Mostra la velocità di bit al secondo</string>
+    <string name="show_network_speed_bytes">Mostra la velocità di byte al secondo</string>
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Mostra attività di rete</string>
     <string name="show_activity_indicators_on_status_bar_summary">Mostra l\'attività di rete nella barra di stato</string>
@@ -202,6 +203,7 @@
     <string name="keys_action_back">Tasto indietro</string>
     <string name="keys_action_last_app">Passare all\'ultima applicazione</string>
     <string name="keys_action_kill_app">Chiudi le applicazioni</string>
+    <string name="keys_action_sleep">Vai in standby</string>
     <string name="keys_action_normal">Pressione normale</string>
     <string name="keys_action_long">Pressione lunga</string>
     <string name="keys_action_double">Doppio tocco</string>
@@ -368,8 +370,8 @@
     <string name="icon_picker_sms">Messaggi</string>
     <string name="icon_picker_twitter">Twitter</string>
     <!-- QuickSettings: Quick Pulldown -->
-    <string name="title_quick_pulldown">QuickSettings rapidi</string>
-    <string name="summary_quick_pulldown">Accedi rapidamente ai QuicksSettings usando un solo dito</string>
+    <string name="title_quick_pulldown">Quick settings rapidi</string>
+    <string name="summary_quick_pulldown">Accedi rapidamente ai quick settings usando un solo dito</string>
     <string name="quick_pulldown_off">Disattivo</string>
     <string name="quick_pulldown_centre">Centrato</string>
     <string name="quick_pulldown_left">Sinistra</string>
@@ -379,5 +381,7 @@
     <string name="volume_key_cursor_control_title">Cursore di controllo</string>
     <string name="volume_key_cursor_control_on">Sinistra/Destra</string>
     <string name="volume_key_cursor_control_on_reverse">Destra/Sinistra</string>
-
+    <!-- Quick Swipe -->
+    <string name="quick_swipe_title">Quick Swipe</string>
+    <string name="quick_swipe_summary">Scorri rapidamente tra i quick settings e l\'area delle notifiche</string>
 </resources>
