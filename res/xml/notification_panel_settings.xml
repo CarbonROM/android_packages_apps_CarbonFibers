@@ -32,4 +32,22 @@
             android:summary="@string/quick_swipe_summary"
             android:persistent="false"/>
 
+    <PreferenceCategory
+            android:key="shortcuts"
+            android:title="@string/notification_bar_shortcuts">
+
+        <org.omnirom.omnigears.preference.AppSelectListPreference
+                android:key="clock_shortcut"
+                android:title="@string/clock_shortcut_title"
+                android:positiveButtonText="@string/default_shortcut"
+                android:persistent="false"/>
+
+        <org.omnirom.omnigears.preference.AppSelectListPreference
+                android:key="calendar_shortcut"
+                android:title="@string/calendar_shortcut_title"
+                android:positiveButtonText="@string/default_shortcut"
+                android:persistent="false"/>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

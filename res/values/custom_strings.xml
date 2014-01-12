@@ -317,8 +317,8 @@
 
     <!-- Contextual Notification Panel Header -->
     <string name="notification_drawer_category_title">Notification drawer</string>
-    <string name="custom_statusbar_header_title">Contextual notification panel header</string>
-    <string name="custom_statusbar_header_summary">Sets the background of the notification panel header to an image based on the current date and time</string>
+    <string name="custom_statusbar_header_title">Contextual header</string>
+    <string name="custom_statusbar_header_summary">Sets the background of the header to an image based on the current date and time</string>
 
     <!-- Volume default -->
     <string name="button_volume_default_none">None</string>
@@ -527,4 +527,11 @@
     <string name="navigation_bar_size_40_dp">40 dp</string>
     <string name="navigation_bar_size_42_dp">42 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
+
+    <!-- Notification Panel Shortcuts -->
+    <string name="notification_bar_shortcuts">Header shortcuts</string>
+    <string name="clock_shortcut_title">Time</string>
+    <string name="calendar_shortcut_title">Date</string>
+    <string name="default_shortcut">Default</string>
+
 </resources>
