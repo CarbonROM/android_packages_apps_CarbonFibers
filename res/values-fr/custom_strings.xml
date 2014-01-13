@@ -142,6 +142,8 @@
     <string name="button_headsethook_launch_voice_summary">Un appui sur le bouton du casque lance la commande vocale</string>
     <string name="show_network_speed">Indicateur de vitesse réseau</string>
     <string name="show_network_speed_summary">Afficher la vitesse du réseau dans la barre de statut</string>
+    <string name="show_network_speed_bits">Afficher la vitesse du réseau en bits par seconde</string>
+    <string name="show_network_speed_bytes">Afficher la vitesse du réseau en Bytes par seconde</string>
     <string name="show_activity_indicators_on_status_bar_title">Indicateur d\'activité réseau</string>
     <string name="show_activity_indicators_on_status_bar_summary">Afficher un indicateur d\'activité réseau dans la barre de statut</string>
     <string name="button_keys_title">Boutons</string>
@@ -328,4 +330,6 @@
     <string name="volume_key_cursor_control_title">Contrôle du curseur</string>
     <string name="volume_key_cursor_control_on">Gauche/Droite</string>
     <string name="volume_key_cursor_control_on_reverse">Droite/Gauche</string>
+    <string name="quick_swipe_title">Accès rapide par glissement</string>
+    <string name="quick_swipe_summary">Accès rapide entre les notifications et le panneau des paramètres</string>
 </resources>
