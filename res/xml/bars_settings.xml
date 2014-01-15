@@ -74,5 +74,12 @@
             android:key="navigation_ring"
             android:fragment="org.omnirom.omnigears.interfacesettings.NavRing"
             android:title="@string/navigation_ring_title" />
+
+        <CheckBoxPreference
+            android:key="soft_back_kill_app"
+            android:title="@string/soft_back_kill_app_title"
+            android:summary="@string/soft_back_kill_app_summary"
+            android:persistent="false"/>
+
     </PreferenceCategory>
 </PreferenceScreen>

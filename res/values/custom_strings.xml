@@ -326,6 +326,7 @@
     <string name="navring_action_torch">Toggle torch</string>
     <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Choose action</string>
+    <string name="navring_action_last_app">Switch to last app</string>
 
     <!-- String for IconPicker -->
     <string name="icon_picker_title">Choose icon source</string>
@@ -394,4 +395,7 @@
     <string name="quick_swipe_title">Quick swipe</string>
     <string name="quick_swipe_summary">Quickly swipe between quick settings and notification drawer</string>
 
+    <!-- navigation bar -->
+    <string name="soft_back_kill_app_title">Long press back to kill app</string>
+    <string name="soft_back_kill_app_summary">Long pressing back button will kill foreground app</string>
 </resources>

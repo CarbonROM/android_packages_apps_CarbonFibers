@@ -47,6 +47,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String QUICK_PULLDOWN = "quick_pulldown";
     private static final String QUICKSETTINGS_DYNAMIC = "quicksettings_dynamic_row";
     private static final String CATEGORY_NAVBAR = "category_navigation_bar";
+    private static final String SOFT_BACK_KILL_APP = "soft_back_kill_app";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
@@ -54,6 +55,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mStatusBarNetworkActivity;
     private CheckBoxPreference mQuickSettingsDynamic;
     private ListPreference mQuickPulldown;
+    private CheckBoxPreference mSoftBackKillApp;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -114,6 +116,11 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         // Hide navigation bar category on devices without navigation bar
         if (!hasNavBar) {
             prefSet.removePreference(findPreference(CATEGORY_NAVBAR));
+        } else {
+            mSoftBackKillApp = (CheckBoxPreference) prefSet.findPreference(SOFT_BACK_KILL_APP);
+            mSoftBackKillApp.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.SOFT_BACK_KILL_APP_ENABLE, 0) == 1);
+            mSoftBackKillApp.setOnPreferenceChangeListener(this);
         }
     }
 
@@ -153,6 +160,10 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             int statusQuickPulldown = Integer.valueOf((String) objValue);
             Settings.System.putInt(resolver, Settings.System.QS_QUICK_PULLDOWN,
                     statusQuickPulldown);
+        } else if (preference == mSoftBackKillApp) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(resolver,
+                Settings.System.SOFT_BACK_KILL_APP_ENABLE, value ? 1 : 0);
         } else {
             return false;
         }
