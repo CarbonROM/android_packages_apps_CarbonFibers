@@ -199,6 +199,7 @@
     <string name="keys_action_back">Botão voltar</string>
     <string name="keys_action_last_app">Trocar para o último app</string>
     <string name="keys_action_kill_app">Encerrar app</string>
+    <string name="keys_action_sleep">Dormir</string>
     <string name="keys_action_normal">Toque normal</string>
     <string name="keys_action_long">Toque longo</string>
     <string name="keys_action_double">Toque duplo</string>
@@ -231,7 +232,7 @@
     <string name="ad_all_notifications_title">Todas as notificações</string>
     <string name="ad_all_notifications_summary">Mostrar todas as notificações, inclusive as em andamento que não podem ser limpas.</string>
     <string name="ad_hide_low_priority_title">Esconder de baixa prioridade</string>
-    <string name="ad_hide_low_priority_summary">Esconder notificações de naixo prioridade como as do Google Now.</string>
+    <string name="ad_hide_low_priority_summary">Esconder notificações de baixa prioridade como as do Google Now.</string>
     <string name="ad_pocket_mode_title">Modo bolso</string>
     <string name="ad_pocket_mode_summary">Mostrar notificaçoes do active display quando você pegar o aparelho do bolso.</string>
     <string name="ad_redisplay_title">Mostrar novamente as notificações</string>
