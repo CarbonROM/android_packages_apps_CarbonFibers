@@ -71,6 +71,11 @@
                 android:summary="@string/qs_configurable_summary"
                 android:persistent="false"/>
 
+        <PreferenceScreen
+                android:fragment="org.omnirom.omnigears.slim.StatusBarClockStyle"
+                android:key="clock_style_pref"
+                android:title="@string/status_bar_clock" />
+
     </PreferenceCategory>
 
     <!-- Navigation bar -->
