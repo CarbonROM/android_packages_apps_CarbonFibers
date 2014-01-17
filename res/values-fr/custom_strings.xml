@@ -321,8 +321,10 @@
     <string name="icon_picker_search">Recherche</string>
     <string name="icon_picker_sms">Messages</string>
     <string name="icon_picker_twitter">Twitter</string>
-    <string name="title_quick_pulldown">Accés rapide aux paramètres</string>
-    <string name="summary_quick_pulldown">Accéder rapidement aux paramètres avec un doigt</string>
+    <string name="qs_configurable_title">Volet des paramètres configurables</string>
+    <string name="qs_configurable_summary">Activer les raccourcis configurables dans le volet des paramètres</string>
+    <string name="title_quick_pulldown">Accés rapide au volet des paramètres</string>
+    <string name="summary_quick_pulldown">Accéder rapidement au volet des paramètres avec un seul doigt</string>
     <string name="quick_pulldown_off">Désactivé</string>
     <string name="quick_pulldown_centre">Centre</string>
     <string name="quick_pulldown_left">Gauche</string>
