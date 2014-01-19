@@ -281,6 +281,7 @@
     <string name="navring_action_torch">Lampe torche</string>
     <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Choisir une action</string>
+    <string name="navring_action_last_app">Retourner à la dernière application</string>
     <string name="icon_picker_title">Source de l\'icône</string>
     <string name="icon_picker_system_icons_title">Icônes système</string>
     <string name="icon_picker_gallery_title">Galerie</string>
@@ -334,4 +335,6 @@
     <string name="volume_key_cursor_control_on_reverse">Droite/Gauche</string>
     <string name="quick_swipe_title">Accès rapide par glissement</string>
     <string name="quick_swipe_summary">Accès rapide entre les notifications et le panneau des paramètres</string>
+    <string name="soft_back_kill_app_title">Appui long sur Retour tue l\'application</string>
+    <string name="soft_back_kill_app_summary">Un appui long sur le bouton retour tuera l\'application en premier plan</string>
 </resources>
