@@ -159,15 +159,25 @@
     <string name="button_headsethook_launch_voice_title">Headset launches voice</string>
     <string name="button_headsethook_launch_voice_summary">Pressing the headset button will launch voice controls</string>
 
-    <!-- Network speed -->
-    <string name="show_network_speed">Network speed indicator</string>
-    <string name="show_network_speed_summary">Show network speed in statusbar</string>
-    <string name="show_network_speed_bits">Show speed as bits per second</string>
-    <string name="show_network_speed_bytes">Show speed as Bytes per second</string>
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Network traffic</string>
+    <string name="show_network_traffic_state">Status bar traffic monitor</string>
+    <string name="show_network_traffic_unit">Display unit</string>
+    <string name="show_network_traffic_frequency">Update interval</string>
+    <string name="show_network_traffic_disable">Disabled</string>
+    <string name="show_network_traffic_up">Outgoing</string>
+    <string name="show_network_traffic_down">Incoming</string>
+    <string name="show_network_traffic_all">Outgoing and incoming</string>
+    <string name="show_network_traffic_bit">Bits per second</string>
+    <string name="show_network_traffic_byte">Bytes per second</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
 
     <!-- Status Bar Activity Indicators -->
-    <string name="show_activity_indicators_on_status_bar_title">Network activity indicator</string>
-    <string name="show_activity_indicators_on_status_bar_summary">Show network activity in statusbar</string>
+    <string name="show_activity_indicators_on_status_bar_title">Activity indicators</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Show indicators in signal bars</string>
 
     <!-- Hardware keys -->
     <string name="button_keys_title">Keys</string>
@@ -379,24 +389,26 @@
     <string name="icon_picker_sms">Messaging</string>
     <string name="icon_picker_twitter">Twitter</string>
 
+    <string name="quick_settings_category_title">Quick settings</string>
+
     <!-- QuickSettings: Dynamic Row -->
-    <string name="qs_configurable_title">QuickSettings configurable</string>
+    <string name="qs_configurable_title">Quick settings configurable</string>
     <string name="qs_configurable_summary">Enable/disable dynamic row changes</string>
 
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Quick pulldown</string>
-    <string name="summary_quick_pulldown">Quickly pulldown quicksettings with one finger</string>
-    <string name="quick_pulldown_off">Off</string>
+    <string name="summary_quick_pulldown">Quickly pulldown quick settings with one finger</string>
+    <string name="quick_pulldown_off">Disabled</string>
     <string name="quick_pulldown_centre">Centre</string>
     <string name="quick_pulldown_left">Left</string>
     <string name="quick_pulldown_right">Right</string>
 
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">Smart pulldown</string>
-    <string name="smart_pulldown_summary">Open Quick Settings when there are no notifications present</string>
-    <string name="smart_pulldown_off">Off</string>
-    <string name="smart_pulldown_dismissable">Pulldown if there are no cleareable notifications</string>
-    <string name="smart_pulldown_persistent">Pulldown if there are no notifications</string>
+    <string name="smart_pulldown_summary">Open quick settings when there are no notifications present</string>
+    <string name="smart_pulldown_off">Disabled</string>
+    <string name="smart_pulldown_dismissable">If no cleareable notifications</string>
+    <string name="smart_pulldown_persistent">If no notifications</string>
 
     <!-- Cursor control -->
     <string name="volume_key_cursor_control_title">Cursor control</string>
