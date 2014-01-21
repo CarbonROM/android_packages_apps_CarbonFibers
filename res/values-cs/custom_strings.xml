@@ -370,6 +370,10 @@
     <string name="icon_picker_sms">Zprávy</string>
     <string name="icon_picker_twitter">Twitter</string>
 
+    <!-- QuickSettings: Dynamic Row -->
+    <string name="qs_configurable_title">Konfigurovatelné rychlé nastavení</string>
+    <string name="qs_configurable_summary">Povolit/zakázat dynamické změny řádku</string>
+
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Rychlé vysunutí nabídky</string>
     <string name="summary_quick_pulldown">Nastavení rychlého vysunutí nabídky jedním prstem</string>
@@ -382,5 +386,13 @@
     <string name="volume_key_cursor_control_title">Ovládání kurzoru</string>
     <string name="volume_key_cursor_control_on">Doleva/doprava</string>
     <string name="volume_key_cursor_control_on_reverse">Doprava/Doleva</string>
+
+    <!-- Quick Swipe -->
+    <string name="quick_swipe_title">Rychlé přepnutí</string>
+    <string name="quick_swipe_summary">Rychlé přepnutí mezi rychlým nastavením a oznamovací oblasti</string>
+
+    <!-- navigation bar -->
+    <string name="soft_back_kill_app_title">Dlouhým stiskem tlačítka zpět vynutit ukončení aplikace</string>
+    <string name="soft_back_kill_app_summary">Dlouhým stiskem tlačítka zpět vynutíte ukončení aplikace v popředí</string>
 
 </resources>
