@@ -330,6 +330,11 @@
     <string name="quick_pulldown_centre">Centre</string>
     <string name="quick_pulldown_left">Gauche</string>
     <string name="quick_pulldown_right">Droite</string>
+    <string name="smart_pulldown_title">Déroulement intelligent</string>
+    <string name="smart_pulldown_summary">Ouvrir le panneau des paramètres lorsqu\'aucune notification n\'est présente</string>
+    <string name="smart_pulldown_off">Désactivé</string>
+    <string name="smart_pulldown_dismissable">Si aucune notification</string>
+    <string name="smart_pulldown_persistent">Si aucune notification persistante</string>
     <string name="volume_key_cursor_control_title">Contrôle du curseur</string>
     <string name="volume_key_cursor_control_on">Gauche/Droite</string>
     <string name="volume_key_cursor_control_on_reverse">Droite/Gauche</string>
