@@ -384,4 +384,8 @@
     <!-- Quick Swipe -->
     <string name="quick_swipe_title">Quick Swipe</string>
     <string name="quick_swipe_summary">Scorri rapidamente tra i quick settings e l\'area delle notifiche</string>
+
+    <!-- navigation bar -->
+    <string name="soft_back_kill_app_title">Tasto indietro per chiudere le applicazioni</string>
+    <string name="soft_back_kill_app_summary">Tieni premuto il tasto indietro per chiudere le applicazioni recenti</string>
 </resources>
