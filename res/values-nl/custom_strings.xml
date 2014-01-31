@@ -159,6 +159,8 @@
     <string name="button_volume_keys_title">Volume</string>
     <string name="button_volume_wake_title">Volumeknop ontwaken</string>
     <string name="button_volume_wake_summary">Maak je apparaat wakker door op de volumeknop te drukken</string>
+    <string name="button_volume_music_control_title">Muziek beheren</string>
+    <string name="button_volume_music_control_summary">Lang drukken op de volume knoppen wisselt van muziek wanneer het scherm uit is</string>
     <string name="button_headsethook_title">Koptelefoon</string>
     <string name="button_headsethook_launch_voice_title">Koptelefoon start microfoon</string>
     <string name="button_headsethook_launch_voice_summary">Drukken op de koptelefoonknop start de microfoon</string>
@@ -166,6 +168,8 @@
     <!-- Network speed -->
     <string name="show_network_speed">Netwerksnelheidsindicator</string>
     <string name="show_network_speed_summary">Toon de netwerksnelheid in de statusbalk</string>
+    <string name="show_network_speed_bits">Toon snelheid in bits per seconde</string>
+    <string name="show_network_speed_bytes">Toon snelheid in Bytes per seconde</string>
 
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Netwerk activiteiten indicator</string>
@@ -201,11 +205,14 @@
     <string name="keys_action_back">Back knop</string>
     <string name="keys_action_last_app">Terug naar laatste app</string>
     <string name="keys_action_kill_app">Sluit app</string>
+    <string name="keys_action_sleep">Ga in slaapstand</string>
     <string name="keys_action_normal">Normaal indrukken</string>
     <string name="keys_action_long">Ingedrukt houden</string>
     <string name="keys_action_double">Dubbele tik</string>
     <string name="dialog_no_home_key_title">Geen home actie</string>
     <string name="no_home_key">Je hebt geen knop toegewezen aan de \"Home"\ actie! Dit kan je apparaat onbruikbaar maken!</string>
+    <string name="virtual_key_haptic_feedback_title">Trillen bij aanraking</string>
+    <string name="virtual_key_haptic_feedback_summary">Inschakelen hangt af van \"Trillen bij aanraking\" bij geluidsinstellingen</string>
 
     <!-- Power Menu Options-->
     <string name="bars_and_menus_category_power_menu_title">Power-menu</string>
@@ -213,6 +220,12 @@
     <string name="power_menu_toggle_screenshot_summary">Toon schermafbeelding optie in power-menu</string>
     <string name="power_menu_toggle_screenrecord_title">Schermopname</string>
     <string name="power_menu_toggle_screenrecord_summary">Toon schermopname optie in power-menu</string>
+    <string name="power_menu_toggle_mobile_data_title">Mobiele data</string>
+    <string name="power_menu_toggle_mobile_data_summary">Toon mobiele data optie in power-menu</string>
+    <string name="power_menu_toggle_airplane_mode_title">Vliegmodus</string>
+    <string name="power_menu_toggle_airplane_mode_summary">Toon vliegmodus optie in power-menu</string>
+    <string name="power_menu_toggle_sound_toggles_title">Geluid beheren</string>
+    <string name="power_menu_toggle_sound_toggles_summary">Toon geluidsopties in het power-menu</string>
 
     <!-- Active Display Notifications -->
     <string name="ad_settings_title">Actieve weergave</string>
@@ -313,6 +326,7 @@
     <string name="navring_action_torch">Zaklamp aan/uit</string>
     <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Kies actie</string>
+    <string name="navring_action_last_app">Wissel naar laatste app</string>
 
     <!-- String for IconPicker -->
     <string name="icon_picker_title">Kies pictogram bron</string>
@@ -360,4 +374,35 @@
     <string name="icon_picker_sms">Berichten</string>
     <string name="icon_picker_twitter">Twitter</string>
 
+    <!-- QuickSettings: Dynamic Row -->
+    <string name="qs_configurable_title">Instelbare snelle instellingen</string>
+    <string name="qs_configurable_summary">In- of uitschakelen van dynamische rij wijzigingen</string>
+
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Snel openen</string>
+    <string name="summary_quick_pulldown">Snelle instellingen openen met een vinger</string>
+    <string name="quick_pulldown_off">Uitgeschakeld</string>
+    <string name="quick_pulldown_centre">Midden</string>
+    <string name="quick_pulldown_left">Links</string>
+    <string name="quick_pulldown_right">Rechts</string>
+
+    <!-- QuickSettings: Smart Pulldown -->
+    <string name="smart_pulldown_title">Slim openen</string>
+    <string name="smart_pulldown_summary">Snelle instellingen openen als er geen notificaties zijn</string>
+    <string name="smart_pulldown_off">Uitgeschakeld</string>
+    <string name="smart_pulldown_dismissable">Openen als er geen verwijderbare notificaties zijn</string>
+    <string name="smart_pulldown_persistent">Openen als er geen notificaties zijn</string>
+
+    <!-- Cursor control -->
+    <string name="volume_key_cursor_control_title">Cursor met volumeknoppen</string>
+    <string name="volume_key_cursor_control_on">Links/rechts</string>
+    <string name="volume_key_cursor_control_on_reverse">Rechts/links</string>
+
+    <!-- Quick Swipe -->
+    <string name="quick_swipe_title">Snel vegen</string>
+    <string name="quick_swipe_summary">Snel vegen tussen snelle instellingen en het notificatie paneel</string>
+
+    <!-- navigation bar -->
+    <string name="soft_back_kill_app_title">Lang drukken op terug sluit app</string>
+    <string name="soft_back_kill_app_summary">Door lang op de terug knop te drukken sluit de app op de voorgrond</string>
 </resources>
