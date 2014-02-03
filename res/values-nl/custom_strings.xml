@@ -107,7 +107,7 @@
     <string name="auto_brightness_sensitivity_title">Gevoeligheidsinstellingen</string>
     <string name="auto_brightness_sensitivity_summary">Normaal</string>
     <string name="auto_brightness_sensitivity_verylow">Heel laag</string>
-    <string name="auto_brightness_sensitivity_low">Leeg</string>
+    <string name="auto_brightness_sensitivity_low">Laag</string>
     <string name="auto_brightness_sensitivity_medium">Normaal</string>
     <string name="auto_brightness_sensitivity_high">Hoog</string>
     <string name="auto_brightness_sensitivity_veryhigh">Heel hoog</string>
