@@ -188,7 +188,7 @@
     <string name="keys_home_long_press_title">Tasto home (pressione lunga)</string>
     <string name="keys_home_double_tap_title">Tasto home (doppio tocco)</string>
     <string name="keys_menu_press_title">Tasto menu</string>
-    <string name="keys_menu_long_press_title">Fasto menu (pressione lunga)</string>
+    <string name="keys_menu_long_press_title">Tasto menu (pressione lunga)</string>
     <string name="keys_assist_press_title">Tasto ricerca</string>
     <string name="keys_assist_long_press_title">Tasto ricerca (pressione lunga)</string>
     <string name="keys_app_switch_press_title">Tasto passa app.</string>
