@@ -20,8 +20,8 @@
 
     <declare-styleable name="SeekBarPreference">
         <attr name="min" format="integer" />
-        <attr name="unitsLeft" format="string" />
-        <attr name="unitsRight" format="string" />
+        <attr name="unitsLeft" format="string|reference" />
+        <attr name="unitsRight" format="string|reference" />
     </declare-styleable>
 
 </resources>

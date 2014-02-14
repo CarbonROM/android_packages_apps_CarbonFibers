@@ -52,11 +52,24 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
     }
 
     private void setValuesFromXml(AttributeSet attrs) {
+        final TypedArray typedArray = getContext().obtainStyledAttributes(
+                attrs, R.styleable.SeekBarPreference);
+
         mMaxValue = attrs.getAttributeIntValue(ANDROIDNS, "max", 100);
         mMinValue = attrs.getAttributeIntValue(SETTINGS, "min", 0);
         mUnitsLeft = getAttributeStringValue(attrs, SETTINGS, "unitsLeft", "");
         String units = getAttributeStringValue(attrs, SETTINGS, "units", "");
         mUnitsRight = getAttributeStringValue(attrs, SETTINGS, "unitsRight", units);
+
+        Integer id = typedArray.getResourceId(R.styleable.SeekBarPreference_unitsRight, 0);
+        if (id > 0) {
+            mUnitsRight = getContext().getResources().getString(id);
+        }
+        id = typedArray.getResourceId(R.styleable.SeekBarPreference_unitsLeft, 0);
+        if (id > 0) {
+            mUnitsLeft = getContext().getResources().getString(id);
+        }
+
         try {
             String newInterval = attrs.getAttributeValue(SETTINGS, "interval");
             if(newInterval != null)
@@ -205,5 +218,11 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
 
     public void setValue(int value) {
         mCurrentValue = value;
+    }
+
+    @Override
+    public void setEnabled (boolean enabled) {
+        mSeekBar.setEnabled(enabled);
+        super.setEnabled(enabled);
     }
 }

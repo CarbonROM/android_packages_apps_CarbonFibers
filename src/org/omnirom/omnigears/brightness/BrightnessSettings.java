@@ -46,6 +46,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import org.omnirom.omnigears.R;
+import org.omnirom.omnigears.chameleonos.SeekBarPreference;
 
 public class BrightnessSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -71,8 +72,7 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
     private ManualButtonBrightnessDialog mManualBrightnessDialog;
     private boolean mButtonBrightnessSupport;
     private IPowerManager mPowerService;
-    private ButtonTimeoutDialog mButtonTimeoutDialog;
-    private Preference mButtonTimout;
+    private SeekBarPreference mButtonTimoutBar;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,11 +107,12 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
 
             mAutomaticButtonBrightness = (Preference) findPreference(KEY_BUTTON_AUTO_BRIGHTNESS);
             mManualButtonBrightness = (Preference) findPreference(KEY_BUTTON_MANUAL_BRIGHTNESS);
-            mButtonTimout = (Preference) findPreference(KEY_BUTTON_TIMEOUT);
 
-            // to set initial summary
-            mButtonTimeoutDialog = new ButtonTimeoutDialog(getActivity());
-            mButtonTimeoutDialog.updateSummary();
+            mButtonTimoutBar = (SeekBarPreference) findPreference(KEY_BUTTON_TIMEOUT);
+            int currentTimeout = Settings.System.getInt(resolver,
+                            Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 0);
+            mButtonTimoutBar.setValue(currentTimeout);
+            mButtonTimoutBar.setOnPreferenceChangeListener(this);
 
             mPowerService = IPowerManager.Stub.asInterface(ServiceManager.getService("power"));
 
@@ -123,7 +124,7 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
         if (mButtonBrightnessSupport){
             if (mNoButtonBrightness.isChecked()){
                 mLinkButtonBrightness.setEnabled(false);
-                mButtonTimout.setEnabled(false);
+                mButtonTimoutBar.setEnabled(false);
                 mAutomaticButtonBrightness.setEnabled(false);
                 mManualButtonBrightness.setEnabled(false);
             } else if (mLinkButtonBrightness.isChecked()){
@@ -133,7 +134,7 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
             } else {
                 mNoButtonBrightness.setEnabled(true);
                 mLinkButtonBrightness.setEnabled(true);
-                mButtonTimout.setEnabled(true);
+                mButtonTimoutBar.setEnabled(true);
                 mAutomaticButtonBrightness.setEnabled(true);
                 mManualButtonBrightness.setEnabled(true);
             }
@@ -158,9 +159,6 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
         if (mManualBrightnessDialog != null) {
             mManualBrightnessDialog.dismiss();
         }
-        if (mButtonTimeoutDialog != null) {
-            mButtonTimeoutDialog.dismiss();
-        }
     }
 
     @Override
@@ -171,8 +169,6 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
             showButtonAutoBrightnessDialog();
         } else if (preference == mManualButtonBrightness) {
             showButtonManualBrightnessDialog();
-        } else if (preference == mButtonTimout) {
-            showButtonTimoutDialog();
         } else if (preference == mNoButtonBrightness) {
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
@@ -201,6 +197,10 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
                         Settings.System.AUTO_BRIGHTNESS_RESPONSIVENESS, sensitivity);
 
             updateAutomaticSensityDescription(value);
+        } else if (preference == mButtonTimoutBar) {
+            int buttonTimeout = (Integer) objValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, buttonTimeout);
         } else {
             return false;
         }
@@ -236,14 +236,6 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
 
         mButtonBrightnessDialog = new AutoBrightnessDialog(getActivity(), false);
         mButtonBrightnessDialog.show();
-    }
-
-    private void showButtonTimoutDialog() {
-        if (mButtonTimeoutDialog.isShowing()) {
-            return;
-        }
-
-        mButtonTimeoutDialog.show();
     }
 
     private void showButtonManualBrightnessDialog() {
@@ -382,101 +374,6 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
                     if (okButton != null) {
                         okButton.setEnabled(ok);
                     }
-                }
-            });
-        }
-    }
-    private class ButtonTimeoutDialog extends AlertDialog implements DialogInterface.OnClickListener {
-        private SeekBar mTimeoutBar;
-        private TextView mTimeoutValue;
-        private int mCurrentTimeout;
-        private boolean mIsDragging = false;
-
-        public ButtonTimeoutDialog(Context context) {
-            super(context);
-
-            // to allow initial summary setting
-            mCurrentTimeout = Settings.System.getInt(getContext().getContentResolver(),
-                            Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 0);
-        }
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            final View v = getLayoutInflater().inflate(R.layout.button_timeout, null);
-            final Context context = getContext();
-
-            mTimeoutBar = (SeekBar) v.findViewById(R.id.timeout_seekbar);
-            mTimeoutValue = (TextView) v.findViewById(R.id.timeout_value);
-            mTimeoutBar.setMax(30);
-
-            setTitle(R.string.dialog_button_timeout_title);
-            setCancelable(true);
-            setView(v);
-
-            initListeners();
-            init();
-
-            setButton(DialogInterface.BUTTON_POSITIVE, context.getString(R.string.ok), this);
-            setButton(DialogInterface.BUTTON_NEGATIVE, context.getString(R.string.cancel), this);
-
-            super.onCreate(savedInstanceState);
-        }
-
-        private void init() {
-            mCurrentTimeout = Settings.System.getInt(getContext().getContentResolver(),
-                            Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 0);
-
-            mTimeoutBar.setProgress(mCurrentTimeout);
-            mTimeoutValue.setText(getTimeoutString());
-        }
-
-        @Override
-        public void onClick(DialogInterface dialog, int which) {
-            if (which == DialogInterface.BUTTON_POSITIVE) {
-                try {
-                    Settings.System.putInt(getContext().getContentResolver(),
-                            Settings.System.BUTTON_BACKLIGHT_TIMEOUT, mCurrentTimeout);
-                    updateSummary();
-                } catch (NumberFormatException e) {
-                    Log.d(TAG, "NumberFormatException " + e);
-                }
-            }
-        }
-
-        private void updateSummary() {
-            if (mCurrentTimeout == 0) {
-                mButtonTimout.setSummary(R.string.button_timeout_disabled);
-            } else {
-                mButtonTimout.setSummary(getContext().getString(R.string.button_timeout_enabled,
-                            getTimeoutString()));
-            }
-        }
-
-        private String getTimeoutString() {
-            if (mCurrentTimeout == 0) {
-                return getContext().getResources().getString(R.string.button_timeout_disabled);
-            } else {
-                return getContext().getResources().getQuantityString(
-                    R.plurals.button_timeout_time, mCurrentTimeout, mCurrentTimeout);
-            }
-        }
-
-        private void initListeners() {
-            mTimeoutBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-                @Override
-                public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                    if (mIsDragging) {
-                        mCurrentTimeout = mTimeoutBar.getProgress();
-                        mTimeoutValue.setText(getTimeoutString());
-                    }
-                }
-                @Override
-                public void onStartTrackingTouch(SeekBar seekBar) {
-                    mIsDragging = true;
-                }
-                @Override
-                public void onStopTrackingTouch(SeekBar seekBar) {
-                    mIsDragging = false;
                 }
             });
         }

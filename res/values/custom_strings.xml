@@ -147,13 +147,7 @@
     <string name="auto_brightness_menu_remove">Remove</string>
     <string name="sensor_category">Sensor</string>
     <string name="button_timeout_title">Timeout</string>
-    <plurals name="button_timeout_time">
-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
-    </plurals>
-    <string name="button_timeout_enabled">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
-    <string name="button_timeout_disabled">Disabled</string>
-    <string name="dialog_button_timeout_title">Button brightness timeout</string>
+    <string name="button_timeout_summary">Disabled on value 0</string>
 
     <!-- button settings -->
     <string name="button_volume_keys_title">Volume</string>
