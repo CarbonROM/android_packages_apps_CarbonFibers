@@ -454,8 +454,8 @@
     <string name="status_bar_am_pm_info">24-Stunden-Anzeige ist aktiviert</string>
     <string name="enable_clock_weekday">Wochentag</string>
     <string name="enable_clock_weekday_summary">Wochentagabkürzung vor Uhrzeit</string>
-    <string name="right_clock">Uhrzeit rechts</string>
-    <string name="center_clock">Uhrzeit zentriert</string>
+    <string name="right_clock">Rechts</string>
+    <string name="center_clock">Zentriert</string>
     <string name="dont_show">Nicht anzeigen</string>
     <string name="clock_date_display">Datum</string>
     <string name="clock_date_display_summary">Zeige benutzerdefiniertes Datum vor der Uhr</string>
