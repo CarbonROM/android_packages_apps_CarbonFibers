@@ -377,4 +377,6 @@
     <string name="volume_key_cursor_control_on">Lewo/prawo</string>
     <string name="volume_key_cursor_control_on_reverse">Prawo/lewo</string>
 
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Stan baterii wokół pierścienia odblokowania</string>
 </resources>

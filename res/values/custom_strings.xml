@@ -481,4 +481,26 @@
     <string name="clock_date_style_lowercase">Lowercase</string>
     <string name="clock_date_style_uppercase">Uppercase</string>
 
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Battery around unlock ring</string>
+
+    <!-- Lockscreen -->
+    <string name="category_widgets_title">Widgets</string>
+    <string name="category_privacy_title">Privacy</string>
+    <string name="category_background_title">Background</string>
+    <string name="more_settings_title">More</string>
+
+    <!-- Widgets-->
+    <string name="maximize_widgets_title">Maximize</string>
+    <string name="enable_camera_title">Camera</string>
+    <string name="enable_camera_summary">Enable camera widget</string>
+
+    <!-- Privacy -->
+    <string name="enable_power_menu_title">Power menu</string>
+    <string name="enable_power_menu_summary">Enable power menu</string>
+
+    <!-- Background -->
+    <string name="see_through_title">See through</string>
+    <string name="see_through_summary">Show content behind lock screen. Data may be visible to those around you</string>
+
 </resources>

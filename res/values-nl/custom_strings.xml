@@ -405,4 +405,7 @@
     <!-- navigation bar -->
     <string name="soft_back_kill_app_title">Lang drukken op terug sluit app</string>
     <string name="soft_back_kill_app_summary">Door lang op de terug knop te drukken sluit de app op de voorgrond</string>
+
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Batterij-niveau om ontgrendelingsring</string>
 </resources>

@@ -388,4 +388,9 @@
     <!-- navigation bar -->
     <string name="soft_back_kill_app_title">Tasto indietro per chiudere le applicazioni</string>
     <string name="soft_back_kill_app_summary">Tieni premuto il tasto indietro per chiudere le applicazioni recenti</string>
+
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Batteria anello di sblocco</string>
+
+    <string name="security_maximize_widgets_title">Massimizza widget lockscreen</string>
 </resources>

@@ -395,4 +395,15 @@
     <string name="soft_back_kill_app_title">Dlouhým stiskem tlačítka zpět vynutit ukončení aplikace</string>
     <string name="soft_back_kill_app_summary">Dlouhým stiskem tlačítka zpět vynutíte ukončení aplikace v popředí</string>
 
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Baterie kolem odemykacího kruhu</string>
+
+    <!-- Enable camera -->
+    <string name="lockscreen_enable_camera_title">Widget fotoaparátu</string>
+    <string name="lockscreen_enable_camera_summary">Zobrazit widget fotoaparátu vpravo od obrazovky odmeknutí</string>
+
+    <!-- Enable power menu -->
+    <string name="lockscreen_enable_power_menu_title">Povolit nabídku Vypnout</string>
+    <string name="lockscreen_enable_power_menu_summary">Zobrazit nabídku Vypnout při zamčené obrazovce</string>
+
 </resources>

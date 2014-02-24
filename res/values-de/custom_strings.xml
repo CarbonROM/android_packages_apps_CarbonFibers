@@ -470,4 +470,21 @@
     <string name="clock_date_style_normal">Normal</string>
     <string name="clock_date_style_lowercase">Kleinbuchstaben</string>
     <string name="clock_date_style_uppercase">Großbuchstaben</string>
+
+    <string name="security_maximize_widgets_title">Sperrbildschirm Widgets maximieren</string>
+
+    <!-- Enable camera -->
+    <string name="lockscreen_enable_camera_title">Kamera-Widget</string>
+    <string name="lockscreen_enable_camera_summary">Nach rechts wischen, um Kamera-Widget zu zeigen</string>
+
+    <!-- Enable power menu -->
+    <string name="lockscreen_enable_power_menu_title">Ausschalt-Menü aktivieren</string>
+    <string name="lockscreen_enable_power_menu_summary">Ausschalt-Menü anzeigen, wenn der Bildschirm gesperrt ist</string>
+
+    <!-- Lockscreen see through -->
+    <string name="lockscreen_see_through_title">Durchsichtig</string>
+    <string name="lockscreen_see_through_summary">Zeigt den Inhalt hinter dem Sperrbildschirm. Daten könnten für umstehende sichtbar sein.</string>
+
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Batteriestatus um Entsperrsysmbol</string>
 </resources>

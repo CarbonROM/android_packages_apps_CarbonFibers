@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2013 The OmniROM Project
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="lockscreen_settings"
+        android:title="@string/lockscreen_settings_title"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceCategory
+            android:key="category_widgets"
+            android:title="@string/category_widgets_title"/>
+
+            <CheckBoxPreference
+                    android:key="maximize_widgets"
+                    android:title="@string/maximize_widgets_title"
+                    android:persistent="false"/>
+
+            <CheckBoxPreference
+                    android:key="enable_camera"
+                    android:title="@string/enable_camera_title"
+                    android:summary="@string/enable_camera_summary"
+                    android:persistent="false"/>
+
+    <PreferenceCategory
+            android:key="category_privacy"
+            android:title="@string/category_privacy_title"/>
+
+            <org.omnirom.omnigears.preference.SystemCheckBoxPreference
+                    android:key="lockscreen_enable_power_menu"
+                    android:title="@string/enable_power_menu_title"
+                    android:summary="@string/enable_power_menu_summary"
+                    android:defaultValue="true" />
+
+    <PreferenceCategory
+            android:key="category_background"
+            android:title="@string/category_background_title"/>
+
+            <org.omnirom.omnigears.preference.SystemCheckBoxPreference
+                    android:key="lockscreen_see_through"
+                    android:title="@string/see_through_title"
+                    android:summary="@string/see_through_summary"
+                    android:defaultValue="false" />
+
+</PreferenceScreen>

@@ -317,4 +317,5 @@
     <string name="volume_key_cursor_control_title">Pekarkontroll</string>
     <string name="volume_key_cursor_control_on">Vänster/höger</string>
     <string name="volume_key_cursor_control_on_reverse">Höger/vänster</string>
+    <string name="battery_around_lockscreen_ring">Batteri runt upplåsningsring</string>
 </resources>
