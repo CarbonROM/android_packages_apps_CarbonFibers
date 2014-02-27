@@ -158,16 +158,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                 mVolumeWake.setChecked(Settings.System.getInt(resolver,
                     Settings.System.VOLUME_WAKE_SCREEN, 0) != 0);
             }
-            String currentDefault = Settings.System.getString(resolver, Settings.System.VOLUME_KEYS_DEFAULT);
+            int currentDefault = Settings.System.getInt(resolver, Settings.System.VOLUME_KEYS_DEFAULT,
+                    Utils.isVoiceCapable(getActivity()) ? AudioSystem.STREAM_RING : AudioSystem.STREAM_MUSIC);
 
             if (!Utils.isVoiceCapable(getActivity())) {
-                removeListEntry(mVolumeDefault, String.valueOf(AudioSystem.STREAM_RING));
+                removeListEntry(mVolumeDefault, Integer.toString(AudioSystem.STREAM_RING));
             }
 
-            if (currentDefault == null) {
-                currentDefault = mVolumeDefault.getEntryValues()[mVolumeDefault.getEntryValues().length - 1].toString();
-            }
-            mVolumeDefault.setValue(currentDefault);
+            mVolumeDefault.setValue(Integer.toString(currentDefault));
             mVolumeDefault.setOnPreferenceChangeListener(this);
 
             mVolumeMusicControl = (CheckBoxPreference) findPreference(BUTTON_VOLUME_MUSIC_CONTROL);
@@ -569,8 +567,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             checkForHomeKey();
             return true;
         } else if (preference == mVolumeDefault) {
-            String value = (String)newValue;
-            Settings.System.putString(getContentResolver(), Settings.System.VOLUME_KEYS_DEFAULT, value);
+            int value = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.VOLUME_KEYS_DEFAULT, value);
             return true;
         }
         return false;
