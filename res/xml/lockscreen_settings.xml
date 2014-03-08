@@ -54,4 +54,15 @@
                     android:summary="@string/see_through_summary"
                     android:defaultValue="false" />
 
+            <org.omnirom.omnigears.chameleonos.SeekBarPreference
+                    android:key="lockscreen_blur_radius"
+                    android:title="@string/blur_radius_title"
+                    android:summary="@string/blur_radius_summary"
+                    android:max="25"
+                    settings:min="0"
+                    settings:unitsLeft=""
+                    settings:unitsRight=""
+                    android:dependency="lockscreen_see_through"
+                    android:persistent="false" />
+
 </PreferenceScreen>
