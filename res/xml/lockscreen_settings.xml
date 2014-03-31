@@ -48,11 +48,20 @@
             android:key="category_background"
             android:title="@string/category_background_title"/>
 
-            <org.omnirom.omnigears.preference.SystemCheckBoxPreference
-                    android:key="lockscreen_see_through"
+            <Preference
+                    android:key="lockscreen_custom_wallpaper"
+                    android:title="@string/lockscreen_wallpaper"
+                    android:persistent="false">
+                    <intent
+                            android:targetPackage="com.android.wallpapercropper"
+                            android:targetClass="com.android.wallpapercropper.LockscreenWallpaper"/>
+            </Preference>
+
+            <CheckBoxPreference
+                    android:key="lockscreen_blur"
                     android:title="@string/see_through_title"
                     android:summary="@string/see_through_summary"
-                    android:defaultValue="false" />
+                    android:persistent="false" />
 
             <org.omnirom.omnigears.chameleonos.SeekBarPreference
                     android:key="lockscreen_blur_radius"
@@ -62,7 +71,7 @@
                     settings:min="0"
                     settings:unitsLeft=""
                     settings:unitsRight=""
-                    android:dependency="lockscreen_see_through"
+                    android:dependency="lockscreen_blur"
                     android:persistent="false" />
 
 </PreferenceScreen>

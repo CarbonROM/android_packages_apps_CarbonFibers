@@ -54,12 +54,16 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_MAXIMIZE_WIDGETS = "maximize_widgets";
     private static final String KEY_ENABLE_CAMERA = "enable_camera";
-    private static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
+    private static final String KEY_BATTERY_AROUND_LOCKSCREEN_RING = "KEY_BATTERY_AROUND_LOCKSCREEN_RING";
+    private static final String KEY_LOCKSCREEN_CUSTOM_WALLPAPER = "lockscreen_custom_wallpaper";
+    private static final String KEY_BLUR = "lockscreen_blur";
     private static final String KEY_BLUR_RADIUS = "lockscreen_blur_radius";
 
     private CheckBoxPreference mMaximizeWidgets;
     private CheckBoxPreference mEnableCameraWidget;
     private CheckBoxPreference mLockRingBattery;
+    private CheckBoxPreference mBlur;
+    private Preference mLockscreenWallpaper;
     private SeekBarPreference mBlurRadius;
 
     @Override
@@ -75,14 +79,14 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
         if (!mLockPatternUtils.isLockScreenDisabled() && !mLockPatternUtils.isSecure()) {
             addPreferencesFromResource(R.xml.og_security_settings_chooser);
         }
+
         // Add the additional Omni settings
         mLockRingBattery = (CheckBoxPreference) root
-                .findPreference(BATTERY_AROUND_LOCKSCREEN_RING);
+                .findPreference(KEY_BATTERY_AROUND_LOCKSCREEN_RING);
         if (mLockRingBattery != null) {
             mLockRingBattery.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.BATTERY_AROUND_LOCKSCREEN_RING, 0) == 1);
         }
-
 
         // Enable or disable keyguard widget checkbox based on DPM state
         mMaximizeWidgets = (CheckBoxPreference) findPreference(KEY_MAXIMIZE_WIDGETS);
@@ -106,7 +110,23 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
                     Settings.System.LOCKSCREEN_ENABLE_CAMERA, 1) == 1);
         }
 
+        int blur = Settings.System.getInt(resolver,
+                Settings.System.LOCKSCREEN_SEE_THROUGH, 0);
+
+        mLockscreenWallpaper = (Preference) findPreference(KEY_LOCKSCREEN_CUSTOM_WALLPAPER);
+        if (blur != 0) {
+            mLockscreenWallpaper.setEnabled(false);
+            mLockscreenWallpaper.setSummary(getResources().getString(R.string.lockscreen_wallpaper_disabled));
+        } else {
+            mLockscreenWallpaper.setEnabled(true);
+        }
+
         // Lockscreen Blur
+
+        mBlur = (CheckBoxPreference) findPreference(KEY_BLUR);
+        mBlur.setChecked(blur == 1);
+        mBlur.setOnPreferenceChangeListener(this);
+
         mBlurRadius = (SeekBarPreference) findPreference(KEY_BLUR_RADIUS);
         mBlurRadius.setValue(Settings.System.getInt(resolver,
                 Settings.System.LOCKSCREEN_BLUR_RADIUS, 12));
@@ -116,7 +136,18 @@ public class LockscreenSettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mBlurRadius) {
+        if (preference == mBlur) {
+            int blur = (Boolean) objValue ? 1 : 0;
+            Settings.System.putInt(resolver,
+                    Settings.System.LOCKSCREEN_SEE_THROUGH, blur);
+            if (blur != 0) {
+                mLockscreenWallpaper.setEnabled(false);
+                mLockscreenWallpaper.setSummary(getResources().getString(R.string.lockscreen_wallpaper_disabled));
+            } else {
+                mLockscreenWallpaper.setEnabled(true);
+                mLockscreenWallpaper.setSummary("");
+            }
+        } else if (preference == mBlurRadius) {
             Settings.System.putInt(resolver,
                     Settings.System.LOCKSCREEN_BLUR_RADIUS, (Integer) objValue);
         }
