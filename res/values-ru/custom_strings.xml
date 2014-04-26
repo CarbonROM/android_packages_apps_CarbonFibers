@@ -248,6 +248,19 @@
     <string name="ad_annoying_summary">Огриничить количество уведомлений за промежуток времени</string>
     <string name="ad_double_tap_title">Блокировка двойным нажатием</string>
     <string name="ad_double_tap_summary">Двойное нажатие выключит экран</string>
+    <string name="ad_shake_event_settings_title">Настройки встряхивания</string>
+    <string name="ad_shake_event_title">Встряхнуть для отображения</string>
+    <string name="ad_shake_event_summary">Встряхните устройство для повторного отображения уведомления</string>
+    <string name="ad_shake_force_title">Для всех событий</string>
+    <string name="ad_shake_force_summary">При получении нового уведомления \"Активные Уведомления\" не будут работать, пока пользователь не встряхнёт устройство</string>
+    <string name="ad_shake_threshold_title">Интенсивность</string>
+    <string name="ad_shake_threshold_summary">Интенсивность встряхивания, необходимая для отображения уведомлений</string>
+    <string name="ad_shake_timeout_title">Время ожидания</string>
+    <string name="ad_shake_timeout_summary">Время, которое \"Встряхивание\" активно после получения уведомления, 0 означает всегда активно.</string>
+    <string name="ad_shake_quiet_hours_title">Игнорировать \"Тихие часы\"</string>
+    <string name="ad_shake_quiet_hours_summary">Разрешить \"Встряхивание\" во время \"Тихих часов\"</string>
+    <string name="ad_shake_long_threshold_title">Интервал</string>
+    <string name="ad_shake_long_threshold_summary">Минимальное время между встряхиваниями</string>
     <string name="ad_all_notifications_title">Показывать неудаляемые уведомления</string>
     <string name="ad_all_notifications_summary">Показывать уведомления, которые нельзя удалить</string>
     <string name="ad_hide_low_priority_title">Скрыть низкий приоритет</string>
@@ -508,4 +521,29 @@
     <string name="see_through_summary">Показывает содержимое позади экрана блокировки, ваши данные могут быть видны для окружающих</string>
     <string name="blur_radius_title">Радиус размытия</string>
     <string name="blur_radius_summary">Интенсивность эффекта размытия</string>
+
+    <!-- Navigation bar height/width -->
+    <string name="navbar_dimen_title">Размеры</string>
+    <string name="navbar_dimensions_reset_message">Сбросить все стили и размеры на значения по умолчанию?</string>
+    <string name="navigation_bar_height_title">Высота панели навигации</string>
+    <string name="navigation_bar_height_summary">Высота панели навигации в портретном режиме.</string>
+    <string name="navigation_bar_height_landscape_title">Высота панели навигации в ландшафте</string>
+    <string name="navigation_bar_height_landscape_summary">Высота панели навигации в ландшафтном режиме.</string>
+    <string name="navigation_bar_width_title">Ширина панели навигации</string>
+    <string name="navigation_bar_width_summary">Или высота, если панель находится сбоку.</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (по умолчанию)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (по умолчанию)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (выкл)</string>
+
+    <!-- Notification Panel Shortcuts -->
+    <string name="notification_bar_shortcuts">Элементы заголовка</string>
+    <string name="clock_shortcut_title">Время</string>
+    <string name="calendar_shortcut_title">Дата</string>
+    <string name="default_shortcut">По умолчанию</string>
 </resources>
