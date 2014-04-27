@@ -426,7 +426,7 @@
     <string name="smart_pulldown_title">Smart pulldown</string>
     <string name="smart_pulldown_summary">Open quick settings when there are no notifications present</string>
     <string name="smart_pulldown_off">Disabled</string>
-    <string name="smart_pulldown_dismissable">If no cleareable notifications</string>
+    <string name="smart_pulldown_dismissable">If no clearable notifications</string>
     <string name="smart_pulldown_persistent">If no notifications</string>
 
     <!-- Cursor control -->
