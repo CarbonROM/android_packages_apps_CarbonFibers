@@ -23,54 +23,55 @@
     <!-- Recents panel -->
     <PreferenceCategory
             android:key="category_recent_panel"
-            android:title="@string/bars_and_menus_category_recent_panel_title"/>
+            android:title="@string/bars_and_menus_category_recent_panel_title" >
 
-    <CheckBoxPreference
-            android:key="recent_menu_clear_all"
-            android:title="@string/show_recent_clear_all_button_title"
-            android:summary="@string/show_recent_clear_all_button_summary"
-            android:persistent="false" />
+        <CheckBoxPreference
+                android:key="recent_menu_clear_all"
+                android:title="@string/show_recent_clear_all_button_title"
+                android:summary="@string/show_recent_clear_all_button_summary"
+                android:persistent="false" />
 
-    <ListPreference
-            android:key="recent_menu_clear_all_location"
-            android:title="@string/recent_clear_all_button_location_title"
-            android:summary="@string/recent_clear_all_button_location_summary"
-            android:entries="@array/recent_clear_all_button_location_entries"
-            android:entryValues="@array/recent_clear_all_button_location_values"
-            android:defaultValue="2"
-            android:dependency="recent_menu_clear_all" 
-            android:persistent="false"/>
+        <ListPreference
+                android:key="recent_menu_clear_all_location"
+                android:title="@string/recent_clear_all_button_location_title"
+                android:summary="@string/recent_clear_all_button_location_summary"
+                android:entries="@array/recent_clear_all_button_location_entries"
+                android:entryValues="@array/recent_clear_all_button_location_values"
+                android:defaultValue="2"
+                android:dependency="recent_menu_clear_all"
+                android:persistent="false"/>
 
-    <CheckBoxPreference
-            android:key="show_recents_memory_indicator"
-            android:title="@string/show_recents_memory_indicator_title"
-            android:summary="@string/show_recents_memory_indicator_summary"
-            android:persistent="false" />
+        <CheckBoxPreference
+                android:key="show_recents_memory_indicator"
+                android:title="@string/show_recents_memory_indicator_title"
+                android:summary="@string/show_recents_memory_indicator_summary"
+                android:persistent="false" />
 
-    <ListPreference
-            android:key="recents_memory_indicator_location"
-            android:title="@string/recents_memory_indicator_location_title"
-            android:summary="@string/recents_memory_indicator_location_summary"
-            android:entries="@array/recent_clear_all_button_location_entries"
-            android:entryValues="@array/recent_clear_all_button_location_values"
-            android:defaultValue="2"
-            android:dependency="show_recents_memory_indicator" 
-            android:persistent="false" />
-
+        <ListPreference
+                android:key="recents_memory_indicator_location"
+                android:title="@string/recents_memory_indicator_location_title"
+                android:summary="@string/recents_memory_indicator_location_summary"
+                android:entries="@array/recent_clear_all_button_location_entries"
+                android:entryValues="@array/recent_clear_all_button_location_values"
+                android:defaultValue="2"
+                android:dependency="show_recents_memory_indicator"
+                android:persistent="false" />
+    </PreferenceCategory>
     <PreferenceCategory
             android:key="category_omniswitch"
-            android:title="@string/omniswitch_category"/>
+            android:title="@string/omniswitch_category">
 
-    <CheckBoxPreference
-            android:key="recents_use_omniswitch"
-            android:title="@string/recents_use_omniswitch_title"
-            android:summary="@string/recents_use_omniswitch_summary"
-            android:persistent="false" />
+        <CheckBoxPreference
+                android:key="recents_use_omniswitch"
+                android:title="@string/recents_use_omniswitch_title"
+                android:summary="@string/recents_use_omniswitch_summary"
+                android:persistent="false" />
 
-    <Preference
-            android:key="omniswitch_start_settings"
-            android:title="@string/omniswitch_start_settings_title"
-            android:summary="@string/omniswitch_start_settings_summary"
-            android:persistent="false" />
+        <Preference
+                android:key="omniswitch_start_settings"
+                android:title="@string/omniswitch_start_settings_title"
+                android:summary="@string/omniswitch_start_settings_summary"
+                android:persistent="false" />
+    </PreferenceCategory>
 
 </PreferenceScreen>

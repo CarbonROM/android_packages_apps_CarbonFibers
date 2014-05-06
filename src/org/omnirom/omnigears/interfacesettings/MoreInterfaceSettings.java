@@ -34,6 +34,7 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
+import android.preference.PreferenceCategory;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.util.Log;
@@ -49,6 +50,7 @@ public class MoreInterfaceSettings extends SettingsPreferenceFragment implements
             "recents_memory_indicator_location";
     private static final String RECENTS_USE_OMNISWITCH = "recents_use_omniswitch";
     private static final String OMNISWITCH_START_SETTINGS = "omniswitch_start_settings";
+    private static final String CATEGORY_USE_OMNISWITCH = "category_omniswitch";
 
     // Package name of the omnniswitch app
     public static final String OMNISWITCH_PACKAGE_NAME = "org.omnirom.omniswitch";
@@ -63,6 +65,7 @@ public class MoreInterfaceSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mRecentsUseOmniSwitch;
     private Preference mOmniSwitchSettings;
     private boolean mOmniSwitchInitCalled;
+    private PreferenceCategory mOmniSwitchCategory;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -97,21 +100,22 @@ public class MoreInterfaceSettings extends SettingsPreferenceFragment implements
         }
         mRecentsMemoryIndicatorPosition.setOnPreferenceChangeListener(this);
 
-        mRecentsUseOmniSwitch = (CheckBoxPreference)
-                prefSet.findPreference(RECENTS_USE_OMNISWITCH);
+        mOmniSwitchCategory = (PreferenceCategory) prefSet.findPreference(CATEGORY_USE_OMNISWITCH);
+        boolean omniSwitchAvailable = isOmniSwitchAvailable();
 
-        try {
+        if (!omniSwitchAvailable){
+            prefSet.removePreference(mOmniSwitchCategory);
+        } else {
+            mRecentsUseOmniSwitch = (CheckBoxPreference)
+                    prefSet.findPreference(RECENTS_USE_OMNISWITCH);
             mRecentsUseOmniSwitch.setChecked(Settings.System.getInt(resolver,
-                    Settings.System.RECENTS_USE_OMNISWITCH) == 1);
-            mOmniSwitchInitCalled = true;
-        } catch(SettingNotFoundException e){
-            // if the settings value is unset
-        }
-        mRecentsUseOmniSwitch.setOnPreferenceChangeListener(this);
+                    Settings.System.RECENTS_USE_OMNISWITCH, 0) == 1);
+            mRecentsUseOmniSwitch.setOnPreferenceChangeListener(this);
 
-        mOmniSwitchSettings = (Preference)
-                prefSet.findPreference(OMNISWITCH_START_SETTINGS);
-        mOmniSwitchSettings.setEnabled(mRecentsUseOmniSwitch.isChecked());
+            mOmniSwitchSettings = (Preference)
+                    prefSet.findPreference(OMNISWITCH_START_SETTINGS);
+            mOmniSwitchSettings.setEnabled(mRecentsUseOmniSwitch.isChecked());
+        }
     }
 
     @Override
@@ -142,10 +146,6 @@ public class MoreInterfaceSettings extends SettingsPreferenceFragment implements
                     resolver, Settings.System.RECENTS_MEMORY_INDICATOR_LOCATION, value);
         } else if (preference == mRecentsUseOmniSwitch) {
             boolean value = (Boolean) objValue;
-            if (value && !isOmniSwitchInstalled()){
-                openOmniSwitchNotInstalledWarning();
-                return false;
-            }
 
             // if value has never been set before
             if (value && !mOmniSwitchInitCalled){
@@ -155,25 +155,11 @@ public class MoreInterfaceSettings extends SettingsPreferenceFragment implements
 
             Settings.System.putInt(
                     resolver, Settings.System.RECENTS_USE_OMNISWITCH, value ? 1 : 0);
-            mOmniSwitchSettings.setEnabled(value && isOmniSwitchInstalled());
-            mOmniSwitchSettings.setSummary(isOmniSwitchInstalled() ?
-                    getResources().getString(R.string.omniswitch_start_settings_summary) :
-                    getResources().getString(R.string.omniswitch_not_installed_summary));
         } else {
             return false;
         }
 
         return true;
-    }
-
-    private void openOmniSwitchNotInstalledWarning() {
-        new AlertDialog.Builder(getActivity())
-                .setTitle(getResources().getString(R.string.omniswitch_not_installed_title))
-                .setMessage(getResources().getString(R.string.omniswitch_not_installed_message))
-                .setNegativeButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int whichButton) {
-                        }
-                }).show();
     }
 
     private void openOmniSwitchFirstTimeWarning() {
@@ -186,11 +172,13 @@ public class MoreInterfaceSettings extends SettingsPreferenceFragment implements
                 }).show();
     }
 
-    private boolean isOmniSwitchInstalled() {
+    private boolean isOmniSwitchAvailable() {
         final PackageManager pm = getPackageManager();
         try {
             pm.getPackageInfo(OMNISWITCH_PACKAGE_NAME, PackageManager.GET_ACTIVITIES);
-            return true;
+            int enabled = pm.getApplicationEnabledSetting(OMNISWITCH_PACKAGE_NAME);
+            return enabled != PackageManager.COMPONENT_ENABLED_STATE_DISABLED &&
+                enabled != PackageManager.COMPONENT_ENABLED_STATE_DISABLED_USER;
         } catch (NameNotFoundException e) {
             return false;
         }
