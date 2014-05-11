@@ -549,4 +549,5 @@
     <string name="calendar_shortcut_title">Date</string>
     <string name="default_shortcut">Default</string>
 
+    <string name="color_picker_dialog_title">Color</string>
 </resources>

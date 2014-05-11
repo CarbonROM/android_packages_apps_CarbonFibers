@@ -1,20 +1,22 @@
 /*
- * Copyright (C) 2012 The CyanogenMod Project
+ *  Copyright (C) 2014 The OmniROM Project
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
  *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
  */
 
-package org.omnirom.omnigears.batterylight;
+package org.omnirom.omnigears.preference;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -37,12 +39,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import org.omnirom.omnigears.ui.ColorPickerDialog;
+
 import com.android.settings.R;
 
-public class BatteryLightPreference extends DialogPreference {
+public class ColorPickerPreference extends DialogPreference {
 
-    private static String TAG = "BatteryLightPreference";
-    public static final int DEFAULT_COLOR = 0xFFFFFF; //White
+    private static String TAG = "ColorPickerPreference";
+    public static final int DEFAULT_COLOR = 0xFFFFFFFF; //White
 
     private ImageView mLightColorView;
     private Resources mResources;
@@ -52,20 +56,20 @@ public class BatteryLightPreference extends DialogPreference {
      * @param context
      * @param attrs
      */
-    public BatteryLightPreference(Context context, AttributeSet attrs) {
+    public ColorPickerPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         mColorValue = DEFAULT_COLOR;
         init();
     }
 
-    public BatteryLightPreference(Context context, int color) {
+    public ColorPickerPreference(Context context, int color) {
         super(context, null);
         mColorValue = color;
         init();
     }
 
     private void init() {
-        setLayoutResource(R.layout.preference_battery_light);
+        setLayoutResource(R.layout.preference_color_picker);
         mResources = getContext().getResources();
     }
 
@@ -93,7 +97,7 @@ public class BatteryLightPreference extends DialogPreference {
 
         if (mLightColorView != null) {
             mLightColorView.setEnabled(true);
-            mLightColorView.setImageDrawable(createRectShape(width, height, 0xFF000000 + mColorValue));
+            mLightColorView.setImageDrawable(createRectShape(width, height, mColorValue));
         }
     }
 
@@ -104,17 +108,15 @@ public class BatteryLightPreference extends DialogPreference {
 
     @Override
     protected Dialog createDialog() {
-        final BatteryLightDialog d = new BatteryLightDialog(getContext(),
-                0xFF000000 + mColorValue);
-        d.setAlphaSliderVisible(false);
+        final ColorPickerDialog d = new ColorPickerDialog(getContext(), mColorValue);
 
         d.setButton(AlertDialog.BUTTON_POSITIVE, mResources.getString(R.string.ok),
                 new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                mColorValue =  d.getColor() - 0xFF000000; // strip alpha, led does not support it
+                mColorValue =  d.getColor();
                 updatePreferenceViews();
-                callChangeListener(this);
+                callChangeListener(new Integer(mColorValue));
             }
         });
         d.setButton(AlertDialog.BUTTON_NEGATIVE, mResources.getString(R.string.cancel),

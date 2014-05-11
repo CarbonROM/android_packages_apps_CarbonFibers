@@ -124,8 +124,8 @@ public class ApplicationLightPreference extends DialogPreference {
     }
 
     private void updatePreferenceViews() {
-        final int width = (int) mResources.getDimension(R.dimen.device_memory_usage_button_width);
-        final int height = (int) mResources.getDimension(R.dimen.device_memory_usage_button_height);
+        final int width = (int) mResources.getDimension(R.dimen.color_preference_width);
+        final int height = (int) mResources.getDimension(R.dimen.color_preference_height_large);
 
         if (mLightColorView != null) {
             mLightColorView.setEnabled(true);
