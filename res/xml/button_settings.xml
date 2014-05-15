@@ -63,6 +63,16 @@
             android:entries="@array/volume_key_cursor_control_entries"
             android:entryValues="@array/volume_key_cursor_control_values" />
 
+        <org.omnirom.omnigears.preference.SystemCheckBoxPreference
+            android:key="swap_volume_buttons"
+            android:title="@string/swap_volume_buttons_title"
+            android:summary="@string/swap_volume_buttons_summary" />
+
+        <Preference
+            android:key="swap_volume_advanced_settings"
+            android:title="@string/swap_volume_advanced_settings_title"
+            android:dependency="swap_volume_buttons" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

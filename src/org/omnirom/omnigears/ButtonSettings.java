@@ -60,6 +60,8 @@ import java.util.HashMap;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import org.omnirom.omnigears.preference.SystemCheckBoxPreference;
+import org.omnirom.omnigears.ui.VolumeRotationDialog;
 
 public class ButtonSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -75,6 +77,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String BUTTON_VOLUME_DEFAULT = "button_volume_default_screen";
     private static final String BUTTON_VOLUME_MUSIC_CONTROL = "button_volume_music_control";
     private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+    private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
+    private static final String SWAP_VOLUME_ADVANCED_SETTINGS = "swap_volume_advanced_settings";
+    private static final String SWAP_VOLUME_ADVANCED_RESTORE_DIALOG = "swap_volume_advanced_restore_dialog";
     private static final String CATEGORY_HEADSETHOOK = "button_headsethook";
     private static final String BUTTON_HEADSETHOOK_LAUNCH_VOICE = "button_headsethook_launch_voice";
 
@@ -120,6 +125,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
     private CheckBoxPreference mVolumeWake;
     private CheckBoxPreference mVolumeMusicControl;
+    private CheckBoxPreference mSwapVolumeButtons;
+    private Preference mSwapVolumeAdvanced;
+    private VolumeRotationDialog mVolumeRotationDialog;
     private ListPreference mVolumeKeyCursorControl;
     private SwitchPreference mEnableCustomBindings;
     private ListPreference mBackPressAction;
@@ -183,6 +191,18 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             mVolumeMusicControl = (CheckBoxPreference) findPreference(BUTTON_VOLUME_MUSIC_CONTROL);
             mVolumeMusicControl.setChecked(Settings.System.getInt(resolver,
                     Settings.System.VOLUME_MUSIC_CONTROL, 0) != 0);
+
+            mSwapVolumeButtons = (SystemCheckBoxPreference) findPreference(SWAP_VOLUME_BUTTONS);
+            mSwapVolumeButtons.setChecked(Settings.System.getInt(resolver,
+                    Settings.System.SWAP_VOLUME_BUTTONS, 0) != 0);
+
+            mSwapVolumeAdvanced = (Preference) findPreference(SWAP_VOLUME_ADVANCED_SETTINGS);
+            boolean mustBeRestored = savedInstanceState != null
+                && savedInstanceState.containsKey(SWAP_VOLUME_ADVANCED_RESTORE_DIALOG)
+                && savedInstanceState.getBoolean(SWAP_VOLUME_ADVANCED_RESTORE_DIALOG);
+            if(mustBeRestored) {
+                raiseSwapVolumeAdvancedDialog();
+            }
 
             mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
             if(mVolumeKeyCursorControl != null) {
@@ -469,10 +489,33 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             Settings.System.putInt(getContentResolver(),
                     Settings.System.HARDWARE_KEYS_DISABLE, checked ? 1:0);
             updateDisableHWKeyEnablement(checked);
+        } else if (preference == mSwapVolumeButtons){
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.SWAP_VOLUME_BUTTONS, checked ? 1:0);
+            return true;
+        } else if (preference == mSwapVolumeAdvanced){
+            raiseSwapVolumeAdvancedDialog();
             return true;
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    private void raiseSwapVolumeAdvancedDialog() {
+        if (mVolumeRotationDialog != null) {
+            mVolumeRotationDialog.hide();
+            mVolumeRotationDialog = null;
+        }
+        mVolumeRotationDialog = new VolumeRotationDialog(getActivity());
+        mVolumeRotationDialog.show();
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putBoolean(SWAP_VOLUME_ADVANCED_RESTORE_DIALOG,
+            (mVolumeRotationDialog != null && mVolumeRotationDialog.isShowing()));
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
