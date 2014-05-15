@@ -93,6 +93,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private static final String KEYS_APP_SWITCH_LONG_PRESS = "keys_app_switch_long_press";
     private static final String VIRTUAL_KEY_HAPTIC_FEEDBACK = "virtual_key_haptic_feedback";
     private static final String FORCE_SHOW_OVERFLOW_MENU = "force_show_overflow_menu";
+    private static final String KEYS_BRIGHTNESS_KEY = "button_brightness";
+    private static final String KEYS_SHOW_NAVBAR_KEY = "navigation_bar_show";
+    private static final String KEYS_DISABLE_HW_KEY = "hardware_keys_disable";
 
     // Available custom actions to perform on a key press.
     private static final int ACTION_NOTHING = 0;
@@ -135,6 +138,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private CheckBoxPreference mHeadsetHookLaunchVoice;
     private CheckBoxPreference mVirtualKeyHapticFeedback;
     private CheckBoxPreference mForceShowOverflowMenu;
+    private boolean mButtonBrightnessSupport;
+    private CheckBoxPreference mEnableNavBar;
+    private CheckBoxPreference mDisabkeHWKeys;
+    private PreferenceScreen mButtonBrightness;
+    private PreferenceCategory mKeysBackCategory;
+    private PreferenceCategory mKeysHomeCategory;
+    private PreferenceCategory mKeysMenuCategory;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -148,6 +158,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
         final PreferenceCategory volumeCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_VOLUME);
+
+        mButtonBrightnessSupport = getResources().getBoolean(com.android.internal.R.bool.config_button_brightness_support);
 
         if (hasVolumeRocker()) {
             mVolumeWake = (CheckBoxPreference) findPreference(BUTTON_VOLUME_WAKE);
@@ -194,11 +206,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
         final PreferenceCategory keysCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_KEYS);
-        final PreferenceCategory keysBackCategory =
+        mKeysBackCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_BACK);
-        final PreferenceCategory keysHomeCategory =
+        mKeysHomeCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_HOME);
-        final PreferenceCategory keysMenuCategory =
+        mKeysMenuCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_MENU);
         final PreferenceCategory keysAssistCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_ASSIST);
@@ -207,9 +219,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
         if (!res.getBoolean(R.bool.config_has_hardware_buttons)) {
             prefScreen.removePreference(keysCategory);
-            prefScreen.removePreference(keysBackCategory);
-            prefScreen.removePreference(keysHomeCategory);
-            prefScreen.removePreference(keysMenuCategory);
+            prefScreen.removePreference(mKeysBackCategory);
+            prefScreen.removePreference(mKeysHomeCategory);
+            prefScreen.removePreference(mKeysMenuCategory);
             prefScreen.removePreference(keysAssistCategory);
             prefScreen.removePreference(keysAppSwitchCategory);
         } else {
@@ -241,6 +253,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                     VIRTUAL_KEY_HAPTIC_FEEDBACK);
             mForceShowOverflowMenu = (CheckBoxPreference) prefScreen.findPreference(
                     FORCE_SHOW_OVERFLOW_MENU);
+            mEnableNavBar = (CheckBoxPreference) prefScreen.findPreference(
+                    KEYS_SHOW_NAVBAR_KEY);
+            mDisabkeHWKeys = (CheckBoxPreference) prefScreen.findPreference(
+                    KEYS_DISABLE_HW_KEY);
+            mButtonBrightness = (PreferenceScreen) prefScreen.findPreference(
+                    KEYS_BRIGHTNESS_KEY);
 
             if (hasBackKey) {
                 int backPressAction = Settings.System.getInt(resolver,
@@ -261,7 +279,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                 
                 mKeySettings.put(Settings.System.KEY_BACK_LONG_PRESS_ACTION, backLongPressAction);
             } else {
-                prefScreen.removePreference(keysBackCategory);
+                prefScreen.removePreference(mKeysBackCategory);
             }
 
             if (hasHomeKey) {
@@ -313,7 +331,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
                 mKeySettings.put(Settings.System.KEY_HOME_DOUBLE_TAP_ACTION, homeDoubleTapAction);
             } else {
-                prefScreen.removePreference(keysHomeCategory);
+                prefScreen.removePreference(mKeysHomeCategory);
             }
 
             if (hasMenuKey) {
@@ -339,7 +357,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
                 mKeySettings.put(Settings.System.KEY_MENU_LONG_PRESS_ACTION, menuLongPressAction);
             } else {
-                prefScreen.removePreference(keysMenuCategory);
+                prefScreen.removePreference(mKeysMenuCategory);
             }
 
             if (hasAssistKey) {
@@ -395,9 +413,18 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             }
 
             boolean hasNavBar = getResources().getBoolean(
-                com.android.internal.R.bool.config_showNavigationBar);
+                    com.android.internal.R.bool.config_showNavigationBar);
             mForceShowOverflowMenu.setChecked(Settings.System.getInt(resolver,
-                        Settings.System.FORCE_SHOW_OVERFLOW_MENU, (!hasNavBar && hasMenuKey) ? 0 : 1) == 1);
+                    Settings.System.FORCE_SHOW_OVERFLOW_MENU, (!hasNavBar && hasMenuKey) ? 0 : 1) == 1);
+
+            boolean harwareKeysDisable = Settings.System.getInt(resolver,
+                        Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
+            mDisabkeHWKeys.setChecked(harwareKeysDisable);
+
+            if (!mButtonBrightnessSupport){
+                keysCategory.removePreference(mButtonBrightness);
+            }
+            updateDisableHWKeyEnablement(harwareKeysDisable);
         }
 
         final PreferenceCategory headsethookCategory =
@@ -436,6 +463,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.FORCE_SHOW_OVERFLOW_MENU, checked ? 1:0);
+            return true;
+        } else if (preference == mDisabkeHWKeys){
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HARDWARE_KEYS_DISABLE, checked ? 1:0);
+            updateDisableHWKeyEnablement(checked);
             return true;
         }
 
@@ -620,5 +653,17 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
         list.setEntries(entries.toArray(new CharSequence[entries.size()]));
         list.setEntryValues(values.toArray(new CharSequence[values.size()]));
+    }
+
+    private void updateDisableHWKeyEnablement(boolean harwareKeysDisable) {
+        boolean enableHWKeyRebinding = Settings.System.getInt(getContentResolver(),
+                    Settings.System.HARDWARE_KEY_REBINDING, 0) == 1;
+
+        mVirtualKeyHapticFeedback.setEnabled(!harwareKeysDisable);
+        mForceShowOverflowMenu.setEnabled(!harwareKeysDisable);
+        mButtonBrightness.setEnabled(!harwareKeysDisable);
+        mKeysHomeCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
+        mKeysBackCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
+        mKeysMenuCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
     }
 }

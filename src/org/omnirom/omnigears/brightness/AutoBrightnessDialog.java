@@ -266,12 +266,19 @@ public class AutoBrightnessDialog extends AlertDialog
 
         if (lux == null || values == null) {
             final Resources res = getContext().getResources();
-            lux = res.getIntArray(com.android.internal.R.array.config_autoBrightnessLevels);
-            if (mScreenMode){
-                values = res.getIntArray(com.android.internal.R.array.config_autoBrightnessLcdBacklightValues);
-            } else {
-                values = res.getIntArray(com.android.internal.R.array.config_autoBrightnessButtonBacklightValues);
+            if (lux == null){
+                lux = res.getIntArray(com.android.internal.R.array.config_autoBrightnessLevels);
             }
+            if (values == null){
+                if (mScreenMode){
+                    values = res.getIntArray(com.android.internal.R.array.config_autoBrightnessLcdBacklightValues);
+                } else {
+                    values = res.getIntArray(com.android.internal.R.array.config_autoBrightnessButtonBacklightValues);
+                }
+            }
+        }
+
+        if (lux == null && values == null) {
             mIsDefault = true;
         } else {
             mIsDefault = false;

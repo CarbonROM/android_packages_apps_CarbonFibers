@@ -17,7 +17,6 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/brightness"
-        android:key="backlight_settings"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
         <PreferenceCategory
@@ -28,7 +27,7 @@
                         android:title="@string/brightness"
                         android:persistent="false"/>
 
-                <Preference
+                <PreferenceScreen
                         android:key="screen_auto_brightness"
                         android:title="@string/screen_auto_brightness"
                         android:summary="@string/screen_auto_brighness_summary"/>
@@ -38,33 +37,12 @@
                 android:key="button_brightness_category"
                 android:title="@string/button_brightness_category">
 
-                <Preference
-                        android:key="button_auto_brightness"
-                        android:title="@string/button_auto_brightness"
-                        android:summary="@string/button_auto_brighness_summary"/>
-                <Preference
-                        android:key="button_manual_brightness"
-                        android:title="@string/button_manual_brightness"
-                        android:summary="@string/button_manual_brightness_summary"/>
-                <CheckBoxPreference
-                        android:key="button_no_brightness"
-                        android:title="@string/button_no_brightness"
-                        android:summary="@string/button_no_brightness_summary"
-                        android:persistent="false"/>
-                <CheckBoxPreference
-                        android:key="button_link_brightness"
-                        android:title="@string/button_link_brightness"
-                        android:summary="@string/button_link_brightness_summary"
-                        android:persistent="false"/>
-                <org.omnirom.omnigears.chameleonos.SeekBarPreference
-                        android:key="button_timeout"
-                        android:title="@string/button_timeout_title"
-                        android:summary="@string/button_timeout_summary"
-                        android:max="30"
-                        settings:min="0"
-                        settings:unitsLeft=""
-                        settings:unitsRight="@string/unit_sec"
-                        android:persistent="false" />
+                <PreferenceScreen
+                        android:key="button_brightness"
+                        android:title="@string/brightness"
+                        android:summary="@string/button_brightness_summary"
+                        android:fragment="org.omnirom.omnigears.brightness.ButtonBrightnessSettings" />
+
         </PreferenceCategory>
 
         <PreferenceCategory

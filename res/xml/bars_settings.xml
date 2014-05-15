@@ -114,16 +114,19 @@
         <PreferenceScreen
             android:key="navigation_bar"
             android:fragment="org.omnirom.omnigears.interfacesettings.NavBar"
+            android:summary="@string/navigation_bar_summary"
             android:title="@string/navigation_bar_title" />
 
         <PreferenceScreen
             android:key="navigation_bar_dimen"
             android:fragment="org.omnirom.omnigears.interfacesettings.NavBarDimen"
+            android:summary="@string/navbar_dimen_summary"
             android:title="@string/navbar_dimen_title" />
 
         <PreferenceScreen
             android:key="navigation_ring"
             android:fragment="org.omnirom.omnigears.interfacesettings.NavRing"
+            android:summary="@string/navigation_ring_summary"
             android:title="@string/navigation_ring_title" />
 
         <CheckBoxPreference

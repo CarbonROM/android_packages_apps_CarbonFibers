@@ -169,10 +169,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             prefSet.removePreference(findPreference(NETWORK_TRAFFIC_PERIOD));
         }
 
-        boolean hasNavBar = getResources().getBoolean(
-                com.android.internal.R.bool.config_showNavigationBar);
-        // Also check, if users without navigation bar force enabled it.
-        hasNavBar = hasNavBar || (SystemProperties.getInt("qemu.hw.mainkeys", 1) == 0);
+        boolean hasNavBar = DeviceUtils.deviceSupportNavigationBar(getActivity());
 
         // Hide navigation bar category on devices without navigation bar
         if (!hasNavBar) {
