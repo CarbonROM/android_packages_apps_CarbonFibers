@@ -467,4 +467,5 @@
     <string name="clock_shortcut_title">Heure</string>
     <string name="calendar_shortcut_title">Date</string>
     <string name="default_shortcut">Défaut</string>
+    <string name="color_picker_dialog_title">Couleur</string>
 </resources>
