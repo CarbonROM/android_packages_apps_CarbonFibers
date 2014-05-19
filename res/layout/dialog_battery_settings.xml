@@ -12,77 +12,63 @@
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
-     limitations under the License. -->
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
     <org.omnirom.omnigears.ui.ColorPickerView
         android:id="@+id/color_picker_view"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp" />
-
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp" />
     <LinearLayout
         android:id="@+id/color_panel_view"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_alignStart="@id/color_picker_view"
-        android:layout_alignEnd="@id/color_picker_view"
-        android:layout_below="@id/color_picker_view"
-        android:layout_marginBottom="4dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal" >
-
         <EditText
             android:id="@+id/hex_color_input"
             android:layout_width="0px"
-            android:maxLength="6"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
             android:digits="0123456789ABCDEFabcdef"
             android:inputType="textNoSuggestions"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5" />
-
-        <View
-            android:layout_width="8dip"
-            android:layout_height="match_parent" />
-
+            android:maxLength="6" />
         <org.omnirom.omnigears.ui.ColorPanelView
             android:id="@+id/color_panel"
             android:layout_width="0px"
             android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
             android:layout_weight="0.5" />
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/color_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal" >
-
-             <Spinner
-                android:id="@+id/color_list_spinner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="0.5" />
-
-            <View
-                android:layout_width="8dip"
-                android:layout_height="match_parent" />
-
-             <org.omnirom.omnigears.ui.ColorPanelView
-                android:id="@+id/color_list_panel"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="0.5" />
+        <Spinner
+            android:id="@+id/color_list_spinner"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5" />
+        <org.omnirom.omnigears.ui.ColorPanelView
+            android:id="@+id/color_list_panel"
+            android:layout_width="0px"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.5" />
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>
