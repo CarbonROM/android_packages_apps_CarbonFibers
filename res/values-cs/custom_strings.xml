@@ -117,7 +117,7 @@
     <string name="screen_auto_brighness_summary">Úrovně jasu obrazovky automatického režimu</string>
     <string name="button_auto_brightness">Automatické úrovně</string>
     <string name="button_auto_brighness_summary">Úrovně jasu tlačítka automatického režimu</string>
-    <string name="button_brightness_category">Tlačítka</string>
+    <string name="button_brightness_title">Tlačítka</string>
     <string name="button_no_brightness">Tmavý režim</string>
     <string name="button_no_brightness_summary">Nenastavovat jas tlačítka</string>
     <string name="button_link_brightness">Odkaz na obrazovce</string>

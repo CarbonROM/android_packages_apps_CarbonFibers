@@ -118,7 +118,7 @@
     <string name="screen_auto_brighness_summary">Яркость экрана в автоматическом режиме</string>
     <string name="button_auto_brightness">Автоматическая яркость подсветки</string>
     <string name="button_auto_brighness_summary">Яркость подсветки кнопок в автоматическом режиме</string>
-    <string name="button_brightness_category">Кнопки</string>
+    <string name="button_brightness_title">Кнопки</string>
     <string name="button_no_brightness">Отключить подсветку</string>
     <string name="button_no_brightness_summary">Подсветка кнопок отключена</string>
     <string name="button_link_brightness">Ссылаться на яркость экрана</string>

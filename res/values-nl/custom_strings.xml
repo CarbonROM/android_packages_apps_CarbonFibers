@@ -117,7 +117,7 @@
     <string name="screen_auto_brighness_summary">Schermhelderheid automatisch bepalen</string>
     <string name="button_auto_brightness">Automatische waardes</string>
     <string name="button_auto_brighness_summary">Knoppenhelderheid automatisch bepalen</string>
-    <string name="button_brightness_category">Knoppen</string>
+    <string name="button_brightness_title">Knoppen</string>
     <string name="button_no_brightness">Donkere modus</string>
     <string name="button_no_brightness_summary">Geen knoppenhelderheid</string>
     <string name="button_link_brightness">Link naar scherm</string>

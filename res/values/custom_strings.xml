@@ -118,7 +118,6 @@
     <string name="screen_auto_brighness_summary">Screen brightness levels for automatic mode</string>
     <string name="button_auto_brightness">Automatic levels</string>
     <string name="button_auto_brighness_summary">Button brightness levels for automatic mode</string>
-    <string name="button_brightness_category">Buttons</string>
     <string name="button_no_brightness">Dark mode</string>
     <string name="button_no_brightness_summary">Don\'t set button brightness</string>
     <string name="button_link_brightness">Link to screen</string>

@@ -40,7 +40,6 @@ import android.util.Log;
 import android.app.AlertDialog;
 import android.text.TextWatcher;
 import android.text.Editable;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -53,14 +52,10 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_AUTOMATIC_SENSITIVITY = "auto_brightness_sensitivity";
     private static final String KEY_SCREEN_AUTO_BRIGHTNESS = "screen_auto_brightness";
-    private static final String KEY_BUTTON_BRIGHTNESS_CATEGORY = "button_brightness_category";
-    private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
 
     private ListPreference mAutomaticSensitivity;
     private Preference mAutomaticScreenBrightness;
     private AutoBrightnessDialog mScreenBrightnessDialog;
-    private boolean mButtonBrightnessSupport;
-    private PreferenceCategory mButtonBrightness;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,8 +63,6 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
-
-        mButtonBrightnessSupport = getResources().getBoolean(com.android.internal.R.bool.config_button_brightness_support);
 
         mAutomaticSensitivity = (ListPreference) findPreference(KEY_AUTOMATIC_SENSITIVITY);
         float currentSensitivity = Settings.System.getFloat(resolver,
@@ -81,16 +74,6 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
         mAutomaticSensitivity.setOnPreferenceChangeListener(this);
 
         mAutomaticScreenBrightness = (Preference) findPreference(KEY_SCREEN_AUTO_BRIGHTNESS);
-        mButtonBrightness = (PreferenceCategory) findPreference(KEY_BUTTON_BRIGHTNESS_CATEGORY);
-
-        if (!mButtonBrightnessSupport){
-            prefSet.removePreference(mButtonBrightness);
-        } else {
-            boolean harwareKeysDisable = Settings.System.getInt(resolver,
-                        Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
-            PreferenceScreen buttonBrightness = (PreferenceScreen) findPreference(KEY_BUTTON_BRIGHTNESS);
-            buttonBrightness.setEnabled(!harwareKeysDisable);
-        }
     }
 
     @Override
@@ -156,4 +139,3 @@ public class BrightnessSettings extends SettingsPreferenceFragment implements
         mScreenBrightnessDialog.show();
     }
 }
-

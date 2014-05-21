@@ -97,7 +97,7 @@
     <string name="screen_auto_brighness_summary">Niveaux de luminosité de l\'écran pour le mode automatique</string>
     <string name="button_auto_brightness">Niveaux automatique</string>
     <string name="button_auto_brighness_summary">Niveaux de luminosité des boutons pour le mode automatique</string>
-    <string name="button_brightness_category">Boutons</string>
+    <string name="button_brightness_title">Boutons</string>
     <string name="button_no_brightness">Mode sombre</string>
     <string name="button_no_brightness_summary">Ne pas définir la luminosité du bouton</string>
     <string name="button_link_brightness">Lier à l\'écran</string>

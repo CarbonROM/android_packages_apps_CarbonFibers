@@ -96,7 +96,7 @@
     <string name="screen_auto_brighness_summary">Skärmljusnivåer för automatiskt läge</string>
     <string name="button_auto_brightness">Automatiska nivåer</string>
     <string name="button_auto_brighness_summary">Knappljusnivåer för automatiskt läge</string>
-    <string name="button_brightness_category">Knappar</string>
+    <string name="button_brightness_title">Knappar</string>
     <string name="button_no_brightness">Mörkt läge</string>
     <string name="button_no_brightness_summary">Ställ inte in knappljusstyrka</string>
     <string name="button_link_brightness">Sammanlänka med skärm</string>

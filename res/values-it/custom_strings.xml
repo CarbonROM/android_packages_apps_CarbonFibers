@@ -116,7 +116,7 @@
     <string name="screen_auto_brighness_summary">I livelli di luminosità dello schermo sono in modalità automatica</string>
     <string name="button_auto_brightness">Livelli automatici</string>
     <string name="button_auto_brighness_summary">I livelli dei pusalti sono in modalità automatica</string>
-    <string name="button_brightness_category">Pulsanti</string>
+    <string name="button_brightness_title">Pulsanti</string>
     <string name="button_no_brightness">Modalità buia</string>
     <string name="button_no_brightness_summary">Non impostare la luminosità pulsanti</string>
     <string name="button_link_brightness">Passa a schermo</string>

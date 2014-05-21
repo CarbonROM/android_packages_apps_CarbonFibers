@@ -112,7 +112,7 @@
     <string name="screen_auto_brighness_summary">Niveles de brillo de la pantalla para el modo automático</string>
     <string name="button_auto_brightness">Niveles automáticos</string>
     <string name="button_auto_brighness_summary">Niveles de brillo del botón en modo automático</string>
-    <string name="button_brightness_category">Botones</string>
+    <string name="button_brightness_title">Botones</string>
     <string name="button_no_brightness">Modo oscuro</string>
     <string name="button_no_brightness_summary">No ajustar el brillo botón</string>
     <string name="button_link_brightness">Enlace a la pantalla</string>

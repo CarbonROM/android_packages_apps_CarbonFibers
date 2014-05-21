@@ -34,18 +34,6 @@
         </PreferenceCategory>
 
         <PreferenceCategory
-                android:key="button_brightness_category"
-                android:title="@string/button_brightness_category">
-
-                <PreferenceScreen
-                        android:key="button_brightness"
-                        android:title="@string/brightness"
-                        android:summary="@string/button_brightness_summary"
-                        android:fragment="org.omnirom.omnigears.brightness.ButtonBrightnessSettings" />
-
-        </PreferenceCategory>
-
-        <PreferenceCategory
                 android:key="sensor_category"
                 android:title="@string/sensor_category">
 

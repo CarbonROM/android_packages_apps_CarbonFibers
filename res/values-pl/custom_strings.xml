@@ -115,7 +115,7 @@
     <string name="screen_auto_brighness_summary">Poziomy jasności ekranu dla trybu automatycznego</string>
     <string name="button_auto_brightness">Automatyczne poziomy</string>
     <string name="button_auto_brighness_summary">Poziomy jasności przycisku dla trybu automatycznego</string>
-    <string name="button_brightness_category">Przyciski</string>
+    <string name="button_brightness_title">Przyciski</string>
     <string name="button_no_brightness">Tryb ciemny</string>
     <string name="button_no_brightness_summary">Nie ustawiaj jasnośći przycisków</string>
     <string name="button_link_brightness">Powiąż z ekranem</string>

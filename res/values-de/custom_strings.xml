@@ -118,7 +118,7 @@
     <string name="screen_auto_brighness_summary">Helligkeitsstufen für Automodus</string>
     <string name="button_auto_brightness">Automatische Stufen</string>
     <string name="button_auto_brighness_summary">Tastenhelligkeit im Automodus</string>
-    <string name="button_brightness_category">Tasten</string>
+    <string name="button_brightness_title">Tasten</string>
     <string name="button_no_brightness">Dunkler Modus</string>
     <string name="button_no_brightness_summary">Tastenhelligkeit nicht einstellen</string>
     <string name="button_link_brightness">Mit Bildschirm verknüpfen</string>

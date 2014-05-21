@@ -117,7 +117,7 @@
     <string name="screen_auto_brighness_summary">自动模式下的屏幕亮度等级</string>
     <string name="button_auto_brightness">自动等级</string>
     <string name="button_auto_brighness_summary">自动模式下的按钮亮度等级</string>
-    <string name="button_brightness_category">按钮</string>
+    <string name="button_brightness_title">按钮</string>
     <string name="button_no_brightness">全黑模式</string>
     <string name="button_no_brightness_summary">不要设置按钮亮度</string>
     <string name="button_link_brightness">与屏幕同步</string>

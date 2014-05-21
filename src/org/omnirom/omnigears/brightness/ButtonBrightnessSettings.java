@@ -52,7 +52,6 @@ public class ButtonBrightnessSettings extends SettingsPreferenceFragment impleme
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "ButtonBrightnessSettings";
 
-    private static final String KEY_BUTTON_BRIGHTNESS_CATEGORY = "button_brightness_category";
     private static final String KEY_BUTTON_NO_BRIGHTNESS = "button_no_brightness";
     private static final String KEY_BUTTON_LINK_BRIGHTNESS = "button_link_brightness";
     private static final String KEY_BUTTON_AUTO_BRIGHTNESS = "button_auto_brightness";
