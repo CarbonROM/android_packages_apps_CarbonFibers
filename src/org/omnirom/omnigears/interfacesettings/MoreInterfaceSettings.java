@@ -104,7 +104,7 @@ public class MoreInterfaceSettings extends SettingsPreferenceFragment implements
         boolean omniSwitchAvailable = isOmniSwitchAvailable();
 
         if (!omniSwitchAvailable){
-            Settings.System.putInt(Settings.System.RECENTS_USE_OMNISWITCH, 0);
+            Settings.System.putInt(resolver, Settings.System.RECENTS_USE_OMNISWITCH, 0);
             prefSet.removePreference(mOmniSwitchCategory);
         } else {
             mRecentsUseOmniSwitch = (CheckBoxPreference)
