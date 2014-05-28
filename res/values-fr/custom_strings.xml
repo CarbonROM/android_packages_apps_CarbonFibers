@@ -98,6 +98,7 @@
     <string name="button_auto_brightness">Niveaux automatique</string>
     <string name="button_auto_brighness_summary">Niveaux de luminosité des boutons pour le mode automatique</string>
     <string name="button_brightness_title">Boutons</string>
+    <string name="button_brightness_summary">Paramètres de luminosité des boutons</string>
     <string name="button_no_brightness">Mode sombre</string>
     <string name="button_no_brightness_summary">Ne pas définir la luminosité du bouton</string>
     <string name="button_link_brightness">Lier à l\'écran</string>
@@ -188,6 +189,10 @@
     <string name="no_home_key">Vous n\'avez pas assigné de bouton à l\'action \"Accueil\"\u00A0! Cela peut rendre votre appareil inutilisable\u00A0!</string>
     <string name="virtual_key_haptic_feedback_title">Vibrer au toucher</string>
     <string name="virtual_key_haptic_feedback_summary">Cette option dépend de l\'option \"Vibrer au toucher\" des paramètres du son</string>
+    <string name="navigation_bar_show_title">Afficher la barre de navigation</string>
+    <string name="navigation_bar_show_summary">Forcer l\'activation de la barre de navigation</string>
+    <string name="hardware_keys_disable_title">Désactiver les touches</string>
+    <string name="hardware_keys_disable_summary">Forcer la désactivation des touches</string>
     <string name="bars_and_menus_category_power_menu_title">Menu marche/arrêt</string>
     <string name="power_menu_toggle_screenshot_title">Capture d\'écran</string>
     <string name="power_menu_toggle_screenshot_summary">Afficher les options de capture d\'écran dans le menu marche/arrêt</string>
@@ -297,6 +302,7 @@
     <string name="button_volume_default_title">Volume par défaut</string>
     <string name="button_volume_default_summary">Définir quel volume modifier par défaut</string>
     <string name="navigation_bar_title">Boutons et agencement</string>
+    <string name="navigation_bar_summary">Configurer les boutons de la barre de navigation</string>
     <string name="navigation_bar_help_text">1 - Pour commencer l\'édition, appuyer sur le cadenas\n\n2 - Appuyer sur un des boutons pour assigner ou changer une fonctionnalité\n\n3 - Exercer une pression longue pour modifier l\'ordre\n\n4 - Pour enregistrer, appuyer à nouveau sur le cadenas\n\n5 - Pour remettre à zéro, appuyer sur le bouton \"Réinitialiser\"\n\n</string>
     <string name="navigation_bar_tips">\u2022 Les actions ne peuvent être assignées qu\'une seule fois\n\n\u2022 Le bouton Accueil ne peut pas être réassigné\n\n\u2022 Les boutons sur le bord ne peuvent être déplacés</string>
     <string name="navigation_bar_tips_title">Conseils pratiques</string>
@@ -306,6 +312,7 @@
     <string name="navigation_bar_menu_editable">Éditable</string>
     <string name="navigation_bar_menu_locked">Verrouillé</string>
     <string name="navigation_ring_title">Raccourcis de lancement rapide</string>
+    <string name="navigation_ring_summary">Configurer les raccourcis de la barre de navigation personnalisée</string>
     <string name="navring_target_reset_message">Supprimer tous les raccourcis de la barre de navigation et revenir à la configuration d\'origine\u00A0?</string>
     <string name="navring_target_reset">Raccourcis de la barre de navigation réinitialisés</string>
     <string name="navring_action_open_ime_switcher">Changer la méthode de saisie</string>
@@ -347,6 +354,7 @@
     <string name="icon_picker_email2">Email Holo</string>
     <string name="icon_picker_facebook">Facebook</string>
     <string name="icon_picker_gallery">Galerie</string>
+    <string name="icon_picker_gmail">Gmail</string>
     <string name="icon_picker_google_small">Google (petit)</string>
     <string name="icon_picker_googleplus">Google+</string>
     <string name="icon_picker_googletalk">Hangouts</string>
@@ -358,6 +366,7 @@
     <string name="icon_picker_podcast">Podcast</string>
     <string name="icon_picker_rss">RSS</string>
     <string name="icon_picker_search">Recherche</string>
+    <string name="icon_picker_snapchat">Snapchat</string>
     <string name="icon_picker_sms">Messages</string>
     <string name="icon_picker_twitter">Twitter</string>
     <string name="quick_settings_category_title">Volet des paramètres</string>
@@ -447,6 +456,7 @@
     <string name="lockscreen_wallpaper">Fond d\'écran</string>
     <string name="lockscreen_wallpaper_disabled">L\'effet de flou doit être désactivé</string>
     <string name="navbar_dimen_title">Dimensions</string>
+    <string name="navbar_dimen_summary">Configurer la hauteur et la largeur de la barre de navigation</string>
     <string name="navbar_dimensions_reset_message">Réinitialiser toutes les dimensions\u00A0?</string>
     <string name="navigation_bar_height_title">Hauteur de la barre de navigation</string>
     <string name="navigation_bar_height_summary">Hauteur de la barre de navigation en mode portrait</string>
