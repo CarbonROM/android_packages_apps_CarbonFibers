@@ -568,4 +568,8 @@
     <string name="swap_volume_advanced_settings_close">Close</string>
     <string name="swap_volume_disabled_90_title">Disable at 90 degrees</string>
     <string name="swap_volume_disabled_270_title">Disable at 270 degrees</string>
+
+   <!-- Lockscreen immersive mode -->
+   <string name="category_immersive_mode_title">Immersive mode</string>
+   <string name="lockscreen_immersive_mode_title">Disable immersive mode</string>
 </resources>

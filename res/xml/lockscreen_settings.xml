@@ -74,4 +74,12 @@
                     android:dependency="lockscreen_blur"
                     android:persistent="false" />
 
+    <PreferenceCategory
+            android:key="category_immersive_mode"
+            android:title="@string/category_immersive_mode_title"/>
+
+            <org.omnirom.omnigears.preference.SystemCheckBoxPreference
+                    android:key="lockscreen_immersive_mode"
+                    android:title="@string/lockscreen_immersive_mode_title"
+                    android:defaultValue="false" />
 </PreferenceScreen>
