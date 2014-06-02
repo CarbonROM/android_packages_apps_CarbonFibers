@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012-2013 The CyanogenMod Project
+<!--  Copyright (C) 2013 The OmniROM Project
 
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
+  Parts Copyright (C) 2012-2013 The CyanogenMod Project
 
-          http://www.apache.org/licenses/LICENSE-2.0
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
 
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Lockscreen battery ring -->
-    <string name="battery_around_lockscreen_ring">Indicar batería en el anillo de desbloqueo</string>
+    <string name="ok">OK</string>
     <string name="reset">Reinicializar</string>
+
     <string name="bars_and_menus_settings">Barras y menús</string>
+    <string name="active_display_settings">Pantalla activa</string>
     <string name="bars_and_menus_category_status_bar_title">Barra de estado</string>
     <string name="bars_and_menus_category_navigation_bar_title">Barra de navegación</string>
     <string name="status_bar_battery_title">Estilo de la batería</string>
@@ -48,6 +52,8 @@
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Editar la configuración de luz</string>
     <string name="pulse_speed_title">Duración del impulso y la velocidad</string>
+    <string name="color_list_title">Color</string>
+    <string name="default_time">Normal</string>
     <string name="custom_time">Personalizado</string>
     <string name="dialog_test">Prueba</string>
     <string name="dialog_delete_title">Borrar</string>
@@ -112,7 +118,6 @@
     <string name="screen_auto_brighness_summary">Niveles de brillo de la pantalla para el modo automático</string>
     <string name="button_auto_brightness">Niveles automáticos</string>
     <string name="button_auto_brighness_summary">Niveles de brillo del botón en modo automático</string>
-    <string name="button_brightness_title">Botones</string>
     <string name="button_no_brightness">Modo oscuro</string>
     <string name="button_no_brightness_summary">No ajustar el brillo botón</string>
     <string name="button_link_brightness">Enlace a la pantalla</string>
@@ -124,6 +129,8 @@
     <string name="auto_brightness_setup_title">Brillo automático</string>
     <string name="light_sensor_current_value">Valor actual del sensor de luz: <xliff:g id="light_level">%d</xliff:g> lux</string>
     <string name="auto_brightness_dialog_title">Niveles de brillo automático</string>
+    <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g></string>
+    <string name="auto_brightness_last_level_format"><xliff:g id="level">%1$d</xliff:g>+</string>
     <string name="auto_brightness_adjust_button">Ajustar</string>
     <string name="auto_brightness_close_button">Cerrar</string>
     <string name="auto_brightness_reset_button">Reiniciar</string>
@@ -141,6 +148,8 @@
     <string name="sensor_category">Sensor</string>
     <string name="button_timeout_title">Tiempo de espera</string>
     <string name="button_timeout_summary">Deshabilitado en el valor 0</string>
+    <string name="button_brightness_title">Botón de brillo</string>
+    <string name="button_brightness_summary">Botón ajustes de brillo</string>
 
     <!-- button settings -->
     <string name="button_volume_keys_title">Volumen</string>
@@ -163,6 +172,10 @@
     <string name="show_network_traffic_all">Saliente y entrante</string>
     <string name="show_network_traffic_bit">Bits por segundo</string>
     <string name="show_network_traffic_byte">Bytes por segundo</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
 
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Indicadores de actividad</string>
@@ -206,6 +219,10 @@
     <string name="no_home_key">Usted no tiene asignada una acción al botón de \"Inicio\"! Esto puede hacer que el dispositivo sea inservible!</string>
     <string name="virtual_key_haptic_feedback_title">Vibrar al tocar</string>
     <string name="virtual_key_haptic_feedback_summary">Depende de \"Vibrar al tocar\" en la configuración de sonido</string>
+    <string name="navigation_bar_show_title">Mostrar barra de navegación</string>
+    <string name="navigation_bar_show_summary">Forzar activar barra de navegación</string>
+    <string name="hardware_keys_disable_title">Desactivar teclas</string>
+    <string name="hardware_keys_disable_summary">Forzar desactivar teclas</string>
 
     <!-- Power Menu Options-->
     <string name="bars_and_menus_category_power_menu_title">Menú de encendido</string>
@@ -324,11 +341,13 @@
     <!-- Volume default -->
     <string name="button_volume_default_none">Ninguno</string>
     <string name="button_volume_default_ringer">LLamada</string>
+    <string name="button_volume_default_media">Multimedia</string>
     <string name="button_volume_default_title">Volumen por defecto</string>
     <string name="button_volume_default_summary">Elija qué volumen se cambia de forma predeterminada</string>
 
     <!-- Navigation Bar customization-->
     <string name="navigation_bar_title">Botones y diseño</string>
+    <string name="navigation_bar_summary">Configurar botones de la barra de navegación</string>
     <string name="navigation_bar_help_text">1 - Para iniciar la edición, toque en el icono de bloqueo\n\n2 - Pulse cualquier botón para asignar o cambiar la funcionalidad\n\n3 - Mantenga pulsado cualquier botón para cambiar el orden\n\n4 - Para guardar, pulse el icono de bloqueo de nuevo\n\n5 - Para restaurar los valores por defecto del sistema, pulse el botón de reinicio\n\n</string>
     <string name="navigation_bar_tips">\u2022 Las acciones sólo se pueden asignar a un botón a la vez\n\n\u2022 El botón de inicio no puede ser reasignado\n\n\u2022 Botones laterales no pueden ser reorganizados</string>
     <string name="navigation_bar_tips_title">Consejos rápidos</string>
@@ -340,6 +359,7 @@
 
     <!-- Navigation ring shortcuts -->
     <string name="navigation_ring_title">Atajos de inicio rápido</string>
+    <string name="navigation_ring_summary">Configurar accesos directos de la barra de navegación personalizada</string>
     <string name="navring_target_reset_message">¿Eliminar todos los accesos directos de la barra de navegación creados por el usuario y restaurar a los valores predeterminados?</string>
     <string name="navring_target_reset">Restablecer valores predeterminados de los accesos directos de la barra de navegación</string>
     <string name="navring_action_open_ime_switcher">Abrir cambio de IME</string>
@@ -351,6 +371,7 @@
     <string name="navring_action_ring_vibrate_silent">LLamada/Vibración/Silencio</string>
     <string name="navring_action_screen_off">Apagar pantalla</string>
     <string name="navring_action_torch">Conmuntar antorcha</string>
+    <string name="navring_action_google_now">Google Now</string>
     <string name="navring_choose_action_title">Elija la acción</string>
     <string name="navring_action_last_app">Cambiar a la última aplicación</string>
 
@@ -374,16 +395,27 @@
     <string name="icon_picker_browser">Navegador</string>
     <string name="icon_picker_calendar">Calendario</string>
     <string name="icon_picker_camera">Cámara</string>
+    <string name="icon_picker_chrome">Chrome</string>
     <string name="icon_picker_contacts">Contactos</string>
-    <string name="icon_picker_gallery">Galeria</string>
+    <string name="icon_picker_email">Email</string>
+    <string name="icon_picker_email2">Email Holo</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Gallería</string>
+    <string name="icon_picker_gmail">Gmail</string>
     <string name="icon_picker_google_small">Google (pequeño)</string>
-    <string name="icon_picker_maps">Mapas</string>
-    <string name="icon_picker_movie">Películas</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Hangouts</string>
+    <string name="icon_picker_maps">Maps</string>
+    <string name="icon_picker_movie">Película</string>
     <string name="icon_picker_music">Música</string>
     <string name="icon_picker_nav_normal">Navegación</string>
     <string name="icon_picker_phone">Teléfono</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">Rss</string>
     <string name="icon_picker_search">Búsqueda</string>
-    <string name="icon_picker_sms">Mensajería</string>
+    <string name="icon_picker_snapchat">Snapchat</string>
+    <string name="icon_picker_sms">SMS</string>
+    <string name="icon_picker_twitter">Twitter</string>
 
     <string name="quick_settings_category_title">Ajustes rápidos</string>
 
@@ -428,6 +460,7 @@
     <string name="default_sound_pack">Predeterminado (Sistema)</string>
     <string name="error_pack_install">Error instalando paquete de sonido</string>
 
+    <string name="omniswitch_category">OmniSwitch</string>
     <string name="recents_use_omniswitch_title">Uso para recientes</string>
     <string name="recents_use_omniswitch_summary">Usar OmniSwitch en lugar de la vista por defecto</string>
     <string name="omniswitch_start_settings_title">Configuración</string>
@@ -453,6 +486,7 @@
     <string name="clock_color_title">Color</string>
     <string name="status_bar_clock_style_reset">Restaurar color</string>
     <string name="status_bar_show_clock_title">Mostrar reloj y fecha</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">Reloj de 24 horas está habilitado</string>
     <string name="enable_clock_weekday">Día de la semana</string>
     <string name="enable_clock_weekday_summary">Día abreviado de la semana antes de la hora</string>
@@ -472,6 +506,9 @@
     <string name="clock_date_style_normal">Normal</string>
     <string name="clock_date_style_lowercase">Minúsculas</string>
     <string name="clock_date_style_uppercase">Mayúsculas</string>
+
+    <!-- Lockscreen battery ring -->
+    <string name="battery_around_lockscreen_ring">Indicar batería en el anillo de desbloqueo</string>
 
     <!-- Lockscreen -->
     <string name="category_widgets_title">Widgets</string>
@@ -493,18 +530,27 @@
     <string name="see_through_summary">Sus datos pueden ser visibles para los que le rodean</string>
     <string name="blur_radius_title">Difuminar contenido</string>
     <string name="blur_radius_summary">Intensidad del efecto de difuminado</string>
+    <string name="lockscreen_wallpaper">Wallpaper</string>
+    <string name="lockscreen_wallpaper_disabled">El efecto \'ver a través\' debe ser desactivado</string>
 
     <!-- Navigation bar height/width -->
     <string name="navbar_dimen_title">Dimensiones</string>
+    <string name="navbar_dimen_summary">Configurar el ancho y la altura de la barra de navegación</string>
     <string name="navbar_dimensions_reset_message">¿Restablecer todas las entradas a las dimensiones por defecto?</string>
     <string name="navigation_bar_height_title">Altura de la barra de navegación</string>
-    <string name="navigation_bar_height_summary">Altura de la barra de navegación, en el modo retrato.</string>
-    <string name="navigation_bar_height_landscape_title">Navigation bar height landscape</string>
-    <string name="navigation_bar_height_landscape_summary">Altura de la barra de navegación, en el modo paisaje.</string>
+    <string name="navigation_bar_height_summary">Altura de la barra de navegación en el modo retrato.</string>
+    <string name="navigation_bar_height_landscape_title">Altura de la barra de navegación en el modo paisaje</string>
+    <string name="navigation_bar_height_landscape_summary">Altura de la barra de navegación en el modo paisaje.</string>
     <string name="navigation_bar_width_title">Ancho de la barra de navegación</string>
     <string name="navigation_bar_width_summary">Altura de la barra de navegación si la barra está a lo largo de un lado</string>
     <string name="navigation_bar_size_42_dp_default">42 dp (predeterminado)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
     <string name="navigation_bar_size_48_dp_default">48 dp (predeterminado)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (apagado)</string>
 
     <!-- Notification Panel Shortcuts -->
@@ -513,4 +559,13 @@
     <string name="calendar_shortcut_title">Fecha</string>
     <string name="default_shortcut">Predeterminado</string>
 
+    <string name="color_picker_dialog_title">Color</string>
+
+    <!-- Swap volume buttons when the screen is rotated -->
+    <string name="swap_volume_buttons_title">Voltear botones de volumen</string>
+    <string name="swap_volume_buttons_summary">Voltear botones de volumen según la posición del terminal</string>
+    <string name="swap_volume_advanced_settings_title">Configuración de rotación avanzadas</string>
+    <string name="swap_volume_advanced_settings_close">Cerrar</string>
+    <string name="swap_volume_disabled_90_title">Deshabilitar a 90 grados</string>
+    <string name="swap_volume_disabled_270_title">Deshabilitar a 270 grados</string>
 </resources>
