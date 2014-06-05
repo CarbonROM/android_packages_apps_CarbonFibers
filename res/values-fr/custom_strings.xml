@@ -478,4 +478,10 @@
     <string name="calendar_shortcut_title">Date</string>
     <string name="default_shortcut">Défaut</string>
     <string name="color_picker_dialog_title">Couleur</string>
+    <string name="swap_volume_buttons_title">Rotation des boutons</string>
+    <string name="swap_volume_buttons_summary">Ajuster l\'action des boutons de volume en fonction de l\'orientation</string>
+    <string name="swap_volume_advanced_settings_title">Paramètres avancés de rotation</string>
+    <string name="swap_volume_advanced_settings_close">Fermer</string>
+    <string name="swap_volume_disabled_90_title">Désactivé à 90 degrés</string>
+    <string name="swap_volume_disabled_270_title">Désactivé à 270 degrés</string>
 </resources>
