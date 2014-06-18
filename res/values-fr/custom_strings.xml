@@ -484,4 +484,6 @@
     <string name="swap_volume_advanced_settings_close">Fermer</string>
     <string name="swap_volume_disabled_90_title">Désactivé à 90 degrés</string>
     <string name="swap_volume_disabled_270_title">Désactivé à 270 degrés</string>
+    <string name="category_immersive_mode_title">Mode immersif</string>
+    <string name="lockscreen_immersive_mode_title">Désactiver le mode immersif</string>
 </resources>
