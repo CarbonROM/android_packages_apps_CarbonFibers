@@ -18,7 +18,7 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-     <string name="ok">ОК</string>
+    <string name="ok">ОК</string>
     <string name="reset">Сброс</string>
 
     <string name="bars_and_menus_settings">Панели и меню</string>
@@ -149,6 +149,8 @@
     <string name="sensor_category">Датчик</string>
     <string name="button_timeout_title">Тайм-аут</string>
     <string name="button_timeout_summary">Отключается при нулевом значении</string>
+    <string name="button_brightness_title">Яркость кнопок</string>
+    <string name="button_brightness_summary">Настройки яркости кнопок</string>
 
     <!-- button settings -->
     <string name="button_volume_keys_title">Кнопки громкости</string>
@@ -218,6 +220,10 @@
     <string name="no_home_key">Вы не назначили кнопку \"Домой\"! Это может сделать устройство непригодным для использования!</string>
     <string name="virtual_key_haptic_feedback_title">Вибрировать при нажатии</string>
     <string name="virtual_key_haptic_feedback_summary">Зависит от параметра \"Виброотклик\" в настройках звука</string>
+    <string name="navigation_bar_show_title">Включить панель навигации</string>
+    <string name="navigation_bar_show_summary">Принудительно включить панель навигации</string>
+    <string name="hardware_keys_disable_title">Отключить кнопки</string>
+    <string name="hardware_keys_disable_summary">Принудительно отключить аппаратные кнопки</string>
 
     <!-- Power Menu Options-->
     <string name="bars_and_menus_category_power_menu_title">Меню кнопки питания</string>
@@ -237,7 +243,7 @@
     <string name="ad_settings_summary">Сменить настройки Активных Уведомлений </string>
     <string name="ad_enable_title">Включить</string>
     <string name="ad_enable_summary_on">Активные Уведомления включены</string>
-    <string name="ad_enable_summary_off">Активный Уведомления выключены</string>
+    <string name="ad_enable_summary_off">Активные Уведомления выключены</string>
     <string name="ad_bypass_title">Игнорировать \"Активные Уведомления\"</string>
     <string name="ad_bypass_summary">Режим \"В кармане\" запустит экран блокировки, когда нет уведомлений</string>
     <string name="ad_text_title">Текст уведомлений</string>
@@ -342,6 +348,7 @@
 
     <!-- Navigation Bar customization-->
     <string name="navigation_bar_title">Кнопки и их расположение</string>
+    <string name="navigation_bar_summary">Настройки кнопок панели навигации</string>
     <string name="navigation_bar_help_text">1 - Для редактирования нажмите значок замка\n\n2 - Нажмите кнопку для изменения её функциональности\n\n3 - Долгим нажатием по кнопке можно перенести её влево или вправо\n\n4 - Для сохранения снова нажмите на значок замка\n\n5 - Для восстановления настроек нажмите кнопку Сброс\n\n</string>
     <string name="navigation_bar_tips">\u2022 Одно действие может быть назначено только на одну кнопку\n\n\u2022  Нельзя изменить назначение кнопки Домой\n\n\u2022 Нельзя перемещать боковые кнопки</string>
     <string name="navigation_bar_tips_title">Ограничения</string>
@@ -353,6 +360,7 @@
 
     <!-- Navigation ring shortcuts -->
     <string name="navigation_ring_title">Ярлыки быстрого запуска</string>
+    <string name="navigation_ring_summary">Настроить ярлыки быстрого запуска</string>
     <string name="navring_target_reset_message">Удалить пользовательские настройки ярлыков быстрого запуска?</string>
     <string name="navring_target_reset">Ярлыки быстрого запуска были сброшены к значениям по умолчанию</string>
     <string name="navring_action_open_ime_switcher">Выбор способа ввода</string>
@@ -393,6 +401,7 @@
     <string name="icon_picker_email">Email</string>
     <string name="icon_picker_email2">Email Holo</string>
     <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gmail">Gmail</string>
     <string name="icon_picker_gallery">Галерея</string>
     <string name="icon_picker_google_small">Google (малый)</string>
     <string name="icon_picker_googleplus">Google Plus</string>
@@ -426,8 +435,8 @@
     <string name="smart_pulldown_title">\"Умная\" панель уведомлений</string>
     <string name="smart_pulldown_summary">Открывать быстрые настройки, если нет уведомлений</string>
     <string name="smart_pulldown_off">Выкл.</string>
-    <string name="smart_pulldown_dismissable">Удаляемые</string>
-    <string name="smart_pulldown_persistent">Постоянные</string>
+    <string name="smart_pulldown_dismissable">Без удаляемых</string>
+    <string name="smart_pulldown_persistent">Без постоянных</string>
 
     <!-- Cursor control -->
     <string name="volume_key_cursor_control_title">Перемещение курсора кнопками громкости</string>
@@ -521,9 +530,12 @@
     <string name="see_through_summary">Показывает содержимое позади экрана блокировки, ваши данные могут быть видны для окружающих</string>
     <string name="blur_radius_title">Радиус размытия</string>
     <string name="blur_radius_summary">Интенсивность эффекта размытия</string>
+    <string name="lockscreen_wallpaper">Обои экрана блокировки</string>
+    <string name="lockscreen_wallpaper_disabled">Вид \"насквозь\" должен быть отключен.</string>
 
     <!-- Navigation bar height/width -->
     <string name="navbar_dimen_title">Размеры</string>
+    <string name="navbar_dimen_summary">Настроить ширину и высоту панели навигации</string>
     <string name="navbar_dimensions_reset_message">Сбросить все стили и размеры на значения по умолчанию?</string>
     <string name="navigation_bar_height_title">Высота панели навигации</string>
     <string name="navigation_bar_height_summary">Высота панели навигации в портретном режиме.</string>
@@ -546,4 +558,14 @@
     <string name="clock_shortcut_title">Время</string>
     <string name="calendar_shortcut_title">Дата</string>
     <string name="default_shortcut">По умолчанию</string>
+
+    <string name="color_picker_dialog_title">Цвет</string>
+
+    <!-- Swap volume buttons when the screen is rotated -->
+    <string name="swap_volume_buttons_title">Поворот кнопок громкости</string>
+    <string name="swap_volume_buttons_summary">Менять назначение кнопок регулировки громкости согласно ориентации экрана</string>
+    <string name="swap_volume_advanced_settings_title">Расширенные настройки поворота</string>
+    <string name="swap_volume_advanced_settings_close">Закрыть</string>
+    <string name="swap_volume_disabled_90_title">Отключать под углом 90 градусов</string>
+    <string name="swap_volume_disabled_270_title">Отключать под углом 270 градусов</string>
 </resources>
