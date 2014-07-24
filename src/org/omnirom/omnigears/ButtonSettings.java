@@ -523,6 +523,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), Settings.System.HARDWARE_KEY_REBINDING,
                     value ? 1 : 0);
+            boolean harwareKeysDisable = Settings.System.getInt(getContentResolver(),
+                    Settings.System.HARDWARE_KEYS_DISABLE, 0) == 1;
+            updateDisableHWKeyEnablement(harwareKeysDisable);
             return true;
         } else if (preference == mVolumeKeyCursorControl) {
             String volumeKeyCursorControl = (String) newValue;
