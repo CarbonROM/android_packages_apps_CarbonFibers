@@ -30,4 +30,7 @@
     <!-- Whether device has hardware buttons -->
     <bool name="config_has_hardware_buttons">false</bool>
 
+    <!-- does the device supports different notification led configs
+    e.g. color and pulse frequency or just a single -->
+    <bool name="config_notificationLedConfig">true</bool>
 </resources>

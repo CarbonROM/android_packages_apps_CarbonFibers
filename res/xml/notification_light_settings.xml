@@ -29,7 +29,8 @@
         <CheckBoxPreference
             android:key="notification_light_screen_on"
             android:title="@string/notification_light_screen_on_title"
-            android:persistent="false" />
+            android:persistent="false"
+            android:dependency="notification_light_pulse" />
 
         <org.omnirom.omnigears.notificationlight.ApplicationLightPreference
             android:key="default"

@@ -104,6 +104,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private PackageAdapter mPackageAdapter;
     private String mPackageList;
     private Map<String, Package> mPackages;
+    private boolean mNotificationPulseConfig = true;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -119,6 +120,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
                 com.android.internal.R.integer.config_defaultNotificationLedOff);
         mNotificationPulseEnabled = resources.getBoolean(
                 com.android.internal.R.bool.config_intrusiveNotificationLed);
+        mNotificationPulseConfig = resources.getBoolean(R.bool.config_notificationLedConfig);
 
         mEnabledPref = (SwitchPreference)
                 findPreference(Settings.System.NOTIFICATION_LIGHT_PULSE);
@@ -160,7 +162,15 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
         mPackages = new HashMap<String, Package>();
 
-        setHasOptionsMenu(true);
+        if (!mNotificationPulseConfig) {
+            removePreference("phone_list");
+            removePreference("applications_list");
+            PreferenceGroup generalGroup = (PreferenceGroup) findPreference("general_section");
+            generalGroup.removePreference(mDefaultPref);
+            removePreference(Settings.System.NOTIFICATION_LIGHT_PULSE_CUSTOM_ENABLE);
+        } else {
+            setHasOptionsMenu(true);
+        }
     }
 
     @Override
@@ -205,9 +215,6 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
             mVoicemailPref.setAllValues(vmailColor, vmailTimeOn, vmailTimeOff);
         }
-
-        mApplicationPrefList = (PreferenceGroup) findPreference("applications_list");
-        mApplicationPrefList.setOrderingAsAdded(false);
     }
 
     private void refreshCustomApplicationPrefs() {
