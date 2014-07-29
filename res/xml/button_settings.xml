@@ -68,11 +68,6 @@
             android:title="@string/swap_volume_buttons_title"
             android:summary="@string/swap_volume_buttons_summary" />
 
-        <Preference
-            android:key="swap_volume_advanced_settings"
-            android:title="@string/swap_volume_advanced_settings_title"
-            android:dependency="swap_volume_buttons" />
-
     </PreferenceCategory>
 
     <PreferenceCategory

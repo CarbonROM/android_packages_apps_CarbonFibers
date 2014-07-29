@@ -564,10 +564,6 @@
     <!-- Swap volume buttons when the screen is rotated -->
     <string name="swap_volume_buttons_title">Match rotation</string>
     <string name="swap_volume_buttons_summary">Adjust volume buttons action based on current rotation</string>
-    <string name="swap_volume_advanced_settings_title">Advanced rotation settings</string>
-    <string name="swap_volume_advanced_settings_close">Close</string>
-    <string name="swap_volume_disabled_90_title">Disable at 90 degrees</string>
-    <string name="swap_volume_disabled_270_title">Disable at 270 degrees</string>
 
    <!-- Lockscreen immersive mode -->
    <string name="category_immersive_mode_title">Immersive mode</string>
