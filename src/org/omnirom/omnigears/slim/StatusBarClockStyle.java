@@ -45,6 +45,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
     private static final String PREF_CLOCK_DATE_STYLE = "clock_date_style";
     private static final String PREF_CLOCK_DATE_FORMAT = "clock_date_format";
     private static final String STATUS_BAR_CLOCK = "status_bar_show_clock";
+    private static final String STATUS_BAR_FORCE_CLOCK_LOCKSCREEN = "status_bar_force_clock_lockscreen";
 
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
@@ -55,6 +56,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
     private ListPreference mClockDateStyle;
     private ListPreference mClockDateFormat;
     private CheckBoxPreference mStatusBarClock;
+    private CheckBoxPreference mForceClockLockscreen;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -135,6 +137,11 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
             mClockDateFormat.setEnabled(false);
         }
 
+        mForceClockLockscreen = (CheckBoxPreference) findPreference(STATUS_BAR_FORCE_CLOCK_LOCKSCREEN);
+        mForceClockLockscreen.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.STATUS_BAR_FORCE_CLOCK_LOCKSCREEN, 0) != 0);
+        mForceClockLockscreen.setOnPreferenceChangeListener(this);
+
         return prefSet;
     }
 
@@ -187,6 +194,10 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
                 int idx = mClockDateFormat.findIndexOfValue((String) newValue);
                 mClockDateFormat.setSummary(mClockDateFormat.getEntries()[idx]);
             }
+            return true;
+        } else if (preference == mForceClockLockscreen) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_FORCE_CLOCK_LOCKSCREEN, (Boolean) newValue ? 1 : 0);
             return true;
         }
         return false;
