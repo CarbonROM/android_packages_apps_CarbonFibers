@@ -278,6 +278,25 @@
         <item>ic_lockscreen_twitter_normal</item>
     </string-array>
 
+    <!-- tinted statusbar -->
+    <string-array name="tinted_statusbar_entries" translatable="false">
+        <item>@string/tinted_statusbar_off</item>
+        <item>@string/tinted_statusbar_actionbar</item>
+        <item>@string/tinted_statusbar_system</item>
+    </string-array>
+
+    <string-array name="tinted_statusbar_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="tinted_statusbar_option_entries" translatable="false">
+        <item>@string/tinted_statusbar_statusbar</item>
+        <item>@string/tinted_statusbar_navbar</item>
+        <item>@string/tinted_statusbar_all</item>
+    </string-array>
+
     <!-- Quick pulldown -->
     <string-array name="quick_pulldown_entries" translatable="false">
         <item>@string/quick_pulldown_off</item>

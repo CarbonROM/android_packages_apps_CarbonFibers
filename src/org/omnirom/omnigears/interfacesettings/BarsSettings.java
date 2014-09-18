@@ -34,9 +34,12 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
+import android.preference.PreferenceCategory;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 
+import org.omnirom.omnigears.preference.SystemCheckBoxPreference;
+import org.omnirom.omnigears.chameleonos.SeekBarPreference;
 import com.android.internal.util.omni.DeviceUtils;
 import com.android.settings.Utils;
 
@@ -55,11 +58,19 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String NETWORK_TRAFFIC_PERIOD = "network_traffic_period";
     private static final String STATUS_BAR_NETWORK_ACTIVITY = "status_bar_network_activity";
     private static final String SOFT_BACK_KILL_APP = "soft_back_kill_app";
+    private static final String TINTED_STATUSBAR = "tinted_statusbar";
+    private static final String TINTED_STATUSBAR_OPTION = "tinted_statusbar_option";
+    private static final String TINTED_STATUSBAR_FILTER = "status_bar_tinted_filter";
+    private static final String TINTED_STATUSBAR_TRANSPARENT = "tinted_statusbar_transparent";
+    private static final String TINTED_NAVBAR_TRANSPARENT = "tinted_navbar_transparent";
     private static final String EMULATE_MENU_KEY = "emulate_menu_key";
+    private static final String CATEGORY_TINTED = "category_tinted_statusbar";
 
     private CheckBoxPreference mStatusBarBrightnessControl;
     private CheckBoxPreference mStatusBarNotifCount;
     private CheckBoxPreference mQuickSettingsDynamic;
+    private ListPreference mTintedStatusbar;
+    private ListPreference mTintedStatusbarOption;
     private ListPreference mQuickPulldown;
     private ListPreference mSmartPulldown;
     private ListPreference mNetTrafficState;
@@ -68,6 +79,9 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mStatusBarNetworkActivity;
     private CheckBoxPreference mSoftBackKillApp;
     private CheckBoxPreference mEmulateMenuKey;
+    private SystemCheckBoxPreference mTintedStatusbarFilter;
+    private SeekBarPreference mTintedStatusbarTransparency;
+    private SeekBarPreference mTintedNavbarTransparency;
 
     private int mNetTrafficVal;
     private int MASK_UP;
@@ -104,6 +118,28 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         mStatusBarNotifCount.setChecked(Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_NOTIF_COUNT, 0) == 1);
         mStatusBarNotifCount.setOnPreferenceChangeListener(this);
+
+        final PreferenceCategory tintedCategory =
+                     (PreferenceCategory) prefSet.findPreference(CATEGORY_TINTED);
+
+        mTintedStatusbar = (ListPreference) findPreference(TINTED_STATUSBAR);
+        int tintedStatusbar = Settings.System.getInt(resolver,
+                    Settings.System.STATUS_BAR_TINTED_COLOR, 0);
+        mTintedStatusbar.setValue(String.valueOf(tintedStatusbar));
+        mTintedStatusbar.setSummary(mTintedStatusbar.getEntry());
+        mTintedStatusbar.setOnPreferenceChangeListener(this);
+
+        mTintedStatusbarFilter = (SystemCheckBoxPreference) findPreference(TINTED_STATUSBAR_FILTER);
+        mTintedStatusbarFilter.setEnabled(tintedStatusbar != 0);
+
+        mTintedStatusbarTransparency = (SeekBarPreference) findPreference(TINTED_STATUSBAR_TRANSPARENT);
+        mTintedStatusbarTransparency.setValue(Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_TINTED_STATBAR_TRANSPARENT, 100));
+        mTintedStatusbarTransparency.setEnabled(tintedStatusbar != 0);
+        mTintedStatusbarTransparency.setOnPreferenceChangeListener(this);
+
+        mTintedStatusbarOption = (ListPreference) findPreference(TINTED_STATUSBAR_OPTION);
+        mTintedNavbarTransparency = (SeekBarPreference) findPreference(TINTED_NAVBAR_TRANSPARENT);
 
         mQuickPulldown = (ListPreference) findPreference(QUICK_PULLDOWN);
         mSmartPulldown = (ListPreference) findPreference(SMART_PULLDOWN);
@@ -173,8 +209,22 @@ public class BarsSettings extends SettingsPreferenceFragment implements
 
         // Hide navigation bar category on devices without navigation bar
         if (!hasNavBar) {
+            tintedCategory.removePreference(mTintedStatusbarOption);
+            tintedCategory.removePreference(mTintedNavbarTransparency);
             prefSet.removePreference(findPreference(CATEGORY_NAVBAR));
         } else {
+            int tintedStatusbarOption = Settings.System.getInt(resolver,
+                    Settings.System.STATUS_BAR_TINTED_OPTION, 0);
+            mTintedStatusbarOption.setValue(String.valueOf(tintedStatusbarOption));
+            mTintedStatusbarOption.setSummary(mTintedStatusbarOption.getEntry());
+            mTintedStatusbarOption.setEnabled(tintedStatusbar != 0);
+            mTintedStatusbarOption.setOnPreferenceChangeListener(this);
+
+            mTintedNavbarTransparency.setValue(Settings.System.getInt(resolver,
+                    Settings.System.STATUS_BAR_TINTED_NAVBAR_TRANSPARENT, 100));
+            mTintedNavbarTransparency.setEnabled(tintedStatusbar != 0);
+            mTintedNavbarTransparency.setOnPreferenceChangeListener(this);
+
             mSoftBackKillApp = (CheckBoxPreference) prefSet.findPreference(SOFT_BACK_KILL_APP);
             mSoftBackKillApp.setChecked(Settings.System.getInt(resolver,
                     Settings.System.SOFT_BACK_KILL_APP_ENABLE, 0) == 1);
@@ -207,6 +257,36 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(resolver,
                 Settings.System.QUICK_SETTINGS_TILES_ROW, value ? 1 : 0);
+        } else if (preference == mTintedStatusbar) {
+            int val = Integer.parseInt((String) objValue);
+            int index = mTintedStatusbar.findIndexOfValue((String) objValue);
+            Settings.System.putInt(resolver,
+                Settings.System.STATUS_BAR_TINTED_COLOR, val);
+            mTintedStatusbar.setSummary(mTintedStatusbar.getEntries()[index]);
+            if (mTintedStatusbarOption != null) {
+                mTintedStatusbarOption.setEnabled(val != 0);
+            }
+            mTintedStatusbarFilter.setEnabled(val != 0);
+            mTintedStatusbarTransparency.setEnabled(val != 0);
+            if (mTintedNavbarTransparency != null) {
+                mTintedNavbarTransparency.setEnabled(val != 0);
+            }
+        } else if (preference == mTintedStatusbarOption) {
+            int val = Integer.parseInt((String) objValue);
+            int index = mTintedStatusbarOption.findIndexOfValue((String) objValue);
+            Settings.System.putInt(resolver,
+                Settings.System.STATUS_BAR_TINTED_OPTION, val);
+            mTintedStatusbarOption.setSummary(mTintedStatusbarOption.getEntries()[index]);
+        } else if (preference == mTintedStatusbarTransparency) {
+            int val = ((Integer)objValue).intValue();
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUS_BAR_TINTED_STATBAR_TRANSPARENT, val);
+            return true;
+        } else if (preference == mTintedNavbarTransparency) {
+            int val = ((Integer)objValue).intValue();
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUS_BAR_TINTED_NAVBAR_TRANSPARENT, val);
+            return true;
         } else if (preference == mQuickPulldown) {
             int val = Integer.parseInt((String) objValue);
             int index = mQuickPulldown.findIndexOfValue((String) objValue);
