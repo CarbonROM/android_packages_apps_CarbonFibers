@@ -100,7 +100,7 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
 
     @Override
     protected View onCreateView(ViewGroup parent){
-        
+
         RelativeLayout layout =  null;
         try {
             LayoutInflater mInflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -119,7 +119,7 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
             // move our seekbar to the new view we've been given
             ViewParent oldContainer = mSeekBar.getParent();
             ViewGroup newContainer = (ViewGroup) view.findViewById(R.id.seekBarPrefBarContainer);
-            
+
             if (oldContainer != newContainer) {
                 // remove the seekbar from the old view
                 if (oldContainer != null) {
@@ -173,7 +173,7 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
         // change rejected, revert to the previous value
         if (!callChangeListener(newValue)) {
             seekBar.setProgress(mCurrentValue - mMinValue);
-            return; 
+            return;
         }
 
         // change accepted, store it
@@ -190,7 +190,7 @@ public class SeekBarPreference extends Preference implements OnSeekBarChangeList
         notifyChanged();
     }
 
-    @Override 
+    @Override
     protected Object onGetDefaultValue(TypedArray ta, int index){
         int defaultValue = ta.getInt(index, DEFAULT_VALUE);
         return defaultValue;
