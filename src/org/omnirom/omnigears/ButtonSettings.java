@@ -168,7 +168,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             mVolumeWake = (CheckBoxPreference) findPreference(BUTTON_VOLUME_WAKE);
             mVolumeDefault = (ListPreference) findPreference(BUTTON_VOLUME_DEFAULT);
             if (!res.getBoolean(R.bool.config_show_volumeRockerWake)) {
-                prefScreen.removePreference(mVolumeWake);
+                volumeCategory.removePreference(mVolumeWake);
             } else {
                 mVolumeWake.setChecked(Settings.System.getInt(resolver,
                     Settings.System.VOLUME_WAKE_SCREEN, 0) != 0);
