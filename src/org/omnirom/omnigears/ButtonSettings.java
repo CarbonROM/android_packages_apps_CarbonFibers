@@ -148,6 +148,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     private PreferenceCategory mKeysBackCategory;
     private PreferenceCategory mKeysHomeCategory;
     private PreferenceCategory mKeysMenuCategory;
+    private PreferenceCategory mKeysAppSwitchCategory;
+    private PreferenceCategory mKeysAssistCategory;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -219,9 +221,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_HOME);
         mKeysMenuCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_MENU);
-        final PreferenceCategory keysAssistCategory =
+        mKeysAssistCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_ASSIST);
-        final PreferenceCategory keysAppSwitchCategory =
+        mKeysAppSwitchCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
 
         if (!res.getBoolean(R.bool.config_has_hardware_buttons)) {
@@ -229,8 +231,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             prefScreen.removePreference(mKeysBackCategory);
             prefScreen.removePreference(mKeysHomeCategory);
             prefScreen.removePreference(mKeysMenuCategory);
-            prefScreen.removePreference(keysAssistCategory);
-            prefScreen.removePreference(keysAppSwitchCategory);
+            prefScreen.removePreference(mKeysAssistCategory);
+            prefScreen.removePreference(mKeysAppSwitchCategory);
         } else {
             mEnableCustomBindings = (SwitchPreference) prefScreen.findPreference(
                     KEYS_ENABLE_CUSTOM);
@@ -384,7 +386,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
                 mKeySettings.put(Settings.System.KEY_ASSIST_LONG_PRESS_ACTION, assistLongPressAction);
             } else {
-                prefScreen.removePreference(keysAssistCategory);
+                prefScreen.removePreference(mKeysAssistCategory);
             }
 
             if (hasAppSwitchKey) {
@@ -404,7 +406,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
                 mKeySettings.put(Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION, appSwitchLongPressAction);
             } else {
-                prefScreen.removePreference(keysAppSwitchCategory);
+                prefScreen.removePreference(mKeysAppSwitchCategory);
             }
 
             mEnableCustomBindings.setChecked((Settings.System.getInt(resolver,
@@ -679,5 +681,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         mKeysHomeCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
         mKeysBackCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
         mKeysMenuCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
+        mKeysAppSwitchCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
+        mKeysAssistCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
     }
 }
