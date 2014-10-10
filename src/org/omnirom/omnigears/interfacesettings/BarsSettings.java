@@ -63,6 +63,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private static final String TINTED_STATUSBAR_FILTER = "status_bar_tinted_filter";
     private static final String TINTED_STATUSBAR_TRANSPARENT = "tinted_statusbar_transparent";
     private static final String TINTED_NAVBAR_TRANSPARENT = "tinted_navbar_transparent";
+    private static final String TINTED_FULL_MODE = "status_bar_tinted_full_mode";
     private static final String EMULATE_MENU_KEY = "emulate_menu_key";
     private static final String CATEGORY_TINTED = "category_tinted_statusbar";
 
@@ -80,6 +81,7 @@ public class BarsSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mSoftBackKillApp;
     private CheckBoxPreference mEmulateMenuKey;
     private SystemCheckBoxPreference mTintedStatusbarFilter;
+    private SystemCheckBoxPreference mTintedFullMode;
     private SeekBarPreference mTintedStatusbarTransparency;
     private SeekBarPreference mTintedNavbarTransparency;
 
@@ -122,15 +124,21 @@ public class BarsSettings extends SettingsPreferenceFragment implements
         final PreferenceCategory tintedCategory =
                      (PreferenceCategory) prefSet.findPreference(CATEGORY_TINTED);
 
+        int tintedStatusbar = getTintedStatusbarColor(resolver);
+
         mTintedStatusbar = (ListPreference) findPreference(TINTED_STATUSBAR);
-        int tintedStatusbar = Settings.System.getInt(resolver,
-                    Settings.System.STATUS_BAR_TINTED_COLOR, 0);
         mTintedStatusbar.setValue(String.valueOf(tintedStatusbar));
         mTintedStatusbar.setSummary(mTintedStatusbar.getEntry());
         mTintedStatusbar.setOnPreferenceChangeListener(this);
 
         mTintedStatusbarFilter = (SystemCheckBoxPreference) findPreference(TINTED_STATUSBAR_FILTER);
         mTintedStatusbarFilter.setEnabled(tintedStatusbar != 0);
+
+        int tintedStatusbarOption = getTintedStatusbarOption(resolver);
+
+        mTintedFullMode = (SystemCheckBoxPreference) findPreference(TINTED_FULL_MODE);
+        mTintedFullMode.setEnabled((tintedStatusbar == 2) &&
+                       (tintedStatusbarOption == 0 || tintedStatusbarOption == 2));
 
         mTintedStatusbarTransparency = (SeekBarPreference) findPreference(TINTED_STATUSBAR_TRANSPARENT);
         mTintedStatusbarTransparency.setValue(Settings.System.getInt(resolver,
@@ -213,8 +221,6 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             tintedCategory.removePreference(mTintedNavbarTransparency);
             prefSet.removePreference(findPreference(CATEGORY_NAVBAR));
         } else {
-            int tintedStatusbarOption = Settings.System.getInt(resolver,
-                    Settings.System.STATUS_BAR_TINTED_OPTION, 0);
             mTintedStatusbarOption.setValue(String.valueOf(tintedStatusbarOption));
             mTintedStatusbarOption.setSummary(mTintedStatusbarOption.getEntry());
             mTintedStatusbarOption.setEnabled(tintedStatusbar != 0);
@@ -267,6 +273,9 @@ public class BarsSettings extends SettingsPreferenceFragment implements
                 mTintedStatusbarOption.setEnabled(val != 0);
             }
             mTintedStatusbarFilter.setEnabled(val != 0);
+            mTintedFullMode.setEnabled((val == 2) &&
+                             ((getTintedStatusbarOption(resolver) == 0) ||
+                              (getTintedStatusbarOption(resolver) == 2)));
             mTintedStatusbarTransparency.setEnabled(val != 0);
             if (mTintedNavbarTransparency != null) {
                 mTintedNavbarTransparency.setEnabled(val != 0);
@@ -277,6 +286,8 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver,
                 Settings.System.STATUS_BAR_TINTED_OPTION, val);
             mTintedStatusbarOption.setSummary(mTintedStatusbarOption.getEntries()[index]);
+            mTintedFullMode.setEnabled((getTintedStatusbarColor(resolver) == 2) &&
+                             ((val == 0) || (val == 2)));
         } else if (preference == mTintedStatusbarTransparency) {
             int val = ((Integer)objValue).intValue();
             Settings.System.putInt(resolver,
@@ -341,6 +352,18 @@ public class BarsSettings extends SettingsPreferenceFragment implements
             return false;
         }
         return true;
+    }
+
+    private int getTintedStatusbarColor(ContentResolver resolver) {
+        int tintedStatusbar = Settings.System.getInt(resolver,
+                    Settings.System.STATUS_BAR_TINTED_COLOR, 0);
+        return tintedStatusbar;
+    }
+
+    private int getTintedStatusbarOption(ContentResolver resolver) {
+        int tintedStatusbarOption = Settings.System.getInt(resolver,
+                    Settings.System.STATUS_BAR_TINTED_OPTION, 0);
+        return tintedStatusbarOption;
     }
 
     private void loadResources() {
