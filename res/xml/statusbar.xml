@@ -25,4 +25,9 @@
         android:icon="@drawable/ic_systemui_tuner_qs"
         android:title="@string/quicksettings_category" />
 
+    <Preference
+        android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.Traffic"
+        android:icon="@drawable/ic_traffic"
+        android:title="@string/traffic_category" />
+
 </PreferenceScreen>
