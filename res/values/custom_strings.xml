@@ -56,4 +56,6 @@
     <string name="button_volume_keys_title">Volume</string>
     <string name="button_volume_wake_title">Button wake</string>
     <string name="button_volume_wake_summary">Pressing a volume button will wake the device</string>
+    <string name="keys_action_sleep">Go to sleep</string>
+    <string name="keys_action_omniswitch">OmniSwitch recents</string>
 </resources>
