@@ -76,7 +76,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 //    private static final String BUTTON_VOLUME_DEFAULT = "button_volume_default_screen";
 //    private static final String BUTTON_VOLUME_MUSIC_CONTROL = "button_volume_music_control";
 //    private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
-//    private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
+    private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
 //    private static final String CATEGORY_HEADSETHOOK = "button_headsethook";
 //    private static final String BUTTON_HEADSETHOOK_LAUNCH_VOICE = "button_headsethook_launch_voice";
 
@@ -124,7 +124,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
     private CheckBoxPreference mVolumeWake;
 //    private CheckBoxPreference mVolumeMusicControl;
-//    private CheckBoxPreference mSwapVolumeButtons;
+    private CheckBoxPreference mSwapVolumeButtons;
 //    private ListPreference mVolumeKeyCursorControl;
     private SwitchPreference mEnableCustomBindings;
     private ListPreference mBackPressAction;
@@ -191,9 +191,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 //          mVolumeMusicControl.setChecked(Settings.System.getInt(resolver,
 //                  Settings.System.VOLUME_MUSIC_CONTROL, 0) != 0);
 //
-//          mSwapVolumeButtons = (SystemCheckBoxPreference) findPreference(SWAP_VOLUME_BUTTONS);
-//          mSwapVolumeButtons.setChecked(Settings.System.getInt(resolver,
-//                  Settings.System.SWAP_VOLUME_BUTTONS, 0) != 0);
+            mSwapVolumeButtons = (CheckBoxPreference) findPreference(SWAP_VOLUME_BUTTONS);
+            mSwapVolumeButtons.setChecked(Settings.System.getInt(resolver,
+                   Settings.System.SWAP_VOLUME_BUTTONS, 0) != 0);
 //
 //          mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
 //          if (mVolumeKeyCursorControl != null) {
@@ -453,7 +453,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             Settings.System.putInt(getContentResolver(),
                     Settings.System.VOLUME_BUTTON_WAKE, checked ? 1:0);
             return true;
-        }
 //        else if (preference == mHeadsetHookLaunchVoice) {
 //            boolean checked = ((CheckBoxPreference)preference).isChecked();
 //            Settings.System.putInt(getContentResolver(),
@@ -480,12 +479,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 //            Settings.System.putInt(getContentResolver(),
 //                    Settings.System.HARDWARE_KEYS_DISABLE, checked ? 1:0);
 //            updateDisableHWKeyEnablement(checked);
-//        } else if (preference == mSwapVolumeButtons) {
-//            boolean checked = ((CheckBoxPreference)preference).isChecked();
-//            Settings.System.putInt(getContentResolver(),
-//                    Settings.System.SWAP_VOLUME_BUTTONS, checked ? 1:0);
-//            return true;
-//        }
+        } else if (preference == mSwapVolumeButtons) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.SWAP_VOLUME_BUTTONS, checked ? 1:0);
+            return true;
+        }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
