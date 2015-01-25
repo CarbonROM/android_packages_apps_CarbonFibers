@@ -171,6 +171,12 @@
             android:summary="@string/button_home_wake_summary"
             android:persistent="false"/>
 
+        <CheckBoxPreference
+            android:key="button_home_answers_call"
+            android:title="@string/button_home_answers_call_title"
+            android:summary="@string/button_home_answers_call_summary"
+            android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

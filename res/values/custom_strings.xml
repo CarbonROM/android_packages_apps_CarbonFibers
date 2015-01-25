@@ -60,6 +60,8 @@
     <string name="keys_action_omniswitch">OmniSwitch recents</string>
     <string name="button_home_wake_title">Button wake</string>
     <string name="button_home_wake_summary">Pressing the home button will wake the device</string>
+    <string name="button_home_answers_call_title">Button answers call</string>
+    <string name="button_home_answers_call_summary">Pressing the home button will answer incoming call</string>
 
     <!-- Swap volume buttons when the screen is rotated -->
     <string name="swap_volume_buttons_title">Match rotation</string>

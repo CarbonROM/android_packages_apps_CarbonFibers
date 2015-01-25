@@ -74,6 +74,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
     private static final String BUTTON_VOLUME_WAKE = "button_volume_wake_screen";
     private static final String BUTTON_HOME_WAKE = "button_home_wake_screen";
+    private static final String BUTTON_HOME_ANSWERS_CALL = "button_home_answers_call";
 //    private static final String BUTTON_VOLUME_DEFAULT = "button_volume_default_screen";
 //    private static final String BUTTON_VOLUME_MUSIC_CONTROL = "button_volume_music_control";
 //    private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
@@ -125,6 +126,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
     private CheckBoxPreference mVolumeWake;
     private CheckBoxPreference mHomeWake;
+    private CheckBoxPreference mHomeAnswerCall;
 //    private CheckBoxPreference mVolumeMusicControl;
     private CheckBoxPreference mSwapVolumeButtons;
 //    private ListPreference mVolumeKeyCursorControl;
@@ -351,6 +353,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                     mHomeWake.setChecked(Settings.System.getInt(resolver,
                         Settings.System.HOME_BUTTON_WAKE, 0) != 0);
                 }
+
+                mHomeAnswerCall = (CheckBoxPreference) findPreference(BUTTON_HOME_ANSWERS_CALL);
+                if (!Utils.isVoiceCapable(getActivity())) {
+                    mKeysHomeCategory.removePreference(mHomeAnswerCall);
+                } else {
+                    mHomeAnswerCall.setChecked(Settings.System.getInt(resolver,
+                        Settings.System.HOME_BUTTON_ANSWER, 0) != 0);
+                }
             } else {
                 prefScreen.removePreference(mKeysHomeCategory);
             }
@@ -498,6 +508,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
             boolean checked = ((CheckBoxPreference)preference).isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.HOME_BUTTON_WAKE, checked ? 1:0);
+            return true;
+        } else if (preference == mHomeAnswerCall) {
+            boolean checked = ((CheckBoxPreference)preference).isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HOME_BUTTON_ANSWER, checked ? 1:0);
             return true;
         }
 
