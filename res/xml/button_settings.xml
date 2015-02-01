@@ -165,6 +165,12 @@
             android:persistent="false"
             android:dependency="keys_enable_custom" />
 
+        <CheckBoxPreference
+            android:key="button_home_wake_screen"
+            android:title="@string/button_home_wake_title"
+            android:summary="@string/button_home_wake_summary"
+            android:persistent="false"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory

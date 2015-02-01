@@ -58,6 +58,8 @@
     <string name="button_volume_wake_summary">Pressing a volume button will wake the device</string>
     <string name="keys_action_sleep">Go to sleep</string>
     <string name="keys_action_omniswitch">OmniSwitch recents</string>
+    <string name="button_home_wake_title">Button wake</string>
+    <string name="button_home_wake_summary">Pressing the home button will wake the device</string>
 
     <!-- Swap volume buttons when the screen is rotated -->
     <string name="swap_volume_buttons_title">Match rotation</string>
