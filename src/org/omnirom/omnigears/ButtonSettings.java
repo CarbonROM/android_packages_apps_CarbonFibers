@@ -48,6 +48,7 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.ListPreference;
 import android.preference.SwitchPreference;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -60,9 +61,12 @@ import java.util.HashMap;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 //import org.omnirom.omnigears.preference.SystemCheckBoxPreference;
 
-public class ButtonSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class ButtonSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener, Indexable {
 
     private static final String CATEGORY_VOLUME = "button_volume_keys";
     private static final String CATEGORY_KEYS = "button_keys";
@@ -82,7 +86,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 //    private static final String CATEGORY_HEADSETHOOK = "button_headsethook";
 //    private static final String BUTTON_HEADSETHOOK_LAUNCH_VOICE = "button_headsethook_launch_voice";
 
-    private static final String KEYS_CATEGORY_BINDINGS = "keys_bindings";
     private static final String KEYS_ENABLE_CUSTOM = "keys_enable_custom";
     private static final String KEYS_BACK_PRESS = "keys_back_press";
     private static final String KEYS_BACK_LONG_PRESS = "keys_back_long_press";
@@ -715,4 +718,74 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 //        mKeysAppSwitchCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
 //        mKeysAssistCategory.setEnabled(!harwareKeysDisable && enableHWKeyRebinding);
 //    }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                        boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.button_settings;
+                    result.add(sir);
+
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    final Resources res = context.getResources();
+                    final int deviceKeys = res.getInteger(
+                            com.android.internal.R.integer.config_deviceHardwareKeys);
+                    final boolean hasBackKey = (deviceKeys & KEY_MASK_BACK) != 0;
+                    final boolean hasHomeKey = (deviceKeys & KEY_MASK_HOME) != 0;
+                    final boolean hasMenuKey = (deviceKeys & KEY_MASK_MENU) != 0;
+                    final boolean hasAssistKey = (deviceKeys & KEY_MASK_ASSIST) != 0;
+                    final boolean hasAppSwitchKey = (deviceKeys & KEY_MASK_APP_SWITCH) != 0;
+
+                    if (deviceKeys == 0) {
+                        result.add(KEYS_ENABLE_CUSTOM);
+                        result.add(CATEGORY_KEYS);
+                    }
+                    if (!hasBackKey) {
+                        result.add(KEYS_BACK_PRESS);
+                        result.add(KEYS_BACK_LONG_PRESS);
+                        result.add(CATEGORY_BACK);
+                    }
+                    if (!hasHomeKey) {
+                        result.add(KEYS_HOME_PRESS);
+                        result.add(KEYS_HOME_LONG_PRESS);
+                        result.add(KEYS_HOME_DOUBLE_TAP);
+                        result.add(CATEGORY_HOME);
+                    }
+                    if (!hasMenuKey) {
+                        result.add(KEYS_MENU_PRESS);
+                        result.add(KEYS_MENU_LONG_PRESS);
+                        result.add(CATEGORY_MENU);
+                    }
+                    if (!hasAssistKey) {
+                        result.add(KEYS_ASSIST_PRESS);
+                        result.add(KEYS_ASSIST_LONG_PRESS);
+                        result.add(CATEGORY_ASSIST);
+                    }
+                    if (!hasAppSwitchKey) {
+                        result.add(KEYS_APP_SWITCH_PRESS);
+                        result.add(KEYS_APP_SWITCH_PRESS);
+                        result.add(CATEGORY_APPSWITCH);
+                    }
+                    if (!res.getBoolean(R.bool.config_show_volumeRockerWake)) {
+                        result.add(BUTTON_VOLUME_WAKE);
+                    }
+                    if (!res.getBoolean(R.bool.config_show_homeWake)) {
+                        result.add(BUTTON_HOME_WAKE);
+                    }
+                    if (!Utils.isVoiceCapable(context)) {
+                        result.add(BUTTON_HOME_ANSWERS_CALL);
+                    }
+                    return result;
+                }
+            };
 }
