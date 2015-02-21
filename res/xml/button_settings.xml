@@ -75,7 +75,7 @@
         android:key="button_keys"
         android:title="@string/button_keys_title" >
 
-<!--        <org.omnirom.omnigears.preference.SystemCheckBoxPreference
+<!--        <com.android.settings.preference.SystemCheckBoxPreference
             android:key="navigation_bar_show"
             android:title="@string/navigation_bar_show_title"
             android:summary="@string/navigation_bar_show_summary" />

@@ -41,7 +41,7 @@ import android.text.TextUtils;
 import android.widget.Button;
 
 import com.android.settings.SettingsPreferenceFragment;
-import org.omnirom.omnigears.preference.SystemCheckBoxPreference;
+import com.android.settings.preference.SystemCheckBoxPreference;
 import org.omnirom.omnigears.sensor.ShakeSensorManager;
 
 import java.util.ArrayList;
