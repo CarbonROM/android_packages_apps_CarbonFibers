@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.omnirom.omnigears.sensor;
+package org.carbon.fibers.sensor;
 
 import android.content.Context;
 import android.hardware.Sensor;

@@ -102,7 +102,7 @@
             android:key="button_brightness"
             android:title="@string/brightness"
             android:summary="@string/button_brightness_summary"
-            android:fragment="org.omnirom.omnigears.brightness.ButtonBrightnessSettings" />
+            android:fragment="org.carbon.fibers.brightness.ButtonBrightnessSettings" />
 -->
 
         <SwitchPreference

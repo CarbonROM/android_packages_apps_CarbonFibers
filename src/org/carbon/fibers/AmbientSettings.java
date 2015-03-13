@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package org.omnirom.omnigears;
+package org.carbon.fibers;
 
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -42,7 +42,7 @@ import android.widget.Button;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.preference.SystemCheckBoxPreference;
-import org.omnirom.omnigears.sensor.ShakeSensorManager;
+import org.carbon.fibers.sensor.ShakeSensorManager;
 
 import java.util.ArrayList;
 import java.util.List;
