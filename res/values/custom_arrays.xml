@@ -123,4 +123,15 @@
         <item>5</item>
         <item>6</item>
     </string-array>
+
+    <!-- led color list -->
+    <string-array name="entries_led_colors" translatable="false">
+        <item>@string/led_color_green</item>
+        <item>@string/led_color_red</item>
+    </string-array>
+
+    <string-array name="values_led_colors" translatable="false">
+        <item>#FF00FF00</item>
+        <item>#FFFF0000</item>
+    </string-array>
 </resources>

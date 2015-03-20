@@ -129,4 +129,20 @@
     <!-- Swap volume buttons when the screen is rotated -->
     <string name="swap_volume_buttons_title">Match rotation</string>
     <string name="swap_volume_buttons_summary">Adjust volume buttons action based on current rotation</string>
+
+    <string name="color_picker_dialog_title">Color</string>
+
+    <!-- Battery light settings  -->
+    <string name="battery_light_enable">Enable</string>
+    <string name="battery_low_pulse_title">Pulse if battery low</string>
+    <string name="battery_light_list_title">Colors</string>
+    <string name="battery_light_low_color_title">Battery low</string>
+    <string name="battery_light_medium_color_title">Charging</string>
+    <string name="battery_light_full_color_title">Charged (90%)</string>
+    <string name="battery_light_really_full_color_title">Charged (100%)</string>
+    <string name="edit_battery_settings">Edit battery settings</string>
+    <string name="notification_light_general_title">General</string>
+    <string name="led_color_green">Green</string>
+    <string name="led_color_red">Red</string>
+    <string name="led_color_blue">Blue</string>
 </resources>

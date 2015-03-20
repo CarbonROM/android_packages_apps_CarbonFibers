@@ -24,7 +24,11 @@
     <bool name="config_has_volume_rocker">true</bool>
 
     <!-- Home button Wake Support. Some devices do not support this.
-Setting to false will disable Home button Wake support -->
+        Setting to false will disable Home button Wake support -->
     <bool name="config_show_homeWake">false</bool>
+
+    <!-- does the device have multi color led support or only
+         a fixed set of led colors -->
+    <bool name="config_has_multi_color_led">true</bool>
 
 </resources>
