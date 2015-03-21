@@ -169,6 +169,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
         final ContentResolver resolver = getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources res = getResources();
+        final boolean mPersistHomeWakeSupport = res.getBoolean(
+            com.android.internal.R.bool.config_persistHomeWakeSupport);
 
         final PreferenceCategory volumeCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_VOLUME);
@@ -354,7 +356,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
                     mKeysHomeCategory.removePreference(mHomeWake);
                 } else {
                     mHomeWake.setChecked(Settings.System.getInt(resolver,
-                        Settings.System.HOME_BUTTON_WAKE, 0) != 0);
+                        Settings.System.HOME_BUTTON_WAKE,
+                        (mPersistHomeWakeSupport ? 1 : 0)) != 0);
                 }
 
                 mHomeAnswerCall = (CheckBoxPreference) findPreference(BUTTON_HOME_ANSWERS_CALL);
