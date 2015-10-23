@@ -23,4 +23,10 @@
         android:summary="@string/keyguard_torch_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="lockscreen_scramble_pin_layout"
+        android:title="@string/unlock_scramble_pin_layout_title"
+        android:summary="@string/unlock_scramble_pin_layout_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
