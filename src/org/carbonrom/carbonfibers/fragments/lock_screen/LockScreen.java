@@ -39,6 +39,7 @@ public class LockScreen extends CustomSettingsPreferenceFragment implements Inde
     private static final String LOCKSCREEN_BATTERY_INFO = "lockscreen_battery_info";
     private static final String LOCKSCREEN_ICON = "sysui_keyguard_show_lock_icon";
     private static final String LOCK_SHOW_STATUS_BAR = "lockscreen_show_status_bar";
+    private static final String LOCKSCREEN_MEDIA_METADATA = "lockscreen_media_metadata";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class LockScreen extends CustomSettingsPreferenceFragment implements Inde
         addCustomPreference(findPreference(LOCKSCREEN_BATTERY_INFO), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(LOCKSCREEN_ICON), SECURE_TWO_STATE, STATE_ON);
         addCustomPreference(findPreference(LOCK_SHOW_STATUS_BAR), SYSTEM_TWO_STATE, STATE_ON);
+        addCustomPreference(findPreference(LOCKSCREEN_MEDIA_METADATA), SYSTEM_TWO_STATE, STATE_ON);
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
