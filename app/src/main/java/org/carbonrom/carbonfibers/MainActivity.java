@@ -11,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import org.carbonrom.carbonfibers.fragments.CarbonRecentsSettings;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -57,38 +59,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        Fragment fragment = null;
-
-        Class fragmentClass = null;
-
-        if (id == R.id.nav_camera) {
-            initDrawer(R.layout.test,true);
-            // Example of calling a fragment
-            fragmentClass = MyFragment.class;
-        } else if (id == R.id.nav_gallery) {
-            initDrawer(R.layout.test,true);
-        } else if (id == R.id.nav_slideshow) {
-            initDrawer(R.layout.test,true);
-        } else if (id == R.id.nav_manage) {
-            initDrawer(R.layout.test,true);
-        } else if (id == R.id.nav_share) {
+        if (id == R.id.recents_settings) {
             initDrawer(R.layout.activity_main,true);
-        } else if (id == R.id.nav_send) {
-            initDrawer(R.layout.activity_main,true);
-        }
-
-        try {
-            if (fragmentClass != null) {
-                fragment = (Fragment) fragmentClass.newInstance();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        if(fragment != null) {
-            // Insert the fragment by replacing any existing fragment
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
+            getFragmentManager().beginTransaction().replace(R.id.flContent,
+                    new CarbonRecentsSettings()).commit();
         }
 
         return true;
