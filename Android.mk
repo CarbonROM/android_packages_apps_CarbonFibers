@@ -21,8 +21,6 @@ LOCAL_AAPT_FLAGS := \
     --extra-packages android.support.design \
     --extra-packages android.support.v7.appcompat
 
-# include frameworks/base/packages/SettingsLib/common.mk
-
 include $(BUILD_PACKAGE)
 
 # Use the following include to make our test apk.
