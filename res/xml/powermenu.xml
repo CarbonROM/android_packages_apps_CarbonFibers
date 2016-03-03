@@ -43,6 +43,11 @@
             android:defaultValue="true" />
 
          <com.android.settings.carbon.SystemSettingSwitchPreference
+            android:key="powermenu_torch"
+            android:title="@string/powermenu_torch"
+            android:defaultValue="false" />
+
+         <com.android.settings.carbon.SystemSettingSwitchPreference
             android:key="powermenu_airplane"
             android:title="@string/powermenu_airplane"
             android:defaultValue="true" />
