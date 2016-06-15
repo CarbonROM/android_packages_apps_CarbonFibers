@@ -127,6 +127,11 @@ public class Buttons extends ActionFragment implements Preference.OnPreferenceCh
     }
 
     @Override
+    protected boolean usesExtendedActionsList() {
+        return true;
+    }
+
+    @Override
     public int getMetricsCategory() {
         return MetricsEvent.CARBONFIBERS;
     }
