@@ -127,6 +127,11 @@ public class AdvancedOptions extends ActionFragment implements Preference.OnPref
     }
 
     @Override
+    protected boolean usesExtendedActionsList() {
+        return true;
+    }
+
+    @Override
     public int getMetricsCategory() {
         return MetricsEvent.CARBONFIBERS;
     }
