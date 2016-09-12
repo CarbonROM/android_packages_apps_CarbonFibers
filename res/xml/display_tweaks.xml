@@ -20,7 +20,7 @@
 
         <PreferenceCategory
                 android:key="dashboard_category"
-                android:title="@string/display_tweaks_category">
+                android:title="@string/dashboard_settings_category">
 
         <ListPreference
                 android:key="dashboard_columns"
@@ -30,6 +30,12 @@
                 android:entryValues="@array/dashboard_columns_values"
                 android:summary="@string/dashboard_columns_summary"
                 android:persistent="false" />
+
+        <com.android.settings.carbon.SystemSettingSwitchPreference
+                android:key="remove_tile_summary"
+                android:title="@string/remove_tile_summaries_title"
+                android:summary="@string/remove_tile_summaries_summary"
+                android:defaultValue="false" />
 
         <com.android.settings.carbon.SystemSettingSwitchPreference
                 android:key="dashboard_summary_double_lines"
