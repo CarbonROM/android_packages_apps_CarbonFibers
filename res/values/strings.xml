@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">CarbonFibers</string>
+    <string name="system_category">System</string>
+    <string name="misc_category">Misc</string>
+    <string name="privacy_category">Privacy</string>
+
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Help Us, Help You!!</string>
+    <string name="carbonfibers_dialog_message">Unfortunately we are not wizards!\n\nSo if you find a bug with any of these settings, please open up a ticket on Jira or contact a Carbon developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not wizards so we do miss things.</string>
+    <string name="carbonfibers_dialog_toast">READ THE WHOLE THING!</string>
+
+</resources>
