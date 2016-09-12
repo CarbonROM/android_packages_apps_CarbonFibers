@@ -21,8 +21,8 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceScreen
-        android:key="button_settings"
         android:title="@string/button_settings"
+        android:icon="@drawable/ic_button_settings"
         android:fragment="org.carbonrom.carbonfibers.fragments.ButtonSettings" />
 
 </PreferenceScreen>

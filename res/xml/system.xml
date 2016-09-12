@@ -21,9 +21,8 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
          <Preference
-            android:key="powermenu"
             android:fragment="org.carbonrom.carbonfibers.fragments.PowerMenu"
-            android:layout="@layout/preference_powermenu"
+            android:icon="@drawable/ic_powermenu"
             android:title="@string/powermenu_category" />
 
 </PreferenceScreen>

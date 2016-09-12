@@ -59,8 +59,11 @@ public class CarbonFibers extends SettingsPreferenceFragment {
     private static final int MENU_HELP  = 0;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
         addPreferencesFromResource(R.xml.cf_main_menu);
+
         setHasOptionsMenu(true);
     }
 

@@ -55,7 +55,7 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.DIRTYTWEAKS;
+        return MetricsEvent.CARBONFIBERS;
     }
 
     @Override

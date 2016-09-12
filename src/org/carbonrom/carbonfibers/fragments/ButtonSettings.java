@@ -87,7 +87,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.DIRTYTWEAKS;
+        return MetricsEvent.CARBONFIBERS;
     }
 
     @Override
