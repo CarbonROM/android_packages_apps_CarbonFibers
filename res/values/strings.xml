@@ -15,6 +15,7 @@
 
   <string name="carbonfibers">CarbonFibers</string>
   <string name="system_category">System</string>
+  <string name="navigation_category">Navigation</string>
   <string name="misc_category">Misc</string>
 
   <!-- Dialog -->

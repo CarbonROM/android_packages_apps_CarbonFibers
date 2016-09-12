@@ -23,6 +23,11 @@
        android:title="@string/system_category" />
 
    <header
+       android:fragment="org.carbonrom.carbonfibers.fragments.Navigation"
+       android:icon="@drawable/ic_navigation"
+       android:title="@string/navigation_category" />
+
+   <header
        android:fragment="org.carbonrom.carbonfibers.fragments.Misc"
        android:icon="@drawable/ic_misc"
        android:title="@string/misc_category" />
