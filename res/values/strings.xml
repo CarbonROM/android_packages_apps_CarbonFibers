@@ -16,12 +16,12 @@
     <string name="carbonfibers">CarbonFibers</string>
     <string name="system_category">System</string>
     <string name="buttons_category">Buttons</string>
+    <string name="display_tweaks_category">Display Tweaks</string>
     <string name="misc_category">Misc</string>
     <string name="privacy_category">Privacy</string>
     <string name="statusbar_category">Status bar</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="lights_category">Lights</string>
-    <string name="display_tweaks_category">Display Tweaks</string>
     <string name="reset">Reset</string>
     <string name="default_string">Default</string>
     <string name="add">Add</string>
@@ -502,14 +502,17 @@
 
     <!-- Dashboard columns -->
     <string name="display_tweaks">Display Tweaks</string>
-    <string name="dashboard_columns_title">Dashboard Columns</string>
+    <string name="dashboard_settings_category">Settings Dashboard Options</string>
+    <string name="dashboard_columns_title">Number of Columns</string>
     <string name="dashboard_columns_summary">Change the number of columns displayed in the dashboard</string>
-    <string name="dashboard_columns_dialog_title">Select dashboard columns</string>
+    <string name="dashboard_columns_dialog_title">Select number of columns</string>
     <string name="dashboard_columns_default">One (two landscape)</string>
     <string name="dashboard_columns_two">Two (three landscape)</string>
     <string name="dashboard_columns_three">Three (four landscape)</string>
-    <string name="dashboard_summary_double_lines_title">Dashboard summary lines</string>
+    <string name="dashboard_summary_double_lines_title">Tile summary lines</string>
     <string name="dashboard_summary_double_lines_summary_on">Show dashboard tile summaries in more lines</string>
     <string name="dashboard_summary_double_lines_summary_off">Show dashboard tile summaries in 1 line</string>
+    <string name="remove_tile_summaries_title">Remove tile summaries</string>
+    <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
 
 </resources>
