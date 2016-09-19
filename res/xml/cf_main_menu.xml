@@ -21,14 +21,18 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
    <Preference
-       android:fragment="org.carbonrom.carbonfibers.fragments.System"
-       android:icon="@drawable/ic_system"
-       android:title="@string/system_category" />
-
-   <Preference
-       android:fragment="org.carbonrom.carbonfibers.fragments.Misc"
+       android:fragment="org.carbonrom.carbonfibers.fragments.misc.Misc"
        android:icon="@drawable/ic_misc"
        android:title="@string/misc_category" />
 
+   <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.privacy.Privacy"
+       android:icon="@drawable/ic_privacy"
+       android:title="@string/privacy_category" />
+
+   <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.system.System"
+       android:icon="@drawable/ic_system"
+       android:title="@string/system_category" />
 
 </PreferenceScreen>
