@@ -16,7 +16,7 @@
  *
  */
 
-package org.carbonrom.carbonfibers.fragments;
+package org.carbonrom.carbonfibers.fragments.navigation;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
