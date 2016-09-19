@@ -21,4 +21,9 @@
   <string name="carbonfibers_dialog_message">Unfortunately we are not wizards!\n\nSo if you find a bug with any of these settings, please open up a ticket on Jira or contact a Carbon developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not wizards so we do miss things.</string>
   <string name="carbonfibers_dialog_toast">READ THE WHOLE THING!</string>
 
+  <!-- Hide Apps from Recents -->
+  <string name="hide_apps_from_recents_title">Hide apps from recents</string>
+  <string name="hide_from_recents_add_app">Add App</string>
+  <string name="title_activity_carbon_recents_settings">Recents</string>
+
 </resources>
