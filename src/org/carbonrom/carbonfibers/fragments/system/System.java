@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.carbonrom.carbonfibers.fragments;
+package org.carbonrom.carbonfibers.fragments.system;
 
 import android.content.Context;
 import android.content.ContentResolver;
