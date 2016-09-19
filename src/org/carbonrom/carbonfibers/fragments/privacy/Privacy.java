@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.carbonrom.carbonfibers.fragments;
+package org.carbonrom.carbonfibers.fragments.privacy;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -31,24 +31,24 @@ import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-public class System extends SettingsPreferenceFragment implements
+public class Privacy extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "System";
+    private static final String TAG = "Privacy";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.system);
+        addPreferencesFromResource(R.xml.privacy);
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
-    public int getMetricsCategory() {
+    protected int getMetricsCategory() {
         return MetricsEvent.CARBONFIBERS;
     }
 
