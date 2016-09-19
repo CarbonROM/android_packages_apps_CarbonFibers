@@ -20,6 +20,15 @@
     android:title="@string/system_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceScreen
+        android:icon="@drawable/ic_hafr"
+        android:title="@string/hide_apps_from_recents_title"
+        android:summary="@string/hide_apps_from_recents_summary" >
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
+    </PreferenceScreen>
+
     <!-- Anonymous statistics - (CRStats) -->
     <PreferenceScreen
         android:key="crstats"
