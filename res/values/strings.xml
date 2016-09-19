@@ -54,4 +54,10 @@
     <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
     <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
 
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Hide apps from recents</string>
+    <string name="hide_apps_from_recents_summary">Prevent apps from appearing in recents</string>
+    <string name="hide_from_recents_add_app">Add app</string>
+    <string name="title_activity_carbon_recents_settings">Recents</string>
+
 </resources>
