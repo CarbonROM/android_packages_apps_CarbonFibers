@@ -20,9 +20,9 @@
     android:title="@string/system_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-         <Preference
-            android:fragment="org.carbonrom.carbonfibers.fragments.system.PowerMenu"
-            android:icon="@drawable/ic_powermenu"
-            android:title="@string/powermenu_category" />
+    <Preference
+        android:fragment="org.carbonrom.carbonfibers.fragments.system.PowerMenu"
+        android:icon="@drawable/ic_powermenu"
+        android:title="@string/powermenu_category" />
 
 </PreferenceScreen>
