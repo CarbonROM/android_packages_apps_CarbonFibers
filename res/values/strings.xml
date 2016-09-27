@@ -18,6 +18,8 @@
     <string name="navigation_category">Navigation</string>
     <string name="misc_category">Misc</string>
     <string name="privacy_category">Privacy</string>
+    <string name="statusbar_category">Statusbar</string>
+    <string name="quicksettings_category">Quick settings</string>
 
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hide apps from recents</string>
@@ -77,4 +79,6 @@
     <string name="volume_rocker_music_controls_title">Playback control</string>
     <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
 
+    <!-- Option to show brightness bar in quick settings -->
+    <string name="show_brightness">Show brightness slider</string>
 </resources>
