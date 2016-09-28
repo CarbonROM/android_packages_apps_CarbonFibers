@@ -40,11 +40,13 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
 
     private static final String KEY_ADVANCED_REBOOT = "advanced_reboot";
     private static final String KEY_POWERMENU_TORCH = "powermenu_torch";
+    private static final String POWER_REBOOT_DIALOG_DIM = "power_reboot_dialog_dim";
     private static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
 
     private ListPreference mAdvancedReboot;
     private ListPreference mPowerMenuAnimations;
     private SwitchPreference mPowermenuTorch;
+    private CustomSeekBarPreference mPowerRebootDialogDim;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -69,6 +71,12 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
         mPowermenuTorch.setChecked((Settings.System.getInt(resolver,
                 Settings.System.POWERMENU_TORCH, 0) == 1));
         }
+
+        mPowerRebootDialogDim = (CustomSeekBarPreference) prefScreen.findPreference(POWER_REBOOT_DIALOG_DIM);
+        int powerRebootDialogDim = Settings.System.getInt(resolver,
+                Settings.System.POWER_REBOOT_DIALOG_DIM, 50);
+        mPowerRebootDialogDim.setValue(powerRebootDialogDim / 1);
+        mPowerRebootDialogDim.setOnPreferenceChangeListener(this);
 
         mPowerMenuAnimations = (ListPreference) findPreference(POWER_MENU_ANIMATIONS);
         mPowerMenuAnimations.setValue(String.valueOf(Settings.System.getInt(
@@ -98,6 +106,11 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.POWERMENU_TORCH, checked ? 1:0);
+            return true;
+        } else if (preference == mPowerRebootDialogDim) {
+            int alpha = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.POWER_REBOOT_DIALOG_DIM, alpha * 1);
             return true;
         } else if (preference == mPowerMenuAnimations) {
             Settings.System.putInt(getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS,

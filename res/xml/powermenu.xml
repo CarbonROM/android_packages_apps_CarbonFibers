@@ -87,4 +87,12 @@
             android:summary="@string/power_menu_animation_summary"
             android:persistent="false" />
 
+         <com.android.settings.carbon.CustomSeekBarPreference
+            android:key="power_reboot_dialog_dim"
+            android:title="@string/powermenu_dialog_dim"
+            android:max="100"
+            settings:min="0"
+            settings:units=""
+            android:persistent="false" />
+
 </PreferenceScreen>
