@@ -46,4 +46,9 @@
         android:icon="@drawable/ic_statusbar"
         android:title="@string/qs_header_title" />
 
+    <PreferenceScreen
+        android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.CarrierLabelSettings"
+        android:icon="@drawable/ic_carrierlabel"
+        android:title="@string/carrier_label_settings_title" />
+
 </PreferenceScreen>
