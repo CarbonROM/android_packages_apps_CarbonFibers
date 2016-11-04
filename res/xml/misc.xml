@@ -27,6 +27,13 @@
         android:defaultValue="false" />
 
     <ListPreference
+        android:entries="@array/screenshot_type_entries"
+        android:entryValues="@array/screenshot_type_values"
+        android:key="screenshot_type"
+        android:title="@string/screenshot_type_title" />
+
+
+    <ListPreference
         android:key="pref_scrollingcache"
         android:dialogTitle="@string/pref_scrollingcache_title"
         android:title="@string/pref_scrollingcache_title"
