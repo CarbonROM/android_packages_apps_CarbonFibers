@@ -70,7 +70,7 @@ public class Misc extends SettingsPreferenceFragment implements
 
         mScreenshotDelay = (CustomSeekBarPreference) findPreference(SCREENSHOT_DELAY);
         int screenshotDelay = Settings.System.getInt(resolver,
-                Settings.System.SCREENSHOT_DELAY, 1000);
+                Settings.System.SCREENSHOT_DELAY, 100);
         mScreenshotDelay.setValue(screenshotDelay / 1);
         mScreenshotDelay.setOnPreferenceChangeListener(this);
     }
