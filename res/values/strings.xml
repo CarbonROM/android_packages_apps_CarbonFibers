@@ -16,6 +16,7 @@
     <string name="system_category">System</string>
     <string name="misc_category">Misc</string>
     <string name="privacy_category">Privacy</string>
+    <string name="lockscreen_category">Lockscreen</string>
 
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
@@ -66,4 +67,7 @@
     <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
     <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
 
+    <!-- Lockscreen Torch -->
+    <string name="keyguard_torch_title">Lockscreen torch</string>
+    <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
 </resources>
