@@ -21,6 +21,11 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
    <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.lockscreen.Lockscreen"
+       android:icon="@drawable/ic_lockscreen"
+       android:title="@string/lockscreen_category" />
+
+   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.misc.Misc"
        android:icon="@drawable/ic_misc"
        android:title="@string/misc_category" />

@@ -20,6 +20,7 @@
     <string name="privacy_category">Privacy</string>
     <string name="statusbar_category">Statusbar</string>
     <string name="quicksettings_category">Quick settings</string>
+    <string name="lockscreen_category">Lockscreen</string>
 
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hide apps from recents</string>
@@ -94,4 +95,8 @@
     <!-- Quick Settings on lockscreen -->
     <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
     <string name="lockscreen_qs_disabled_summary">Disable shortcuts and expanding quick settings on secure lock screens</string>
+
+    <!-- Lockscreen Torch -->
+    <string name="keyguard_torch_title">Lockscreen torch</string>
+    <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
 </resources>
