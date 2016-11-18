@@ -27,7 +27,7 @@
         android:title="@string/show_brightness"
         android:defaultValue="true" />
 
-    <com.android.settings.carbon.SecureSettingSwitchPreference
+    <SwitchPreference
         android:key="qs_data_advanced"
         android:title="@string/qs_advanced_data_title"
         android:summary="@string/qs_advanced_data_summary"

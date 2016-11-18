@@ -32,6 +32,7 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.util.cr.CrUtils;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.Utils;
 
@@ -39,8 +40,10 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "QuickSettings";
     private static final String PREF_LOCK_QS_DISABLED = "lockscreen_qs_disabled";
+    private static final String PREF_QS_DATA_ADVANCED = "qs_data_advanced";
 
     private SwitchPreference mLockQsDisabled;
+    private SwitchPreference mQsDataAdvanced;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
@@ -61,6 +64,15 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             mLockQsDisabled.setOnPreferenceChangeListener(this);
         } else {
             prefSet.removePreference(mLockQsDisabled);
+        }
+
+        mQsDataAdvanced = (SwitchPreference) findPreference(PREF_QS_DATA_ADVANCED);
+        mQsDataAdvanced.setOnPreferenceChangeListener(this);
+        if (CrUtils.isWifiOnly(getActivity())) {
+            prefSet.removePreference(mQsDataAdvanced);
+        } else {
+        mQsDataAdvanced.setChecked((Settings.Secure.getInt(resolver,
+                Settings.Secure.QS_DATA_ADVANCED, 0) == 1));
         }
     }
 
@@ -86,6 +98,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.LOCK_QS_DISABLED, checked ? 1:0);
+            return true;
+        } else if  (preference == mQsDataAdvanced) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.QS_DATA_ADVANCED, checked ? 1:0);
             return true;
         }
         return false;
