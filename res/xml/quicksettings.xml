@@ -18,6 +18,11 @@
     android:title="@string/quicksettings_category" >
 
     <com.android.settings.carbon.SecureSettingSwitchPreference
+            android:key="lockscreen_qs_disabled"
+            android:title="@string/lockscreen_qs_disabled_title"
+            android:summary="@string/lockscreen_qs_disabled_summary"/>
+
+    <com.android.settings.carbon.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/show_brightness"
         android:defaultValue="true" />
