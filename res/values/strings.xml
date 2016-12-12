@@ -22,6 +22,7 @@
     <string name="quicksettings_category">Quick settings</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="traffic_category">Traffic indicators</string>
+    <string name="CarbonStats">Carbon Statistics</string>
 
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hide apps from recents</string>
