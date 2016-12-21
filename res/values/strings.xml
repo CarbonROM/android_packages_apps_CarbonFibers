@@ -328,6 +328,10 @@
     <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
     <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
 
+    <!-- Recents -->
+    <string name="recents_cab">Clear All Button Tweaks</string>
+    <string name="recents_visuals">Recents Extra Visuals</string>
+
     <!-- Immersive Recents -->
     <string name="immersive_recents_title">Immersive Recents</string>
     <string name="immersive_recents_summary">Change the view of the recents screen</string>
@@ -341,5 +345,16 @@
     <string name="systemui_recents_mem_display_title">Show Memory Bar</string>
     <string name="systemui_recents_mem_display_summaryOn">RAM bar enabled</string>
     <string name="systemui_recents_mem_display_summaryOff">RAM bar disabled</string>
+
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Enable clear all button</string>
+    <string name="show_clear_all_recents_button_summary">Show the clear all button when using recents</string>
+    <string name="recents_clear_all_location_title">Clear all button location</string>
+    <string name="recents_clear_all_location_top_right">Top right</string>
+    <string name="recents_clear_all_location_top_left">Top left</string>
+    <string name="recents_clear_all_location_top_center">Top center</string>
+    <string name="recents_clear_all_location_bottom_right">Bottom right</string>
+    <string name="recents_clear_all_location_bottom_left">Bottom left</string>
+    <string name="recents_clear_all_location_bottom_center">Bottom center</string>
 
 </resources>
