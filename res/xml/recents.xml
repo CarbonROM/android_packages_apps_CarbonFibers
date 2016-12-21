@@ -20,6 +20,14 @@
     android:title="@string/recents_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="systemui_recents_mem_display"
+        android:title="@string/systemui_recents_mem_display_title"
+        android:summaryOn="@string/systemui_recents_mem_display_summaryOn"
+        android:summaryOff="@string/systemui_recents_mem_display_summaryOff"
+        android:defaultValue="false" />
+
     <ListPreference
         android:key="immersive_recents"
         android:title="@string/immersive_recents_title"
