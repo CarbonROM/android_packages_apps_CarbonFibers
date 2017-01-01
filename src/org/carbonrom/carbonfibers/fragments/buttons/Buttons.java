@@ -16,7 +16,7 @@
  *
  */
 
-package org.carbonrom.carbonfibers.fragments.navigation;
+package org.carbonrom.carbonfibers.fragments.buttons;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -46,7 +46,7 @@ import com.android.settings.Utils;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
-public class ButtonSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class Buttons extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
@@ -60,7 +60,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements OnPref
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.button_settings);
+        addPreferencesFromResource(R.xml.buttons);
 
         final ContentResolver resolver = getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();

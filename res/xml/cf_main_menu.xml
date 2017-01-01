@@ -22,6 +22,21 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
    <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.system.System"
+       android:icon="@drawable/ic_system"
+       android:title="@string/system_category" />
+
+   <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.Statusbar"
+       android:icon="@drawable/ic_statusbar"
+       android:title="@string/statusbar_category" />
+
+   <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.buttons.Buttons"
+       android:icon="@drawable/ic_buttons"
+       android:title="@string/buttons_category" />
+
+   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.lockscreen.Lockscreen"
        android:icon="@drawable/ic_lockscreen"
        android:title="@string/lockscreen_category" />
@@ -32,24 +47,9 @@
        android:title="@string/misc_category" />
 
    <Preference
-       android:fragment="org.carbonrom.carbonfibers.fragments.navigation.Navigation"
-       android:icon="@drawable/ic_navigation"
-       android:title="@string/navigation_category" />
-
-   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.privacy.Privacy"
        android:icon="@drawable/ic_privacy"
        android:title="@string/privacy_category" />
-
-   <Preference
-       android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.Statusbar"
-       android:icon="@drawable/ic_statusbar"
-       android:title="@string/statusbar_category" />
-
-   <Preference
-       android:fragment="org.carbonrom.carbonfibers.fragments.system.System"
-       android:icon="@drawable/ic_system"
-       android:title="@string/system_category" />
 
    <PreferenceScreen
        android:icon="@drawable/ic_stats"

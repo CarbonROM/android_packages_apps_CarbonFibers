@@ -15,26 +15,29 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/buttons_category"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <SwitchPreference
+    <com.android.settings.carbon.SystemSettingSwitchPreference
         android:key="swap_volume_buttons"
         android:title="@string/swap_volume_buttons_title"
-        android:summary="@string/swap_volume_buttons_summary" />
+        android:summary="@string/swap_volume_buttons_summary"
+        android:defaultValue="false" />
 
-    <SwitchPreference
+    <com.android.settings.carbon.SystemSettingSwitchPreference
         android:key="volume_rocker_wake"
         android:summary="@string/volume_rocker_wake_summary"
         android:title="@string/volume_rocker_wake_title"
         android:defaultValue="false"
         android:disableDependentsState="true" />
 
-    <SwitchPreference
+    <com.android.settings.carbon.SystemSettingSwitchPreference
         android:key="volume_rocker_music_controls"
         android:summary="@string/volume_rocker_music_controls_summary"
         android:title="@string/volume_rocker_music_controls_title"
-        android:defaultValue="true"
+        android:defaultValue="false"
         android:dependency="volume_rocker_wake" />
 
 </PreferenceScreen>
