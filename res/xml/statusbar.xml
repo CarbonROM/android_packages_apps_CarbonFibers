@@ -20,6 +20,12 @@
     android:title="@string/statusbar_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/double_tap_status_bar_sleep_title"
+        android:summary="@string/double_tap_status_bar_sleep_summary"
+        android:defaultValue="false" />
+
     <Preference
         android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.QuickSettings"
         android:icon="@drawable/ic_systemui_tuner_qs"
