@@ -138,4 +138,42 @@
     <string name="network_traffic_hidearrow">Hide arrows</string>
     <string name="network_traffic_hidearrow_summary">Hide the arrows in the traffic indicators</string>
 
+   <!-- Status bar - Clock -->
+    <string name="status_bar_clock_title">Clock</string>
+    <string name="status_bar_clock_style_title">Clock style</string>
+    <string name="status_bar_clock_style_right">Right</string>
+    <string name="status_bar_clock_style_left">Left</string>
+    <string name="status_bar_clock_style_center">Center</string>
+    <string name="status_bar_clock_style_hidden">Hidden</string>
+    <string name="status_bar_am_pm_title">AM/PM style</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Small</string>
+    <string name="status_bar_am_pm_hidden">Hidden (default)</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_format_custom">Custom java format</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+
+    <!-- QS Header Icons -->
+    <string name="qs_header_title">Header</string>
+    <string name="qs_settings_icon_title">Settings Shortcut</string>
+    <string name="qs_settings_icon_summary">Enable the settings shortcut in the header</string>
+    <string name="qs_settings_expanded_title">Settings Shortcut Expanded</string>
+    <string name="qs_settings_expanded_summary">Only enable the settings shortcut when expanded</string>
+    <string name="qs_edit_title">Edit Icon</string>
+    <string name="qs_edit_summary">Enable the tile edit icon in the header</string>
+    <string name="qs_multiuser_switch_title">MultiUser Switch</string>
+    <string name="qs_multiuser_switch_summary">Enable the MultiUser switch in the header</string>
+    <string name="qs_expand_indicator_title">Expand Indicator</string>
+    <string name="qs_expand_indicator_summary">Enable the expand indicator (^) in the header</string>
 </resources>
