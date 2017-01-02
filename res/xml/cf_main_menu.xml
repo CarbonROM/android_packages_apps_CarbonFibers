@@ -37,6 +37,11 @@
        android:title="@string/buttons_category" />
 
    <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.lights.Lights"
+       android:icon="@drawable/ic_led"
+       android:title="@string/lights_category" />
+
+   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.lockscreen.Lockscreen"
        android:icon="@drawable/ic_lockscreen"
        android:title="@string/lockscreen_category" />

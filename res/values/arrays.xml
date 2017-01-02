@@ -190,4 +190,97 @@
         <item>@string/clock_date_format_custom</item>
     </string-array>
 
+    <!-- Colorpicker -->
+    <array name="color_picker_favorite_color_buttons">
+        <item>@id/favorite_color_button_1</item>
+        <item>@id/favorite_color_button_2</item>
+        <item>@id/favorite_color_button_3</item>
+        <item>@id/favorite_color_button_4</item>
+    </array>
+
+    <array name="color_picker_palette_color_buttons_layouts">
+        <item>@id/color_buttons_material</item>
+        <item>@id/color_buttons_rgb</item>
+    </array>
+
+    <array name="color_picker_palette_color_buttons">
+        <item>@id/palette_color_button_1</item>
+        <item>@id/palette_color_button_2</item>
+        <item>@id/palette_color_button_3</item>
+        <item>@id/palette_color_button_4</item>
+        <item>@id/palette_color_button_5</item>
+        <item>@id/palette_color_button_6</item>
+        <item>@id/palette_color_button_7</item>>
+        <item>@id/palette_color_button_8</item>
+    </array>
+
+    <array name="color_picker_material_palette">
+        <item>@color/material_red_500</item>
+        <item>@color/material_green_500</item>
+        <item>@color/material_blue_500</item>
+        <item>@color/material_deep_teal_500</item>
+        <item>@color/material_indigo_500</item>
+        <item>@color/material_purple_500</item>
+        <item>@color/material_yellow_500</item>>
+        <item>@color/material_orange_500</item>
+    </array>
+
+    <array name="color_picker_rgb_palette">
+        <item>@color/black</item>
+        <item>@color/red</item>
+        <item>@color/green</item>
+        <item>@color/blue</item>
+        <item>@color/white</item>
+        <item>@color/purple</item>
+        <item>@color/yellow</item>>
+        <item>@color/orange</item>
+    </array>
+
+
+    <!-- Values for the notification light pulse spinners -->
+    <string-array name="notification_pulse_length_entries" translatable="false">
+        <item>@string/pulse_length_always_on</item>
+        <item>@string/pulse_length_very_short</item>
+        <item>@string/pulse_length_short</item>
+        <item>@string/pulse_length_normal</item>
+        <item>@string/pulse_length_long</item>
+        <item>@string/pulse_length_very_long</item>
+    </string-array>
+
+    <string-array name="notification_pulse_length_values" translatable="false">
+        <item>1</item>
+        <item>250</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+    </string-array>
+
+    <string-array name="notification_pulse_speed_entries" translatable="false">
+        <item>@string/pulse_speed_very_fast</item>
+        <item>@string/pulse_speed_fast</item>
+        <item>@string/pulse_speed_normal</item>
+        <item>@string/pulse_speed_slow</item>
+        <item>@string/pulse_speed_very_slow</item>
+    </string-array>
+
+    <string-array name="notification_pulse_speed_values" translatable="false">
+        <item>250</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+    </string-array>
+
+    <!-- led color list -->
+    <string-array name="entries_led_colors" translatable="false">
+        <item>@string/led_color_green</item>
+        <item>@string/led_color_red</item>
+    </string-array>
+
+    <string-array name="values_led_colors" translatable="false">
+        <item>#FF00FF00</item>
+        <item>#FFFF0000</item>
+    </string-array>
+
 </resources>

@@ -22,7 +22,21 @@
     <string name="quicksettings_category">Quick settings</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="traffic_category">Traffic indicators</string>
+    <string name="lights_category">Lights</string>
     <string name="CarbonStats">Carbon Statistics</string>
+    <string name="reset">Reset</string>
+    <string name="default_string">Default</string>
+    <string name="add">Add</string>
+    <string name="enabled">Enabled</string>
+    <string name="choose_app">Choose application</string>
+    <string name="help">Help</string>
+    <string name="reset_message">Reset all entries to default?</string>
+    <string name="attention">Attention</string>
+    <string name="reset">Reset</string>
+    <string name="advanced">Advanced</string>
+    <string name="profiles_add">Add...</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="ok">Okay</string>
 
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hide apps from recents</string>
@@ -182,4 +196,109 @@
     <string name="qs_multiuser_switch_summary">Enable the MultiUser switch in the header</string>
     <string name="qs_expand_indicator_title">Expand Indicator</string>
     <string name="qs_expand_indicator_summary">Enable the expand indicator (^) in the header</string>
+
+    <!-- Color picker -->
+    <string name="color_picker_fragment_title">Color Picker</string>
+    <string name="apply_color_title">Apply color</string>
+    <string name="edit_hex_title">HEX value</string>
+    <string name="palette_material_title">Material</string>
+    <string name="palette_rgb_title">RGB</string>
+    <string name="reset_color_title">Reset</string>
+    <string name="reset_android_title">Android default</string>
+    <string name="reset_theme_default_title">Theme default</string>
+    <string name="favorites_title">Favorites</string>
+    <string name="hide_favorites_title">Hide favorites</string>
+    <string name="show_favorites_title">Show favorites</string>
+    <string name="hide_help_title">Hide help</string>
+    <string name="show_help_title">Show help</string>
+    <string name="empty_title">Empty</string>
+
+    <!-- Color picker help screen -->
+    <string name="color_picker_help_screen_title">Color Picker help</string>
+    <string name="color_picker_help_ab_title">Action bar:</string>
+    <string name="color_picker_help_ab_back_title">Back button:</string>
+    <string name="color_picker_help_ab_back_summary">Close the color picker without applying the new color, (cancel).\nThis has the same effect as clicking the back button on the navigation bar.</string>
+    <string name="color_picker_help_ab_name_title">Title:</string>
+    <string name="color_picker_help_ab_name_summary">Only shows the title, no additional functions</string>
+    <string name="color_picker_help_ab_color_apply_title">Color preview and apply color:</string>
+    <string name="color_picker_help_ab_color_apply_summary">The color preview is always visible.\nIf the new color doesn\'t equals the old color, the color preview will be expanded, to allow apply the new color.</string>
+    <string name="color_picker_help_ab_hex_title">Hex value:</string>
+    <string name="color_picker_help_ab_hex_summary">Shows the hex input field.\nHex values have to be in hex color format:\n\'#aarrggbb\', (\'alpha\' (transparency), \'red\', \'green\' and \'blue\').\nThe back button closes the hex input field without setting the hex value.\nThe apply button sets the hex value as new color without applying the new color.</string>
+    <string name="color_picker_help_ab_menu_title">Menu button:</string>
+    <string name="color_picker_help_ab_menu_reset_title">Reset:</string>
+    <string name="color_picker_help_ab_menu_reset_summary">Resets the new color to the default Android theme related color without applying the new color.</string>
+    <string name="color_picker_help_ab_menu_favorites_title">Show/hide favorites:</string>
+    <string name="color_picker_help_ab_menu_favorites_summary">Shows/hides the favorites.\nHiding the favorites will not reset the favorite colors.</string>
+    <string name="color_picker_help_ab_menu_help_title">Show/hide help:</string>
+    <string name="color_picker_help_ab_menu_help_summary">Shows/hides this help screen.</string>
+    <string name="color_picker_help_colors_title">Colors:</string>
+    <string name="color_picker_help_picker_view_title">Color panel:</string>
+    <string name="color_picker_help_picker_view_summary">Pick a color to set a new color without applying the new color.\nThe color range can be changed using the slider on the right side</string>
+    <string name="color_picker_help_color_buttons_title">Color buttons:</string>
+    <string name="color_picker_help_favorites_title">Favorites:</string>
+    <string name="color_picker_help_favorites_summary">Favorites are empty by default.\nThe new color can be saved as a favorite at any time via long click, (a none empty favorite will be overwritten by the new color).\nA click sets the favorite color as new color, without applying the new color.</string>
+    <string name="color_picker_help_palette_title">Palette:\n(Material and RGB)</string>
+    <string name="color_picker_help_palette_summary">All palette colors have a fixed value.\nA click sets the palette color as new color, without applying the new color.</string>
+    <string name="color_picker_help_do_not_show_title">Don\'t show again</string>
+    <string name="color_picker_help_button_ok_title">OK</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Edit light settings</string>
+    <string name="pulse_speed_title">Pulse length and speed</string>
+    <string name="default_time">Normal</string>
+    <string name="custom_time">Custom</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Always on</string>
+    <string name="pulse_length_very_short">Very short</string>
+    <string name="pulse_length_short">Short</string>
+    <string name="pulse_length_normal">Normal</string>
+    <string name="pulse_length_long">Long</string>
+    <string name="pulse_length_very_long">Very long</string>
+    <string name="pulse_speed_very_fast">Very fast</string>
+    <string name="pulse_speed_fast">Fast</string>
+    <string name="pulse_speed_normal">Normal</string>
+    <string name="pulse_speed_slow">Slow</string>
+    <string name="pulse_speed_very_slow">Very slow</string>
+    <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_title">Notification light</string>
+    <string name="notificationlight_title">Notification LED settings</string>
+    <string name="notification_light_general_title">General</string>
+    <string name="notification_light_applist_title">Apps</string>
+    <string name="notification_light_phonelist_title">Phone</string>
+    <string name="notification_light_use_custom">Use custom values</string>
+    <string name="notification_light_default_value">Default</string>
+    <string name="notification_light_missed_call_title">Missed call</string>
+    <string name="notification_light_voicemail_title">Voicemail</string>
+    <string name="notification_light_brightness" translatable="false">@string/brightness</string>
+    <string name="notification_light_screen_on">Lights with screen on</string>
+    <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
+    <string name="notification_light_use_multiple_leds">Multiple LEDs</string>
+    <string name="keywords_lights_brightness_level">dim leds brightness</string>
+    <string name="notification_light_automagic">Choose colors automatically</string>
+
+    <!-- Lights settings, LED notification -->
+    <string name="leds_category_title">LED Options</string>
+    <string name="battery_light_settings">Battery light</string>
+    <string name="led_notification_title">Light settings</string>
+    <string name="led_notification_text">LED light enabled by settings</string>
+    <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
+
+    <!-- Battery light settings  -->
+    <string name="batterylight_title">Battery LED settings</string>
+    <string name="battery_light_enable">Enable</string>
+    <string name="battery_low_pulse_title">Pulse if battery low</string>
+    <string name="battery_light_list_title">Colors</string>
+    <string name="battery_light_low_color_title">Battery low</string>
+    <string name="battery_light_medium_color_title">Charging</string>
+    <string name="battery_light_full_color_title">Charged (90%)</string>
+    <string name="battery_light_really_full_color_title">Charged (100%)</string>
+    <string name="edit_battery_settings">Edit battery settings</string>
+    <string name="notification_light_general_title">General</string>
+    <string name="led_color_green">Green</string>
+    <string name="led_color_red">Red</string>
+    <string name="led_color_blue">Blue</string>
+
 </resources>
