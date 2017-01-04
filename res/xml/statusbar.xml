@@ -28,7 +28,7 @@
 
     <Preference
         android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.QuickSettings"
-        android:icon="@drawable/ic_systemui_tuner_qs"
+        android:icon="@drawable/ic_quicksettings"
         android:title="@string/quicksettings_category" />
 
     <Preference
