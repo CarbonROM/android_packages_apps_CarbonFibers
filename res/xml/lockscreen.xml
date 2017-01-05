@@ -18,12 +18,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.android.settings.carbon.SystemSettingSwitchPreference
-        android:key="double_tap_sleep_anywhere"
-        android:title="@string/double_tap_lock_sleep_title"
-        android:summary="@string/double_tap_lock_sleep_summary"
-        android:defaultValue="false" />
-
-    <com.android.settings.carbon.SystemSettingSwitchPreference
         android:key="keyguard_toggle_torch"
         android:title="@string/keyguard_torch_title"
         android:summary="@string/keyguard_torch_summary"
