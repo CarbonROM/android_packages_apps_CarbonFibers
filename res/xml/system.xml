@@ -25,4 +25,9 @@
         android:icon="@drawable/ic_powermenu"
         android:title="@string/powermenu_category" />
 
+    <Preference
+        android:fragment="org.carbonrom.carbonfibers.fragments.system.Recents"
+        android:title="@string/recents_category"
+        android:summary="@string/recents_summary" />
+
 </PreferenceScreen>
