@@ -32,6 +32,11 @@
        android:title="@string/statusbar_category" />
 
    <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.recents.Recents"
+       android:icon="@drawable/ic_recents"
+       android:title="@string/recents_category" />
+
+   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.buttons.Buttons"
        android:icon="@drawable/ic_buttons"
        android:title="@string/buttons_category" />
