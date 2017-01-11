@@ -20,6 +20,11 @@
      android:title="@string/carbonfibers"
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+        android:fragment="org.carbonrom.carbonfibers.fragments.buttons.Buttons"
+        android:icon="@drawable/ic_buttons"
+        android:title="@string/buttons_category" />
+
    <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.gestures.Gestures"
        android:icon="@drawable/ic_gestures"
