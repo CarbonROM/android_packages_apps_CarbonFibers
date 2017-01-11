@@ -38,6 +38,10 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="ok">Okay</string>
 
+    <!-- Recents -->
+    <string name="recents_category">Recents</string>
+    <string name="recents_summary">Edit the recents layout and features</string>
+
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Enable Pixel home animation</string>
     <string name="pixel_navbar_anim_summary">Enables the Pixel\'s home button animations</string>
