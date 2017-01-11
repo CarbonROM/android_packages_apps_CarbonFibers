@@ -39,8 +39,8 @@
     <string name="ok">Okay</string>
 
     <!-- Navbar Animation -->
-    <string name="pixel_navbar_anim_title">Enable Pixel navbar animation</string>
-    <string name="pixel_navbar_anim_summary">Requires a SystemUI restart</string>
+    <string name="pixel_navbar_anim_title">Enable Pixel home animation</string>
+    <string name="pixel_navbar_anim_summary">Enables the Pixel\'s home button animations</string>
 
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hide apps from recents</string>
