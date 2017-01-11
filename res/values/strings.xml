@@ -23,6 +23,7 @@
     <string name="lockscreen_category">Lockscreen</string>
     <string name="traffic_category">Traffic indicators</string>
     <string name="lights_category">Lights</string>
+    <string name="recents_category">Recents</string>
     <string name="CarbonStats">Carbon Statistics</string>
     <string name="reset">Reset</string>
     <string name="default_string">Default</string>
