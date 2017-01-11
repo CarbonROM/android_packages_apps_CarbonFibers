@@ -44,6 +44,10 @@
     <string name="traffic_category">Traffic indicators</string>
     <string name="traffic_summary">Show traffic indicator options</string>
 
+    <!-- Recents -->
+    <string name="recents_category">Recents</string>
+    <string name="recents_summary">Edit recents layout and features</string>
+
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Enable Pixel home animation</string>
     <string name="pixel_navbar_anim_summary">Enables the Pixel\'s home button animations</string>
