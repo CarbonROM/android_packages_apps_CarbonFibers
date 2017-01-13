@@ -40,6 +40,11 @@
         android:icon="@drawable/ic_statusbar"
         android:title="@string/qs_header_title" />
 
+    <Preference
+        android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.Ticker"
+        android:icon="@drawable/ic_action_reset"
+        android:title="@string/ticker_screen_title" />
+
     <PreferenceScreen
         android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.CarrierLabelSettings"
         android:icon="@drawable/ic_carrierlabel"

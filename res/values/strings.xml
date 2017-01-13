@@ -166,6 +166,16 @@
     <string name="double_tap_lock_sleep_title">Double tap lock screen to sleep</string>
     <string name="double_tap_lock_sleep_summary">Double tap lock screen to put the device to sleep</string>
 
+    <!-- Status Bar Ticker -->
+    <string name="ticker_screen_title">Ticker</string>
+    <string name="ticker_title">Status Bar Ticker</string>
+    <string name="ticker_screen_summary">Customize the ticker style</string>
+    <string name="ticker_summary">Enable the old status bar ticker</string>
+    <string name="ticker_restore_defaults_title">Restore defaults</string>
+    <string name="text_title">Text</string>
+    <string name="icon_title">Icon</string>
+    <string name="colors_title">Colors</string>
+
    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Clock</string>
     <string name="status_bar_clock_style_title">Clock style</string>
