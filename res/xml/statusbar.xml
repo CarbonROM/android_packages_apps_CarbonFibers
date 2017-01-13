@@ -60,6 +60,11 @@
         android:title="@string/qs_header_title"
         android:summary="@string/qs_header_summary" />
 
+    <Preference
+        android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.Ticker"
+        android:title="@string/ticker_screen_title"
+        android:summary="@string/ticker_screen_summary" />
+
     <PreferenceScreen
         android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.CarrierLabelSettings"
         android:title="@string/carrier_label_settings_title"
