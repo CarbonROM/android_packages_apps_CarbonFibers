@@ -20,6 +20,26 @@
     android:title="@string/statusbar_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="status_bar_show_battery_percent"
+        android:title="@string/show_battery_percentage"
+        android:summary="@string/show_battery_percentage_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="show_lte_fourgee"
+        android:title="@string/show_lte_fourgee_title"
+        android:summary="@string/show_lte_fourgee_summary"
+        android:defaultValue="false" />
+
+    <PreferenceScreen
+        android:title="@string/status_bar_icon_blacklist_title"
+        android:summary="@string/status_bar_icon_blacklist_summary" >
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.TunerActivity" />
+    </PreferenceScreen>
+
     <Preference
         android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.QuickSettings"
         android:icon="@drawable/ic_quicksettings"
@@ -44,5 +64,4 @@
         android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.CarrierLabelSettings"
         android:icon="@drawable/ic_carrierlabel"
         android:title="@string/carrier_label_settings_title" />
-
 </PreferenceScreen>
