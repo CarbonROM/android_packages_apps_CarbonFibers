@@ -20,6 +20,14 @@
     android:title="@string/system_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceScreen
+            android:title="@string/power_notification_title"
+            android:summary="@string/power_notification_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.PowerNotificationControlsActivity" />
+    </PreferenceScreen>
+
     <Preference
         android:fragment="org.carbonrom.carbonfibers.fragments.system.PowerMenu"
         android:icon="@drawable/ic_powermenu"
