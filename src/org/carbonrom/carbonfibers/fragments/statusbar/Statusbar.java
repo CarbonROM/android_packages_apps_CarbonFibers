@@ -27,16 +27,22 @@ import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
+import com.android.settings.carbon.SystemSettingSwitchPreference;
 import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.util.cr.CrUtils;
 import com.android.settings.Utils;
 
 public class Statusbar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Statusbar";
+
+    private static final String SHOW_LTE_FOURGEE = "show_lte_fourgee";
+
+    private SwitchPreference mShowLteFourGee;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -44,7 +50,14 @@ public class Statusbar extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.statusbar);
 
-        ContentResolver resolver = getActivity().getContentResolver();
+        PreferenceScreen prefSet = getPreferenceScreen();
+
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        mShowLteFourGee = (SystemSettingSwitchPreference) findPreference(SHOW_LTE_FOURGEE);
+        if (CrUtils.isWifiOnly(getActivity())) {
+            prefSet.removePreference(mShowLteFourGee);
+        }
     }
 
     @Override
