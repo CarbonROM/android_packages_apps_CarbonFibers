@@ -19,9 +19,7 @@
     <string name="misc_category">Misc</string>
     <string name="privacy_category">Privacy</string>
     <string name="statusbar_category">Statusbar</string>
-    <string name="quicksettings_category">Quick settings</string>
     <string name="lockscreen_category">Lockscreen</string>
-    <string name="traffic_category">Traffic indicators</string>
     <string name="lights_category">Lights</string>
     <string name="CarbonStats">Carbon Statistics</string>
     <string name="reset">Reset</string>
@@ -38,9 +36,17 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="ok">Okay</string>
 
+    <!-- Quick Settings -->
+    <string name="quicksettings_title">Quick settings</string>
+    <string name="quicksettings_summary">Modify quick settings behavior</string>
+
+    <!-- Traffic indicators -->
+    <string name="traffic_category">Traffic indicators</string>
+    <string name="traffic_summary">Show traffic indicator options</string>
+
     <!-- Recents -->
     <string name="recents_category">Recents</string>
-    <string name="recents_summary">Edit the recents layout and features</string>
+    <string name="recents_summary">Edit recents layout and features</string>
 
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Enable Pixel home animation</string>
@@ -52,12 +58,13 @@
 
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hide apps from recents</string>
-    <string name="hide_from_recents_add_app">Add App</string>
+    <string name="hide_apps_from_recents_summary">Choose apps to hide from the recents menu</string>
+    <string name="hide_from_recents_add_app">Add app</string>
     <string name="title_activity_carbon_recents_settings">Recents</string>
 
     <!-- Dialog -->
-    <string name="carbonfibers_dialog_title">Help Us, Help You!!</string>
-    <string name="carbonfibers_dialog_message">Unfortunately we are not wizards!\n\nSo if you find a bug with any of these settings, please open up a ticket on Jira or contact a Carbon developer with the following.\n\n1. Logcat or Last_Kmsg\n2. Kernel and Mods used\n3. Useful information\n\nIf you fail to report something, do not expect things to be fixed. Remember, we are not wizards so we do miss things.</string>
+    <string name="carbonfibers_dialog_title">Help us help you!</string>
+    <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nSo, if you find a bug with any setting in CarbonFibers, please open up a ticket on Jira or contact a Carbon developer with the following.\n\n1. Logcat and/or last_kmsg\n2. Kernel and mods used\n3. Useful information (subjective)\n\nIf you fail to report something with the above information, do not expect things to be fixed. Remember, we are not as perfect as Patrick, so we do miss things occasionally.</string>
     <string name="carbonfibers_dialog_toast">READ THE WHOLE THING!</string>
 
     <!-- Toast Icons -->
@@ -65,7 +72,8 @@
     <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
 
     <!-- Power Menu -->
-    <string name="powermenu_category">Power Menu</string>
+    <string name="powermenu_title">Power menu</string>
+    <string name="powermenu_summary">Edit power menu options</string>
     <string name="powermenu_screenshot">Screenshot</string>
     <string name="powermenu_power">Power</string>
     <string name="powermenu_reboot">Reboot</string>
@@ -194,11 +202,13 @@
     <string name="double_tap_lock_sleep_title">Double tap lock screen to sleep</string>
     <string name="double_tap_lock_sleep_summary">Double tap lock screen to put the device to sleep</string>
 
+    <!-- doze wake -->
     <string name="double_tap_doze_title">Double tap ambient display wake</string>
-    <string name="double_tap_doze_summary">Double tap the ambient display screen to wake the device</string>
+    <string name="double_tap_doze_summary">Double tap the ambient display screen to wake the device (experimental)</string>
 
    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Clock</string>
+    <string name="status_bar_clock_summary">Customize clock style and format</string>
     <string name="status_bar_clock_style_title">Clock style</string>
     <string name="status_bar_clock_style_right">Right</string>
     <string name="status_bar_clock_style_left">Left</string>
@@ -225,6 +235,7 @@
 
     <!-- QS Header Icons -->
     <string name="qs_header_title">Header</string>
+    <string name="qs_header_summary">Toggle header modifications</string>
     <string name="qs_settings_icon_title">Settings Shortcut</string>
     <string name="qs_settings_icon_summary">Enable the settings shortcut in the header</string>
     <string name="qs_settings_expanded_title">Settings Shortcut Expanded</string>
@@ -301,8 +312,10 @@
     <string name="pulse_speed_normal">Normal</string>
     <string name="pulse_speed_slow">Slow</string>
     <string name="pulse_speed_very_slow">Very slow</string>
+
     <!-- Lights settings screen, notification light settings -->
     <string name="notification_light_title">Notification light</string>
+    <string name="notification_light_summary">Control notification light settings</string>
     <string name="notificationlight_title">Notification LED settings</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_applist_title">Apps</string>
@@ -318,15 +331,12 @@
     <string name="keywords_lights_brightness_level">dim leds brightness</string>
     <string name="notification_light_automagic">Choose colors automatically</string>
 
-    <!-- Lights settings, LED notification -->
-    <string name="leds_category_title">LED Options</string>
-    <string name="battery_light_settings">Battery light</string>
+    <!-- Lights settings screen, battery light settings -->
+    <string name="battery_light_title">Battery light</string>
+    <string name="battery_light_summary">Control battery light settings</string>
     <string name="led_notification_title">Light settings</string>
     <string name="led_notification_text">LED light enabled by settings</string>
     <string name="notification_light_no_apps_summary">To add per app control, activate \'%1$s\' and press \'\u002b\' on the menu bar</string>
-
-    <!-- Battery light settings  -->
-    <string name="batterylight_title">Battery LED settings</string>
     <string name="battery_light_enable">Enable</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
     <string name="battery_light_list_title">Colors</string>
@@ -341,7 +351,8 @@
     <string name="led_color_blue">Blue</string>
 
     <!-- Custom carrier label and position -->
-    <string name="carrier_label_settings_title">Carrier Label</string>
+    <string name="carrier_label_settings_title">Carrier label</string>
+    <string name="carrier_label_settings_summary">Customize carrier label options</string>
     <string name="custom_carrier_label_title">Custom carrier label</string>
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
