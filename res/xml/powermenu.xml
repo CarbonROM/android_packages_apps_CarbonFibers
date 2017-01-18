@@ -15,7 +15,7 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/powermenu_category" >
+    android:title="@string/powermenu_title" >
 
          <com.android.settings.carbon.SystemSettingSwitchPreference
             android:key="power_menu_lockscreen"

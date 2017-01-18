@@ -30,12 +30,6 @@
         android:summary="@string/double_tap_lock_sleep_summary"
         android:defaultValue="false" />
 
-    <com.android.settings.carbon.SystemSettingSwitchPreference
-        android:key="doze_wakeup_doubletap"
-        android:title="@string/double_tap_doze_title"
-        android:summary="@string/double_tap_doze_summary"
-        android:defaultValue="false" />
-
     <com.android.settings.gestures.GesturePreference
         android:key="gesture_swipe_down_fingerprint"
         android:title="@string/fingerprint_swipe_for_notifications_title"
@@ -70,5 +64,11 @@
         android:summary="@string/ambient_display_pickup_summary"
         settings:animation="@raw/gesture_ambient_lift"
         settings:preview="@drawable/gesture_ambient_lift"/>
+
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="doze_wakeup_doubletap"
+        android:title="@string/double_tap_doze_title"
+        android:summary="@string/double_tap_doze_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
