@@ -15,7 +15,7 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/quicksettings_category" >
+    android:title="@string/quicksettings_title" >
 
     <com.android.settings.carbon.SecureSettingSwitchPreference
             android:key="lockscreen_qs_disabled"
