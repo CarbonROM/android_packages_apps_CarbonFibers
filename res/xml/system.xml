@@ -30,8 +30,8 @@
 
     <Preference
         android:fragment="org.carbonrom.carbonfibers.fragments.system.PowerMenu"
-        android:icon="@drawable/ic_powermenu"
-        android:title="@string/powermenu_category" />
+        android:title="@string/powermenu_title"
+        android:summary="@string/powermenu_summary" />
 
     <Preference
         android:fragment="org.carbonrom.carbonfibers.fragments.system.Recents"

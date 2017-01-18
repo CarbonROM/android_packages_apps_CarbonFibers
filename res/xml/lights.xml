@@ -22,14 +22,14 @@
 
     <Preference
         android:fragment="org.carbonrom.carbonfibers.fragments.lights.BatteryLightSettings"
-        android:icon="@drawable/ic_battery"
         android:key="charging_light"
-        android:title="@string/battery_light_settings" />
+        android:title="@string/battery_light_title"
+        android:summary="@string/battery_light_summary" />
 
     <Preference
         android:fragment="org.carbonrom.carbonfibers.fragments.lights.NotificationLightSettings"
-        android:icon="@drawable/ic_statusbar"
         android:key="notification_light"
-        android:title="@string/notification_light_title" />
+        android:title="@string/notification_light_title"
+        android:summary="@string/notification_light_summary" />
 
 </PreferenceScreen>
