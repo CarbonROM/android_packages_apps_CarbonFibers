@@ -40,8 +40,12 @@ public class Recents extends SettingsPreferenceFragment implements
     private static final String TAG = "Recents";
 
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
+    private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
 
     private ListPreference mImmersiveRecents;
+
+    private SwitchPreference mRecentsClearAll;
+    private ListPreference mRecentsClearAllLocation;
     private ContentResolver resolver;
 
     @Override
@@ -50,14 +54,23 @@ public class Recents extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.recents);
 
+        PreferenceScreen prefScreen = getPreferenceScreen();
         resolver = getActivity().getContentResolver();
 
         // Immersive recents
-        mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
+        mImmersiveRecents = (ListPreference) prefScreen.findPreference(IMMERSIVE_RECENTS);
         mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
                 resolver, Settings.System.IMMERSIVE_RECENTS, 0)));
         mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
         mImmersiveRecents.setOnPreferenceChangeListener(this);
+
+        // Clear all location
+        mRecentsClearAllLocation = (ListPreference) prefScreen.findPreference(RECENTS_CLEAR_ALL_LOCATION);
+        int location = Settings.System.getIntForUser(resolver,
+                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3, UserHandle.USER_CURRENT);
+        mRecentsClearAllLocation.setValue(String.valueOf(location));
+        mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
+        mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -83,7 +96,14 @@ public class Recents extends SettingsPreferenceFragment implements
             mImmersiveRecents.setValue(String.valueOf(objValue));
             mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
             return true;
-            }
+        } else if (preference == mRecentsClearAllLocation) {
+            int location = Integer.valueOf((String) objValue);
+            int index = mRecentsClearAllLocation.findIndexOfValue((String) objValue);
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
+            mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
+            return true;
+        }
         return false;
     }
 
