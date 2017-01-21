@@ -21,6 +21,7 @@
     <string name="statusbar_category">Status bar</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="lights_category">Lights</string>
+    <string name="display_tweaks_category">Display tweaks</string>
     <string name="reset">Reset</string>
     <string name="default_string">Default</string>
     <string name="add">Add</string>
@@ -498,5 +499,14 @@
     <!-- Header Date and Time Position -->
     <string name="qs_date_time_center_title">Center Date and Time</string>
     <string name="qs_date_time_center_summary">Requires one or more icons to be disabled</string>
+
+    <!-- Dashboard columns -->
+    <string name="display_tweaks">Display Tweaks</string>
+    <string name="dashboard_columns_title">Dashboard Columns</string>
+    <string name="dashboard_columns_summary">Change the number of columns displayed in the dashboard</string>
+    <string name="dashboard_columns_dialog_title">Select dashboard columns</string>
+    <string name="dashboard_columns_default">One (two landscape)</string>
+    <string name="dashboard_columns_two">Two (three landscape)</string>
+    <string name="dashboard_columns_three">Three (four landscape)</string>
 
 </resources>
