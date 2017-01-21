@@ -120,6 +120,10 @@
     <string name="qs_rows_portrait_title">Number of rows (portrait)</string>
     <string name="qs_rows_landscape_title">Number of rows (landscape)</string>
 
+    <!-- Quicks settings titles -->
+    <string name="qs_tile_title_visibility_title">Quick settings titles</string>
+    <string name="qs_tile_title_visibility_summary">Enable titles on quick settings</string>
+
     <!-- Volume Key Rotation -->
     <string name="swap_volume_buttons_title">Reorient</string>
     <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
