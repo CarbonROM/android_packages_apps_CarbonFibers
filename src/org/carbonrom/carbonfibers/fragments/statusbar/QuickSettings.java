@@ -40,6 +40,8 @@ import com.android.internal.util.cr.CrUtils;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.Utils;
 
+import com.android.settings.carbon.CustomSeekBarPreference;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -53,6 +55,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String CUSTOM_HEADER_IMAGE_SHADOW = "status_bar_custom_header_shadow";
     private static final String CUSTOM_HEADER_PROVIDER = "custom_header_provider";
     private static final String CUSTOM_HEADER_BROWSE = "custom_header_browse";
+    private static final String PREF_COLUMNS = "qs_layout_columns";
 
     private SwitchPreference mLockQsDisabled;
     private SwitchPreference mQsDataAdvanced;
@@ -62,6 +65,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mHeaderShadow;
     private PreferenceScreen mHeaderBrowse;
     private String mDaylightHeaderProvider;
+    private CustomSeekBarPreference mQsColumns;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
@@ -138,6 +142,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
         mHeaderBrowse = (PreferenceScreen) findPreference(CUSTOM_HEADER_BROWSE);
         mHeaderBrowse.setEnabled(isBrowseHeaderAvailable());
+
+        mQsColumns = (CustomSeekBarPreference) findPreference(PREF_COLUMNS);
+        int columnsQs = Settings.System.getInt(resolver,
+                Settings.System.QS_LAYOUT_COLUMNS, 3);
+        mQsColumns.setValue(columnsQs / 1);
+        mQsColumns.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -188,8 +198,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             mHeaderProvider.setSummary(mHeaderProvider.getEntries()[valueIndex]);
             mDaylightHeaderPack.setEnabled(value.equals(mDaylightHeaderProvider));
             return true;
+         } else if (preference == mQsColumns) {
+            int qsColumns = (Integer) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.QS_LAYOUT_COLUMNS, qsColumns * 1);
+            return true;
          }
-        return false;
+         return false;
     }
 
     private void getAvailableHeaderPacks(List<String> entries, List<String> values) {
