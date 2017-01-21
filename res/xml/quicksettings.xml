@@ -91,6 +91,22 @@
             settings:units=""
             android:persistent="false" />
 
+        <com.android.settings.carbon.CustomSeekBarPreference
+            android:key="qs_rows_portrait"
+            android:title="@string/qs_rows_portrait_title"
+            android:max="5"
+            settings:min="1"
+            settings:units=""
+            android:persistent="false" />
+
+        <com.android.settings.carbon.CustomSeekBarPreference
+            android:key="qs_rows_landscape"
+            android:title="@string/qs_rows_landscape_title"
+            android:max="3"
+            settings:min="1"
+            settings:units=""
+            android:persistent="false" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
