@@ -21,6 +21,7 @@
     <string name="statusbar_category">Status bar</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="lights_category">Lights</string>
+    <string name="display_tweaks_category">Display Tweaks</string>
     <string name="reset">Reset</string>
     <string name="default_string">Default</string>
     <string name="add">Add</string>
@@ -494,5 +495,14 @@
     <string name="hardware_keys_action_in_app_search">In-app search</string>
     <string name="hardware_keys_action_launch_camera">Open camera</string>
     <string name="hardware_keys_action_last_app">Launch last app</string>
+
+    <!-- Dashboard columns -->
+    <string name="display_tweaks">Display Tweaks</string>
+    <string name="dashboard_columns_title">Dashboard Columns</string>
+    <string name="dashboard_columns_summary">Change the number of columns displayed in the dashboard</string>
+    <string name="dashboard_columns_dialog_title">Select dashboard columns</string>
+    <string name="dashboard_columns_default">One (two landscape)</string>
+    <string name="dashboard_columns_two">Two (three landscape)</string>
+    <string name="dashboard_columns_three">Three (four landscape)</string>
 
 </resources>
