@@ -115,6 +115,9 @@
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
     <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
 
+    <!-- Quicks settings columns -->
+    <string name="qs_columns_title">Number of tiles in column</string>
+
     <!-- Volume Key Rotation -->
     <string name="swap_volume_buttons_title">Reorient</string>
     <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
