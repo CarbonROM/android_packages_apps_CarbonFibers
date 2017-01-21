@@ -36,14 +36,22 @@ import com.android.internal.util.cr.CrUtils;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.Utils;
 
+import com.android.settings.carbon.CustomSeekBarPreference;
+
+import java.util.List;
+import java.util.ArrayList;
+
 public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "QuickSettings";
     private static final String PREF_LOCK_QS_DISABLED = "lockscreen_qs_disabled";
     private static final String PREF_QS_DATA_ADVANCED = "qs_data_advanced";
+    private static final String PREF_COLUMNS = "qs_layout_columns";
 
     private SwitchPreference mLockQsDisabled;
     private SwitchPreference mQsDataAdvanced;
+
+    private CustomSeekBarPreference mQsColumns;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
@@ -74,6 +82,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mQsDataAdvanced.setChecked((Settings.Secure.getInt(resolver,
                 Settings.Secure.QS_DATA_ADVANCED, 0) == 1));
         }
+
+        mQsColumns = (CustomSeekBarPreference) findPreference(PREF_COLUMNS);
+        int columnsQs = Settings.System.getInt(resolver,
+                Settings.System.QS_LAYOUT_COLUMNS, 3);
+        mQsColumns.setValue(columnsQs / 1);
+        mQsColumns.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -104,6 +118,47 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.QS_DATA_ADVANCED, checked ? 1:0);
             return true;
+        } else if (preference == mQsColumns) {
+            int qsColumns = (Integer) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.QS_LAYOUT_COLUMNS, qsColumns * 1);
+            return true;
+        }
+        return false;
+    }
+
+    private void getAvailableHeaderPacks(List<String> entries, List<String> values) {
+        Intent i = new Intent();
+        PackageManager packageManager = getPackageManager();
+        i.setAction("org.omnirom.DaylightHeaderPack");
+        for (ResolveInfo r : packageManager.queryIntentActivities(i, 0)) {
+            String packageName = r.activityInfo.packageName;
+            if (packageName.equals(DEFAULT_HEADER_PACKAGE)) {
+                values.add(0, packageName);
+            } else {
+                values.add(packageName);
+            }
+            String label = r.activityInfo.loadLabel(getPackageManager()).toString();
+            if (label == null) {
+                label = r.activityInfo.packageName;
+            }
+            if (packageName.equals(DEFAULT_HEADER_PACKAGE)) {
+                entries.add(0, label);
+            } else {
+                entries.add(label);
+            }
+        }
+        i.setAction("org.omnirom.DaylightHeaderPack1");
+        for (ResolveInfo r : packageManager.queryIntentActivities(i, 0)) {
+            String packageName = r.activityInfo.packageName;
+            values.add(packageName  + "/" + r.activityInfo.name);
+
+            String label = r.activityInfo.loadLabel(getPackageManager()).toString();
+            if (label == null) {
+                label = packageName;
+            }
+            entries.add(label);
+>>>>>>> 1580a73... Make QS columns count configurable [2/2]
         }
         return false;
     }
