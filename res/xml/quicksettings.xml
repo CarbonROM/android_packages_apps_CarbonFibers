@@ -18,9 +18,9 @@
     android:title="@string/quicksettings_title" >
 
     <com.android.settings.carbon.SecureSettingSwitchPreference
-            android:key="lockscreen_qs_disabled"
-            android:title="@string/lockscreen_qs_disabled_title"
-            android:summary="@string/lockscreen_qs_disabled_summary"/>
+        android:key="lockscreen_qs_disabled"
+        android:title="@string/lockscreen_qs_disabled_title"
+        android:summary="@string/lockscreen_qs_disabled_summary"/>
 
     <com.android.settings.carbon.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
@@ -39,10 +39,16 @@
         android:summary="@string/quick_settings_vibrate_summary"
         android:defaultValue="false"/>
 
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="qs_tile_title_visibility"
+        android:title="@string/qs_tile_title_visibility_title"
+        android:summary="@string/qs_tile_title_visibility_summary"
+        android:defaultValue="true"/>
+
     <com.android.settings.carbon.CustomSeekBarPreference
         android:key="qs_layout_columns"
         android:title="@string/qs_columns_title"
-        settings:max="6"
+        settings:max="9"
         settings:min="3"
         settings:units=""
         android:persistent="false" />
