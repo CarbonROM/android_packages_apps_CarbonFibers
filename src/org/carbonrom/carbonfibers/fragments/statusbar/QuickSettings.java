@@ -36,14 +36,22 @@ import com.android.internal.util.cr.CrUtils;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.Utils;
 
+import com.android.settings.carbon.CustomSeekBarPreference;
+
+import java.util.List;
+import java.util.ArrayList;
+
 public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "QuickSettings";
     private static final String PREF_LOCK_QS_DISABLED = "lockscreen_qs_disabled";
     private static final String PREF_QS_DATA_ADVANCED = "qs_data_advanced";
+    private static final String PREF_COLUMNS = "qs_layout_columns";
 
     private SwitchPreference mLockQsDisabled;
     private SwitchPreference mQsDataAdvanced;
+
+    private CustomSeekBarPreference mQsColumns;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
@@ -74,6 +82,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mQsDataAdvanced.setChecked((Settings.Secure.getInt(resolver,
                 Settings.Secure.QS_DATA_ADVANCED, 0) == 1));
         }
+
+        mQsColumns = (CustomSeekBarPreference) findPreference(PREF_COLUMNS);
+        int columnsQs = Settings.System.getInt(resolver,
+                Settings.System.QS_LAYOUT_COLUMNS, 3);
+        mQsColumns.setValue(columnsQs / 1);
+        mQsColumns.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -103,6 +117,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.QS_DATA_ADVANCED, checked ? 1:0);
+            return true;
+        } else if (preference == mQsColumns) {
+            int qsColumns = (Integer) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.QS_LAYOUT_COLUMNS, qsColumns * 1);
             return true;
         }
         return false;
