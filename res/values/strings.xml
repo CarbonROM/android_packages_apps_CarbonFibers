@@ -117,6 +117,8 @@
 
     <!-- Quicks settings columns -->
     <string name="qs_columns_title">Number of tiles in column</string>
+    <string name="qs_rows_portrait_title">Number of rows (portrait)</string>
+    <string name="qs_rows_landscape_title">Number of rows (landscape)</string>
 
     <!-- Volume Key Rotation -->
     <string name="swap_volume_buttons_title">Reorient</string>
