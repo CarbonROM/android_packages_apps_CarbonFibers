@@ -56,6 +56,11 @@
     <string name="force_charge_battery_text_title">Statusbar battery charging percent</string>
     <string name="force_charge_battery_text_summary_on">Show the battery percentage outside the icon while charging</string>
     <string name="force_charge_battery_text_summary_off">Show the battery percentage inside the icon while charging</string>
+    <string name="text_charging_symbol_title">Customized charging symbol</string>
+    <string name="text_charging_symbol_dialog">Customized charging symbol</string>
+    <string name="text_charging_symbol_default">Disabled</string>
+    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_tilde">Tilde</string>
 
     <!-- Quick Settings -->
     <string name="quicksettings_title">Quick settings</string>
