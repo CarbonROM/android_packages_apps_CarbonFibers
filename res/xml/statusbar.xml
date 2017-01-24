@@ -55,6 +55,12 @@
         android:title="@string/status_bar_clock_title"
         android:summary="@string/status_bar_clock_summary" />
 
+    <PreferenceScreen
+        android:key="status_bar_battery_style"
+        android:title="@string/status_bar_battery_style_category"
+        android:summary="@string/status_bar_battery_style_summary"
+        android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.StatusbarBatteryStyle" />
+
     <Preference
         android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.Header"
         android:title="@string/qs_header_title"
