@@ -36,6 +36,9 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="ok">Okay</string>
 
+    <string name="buttons_software_category">Software buttons</string>
+    <string name="buttons_volume_category">Volume buttons</string>
+
     <!-- Battery customizations -->
     <string name="status_bar_battery_style_category">Battery icon</string>
     <string name="status_bar_battery_style_summary">Change and customize battery icon</string>

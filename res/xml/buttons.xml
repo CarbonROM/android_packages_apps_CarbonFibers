@@ -20,55 +20,66 @@
     android:title="@string/buttons_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.android.settings.carbon.SystemSettingSwitchPreference
-        android:key="pixel_nav_animation"
-        android:title="@string/pixel_navbar_anim_title"
-        android:summary="@string/pixel_navbar_anim_summary"
-        android:defaultValue="true" />
+    <PreferenceCategory
+        android:title="@string/buttons_software_category">
 
-    <com.android.settings.carbon.SystemSettingSwitchPreference
-        android:key="swap_volume_buttons"
-        android:title="@string/swap_volume_buttons_title"
-        android:summary="@string/swap_volume_buttons_summary"
-        android:defaultValue="false" />
+        <com.android.settings.carbon.SystemSettingSwitchPreference
+            android:key="pixel_nav_animation"
+            android:title="@string/pixel_navbar_anim_title"
+            android:summary="@string/pixel_navbar_anim_summary"
+            android:defaultValue="true" />
 
-    <com.android.settings.carbon.SystemSettingSwitchPreference
-        android:key="volume_rocker_wake"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:title="@string/volume_rocker_wake_title"
-        android:defaultValue="false"
-        android:disableDependentsState="true" />
+        <PreferenceScreen
+            android:title="@string/navbar_tuner_title"
+            android:summary="@string/navbar_tuner_summary" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.NavbarActivity" />
+        </PreferenceScreen>
 
-    <com.android.settings.carbon.SystemSettingSwitchPreference
-        android:key="volume_rocker_music_controls"
-        android:summary="@string/volume_rocker_music_controls_summary"
-        android:title="@string/volume_rocker_music_controls_title"
-        android:defaultValue="false"
-        android:dependency="volume_rocker_wake" />
+    </PreferenceCategory>
 
-    <com.android.settings.carbon.SecureSettingSwitchPreference
-        android:key="sysui_volume_down_silent"
-        android:title="@string/volbtn_down_zen_title"
-        android:summary="@string/volbtn_down_zen_summary"
-        android:defaultValue="true"/>
+    <PreferenceCategory
+        android:title="@string/buttons_volume_category">
 
-    <com.android.settings.carbon.SecureSettingSwitchPreference
-        android:key="sysui_volume_up_silent"
-        android:title="@string/volbtn_up_zen_title"
-        android:summary="@string/volbtn_up_zen_summary"
-        android:defaultValue="true" />
+        <com.android.settings.carbon.SecureSettingSwitchPreference
+            android:key="sysui_volume_down_silent"
+            android:title="@string/volbtn_down_zen_title"
+            android:summary="@string/volbtn_down_zen_summary"
+            android:defaultValue="true"/>
 
-    <com.android.settings.carbon.SecureSettingSwitchPreference
-        android:key="sysui_show_full_zen"
-        android:title="@string/vol_zen_title"
-        android:summary="@string/vol_zen_summary"
-        android:defaultValue="false"/>
+        <com.android.settings.carbon.SecureSettingSwitchPreference
+            android:key="sysui_volume_up_silent"
+            android:title="@string/volbtn_up_zen_title"
+            android:summary="@string/volbtn_up_zen_summary"
+            android:defaultValue="true" />
 
-    <PreferenceScreen
-        android:title="@string/navbar_tuner_title"
-        android:summary="@string/navbar_tuner_summary" >
-        <intent android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.NavbarActivity" />
-    </PreferenceScreen>
+        <com.android.settings.carbon.SecureSettingSwitchPreference
+            android:key="sysui_show_full_zen"
+            android:title="@string/vol_zen_title"
+            android:summary="@string/vol_zen_summary"
+            android:defaultValue="false"/>
+
+        <com.android.settings.carbon.SystemSettingSwitchPreference
+            android:key="volume_rocker_wake"
+            android:summary="@string/volume_rocker_wake_summary"
+            android:title="@string/volume_rocker_wake_title"
+            android:defaultValue="false"
+            android:disableDependentsState="true" />
+
+        <com.android.settings.carbon.SystemSettingSwitchPreference
+            android:key="volume_rocker_music_controls"
+            android:summary="@string/volume_rocker_music_controls_summary"
+            android:title="@string/volume_rocker_music_controls_title"
+            android:defaultValue="false"
+            android:dependency="volume_rocker_wake" />
+
+        <com.android.settings.carbon.SystemSettingSwitchPreference
+            android:key="swap_volume_buttons"
+            android:title="@string/swap_volume_buttons_title"
+            android:summary="@string/swap_volume_buttons_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
