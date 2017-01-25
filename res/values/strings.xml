@@ -267,6 +267,7 @@
     <string name="clock_date_format">Date format</string>
     <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="status_bar_show_clock_second_title">Show seconds</string>
 
     <!-- QS Header Icons -->
     <string name="qs_header_title">Header</string>
