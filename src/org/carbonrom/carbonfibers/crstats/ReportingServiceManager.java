@@ -19,7 +19,6 @@ package org.carbonrom.carbonfibers.crstats;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
-import android.app.job.JobScheduler;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
