@@ -18,7 +18,6 @@ package org.carbonrom.carbonfibers.crstats;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.logging.MetricsLogger;
