@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.cmstats;
+package org.carbonrom.carbonfibers.crstats;
 
 import android.app.job.JobParameters;
 import android.app.job.JobService;
@@ -24,7 +24,6 @@ import android.os.AsyncTask;
 import android.os.PersistableBundle;
 import android.util.ArrayMap;
 import android.util.Log;
-import org.cyanogenmod.cmparts.R;
 import org.json.JSONException;
 import org.json.JSONObject;
 

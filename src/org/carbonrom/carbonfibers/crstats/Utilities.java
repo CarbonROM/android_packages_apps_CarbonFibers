@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.cmstats;
+package org.carbonrom.carbonfibers.crstats;
 
 import android.content.Context;
 import android.os.Build;
@@ -23,7 +23,7 @@ import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 
-import cyanogenmod.providers.CMSettings;
+import android.provider.Settings.Secure;
 
 import java.math.BigInteger;
 import java.net.NetworkInterface;
@@ -63,11 +63,11 @@ public class Utilities {
     }
 
     public static String getDevice() {
-        return SystemProperties.get("ro.cm.device", Build.PRODUCT);
+        return SystemProperties.get("ro.carbon.device", Build.PRODUCT);
     }
 
     public static String getModVersion() {
-        return SystemProperties.get("ro.cm.version", Build.DISPLAY);
+        return SystemProperties.get("ro.carbon.version", Build.DISPLAY);
     }
 
     public static String digest(String input) {
@@ -85,8 +85,8 @@ public class Utilities {
      * @return Whether or not stats collection is enabled.
      */
     public static boolean isStatsCollectionEnabled(Context context) {
-        return CMSettings.Secure.getInt(context.getContentResolver(),
-                CMSettings.Secure.STATS_COLLECTION, 1) != 0;
+        return Secure.getInt(context.getContentResolver(),
+                Secure.STATS_COLLECTION, 1) != 0;
     }
 
     /**
@@ -96,7 +96,7 @@ public class Utilities {
      */
     public static void setStatsCollectionEnabled(Context context, boolean enabled) {
         int enable = (enabled) ? 1 : 0;
-        CMSettings.Secure.putInt(context.getContentResolver(),
-                CMSettings.Secure.STATS_COLLECTION, enable);
+        Secure.putInt(context.getContentResolver(),
+                Secure.STATS_COLLECTION, enable);
     }
 }
