@@ -14,21 +14,23 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.cmstats;
+package org.carbonrom.carbonfibers.crstats;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import com.android.internal.logging.MetricsLogger;
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
 
 public class AnonymousStats extends SettingsPreferenceFragment {
 
-    private static final String PREF_FILE_NAME = "CMStats";
+    private static final String PREF_FILE_NAME = "CRStats";
     /* package */ static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
     /* package */ static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
-
     /* package */ static final String KEY_LAST_JOB_ID = "last_job_id";
     /* package */ static final int QUEUE_MAX_THRESHOLD = 1000;
 
@@ -40,6 +42,11 @@ public class AnonymousStats extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.anonymous_stats);
+    }
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsEvent.CARBONFIBERS;
     }
 
     public static void updateLastSynced(Context context) {
