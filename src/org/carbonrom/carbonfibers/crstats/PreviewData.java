@@ -14,15 +14,14 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.cmstats;
+package org.carbonrom.carbonfibers.crstats;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import com.android.settings.SettingsPreferenceFragment;
 
 public class PreviewData extends SettingsPreferenceFragment {
     private static final String UNIQUE_ID = "preview_id";
@@ -45,5 +44,10 @@ public class PreviewData extends SettingsPreferenceFragment {
         prefSet.findPreference(VERSION).setSummary(Utilities.getModVersion());
         prefSet.findPreference(COUNTRY).setSummary(Utilities.getCountryCode(context));
         prefSet.findPreference(CARRIER).setSummary(Utilities.getCarrier(context));
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsEvent.CARBONFIBERS;
     }
 }
