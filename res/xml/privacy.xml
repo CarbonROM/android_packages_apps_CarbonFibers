@@ -28,12 +28,12 @@
             android:targetClass="org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
     </PreferenceScreen>
 
-    <!-- Anonymous statistics - (CMStats) -->
+    <!-- Anonymous statistics - (CRStats) -->
     <PreferenceScreen
-        android:key="cmstats"
+        android:key="crstats"
         android:title="@string/anonymous_statistics_title"
         android:summary="@string/anonymous_statistics_summary"
-        android:fragment="org.cyanogenmod.cmparts.cmstats.AnonymousStats" >
+        android:fragment="org.carbonrom.carbonfibers.crstats.AnonymousStats" >
     </PreferenceScreen>
 
 </PreferenceScreen>

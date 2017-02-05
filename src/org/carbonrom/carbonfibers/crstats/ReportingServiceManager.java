@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.cmstats;
+package org.carbonrom.carbonfibers.crstats;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -26,7 +26,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.UserHandle;
 import android.util.Log;
-import cyanogenmod.providers.CMSettings;
 
 public class ReportingServiceManager extends BroadcastReceiver {
     private static final long MILLIS_PER_HOUR = 60L * 60L * 1000L;
@@ -36,7 +35,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
     private static final String TAG = ReportingServiceManager.class.getSimpleName();
 
     public static final String ACTION_LAUNCH_SERVICE =
-            "org.cyanogenmod.cmparts.action.TRIGGER_REPORT_METRICS";
+            "org.carbonrom.carbonfibers.action.TRIGGER_REPORT_METRICS";
     public static final String EXTRA_FORCE = "force";
 
     @Override
