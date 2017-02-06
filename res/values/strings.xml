@@ -412,6 +412,19 @@
     <string name="vol_zen_title">Do not disturb switch</string>
     <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
 
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Volume steps</string>
+    <string name="volume_steps_summary">Modify the number of volume steps</string>
+    <string name="volume_steps_ring_title">Notification ringer</string>
+    <string name="volume_steps_music_title">Media and music</string>
+    <string name="volume_steps_alarm_title">Alarm</string>
+    <string name="volume_steps_voice_call_title">In-call voice</string>
+    <string name="volume_steps_reset">Reset</string>
+    <string name="volume_steps_30" translatable="false">30</string>
+    <string name="volume_steps_15" translatable="false">15</string>
+    <string name="volume_steps_7" translatable="false">7</string>
+    <string name="volume_steps_5" translatable="false">5</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
