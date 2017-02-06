@@ -21,7 +21,6 @@
     <string name="statusbar_category">Statusbar</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="lights_category">Lights</string>
-    <string name="CarbonStats">Carbon Statistics</string>
     <string name="reset">Reset</string>
     <string name="default_string">Default</string>
     <string name="add">Add</string>
@@ -448,5 +447,4 @@
     <string name="preview_carrier_title">Carrier</string>
     <string name="stats_collection_title">Stats collection</string>
     <string name="stats_collection_summary">When enabled, allows metrics collection</string>
-
 </resources>

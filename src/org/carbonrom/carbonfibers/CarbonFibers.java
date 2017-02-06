@@ -26,8 +26,6 @@ import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.text.Html;
@@ -65,12 +63,6 @@ public class CarbonFibers extends SettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.cf_main_menu);
-
-        PreferenceScreen mPrefScreen = (PreferenceScreen) findPreference("CFMainCategory");
-        PreferenceScreen mCarbonStats = (PreferenceScreen) findPreference("CarbonStats");
-        PackageManager pm = getContext().getPackageManager();
-        if(!isPackageInstalled("org.carbonrom.romstats", pm))
-            mPrefScreen.removePreference(mCarbonStats);
 
         setHasOptionsMenu(true);
     }
@@ -153,15 +145,6 @@ public class CarbonFibers extends SettingsPreferenceFragment {
         @Override
         public void onCancel(DialogInterface dialog) {
 
-        }
-    }
-
-    private boolean isPackageInstalled(String packagename, PackageManager packageManager) {
-        try {
-            packageManager.getPackageInfo(packagename, PackageManager.GET_ACTIVITIES);
-            return true;
-        } catch (NameNotFoundException e) {
-            return false;
         }
     }
 }

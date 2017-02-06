@@ -61,13 +61,4 @@
        android:icon="@drawable/ic_privacy"
        android:title="@string/privacy_category" />
 
-   <PreferenceScreen
-       android:icon="@drawable/ic_stats"
-       android:key="CarbonStats"
-       android:title="@string/CarbonStats" >
-       <intent android:action="android.intent.action.MAIN"
-           android:targetPackage="org.carbonrom.romstats"
-           android:targetClass="org.carbonrom.romstats.AnonymousStats" />
-   </PreferenceScreen>
-
 </PreferenceScreen>
