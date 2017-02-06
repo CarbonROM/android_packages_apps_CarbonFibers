@@ -80,6 +80,12 @@
             android:summary="@string/swap_volume_buttons_summary"
             android:defaultValue="false" />
 
+        <PreferenceScreen
+            android:key="volume_steps"
+            android:title="@string/volume_steps_title"
+            android:summary="@string/volume_steps_summary"
+            android:fragment="org.carbonrom.carbonfibers.fragments.buttons.VolumeSteps" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
