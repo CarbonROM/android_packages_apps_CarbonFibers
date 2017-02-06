@@ -82,4 +82,10 @@
 
     </PreferenceCategory>
 
+        <!-- Volume Steps -->
+        <PreferenceScreen
+            android:key="volume_steps"
+            android:title="@string/volume_steps_title"
+            android:fragment="org.carbonrom.carbonfibers.fragments.system.VolumeSteps" />
+
 </PreferenceScreen>
