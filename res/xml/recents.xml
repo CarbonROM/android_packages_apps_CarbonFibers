@@ -20,6 +20,14 @@
     android:title="@string/recents_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceScreen
+        android:title="@string/hide_apps_from_recents_title"
+        android:summary="@string/hide_apps_from_recents_summary" >
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="org.carbonrom.carbonfibers.fragments.system.hideappfromrecents.HAFRAppListActivity" />
+    </PreferenceScreen>
+
     <PreferenceCategory
         android:title="@string/recents_cab">
 
@@ -57,4 +65,5 @@
             android:entryValues="@array/immersive_recents_values"
             android:persistent="false" />
     </PreferenceCategory>
+
 </PreferenceScreen>

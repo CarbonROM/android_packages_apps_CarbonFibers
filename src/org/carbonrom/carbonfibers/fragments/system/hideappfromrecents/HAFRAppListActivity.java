@@ -1,4 +1,4 @@
-package org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents;
+package org.carbonrom.carbonfibers.fragments.system.hideappfromrecents;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -12,7 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
-import org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppChooserAdapter.AppItem;
+import org.carbonrom.carbonfibers.fragments.system.hideappfromrecents.HAFRAppChooserAdapter.AppItem;
 import com.android.settings.R;
 
 import java.util.ArrayList;

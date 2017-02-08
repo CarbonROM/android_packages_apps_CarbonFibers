@@ -56,9 +56,4 @@
        android:icon="@drawable/ic_misc"
        android:title="@string/misc_category" />
 
-   <Preference
-       android:fragment="org.carbonrom.carbonfibers.fragments.privacy.Privacy"
-       android:icon="@drawable/ic_privacy"
-       android:title="@string/privacy_category" />
-
 </PreferenceScreen>

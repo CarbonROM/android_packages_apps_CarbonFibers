@@ -1,4 +1,4 @@
-package org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents;
+package org.carbonrom.carbonfibers.fragments.system.hideappfromrecents;
 
 import android.app.Dialog;
 import android.content.Context;
