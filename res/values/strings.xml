@@ -239,10 +239,6 @@
     <string name="double_tap_lock_sleep_title">Double tap lock screen to sleep</string>
     <string name="double_tap_lock_sleep_summary">Double tap lock screen to put the device to sleep</string>
 
-    <!-- doze wake -->
-    <string name="double_tap_doze_title">Double tap ambient display wake</string>
-    <string name="double_tap_doze_summary">Double tap the ambient display screen to wake the device (experimental)</string>
-
    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Clock</string>
     <string name="status_bar_clock_summary">Customize clock style and format</string>
