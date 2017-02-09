@@ -65,10 +65,4 @@
         settings:animation="@raw/gesture_ambient_lift"
         settings:preview="@drawable/gesture_ambient_lift"/>
 
-    <com.android.settings.carbon.SystemSettingSwitchPreference
-        android:key="doze_wakeup_doubletap"
-        android:title="@string/double_tap_doze_title"
-        android:summary="@string/double_tap_doze_summary"
-        android:defaultValue="false" />
-
 </PreferenceScreen>
