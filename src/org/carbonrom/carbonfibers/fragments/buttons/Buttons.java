@@ -23,6 +23,9 @@ import android.content.res.Resources;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.os.Handler;
+import android.os.UserHandle;
+import android.os.UserManager;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceCategory;
@@ -48,13 +51,17 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 public class Buttons extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String KEY_NAVIGATION_BAR = "navigation_bar";
     private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
     public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
 
+    private SwitchPreference mNavigationBar;
     private SwitchPreference mSwapVolumeButtons;
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolumeRockerMusicControl;
+
+    private Handler mHandler;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,9 +69,17 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
 
         addPreferencesFromResource(R.xml.buttons);
 
+        mHandler = new Handler();
+
         final ContentResolver resolver = getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources res = getResources();
+
+        /*Navigation Bar */
+        mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR);
+        if (mNavigationBar != null) {
+            mNavigationBar.setOnPreferenceChangeListener(this);
+        }
 
         mSwapVolumeButtons = (SwitchPreference) findPreference(SWAP_VOLUME_BUTTONS);
         mSwapVolumeButtons.setOnPreferenceChangeListener(this);
@@ -90,6 +105,29 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
         return MetricsEvent.CARBONFIBERS;
     }
 
+    private ListPreference initActionList(String key, int value) {
+        ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
+        if (list != null) {
+            list.setValue(Integer.toString(value));
+            list.setSummary(list.getEntry());
+            list.setOnPreferenceChangeListener(this);
+        }
+        return list;
+    }
+
+    private boolean handleOnPreferenceTreeClick(Preference preference) {
+       if (preference != null && preference == mNavigationBar) {
+           mNavigationBar.setEnabled(false);
+           mHandler.postDelayed(new Runnable() {
+               @Override
+               public void run() {
+                  mNavigationBar.setEnabled(true);
+               }
+           }, 1000);
+           return true;
+       }
+       return false;
+    }
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mSwapVolumeButtons) {
@@ -109,5 +147,14 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
             return true;
         }
         return false;
+    }
+    private void reload() {
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        final boolean navigationBarEnabled = Settings.System.getIntForUser(resolver,
+                Settings.System.NAVIGATION_BAR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
+        if (mNavigationBar != null) {
+            mNavigationBar.setChecked(navigationBarEnabled);
+       }
     }
 }
