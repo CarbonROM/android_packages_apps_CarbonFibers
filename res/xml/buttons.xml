@@ -20,6 +20,12 @@
     android:title="@string/buttons_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceScreen
+        android:title="@string/hardware_buttons_title"
+        android:summary="@string/hardware_buttons_summary"
+        android:fragment="org.carbonrom.carbonfibers.fragments.buttons.HardwareButtons" />
+
+
     <PreferenceCategory
         android:title="@string/buttons_software_category">
 
@@ -28,6 +34,12 @@
             android:title="@string/pixel_navbar_anim_title"
             android:summary="@string/pixel_navbar_anim_summary"
             android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="navigation_bar"
+            android:title="@string/enable_navigation_bar_title"
+            android:summary="@string/enable_navigation_bar_summary"
+            android:defaultValue="false" />
 
         <PreferenceScreen
             android:title="@string/navbar_tuner_title"
