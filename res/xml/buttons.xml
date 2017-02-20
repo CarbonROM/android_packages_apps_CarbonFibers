@@ -20,6 +20,13 @@
     android:title="@string/buttons_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceScreen
+        android:key="advanced_options"
+        android:title="@string/advanced_options_title"
+        android:summary="@string/advanced_options_summary"
+        android:fragment="org.carbonrom.carbonfibers.fragments.buttons.AdvancedOptions" />
+
+
     <PreferenceCategory
         android:title="@string/buttons_software_category">
 
