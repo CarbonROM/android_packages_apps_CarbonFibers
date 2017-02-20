@@ -23,6 +23,10 @@ import android.content.res.Resources;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.os.Handler;
+import android.os.UserHandle;
+import android.os.UserManager;
+import android.text.TextUtils;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceCategory;
@@ -35,11 +39,14 @@ import android.content.DialogInterface;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.HashMap;
 
 import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
@@ -110,4 +117,5 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
         }
         return false;
     }
+
 }
