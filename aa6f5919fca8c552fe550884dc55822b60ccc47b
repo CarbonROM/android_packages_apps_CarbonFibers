@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5af74547_3d820f01",
+        "filename": "src/org/carbonrom/carbonfibers/fragments/buttons/Buttons.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13
+      },
+      "writtenOn": "2017-02-21T03:58:35Z",
+      "side": 0,
+      "message": "All changes in this file can be removed",
+      "revId": "aa6f5919fca8c552fe550884dc55822b60ccc47b",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    }
+  ]
+}

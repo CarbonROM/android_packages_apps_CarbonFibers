@@ -1,4 +1,114 @@
 {
   "pushCert": "certificate version 0.1\npusher A3CF8059 1487649168 +0000\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_CarbonFibers\nnonce 1487649167-25327878481E45E7F0509D723609855D44B3CDBE\n\n0000000000000000000000000000000000000000 b0800599fdfab3b66132cddc947cd5f790d70ea8 refs/for/cr-5.1\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQEcBAABAgAGBQJYq7mQAAoJEKGwKSOjz4BZU+gH/03pZkqPMyduOuz3IhbXW9FH\nIBInRkmsw2dB3f3diddjF5leyMhCb7TBW/SaKUJEA+thIHIFm3E0baHMJVvVeLeg\n8eOMg0apE8JuHyy1hLNz5hgjPA2Hp52GEOb6hTlrCpM3gAjPZ2oCZ/+SrgPEQd1n\ngMybhgQ+McM2jMC6iJmgQQgP3urZNsClXQ8zUyng3vdXCAmLAtjQeDdJCqb2/lxU\nEdkfNUGbyg/0vMmOInFSer3KaaFt8XZywd00FOLmrh6hFHegaHQrgth3Zt3IXJjc\nY6b8vmkhudEMxPAvlmlsoNokJRcWoWa6/UNxA28zwtPBmhi2s0I3k6hLr9komSY\u003d\n\u003d/OWw\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [
+    {
+      "key": {
+        "uuid": "5af74547_1d875311",
+        "filename": "res/values/arrays.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13
+      },
+      "writtenOn": "2017-02-21T03:58:35Z",
+      "side": 1,
+      "message": "The white space can be cleaned.",
+      "revId": "b0800599fdfab3b66132cddc947cd5f790d70ea8",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5af74547_dd78cb2d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 466,
+      "author": {
+        "id": 13
+      },
+      "writtenOn": "2017-02-21T03:58:35Z",
+      "side": 1,
+      "message": "\"Hardware buttons\"",
+      "range": {
+        "startLine": 466,
+        "startChar": 0,
+        "endLine": 466,
+        "endChar": 20
+      },
+      "revId": "b0800599fdfab3b66132cddc947cd5f790d70ea8",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5af74547_fd7b8727",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 489,
+      "author": {
+        "id": 13
+      },
+      "writtenOn": "2017-02-21T03:58:35Z",
+      "side": 1,
+      "message": "Let\u0027s keep this at the top of the list for organization sake. :P",
+      "range": {
+        "startLine": 488,
+        "startChar": 0,
+        "endLine": 489,
+        "endChar": 91
+      },
+      "revId": "b0800599fdfab3b66132cddc947cd5f790d70ea8",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5af74547_9d724348",
+        "filename": "res/xml/hardwarebuttons.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 13
+      },
+      "writtenOn": "2017-02-21T03:58:35Z",
+      "side": 1,
+      "message": "Put this back inside buttons.xml where it was in the last patchset for now.",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 43
+      },
+      "revId": "b0800599fdfab3b66132cddc947cd5f790d70ea8",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5af74547_bd75ff33",
+        "filename": "res/xml/hardwarebuttons.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 13
+      },
+      "writtenOn": "2017-02-21T03:58:35Z",
+      "side": 1,
+      "message": "More white space to be removed!",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 3
+      },
+      "revId": "b0800599fdfab3b66132cddc947cd5f790d70ea8",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    }
+  ]
 }
