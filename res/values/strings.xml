@@ -556,4 +556,9 @@
     <string name="fp_unlock_keystore_title">Fingerprint reboot unlock</string>
     <string name="fp_unlock_keystore_summary">Unlock the device with your fingerprint after a reboot without entering your Pin/Password/Pattern</string>
 
+    <!-- Device Specific Categories -->
+    <string name="oneplusdoze_category">OneplusDoze</string>
+    <string name="specialdevice_category">Device Specific Settings</string>
+    <string name="specialdevice_summary">Settings that are specific to certain devices ie OneplusDoze</string>
+
 </resources>
