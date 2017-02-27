@@ -280,4 +280,8 @@
     <string name="aspect_ratio_apps_info">Applications need to be restarted after changes</string>
     <string name="action_save">Save</string>
 
+    <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Show status bar</string>
+    <string name="lockscreen_show_status_bar_summary">Toggles status bar visibility on lock screen</string>
+
 </resources>

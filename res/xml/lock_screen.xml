@@ -36,7 +36,7 @@
  <PreferenceCategory
    android:title="@string/pin_option"
    settings:allowDividerAbove="true">
- 
+
      <SwitchPreference
         android:key="lockscreen_scramble_pin_layout"
         android:title="@string/unlock_scramble_pin_layout_title"
@@ -61,5 +61,11 @@
         android:summary="@string/lockscreen_lock_icon_summary"
         android:defaultValue="true" />
 
- </PreferenceCategory>
+    <SwitchPreference
+        android:key="lockscreen_show_status_bar"
+        android:title="@string/lockscreen_show_status_bar_title"
+        android:summary="@string/lockscreen_show_status_bar_summary"
+        android:defaultValue="true" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
