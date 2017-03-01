@@ -193,6 +193,10 @@
     <string name="status_bar_icon_blacklist_title">Status bar icons</string>
     <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
 
+	<!-- Notification counter -->
+    <string name="status_bar_notif_count_title">Show notification counter</string>
+    <string name="status_bar_notif_count_summary">Display number of pending notifications</string>
+
     <!-- Quick Settings on lockscreen -->
     <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
     <string name="lockscreen_qs_disabled_summary">Disable shortcuts and expanding quick settings on secure lock screens</string>
