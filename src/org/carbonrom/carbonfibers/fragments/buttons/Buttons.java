@@ -46,19 +46,15 @@ import com.android.settings.Utils;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
-import org.carbonrom.carbonfibers.fragments.buttons.AdvancedOptions;
-
 public class Buttons extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
     public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
-    private static final String ADVANCED_BUTTONS = "advanced_options";
 
     private SwitchPreference mSwapVolumeButtons;
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolumeRockerMusicControl;
-    private PreferenceScreen mAdvancedButtons;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -87,12 +83,6 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
         int volumeRockerMusicControl = Settings.System.getInt(getContentResolver(),
                 VOLUME_ROCKER_MUSIC_CONTROLS, 0);
         mVolumeRockerMusicControl.setChecked(volumeRockerMusicControl != 0);
-
-        mAdvancedButtons = (PreferenceScreen) findPreference(ADVANCED_BUTTONS);
-        AdvancedOptions mAdvancedOptions = new AdvancedOptions();
-        mAdvancedOptions.initHardwareKeys(res);
-        mAdvancedOptions.loadButtons();
-        mAdvancedButtons.setVisible(mAdvancedOptions.isNotEmpty());
     }
 
     @Override

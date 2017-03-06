@@ -65,14 +65,6 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
     private static final int KEY_MASK_APP_SWITCH = 0x10;
     private static final int KEY_MASK_CAMERA = 0x20;
 
-    private boolean hasHome;
-    private boolean hasMenu;
-    private boolean hasBack;
-    private boolean hasAssist;
-    private boolean hasAppSwitch;
-    private boolean hasCamera;
-    private boolean hasHardwareKeys;
-
     private static final String KEY_NAVIGATION_BAR         = "navigation_bar";
 
     private static final String KEY_HOME_LONG_PRESS        = "hardware_keys_home_long_press";
@@ -131,7 +123,8 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
-        initHardwareKeys(res);
+        mDeviceHardwareKeys = res.getInteger(
+                com.android.internal.R.integer.config_deviceHardwareKeys);
 
         /* Navigation Bar */
         mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR);
@@ -347,29 +340,16 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
         return EMPTY_STRING;
     }
 
-    protected void initHardwareKeys(Resources res) {
-        mDeviceHardwareKeys = res.getInteger(
-                com.android.internal.R.integer.config_deviceHardwareKeys);
-    }
-
-    protected void loadButtons() {
-        hasHome = (mDeviceHardwareKeys & KEY_MASK_HOME) != 0;
-        hasMenu = (mDeviceHardwareKeys & KEY_MASK_MENU) != 0;
-        hasBack = (mDeviceHardwareKeys & KEY_MASK_BACK) != 0;
-        hasAssist = (mDeviceHardwareKeys & KEY_MASK_ASSIST) != 0;
-        hasAppSwitch = (mDeviceHardwareKeys & KEY_MASK_APP_SWITCH) != 0;
-        hasCamera = (mDeviceHardwareKeys & KEY_MASK_CAMERA) != 0;
-        hasHardwareKeys = (hasHome || hasMenu || hasBack || hasAppSwitch);
-    }
-
-    protected boolean isNotEmpty() {
-        return (hasHardwareKeys || hasAssist || hasCamera);
-    }
-
     private void reload() {
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        loadButtons();
+        final boolean hasHome = (mDeviceHardwareKeys & KEY_MASK_HOME) != 0;
+        final boolean hasMenu = (mDeviceHardwareKeys & KEY_MASK_MENU) != 0;
+        final boolean hasBack = (mDeviceHardwareKeys & KEY_MASK_BACK) != 0;
+        final boolean hasAssist = (mDeviceHardwareKeys & KEY_MASK_ASSIST) != 0;
+        final boolean hasAppSwitch = (mDeviceHardwareKeys & KEY_MASK_APP_SWITCH) != 0;
+        final boolean hasCamera = (mDeviceHardwareKeys & KEY_MASK_CAMERA) != 0;
+        final boolean hasHardwareKeys = (hasHome || hasBack || hasAppSwitch || hasMenu);
         final boolean navigationBarEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.NAVIGATION_BAR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
 
@@ -383,12 +363,6 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
         final PreferenceCategory navCategory =
                 (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_NAV);
 
-        final PreferenceCategory homeCategory =
-                (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_HOME);
-
-        final PreferenceCategory backCategory =
-                (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_BACK);
-
         final PreferenceCategory menuCategory =
                 (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_MENU);
 
@@ -401,44 +375,29 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
         final PreferenceCategory cameraCategory =
                 (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_CAMERA);
 
-        if (hasHardwareKeys) {
-            navCategory.setEnabled(true);
-        } else {
+        if (!hasHardwareKeys && navCategory != null) {
             prefScreen.removePreference(navCategory);
-        }
-        if (hasHome && homeCategory != null) {
-            homeCategory.setEnabled(!navigationBarEnabled);
-        } else if (!hasHome && homeCategory != null) {
-            prefScreen.removePreference(homeCategory);
-        }
-
-        if (hasBack && backCategory != null) {
-            backCategory.setEnabled(!navigationBarEnabled);
-        } else if (!hasBack && backCategory != null) {
-            prefScreen.removePreference(backCategory);
         }
 
         if (hasMenu && menuCategory != null) {
             menuCategory.setEnabled(!navigationBarEnabled);
-        } else if (!hasMenu && menuCategory != null) {
+        } else if (menuCategory !=null) {
             prefScreen.removePreference(menuCategory);
         }
 
         if (hasAssist && assistCategory != null) {
             assistCategory.setEnabled(!navigationBarEnabled);
-        } else if (!hasAssist && assistCategory != null) {
+        } else if (assistCategory != null) {
             prefScreen.removePreference(assistCategory);
         }
 
         if (hasAppSwitch && appSwitchCategory != null) {
             appSwitchCategory.setEnabled(!navigationBarEnabled);
-        } else if (!hasAppSwitch && appSwitchCategory != null) {
+        } else if (appSwitchCategory != null) {
             prefScreen.removePreference(appSwitchCategory);
         }
 
-        if (hasCamera && cameraCategory != null) {
-            cameraCategory.setEnabled(true /*!navigationBarEnabled*/);
-        } else if (!hasCamera && cameraCategory != null) {
+        if (!hasCamera && cameraCategory != null) {
             prefScreen.removePreference(cameraCategory);
         }
     }
