@@ -181,6 +181,10 @@
     <string name="qs_advanced_wifi_title">Advanced WiFi tile</string>
     <string name="qs_advanced_wifi_summary">Enable one tap action to enable or disable WiFi</string>
 
+    <!-- Advanced bt tile -->
+    <string name="qs_advanced_bt_title">Advanced bluetooth tile</string>
+    <string name="qs_advanced_bt_summary">Enable one tap action to enable or disable bluetooth</string>
+
     <!-- qs brightness slider -->
     <string name="qs_brightness_slider_title">Brightness slider</string>
     <string name="qs_brightness_slider_summary">Show brightness slider on quick settings panel</string>
