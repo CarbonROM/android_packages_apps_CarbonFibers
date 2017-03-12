@@ -34,9 +34,15 @@
         android:defaultValue="false" />
 
     <com.android.settings.carbon.SecureSettingSwitchPreference
-        android:key="qs_advanced_wifi"
+        android:key="qs_wifi_easy_toggle"
         android:title="@string/qs_advanced_wifi_title"
         android:summary="@string/qs_advanced_wifi_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.carbon.SecureSettingSwitchPreference
+        android:key="qs_bt_easy_toggle"
+        android:title="@string/qs_advanced_bt_title"
+        android:summary="@string/qs_advanced_bt_summary"
         android:defaultValue="false" />
 
     <com.android.settings.carbon.SystemSettingSwitchPreference
