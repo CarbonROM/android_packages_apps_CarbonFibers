@@ -177,6 +177,10 @@
     <string name="qs_advanced_data_title">Advanced data tile</string>
     <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
 
+    <!-- Advanced wifi tile -->
+    <string name="qs_advanced_wifi_title">Advanced WiFi tile</string>
+    <string name="qs_advanced_wifi_summary">Enable one tap action to enable or disable WiFi</string>
+
     <!-- qs brightness slider -->
     <string name="qs_brightness_slider_title">Brightness slider</string>
     <string name="qs_brightness_slider_summary">Show brightness slider on quick settings panel</string>
