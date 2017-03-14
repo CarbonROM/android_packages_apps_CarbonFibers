@@ -403,42 +403,42 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
 
         if (hasHardwareKeys) {
             navCategory.setEnabled(true);
-        } else {
+        } else if (navCategory != null) {
             prefScreen.removePreference(navCategory);
         }
         if (hasHome && homeCategory != null) {
             homeCategory.setEnabled(!navigationBarEnabled);
-        } else if (!hasHome && homeCategory != null) {
+        } else if (homeCategory != null) {
             prefScreen.removePreference(homeCategory);
         }
 
         if (hasBack && backCategory != null) {
             backCategory.setEnabled(!navigationBarEnabled);
-        } else if (!hasBack && backCategory != null) {
+        } else if (backCategory != null) {
             prefScreen.removePreference(backCategory);
         }
 
         if (hasMenu && menuCategory != null) {
             menuCategory.setEnabled(!navigationBarEnabled);
-        } else if (!hasMenu && menuCategory != null) {
+        } else if (menuCategory != null) {
             prefScreen.removePreference(menuCategory);
         }
 
         if (hasAssist && assistCategory != null) {
             assistCategory.setEnabled(!navigationBarEnabled);
-        } else if (!hasAssist && assistCategory != null) {
+        } else if (assistCategory != null) {
             prefScreen.removePreference(assistCategory);
         }
 
         if (hasAppSwitch && appSwitchCategory != null) {
             appSwitchCategory.setEnabled(!navigationBarEnabled);
-        } else if (!hasAppSwitch && appSwitchCategory != null) {
+        } else if (appSwitchCategory != null) {
             prefScreen.removePreference(appSwitchCategory);
         }
 
         if (hasCamera && cameraCategory != null) {
             cameraCategory.setEnabled(true /*!navigationBarEnabled*/);
-        } else if (!hasCamera && cameraCategory != null) {
+        } else if (cameraCategory != null) {
             prefScreen.removePreference(cameraCategory);
         }
     }
