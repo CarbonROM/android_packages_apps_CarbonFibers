@@ -185,6 +185,10 @@
     <string name="qs_advanced_bt_title">Advanced bluetooth tile</string>
     <string name="qs_advanced_bt_summary">Enable one tap action to enable or disable bluetooth</string>
 
+    <!-- MotoMod battery tile -->
+    <string name="moto_mod_battery_tile_title">Motorola battery mod tile</string>
+    <string name="moto_mod_battery_tile_summary">Display the moto battery mod percentage</string>
+
     <!-- qs brightness slider -->
     <string name="qs_brightness_slider_title">Brightness slider</string>
     <string name="qs_brightness_slider_summary">Show brightness slider on quick settings panel</string>

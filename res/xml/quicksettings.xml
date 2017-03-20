@@ -45,6 +45,12 @@
         android:summary="@string/qs_advanced_bt_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.carbon.SecureSettingSwitchPreference
+	android:key="moto_mod_battery_tile"
+	android:title="@string/moto_mod_battery_tile_title"
+	android:summary="@string/moto_mod_battery_tile_summary"
+	android:defaultValue="false" />
+
     <com.android.settings.carbon.SystemSettingSwitchPreference
         android:key="quick_settings_vibrate"
         android:title="@string/quick_settings_vibrate_title"
