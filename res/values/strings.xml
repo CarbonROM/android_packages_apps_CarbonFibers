@@ -217,6 +217,10 @@
     <string name="power_notification_title">Power notification controls</string>
     <string name="power_notification_summary">Advanced notification controls and information</string>
 
+    <!-- Enable round icons -->
+    <string name="round_icons_title">Enable round icons</string>
+    <string name="round_icons_summary">Enables round icons for specific apps (requires hot reboot)</string>
+
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen battery info</string>
     <string name="lockscreen_battery_info_summary">Display negotiated charger max current-voltage and battery temperature on lockscreen while charging</string>
