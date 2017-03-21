@@ -20,6 +20,12 @@
     android:title="@string/system_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.android.settings.carbon.SecureSettingSwitchPreference
+        android:key="use_round_icons"
+        android:title="@string/round_icons_title"
+        android:summary="@string/round_icons_summary"
+        android:defaultValue="false"/>
+
     <PreferenceScreen
             android:title="@string/power_notification_title"
             android:summary="@string/power_notification_summary">
