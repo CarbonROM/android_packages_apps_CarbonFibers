@@ -242,12 +242,6 @@
     <string name="network_traffic_hidearrow">Hide arrows</string>
     <string name="network_traffic_hidearrow_summary">Hide the arrows in the traffic indicators</string>
 
-    <!-- tap-to-sleep -->
-    <string name="double_tap_status_bar_sleep_title">Double tap statusbar to sleep</string>
-    <string name="double_tap_status_bar_sleep_summary">Double tap status bar to put the device to sleep</string>
-    <string name="double_tap_lock_sleep_title">Double tap lock screen to sleep</string>
-    <string name="double_tap_lock_sleep_summary">Double tap lock screen to put the device to sleep</string>
-
    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Clock</string>
     <string name="status_bar_clock_summary">Customize clock style and format</string>
@@ -375,12 +369,13 @@
     <string name="custom_header_browse_title">Browse installed headers</string>
     <string name="custom_header_browse_summary">Long press on any image to use for static mode</string>
 
-    <!-- Gestures-->
+    <!-- Gestures (the ones not included in Settings) -->
     <string name="gesture_preference_title">Gestures</string>
-    <string name="camera_gesture_title">Double twist for camera</string>
-    <string name="camera_gesture_desc">Open the camera app by twisting your wrist twice</string>
-    <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
-    <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
+    <string name="double_tap_status_bar_sleep_title">Double tap statusbar to sleep</string>
+    <string name="double_tap_status_bar_sleep_summary">Double tap status bar to put the device to sleep</string>
+    <string name="double_tap_lock_sleep_title">Double tap lock screen to sleep</string>
+    <string name="double_tap_lock_sleep_summary">Double tap lock screen to put the device to sleep</string>
+    <string name="double_twist_for_camera_mode_desc">Flip camera view by twisting your wrist twice</string>
 
     <!-- Recents -->
     <string name="recents_cab">Clear All Button Tweaks</string>
