@@ -495,4 +495,8 @@
     <string name="hardware_keys_action_launch_camera">Open camera</string>
     <string name="hardware_keys_action_last_app">Launch last app</string>
 
+    <!-- Header Date and Time Position -->
+    <string name="qs_date_time_center_title">Center Date and Time</string>
+    <string name="qs_date_time_center_summary">Requires one or more icons to be disabled</string>
+
 </resources>
