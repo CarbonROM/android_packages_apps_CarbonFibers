@@ -1,4 +1,56 @@
 {
   "pushCert": "certificate version 0.1\npusher 3FF34E0F 1492878976 -0400\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_CarbonFibers\nnonce 1492878971-655B878E4EE5E65D8EF6DBA42F0E2A7E6C481B72\n\n0000000000000000000000000000000000000000 e3b37a551549e95b7ceb15f0df3b183f0fed99c8 refs/for/cr-5.1\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQEcBAABAgAGBQJY+4aAAAoJEJVDMvENCPR0lOEH/0vwmmv3ilxRciGiiopRnDF1\nLrvTfFk7OlTnZeHET9u7oKf3FD5v8PlU2z80CW3STyghiLShMXMh+9X2Ijb8dHMC\n0hmyHpX5QbUWi3cXL9k5PwZrGXB9dbQbhrZSLzQgjilfJ7Srm3oVL34rpTWebp80\n+B8FuP5l8yTYlmnd41MQzBJP9KlP8hYkn6EUmU2W48dfn16c92zMe+tKcU13mmW8\nLCXM6HrCicHRh6tqYMKECqJJ8NRz7xyge1RzxriWcxVhHUaazRrYgcwtuuTC/K7c\np6Ud+IbVq+o30/CJSol2l/YgvqDoMeqm0R2EdTlXGXZzruXixGFStmdscvC0sfw\u003d\n\u003daO0p\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a045101_3fa56304",
+        "filename": "src/org/carbonrom/carbonfibers/fragments/display/DisplayTweaks.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2017-04-23T11:09:56Z",
+      "side": 1,
+      "message": "no",
+      "revId": "e3b37a551549e95b7ceb15f0df3b183f0fed99c8",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a045101_5fa02ff4",
+        "filename": "src/org/carbonrom/carbonfibers/fragments/display/DisplayTweaks.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2017-04-23T11:09:56Z",
+      "side": 1,
+      "message": "this codeblock should be inside the onCreate",
+      "revId": "e3b37a551549e95b7ceb15f0df3b183f0fed99c8",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a045101_1faaa7d4",
+        "filename": "src/org/carbonrom/carbonfibers/fragments/display/DisplayTweaks.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2017-04-23T11:09:56Z",
+      "side": 1,
+      "message": "}",
+      "revId": "e3b37a551549e95b7ceb15f0df3b183f0fed99c8",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    }
+  ]
 }
