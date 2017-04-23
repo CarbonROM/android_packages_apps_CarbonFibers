@@ -1,4 +1,22 @@
 {
   "pushCert": "certificate version 0.1\npusher 3FF34E0F 1492878810 -0400\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_CarbonFibers\nnonce 1492878805-9494ABB621BBBFD79A1E154CCB618A9BBDCCF673\n\n0000000000000000000000000000000000000000 578b80ecb653be31f4d67cb3b01d74a36add4a2e refs/for/cr-5.1\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQEcBAABAgAGBQJY+4XaAAoJEJVDMvENCPR05D8H/1AeF/bLtxmxfssEyhUWw1vR\nO6tqdRVc4OlnlmzO+uNRKcOZKAgVr15PITyqLShCs8CJa2rjsHV8spmTnHrsaG8/\nEXTwVO7OFOFW5V9N35zFz2oIXme1oBAftonV/ir5YPpSgde3q+KbMOnHZ47N7ZJ0\nKvbqTL7KlxDsA57NSmrIT2roCHei3dYy80irHJTvTEmvpC8r8Zba3I2Mzys8Wx5B\n4M7m8Cyb4oI0k/5uqCZAudZ2a1b7wBs3MVxtMPimsg1XhYy1EJNj/PgXY5deTEzc\nFQMuU0BshIQYd7M8CeAKwhTj0zwB/BQugZw2uLQDDMQvZEzzyeaoeInJXnMWQnw\u003d\n\u003dXxXK\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a045101_7f9bebc9",
+        "filename": "res/xml/cf_main_menu.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2017-04-23T11:09:56Z",
+      "side": 1,
+      "message": "We need a different icon there",
+      "revId": "578b80ecb653be31f4d67cb3b01d74a36add4a2e",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    }
+  ]
 }
