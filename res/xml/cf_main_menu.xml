@@ -63,7 +63,7 @@
 
    <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.display.DisplayTweaks"
-       android.icon="@drawable/ic_privacy"
+       android:icon="@drawable/ic_displaytweaks"
        android:title="@string/display_tweaks_category" />
 
 </PreferenceScreen>
