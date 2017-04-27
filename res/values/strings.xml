@@ -552,4 +552,8 @@
     <string name="remove_tile_summaries_title">Remove tile summaries</string>
     <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
 
+    <!-- Fingerprint unlock keystore -->
+    <string name="fp_unlock_keystore_title">Fingerprint reboot unlock</string>
+    <string name="fp_unlock_keystore_summary">Unlock the device with your fingerprint after a reboot without entering your Pin/Password/Pattern</string>
+
 </resources>
