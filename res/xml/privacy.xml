@@ -28,6 +28,14 @@
             android:targetClass="org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
     </PreferenceScreen>
 
+    <!--Fingerprint unlock on reboot -->
+    <PreferenceScreen
+            android:key="fp_unlock_keystore"
+            android:title="@string/fp_unlock_keystore_title"
+            android:summary="@string/fp_unlock_keystore_summary"
+            android:persistent="false" >
+    </PreferenceScreen>
+
     <!-- Anonymous statistics - (CRStats) -->
     <PreferenceScreen
         android:key="crstats"
@@ -35,5 +43,6 @@
         android:summary="@string/anonymous_statistics_summary"
         android:fragment="org.carbonrom.carbonfibers.crstats.AnonymousStats" >
     </PreferenceScreen>
+
 
 </PreferenceScreen>
