@@ -33,10 +33,14 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
+import android.hardware.fingerprint.FingerprintManager;
 
 public class Privacy extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Privacy";
+    private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
+    private SystemSettingSwitchPreference mFpKeystore;
+    private FingerprintManager mFingerprintManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +49,15 @@ public class Privacy extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.privacy);
 
         ContentResolver resolver = getActivity().getContentResolver();
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFpKeystore = (SystemSettingSwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
+        if (!mFingerprintManager.isHardwareDetected()){
+            prefSet.removePreference(mFpKeystore);
+        } else {
+            mFpKeystore.setChecked((Settings.System.getInt(getContentResolver(),
+                    Settings.System.FP_UNLOCK_KEYSTORE, 0) == 1));
+            mFpKeystore.setOnPreferenceChangeListener(this);
+          }
     }
 
     @Override
@@ -64,6 +77,12 @@ public class Privacy extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
+        if (preference == mFpKeystore) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FP_UNLOCK_KEYSTORE, value ? 1 : 0);
+            return true;
+          }
         return true;
     }
 
