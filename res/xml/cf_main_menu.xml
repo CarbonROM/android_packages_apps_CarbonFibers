@@ -22,19 +22,19 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
    <Preference
-       android:fragment="org.carbonrom.carbonfibers.fragments.system.System"
-       android:icon="@drawable/ic_system"
-       android:title="@string/system_category" />
-
-   <Preference
-       android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.Statusbar"
-       android:icon="@drawable/ic_statusbar"
-       android:title="@string/statusbar_category" />
-
-   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.buttons.Buttons"
        android:icon="@drawable/ic_buttons"
        android:title="@string/buttons_category" />
+
+   <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.display.DisplayTweaks"
+       android:icon="@drawable/ic_display_tweaks"
+       android:title="@string/display_tweaks_category" />
+
+   <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.gestures.Gestures"
+       android:icon="@drawable/ic_gestures"
+       android:title="@string/gesture_preference_title" />
 
    <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.lights.Lights"
@@ -47,11 +47,6 @@
        android:title="@string/lockscreen_category" />
 
    <Preference
-       android:fragment="org.carbonrom.carbonfibers.fragments.gestures.Gestures"
-       android:icon="@drawable/ic_gestures"
-       android:title="@string/gesture_preference_title" />
-
-   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.misc.Misc"
        android:icon="@drawable/ic_misc"
        android:title="@string/misc_category" />
@@ -62,8 +57,13 @@
        android:title="@string/privacy_category" />
 
    <Preference
-       android:fragment="org.carbonrom.carbonfibers.fragments.display.DisplayTweaks"
-       android:icon="@drawable/ic_display_tweaks"
-       android:title="@string/display_tweaks_category" />
+       android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.Statusbar"
+       android:icon="@drawable/ic_statusbar"
+       android:title="@string/statusbar_category" />
+
+   <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.system.System"
+       android:icon="@drawable/ic_system"
+       android:title="@string/system_category" />
 
 </PreferenceScreen>
