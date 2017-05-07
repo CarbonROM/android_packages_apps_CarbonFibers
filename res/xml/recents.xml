@@ -57,4 +57,23 @@
             android:entryValues="@array/immersive_recents_values"
             android:persistent="false" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="slim_recents"
+        android:title="@string/slim_recents_title">
+
+        <com.android.settings.carbon.SystemSettingSwitchPreference
+            android:key="use_slim_recents"
+            android:title="@string/use_slim_recents_title"
+            android:summary="@string/use_slim_recents_summary"
+            android:defaultValue="false" />
+
+        <PreferenceScreen
+            android:key="slim_recent_panel"
+            android:fragment="org.carbonrom.carbonfibers.fragments.recents.SlimRecentsPanel"
+            android:title="@string/slim_recents_settings_title"
+            android:summary="@string/slim_recents_settings_summary"
+            android:dependency="use_slim_recents"
+            android:persistent="false" />
+    </PreferenceCategory>
 </PreferenceScreen>
