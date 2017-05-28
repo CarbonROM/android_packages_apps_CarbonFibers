@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2016 CarbonROM
+ *  Copyright (C) 2016 The Dirty Unicorns Project
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,440 +22,231 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Vibrator;
-import android.os.Handler;
 import android.os.UserHandle;
-import android.os.UserManager;
-import android.text.TextUtils;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.os.Vibrator;
 import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.HashMap;
 
 import com.android.settings.R;
-import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.utils.du.ActionConstants;
+import com.android.internal.utils.du.DUActionUtils;
+import org.carbonrom.carbonfibers.fragments.buttons.ActionFragment;
+import com.android.settings.carbon.CustomSeekBarPreference;
 
+public class ButtonSettings extends ActionFragment implements OnPreferenceChangeListener {
 
-public class AdvancedOptions extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener, Indexable {
-    private static final String TAG = "AdvancedOptions";
+    //Keys
+    private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
+    private static final String KEY_BACKLIGHT_TIMEOUT = "backlight_timeout";
+    private static final String HWKEY_DISABLE = "hardware_keys_disable";
+    private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
+    private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
+    public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
 
-    private static final int KEY_MASK_HOME = 0x01;
-    private static final int KEY_MASK_BACK = 0x02;
-    private static final int KEY_MASK_MENU = 0x04;
-    private static final int KEY_MASK_ASSIST = 0x08;
-    private static final int KEY_MASK_APP_SWITCH = 0x10;
-    private static final int KEY_MASK_CAMERA = 0x20;
+    // category keys
+    private static final String CATEGORY_HWKEY = "hardware_keys";
+    private static final String CATEGORY_BACK = "back_key";
+    private static final String CATEGORY_HOME = "home_key";
+    private static final String CATEGORY_MENU = "menu_key";
+    private static final String CATEGORY_ASSIST = "assist_key";
+    private static final String CATEGORY_APPSWITCH = "app_switch_key";
+    private static final String CATEGORY_VOLUME = "volume_keys";
+    private static final String CATEGORY_POWER = "power_key";
 
-    private boolean hasHome;
-    private boolean hasMenu;
-    private boolean hasBack;
-    private boolean hasAssist;
-    private boolean hasAppSwitch;
-    private boolean hasCamera;
-    private boolean hasHardwareKeys;
+    // Masks for checking presence of hardware keys.
+    // Must match values in frameworks/base/core/res/res/values/config.xml
+    public static final int KEY_MASK_HOME = 0x01;
+    public static final int KEY_MASK_BACK = 0x02;
+    public static final int KEY_MASK_MENU = 0x04;
+    public static final int KEY_MASK_ASSIST = 0x08;
+    public static final int KEY_MASK_APP_SWITCH = 0x10;
+    public static final int KEY_MASK_CAMERA = 0x20;
+    public static final int KEY_MASK_VOLUME = 0x40;
 
-    private static final String KEY_NAVIGATION_BAR         = "navigation_bar";
-
-    private static final String KEY_HOME_LONG_PRESS        = "hardware_keys_home_long_press";
-    private static final String KEY_HOME_DOUBLE_TAP        = "hardware_keys_home_double_tap";
-    private static final String KEY_BACK_LONG_PRESS        = "hardware_keys_back_long_press";
-    private static final String KEY_BACK_DOUBLE_TAP        = "hardware_keys_back_double_tap";
-    private static final String KEY_MENU_LONG_PRESS        = "hardware_keys_menu_long_press";
-    private static final String KEY_MENU_DOUBLE_TAP        = "hardware_keys_menu_double_tap";
-    private static final String KEY_ASSIST_LONG_PRESS      = "hardware_keys_assist_long_press";
-    private static final String KEY_ASSIST_DOUBLE_TAP      = "hardware_keys_assist_double_tap";
-    private static final String KEY_APP_SWITCH_LONG_PRESS  = "hardware_keys_app_switch_long_press";
-    private static final String KEY_APP_SWITCH_DOUBLE_TAP  = "hardware_keys_app_switch_double_tap";
-    private static final String KEY_CAMERA_LONG_PRESS      = "hardware_keys_camera_long_press";
-    private static final String KEY_CAMERA_DOUBLE_TAP      = "hardware_keys_camera_double_tap";
-
-    private static final String KEY_CATEGORY_NAV           = "nav_keys";
-    private static final String KEY_CATEGORY_HOME          = "home_key";
-    private static final String KEY_CATEGORY_BACK          = "back_key";
-    private static final String KEY_CATEGORY_MENU          = "menu_key";
-    private static final String KEY_CATEGORY_ASSIST        = "assist_key";
-    private static final String KEY_CATEGORY_APP_SWITCH    = "app_switch_key";
-    private static final String KEY_CATEGORY_CAMERA        = "camera_key";
-
-    private static final String EMPTY_STRING = "";
-
-    private Handler mHandler;
-
-    private int mDeviceHardwareKeys;
-
-    private ListPreference mNavHomeLongPressAction;
-    private ListPreference mHomeLongPressAction;
-    private ListPreference mNavHomeDoubleTapAction;
-    private ListPreference mHomeDoubleTapAction;
-    private ListPreference mBackLongPressAction;
-    private ListPreference mBackDoubleTapAction;
-    private ListPreference mMenuLongPressAction;
-    private ListPreference mMenuDoubleTapAction;
-    private ListPreference mAssistLongPressAction;
-    private ListPreference mAssistDoubleTapAction;
-    private ListPreference mAppSwitchLongPressAction;
-    private ListPreference mAppSwitchDoubleTapAction;
-    private ListPreference mCameraLongPressAction;
-    private ListPreference mCameraDoubleTapAction;
-
-    private SwitchPreference mNavigationBar;
+    private SwitchPreference mSwapVolumeButtons;
+    private SwitchPreference mVolumeRockerWake;
+    private SwitchPreference mVolumeRockerMusicControl;
+    private SwitchPreference mHwKeyDisable;
+    private ListPreference mBacklightTimeout;
+    private CustomSeekBarPreference mButtonBrightness;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        addPreferencesFromResource(R.xml.button_settings);
 
-        addPreferencesFromResource(R.xml.advancedoptions);
-
-        mHandler = new Handler();
-
-        final Resources res = getActivity().getResources();
-        final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
-        initHardwareKeys(res);
-
-        /* Navigation Bar */
-        mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR);
-        if (mNavigationBar != null) {
-            mNavigationBar.setOnPreferenceChangeListener(this);
+        final boolean needsNavbar = DUActionUtils.hasNavbarByDefault(getActivity());
+        final PreferenceCategory hwkeyCat = (PreferenceCategory) prefScreen
+                .findPreference(CATEGORY_HWKEY);
+        int keysDisabled = 0;
+        if (!needsNavbar) {
+            mHwKeyDisable = (SwitchPreference) findPreference(HWKEY_DISABLE);
+            keysDisabled = Settings.Secure.getIntForUser(getContentResolver(),
+                    Settings.Secure.HARDWARE_KEYS_DISABLE, 0,
+                    UserHandle.USER_CURRENT);
+            mHwKeyDisable.setChecked(keysDisabled != 0);
+            mHwKeyDisable.setOnPreferenceChangeListener(this);
+        } else {
+            prefScreen.removePreference(hwkeyCat);
         }
 
-        /* Home Key Long Press */
-        int defaultLongPressOnHardwareHomeBehavior = res.getInteger(
-                com.android.internal.R.integer.config_longPressOnHomeKeyBehavior);
-        int longPressOnHardwareHomeBehavior = Settings.System.getIntForUser(resolver,
-                    Settings.System.KEY_HOME_LONG_PRESS_ACTION,
-                    defaultLongPressOnHardwareHomeBehavior,
-                    UserHandle.USER_CURRENT);
-        mHomeLongPressAction = initActionList(KEY_HOME_LONG_PRESS, longPressOnHardwareHomeBehavior);
+        // bits for hardware keys present on device
+        final int deviceKeys = getResources().getInteger(
+                com.android.internal.R.integer.config_deviceHardwareKeys);
 
-        /* Home Key Double Tap */
-        int defaultDoubleTapOnHardwareHomeBehavior = res.getInteger(
-                com.android.internal.R.integer.config_doubleTapOnHomeKeyBehavior);
-        int doubleTapOnHardwareHomeBehavior = Settings.System.getIntForUser(resolver,
-                    Settings.System.KEY_HOME_DOUBLE_TAP_ACTION,
-                    defaultDoubleTapOnHardwareHomeBehavior,
-                    UserHandle.USER_CURRENT);
-        mHomeDoubleTapAction = initActionList(KEY_HOME_DOUBLE_TAP, doubleTapOnHardwareHomeBehavior);
+        // read bits for present hardware keys
+        final boolean hasHomeKey = (deviceKeys & KEY_MASK_HOME) != 0;
+        final boolean hasBackKey = (deviceKeys & KEY_MASK_BACK) != 0;
+        final boolean hasMenuKey = (deviceKeys & KEY_MASK_MENU) != 0;
+        final boolean hasAssistKey = (deviceKeys & KEY_MASK_ASSIST) != 0;
+        final boolean hasAppSwitchKey = (deviceKeys & KEY_MASK_APP_SWITCH) != 0;
 
-        /* Back Key Long Press */
-        int defaultLongPressOnHardwareBackBehavior = res.getInteger(
-                com.android.internal.R.integer.config_longPressOnBackKeyBehavior);
-        int longPressOnHardwareBackBehavior = Settings.System.getIntForUser(resolver,
-                Settings.System.KEY_BACK_LONG_PRESS_ACTION,
-                defaultLongPressOnHardwareBackBehavior,
-                UserHandle.USER_CURRENT);
-        mBackLongPressAction = initActionList(KEY_BACK_LONG_PRESS, longPressOnHardwareBackBehavior);
+        // load categories and init/remove preferences based on device
+        // configuration
+        final PreferenceCategory backCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_BACK);
+        final PreferenceCategory homeCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_HOME);
+        final PreferenceCategory menuCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_MENU);
+        final PreferenceCategory assistCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_ASSIST);
+        final PreferenceCategory appSwitchCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
+        mBacklightTimeout =
+                (ListPreference) findPreference(KEY_BACKLIGHT_TIMEOUT);
+        mButtonBrightness =
+                (CustomSeekBarPreference) findPreference(KEY_BUTTON_BRIGHTNESS);
 
-        /* Back Key Double Tap */
-        int defaultDoubleTapOnHardwareBackBehavior = res.getInteger(
-                com.android.internal.R.integer.config_doubleTapOnBackKeyBehavior);
-        int doubleTapOnHardwareBackBehavior = Settings.System.getIntForUser(resolver,
-                Settings.System.KEY_BACK_DOUBLE_TAP_ACTION,
-                defaultDoubleTapOnHardwareBackBehavior,
-                UserHandle.USER_CURRENT);
-        mBackDoubleTapAction = initActionList(KEY_BACK_DOUBLE_TAP, doubleTapOnHardwareBackBehavior);
+        // back key
+        if (!hasBackKey) {
+            prefScreen.removePreference(backCategory);
+        }
 
-        /* Menu Key Long Press */
-        int defaultLongPressOnHardwareMenuBehavior = res.getInteger(
-                com.android.internal.R.integer.config_longPressOnMenuKeyBehavior);
-        int longPressOnHardwareMenuBehavior = Settings.System.getIntForUser(resolver,
-                Settings.System.KEY_MENU_LONG_PRESS_ACTION,
-                defaultLongPressOnHardwareMenuBehavior,
-                UserHandle.USER_CURRENT);
-        mMenuLongPressAction = initActionList(KEY_MENU_LONG_PRESS, longPressOnHardwareMenuBehavior);
+        // home key
+        if (!hasHomeKey) {
+            prefScreen.removePreference(homeCategory);
+        }
 
-        /* Menu Key Double Tap */
-        int defaultDoubleTapOnHardwareMenuBehavior = res.getInteger(
-                com.android.internal.R.integer.config_doubleTapOnMenuKeyBehavior);
-        int doubleTapOnHardwareMenuBehavior = Settings.System.getIntForUser(resolver,
-                Settings.System.KEY_MENU_DOUBLE_TAP_ACTION,
-                defaultDoubleTapOnHardwareMenuBehavior,
-                UserHandle.USER_CURRENT);
-        mMenuDoubleTapAction = initActionList(KEY_MENU_DOUBLE_TAP, doubleTapOnHardwareMenuBehavior);
+        // App switch key (recents)
+        if (!hasAppSwitchKey) {
+            prefScreen.removePreference(appSwitchCategory);
+        }
 
-        /* Assist Key Long Press */
-        int defaultLongPressOnHardwareAssistBehavior = res.getInteger(
-                com.android.internal.R.integer.config_longPressOnAssistKeyBehavior);
-        int longPressOnHardwareAssistBehavior = Settings.System.getIntForUser(resolver,
-                Settings.System.KEY_ASSIST_LONG_PRESS_ACTION,
-                defaultLongPressOnHardwareAssistBehavior,
-                UserHandle.USER_CURRENT);
-        mAssistLongPressAction = initActionList(KEY_ASSIST_LONG_PRESS, longPressOnHardwareAssistBehavior);
+        // menu key
+        if (!hasMenuKey) {
+            prefScreen.removePreference(menuCategory);
+        }
 
-        /* Assist Key Double Tap */
-        int defaultDoubleTapOnHardwareAssistBehavior = res.getInteger(
-                com.android.internal.R.integer.config_doubleTapOnAssistKeyBehavior);
-        int doubleTapOnHardwareAssistBehavior = Settings.System.getIntForUser(resolver,
-                Settings.System.KEY_ASSIST_DOUBLE_TAP_ACTION,
-                defaultDoubleTapOnHardwareAssistBehavior,
-                UserHandle.USER_CURRENT);
-        mAssistDoubleTapAction = initActionList(KEY_ASSIST_DOUBLE_TAP, doubleTapOnHardwareAssistBehavior);
+        // search/assist key
+        if (!hasAssistKey) {
+            prefScreen.removePreference(assistCategory);
+        }
 
-        /* AppSwitch Key Long Press */
-        int defaultLongPressOnHardwareAppSwitchBehavior = res.getInteger(
-                com.android.internal.R.integer.config_longPressOnAppSwitchKeyBehavior);
-        int longPressOnHardwareAppSwitchBehavior = Settings.System.getIntForUser(resolver,
-                Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION,
-                defaultLongPressOnHardwareAppSwitchBehavior,
-                UserHandle.USER_CURRENT);
-        mAppSwitchLongPressAction = initActionList(KEY_APP_SWITCH_LONG_PRESS, longPressOnHardwareAppSwitchBehavior);
+        // Backlight
+        if (hasMenuKey || hasHomeKey) {
+            if (mBacklightTimeout != null) {
+                mBacklightTimeout.setOnPreferenceChangeListener(this);
+                int BacklightTimeout = Settings.System.getInt(getContentResolver(),
+                        Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5000);
+                mBacklightTimeout.setValue(Integer.toString(BacklightTimeout));
+                mBacklightTimeout.setSummary(mBacklightTimeout.getEntry());
+            }
 
-        /* AppSwitch Key Double Tap */
-        int defaultDoubleTapOnHardwareAppSwitchBehavior = res.getInteger(
-                com.android.internal.R.integer.config_doubleTapOnAppSwitchKeyBehavior);
-        int doubleTapOnHardwareAppSwitchBehavior = Settings.System.getIntForUser(resolver,
-                Settings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION,
-                defaultDoubleTapOnHardwareAppSwitchBehavior,
-                UserHandle.USER_CURRENT);
-        mAppSwitchDoubleTapAction = initActionList(KEY_APP_SWITCH_DOUBLE_TAP, doubleTapOnHardwareAppSwitchBehavior);
+            if (mButtonBrightness != null) {
+                int ButtonBrightness = Settings.System.getInt(getContentResolver(),
+                        Settings.System.BUTTON_BRIGHTNESS, 255);
+                mButtonBrightness.setValue(ButtonBrightness / 1);
+                mButtonBrightness.setOnPreferenceChangeListener(this);
+            }
+        } else {
+            prefScreen.removePreference(hwkeyCat);
+        }
 
-        /* Camera Key Long Press */
-        int defaultLongPressOnHardwareCameraBehavior = res.getInteger(
-                com.android.internal.R.integer.config_longPressOnCameraKeyBehavior);
-        int longPressOnHardwareCameraBehavior = Settings.System.getIntForUser(resolver,
-                Settings.System.KEY_CAMERA_LONG_PRESS_ACTION,
-                defaultLongPressOnHardwareCameraBehavior,
-                UserHandle.USER_CURRENT);
-        mCameraLongPressAction = initActionList(KEY_CAMERA_LONG_PRESS, longPressOnHardwareCameraBehavior);
+        mSwapVolumeButtons = (SwitchPreference) findPreference(SWAP_VOLUME_BUTTONS);
+        mSwapVolumeButtons.setOnPreferenceChangeListener(this);
+        int swapVolumeButtons = Settings.System.getInt(getContentResolver(),
+                SWAP_VOLUME_BUTTONS, 0);
+        mSwapVolumeButtons.setChecked(swapVolumeButtons != 0);
 
-        /* Camera Key Double Tap */
-        int defaultDoubleTapOnHardwareCameraBehavior = res.getInteger(
-                com.android.internal.R.integer.config_doubleTapOnCameraKeyBehavior);
-        int doubleTapOnHardwareCameraBehavior = Settings.System.getIntForUser(resolver,
-                Settings.System.KEY_CAMERA_DOUBLE_TAP_ACTION,
-                defaultDoubleTapOnHardwareCameraBehavior,
-                UserHandle.USER_CURRENT);
-        mCameraDoubleTapAction = initActionList(KEY_CAMERA_DOUBLE_TAP, doubleTapOnHardwareCameraBehavior);
+        mVolumeRockerWake = (SwitchPreference) findPreference(VOLUME_ROCKER_WAKE);
+        mVolumeRockerWake.setOnPreferenceChangeListener(this);
+        int volumeRockerWake = Settings.System.getInt(getContentResolver(),
+                VOLUME_ROCKER_WAKE, 0);
+        mVolumeRockerWake.setChecked(volumeRockerWake != 0);
 
+        mVolumeRockerMusicControl = (SwitchPreference) findPreference(VOLUME_ROCKER_MUSIC_CONTROLS);
+        mVolumeRockerMusicControl.setOnPreferenceChangeListener(this);
+        int volumeRockerMusicControl = Settings.System.getInt(getContentResolver(),
+                VOLUME_ROCKER_MUSIC_CONTROLS, 0);
+        mVolumeRockerMusicControl.setChecked(volumeRockerMusicControl != 0);
+
+        // let super know we can load ActionPreferences
+        onPreferenceScreenLoaded(ActionConstants.getDefaults(ActionConstants.HWKEYS));
+
+        // load preferences first
+        setActionPreferencesEnabled(keysDisabled == 0);
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        reload();
+    protected boolean usesExtendedActionsList() {
+        return true;
     }
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.CARBONFIBERS;
-    }
-
-    private ListPreference initActionList(String key, int value) {
-        ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
-        if (list != null) {
-            list.setValue(Integer.toString(value));
-            list.setSummary(list.getEntry());
-            list.setOnPreferenceChangeListener(this);
-        }
-        return list;
-    }
-
-    private boolean handleOnPreferenceTreeClick(Preference preference) {
-        if (preference != null && preference == mNavigationBar) {
-            mNavigationBar.setEnabled(false);
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mNavigationBar.setEnabled(true);
-                }
-            }, 1000);
-            return true;
-        }
-        return false;
-    }
-
-    private boolean handleOnPreferenceChange(Preference preference, Object newValue) {
-        final String setting = getSystemPreferenceString(preference);
-
-        if (TextUtils.isEmpty(setting)) {
-            // No system setting.
-            return false;
-        }
-
-        if (preference != null && preference instanceof ListPreference) {
-            ListPreference listPref = (ListPreference) preference;
-            String value = (String) newValue;
-            int index = listPref.findIndexOfValue(value);
-            listPref.setSummary(listPref.getEntries()[index]);
-            Settings.System.putIntForUser(getContentResolver(), setting, Integer.valueOf(value),
-                    UserHandle.USER_CURRENT);
-        } else if (preference != null && preference instanceof SwitchPreference) {
-            boolean state = false;
-            if (newValue instanceof Boolean) {
-                state = (Boolean) newValue;
-            } else if (newValue instanceof String) {
-                state = Integer.valueOf((String) newValue) != 0;
-            }
-            Settings.System.putIntForUser(getContentResolver(), setting, state ? 1 : 0,
-                    UserHandle.USER_CURRENT);
-        }
-
-        return true;
-    }
-
-    private String getSystemPreferenceString(Preference preference) {
-        if (preference == null) {
-            return EMPTY_STRING;
-        } else if (preference == mNavigationBar) {
-            return Settings.System.NAVIGATION_BAR_ENABLED;
-        } else if (preference == mHomeLongPressAction) {
-            return Settings.System.KEY_HOME_LONG_PRESS_ACTION;
-        } else if (preference == mHomeDoubleTapAction) {
-            return Settings.System.KEY_HOME_DOUBLE_TAP_ACTION;
-        } else if (preference == mBackLongPressAction) {
-            return Settings.System.KEY_BACK_LONG_PRESS_ACTION;
-        } else if (preference == mBackDoubleTapAction) {
-            return Settings.System.KEY_BACK_DOUBLE_TAP_ACTION;
-        } else if (preference == mMenuLongPressAction) {
-            return Settings.System.KEY_MENU_LONG_PRESS_ACTION;
-        } else if (preference == mMenuDoubleTapAction) {
-            return Settings.System.KEY_MENU_DOUBLE_TAP_ACTION;
-        } else if (preference == mAssistLongPressAction) {
-            return Settings.System.KEY_ASSIST_LONG_PRESS_ACTION;
-        } else if (preference == mAssistDoubleTapAction) {
-            return Settings.System.KEY_ASSIST_DOUBLE_TAP_ACTION;
-        } else if (preference == mAppSwitchLongPressAction) {
-            return Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION;
-        } else if (preference == mAppSwitchDoubleTapAction) {
-            return Settings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION;
-        } else if (preference == mCameraLongPressAction) {
-            return Settings.System.KEY_CAMERA_LONG_PRESS_ACTION;
-        } else if (preference == mCameraDoubleTapAction) {
-            return Settings.System.KEY_CAMERA_DOUBLE_TAP_ACTION;
-        }
-
-        return EMPTY_STRING;
-    }
-
-    protected void initHardwareKeys(Resources res) {
-        mDeviceHardwareKeys = res.getInteger(
-                com.android.internal.R.integer.config_deviceHardwareKeys);
-    }
-
-    protected void loadButtons() {
-        hasHome = (mDeviceHardwareKeys & KEY_MASK_HOME) != 0;
-        hasMenu = (mDeviceHardwareKeys & KEY_MASK_MENU) != 0;
-        hasBack = (mDeviceHardwareKeys & KEY_MASK_BACK) != 0;
-        hasAssist = (mDeviceHardwareKeys & KEY_MASK_ASSIST) != 0;
-        hasAppSwitch = (mDeviceHardwareKeys & KEY_MASK_APP_SWITCH) != 0;
-        hasCamera = (mDeviceHardwareKeys & KEY_MASK_CAMERA) != 0;
-        hasHardwareKeys = (hasHome || hasMenu || hasBack || hasAppSwitch);
-    }
-
-    protected boolean isNotEmpty() {
-        return (hasHardwareKeys || hasAssist || hasCamera);
-    }
-
-    private void reload() {
-        final ContentResolver resolver = getActivity().getContentResolver();
-
-        loadButtons();
-        final boolean navigationBarEnabled = Settings.System.getIntForUser(resolver,
-                Settings.System.NAVIGATION_BAR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
-
-        if (mNavigationBar != null) {
-            mNavigationBar.setChecked(navigationBarEnabled);
-        }
-
-
-        final PreferenceScreen prefScreen = getPreferenceScreen();
-
-        final PreferenceCategory navCategory =
-                (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_NAV);
-
-        final PreferenceCategory homeCategory =
-                (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_HOME);
-
-        final PreferenceCategory backCategory =
-                (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_BACK);
-
-        final PreferenceCategory menuCategory =
-                (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_MENU);
-
-        final PreferenceCategory assistCategory =
-                (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_ASSIST);
-
-        final PreferenceCategory appSwitchCategory =
-                (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_APP_SWITCH);
-
-        final PreferenceCategory cameraCategory =
-                (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_CAMERA);
-
-        if (hasHardwareKeys) {
-            navCategory.setEnabled(true);
-        } else if (navCategory != null) {
-            prefScreen.removePreference(navCategory);
-        }
-        if (hasHome && homeCategory != null) {
-            homeCategory.setEnabled(!navigationBarEnabled);
-        } else if (homeCategory != null) {
-            prefScreen.removePreference(homeCategory);
-        }
-
-        if (hasBack && backCategory != null) {
-            backCategory.setEnabled(!navigationBarEnabled);
-        } else if (backCategory != null) {
-            prefScreen.removePreference(backCategory);
-        }
-
-        if (hasMenu && menuCategory != null) {
-            menuCategory.setEnabled(!navigationBarEnabled);
-        } else if (menuCategory != null) {
-            prefScreen.removePreference(menuCategory);
-        }
-
-        if (hasAssist && assistCategory != null) {
-            assistCategory.setEnabled(!navigationBarEnabled);
-        } else if (assistCategory != null) {
-            prefScreen.removePreference(assistCategory);
-        }
-
-        if (hasAppSwitch && appSwitchCategory != null) {
-            appSwitchCategory.setEnabled(!navigationBarEnabled);
-        } else if (appSwitchCategory != null) {
-            prefScreen.removePreference(appSwitchCategory);
-        }
-
-        if (hasCamera && cameraCategory != null) {
-            cameraCategory.setEnabled(true /*!navigationBarEnabled*/);
-        } else if (cameraCategory != null) {
-            prefScreen.removePreference(cameraCategory);
-        }
+        return MetricsEvent.DIRTYTWEAKS;
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        final boolean handled = handleOnPreferenceChange(preference, newValue);
-        if (handled) {
-            reload();
+        if (preference == mSwapVolumeButtons) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), SWAP_VOLUME_BUTTONS,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mVolumeRockerWake) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_WAKE,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mVolumeRockerMusicControl) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_MUSIC_CONTROLS,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mHwKeyDisable) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
+                    value ? 1 : 0);
+            setActionPreferencesEnabled(!value);
+            return true;
+        } else if (preference == mBacklightTimeout) {
+            String BacklightTimeout = (String) newValue;
+            int BacklightTimeoutValue = Integer.parseInt(BacklightTimeout);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, BacklightTimeoutValue);
+            int BacklightTimeoutIndex = mBacklightTimeout
+                    .findIndexOfValue(BacklightTimeout);
+            mBacklightTimeout
+                    .setSummary(mBacklightTimeout.getEntries()[BacklightTimeoutIndex]);
+            return true;
+        } else if (preference == mButtonBrightness) {
+            int value = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BUTTON_BRIGHTNESS, value * 1);
+            return true;
         }
-        return handled;
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        final boolean handled = handleOnPreferenceTreeClick(preference);
-        // return super.onPreferenceTreeClick(preferenceScreen, preference);
-        return handled;
+        return false;
     }
 }
