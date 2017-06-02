@@ -588,6 +588,8 @@
     <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
 
     <!-- Hardware button navigation -->
+    <string name="advanced_buttons_category">Advanced Hardware Buttons</string>
+    <string name="advanced_buttons_summary">Set custom single, double and longpress actions</string>
     <string name="hardware_keys_title">Navigation</string>
     <string name="hardware_keys_volume_keys_title">Volume rocker</string>
     <string name="hardware_keys_home_key_title">Home button</string>

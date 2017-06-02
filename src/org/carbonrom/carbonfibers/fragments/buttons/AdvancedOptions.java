@@ -16,7 +16,7 @@
  *
  */
 
-package com.aosip.owlsnest.buttons;
+package org.carbonrom.carbonfibers.fragments.buttons;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -38,11 +38,11 @@ import com.android.settings.R;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.utils.du.ActionConstants;
-import com.aosip.owlsnest.utils.ActionFragment;
+import org.carbonrom.carbonfibers.utils.ActionFragment;
 import com.android.internal.utils.du.DUActionUtils;
 import com.android.settings.carbon.CustomSeekBarPreference;
 
-public class ButtonSettings extends ActionFragment implements OnPreferenceChangeListener {
+public class AdvancedOptions extends ActionFragment implements OnPreferenceChangeListener {
 
     //Keys
     private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
@@ -78,7 +78,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.aosip_button);
+        addPreferencesFromResource(R.xml.advanced_options);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -186,7 +186,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.OWLSNEST;
+        return MetricsEvent.CARBONFIBERS;
     }
 
     @Override
