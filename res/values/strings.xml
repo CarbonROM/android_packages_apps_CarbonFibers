@@ -590,4 +590,10 @@
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
     <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
+
+    <!-- IME notification -->
+    <string name="status_bar_ime_notification_title">Show IME notification</string>
+    <string name="status_bar_ime_notification_summary">If navigation bar is not available</string>
+    <string name="navigation_bar_ime_button_title">Show IME navigation bar button</string>
+    <string name="navigation_bar_ime_button_summary">Input switcher in navigation bar</string>
 </resources>
