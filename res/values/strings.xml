@@ -594,4 +594,11 @@
     <!-- Volume key controls media stream -->
     <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
     <string name="volume_keys_control_media_stream_summary">Force volume keys to control media stream</string>
+
+    <!-- IME notification -->
+    <string name="status_bar_ime_notification_title">Show IME notification</string>
+    <string name="status_bar_ime_notification_summary">If navigation bar is not available</string>
+    <string name="navigation_bar_ime_button_title">Show IME navigation bar button</string>
+    <string name="navigation_bar_ime_button_summary">Input switcher in navigation bar</string>
+
 </resources>
