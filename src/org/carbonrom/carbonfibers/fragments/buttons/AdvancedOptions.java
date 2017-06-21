@@ -77,6 +77,7 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
 
     private static final String KEY_HOME_LONG_PRESS        = "hardware_keys_home_long_press";
     private static final String KEY_HOME_DOUBLE_TAP        = "hardware_keys_home_double_tap";
+    private static final String KEY_BACK_SHORT_PRESS       = "hardware_keys_back_short_press";
     private static final String KEY_BACK_LONG_PRESS        = "hardware_keys_back_long_press";
     private static final String KEY_BACK_DOUBLE_TAP        = "hardware_keys_back_double_tap";
     private static final String KEY_MENU_LONG_PRESS        = "hardware_keys_menu_long_press";
@@ -106,6 +107,7 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
     private ListPreference mHomeLongPressAction;
     private ListPreference mNavHomeDoubleTapAction;
     private ListPreference mHomeDoubleTapAction;
+    private ListPreference mBackLongPressAction;
     private ListPreference mBackLongPressAction;
     private ListPreference mBackDoubleTapAction;
     private ListPreference mMenuLongPressAction;
@@ -156,6 +158,15 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
                     defaultDoubleTapOnHardwareHomeBehavior,
                     UserHandle.USER_CURRENT);
         mHomeDoubleTapAction = initActionList(KEY_HOME_DOUBLE_TAP, doubleTapOnHardwareHomeBehavior);
+
+        /* Back Key Short Press */
+        int defaultShortPressOnHardwareBackBehavior = res.getInteger(
+                com.android.internal.R.integer.config_shortPressOnBackKeyBehavior);
+        int shortPressOnHardwareBackBehavior = Settings.System.getIntForUser(resolver,
+                Settings.System.KEY_BACK_SHORT_PRESS_ACTION,
+                defaultShortPressOnHardwareBackBehavior,
+                UserHandle.USER_CURRENT);
+        mBackShortPressAction = initActionList(KEY_BACK_SHORT_PRESS, shortPressOnHardwareBackBehavior);
 
         /* Back Key Long Press */
         int defaultLongPressOnHardwareBackBehavior = res.getInteger(
@@ -324,6 +335,8 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
             return Settings.System.KEY_HOME_DOUBLE_TAP_ACTION;
         } else if (preference == mBackLongPressAction) {
             return Settings.System.KEY_BACK_LONG_PRESS_ACTION;
+        } else if (preference == mBackShortPressAction) {
+            return Settings.System.KEY_BACK_SHORT_PRESS_ACTION;
         } else if (preference == mBackDoubleTapAction) {
             return Settings.System.KEY_BACK_DOUBLE_TAP_ACTION;
         } else if (preference == mMenuLongPressAction) {
