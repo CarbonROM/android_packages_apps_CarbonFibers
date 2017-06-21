@@ -76,16 +76,22 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
     private static final String KEY_NAVIGATION_BAR         = "navigation_bar";
     private static final String KEY_BUTTON_BRIGHTNESS      = "button_brightness";
 
+    private static final String KEY_HOME_SHORT_PRESS       = "hardware_keys_home_short_press";
     private static final String KEY_HOME_LONG_PRESS        = "hardware_keys_home_long_press";
     private static final String KEY_HOME_DOUBLE_TAP        = "hardware_keys_home_double_tap";
+    private static final String KEY_BACK_SHORT_PRESS       = "hardware_keys_back_short_press";
     private static final String KEY_BACK_LONG_PRESS        = "hardware_keys_back_long_press";
     private static final String KEY_BACK_DOUBLE_TAP        = "hardware_keys_back_double_tap";
+    private static final String KEY_MENU_SHORT_PRESS       = "hardware_keys_menu_short_press";
     private static final String KEY_MENU_LONG_PRESS        = "hardware_keys_menu_long_press";
     private static final String KEY_MENU_DOUBLE_TAP        = "hardware_keys_menu_double_tap";
+    private static final String KEY_ASSIST_SHORT_PRESS     = "hardware_keys_assist_short_press";
     private static final String KEY_ASSIST_LONG_PRESS      = "hardware_keys_assist_long_press";
     private static final String KEY_ASSIST_DOUBLE_TAP      = "hardware_keys_assist_double_tap";
+    private static final String KEY_APP_SWITCH_SHORT_PRESS = "hardware_keys_app_switch_short_press";
     private static final String KEY_APP_SWITCH_LONG_PRESS  = "hardware_keys_app_switch_long_press";
     private static final String KEY_APP_SWITCH_DOUBLE_TAP  = "hardware_keys_app_switch_double_tap";
+    private static final String KEY_CAMERA_SHORT_PRESS     = "hardware_keys_camera_short_press";
     private static final String KEY_CAMERA_LONG_PRESS      = "hardware_keys_camera_long_press";
     private static final String KEY_CAMERA_DOUBLE_TAP      = "hardware_keys_camera_double_tap";
 
@@ -103,18 +109,24 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
 
     private int mDeviceHardwareKeys;
 
+    private ListPreference mHomeShortPressAction;
     private ListPreference mNavHomeLongPressAction;
     private ListPreference mHomeLongPressAction;
     private ListPreference mNavHomeDoubleTapAction;
     private ListPreference mHomeDoubleTapAction;
+    private ListPreference mBackShortPressAction;
     private ListPreference mBackLongPressAction;
     private ListPreference mBackDoubleTapAction;
+    private ListPreference mMenuShortPressAction;
     private ListPreference mMenuLongPressAction;
     private ListPreference mMenuDoubleTapAction;
+    private ListPreference mAssistShortPressAction;
     private ListPreference mAssistLongPressAction;
     private ListPreference mAssistDoubleTapAction;
+    private ListPreference mAppSwitchShortPressAction;
     private ListPreference mAppSwitchLongPressAction;
     private ListPreference mAppSwitchDoubleTapAction;
+    private ListPreference mCameraShortPressAction;
     private ListPreference mCameraLongPressAction;
     private ListPreference mCameraDoubleTapAction;
 
@@ -152,6 +164,15 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
             }
         }
 
+        /* Home Key Short Press */
+        int defaultShortPressOnHardwareHomeBehavior = res.getInteger(
+                com.android.internal.R.integer.config_shortPressOnHomeKeyBehavior);
+        int shortPressOnHardwareHomeBehavior = Settings.System.getIntForUser(resolver,
+                Settings.System.KEY_HOME_SHORT_PRESS_ACTION,
+                defaultShortPressOnHardwareHomeBehavior,
+                UserHandle.USER_CURRENT);
+        mHomeShortPressAction = initActionList(KEY_HOME_SHORT_PRESS, shortPressOnHardwareHomeBehavior);
+
         /* Home Key Long Press */
         int defaultLongPressOnHardwareHomeBehavior = res.getInteger(
                 com.android.internal.R.integer.config_longPressOnHomeKeyBehavior);
@@ -169,6 +190,15 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
                     defaultDoubleTapOnHardwareHomeBehavior,
                     UserHandle.USER_CURRENT);
         mHomeDoubleTapAction = initActionList(KEY_HOME_DOUBLE_TAP, doubleTapOnHardwareHomeBehavior);
+
+        /* Back Key Short Press */
+        int defaultShortPressOnHardwareBackBehavior = res.getInteger(
+                com.android.internal.R.integer.config_shortPressOnBackKeyBehavior);
+        int shortPressOnHardwareBackBehavior = Settings.System.getIntForUser(resolver,
+                Settings.System.KEY_BACK_SHORT_PRESS_ACTION,
+                defaultShortPressOnHardwareBackBehavior,
+                UserHandle.USER_CURRENT);
+        mBackShortPressAction = initActionList(KEY_BACK_SHORT_PRESS, shortPressOnHardwareBackBehavior);
 
         /* Back Key Long Press */
         int defaultLongPressOnHardwareBackBehavior = res.getInteger(
@@ -188,6 +218,15 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
                 UserHandle.USER_CURRENT);
         mBackDoubleTapAction = initActionList(KEY_BACK_DOUBLE_TAP, doubleTapOnHardwareBackBehavior);
 
+        /* Menu Key Short Press */
+        int defaultShortPressOnHardwareMenuBehavior = res.getInteger(
+                com.android.internal.R.integer.config_shortPressOnMenuKeyBehavior);
+        int shortPressOnHardwareMenuBehavior = Settings.System.getIntForUser(resolver,
+                Settings.System.KEY_MENU_SHORT_PRESS_ACTION,
+                defaultShortPressOnHardwareMenuBehavior,
+                UserHandle.USER_CURRENT);
+        mMenuShortPressAction = initActionList(KEY_MENU_SHORT_PRESS, shortPressOnHardwareMenuBehavior);
+
         /* Menu Key Long Press */
         int defaultLongPressOnHardwareMenuBehavior = res.getInteger(
                 com.android.internal.R.integer.config_longPressOnMenuKeyBehavior);
@@ -205,6 +244,15 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
                 defaultDoubleTapOnHardwareMenuBehavior,
                 UserHandle.USER_CURRENT);
         mMenuDoubleTapAction = initActionList(KEY_MENU_DOUBLE_TAP, doubleTapOnHardwareMenuBehavior);
+
+        /* Assist Key Short Press */
+        int defaultShortPressOnHardwareAssistBehavior = res.getInteger(
+                com.android.internal.R.integer.config_shortPressOnAssistKeyBehavior);
+        int shortPressOnHardwareAssistBehavior = Settings.System.getIntForUser(resolver,
+                Settings.System.KEY_ASSIST_SHORT_PRESS_ACTION,
+                defaultShortPressOnHardwareAssistBehavior,
+                UserHandle.USER_CURRENT);
+        mAssistShortPressAction = initActionList(KEY_ASSIST_SHORT_PRESS, shortPressOnHardwareAssistBehavior);
 
         /* Assist Key Long Press */
         int defaultLongPressOnHardwareAssistBehavior = res.getInteger(
@@ -224,6 +272,15 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
                 UserHandle.USER_CURRENT);
         mAssistDoubleTapAction = initActionList(KEY_ASSIST_DOUBLE_TAP, doubleTapOnHardwareAssistBehavior);
 
+        /* AppSwitch Key Short Press */
+        int defaultShortPressOnHardwareAppSwitchBehavior = res.getInteger(
+                com.android.internal.R.integer.config_shortPressOnAppSwitchKeyBehavior);
+        int shortPressOnHardwareAppSwitchBehavior = Settings.System.getIntForUser(resolver,
+                Settings.System.KEY_APP_SWITCH_SHORT_PRESS_ACTION,
+                defaultShortPressOnHardwareAppSwitchBehavior,
+                UserHandle.USER_CURRENT);
+        mAppSwitchShortPressAction = initActionList(KEY_APP_SWITCH_SHORT_PRESS, shortPressOnHardwareAppSwitchBehavior);
+
         /* AppSwitch Key Long Press */
         int defaultLongPressOnHardwareAppSwitchBehavior = res.getInteger(
                 com.android.internal.R.integer.config_longPressOnAppSwitchKeyBehavior);
@@ -241,6 +298,15 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
                 defaultDoubleTapOnHardwareAppSwitchBehavior,
                 UserHandle.USER_CURRENT);
         mAppSwitchDoubleTapAction = initActionList(KEY_APP_SWITCH_DOUBLE_TAP, doubleTapOnHardwareAppSwitchBehavior);
+
+        /* Camera Key Short Press */
+        int defaultShortPressOnHardwareCameraBehavior = res.getInteger(
+                com.android.internal.R.integer.config_shortPressOnCameraKeyBehavior);
+        int shortPressOnHardwareCameraBehavior = Settings.System.getIntForUser(resolver,
+                Settings.System.KEY_CAMERA_SHORT_PRESS_ACTION,
+                defaultShortPressOnHardwareCameraBehavior,
+                UserHandle.USER_CURRENT);
+        mCameraShortPressAction = initActionList(KEY_CAMERA_SHORT_PRESS, shortPressOnHardwareCameraBehavior);
 
         /* Camera Key Long Press */
         int defaultLongPressOnHardwareCameraBehavior = res.getInteger(
@@ -333,26 +399,38 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
             return Settings.System.NAVIGATION_BAR_ENABLED;
         } else if (preference == mButtonBrightness) {
             return Settings.System.BUTTON_BRIGHTNESS_ENABLED;
+        } else if (preference == mHomeShortPressAction) {
+            return Settings.System.KEY_HOME_SHORT_PRESS_ACTION;
         } else if (preference == mHomeLongPressAction) {
             return Settings.System.KEY_HOME_LONG_PRESS_ACTION;
         } else if (preference == mHomeDoubleTapAction) {
             return Settings.System.KEY_HOME_DOUBLE_TAP_ACTION;
         } else if (preference == mBackLongPressAction) {
             return Settings.System.KEY_BACK_LONG_PRESS_ACTION;
+        } else if (preference == mBackShortPressAction) {
+            return Settings.System.KEY_BACK_SHORT_PRESS_ACTION;
         } else if (preference == mBackDoubleTapAction) {
             return Settings.System.KEY_BACK_DOUBLE_TAP_ACTION;
+        } else if (preference == mMenuShortPressAction) {
+            return Settings.System.KEY_MENU_SHORT_PRESS_ACTION;
         } else if (preference == mMenuLongPressAction) {
             return Settings.System.KEY_MENU_LONG_PRESS_ACTION;
         } else if (preference == mMenuDoubleTapAction) {
             return Settings.System.KEY_MENU_DOUBLE_TAP_ACTION;
+        } else if (preference == mAssistShortPressAction) {
+            return Settings.System.KEY_ASSIST_SHORT_PRESS_ACTION;
         } else if (preference == mAssistLongPressAction) {
             return Settings.System.KEY_ASSIST_LONG_PRESS_ACTION;
         } else if (preference == mAssistDoubleTapAction) {
             return Settings.System.KEY_ASSIST_DOUBLE_TAP_ACTION;
+        } else if (preference == mAppSwitchShortPressAction) {
+            return Settings.System.KEY_APP_SWITCH_SHORT_PRESS_ACTION;
         } else if (preference == mAppSwitchLongPressAction) {
             return Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION;
         } else if (preference == mAppSwitchDoubleTapAction) {
             return Settings.System.KEY_APP_SWITCH_DOUBLE_TAP_ACTION;
+        } else if (preference == mCameraShortPressAction) {
+            return Settings.System.KEY_CAMERA_SHORT_PRESS_ACTION;
         } else if (preference == mCameraLongPressAction) {
             return Settings.System.KEY_CAMERA_LONG_PRESS_ACTION;
         } else if (preference == mCameraDoubleTapAction) {
