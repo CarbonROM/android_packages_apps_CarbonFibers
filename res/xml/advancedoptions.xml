@@ -59,6 +59,14 @@
         android:title="@string/hardware_keys_back_key_title" >
 
         <ListPreference
+            android:key="hardware_keys_back_short_press"
+            android:dialogTitle="@string/hardware_keys_short_press_title"
+            android:title="@string/hardare_keys_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+        <ListPreference
             android:key="hardware_keys_back_long_press"
             android:dialogTitle="@string/hardware_keys_long_press_title"
             android:title="@string/hardware_keys_long_press_title"
