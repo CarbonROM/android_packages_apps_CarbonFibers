@@ -349,6 +349,8 @@
 
     <!-- Buttons -->
     <string-array name="hardware_keys_action_entries" translatable="false">
+        <item>@string/hardware_keys_action_home</item>
+        <item>@string/hardware_keys_action_back</item>
         <item>@string/hardware_keys_action_nothing</item>
         <item>@string/hardware_keys_action_menu</item>
         <item>@string/hardware_keys_action_app_switch</item>
@@ -364,6 +366,8 @@
     </string-array>
 
     <string-array name="hardware_keys_action_values" translatable="false">
+        <item>100</item>
+        <item>101</item>
         <item>0</item>
         <item>1</item>
         <item>2</item>

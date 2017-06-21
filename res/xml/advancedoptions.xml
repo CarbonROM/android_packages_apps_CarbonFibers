@@ -42,6 +42,14 @@
         android:title="@string/hardware_keys_home_key_title" >
 
         <ListPreference
+            android:key="hardware_keys_home_short_press"
+            android:dialogTitle="@string/hardware_keys_short_press_title"
+            android:title="@string/hardware_keys_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+        <ListPreference
             android:key="hardware_keys_home_long_press"
             android:dialogTitle="@string/hardware_keys_long_press_title"
             android:title="@string/hardware_keys_long_press_title"
@@ -62,6 +70,14 @@
     <PreferenceCategory
         android:key="back_key"
         android:title="@string/hardware_keys_back_key_title" >
+
+        <ListPreference
+            android:key="hardware_keys_back_short_press"
+            android:dialogTitle="@string/hardware_keys_short_press_title"
+            android:title="@string/hardware_keys_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
 
         <ListPreference
             android:key="hardware_keys_back_long_press"
@@ -86,6 +102,14 @@
         android:title="@string/hardware_keys_menu_key_title" >
 
         <ListPreference
+            android:key="hardware_keys_menu_short_press"
+            android:dialogTitle="@string/hardware_keys_short_press_title"
+            android:title="@string/hardware_keys_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+        <ListPreference
             android:key="hardware_keys_menu_long_press"
             android:dialogTitle="@string/hardware_keys_long_press_title"
             android:title="@string/hardware_keys_long_press_title"
@@ -106,6 +130,14 @@
     <PreferenceCategory
         android:key="assist_key"
         android:title="@string/hardware_keys_assist_key_title" >
+
+        <ListPreference
+            android:key="hardware_keys_assist_short_press"
+            android:dialogTitle="@string/hardware_keys_short_press_title"
+            android:title="@string/hardware_keys_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
 
         <ListPreference
             android:key="hardware_keys_assist_long_press"
@@ -130,6 +162,14 @@
         android:title="@string/hardware_keys_app_switch_key_title" >
 
         <ListPreference
+            android:key="hardware_keys_app_switch_short_press"
+            android:dialogTitle="@string/hardware_keys_short_press_title"
+            android:title="@string/hardware_keys_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
+
+        <ListPreference
             android:key="hardware_keys_app_switch_long_press"
             android:dialogTitle="@string/hardware_keys_long_press_title"
             android:title="@string/hardware_keys_long_press_title"
@@ -150,6 +190,14 @@
     <PreferenceCategory
         android:key="camera_key"
         android:title="@string/hardware_keys_camera_key_title">
+
+        <ListPreference
+            android:key="hardware_keys_camera_short_press"
+            android:dialogTitle="@string/hardware_keys_short_press_title"
+            android:title="@string/hardware_keys_long_press_title"
+            android:entries="@array/hardware_keys_action_entries"
+            android:entryValues="@array/hardware_keys_action_values"
+            android:persistent="false" />
 
         <ListPreference
             android:key="hardware_keys_camera_long_press"
