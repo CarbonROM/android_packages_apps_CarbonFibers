@@ -57,6 +57,12 @@
         android:summary="@string/qs_tile_title_visibility_summary"
         android:defaultValue="true"/>
 
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="screenshot_type_expanded"
+        android:title="@string/screenshot_type_expanded_title"
+        android:summary="@string/screenshot_type_expanded_summary"
+        android:defaultValue="false" />
+
     <com.android.settings.carbon.CustomSeekBarPreference
         android:key="qs_layout_columns"
         android:title="@string/qs_columns_title"
