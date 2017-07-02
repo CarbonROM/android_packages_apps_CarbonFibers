@@ -24,11 +24,11 @@
         android:key="nav_keys"
         android:title="@string/nav_keys_title" >
 
-        <SwitchPreference
-           android:key ="navigation_bar"
-           android:title="@string/enable_navigation_bar_title"
-           android:summary="@string/enable_navigation_bar_summary"
-           android:defaultValue="false" />
+       <SwitchPreference
+          android:key ="navigation_bar"
+          android:title="@string/enable_navigation_bar_title"
+          android:summary="@string/enable_navigation_bar_summary"
+          android:defaultValue="false" />
 
         <SwitchPreference
             android:key="button_brightness"
@@ -37,6 +37,24 @@
             android:persistent="false" />
      </PreferenceCategory>
 
+    <SwitchPreference
+        android:key="swap_navigation_keys"
+        android:title="@string/swap_navigation_keys_title"
+        android:summary="@string/swap_navigation_keys_summary"
+        android:persistent="false" />
+
+    <SwitchPreference
+        android:key="swap_slider_order"
+        android:title="@string/swap_slider_order_title"
+        android:summary="@string/swap_slider_order_summary"
+        android:persistent="false" />
+
+    <SwitchPreference
+        android:key="button_brightness"
+        android:title="@string/hardware_brightness_keys_title"
+        android:summary="@string/hardware_brightness_keys_summary"
+        android:persistent="false" />
+ 
      <PreferenceCategory
         android:key="home_key"
         android:title="@string/hardware_keys_home_key_title" >
