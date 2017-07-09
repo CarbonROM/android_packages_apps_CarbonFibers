@@ -17,18 +17,6 @@
     android:title="@string/lockscreen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.android.settings.carbon.SecureSettingSwitchPreference
-        android:key="face_auto_unlock"
-        android:title="@string/face_auto_unlock_title"
-        android:summary="@string/face_auto_unlock_summary"
-        android:defaultValue="false"/>
-
-    <com.android.settings.carbon.SystemSettingSwitchPreference
-        android:key="lockscreen_scramble_pin_layout"
-        android:title="@string/unlock_scramble_pin_layout_title"
-        android:summary="@string/unlock_scramble_pin_layout_summary"
-        android:defaultValue="false" />
-
     <com.android.settings.carbon.SystemSettingSwitchPreference
         android:key="lockscreen_charging_current"
         android:title="@string/lockscreen_charging_current_title"
@@ -42,4 +30,28 @@
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
     </Preference>
+
+    <PreferenceCategory
+        android:title="@string/lockscreen_security_category">
+
+        <com.android.settings.carbon.SystemSettingSwitchPreference
+            android:key="lockscreen_quick_unlock_control"
+            android:title="@string/unlock_quick_unlock_control_title"
+            android:summary="@string/unlock_quick_unlock_control_summary"
+            android:defaultValue="false" />
+
+        <com.android.settings.carbon.SecureSettingSwitchPreference
+            android:key="face_auto_unlock"
+            android:title="@string/face_auto_unlock_title"
+            android:summary="@string/face_auto_unlock_summary"
+            android:defaultValue="false"/>
+
+        <com.android.settings.carbon.SystemSettingSwitchPreference
+            android:key="lockscreen_scramble_pin_layout"
+            android:title="@string/unlock_scramble_pin_layout_title"
+            android:summary="@string/unlock_scramble_pin_layout_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

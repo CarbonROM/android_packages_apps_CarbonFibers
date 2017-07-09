@@ -28,6 +28,8 @@
     <string name="system_volume_category">Volume</string>
     <string name="system_recents_category">Recents</string>
 
+    <string name="lockscreen_security_category">Security</string>
+
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
     <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nSo, if you find a bug with any setting in CarbonFibers, please open up a ticket on Jira or contact a Carbon developer with the following:\n\n1. #blamemyself*\n2. Logs!\n3. Kernel and mods used\n4. Extra useful information\n\nIf you fail to report something with the above information, do not expect things to be fixed. Remember, we are not as perfect as Patrick, so we do miss things occasionally.</string>
@@ -271,5 +273,9 @@
     <!-- Face Auto Unlock -->
     <string name="face_auto_unlock_title">Auto face unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lock screen after recognizing trusted face</string>
+
+   <!-- Quick unlock -->
+   <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+   <string name="unlock_quick_unlock_control_summary">Unlock when correct PIN/Password is entered</string>
 
 </resources>
