@@ -18,6 +18,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="lockscreen_quick_unlock_control"
+        android:title="@string/unlock_quick_unlock_control_title"
+        android:summary="@string/unlock_quick_unlock_control_summary" />
+
+    <com.android.settings.carbon.SystemSettingSwitchPreference
         android:key="lockscreen_scramble_pin_layout"
         android:title="@string/unlock_scramble_pin_layout_title"
         android:summary="@string/unlock_scramble_pin_layout_summary"

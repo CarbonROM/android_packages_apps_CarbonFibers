@@ -272,4 +272,8 @@
     <string name="face_auto_unlock_title">Auto face unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lock screen after recognizing trusted face</string>
 
+   <!-- Quick unlock -->
+   <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+   <string name="unlock_quick_unlock_control_summary">Unlock when correct PIN/Password is entered</string>
+
 </resources>
