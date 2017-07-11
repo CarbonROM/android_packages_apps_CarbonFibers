@@ -1,4 +1,1316 @@
 {
   "pushCert": "certificate version 0.1\npusher B2CA2F21 1499264962 +0200\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_CarbonFibers\nnonce 1499264966-10E7018732BC42EAF9C3C83D4269416655F2FF60\n\n0000000000000000000000000000000000000000 62f3d3c1ae537846a94378b79a2b9eafb2e09668 refs/for/cr-5.1\n-----BEGIN PGP SIGNATURE-----\n\niQEcBAABCAAGBQJZXPfCAAoJEDSs0FKyyi8hOVUH/36htTFZkY/lTnJZ3fcRXuDt\nciitZ4KSkOeJtGK2ZLlfGSZXQppxbmeygYVf2RUhAZyveHDP3YWgpIeyM5sc6IE2\nND/4/4/Kh3ySkYCl41DSz6YQYE29rnDjlHS8R+DPLlyiKF2zAmn2Ckq9+Yvmml+t\ndiHsdUjP3VGwtLHjGbIxfLDb8rMqmkujsZGMpj3sV2NcZ00/qTkpVt/eh8qE6Wdc\nJwawUdR4PaOtuF/f6IKisPwcvdh8Dsj6gEO7xNHe3w64FSxN0jI2W68iLbwSpI3r\nzqKJrQUPE7+JrJcgVPWvYwhelXi1Xg11ItrcuiLmIZoGOyYfqmZc/El+SOnpo7U\u003d\n\u003dDWJB\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a0e1d27_66792093",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Misceláneo could also fit here since it is the exact meaning of misc. I am fine with either one of the two options.",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 48
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_466e1ccb",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Imo sounds a bit better: ¿Restablecer los valores por defecto?",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 77
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_267328b3",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "typo. Should be Atención",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 46
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_066824b9",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "typo. Should be Avanzado",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 44
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_e66410e7",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "typo. personalizar not peronalizar. \nImo is better: Cambia y personaliza el icono de batería.",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 102
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_c6610cd5",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Hmm tile is hard to translate since in spanish it means teja/baldosa. I will think about it.",
+      "range": {
+        "startLine": 57,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 89
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_a65e1811",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Permite establecer el mismo estilo de icono elegido para la batería en la barra de estado.",
+      "range": {
+        "startLine": 58,
+        "startChar": 0,
+        "endLine": 58,
+        "endChar": 131
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_869b14c9",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Color del icono de batería en la barra de estado al cargar el dispositivo.",
+      "range": {
+        "startLine": 59,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 95
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_66a000f5",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Establece el color que el icono de batería en la barra de estado tendrá al cargar el dispositivo.",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 60,
+        "endChar": 118
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_46a5fc02",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Porcentaje de batería en la barra de estado al cargar el dispositivo",
+      "range": {
+        "startLine": 62,
+        "startChar": 0,
+        "endLine": 62,
+        "endChar": 94
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_26aa08d5",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Muestra el porcentaje de batería mientras el dispositivo esta cargandose",
+      "range": {
+        "startLine": 63,
+        "startChar": 0,
+        "endLine": 63,
+        "endChar": 124
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_06af04e5",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Muestra el porcentaje de batería mientras el dispositivo esta cargandose",
+      "range": {
+        "startLine": 64,
+        "startChar": 0,
+        "endLine": 64,
+        "endChar": 124
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_e6abf0d4",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Símbolo de carga personalizado",
+      "range": {
+        "startLine": 65,
+        "startChar": 0,
+        "endLine": 65,
+        "endChar": 81
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_c6b8ec2c",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Símbolo de carga personalizado",
+      "range": {
+        "startLine": 66,
+        "startChar": 0,
+        "endLine": 66,
+        "endChar": 82
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_a6b5f832",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Deshabilitado",
+      "range": {
+        "startLine": 67,
+        "startChar": 0,
+        "endLine": 67,
+        "endChar": 65
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_8682f450",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Rayo",
+      "range": {
+        "startLine": 68,
+        "startChar": 0,
+        "endLine": 68,
+        "endChar": 60
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_6687e062",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Afaik there is no word on Spanish to say tilde.",
+      "range": {
+        "startLine": 69,
+        "startChar": 0,
+        "endLine": 69,
+        "endChar": 60
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_467cdc72",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Modifica el diseño y las caracteristicas de recientes\n\nrecientes sounds quite weird on this word imo.",
+      "range": {
+        "startLine": 81,
+        "startChar": 0,
+        "endLine": 81,
+        "endChar": 76
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_2681e84a",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Anima el boton de inicio como los Pixel\n\nNot so sure about this translation",
+      "range": {
+        "startLine": 84,
+        "startChar": 0,
+        "endLine": 84,
+        "endChar": 79
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_0696e494",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Activa las animaciones del botón de inicio como los Pixel",
+      "range": {
+        "startLine": 85,
+        "startChar": 0,
+        "endLine": 85,
+        "endChar": 97
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_e692d09e",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "typo. just one del",
+      "range": {
+        "startLine": 92,
+        "startChar": 0,
+        "endLine": 92,
+        "endChar": 109
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_c68fcc74",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "¡Ayúdanos y te ayudaremos!",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 98,
+        "endChar": 71
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_a68cd880",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Desgraciadamente, no somos magos. Asi que si encuentras algun bug, abre un ticket en jira o contacta con algún desarrolador de Carbon con información sobre el problema. No esperes que las cosas se solucionen si no sigues esos pasos.\nRecuerda, no somoms tan perfectos como Patrick, a veces se nos escapan cosas.",
+      "range": {
+        "startLine": 99,
+        "startChar": 0,
+        "endLine": 99,
+        "endChar": 518
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_86e9d41c",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "¡Léelo entero!",
+      "range": {
+        "startLine": 100,
+        "startChar": 0,
+        "endLine": 100,
+        "endChar": 75
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_66eec024",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Not so sure about the toast translation",
+      "range": {
+        "startLine": 103,
+        "startChar": 0,
+        "endLine": 103,
+        "endChar": 68
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_46f3bc0a",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Oscuridad del fondo del menu de apagado",
+      "range": {
+        "startLine": 120,
+        "startChar": 0,
+        "endLine": 120,
+        "endChar": 77
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_26f8c8e4",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "typo. Should be deshabilitado",
+      "range": {
+        "startLine": 126,
+        "startChar": 0,
+        "endLine": 126,
+        "endChar": 63
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_e6d9b084",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Forzar habilitado",
+      "range": {
+        "startLine": 141,
+        "startChar": 63,
+        "endLine": 141,
+        "endChar": 70
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_06ddc470",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Forzar deshabilitado",
+      "range": {
+        "startLine": 144,
+        "startChar": 0,
+        "endLine": 144,
+        "endChar": 83
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_c6e6ac44",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "typo. Vibrar al tocar los ajustes rapidos.\najuste: singular\nrapidos: plural",
+      "range": {
+        "startLine": 148,
+        "startChar": 0,
+        "endLine": 148,
+        "endChar": 92
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_a6e3b832",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "typo.\nrows\u003dfilas not columnas\nlandscape\u003d horizontal",
+      "range": {
+        "startLine": 153,
+        "startChar": 0,
+        "endLine": 153,
+        "endChar": 71
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_66d5a042",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "typo. Muestra",
+      "range": {
+        "startLine": 157,
+        "startChar": 0,
+        "endLine": 157,
+        "endChar": 98
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_46ca9ca2",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Desbloquear con los botones de volumen",
+      "range": {
+        "startLine": 164,
+        "startChar": 0,
+        "endLine": 164,
+        "endChar": 76
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_26cfa8b2",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 172,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "typo. Barra not arra.",
+      "range": {
+        "startLine": 172,
+        "startChar": 0,
+        "endLine": 172,
+        "endChar": 66
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_06c4a490",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Selecciona la región de la pantalla que quieres capturar",
+      "range": {
+        "startLine": 177,
+        "startChar": 0,
+        "endLine": 177,
+        "endChar": 129
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_e6c0907e",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 213,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "La linterna se encenderá al mantener pulsado el boton de encendido cuando la pantalla esté apagada.",
+      "range": {
+        "startLine": 213,
+        "startChar": 0,
+        "endLine": 213,
+        "endChar": 143
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_c6bd8c04",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Control de las notificaciones",
+      "range": {
+        "startLine": 220,
+        "startChar": 0,
+        "endLine": 220,
+        "endChar": 80
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_a6ba9808",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 221,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Controles avanzados de las notificaciones e informacion.",
+      "range": {
+        "startLine": 221,
+        "startChar": 0,
+        "endLine": 221,
+        "endChar": 101
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_863794b0",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "typo. Tráfico not trádico",
+      "range": {
+        "startLine": 229,
+        "startChar": 0,
+        "endLine": 229,
+        "endChar": 92
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_663c8094",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Subida",
+      "range": {
+        "startLine": 233,
+        "startChar": 0,
+        "endLine": 233,
+        "endChar": 58
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_46417c0a",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 234,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Bajada",
+      "range": {
+        "startLine": 234,
+        "startChar": 0,
+        "endLine": 234,
+        "endChar": 61
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_26468824",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Subida y bajada",
+      "range": {
+        "startLine": 235,
+        "startChar": 0,
+        "endLine": 235,
+        "endChar": 69
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_064b842c",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Cabezera",
+      "range": {
+        "startLine": 277,
+        "startChar": 0,
+        "endLine": 277,
+        "endChar": 50
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_e647701c",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 278,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Activa modificaciones de la cabezera",
+      "range": {
+        "startLine": 278,
+        "startChar": 0,
+        "endLine": 278,
+        "endChar": 73
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_c6546ccc",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 279,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Acceso directo a los ajustes",
+      "range": {
+        "startLine": 279,
+        "startChar": 0,
+        "endLine": 279,
+        "endChar": 68
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_a65178da",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 280,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Oculta el acceso directo a los ajustes",
+      "range": {
+        "startLine": 280,
+        "startChar": 0,
+        "endLine": 280,
+        "endChar": 79
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_865e74e8",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Acceso directo a los ajustes en la vista extendida",
+      "range": {
+        "startLine": 281,
+        "startChar": 0,
+        "endLine": 281,
+        "endChar": 81
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_666360b2",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 282,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Oculta el acceso directo a los ajustes en la vista extendida",
+      "range": {
+        "startLine": 282,
+        "startChar": 0,
+        "endLine": 282,
+        "endChar": 97
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_46585cfa",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 283,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Icono de editar",
+      "range": {
+        "startLine": 283,
+        "startChar": 0,
+        "endLine": 283,
+        "endChar": 51
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_265d68ea",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 284,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Oculta el icono de editar",
+      "range": {
+        "startLine": 284,
+        "startChar": 0,
+        "endLine": 284,
+        "endChar": 67
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_0672647c",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 285,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Multiusuario",
+      "range": {
+        "startLine": 285,
+        "startChar": 0,
+        "endLine": 285,
+        "endChar": 70
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_e66e5096",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 286,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Oculta el icono de mutiusuario",
+      "range": {
+        "startLine": 286,
+        "startChar": 0,
+        "endLine": 286,
+        "endChar": 81
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_c66b4c84",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Expandir",
+      "range": {
+        "startLine": 287,
+        "startChar": 0,
+        "endLine": 287,
+        "endChar": 70
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_a6685888",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 288,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Ocultar el icono de expandir (^)",
+      "range": {
+        "startLine": 288,
+        "startChar": 0,
+        "endLine": 288,
+        "endChar": 85
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_860554c4",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "whitespace error",
+      "range": {
+        "startLine": 435,
+        "startChar": 59,
+        "endLine": 435,
+        "endChar": 60
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_660a40d4",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 483,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Estadísticas de CarbonROM",
+      "range": {
+        "startLine": 483,
+        "startChar": 0,
+        "endLine": 483,
+        "endChar": 75
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_460f3ce2",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 485,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-11T23:25:23Z",
+      "side": 1,
+      "message": "Sobre",
+      "range": {
+        "startLine": 485,
+        "startChar": 0,
+        "endLine": 485,
+        "endChar": 68
+      },
+      "revId": "62f3d3c1ae537846a94378b79a2b9eafb2e09668",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    }
+  ]
 }
