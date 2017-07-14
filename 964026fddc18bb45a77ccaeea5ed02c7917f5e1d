@@ -1,4 +1,511 @@
 {
   "pushCert": "certificate version 0.1\npusher B2CA2F21 1499971381 +0200\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_CarbonFibers\nnonce 1499971385-6C0A60FEFF5111F9898E0CC810038CA930ECF4E9\n\n0000000000000000000000000000000000000000 964026fddc18bb45a77ccaeea5ed02c7917f5e1d refs/for/cr-5.1\n-----BEGIN PGP SIGNATURE-----\n\niQEcBAABCAAGBQJZZ781AAoJEDSs0FKyyi8hN1IIAKCf1cqBeCiNpqonE7XesV5f\nFKSsHHLOj6QtDzbL5NmuzE/y4mHAh+RxeKxuMQYQ+8VAlEAYWOsDw4d/WZFO51ld\nPOEJS0biUbHaesKO50lDGzb8NKDP/5tDfI1g9P6/rlSxzafqBBoD6u5MvFjcRrmF\nX1jr7RPw91drzfmZ2U63OohfDT/mEpFk9W6dHzISBHMNMHkonF6gRCd/u09+Was3\nKtd38UP5RkfQ5957yZT8kUA4paFCO0GgVjtt0NhuFunj1iEwRe5VtyXHBNUxZsIk\nc28fnwkMjn1wmUFIsjWDCkKIDwcC0vswbLHC3YEapFrajbvYSf+vuI54lUjbhCg\u003d\n\u003dWXF0\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a0e1d27_d1578425",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "typo. acciión \u003d acción\nalicación \u003d aplicación",
+      "range": {
+        "startLine": 333,
+        "startChar": 0,
+        "endLine": 333,
+        "endChar": 156
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_b1541022",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 360,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Imagen de la cabezera",
+      "range": {
+        "startLine": 360,
+        "startChar": 0,
+        "endLine": 360,
+        "endChar": 70
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_91310c0e",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 361,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Usa una imagen personalizada en la cabezera",
+      "range": {
+        "startLine": 361,
+        "startChar": 0,
+        "endLine": 361,
+        "endChar": 82
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_71367805",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 362,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Usa una imagen personalizada para la cabezera del panel de notificaciones",
+      "range": {
+        "startLine": 362,
+        "startChar": 0,
+        "endLine": 362,
+        "endChar": 99
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_513b74eb",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 363,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Packs de imágenes",
+      "range": {
+        "startLine": 363,
+        "startChar": 0,
+        "endLine": 363,
+        "endChar": 72
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_31400056",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 364,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Sombra de la imagen",
+      "range": {
+        "startLine": 364,
+        "startChar": 0,
+        "endLine": 364,
+        "endChar": 85
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_1125fcc1",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 365,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Para una mejor visibilidad con imágenes especialmente claras",
+      "range": {
+        "startLine": 365,
+        "startChar": 0,
+        "endLine": 365,
+        "endChar": 106
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_f12168b5",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 368,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Estático",
+      "range": {
+        "startLine": 368,
+        "startChar": 0,
+        "endLine": 368,
+        "endChar": 63
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_d12e64a5",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 369,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Dinámico",
+      "range": {
+        "startLine": 369,
+        "startChar": 0,
+        "endLine": 369,
+        "endChar": 66
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_b12bf093",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 370,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Tipo de proveedor",
+      "range": {
+        "startLine": 370,
+        "startChar": 0,
+        "endLine": 370,
+        "endChar": 72
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_9118ec85",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 371,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Busca entre los packs instalados",
+      "range": {
+        "startLine": 371,
+        "startChar": 0,
+        "endLine": 371,
+        "endChar": 79
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_711d5873",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 372,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Presiona en cualquier imagen para usarla como cabezera estatica",
+      "range": {
+        "startLine": 372,
+        "startChar": 0,
+        "endLine": 372,
+        "endChar": 103
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_3117e053",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 376,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Doble toque para apagar la pantalla",
+      "range": {
+        "startLine": 376,
+        "startChar": 0,
+        "endLine": 376,
+        "endChar": 101
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_51125463",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 378,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "\"....para apagar la pantalla\" better this way imo",
+      "range": {
+        "startLine": 378,
+        "startChar": 0,
+        "endLine": 378,
+        "endChar": 111
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_110cdc41",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 383,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Maybe better to use: Cerrar Todo than cerrar todas las aplicaciones.",
+      "range": {
+        "startLine": 383,
+        "startChar": 0,
+        "endLine": 383,
+        "endChar": 87
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_f108482f",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 427,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Sobre el difuminado",
+      "range": {
+        "startLine": 427,
+        "startChar": 0,
+        "endLine": 427,
+        "endChar": 53
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_0c13a35d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 428,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "La personalización del difuminado esta desactivada en la pantalla de bloqueo.\nSolo las notificaciones transparentes estan activadas.\n\nSomething like this?",
+      "range": {
+        "startLine": 428,
+        "startChar": 0,
+        "endLine": 428,
+        "endChar": 147
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_ec0f4f2d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "whitespace error. Remove the red area to fix it.",
+      "range": {
+        "startLine": 435,
+        "startChar": 59,
+        "endLine": 435,
+        "endChar": 60
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_ac19577b",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 543,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "typo. visualización",
+      "range": {
+        "startLine": 543,
+        "startChar": 0,
+        "endLine": 543,
+        "endChar": 67
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_8c2693b9",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 551,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Líneas de los textos\n\nMaybe?",
+      "range": {
+        "startLine": 551,
+        "startChar": 0,
+        "endLine": 551,
+        "endChar": 83
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_6c2b3f83",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 552,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "Muestra los textos en más líneas",
+      "range": {
+        "startLine": 552,
+        "startChar": 0,
+        "endLine": 552,
+        "endChar": 113
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_cc1c8b6d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 592,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:52:10Z",
+      "side": 1,
+      "message": "whitespace error",
+      "range": {
+        "startLine": 592,
+        "startChar": 0,
+        "endLine": 592,
+        "endChar": 4
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    }
+  ]
 }
