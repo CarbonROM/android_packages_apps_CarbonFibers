@@ -486,6 +486,75 @@
     },
     {
       "key": {
+        "uuid": "9a0e1d27_0c3a83cd",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 553,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:53:56Z",
+      "side": 1,
+      "message": "Muestra los textos en solo 1 línea",
+      "range": {
+        "startLine": 553,
+        "startChar": 0,
+        "endLine": 553,
+        "endChar": 110
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_ec362fe7",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 554,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:53:56Z",
+      "side": 1,
+      "message": "Elimina los textos",
+      "range": {
+        "startLine": 554,
+        "startChar": 0,
+        "endLine": 554,
+        "endChar": 77
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0e1d27_cc336bf5",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 555,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2017-07-14T16:53:56Z",
+      "side": 1,
+      "message": "Elimina los textos que aparecen debajo de cada título en los ajustes",
+      "range": {
+        "startLine": 555,
+        "startChar": 0,
+        "endLine": 555,
+        "endChar": 116
+      },
+      "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a0e1d27_cc1c8b6d",
         "filename": "res/values-es/strings.xml",
         "patchSetId": 4
