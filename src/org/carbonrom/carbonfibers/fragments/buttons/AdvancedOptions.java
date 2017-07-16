@@ -74,6 +74,7 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
     private boolean hasHardwareKeys;
 
     private static final String KEY_NAVIGATION_BAR         = "navigation_bar";
+    private static final String KEY_BUTTON_BRIGHTNESS      = "button_brightness";
 
     private static final String KEY_HOME_LONG_PRESS        = "hardware_keys_home_long_press";
     private static final String KEY_HOME_DOUBLE_TAP        = "hardware_keys_home_double_tap";
@@ -118,6 +119,7 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
     private ListPreference mCameraDoubleTapAction;
 
     private SwitchPreference mNavigationBar;
+    private SwitchPreference mButtonBrightness;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -137,6 +139,16 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
         mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR);
         if (mNavigationBar != null) {
             mNavigationBar.setOnPreferenceChangeListener(this);
+        /* Button Brightness */
+        mButtonBrightness = (SwitchPreference) findPreference(KEY_BUTTON_BRIGHTNESS);
+        if (mButtonBrightness != null) {
+            int defaultButtonBrightness = res.getInteger(
+                    com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
+            if (defaultButtonBrightness > 0) {
+                mButtonBrightness.setOnPreferenceChangeListener(this);
+            } else {
+                prefScreen.removePreference(mButtonBrightness);
+            }
         }
 
         /* Home Key Long Press */
@@ -318,6 +330,8 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
             return EMPTY_STRING;
         } else if (preference == mNavigationBar) {
             return Settings.System.NAVIGATION_BAR_ENABLED;
+        } else if (preference == mButtonBrightness) {
+            return Settings.System.BUTTON_BRIGHTNESS_ENABLED;
         } else if (preference == mHomeLongPressAction) {
             return Settings.System.KEY_HOME_LONG_PRESS_ACTION;
         } else if (preference == mHomeDoubleTapAction) {
@@ -373,10 +387,15 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
         final boolean navigationBarEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.NAVIGATION_BAR_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
 
+        final boolean buttonBrightnessEnabled = Settings.System.getIntForUser(resolver,
+                Settings.System.BUTTON_BRIGHTNESS_ENABLED, 1, UserHandle.USER_CURRENT) != 0;
+
         if (mNavigationBar != null) {
             mNavigationBar.setChecked(navigationBarEnabled);
         }
-
+        if (mButtonBrightness != null) {
+            mButtonBrightness.setChecked(buttonBrightnessEnabled);
+        }
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -400,6 +419,12 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
 
         final PreferenceCategory cameraCategory =
                 (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_CAMERA);
+
+        if (mDeviceHardwareKeys != 0 && mButtonBrightness != null) {
+            mButtonBrightness.setEnabled(!navigationBarEnabled);
+        } else if (mDeviceHardwareKeys == 0 && mButtonBrightness != null) {
+            prefScreen.removePreference(mButtonBrightness);
+        }
 
         if (hasHardwareKeys) {
             navCategory.setEnabled(true);

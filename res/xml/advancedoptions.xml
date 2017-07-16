@@ -29,7 +29,12 @@
            android:title="@string/enable_navigation_bar_title"
            android:summary="@string/enable_navigation_bar_summary"
            android:defaultValue="false" />
-
+            
+        <SwitchPreference
+            android:key="button_brightness"
+            android:title="@string/hardware_brightness_keys_title"
+            android:summary="@string/hardware_brightness_keys_summary"
+            android:persistent="false" />
      </PreferenceCategory>
 
      <PreferenceCategory
