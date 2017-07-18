@@ -30,6 +30,12 @@
         android:summary="@string/double_tap_lock_sleep_summary"
         android:defaultValue="false" />
 
+   <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="three_finger_gesture"
+        android:title="@string/three_finger_gesture"
+        android:summary="@string/three_finger_gesture_summary"
+        android:defaultValue="false" />
+
     <com.android.settings.gestures.GesturePreference
         android:key="gesture_swipe_down_fingerprint"
         android:title="@string/fingerprint_swipe_for_notifications_title"
