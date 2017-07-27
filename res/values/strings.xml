@@ -540,6 +540,7 @@
     <string name="hardware_keys_action_split_screen">Split Screen</string>
     <string name="hardware_keys_action_screen_off">Turn screen off</string>
     <string name="hardware_keys_action_kill_app">Kill current app</string>
+    <string name="hardware_keys_action_power_menu">Launch the power menu</string>
 
     <!-- Header Date and Time Position -->
     <string name="qs_date_time_center_title">Center Date and Time</string>
