@@ -518,6 +518,8 @@
     <string name="advanced_options_summary">Set longpress and double tap options for buttons</string>
     <string name="enable_navigation_bar_title">Enable software keys</string>
     <string name="enable_navigation_bar_summary">Enable on-screen navigation keys</string>
+    <string name="swap_navigation_keys_title">Swap keys</string>
+    <string name="swap_navigation_keys_summary">Swap back and recents keys</string>
     <string name="hardware_brightness_keys_title">Backlight</string>
     <string name="hardware_brightness_keys_summary">Enable navigation keys backlight</string>
     <string name="hardware_keys_home_key_title">Home button</string>
