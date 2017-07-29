@@ -74,6 +74,7 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
     private boolean hasHardwareKeys;
 
     private static final String KEY_NAVIGATION_BAR         = "navigation_bar";
+    private static final String KEY_SWAP_NAVIGATION_KEYS   = "swap_navigation_keys";
     private static final String KEY_BUTTON_BRIGHTNESS      = "button_brightness";
 
     private static final String KEY_HOME_SHORT_PRESS       = "hardware_keys_home_short_press";
@@ -131,6 +132,7 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
     private ListPreference mCameraDoubleTapAction;
 
     private SwitchPreference mNavigationBar;
+    private SwitchPreference mSwapNavigationkeys;
     private SwitchPreference mButtonBrightness;
 
     @Override
@@ -162,6 +164,12 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
             } else {
                 prefScreen.removePreference(mButtonBrightness);
             }
+        }
+
+        /* Swap Navigation Keys */
+        mSwapNavigationkeys = (SwitchPreference) findPreference(KEY_SWAP_NAVIGATION_KEYS);
+        if (mSwapNavigationkeys != null) {
+            mSwapNavigationkeys.setOnPreferenceChangeListener(this);
         }
 
         /* Home Key Short Press */
@@ -397,6 +405,8 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
             return EMPTY_STRING;
         } else if (preference == mNavigationBar) {
             return Settings.System.NAVIGATION_BAR_ENABLED;
+        } else if (preference == mSwapNavigationkeys) {
+            return Settings.System.SWAP_NAVIGATION_KEYS;
         } else if (preference == mButtonBrightness) {
             return Settings.System.BUTTON_BRIGHTNESS_ENABLED;
         } else if (preference == mHomeShortPressAction) {
@@ -469,11 +479,21 @@ public class AdvancedOptions extends SettingsPreferenceFragment implements
         final boolean buttonBrightnessEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.BUTTON_BRIGHTNESS_ENABLED, 1, UserHandle.USER_CURRENT) != 0;
 
+        final boolean swapNavigationkeysEnabled = Settings.System.getIntForUser(resolver,
+                Settings.System.SWAP_NAVIGATION_KEYS, 0, UserHandle.USER_CURRENT) != 0;
+
         if (mNavigationBar != null) {
             mNavigationBar.setChecked(navigationBarEnabled);
         }
         if (mButtonBrightness != null) {
             mButtonBrightness.setChecked(buttonBrightnessEnabled);
+        }
+
+        if (mSwapNavigationkeys != null) {
+            mSwapNavigationkeys.setChecked(swapNavigationkeysEnabled);
+            // Disable when navigation bar is disabled and no hw back and recents available.
+            mSwapNavigationkeys.setEnabled(navigationBarEnabled
+                    || hasBack && hasAppSwitch);
         }
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
