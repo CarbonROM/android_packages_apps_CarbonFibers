@@ -23,6 +23,14 @@
 <PreferenceCategory
     android:title="@string/button_gesture_category">
 
+    <com.android.settings.carbon.RemotePreference
+            android:key="device_touchscreen_gesture_settings"
+            android:title="@string/touchscreen_gesture_settings_title"
+            android:summary="@string/touchscreen_gesture_settings_summary"
+            settings:replacesKey="touchscreen_gesture_settings">
+        <intent android:action="org.carbonrom.settings.device.GESTURE_SETTINGS" />
+    </com.android.settings.carbon.RemotePreference>
+
     <Preference
         android:key="gesture_assist_input_summary"
         android:title="@string/assist_gesture_title"
