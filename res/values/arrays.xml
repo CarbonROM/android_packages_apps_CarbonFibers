@@ -363,6 +363,7 @@
         <item>@string/hardware_keys_action_screen_off</item>
         <item>@string/hardware_keys_action_kill_app</item>
         <item>@string/hardware_keys_action_screenshot</item>
+        <item>@string/hardware_keys_action_camera_button</item>
     </string-array>
 
     <string-array name="hardware_keys_action_values" translatable="false">
@@ -380,6 +381,7 @@
         <item>11</item>
         <item>12</item>
         <item>13</item>
+        <item>14</item>
     </string-array>
 
     <!-- Dashboard columns -->
