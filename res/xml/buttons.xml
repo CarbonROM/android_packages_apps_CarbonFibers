@@ -25,4 +25,11 @@
         android:title="@string/pixel_navbar_anim_title"
         android:summary="@string/pixel_navbar_anim_summary"
         android:defaultValue="true" />
+
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="volume_button_music_control"
+        android:title="@string/volume_rocker_music_controls_title"
+        android:summary="@string/volume_rocker_music_controls_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
