@@ -105,4 +105,6 @@
     <string name="status_bar_music_ticker_title">Tick on song change</string>
     <string name="status_bar_music_ticker_summary">Display song information with ticker on track change</string>
 
+    <string name="volume_rocker_music_controls_title">Playback control</string>
+    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string> 
 </resources>
