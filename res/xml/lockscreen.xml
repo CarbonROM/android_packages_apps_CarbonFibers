@@ -17,6 +17,12 @@
     android:title="@string/lockscreen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <ListPreference
+        android:key="torch_power_button_gesture"
+        android:title="@string/torch_power_button_gesture_title"
+        android:entries="@array/torch_power_button_gesture_entries"
+        android:entryValues="@array/torch_power_button_gesture_values" />
+
     <com.android.settings.carbon.SystemSettingSwitchPreference
         android:key="lockscreen_charging_current"
         android:title="@string/lockscreen_charging_current_title"
