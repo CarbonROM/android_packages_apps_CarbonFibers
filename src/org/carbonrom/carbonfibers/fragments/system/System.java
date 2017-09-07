@@ -64,6 +64,8 @@ public class System extends CustomSettingsPreferenceFragment implements Preferen
     private static final String KEY_ASPECT_RATIO_APPS_LIST = "aspect_ratio_apps_list";
     private static final String KEY_ASPECT_RATIO_CATEGORY = "aspect_ratio_category";
     private static final String KEY_ASPECT_RATIO_APPS_LIST_SCROLLER = "aspect_ratio_apps_list_scroller";
+    private static final String DASHBOARD_SUGESSTIONS = "enable_suggestions";
+    private static final String DASHBOARD_CONDITIONS = "enable_conditions";
 
     private AppMultiSelectListPreference mAspectRatioAppsSelect;
     private ScrollAppsViewPreference mAspectRatioApps;
@@ -77,6 +79,8 @@ public class System extends CustomSettingsPreferenceFragment implements Preferen
         addCustomPreference(findPreference(ADVANCED_REBOOT), SECURE_TWO_STATE, STATE_ON);
         addCustomPreference(findPreference(CHARGING_ANIMATION), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(KEY_ASPECT_RATIO_APPS_ENABLED), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(DASHBOARD_SUGESSTIONS), SYSTEM_TWO_STATE, STATE_ON);
+        addCustomPreference(findPreference(DASHBOARD_CONDITIONS), SYSTEM_TWO_STATE, STATE_ON);
         updateSmartPixelsPreference();
 
         final PreferenceCategory aspectRatioCategory =
