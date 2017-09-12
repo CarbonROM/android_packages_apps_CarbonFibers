@@ -35,6 +35,9 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
+import com.android.settings.carbon.CustomSeekBarPreference;
+import com.android.settings.carbon.SystemSettingSwitchPreference;
+
 public class Statusbar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Statusbar";
@@ -47,6 +50,9 @@ public class Statusbar extends SettingsPreferenceFragment implements
     private ListPreference mStatusBarBatteryShowPercent;
     private ListPreference mStatusBarBattery;
     private ListPreference mNotificationStyle;
+
+    private CustomSeekBarPreference mThreshold;
+    private SystemSettingSwitchPreference mNetMonitor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,6 +89,20 @@ public class Statusbar extends SettingsPreferenceFragment implements
                 1, UserHandle.USER_CURRENT);
         mNotificationStyle.setValue(String.valueOf(notificationStyle));
         mNotificationStyle.setSummary(mNotificationStyle.getEntry());
+
+        boolean isNetMonitorEnabled = Settings.System.getIntForUser(resolver,
+                Settings.System.NETWORK_TRAFFIC_STATE, 0, UserHandle.USER_CURRENT) == 1;
+        mNetMonitor = (SystemSettingSwitchPreference) findPreference("network_traffic_state");
+        mNetMonitor.setChecked(isNetMonitorEnabled);
+        mNetMonitor.setOnPreferenceChangeListener(this);
+
+        int value = Settings.System.getIntForUser(resolver,
+                Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 1, UserHandle.USER_CURRENT);
+        mThreshold = (CustomSeekBarPreference) findPreference("network_traffic_autohide_threshold");
+        mThreshold.setValue(value);
+        mThreshold.setOnPreferenceChangeListener(this);
+        mThreshold.setEnabled(isNetMonitorEnabled);
+
     }
 
     @Override
@@ -126,6 +146,20 @@ public class Statusbar extends SettingsPreferenceFragment implements
             mNotificationStyle.setSummary(
                     mNotificationStyle.getEntries()[index]);
             return true;
+        } else if (preference.equals(mNetMonitor)) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_STATE, value ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+            mNetMonitor.setChecked(value);
+            mThreshold.setEnabled(value);
+            return true;
+        } else if (preference.equals(mThreshold)) {
+             int val = (Integer) objValue;
+             Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, val,
+                    UserHandle.USER_CURRENT);
+             return true;
         }
         return false;
     }
