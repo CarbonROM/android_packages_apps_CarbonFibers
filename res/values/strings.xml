@@ -308,4 +308,8 @@
    <string name="untrusted_overlay_alert_message">To allow untrusted overlays, a reboot is required. Would you like to reboot?</string>
    <string name="reboot">Reboot</string>
 
+   <!-- Statusbar net monitor -->
+   <string name="network_traffic_state_title">Show net activity in statusbar</string>
+   <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+
 </resources>

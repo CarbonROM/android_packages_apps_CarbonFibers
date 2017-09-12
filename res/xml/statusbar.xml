@@ -54,6 +54,18 @@
         android:entries="@array/entries_status_bar_battery"
         android:entryValues="@array/values_status_bar_battery" />
 
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="network_traffic_state"
+        android:title="@string/network_traffic_state_title"
+        android:defaultValue="true" />
+
+    <com.android.settings.carbon.CustomSeekBarPreference
+        android:key="network_traffic_autohide_threshold"
+        android:title="@string/network_traffic_autohide_threshold_title"
+        android:max="10"
+        settings:min="0"
+        settings:units="" />
+
     <PreferenceCategory
         android:title="@string/statusbar_notifications_category">
 
