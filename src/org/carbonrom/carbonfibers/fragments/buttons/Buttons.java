@@ -37,6 +37,8 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String CATEGORY_KEYS = "button_keys";
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+    private static final String CATEGORY_KEYS = "button_keys";
+    private static final String KEY_BUTTON_LIGHT = "button_brightness";
     private static final String NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
 
     private ListPreference mTorchPowerButton;
@@ -46,6 +48,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.buttons);
+
         addCustomPreference(findPreference(CALL_VOLUME_ANSWER), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(NAVIGATION_BAR_ENABLED), SECURE_TWO_STATE,
@@ -63,6 +66,17 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         } else {
             mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
             mTorchPowerButton.setOnPreferenceChangeListener(this);
+        }
+
+        final boolean buttonLights = getResources().getBoolean(
+                com.android.internal.R.bool.config_button_brightness_support);
+        final PreferenceCategory keysCategory =	 
+                (PreferenceCategory) prefSet.findPreference(CATEGORY_KEYS);
+        if (!buttonLights) {
+            Preference toRemove = (Preference) prefSet.findPreference(KEY_BUTTON_LIGHT);
+            if (toRemove != null) {
+                keysCategory.removePreference(toRemove);
+            }
         }
    }
 
