@@ -35,6 +35,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String CALL_VOLUME_ANSWER = "call_volume_answer";
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+    private static final String KEY_BUTTON_LIGHT = "button_brightness";
     private static final String NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
 
     private ListPreference mTorchPowerButton;
@@ -44,6 +45,10 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.buttons);
+
+        final boolean buttonLights = getResources().getBoolean(
+                com.android.internal.R.bool.config_button_brightness_support);
+
         addCustomPreference(findPreference(CALL_VOLUME_ANSWER), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(NAVIGATION_BAR_ENABLED), SECURE_TWO_STATE,
