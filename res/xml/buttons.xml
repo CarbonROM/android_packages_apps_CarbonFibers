@@ -38,7 +38,15 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="button_keys"
         android:title="@string/buttons_hardware_category">
+
+        <Preference
+            android:key="button_brightness"
+            android:title="@string/button_backlight_title"
+            android:summary="@string/button_backlight_summary"
+            android:persistent="false"
+            android:fragment="org.carbonrom.carbonfibers.fragments.buttons.ButtonBrightnessSettings" />
 
         <SwitchPreference
             android:key="call_volume_answer"
