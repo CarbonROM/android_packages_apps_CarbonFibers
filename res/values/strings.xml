@@ -192,4 +192,7 @@
     <!-- Toggle navigation bar -->
     <string name="navigation_bar_enabled_title">Enable navigation bar</string>
 
+    <!-- AppOps -->
+    <string name="appops_title">App Ops</string>
+    <string name="appops_summary">Advanced app permissions control</string>
 </resources>
