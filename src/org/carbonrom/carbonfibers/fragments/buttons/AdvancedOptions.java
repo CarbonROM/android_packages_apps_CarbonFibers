@@ -47,6 +47,7 @@ public class AdvancedOptions extends ActionFragment implements Preference.OnPref
     private static final String TAG = "AdvancedOptions";
     private ContentResolver resolver;
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
+    private SwitchPreference mNavbarToggle;
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -107,6 +108,15 @@ public class AdvancedOptions extends ActionFragment implements Preference.OnPref
 
         final boolean enableBacklightOptions = getResources().getBoolean(
                 com.android.internal.R.bool.config_button_brightness_support);
+
+        mNavbarToggle = (SwitchPreference) findPreference("navigation_bar_enabled");
+        boolean enabled = Settings.Secure.getIntForUser(
+                resolver, Settings.Secure.NAVIGATION_BAR_ENABLED,
+                getActivity().getResources().getBoolean(
+                com.android.internal.R.bool.config_showNavigationBar) ? 1 : 0,
+                UserHandle.USER_CURRENT) == 1;
+        mNavbarToggle.setChecked(enabled);
+        mNavbarToggle.setOnPreferenceChangeListener(this);
 
         mButtonBackLightCategory = (PreferenceCategory) findPreference(KEY_BUTON_BACKLIGHT_OPTIONS);
 
@@ -197,6 +207,12 @@ public class AdvancedOptions extends ActionFragment implements Preference.OnPref
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
                     value ? 1 : 0);
             setActionPreferencesEnabled(!value);
+        } else if (preference == mNavbarToggle) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putIntForUser(getActivity().getContentResolver(),
+                    Settings.Secure.NAVIGATION_BAR_ENABLED, value ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+            mNavbarToggle.setChecked(value);
         } else if (preference == mButtonTimoutBar) {
             int buttonTimeout = (Integer) newValue;
             Settings.System.putInt(getContentResolver(),
