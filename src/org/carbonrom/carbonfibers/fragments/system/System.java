@@ -32,7 +32,7 @@ import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -54,7 +54,7 @@ public class System extends SettingsPreferenceFragment implements
     }
 
     @Override
-    protected int getMetricsCategory() {
+    public int getMetricsCategory() {
         return MetricsEvent.CARBONFIBERS;
     }
 
