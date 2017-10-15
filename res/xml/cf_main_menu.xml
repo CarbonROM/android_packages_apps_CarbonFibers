@@ -25,7 +25,7 @@
        android:icon="@drawable/ic_system"
        android:title="@string/system_category" />
 
-   <header
+   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.Misc"
        android:icon="@drawable/ic_misc"
        android:title="@string/misc_category" />
