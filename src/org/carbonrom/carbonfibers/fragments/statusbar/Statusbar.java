@@ -38,6 +38,7 @@ import com.android.settings.Utils;
 public class Statusbar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Status bar";
+    private ListPreference mTickerMode;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,14 @@ public class Statusbar extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.statusbar);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mTickerMode = (ListPreference) findPreference("ticker_mode");
+        mTickerMode.setOnPreferenceChangeListener(this);
+        int tickerMode = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_SHOW_TICKER,
+                1, UserHandle.USER_CURRENT);
+        mTickerMode.setValue(String.valueOf(tickerMode));
+        mTickerMode.setSummary(mTickerMode.getEntry());
     }
 
     @Override
