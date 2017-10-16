@@ -42,4 +42,10 @@
         android:entries="@array/entries_status_bar_battery"
         android:entryValues="@array/values_status_bar_battery" />
 
+    <ListPreference
+        android:key="ticker_mode"
+        android:entries="@array/ticker_mode_entries"
+        android:entryValues="@array/ticker_mode_values"
+        android:summary="%s"
+        android:title="@string/ticker_mode_title" />
 </PreferenceScreen>
