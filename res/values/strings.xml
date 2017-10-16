@@ -106,4 +106,11 @@
     <string name="torch_power_button_gesture_dt">Double tap power button (slower single tap response)</string>
     <string name="torch_power_button_gesture_dt_toast">Jump to camera gesture is now disabled</string>
     <string name="torch_power_button_gesture_lp">Long press power button</string>
+
+    <!-- Status bar ticker -->
+    <string name="ticker_mode_title">Status bar notification ticker</string>
+    <string name="ticker_disabled">Disabled</string>
+    <string name="ticker_enabled">Notification ticker</string>
+    <string name="ticker_media_enabled">Notification and music ticker</string>
+
 </resources>
