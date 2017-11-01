@@ -31,6 +31,11 @@
        android:title="@string/statusbar_category" />
 
    <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.quicksettings.QuickSettings"
+       android:icon="@drawable/ic_quicksettings"
+       android:title="@string/quicksettings_category" />
+
+   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.lockscreen.Lockscreen"
        android:icon="@drawable/ic_lockscreen"
        android:title="@string/lockscreen_category" />

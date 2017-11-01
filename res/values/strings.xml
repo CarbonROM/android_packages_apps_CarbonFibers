@@ -14,6 +14,7 @@
     <string name="carbonfibers">CarbonFibers</string>
     <string name="system_category">System</string>
     <string name="statusbar_category">Status bar</string>
+    <string name="quicksettings_category">Quick settings</string>
     <string name="lockscreen_category">Lock screen</string>
     <string name="buttons_category">Buttons</string>
     <string name="gesture_category">Gestures</string>
@@ -323,5 +324,9 @@
     <string name="smart_pixels_percent">Percent of pixels to disable</string>
     <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
     <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">Brightness slider icon</string>
+    <string name="brightness_icon_summary">Show a brightness icon to the left of the brightness slider to toggle auto-brightness</string>
 
 </resources>
