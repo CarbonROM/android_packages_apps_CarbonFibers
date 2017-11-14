@@ -31,7 +31,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.android.internal.hardware.AmbientDisplayConfiguration;
-import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.gestures.GesturePreference;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -178,7 +178,7 @@ public class Gestures extends SettingsPreferenceFragment implements
     }
 
     @Override
-    protected int getMetricsCategory() {
+    public int getMetricsCategory() {
         return MetricsEvent.SETTINGS_GESTURES;
     }
 
