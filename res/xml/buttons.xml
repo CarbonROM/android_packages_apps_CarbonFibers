@@ -42,6 +42,12 @@
         android:key="button_keys"
         android:title="@string/buttons_hardware_category">
 
+        <Preference
+            android:key="hardware_keys"
+            android:title="@string/hardware_keys"
+            android:summary="@string/hardware_keys_summary"
+            android:fragment="org.carbonrom.carbonfibers.fragments.buttons.HardwareKeys" />
+
         <com.android.settings.carbon.SecureSettingListPreference
             android:key="torch_power_button_gesture"
             android:title="@string/torch_power_button_gesture_title"
