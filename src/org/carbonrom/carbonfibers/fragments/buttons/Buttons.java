@@ -36,13 +36,16 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 import com.android.internal.util.cr.CrUtils;
+import org.carbonrom.carbonfibers.fragments.buttons.AdvancedOptions;
 
 public class Buttons extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Buttons";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+    private static final String ADVANCED_BUTTONS = "advanced_options";
 
     private ListPreference mTorchPowerButton;
+    private PreferenceScreen mAdvancedButtons;
 
     private ContentResolver resolver;
 
