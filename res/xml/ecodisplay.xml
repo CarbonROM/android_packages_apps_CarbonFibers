@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 CarbonROM
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/ecodisplay_title" >
+
+    <SwitchPreference
+        android:key="ecodisplay_enable"
+        android:title="@string/ecodisplay_enable"
+        android:summary="@string/ecodisplay_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.carbon.SystemSettingListPreference
+        android:key="ecodisplay_pattern"
+        android:entries="@array/ecodisplay_percent_strings"
+        android:entryValues="@array/ecodisplay_percent_values"
+        android:defaultValue="3"
+        android:title="@string/ecodisplay_percent"
+        android:dialogTitle="@string/ecodisplay_percent" />
+
+    <com.android.settings.carbon.SystemSettingListPreference
+        android:key="ecodisplay_shift_timeout"
+        android:entries="@array/ecodisplay_shift_times"
+        android:entryValues="@array/ecodisplay_shift_values"
+        android:defaultValue="5"
+        android:title="@string/ecodisplay_shift"
+        android:dialogTitle="@string/ecodisplay_shift" />
+
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="ecodisplay_on_power_save"
+        android:title="@string/ecodisplay_powersave"
+        android:defaultValue="false" />
+
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="ecodisplay_use_light_sensor"
+        android:title="@string/ecodisplay_light"
+        android:defaultValue="false" />
+
+    <com.android.settings.carbon.SystemSettingEditTextPreference
+        android:key="ecodisplay_light_sensor_value"
+        android:title="@string/ecodisplay_light_value"
+        android:defaultValue="1000"
+        android:dependency="ecodisplay_use_light_sensor" />
+
+</PreferenceScreen>
