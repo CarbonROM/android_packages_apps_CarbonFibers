@@ -31,4 +31,10 @@
         android:title="@string/global_actions_advanced_reboot_title"
         android:summary="@string/global_actions_advanced_reboot_summary"
         android:defaultValue="true" />
+
+    <Preference
+        android:key="ecodisplay"
+        android:title="@string/ecodisplay_title"
+        android:summary="@string/ecodisplay_summary"
+        android:fragment="org.carbonrom.carbonfibers.fragments.system.EcoDisplay" />
 </PreferenceScreen>

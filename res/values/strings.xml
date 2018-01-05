@@ -85,4 +85,15 @@
     <string name="global_actions_flashlight">Flashlight</string>
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">When restarting also show options for recovery and bootloader</string>
+
+    <!-- EcoDisplay -->
+    <string name="ecodisplay_title">EcoDisplay</string>
+    <string name="ecodisplay_summary">Save battery by shutting off extra pixels</string>
+    <string name="ecodisplay_enable">Enable EcoDisplay</string>
+    <string name="ecodisplay_percent">Percent of pixels to disable</string>
+    <string name="ecodisplay_powersave">Enable EcoDisplay with Battery Saver mode</string>
+    <string name="ecodisplay_shift">To prevent burn-in, shift pixels every</string>
+    <string name="ecodisplay_light">Disable in bright light</string>
+    <string name="ecodisplay_light_value">Bright light value</string>
+
 </resources>
