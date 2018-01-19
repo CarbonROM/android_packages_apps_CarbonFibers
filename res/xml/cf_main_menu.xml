@@ -50,4 +50,9 @@
        android:icon="@drawable/ic_system"
        android:title="@string/system_category" />
 
+   <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.style.Style"
+       android:icon="@drawable/ic_style"
+       android:title="@string/style_category" />
+
 </PreferenceScreen>

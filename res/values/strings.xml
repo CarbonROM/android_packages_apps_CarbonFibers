@@ -17,6 +17,7 @@
     <string name="misc_category">Misc</string>
     <string name="privacy_category">Privacy</string>
     <string name="lockscreen_category">Lockscreen</string>
+    <string name="style_category">Style</string>
 
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
@@ -84,4 +85,9 @@
     <string name="global_actions_flashlight">Flashlight</string>
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">When restarting also show options for recovery and bootloader</string>
+
+    <!-- Carbon Style -->
+    <string name="auto_theme_title">Automatically theme system</string>
+    <string name="auto_theme_summary">Theme system based on wallpaper color</string>
+
 </resources>
