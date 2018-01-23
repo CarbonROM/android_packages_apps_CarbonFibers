@@ -38,6 +38,8 @@ import com.android.settings.Utils;
 public class Misc extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Misc";
+    private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
+    private ListPreference mScreenOffAnimation;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,13 @@ public class Misc extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.misc);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
+        int screenOffStyle = Settings.System.getInt(resolver,
+                Settings.System.SCREEN_OFF_ANIMATION, 0);
+        mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
+        mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
+        mScreenOffAnimation.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -65,7 +74,14 @@ public class Misc extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
-        return true;
+
+	if (preference == mScreenOffAnimation) {
+            String value = (String) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.SCREEN_OFF_ANIMATION, Integer.valueOf(value));
+            int valueIndex = mScreenOffAnimation.findIndexOfValue(value);
+            mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
+            return true;
     }
 
 }
