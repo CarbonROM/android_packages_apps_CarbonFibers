@@ -19,4 +19,7 @@
     <!-- Metrics server endpoint -->
     <string name="stats_cr_url">https://stats.carbonrom.org/api/v1/stats</string>
 
+    <!-- EcoDisplay -->
+    <bool name="enable_ecodisplay">false</bool>
+
 </resources>
