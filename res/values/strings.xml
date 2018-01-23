@@ -99,4 +99,8 @@
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Charging info</string>
     <string name="lockscreen_charging_current_summary">Display negotiated charger max current and voltage on lockscreen</string>
+
+    <!-- Three finger gesture  -->
+    <string name="three_finger_gesture_title">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe with three fingers to screenshot</string>
 </resources>
