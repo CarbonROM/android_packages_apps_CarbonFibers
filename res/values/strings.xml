@@ -84,4 +84,7 @@
     <string name="global_actions_flashlight">Flashlight</string>
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">When restarting also show options for recovery and bootloader</string>
+
+    <string name="three_finger_gesture_title">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe with three fingers to screenshot</string>
 </resources>
