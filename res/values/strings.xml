@@ -278,4 +278,12 @@
    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
    <string name="unlock_quick_unlock_control_summary">Unlock when correct PIN/Password is entered</string>
 
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Save battery by shutting off extra pixels</string>
+    <string name="smart_pixels_enable">Enable Smart Pixels</string>
+    <string name="smart_pixels_percent">Percent of pixels to disable</string>
+    <string name="smart_pixels_powersave">Enable Smart Pixels with Battery Saver mode</string>
+    <string name="smart_pixels_shift">To prevent burn-in, shift pixels every</string>
+
 </resources>
