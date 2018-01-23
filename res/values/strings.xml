@@ -94,4 +94,8 @@
     <!-- Navigation bar arrow keys -->
     <string name="show_navbar_arrow_keys_title">Show arrow keys while typing</string>
     <string name="show_navbar_arrow_keys_summary">Display left and right cursor buttons in navigation bar while typing.</string>
+
+    <!-- Lockscreen charging current indicator  -->
+    <string name="lockscreen_charging_current_title">Charging info</string>
+    <string name="lockscreen_charging_current_summary">Display negotiated charger max current and voltage on lockscreen</string>
 </resources>
