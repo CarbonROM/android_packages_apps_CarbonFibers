@@ -90,4 +90,8 @@
     <string name="ticker_disabled">Disabled</string>
     <string name="ticker_enabled">Notification ticker</string>
     <string name="ticker_media_enabled">Notification and music ticker</string>
+
+    <!-- Navigation bar arrow keys -->
+    <string name="show_navbar_arrow_keys_title">Show arrow keys while typing</string>
+    <string name="show_navbar_arrow_keys_summary">Display left and right cursor buttons in navigation bar while typing.</string>
 </resources>
