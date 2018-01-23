@@ -25,4 +25,11 @@
         android:title="@string/pixel_navbar_anim_title"
         android:summary="@string/pixel_navbar_anim_summary"
         android:defaultValue="true" />
+
+    // TODO: add dependency for navbar
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="navigation_bar_menu_arrow_keys"
+        android:title="@string/show_navbar_arrow_keys_title"
+        android:summary="@string/show_navbar_arrow_keys_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>
