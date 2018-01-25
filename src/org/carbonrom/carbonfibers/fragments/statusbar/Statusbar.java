@@ -34,10 +34,13 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
+import com.android.settings.applications.LayoutPreference;
 
 public class Statusbar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Status bar";
+    private LayoutPreference mNotifications;
+    private static final String NOTIFICATIONS_CATEGORY = "notifications_category";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,9 @@ public class Statusbar extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.statusbar);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mNotifications = (LayoutPreference) findPreference(NOTIFICATIONS_CATEGORY);
+        mNotifications.setTitle(R.string.notifications_title);
     }
 
     @Override
