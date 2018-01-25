@@ -1,4 +1,28 @@
 {
   "pushCert": "certificate version 0.1\npusher Adin Kwok \u003cadin.kwok@carbonrom.org\u003e 1516699611 +0000\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_CarbonFibers\nnonce 1516699612-22C0B2898375BA38CA16DD1B794D031E20D20797\n\n0000000000000000000000000000000000000000 0162ae1a171743a26659fab2fa1c1e8e02e02cdf refs/for/cr-6.1\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQEcBAABAgAGBQJaZv/bAAoJEG7+92pAaOsSqMwH/2ueVIvwPnByMs4TqHaOMOCE\n9J20KdN+mxZo74aRKptP6EXs+inNZKzytiqS9ax48TxumDOwkY1rQjuje5pSxz8N\nneR0lt883jtJlYfa0dotdV4XZge9HVYB7xn+QP+4ViENb4cq4BZ7C+eOFEIE5J1R\ngS9/iApxVtjBs458KS8jd/8aYSeaT1uLl3JIUtKvWCqvZWTGcBtbH1ODIniO8jCM\nhQqmW4D0vLZl2GmAtnh8hI3ZgX270p18MqWNo83oQuluFkQpCIa7+vqqHR77F7ZH\ncjeBew2uxzvEdlN15QAUq0j7xLYz2dTqKnLPW/BnHx2mi1j8Df81T6CAiHSw95g\u003d\n\u003diZ1i\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [
+    {
+      "key": {
+        "uuid": "a46c33aa_cd3f8fa3",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 22
+      },
+      "writtenOn": "2018-01-25T04:30:17Z",
+      "side": 1,
+      "message": "negotiated",
+      "range": {
+        "startLine": 94,
+        "startChar": 63,
+        "endLine": 94,
+        "endChar": 73
+      },
+      "revId": "d8e9d022fc3700327eb625c11e804e43499d6e6d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    }
+  ]
 }
