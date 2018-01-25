@@ -20,4 +20,9 @@
     android:title="@string/statusbar_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.android.settings.applications.LayoutPreference
+        android:key="notifications_category"
+        android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.Notifications"
+        android:layout="@layout/notifications" />
+
 </PreferenceScreen>
