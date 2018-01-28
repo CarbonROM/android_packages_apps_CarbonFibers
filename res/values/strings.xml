@@ -16,12 +16,12 @@
     <string name="system_category">System</string>
     <string name="misc_category">Misc</string>
     <string name="privacy_category">Privacy</string>
-    <string name="lockscreen_category">Lockscreen</string>
+    <string name="lockscreen_category">Lock screen</string>
     <string name="statusbar_category">Status bar</string>
 
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
-    <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nSo, if you find a bug with any setting in CarbonFibers, please open up a ticket on Jira or contact a Carbon developer with the following.\n\n1. Blame kwoktopus\n2. Logcat and/or last_kmsg\n3. Kernel and mods used\n4. Useful information (subjective)\n\nIf you fail to report something with the above information, do not expect things to be fixed. Remember, we are not as perfect as Patrick, so we do miss things occasionally.</string>
+    <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nSo, if you find a bug with any setting in CarbonFibers, please open up a ticket on Jira or contact a Carbon developer with the following:\n\n1. #blameadinkwok\n2. Logs!\n3. Kernel and mods used\n4. Extra useful information\n\nIf you fail to report something with the above information, do not expect things to be fixed. Remember, we are not as perfect as Patrick, so we do miss things occasionally.</string>
     <string name="carbonfibers_dialog_toast">READ THE WHOLE THING!</string>
 
     <!-- Navbar Animation -->
@@ -56,7 +56,7 @@
     <string name="stats_collection_summary">When enabled, allows metrics collection</string>
 
     <!-- tap-to-sleep -->
-    <string name="double_tap_status_bar_sleep_title">Double tap statusbar to sleep</string>
+    <string name="double_tap_status_bar_sleep_title">Double tap status bar to sleep</string>
     <string name="double_tap_status_bar_sleep_summary">Double tap status bar to put the device to sleep</string>
     <string name="double_tap_lock_sleep_title">Double tap lock screen to sleep</string>
     <string name="double_tap_lock_sleep_summary">Double tap lock screen to put the device to sleep</string>
@@ -68,26 +68,26 @@
     <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
     <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
 
-    <!-- Lockscreen Torch -->
-    <string name="keyguard_torch_title">Lockscreen torch</string>
-    <string name="keyguard_torch_summary">Longpress power button while screen is off to turn on flashlight</string>
+    <!-- Lock screen Torch -->
+    <string name="keyguard_torch_title">Lock screen torch</string>
+    <string name="keyguard_torch_summary">Hold down power button while screen is off to turn on flashlight</string>
 
     <!-- Global Actions -->
     <string name="global_actions_title">Power menu</string>
-    <string name="global_actions_summary">Select what to show when you press the power button</string>
+    <string name="global_actions_summary">Select what to show when you hold down the power button</string>
     <string name="global_actions_power">Power</string>
     <string name="global_actions_restart">Restart</string>
     <string name="global_actions_airplane">Airplane</string>
     <string name="global_actions_settings">Settings</string>
-    <string name="global_actions_lockdown">Lock Down</string>
+    <string name="global_actions_lockdown">Lock down</string>
     <string name="global_actions_users">Users</string>
     <string name="global_actions_screenshot">Screenshot</string>
     <string name="global_actions_flashlight">Flashlight</string>
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">When restarting also show options for recovery and bootloader</string>
 
-    <!-- Lockscreen charging current indicator  -->
-    <string name="lockscreen_charging_current_title">Charging info</string>
+    <!-- Lock screen charging current indicator  -->
+    <string name="lockscreen_charging_current_title">Show charging info</string>
     <string name="lockscreen_charging_current_summary">Display negotiated charger max current and voltage on lockscreen</string>
 
     <!-- Three finger gesture  -->
