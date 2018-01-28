@@ -17,6 +17,7 @@
     <string name="misc_category">Misc</string>
     <string name="privacy_category">Privacy</string>
     <string name="lockscreen_category">Lockscreen</string>
+    <string name="statusbar_category">Status bar</string>
 
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
