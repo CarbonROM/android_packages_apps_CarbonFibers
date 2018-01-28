@@ -46,6 +46,11 @@
        android:title="@string/privacy_category" />
 
    <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.Statusbar"
+       android:icon="@drawable/ic_statusbar"
+       android:title="@string/statusbar_category" />
+
+   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.system.System"
        android:icon="@drawable/ic_system"
        android:title="@string/system_category" />
