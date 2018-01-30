@@ -31,4 +31,12 @@
         android:title="@string/global_actions_advanced_reboot_title"
         android:summary="@string/global_actions_advanced_reboot_summary"
         android:defaultValue="true" />
+
+    <Preference
+        android:title="@string/power_notifications_title"
+        android:summary="@string/power_notifications_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.PowerNotificationsTunerActivity" />
+    </Preference>
 </PreferenceScreen>
