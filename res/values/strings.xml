@@ -93,4 +93,21 @@
     <!-- Three finger gesture  -->
     <string name="three_finger_gesture_title">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe with three fingers to screenshot</string>
+
+    <!-- SystemUI Tuner -->
+    <string name="statusbar_tuner_title">Status bar items</string>
+    <string name="statusbar_tuner_summary">Battery options and status bar icons to disable</string>
+    <string name="navbar_tuner_title">Edit navigation bar</string>
+    <string name="navbar_tuner_summary">Edit the navigation bar layout and buttons</string>
+    <string name="lockscreen_shortcuts_title">Lock screen shortcuts</string>
+    <string name="lockscreen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
+    <string name="power_notifications_title">Power notifications</string>
+    <string name="power_notifications_summary">Advanced notifications control on long press</string>
+    <string name="vol_dnd_category_title">Do not disturb mode</string>
+    <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
+    <string name="volbtn_down_zen_summary">Allow volume down to enter do not disturb mode</string>
+    <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
+    <string name="volbtn_up_zen_summary">Allow volume up to exit do not disturb mode</string>
+    <string name="vol_zen_title">Do not disturb switch</string>
+    <string name="vol_zen_summary">Show do not disturb swith on volume panel</string>
 </resources>
