@@ -38,7 +38,7 @@ import com.android.internal.util.cr.CrUtils;
 
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "Lockscreen";
+    private static final String TAG = "Lock screen";
 
     private static final String KEYGUARD_TOGGLE_TORCH = "keyguard_toggle_torch";
 

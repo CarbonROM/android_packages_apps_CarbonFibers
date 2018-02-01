@@ -26,7 +26,7 @@
 
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Enable Pixel navbar animation</string>
-    <string name="pixel_navbar_anim_summary">Requires a SystemUI restart</string>
+    <string name="pixel_navbar_anim_summary">Enables customized Pixel home button animation</string>
 
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hide apps from recents</string>
