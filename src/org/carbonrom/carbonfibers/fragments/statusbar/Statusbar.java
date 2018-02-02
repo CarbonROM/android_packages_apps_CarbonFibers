@@ -32,13 +32,17 @@ import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.carbon.GlobalSettingSwitchPreference;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
 public class Statusbar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "Status bar";
+    private static final String KEY_HEADS_UP_NOTIFICATIONS_ENABLED = "heads_up_notifications_enabled";
     private ListPreference mTickerMode;
+
+    private GlobalSettingSwitchPreference mHeadsUpNotificationsEnabled;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -52,9 +56,12 @@ public class Statusbar extends SettingsPreferenceFragment implements
         mTickerMode.setOnPreferenceChangeListener(this);
         int tickerMode = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.STATUS_BAR_SHOW_TICKER,
-                0, UserHandle.USER_CURRENT);
+                1, UserHandle.USER_CURRENT);
         mTickerMode.setValue(String.valueOf(tickerMode));
         mTickerMode.setSummary(mTickerMode.getEntry());
+
+        mHeadsUpNotificationsEnabled = (GlobalSettingSwitchPreference) findPreference(KEY_HEADS_UP_NOTIFICATIONS_ENABLED);
+        updatePrefs();
     }
 
     @Override
@@ -81,9 +88,22 @@ public class Statusbar extends SettingsPreferenceFragment implements
             int index = mTickerMode.findIndexOfValue((String) objValue);
             mTickerMode.setSummary(
                     mTickerMode.getEntries()[index]);
+            updatePrefs();
             return true;
         }
         return false;
     }
 
+    private void updatePrefs() {
+           ContentResolver resolver = getActivity().getContentResolver();
+           boolean mHideHeadsUp = (Settings.System.getInt(resolver,
+                    Settings.System.STATUS_BAR_SHOW_TICKER, 1) == 0) ||
+                    (Settings.System.getInt(resolver,
+                    Settings.System.STATUS_BAR_SHOW_TICKER, 1) == 2);
+           Settings.Global.putInt(resolver,
+                    Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED,
+                    mHideHeadsUp ? 0 : 1);
+      }
+
 }
+
