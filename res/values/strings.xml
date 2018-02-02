@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2016 CarbonROM
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -152,9 +153,14 @@
     <string name="hardware_keys_category">Hardware keys</string>
     <string name="hardware_keys_disable_title">Disable keys</string>
 
-    <!-- Status bar ticker -->
-    <string name="ticker_mode_title">Status bar notification ticker</string>
-    <string name="ticker_disabled">Disabled</string>
-    <string name="ticker_enabled">Notification ticker</string>
-    <string name="ticker_media_enabled">Notification and music ticker</string>
+    <!-- Status bar notification -->
+    <string name="ticker_mode_title">Notify using</string>
+    <string name="notify_disabled">None</string>
+    <string name="headsup_enabled">Heads up</string>
+    <string name="ticker_enabled">Ticker</string>
+    <string name="headsup_ticker_enabled">Heads up and ticker</string>
+
+    <!-- Status bar music ticker -->
+    <string name="status_bar_music_ticker_title">Tick on song change</string>
+    <string name="status_bar_music_ticker_summary">Display song information with ticker on track change</string>
 </resources>
