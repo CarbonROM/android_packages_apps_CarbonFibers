@@ -47,7 +47,7 @@ public class Statusbar extends SettingsPreferenceFragment implements
 
     private ListPreference mStatusBarBatteryShowPercent;
     private ListPreference mStatusBarBattery;
-    private ListPreference mTickerMode;
+    private ListPreference mNotificationStyle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -77,13 +77,13 @@ public class Statusbar extends SettingsPreferenceFragment implements
         enableStatusBarBatteryDependents(batteryStyle);
         mStatusBarBattery.setOnPreferenceChangeListener(this);
 
-        mTickerMode = (ListPreference) findPreference("ticker_mode");
-        mTickerMode.setOnPreferenceChangeListener(this);
-        int tickerMode = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.STATUS_BAR_SHOW_TICKER,
-                0, UserHandle.USER_CURRENT);
-        mTickerMode.setValue(String.valueOf(tickerMode));
-        mTickerMode.setSummary(mTickerMode.getEntry());
+        mNotificationStyle = (ListPreference) findPreference("notification_style");
+        mNotificationStyle.setOnPreferenceChangeListener(this);
+        int notificationStyle = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_NOTIFICATION_STYLE,
+                1, UserHandle.USER_CURRENT);
+        mNotificationStyle.setValue(String.valueOf(notificationStyle));
+        mNotificationStyle.setSummary(mNotificationStyle.getEntry());
     }
 
     @Override
@@ -119,13 +119,13 @@ public class Statusbar extends SettingsPreferenceFragment implements
             mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
             enableStatusBarBatteryDependents(batteryStyle);
             return true;
-        } else if (preference.equals(mTickerMode)) {
-            int tickerMode = Integer.parseInt(((String) objValue).toString());
+        } else if (preference.equals(mNotificationStyle)) {
+            int notificationStyle = Integer.parseInt(((String) objValue).toString());
             Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.STATUS_BAR_SHOW_TICKER, tickerMode, UserHandle.USER_CURRENT);
-            int index = mTickerMode.findIndexOfValue((String) objValue);
-            mTickerMode.setSummary(
-                    mTickerMode.getEntries()[index]);
+                    Settings.System.STATUS_BAR_NOTIFICATION_STYLE, notificationStyle, UserHandle.USER_CURRENT);
+            int index = mNotificationStyle.findIndexOfValue((String) objValue);
+            mNotificationStyle.setSummary(
+                    mNotificationStyle.getEntries()[index]);
             return true;
         }
         return false;

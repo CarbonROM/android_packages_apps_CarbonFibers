@@ -188,9 +188,14 @@
     <string name="status_bar_battery_style_hidden">Hidden</string>
     <string name="status_bar_battery_style_square">Square</string>
 
-    <!-- Status bar ticker -->
-    <string name="ticker_mode_title">Status bar notification ticker</string>
-    <string name="ticker_disabled">Disabled</string>
-    <string name="ticker_enabled">Notification ticker</string>
-    <string name="ticker_media_enabled">Notification and music ticker</string>
+    <!-- Status bar notification -->
+    <string name="notification_style_title">Notification style</string>
+    <string name="notify_disabled">None</string>
+    <string name="headsup_enabled">Heads up</string>
+    <string name="ticker_enabled">Ticker</string>
+    <string name="headsup_ticker_enabled">Heads up and ticker</string>
+
+    <!-- Status bar music ticker -->
+    <string name="status_bar_music_ticker_title">Tick on song change</string>
+    <string name="status_bar_music_ticker_summary">Display song information with ticker on track change</string
 </resources>
