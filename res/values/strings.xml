@@ -68,10 +68,6 @@
     <string name="camera_double_tap_power_gesture_title">Press power button twice for camera</string>
     <string name="camera_double_tap_power_gesture_desc">Quickly open camera without unlocking your screen</string>
 
-    <!-- Lock screen Torch -->
-    <string name="keyguard_torch_title">Lock screen torch</string>
-    <string name="keyguard_torch_summary">Hold down power button while screen is off to turn on flashlight</string>
-
     <!-- Global Actions -->
     <string name="global_actions_title">Power menu</string>
     <string name="global_actions_summary">Select what to show when you hold down the power button</string>
