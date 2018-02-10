@@ -55,4 +55,10 @@
         android:entries="@array/entries_status_bar_battery"
         android:entryValues="@array/values_status_bar_battery" />
 
+    <Preference
+            android:key="clock_settings"
+            android:title="@string/status_bar_clock"
+            android:summary="@string/status_bar_clock_summary"
+            android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.ClockDateSettings" />
+
 </PreferenceScreen>
