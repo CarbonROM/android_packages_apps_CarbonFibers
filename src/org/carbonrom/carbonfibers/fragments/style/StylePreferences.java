@@ -16,9 +16,14 @@
 
 package org.carbonrom.carbonfibers.fragments.style;
 
+import android.app.ActivityManager;
+import android.app.ActivityManagerNative;
 import android.app.AlertDialog;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.ContentResolver;
+import static android.content.Context.ACTIVITY_SERVICE;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -58,6 +63,7 @@ import org.carbonrom.carbonfibers.fragments.style.util.OverlayManager;
 import org.carbonrom.carbonfibers.fragments.style.util.UIUtils;
 
 import java.util.List;
+import java.lang.reflect.Method;
 
 public class StylePreferences extends SettingsPreferenceFragment {
     private static final String TAG = "Style";
@@ -92,6 +98,9 @@ public class StylePreferences extends SettingsPreferenceFragment {
 
         Preference automagic = findPreference("style_automagic");
         automagic.setOnPreferenceClickListener(p -> onAutomagicClick());
+
+        Preference restart = findPreference("restart_systemui");
+        restart.setOnPreferenceClickListener(p -> restartUi());
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
@@ -336,6 +345,31 @@ public class StylePreferences extends SettingsPreferenceFragment {
             .setTitle(android.R.string.ok)
             .setPositiveButton(android.R.string.ok, null)
             .show();
+    }
+
+    private boolean restartUi() {
+        try {
+            ActivityManager am = (ActivityManager) getContext().getSystemService(ACTIVITY_SERVICE);
+            Class ActivityManagerNative = Class.forName("android.app.ActivityManagerNative");
+            Method getDefault = ActivityManagerNative.getDeclaredMethod("getDefault", null);
+            Object amn = getDefault.invoke(null, null);
+            Method killApplicationProcess = amn.getClass().getDeclaredMethod
+                    ("killApplicationProcess", String.class, int.class);
+
+            getContext().stopService(new Intent().setComponent(new ComponentName("com.android.systemui", "com" +
+                    ".android.systemui.SystemUIService")));
+            am.killBackgroundProcesses("com.android.systemui");
+
+            for (ActivityManager.RunningAppProcessInfo app : am.getRunningAppProcesses()) {
+                if ("com.android.systemui".equals(app.processName)) {
+                    killApplicationProcess.invoke(amn, app.processName, app.uid);
+                    break;
+                }
+            }
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     private static final class AutomagicTask extends AsyncTask<Accent, Void, Style> {

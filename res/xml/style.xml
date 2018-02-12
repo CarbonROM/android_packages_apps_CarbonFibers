@@ -35,4 +35,10 @@
         android:summary="@string/style_automagic_description"
         android:title="@string/style_automagic_title" />
 
+    <Preference
+        android:key="restart_systemui"
+        android:icon="@drawable/ic_restore"
+        android:summary="@string/style_restart_summary"
+        android:title="@string/style_restart_title" />
+
 </PreferenceScreen>

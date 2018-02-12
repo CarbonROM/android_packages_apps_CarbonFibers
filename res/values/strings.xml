@@ -118,4 +118,6 @@
     <string name="style_automagic_dialog_content">Suggested style: <b>%1$s</b> with <b>%2$s</b> accent.\nDo you want to apply it?</string>
     <string name="style_automagic_dialog_positive">Apply</string>
     <string name="style_accent_default_name">Default</string>
+    <string name="style_restart_title">Restart SystemUI</string>
+    <string name="style_restart_summary">Restart SystemUI if the applied style causes issues</string>
 </resources>
