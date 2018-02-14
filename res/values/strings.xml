@@ -238,4 +238,30 @@
     <string name="clock_date_right">Right of time</string>
     <string name="clock_date_left">Left of time</string>
     <string name="clock_date_position">Date position</string>
+
+    <!-- CarbonGestures -->
+    <string name="carbon_gesture_preference_title">CarbonGestures</string>
+    <string name="carbon_gestures_summary">Configure custom global gestures</string>
+    <string name="carbon_gestures_fingers_title">Fingers used for gesture</string>
+    <string name="carbon_gestures_right_title">Right gesture</string>
+    <string name="carbon_gestures_left_title">Left gesture</string>
+    <string name="carbon_gestures_up_title">Up gesture</string>
+    <string name="carbon_gestures_down_title">Down gesture</string>
+    <string name="carbon_gesture_disabled">Disabled</string>
+    <string name="carbon_gesture_back">Back</string>
+    <string name="carbon_gesture_home">Home</string>
+    <string name="carbon_gesture_recents">Recents</string>
+    <string name="carbon_gesture_power">Power</string>
+    <string name="carbon_gesture_volume_down">Volume down</string>
+    <string name="carbon_gesture_volume_up">Volume up</string>
+    <string name="carbon_gesture_volume_mute">Volume mute</string>
+    <string name="carbon_gesture_screenshot">Screenshot</string>
+    <string name="carbon_gesture_media_play_pause">Play/Pause media</string>
+    <string name="carbon_gesture_media_play">Play media</string>
+    <string name="carbon_gesture_media_pause">Pause media</string>
+    <string name="carbon_gesture_media_stop">Stop media</string>
+    <string name="carbon_gesture_media_next">Next media</string>
+    <string name="carbon_gesture_media_previous">Previous media</string>
+    <string name="carbon_gesture_customapp">Launch application</string>
+    <string name="carbon_gesture_launch">Launch</string>
 </resources>
