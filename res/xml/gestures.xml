@@ -18,6 +18,11 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/gesture_preference_title">
 
+    <Preference
+        android:key="carbon_gestures_summary"
+        android:title="@string/carbon_gesture_preference_title"
+        android:fragment="org.carbonrom.carbonfibers.fragments.gestures.CarbonGesturesSettings" />
+
     <com.android.settings.carbon.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_status_bar_sleep_title"
@@ -36,7 +41,7 @@
         android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false" />
 
-  <Preference
+    <Preference
         android:key="gesture_assist_input_summary"
         android:title="@string/assist_gesture_title"
         android:fragment="com.android.settings.gestures.AssistGestureSettings" />
