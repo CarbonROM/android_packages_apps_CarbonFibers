@@ -21,11 +21,17 @@
     android:key="gesture_settings_screen"
     android:title="@string/gesture_preference_title">
 
+    <Preference
+        android:title="@string/carbon_gesture_preference_title"
+        android:summary="@string/carbon_gestures_summary"
+        android:fragment="org.carbonrom.carbonfibers.fragments.gestures.CarbonGesturesSettings" />
+
     <SwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_status_bar_sleep_title"
         android:summary="@string/double_tap_status_bar_sleep_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        settings:allowDividerAbove="true" />
 
     <SwitchPreference
         android:key="double_tap_sleep_anywhere"
@@ -37,7 +43,8 @@
         android:key="gesture_assist_input_summary"
         android:title="@string/assist_gesture_title"
         android:fragment="com.android.settings.gestures.AssistGestureSettings"
-        settings:controller="com.android.settings.gestures.AssistGestureSettingsPreferenceController" />
+        settings:controller="com.android.settings.gestures.AssistGestureSettingsPreferenceController"
+        settings:allowDividerAbove="true" />
 
     <Preference
         android:key="gesture_swipe_down_fingerprint_input_summary"
