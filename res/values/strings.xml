@@ -90,6 +90,10 @@
     <string name="three_finger_gesture_title">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe with three fingers to screenshot</string>
 
+    <!-- Carbon two finger navigation gestures  -->
+    <string name="two_finger_gesture_title">Swipe to Navigate</string>
+    <string name="two_finger_gesture_summary">Swipe with two fingers to go back/home/open recents</string>
+
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Screen off animation</string>
     <string name="screen_off_animation_default">Default</string>
@@ -135,4 +139,28 @@
     <string name="vol_zen_title">Do not disturb switch</string>
     <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
 
+    <!-- Carbon Gestures -->
+    <string name="carbon_gesture_preference_title">CarbonGestures</string>
+    <string name="carbon_gestures_summary">Custom CarbonGestures configuration</string>
+    <string name="carbon_gestures_fingers_title">Amount of fingers used for Gesture</string>
+    <string name="carbon_gestures_right_title">Right Gesture</string>
+    <string name="carbon_gestures_left_title">Left Gesture</string>
+    <string name="carbon_gestures_up_title">Up Gesture</string>
+    <string name="carbon_gestures_down_title">Down Gesture</string>
+    <string name="carbon_gesture_disabled">Disabled</string>
+    <string name="carbon_gesture_back">Back</string>
+    <string name="carbon_gesture_home">Home</string>
+    <string name="carbon_gesture_recents">Recents</string>
+    <string name="carbon_gesture_power">Power</string>
+    <string name="carbon_gesture_volume_down">Volume Down</string>
+    <string name="carbon_gesture_volume_up">Volume Up</string>
+    <string name="carbon_gesture_volume_mute">Volume Mute</string>
+    <string name="carbon_gesture_screenshot">Screenshot</string>
+    <string name="carbon_gesture_camera">Camera (Launches Camera)</string>
+    <string name="carbon_gesture_media_play_pause">Play/Pause Media</string>
+    <string name="carbon_gesture_media_play">Play Media</string>
+    <string name="carbon_gesture_media_pause">Pause Media</string>
+    <string name="carbon_gesture_media_stop">Stop Media</string>
+    <string name="carbon_gesture_media_next">Next Media</string>
+    <string name="carbon_gesture_media_previous">Previous Media</string>
 </resources>
