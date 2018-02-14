@@ -30,6 +30,8 @@
 
     <string name="lockscreen_security_category">Security</string>
 
+    <string name="gestures_carbongestures_category">CarbonGestures</string>
+
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
     <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nSo, if you find a bug with any setting in CarbonFibers, please open up a ticket on Jira or contact a Carbon developer with the following:\n\n1. #blamemyself*\n2. Logs!\n3. Kernel and mods used\n4. Extra useful information\n\nIf you fail to report something with the above information, do not expect things to be fixed. Remember, we are not as perfect as Patrick, so we do miss things occasionally.</string>
@@ -43,6 +45,29 @@
     <string name="hide_apps_from_recents_title">Hide apps from recents</string>
     <string name="hide_from_recents_add_app">Add app</string>
     <string name="title_activity_carbon_recents_settings">Recents</string>
+
+    <!-- CarbonGestures -->
+    <string name="carbon_gesture_preference_title">CarbonGestures</string>
+    <string name="carbon_gestures_summary">Configure custom global gestures</string>
+    <string name="carbon_gestures_fingers_title">Fingers used for gesture</string>
+    <string name="carbon_gestures_right_title">Right gesture</string>
+    <string name="carbon_gestures_left_title">Left gesture</string>
+    <string name="carbon_gestures_up_title">Up gesture</string>
+    <string name="carbon_gestures_down_title">Down gesture</string>
+    <string name="carbon_gesture_disabled">Disabled</string>
+    <string name="carbon_gesture_back">Back</string>
+    <string name="carbon_gesture_home">Home</string>
+    <string name="carbon_gesture_recents">Recents</string>
+    <string name="carbon_gesture_power">Power</string>
+    <string name="carbon_gesture_volume_down">Volume down</string>
+    <string name="carbon_gesture_volume_up">Volume up</string>
+    <string name="carbon_gesture_volume_mute">Volume mute</string>
+    <string name="carbon_gesture_screenshot">Screenshot</string>
+    <string name="carbon_gesture_media_play_pause">Play/Pause media</string>
+    <string name="carbon_gesture_media_skip">Skip media</string>
+    <string name="carbon_gesture_media_previous">Previous media</string>
+    <string name="carbon_gesture_customapp">Launch application</string>
+    <string name="carbon_gesture_launch">Launch</string>
 
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
@@ -67,10 +92,10 @@
     <string name="stats_collection_summary">When enabled, allows metrics collection</string>
 
     <!-- tap-to-sleep -->
-    <string name="double_tap_status_bar_sleep_title">Double tap status bar to sleep</string>
-    <string name="double_tap_status_bar_sleep_summary">Double tap status bar to put the device to sleep</string>
-    <string name="double_tap_lock_sleep_title">Double tap lock screen to sleep</string>
-    <string name="double_tap_lock_sleep_summary">Double tap lock screen to put the device to sleep</string>
+    <string name="double_tap_status_bar_sleep_title">Double-tap status bar to sleep</string>
+    <string name="double_tap_status_bar_sleep_summary">Double-tap status bar to put the device to sleep</string>
+    <string name="double_tap_lock_sleep_title">Double-tap lock screen to sleep</string>
+    <string name="double_tap_lock_sleep_summary">Double-tap lock screen to put the device to sleep</string>
 
     <!-- Gestures-->
     <string name="camera_gesture_title">Double twist for camera</string>
@@ -109,7 +134,7 @@
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Toggle torch when screen off</string>
     <string name="torch_power_button_gesture_none">Disabled</string>
-    <string name="torch_power_button_gesture_dt">Double tap power button (slower single tap response)</string>
+    <string name="torch_power_button_gesture_dt">Double-tap power button (slower single tap response)</string>
     <string name="torch_power_button_gesture_dt_toast">Jump to camera gesture is now disabled</string>
     <string name="torch_power_button_gesture_lp">Long press power button</string>
 

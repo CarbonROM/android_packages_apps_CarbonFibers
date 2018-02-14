@@ -18,6 +18,47 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/gesture_preference_title">
 
+    <PreferenceCategory
+        android:title="@string/gestures_carbongestures_category">
+
+        <com.android.settings.carbon.CustomSeekBarPreference
+            android:key="carbon_gestures_fingers"
+            android:title="@string/carbon_gestures_fingers_title"
+            android:max="4"
+            settings:min="2" />
+
+        <ListPreference
+            android:key="carbon_gestures_right"
+            android:entries="@array/carbon_gestures_button_entries"
+            android:entryValues="@array/carbon_gestures_button_values"
+            android:summary="%s"
+            android:title="@string/carbon_gestures_right_title" />
+
+        <ListPreference
+            android:key="carbon_gestures_left"
+            android:entries="@array/carbon_gestures_button_entries"
+            android:entryValues="@array/carbon_gestures_button_values"
+            android:summary="%s"
+            android:title="@string/carbon_gestures_left_title" />
+
+        <ListPreference
+            android:key="carbon_gestures_up"
+            android:entries="@array/carbon_gestures_button_entries"
+            android:entryValues="@array/carbon_gestures_button_values"
+            android:summary="%s"
+            android:title="@string/carbon_gestures_up_title" />
+
+        <ListPreference
+            android:key="carbon_gestures_down"
+            android:entries="@array/carbon_gestures_button_entries"
+            android:entryValues="@array/carbon_gestures_button_values"
+            android:summary="%s"
+            android:title="@string/carbon_gestures_down_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory />
+
     <com.android.settings.carbon.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_status_bar_sleep_title"
@@ -30,7 +71,7 @@
         android:summary="@string/double_tap_lock_sleep_summary"
         android:defaultValue="false" />
 
-  <Preference
+    <Preference
         android:key="gesture_assist_input_summary"
         android:title="@string/assist_gesture_title"
         android:fragment="com.android.settings.gestures.AssistGestureSettings" />

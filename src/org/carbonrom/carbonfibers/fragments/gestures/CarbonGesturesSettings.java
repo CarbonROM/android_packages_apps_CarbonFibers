@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The Android Open Source Project
+ * Copyright (C) 2018 CarbonROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,9 +22,6 @@ import android.content.res.Resources;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.provider.SearchIndexableResource;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceCategory;
@@ -34,52 +31,29 @@ import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 
-import com.android.internal.hardware.AmbientDisplayConfiguration;
-import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.dashboard.DashboardFragment;
-import com.android.settings.gestures.AssistGestureSettingsPreferenceController;
-import com.android.settings.gestures.SwipeToNotificationPreferenceController;
-import com.android.settings.gestures.DoubleTwistPreferenceController;
-import com.android.settings.gestures.DoubleTapPowerPreferenceController;
-import com.android.settings.gestures.PickupGesturePreferenceController;
-import com.android.settings.gestures.DoubleTapScreenPreferenceController;
-import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settingslib.core.AbstractPreferenceController;
-import com.android.settingslib.core.lifecycle.Lifecycle;
-import com.android.settings.carbon.CustomSeekBarPreference;
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
+import com.android.settings.carbon.CustomSeekBarPreference;
 import org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppChooserAdapter.AppItem;
 import org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppChooserDialog;
 
-public class GestureSettings extends DashboardFragment {
-
-    private static final String TAG = "GestureSettings";
-
-    private static final String KEY_ASSIST = "gesture_assist_input_summary";
-    private static final String KEY_SWIPE_DOWN = "gesture_swipe_down_fingerprint_input_summary";
-    private static final String KEY_DOUBLE_TAP_POWER = "gesture_double_tap_power_input_summary";
-    private static final String KEY_DOUBLE_TWIST = "gesture_double_twist_input_summary";
-    private static final String KEY_DOUBLE_TAP_SCREEN = "gesture_double_tap_screen_input_summary";
-    private static final String KEY_PICK_UP = "gesture_pick_up_input_summary";
-
+public class CarbonGesturesSettings extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
+    private static final String TAG = "CarbonGestures";
     private CustomSeekBarPreference mCarbonGestureFingers;
     private ListPreference mCarbonGestureRight;
     private ListPreference mCarbonGestureLeft;
     private ListPreference mCarbonGestureUp;
     private ListPreference mCarbonGestureDown;
 
-    private AmbientDisplayConfiguration mAmbientDisplayConfig;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        addPreferencesFromResource(R.xml.carbongestures);
 
         ContentResolver resolver = getActivity().getContentResolver();
 
@@ -145,13 +119,11 @@ public class GestureSettings extends DashboardFragment {
         } else {
             mCarbonGestureDown.setSummary(mCarbonGestureDown.getEntry());
         }
-
-        mProgressiveDisclosureMixin.setTileLimit(8);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.SETTINGS_GESTURES;
+        return MetricsEvent.CARBONFIBERS;
     }
 
     @Override
@@ -164,87 +136,18 @@ public class GestureSettings extends DashboardFragment {
         super.onPause();
     }
 
-    @Override
-    protected String getLogTag() {
-        return TAG;
-    }
-
-    @Override
-    protected int getPreferenceScreenResId() {
-        return R.xml.gestures;
-    }
-
-    @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
-        if (mAmbientDisplayConfig == null) {
-            mAmbientDisplayConfig = new AmbientDisplayConfiguration(context);
-        }
-
-        return buildPreferenceControllers(context, getLifecycle(), mAmbientDisplayConfig);
-    }
-
-    static List<AbstractPreferenceController> buildPreferenceControllers(
-            @NonNull Context context, @Nullable Lifecycle lifecycle,
-            @NonNull AmbientDisplayConfiguration ambientDisplayConfiguration) {
-        final List<AbstractPreferenceController> controllers = new ArrayList<>();
-        controllers.add(new AssistGestureSettingsPreferenceController(context, lifecycle,
-                KEY_ASSIST, false /* assistOnly */));
-        controllers.add(new SwipeToNotificationPreferenceController(context, lifecycle,
-                KEY_SWIPE_DOWN));
-        controllers.add(new DoubleTwistPreferenceController(context, lifecycle, KEY_DOUBLE_TWIST));
-        controllers.add(new DoubleTapPowerPreferenceController(context, lifecycle,
-                KEY_DOUBLE_TAP_POWER));
-        controllers.add(new PickupGesturePreferenceController(context, lifecycle,
-                ambientDisplayConfiguration, UserHandle.myUserId(), KEY_PICK_UP));
-        controllers.add(new DoubleTapScreenPreferenceController(context, lifecycle,
-                ambientDisplayConfiguration, UserHandle.myUserId(), KEY_DOUBLE_TAP_SCREEN));
-        return controllers;
-    }
-
-    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider() {
-                @Override
-                public List<SearchIndexableResource> getXmlResourcesToIndex(
-                        Context context, boolean enabled) {
-                    final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.gestures;
-                    return Arrays.asList(sir);
-                }
-
-                @Override
-                public List<AbstractPreferenceController> getPreferenceControllers(
-                        Context context) {
-                    return buildPreferenceControllers(context, null,
-                            new AmbientDisplayConfiguration(context));
-                }
-
-                @Override
-                public List<String> getNonIndexableKeys(Context context) {
-                    List<String> keys = super.getNonIndexableKeys(context);
-                    // Duplicates in summary and details pages.
-                    keys.add(KEY_ASSIST);
-                    keys.add(KEY_SWIPE_DOWN);
-                    keys.add(KEY_DOUBLE_TAP_POWER);
-                    keys.add(KEY_DOUBLE_TWIST);
-                    keys.add(KEY_DOUBLE_TAP_SCREEN);
-                    keys.add(KEY_PICK_UP);
-
-                    return keys;
-                }
-            };
-
     private void launchAppChooseDialog(String setting, ListPreference pref) {
-    HAFRAppChooserDialog dDialog = new HAFRAppChooserDialog(getActivity()) {
-        @Override
-        public void onListViewItemClick(AppItem info, int id) {
-            Settings.System.putStringForUser(getContentResolver(),
-                setting, info.packageName, UserHandle.USER_CURRENT);
-            setApplicationNamePreferenceSummary(info.packageName, pref);
-        }
-    };
-    dDialog.setCancelable(false);
-    dDialog.setLauncherFilter(true);
-    dDialog.show(1);
+        HAFRAppChooserDialog dDialog = new HAFRAppChooserDialog(getActivity()) {
+            @Override
+            public void onListViewItemClick(AppItem info, int id) {
+                Settings.System.putStringForUser(getContentResolver(),
+                    setting, info.packageName, UserHandle.USER_CURRENT);
+                setApplicationNamePreferenceSummary(info.packageName, pref);
+            }
+        };
+        dDialog.setCancelable(false);
+        dDialog.setLauncherFilter(true);
+        dDialog.show(1);
     }
 
     private void setApplicationNamePreferenceSummary(String pkg, ListPreference pref) {
@@ -321,6 +224,7 @@ public class GestureSettings extends DashboardFragment {
             }
             return true;
         }
+
         return false;
     }
 }
