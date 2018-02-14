@@ -36,6 +36,11 @@
         android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false" />
 
+   <Preference
+        android:key="carbon_gestures_summary"
+        android:title="@string/carbon_gesture_preference_title"
+        android:fragment="org.carbonrom.carbonfibers.fragments.gestures.CarbonGesturesSettings" />
+
   <Preference
         android:key="gesture_assist_input_summary"
         android:title="@string/assist_gesture_title"
