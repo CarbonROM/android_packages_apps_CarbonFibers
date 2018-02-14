@@ -36,6 +36,12 @@
         android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="two_finger_nav_gesture"
+        android:title="@string/two_finger_gesture_title"
+        android:summary="@string/two_finger_gesture_summary"
+        android:defaultValue="false" />
+
   <Preference
         android:key="gesture_assist_input_summary"
         android:title="@string/assist_gesture_title"
