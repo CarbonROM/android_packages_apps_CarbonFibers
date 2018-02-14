@@ -51,4 +51,42 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+
+    <string-array name="carbon_gestures_button_entries" translatable="false">
+        <item>@string/carbon_gesture_disabled</item>
+        <item>@string/carbon_gesture_back</item>
+        <item>@string/carbon_gesture_home</item>
+        <item>@string/carbon_gesture_recents</item>
+        <item>@string/carbon_gesture_power</item>
+        <item>@string/carbon_gesture_volume_down</item>
+        <item>@string/carbon_gesture_volume_up</item>
+        <item>@string/carbon_gesture_volume_mute</item>
+        <item>@string/carbon_gesture_screenshot</item>
+        <item>@string/carbon_gesture_camera</item>
+        <item>@string/carbon_gesture_media_play_pause</item>
+        <item>@string/carbon_gesture_media_play</item>
+        <item>@string/carbon_gesture_media_pause</item>
+        <item>@string/carbon_gesture_media_stop</item>
+        <item>@string/carbon_gesture_media_next</item>
+        <item>@string/carbon_gesture_media_previous</item>
+    </string-array>
+
+    <string-array name="carbon_gestures_button_values" translatable="false">
+        <item>0</item>
+        <item>4</item>
+        <item>3</item>
+        <item>187</item>
+        <item>26</item>
+        <item>25</item>
+        <item>24</item>
+        <item>164</item>
+        <item>1000</item>
+        <item>1001</item>
+        <item>85</item>
+        <item>126</item>
+        <item>127</item>
+        <item>86</item>
+        <item>87</item>
+        <item>88</item>
+    </string-array>
 </resources>
