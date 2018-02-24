@@ -47,6 +47,8 @@ public class Buttons extends SettingsPreferenceFragment implements
     private ListPreference mTorchPowerButton;
     private PreferenceScreen mAdvancedButtons;
 
+    private int mHwKeys;
+
     private ContentResolver resolver;
 
     @Override
@@ -58,6 +60,16 @@ public class Buttons extends SettingsPreferenceFragment implements
         resolver = getActivity().getContentResolver();
 
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        mHwKeys = getResources().getInteger(
+          com.android.internal.R.integer.config_deviceHardwareKeys);
+
+        if (mHwKeys == 64) {
+            Preference advancedButtons = prefSet.findPreference(ADVANCED_BUTTONS);
+            if (advancedButtons != null) {
+                prefSet.removePreference(advancedButtons);
+            }
+        }
 
         if (!CrUtils.deviceSupportsFlashLight(getContext())) {
             Preference toRemove = prefSet.findPreference(TORCH_POWER_BUTTON_GESTURE);
