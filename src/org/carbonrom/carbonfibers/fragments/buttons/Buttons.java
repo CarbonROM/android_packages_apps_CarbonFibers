@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
@@ -43,6 +44,7 @@ public class Buttons extends SettingsPreferenceFragment implements
     private static final String TAG = "Buttons";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
     private static final String ADVANCED_BUTTONS = "advanced_options";
+    private SwitchPreference mNavbarToggle;
 
     private ListPreference mTorchPowerButton;
     private PreferenceScreen mAdvancedButtons;
@@ -84,6 +86,15 @@ public class Buttons extends SettingsPreferenceFragment implements
             mTorchPowerButton.setSummary(mTorchPowerButton.getEntry());
             mTorchPowerButton.setOnPreferenceChangeListener(this);
         }
+
+        mNavbarToggle = (SwitchPreference) findPreference("navigation_bar_enabled");
+        boolean enabled = Settings.Secure.getIntForUser(
+                resolver, Settings.Secure.NAVIGATION_BAR_ENABLED,
+                getActivity().getResources().getBoolean(
+                com.android.internal.R.bool.config_showNavigationBar) ? 1 : 0,
+                UserHandle.USER_CURRENT) == 1;
+        mNavbarToggle.setChecked(enabled);
+        mNavbarToggle.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -123,6 +134,12 @@ public class Buttons extends SettingsPreferenceFragment implements
                     Toast.LENGTH_SHORT).show();
             }
             return true;
+        } else if (preference == mNavbarToggle) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putIntForUser(getActivity().getContentResolver(),
+                    Settings.Secure.NAVIGATION_BAR_ENABLED, value ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+            mNavbarToggle.setChecked(value);
         }
         return false;
     }
