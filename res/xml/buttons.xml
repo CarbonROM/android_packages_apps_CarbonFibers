@@ -20,6 +20,10 @@
     android:title="@string/buttons_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <SwitchPreference
+        android:key="navigation_bar_enabled"
+        android:title="@string/navigation_bar_enabled_title" />
+
     <PreferenceScreen
         android:key="advanced_options"
         android:title="@string/advanced_options_title"
