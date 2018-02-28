@@ -37,8 +37,7 @@ import com.android.settings.Utils;
 
 public class Statusbar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "Status bar";
-    private GlobalSettingSwitchPreference mHeadsUpNotificationsEnabled;
+    private static final String TAG = "Statusbar";
     private static final String SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
 
