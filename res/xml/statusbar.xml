@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2016 CarbonROM
+<!--  Copyright (C) 2018 CarbonROM
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -25,13 +25,6 @@
         android:title="@string/status_bar_music_ticker_title"
         android:summary="@string/status_bar_music_ticker_summary"
         android:defaultValue="false" />
-
-    <ListPreference
-        android:key="notification_style"
-        android:entries="@array/notification_style_entries"
-        android:entryValues="@array/notification_style_values"
-        android:summary="%s"
-        android:title="@string/notification_style_title" />
 
     <Preference
             android:title="@string/statusbar_tuner_title"
@@ -60,4 +53,26 @@
             android:title="@string/status_bar_clock"
             android:summary="@string/status_bar_clock_summary"
             android:fragment="org.carbonrom.carbonfibers.fragments.statusbar.ClockDateSettings" />
+
+    <PreferenceCategory
+        android:title="@string/statusbar_notifications_category">
+
+        <ListPreference
+            android:key="notification_style"
+            android:entries="@array/notification_style_entries"
+            android:entryValues="@array/notification_style_values"
+            android:summary="%s"
+            android:title="@string/notification_style_title" />
+
+        <Preference
+            android:title="@string/power_notifications_title"
+            android:summary="@string/power_notifications_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.PowerNotificationsTunerActivity" />
+        </Preference>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
+
