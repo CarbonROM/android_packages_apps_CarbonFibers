@@ -19,14 +19,22 @@
     <string name="lockscreen_category">Lock screen</string>
     <string name="statusbar_category">Status bar</string>
 
+    <string name="buttons_software_category">Software buttons</string>
+    <string name="buttons_hardware_category">Hardware buttons</string>
+
+    <string name="statusbar_notifications_category">Notifications</string>
+
+    <string name="system_global_actions_category">Global actions</string>
+    <string name="system_volume_category">Volume</string>
+
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
     <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nSo, if you find a bug with any setting in CarbonFibers, please open up a ticket on Jira or contact a Carbon developer with the following:\n\n1. #blameadinkwok\n2. Logs!\n3. Kernel and mods used\n4. Extra useful information\n\nIf you fail to report something with the above information, do not expect things to be fixed. Remember, we are not as perfect as Patrick, so we do miss things occasionally.</string>
     <string name="carbonfibers_dialog_toast">READ THE WHOLE THING!</string>
 
     <!-- Navbar Animation -->
-    <string name="pixel_navbar_anim_title">Enable Pixel navbar animation</string>
-    <string name="pixel_navbar_anim_summary">Enables customized Pixel home button animation</string>
+    <string name="pixel_navbar_anim_title">Enable Pixel home animation</string>
+    <string name="pixel_navbar_anim_summary">Show Pixel\'s home button animation</string>
 
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hide apps from recents</string>
@@ -114,8 +122,8 @@
     <string name="button_backlight_on_touch_only_summary">Button backlight will only appear when buttons are pressed rather than on all the time. Timeout still impacts this feature.</string>
 
     <!-- HW Keys customization -->
-    <string name="advanced_options_title">Advanced Options</string>
-    <string name="advanced_options_summary">Hardware Key Rebindings</string>
+    <string name="advanced_options_title">Advanced options</string>
+    <string name="advanced_options_summary">Hardware key rebindings</string>
     <string name="hardware_keys_volume_keys_title">Volume rocker</string>
     <string name="action_value_default_action" translatable="false">default</string>
     <string name="action_value_select_app" translatable="false">app</string>
@@ -150,6 +158,7 @@
 
     <!-- Toggle navigation bar -->
     <string name="navigation_bar_enabled_title">Enable navigation bar</string>
+    <string name="navigation_bar_enabled_summary">Show the navigation bar</string>
 
     <!-- SystemUI Tuner -->
     <string name="statusbar_tuner_title">Status bar items</string>
