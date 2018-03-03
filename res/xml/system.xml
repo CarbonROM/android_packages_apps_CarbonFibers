@@ -32,11 +32,4 @@
         android:summary="@string/global_actions_summary"
         android:fragment="org.carbonrom.carbonfibers.fragments.system.GlobalActionsSettings" />
 
-    <Preference
-        android:title="@string/power_notifications_title"
-        android:summary="@string/power_notifications_summary">
-        <intent android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.PowerNotificationsTunerActivity" />
-    </Preference>
 </PreferenceScreen>
