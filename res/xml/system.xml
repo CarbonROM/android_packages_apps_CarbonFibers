@@ -60,4 +60,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/system_recents_category">
+
+        <com.android.settings.carbon.SystemSettingSwitchPreference
+            android:key="systemui_recents_mem_display"
+            android:title="@string/systemui_recents_mem_display_title"
+            android:summary="@string/systemui_recents_mem_display_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
