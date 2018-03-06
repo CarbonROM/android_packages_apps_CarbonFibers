@@ -243,4 +243,9 @@
     <!-- Pin scramble -->
     <string name="unlock_scramble_pin_layout_title">Scramble PIN</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
+    <!-- Recents Membar -->
+    <string name="systemui_recents_mem_display_title">Show memory bar</string>
+    <string name="systemui_recents_mem_display_summaryOn">Memory bar enabled</string>
+    <string name="systemui_recents_mem_display_summaryOff">Memory bar disabled</string>
 </resources>
