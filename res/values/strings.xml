@@ -26,6 +26,7 @@
 
     <string name="system_global_actions_category">Global actions</string>
     <string name="system_volume_category">Volume</string>
+    <string name="system_recents_category">Recents</string>
 
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
@@ -175,7 +176,7 @@
     <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
     <string name="volbtn_up_zen_summary">Allow volume up to exit do not disturb mode</string>
     <string name="vol_zen_title">Do not disturb switch</string>
-    <string name="vol_zen_summary">Show do not disturb switch on volume panel</string>
+    <string name="vol_zen_summary">Show do not disturb switch in volume panel</string>
 
     <!-- Battery percentage -->
     <string name="battery_style_category_title">Battery icon</string>
@@ -243,4 +244,8 @@
     <!-- Pin scramble -->
     <string name="unlock_scramble_pin_layout_title">Scramble PIN</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
+    <!-- Recents Membar -->
+    <string name="systemui_recents_mem_display_title">Enable memory bar</string>
+    <string name="systemui_recents_mem_display_summary">Show memory usage bar in recents</string>
 </resources>
