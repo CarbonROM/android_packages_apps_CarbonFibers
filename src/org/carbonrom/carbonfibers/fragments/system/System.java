@@ -39,13 +39,25 @@ public class System extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "System";
 
+    private static final String IMMERSIVE_RECENTS = "immersive_recents";
+
+    private ListPreference mImmersiveRecents;
+    private ContentResolver resolver;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system);
 
-        ContentResolver resolver = getActivity().getContentResolver();
+        resolver = getActivity().getContentResolver();
+
+        // Immersive recents
+        mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
+        mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
+                resolver, Settings.System.IMMERSIVE_RECENTS, 0)));
+        mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
+        mImmersiveRecents.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -65,7 +77,14 @@ public class System extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
-        return true;
+        if (preference == mImmersiveRecents) {
+            Settings.System.putInt(resolver, Settings.System.IMMERSIVE_RECENTS,
+                    Integer.valueOf((String) objValue));
+            mImmersiveRecents.setValue(String.valueOf(objValue));
+            mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
+            return true;
+            }
+        return false;
     }
 
 }
