@@ -16,9 +16,17 @@
 
 package org.carbonrom.carbonfibers.crstats;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -34,6 +42,8 @@ public class AnonymousStats extends SettingsPreferenceFragment {
     /* package */ static final String KEY_LAST_JOB_ID = "last_job_id";
     /* package */ static final int QUEUE_MAX_THRESHOLD = 1000;
 
+    private static final int MENU_HELP  = 0;
+
     public static SharedPreferences getPreferences(Context context) {
         return context.getSharedPreferences(PREF_FILE_NAME, 0);
     }
@@ -42,11 +52,39 @@ public class AnonymousStats extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.anonymous_stats);
+        setHasOptionsMenu(true);
     }
 
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.CARBONFIBERS;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.add(0, MENU_HELP, 0, R.string.anonymous_statistics_warning_title)
+                .setIcon(R.drawable.ic_carbonfibers_info)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case MENU_HELP:
+                showDialogInner(MENU_HELP);
+                Toast.makeText(getActivity(),
+                (R.string.carbonfibers_dialog_toast),
+                Toast.LENGTH_LONG).show();
+                return true;
+            default:
+                return false;
+        }
+    }
+
+    private void showDialogInner(int id) {
+        DialogFragment newFragment = MyAlertDialogFragment.newInstance(id);
+        newFragment.setTargetFragment(this, 0);
+        newFragment.show(getFragmentManager(), "dialog " + id);
     }
 
     public static void updateLastSynced(Context context) {
@@ -77,4 +115,38 @@ public class AnonymousStats extends SettingsPreferenceFragment {
         setLastJobId(context, lastId);
         return lastId;
     }
+
+    public static class MyAlertDialogFragment extends DialogFragment {
+
+        public static MyAlertDialogFragment newInstance(int id) {
+            MyAlertDialogFragment frag = new MyAlertDialogFragment();
+            Bundle args = new Bundle();
+            args.putInt("id", id);
+            frag.setArguments(args);
+            return frag;
+        }
+
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            int id = getArguments().getInt("id");
+            switch (id) {
+                case MENU_HELP:
+                    return new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.anonymous_statistics_warning_title)
+                    .setMessage(R.string.anonymous_statistics_warning)
+                    .setCancelable(false)
+                    .setNegativeButton(R.string.dlg_ok,
+                        new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    })
+                    .create();
+            }
+            throw new IllegalArgumentException("unknown id " + id);
+        }
+
+        @Override
+        public void onCancel(DialogInterface dialog) {
+        }
+    }
+
 }
