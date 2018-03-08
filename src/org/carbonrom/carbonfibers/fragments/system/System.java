@@ -41,9 +41,11 @@ public class System extends SettingsPreferenceFragment implements
     private static final String TAG = "System";
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
+    private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
 
     private ListPreference mRecentsClearAllLocation;
     private ListPreference mImmersiveRecents;
+    private ListPreference mScreenOffAnimation;
     private ContentResolver resolver;
 
     @Override
@@ -68,6 +70,13 @@ public class System extends SettingsPreferenceFragment implements
         mRecentsClearAllLocation.setValue(String.valueOf(location));
         mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
+
+        mScreenOffAnimation = (ListPreference) findPreference(SCREEN_OFF_ANIMATION);
+        int screenOffStyle = Settings.System.getInt(resolver,
+                Settings.System.SCREEN_OFF_ANIMATION, 0);
+        mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
+        mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
+        mScreenOffAnimation.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -99,6 +108,12 @@ public class System extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
+            return true;
+        } else if (preference == mScreenOffAnimation) {
+            Settings.System.putInt(resolver,
+                    Settings.System.SCREEN_OFF_ANIMATION, Integer.valueOf((String) objValue));
+            int valueIndex = mScreenOffAnimation.findIndexOfValue((String) objValue);
+            mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[index]);
             return true;
         }
         return false;
