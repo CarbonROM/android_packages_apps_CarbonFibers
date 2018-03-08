@@ -268,5 +268,8 @@
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
 
-</resources>
+    <!-- Face Auto Unlock -->
+    <string name="face_auto_unlock_title">Auto face unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lock screen after recognizing trusted face</string>
 
+</resources>
