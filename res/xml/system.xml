@@ -100,4 +100,10 @@
 
     </PreferenceCategory>
 
+    <com.android.settings.carbon.SecureSettingSwitchPreference
+       android:key="untrusted_overlay_toggle"
+       android:title="@string/untrusted_overlay_toggle_title"
+       android:summary="@string/untrusted_overlay_toggle_summary"
+       android:defaultValue="false" />     
+
 </PreferenceScreen>
