@@ -16,10 +16,17 @@
 
 package org.carbonrom.carbonfibers.fragments.privacy;
 
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.DialogInterface;
+import static android.content.DialogInterface.BUTTON_NEGATIVE;
+import static android.content.DialogInterface.BUTTON_POSITIVE;
+import android.content.DialogInterface.OnClickListener;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.PowerManager;
 import android.os.UserHandle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
@@ -32,12 +39,14 @@ import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.carbon.SecureSettingSwitchPreference;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
 public class Privacy extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, DialogInterface.OnClickListener {
     private static final String TAG = "Privacy";
+    private SecureSettingSwitchPreference mUntrustedOverlay;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,6 +55,9 @@ public class Privacy extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.privacy);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mUntrustedOverlay = (SecureSettingSwitchPreference) findPreference("untrusted_overlay_toggle");
+        mUntrustedOverlay.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -63,8 +75,36 @@ public class Privacy extends SettingsPreferenceFragment implements
         super.onPause();
     }
 
+    private void alertReboot() {
+        new AlertDialog.Builder(getActivity())
+                .setTitle(R.string.untrusted_overlay_alert_title)
+                .setMessage(R.string.untrusted_overlay_alert_message)
+                .setPositiveButton(R.string.reboot, this)
+                .setNegativeButton(android.R.string.cancel, this)
+                .setCancelable(false)
+                .show();
+    }
+
+    @Override
+    public void onClick(DialogInterface dialog, int which) {
+        switch (which) {
+            case BUTTON_NEGATIVE:
+                mUntrustedOverlay.setPersistedBoolean(false);
+                dialog.dismiss();
+                break;
+            case BUTTON_POSITIVE:
+                PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+                pm.reboot(null);
+                dialog.dismiss();
+                break;
+            default:
+                break;
+        }
+    }
+
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
+        if (preference.equals(mUntrustedOverlay))
+            alertReboot();
         return true;
     }
 
