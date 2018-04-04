@@ -42,10 +42,12 @@ public class System extends SettingsPreferenceFragment implements
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
+    private static final String SYSTEMUI_THEME_STYLE = "systemui_theme_style";
 
     private ListPreference mRecentsClearAllLocation;
     private ListPreference mImmersiveRecents;
     private ListPreference mScreenOffAnimation;
+    private ListPreference mSystemUIThemeStyle;
     private ContentResolver resolver;
 
     @Override
@@ -77,6 +79,13 @@ public class System extends SettingsPreferenceFragment implements
         mScreenOffAnimation.setValue(String.valueOf(screenOffStyle));
         mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
         mScreenOffAnimation.setOnPreferenceChangeListener(this);
+
+        mSystemUIThemeStyle = (ListPreference) findPreference(SYSTEMUI_THEME_STYLE);
+        int systemUIThemeStyle = Settings.System.getInt(resolver,
+                Settings.System.SYSTEM_UI_THEME, 0);
+        mSystemUIThemeStyle.setValue(String.valueOf(systemUIThemeStyle));
+        mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntry());
+        mSystemUIThemeStyle.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -114,6 +123,13 @@ public class System extends SettingsPreferenceFragment implements
                     Settings.System.SCREEN_OFF_ANIMATION, Integer.valueOf((String) objValue));
             int valueIndex = mScreenOffAnimation.findIndexOfValue((String) objValue);
             mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
+            return true;
+        } else if (preference == mSystemUIThemeStyle) {
+            String value = (String) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.SYSTEM_UI_THEME, Integer.valueOf(value));
+            int valueIndex = mSystemUIThemeStyle.findIndexOfValue(value);
+            mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntries()[valueIndex]);
             return true;
         }
         return false;
