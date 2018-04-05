@@ -23,6 +23,7 @@
     <string name="buttons_hardware_category">Hardware buttons</string>
 
     <string name="statusbar_notifications_category">Notifications</string>
+    <string name="statusbar_network_activity_category">Network activity</string>
 
     <string name="system_global_actions_category">Global actions</string>
     <string name="system_volume_category">Volume</string>
