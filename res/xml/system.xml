@@ -75,4 +75,17 @@
             android:defaultValue="true" />
     </PreferenceCategory>
 
+    <SwitchPreference
+        android:key="force_aspect_ratio_switch"
+        android:title="@string/full_aspect_ratio_switch_title"
+        android:summary="@string/full_aspect_ratio_switch_title" />
+
+    <PreferenceScreen
+        android:key="force_aspect_ratio"
+        android:icon="@drawable/ic_hafr"
+        android:title="@string/force_aspect_ratio_apps_title" >
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="org.carbonrom.carbonfibers.fragments.system.ForceAspectRatioActivity" />
+    </PreferenceScreen>
 </PreferenceScreen>

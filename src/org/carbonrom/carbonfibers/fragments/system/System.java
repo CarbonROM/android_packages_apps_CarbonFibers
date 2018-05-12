@@ -19,10 +19,12 @@ package org.carbonrom.carbonfibers.fragments.system;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v14.preference.SwitchPreference;
 
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
@@ -41,8 +43,13 @@ public class System extends CustomSettingsPreferenceFragment
     private static final String ADVANCED_REBOOT = "advanced_reboot";
     private static final String KEY_SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String VIBRATION_ON_CHARGE_STATE_CHANGED = "vibration_on_charge_state_changed";
+    private static final String FORCE_ASPECT_RATIO = "force_aspect_ratio";
+    private static final String FORCE_ASPECT_RATIO_SWITCH = "force_aspect_ratio_switch";
 
     private ListPreference mScreenOffAnimation;
+    private SwitchPreference mAspectRatioSwitch;
+    private PreferenceScreen mForceAspectRatioApps;
+    private boolean mAspectRatioEnabled;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,7 +58,14 @@ public class System extends CustomSettingsPreferenceFragment
         addPreferencesFromResource(R.xml.system);
         addCustomPreference(findPreference(ADVANCED_REBOOT), SECURE_TWO_STATE, STATE_ON);
         addCustomPreference(findPreference(VIBRATION_ON_CHARGE_STATE_CHANGED), SYSTEM_TWO_STATE, STATE_ON);
-        updateSmartPixelsPreference();
+        PreferenceScreen prefSet = getPreferenceScreen();
+        boolean enableSmartPixels = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
+        Preference smartPixels = findPreference(SMART_PIXELS);
+
+        if (!enableSmartPixels){
+            prefSet.removePreference(smartPixels);
+        }
 
         mScreenOffAnimation = (ListPreference) findPreference(KEY_SCREEN_OFF_ANIMATION);
         int screenOffAnimation = Settings.Global.getInt(getContentResolver(),
@@ -59,6 +73,23 @@ public class System extends CustomSettingsPreferenceFragment
         mScreenOffAnimation.setValue(Integer.toString(screenOffAnimation));
         mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
         mScreenOffAnimation.setOnPreferenceChangeListener(this);
+
+        mAspectRatioSwitch = (SwitchPreference) findPreference(FORCE_ASPECT_RATIO_SWITCH);
+        mAspectRatioEnabled = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.ASPECT_RATIO_APPS_ENABLED, 0, UserHandle.USER_CURRENT) == 1;
+        mAspectRatioSwitch.setOnPreferenceChangeListener(this);
+        mAspectRatioSwitch.setChecked(mAspectRatioEnabled);
+
+        mForceAspectRatioApps = (PreferenceScreen) findPreference(FORCE_ASPECT_RATIO);
+        mForceAspectRatioApps.setEnabled(mAspectRatioEnabled);
+
+        boolean enableForceAspectRatio = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_haveHigherAspectRatioScreen);
+
+        if (!enableForceAspectRatio){
+            prefSet.removePreference(mAspectRatioSwitch);
+            prefSet.removePreference(mForceAspectRatioApps);
+        }
     }
 
     @Override
@@ -69,19 +100,14 @@ public class System extends CustomSettingsPreferenceFragment
             mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[index]);
             Settings.Global.putInt(getContentResolver(), Settings.Global.SCREEN_OFF_ANIMATION, value);
             return true;
+        } else if (preference == mAspectRatioSwitch) {
+            mAspectRatioEnabled = (boolean)newValue;
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.ASPECT_RATIO_APPS_ENABLED, mAspectRatioEnabled ? 1 : 0, UserHandle.USER_CURRENT);
+            mForceAspectRatioApps.setEnabled(mAspectRatioEnabled);
+            return true;
         }
         return false;
-    }
-
-    private void updateSmartPixelsPreference() {
-        PreferenceScreen prefSet = getPreferenceScreen();
-        boolean enableSmartPixels = getContext().getResources().
-                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
-        Preference smartPixels = findPreference(SMART_PIXELS);
-
-        if (!enableSmartPixels){
-            prefSet.removePreference(smartPixels);
-        }
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
