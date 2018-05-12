@@ -195,4 +195,8 @@
     <!-- OnePlus Navigation Gestures -->
     <string name="use_bottom_gesture_summary">Navigation bar will be disabled!\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\nLong press home\n- Short swipe up and hold in the center</string>
     <string name="use_bottom_gesture_title">OnePlus Navigation gestures</string>
+
+    <!-- Force Aspect Ratio -->
+    <string name="full_aspect_ratio_switch_title">Enable force full Aspect Ratio</string>
+    <string name="force_aspect_ratio_apps_title">Full Aspect Ratio Apps</string>
 </resources>
