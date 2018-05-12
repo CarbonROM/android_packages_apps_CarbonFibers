@@ -324,4 +324,7 @@
     <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
     <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
 
+    <!-- Force Aspect Ratio -->
+    <string name="full_aspect_ratio_switch_title">Enable force full Aspect Ratio</string>
+    <string name="force_aspect_ratio_apps_title">Full Aspect Ratio Apps</string>
 </resources>
