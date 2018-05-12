@@ -42,11 +42,17 @@ public class System extends SettingsPreferenceFragment implements
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
+    private static final String SMART_PIXELS = "smart_pixels";
+    private static final String FORCE_ASPECT_RATIO = "force_aspect_ratio";
+    private static final String FORCE_ASPECT_RATIO_ENABLED = "aspect_ratio_apps_enabled";
 
     private ListPreference mRecentsClearAllLocation;
     private ListPreference mImmersiveRecents;
     private ListPreference mScreenOffAnimation;
     private ContentResolver resolver;
+    private SwitchPreference mAspectRatioSwitch;
+    private PreferenceScreen mForceAspectRatioApps;
+    private boolean mAspectRatioEnabled;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -80,10 +86,26 @@ public class System extends SettingsPreferenceFragment implements
 
         boolean enableSmartPixels = getContext().getResources().
                 getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
-        Preference SmartPixels = findPreference("smart_pixels");
+        Preference SmartPixels = findPreference(SMART_PIXELS);
 
         if (!enableSmartPixels){
             prefSet.removePreference(SmartPixels);
+        }
+
+        mAspectRatioSwitch = (SwitchPreference) findPreference(FORCE_ASPECT_RATIO_ENABLED);
+        mAspectRatioEnabled = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.ASPECT_RATIO_APPS_ENABLED, 0, UserHandle.USER_CURRENT) == 1;
+        mAspectRatioSwitch.setOnPreferenceChangeListener(this);
+        mAspectRatioSwitch.setChecked(mAspectRatioEnabled);
+
+
+        boolean enableForceAspectRatio = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_screenAspectRatio);
+        mForceAspectRatioApps = findPreference(FORCE_ASPECT_RATIO);
+
+        if (!enableForceAspectRatio){
+            prefSet.removePreference(mAspectRatioSwitch);
+            prefSet.removePreference(mForceAspectRatioApps);
         }
     }
 
@@ -104,24 +126,29 @@ public class System extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
-        if (preference == mImmersiveRecents) {
+        if (preference.equals(mImmersiveRecents)) {
             Settings.System.putInt(resolver, Settings.System.IMMERSIVE_RECENTS,
                     Integer.valueOf((String) objValue));
             mImmersiveRecents.setValue(String.valueOf(objValue));
             mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
             return true;
-        } else if (preference == mRecentsClearAllLocation) {
+        } else if (preference.equals(mRecentsClearAllLocation)) {
             int location = Integer.valueOf((String) objValue);
             int index = mRecentsClearAllLocation.findIndexOfValue((String) objValue);
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
             return true;
-        } else if (preference == mScreenOffAnimation) {
+        } else if (preference.equals(mScreenOffAnimation)) {
             Settings.System.putInt(resolver,
                     Settings.System.SCREEN_OFF_ANIMATION, Integer.valueOf((String) objValue));
             int valueIndex = mScreenOffAnimation.findIndexOfValue((String) objValue);
             mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
+            return true;
+        } else if (preference.equals(mAspectRatioSwitch)) {
+            Settings.System.putInt(resolver,
+                    Settings.System.ASPECT_RATIO_APPS_ENABLED, Integer.valueOf((String) objValue));
+            mForceAspectRatioApps.setEnabled(Integer.valueOf((String) objValue) == 1);
             return true;
         }
         return false;
