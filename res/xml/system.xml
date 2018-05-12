@@ -26,6 +26,20 @@
         android:summary="@string/smart_pixels_summary"
         android:fragment="org.carbonrom.carbonfibers.fragments.system.SmartPixels" />
 
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="aspect_ratio_apps_enabled"
+        android:title="@string/full_aspect_ratio_switch_title"
+        android:summary="@string/full_aspect_ratio_switch_title"
+        android:defaultValue="false" />
+
+    <PreferenceScreen
+        android:icon="@drawable/ic_hafr"
+        android:title="@string/full_aspect_ratio_title" >
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="org.carbonrom.carbonfibers.fragments.system.ForceAspectRatioActivity" />
+    </PreferenceScreen>
+
     <PreferenceCategory
         android:title="@string/system_global_actions_category">
 
