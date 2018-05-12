@@ -32,8 +32,13 @@ public class System extends CustomSettingsPreferenceFragment
     private static final String ADVANCED_REBOOT = "advanced_reboot";
     private static final String KEY_SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String VIBRATION_ON_CHARGE_STATE_CHANGED = "vibration_on_charge_state_changed";
+    private static final String FORCE_ASPECT_RATIO = "force_aspect_ratio";
+    private static final String FORCE_ASPECT_RATIO_SWITCH = "force_aspect_ratio_switch";
 
     private ListPreference mScreenOffAnimation;
+    private SwitchPreference mAspectRatioSwitch;
+    private PreferenceScreen mForceAspectRatioApps;
+    private boolean mAspectRatioEnabled;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,6 +55,19 @@ public class System extends CustomSettingsPreferenceFragment
         mScreenOffAnimation.setValue(Integer.toString(screenOffAnimation));
         mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntry());
         mScreenOffAnimation.setOnPreferenceChangeListener(this);
+
+        mAspectRatioSwitch = (SwitchPreference) findPreference(FORCE_ASPECT_RATIO_SWITCH);
+        addCustomPreference(mAspectRatioSwitch, SYSTEM_USER_TWO_STATE, STATE_OFF);
+
+        boolean enableForceAspectRatio = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_haveHigherAspectRatioScreen);
+        mForceAspectRatioApps = (PreferenceScreen) findPreference(FORCE_ASPECT_RATIO);
+        mForceAspectRatioApps.setEnabled(mAspectRatioEnabled);
+
+        if (!enableForceAspectRatio){
+            prefSet.removePreference(mAspectRatioSwitch);
+            prefSet.removePreference(mForceAspectRatioApps);
+        }
     }
 
     @Override
