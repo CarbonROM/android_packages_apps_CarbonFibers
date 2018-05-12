@@ -331,4 +331,7 @@
    <string name="weather_lockscreen_enabled_title">Lockscreen weather</string>
    <string name="weather_lockscreen_enabled_summary">Display weather on lockscreen</string>
 
+    <!-- Force Aspect Ratio -->
+    <string name="full_aspect_ratio_switch_title">Enable force full Aspect Ratio</string>
+    <string name="force_aspect_ratio_apps_title">Full Aspect Ratio Apps</string>
 </resources>
