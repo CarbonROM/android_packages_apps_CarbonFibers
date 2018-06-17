@@ -40,6 +40,12 @@
             android:targetClass="org.carbonrom.carbonfibers.fragments.system.ForceAspectRatioActivity" />
     </PreferenceScreen>
 
+    <com.android.settings.carbon.SecureSettingSwitchPreference
+        android:key="qs_background"
+        android:title="@string/qs_background_alpha_preference_title"
+        android:summary="@string/qs_background_alpha_preference_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:title="@string/system_global_actions_category">
 

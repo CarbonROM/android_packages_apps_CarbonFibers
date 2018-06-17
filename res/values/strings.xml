@@ -327,4 +327,8 @@
     <!-- Force Aspect Ratio -->
     <string name="full_aspect_ratio_switch_title">Enable force full Aspect Ratio</string>
     <string name="force_aspect_ratio_apps_title">Full Aspect Ratio Apps</string>
+
+    <!-- QS Background alpha -->
+    <string name="qs_background_alpha_preference_title">QS Background alpha</string>
+    <string name="qs_background_alpha_preference_summary">Whether to enable qs background transparency</string>
 </resources>

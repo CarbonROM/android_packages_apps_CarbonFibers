@@ -53,6 +53,8 @@ public class System extends SettingsPreferenceFragment implements
     private SwitchPreference mAspectRatioSwitch;
     private PreferenceScreen mForceAspectRatioApps;
     private boolean mAspectRatioEnabled;
+    private SwitchPreference mQSBAckgroundAlpha;
+    private boolean mQSAlphaEnabled;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -107,6 +109,12 @@ public class System extends SettingsPreferenceFragment implements
             prefSet.removePreference(mAspectRatioSwitch);
             prefSet.removePreference(mForceAspectRatioApps);
         }
+
+        mQSBAckgroundAlpha = (SwitchPreference) findPreference("qs_background_alpha");
+        mQSAlphaEnabled = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.QS_BACKGROUND_ALPHA, 0, UserHandle.USER_CURRENT) == 1;
+        mQSBAckgroundAlpha.setOnPreferenceChangeListener(this);
+        mQSBAckgroundAlpha.setChecked(mQSAlphaEnabled);
     }
 
     @Override
