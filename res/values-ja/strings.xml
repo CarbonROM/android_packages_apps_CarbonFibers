@@ -29,7 +29,7 @@
   <string name="lockscreen_security_category">セキュリティ</string>
   <!-- Dialog -->
   <string name="carbonfibers_dialog_title">互いに助け合いましょう！</string>
-  <string name="carbonfibers_dialog_message">残念ながら私たちは魔法使いではありません！\n\nしたがって、CarbonFibersの設定でバグを見つけた場合は、Jiraへのチケットを開くか、Carbon開発者に以下ように連絡をしてください。\n\n1. ＃blamemyself *\n2. ログ！\n3. カーネルとModの使用状況\n4. さらに有益な情報\n\n上記の情報で何かを報告しなかった場合は、物事が修正されることを期待しないでください。私たちはパトリックのように完璧ではないことを忘れないでください。</string>
+  <string name="carbonfibers_dialog_message">残念ながら私たちは魔法使いではありません！\n\nしたがって、CarbonFibersの設定でバグを見つけた場合は、Jiraへのチケットを開くか、Carbon開発者に以下のように連絡をしてください。\n\n1. ＃blamemyself *\n2. ログ！\n3. カーネルとModの使用状況\n4. さらに有益な情報\n\n上記の情報で何かを報告しなかった場合は、物事が修正されることを期待しないでください。私たちはパトリックのように完璧ではないことを忘れないでください。</string>
   <string name="carbonfibers_dialog_toast">全てを読んでください！</string>
   <!-- Navbar Animation -->
   <string name="pixel_navbar_anim_title">ピクセルホームアニメーションを有効にする</string>
@@ -63,7 +63,7 @@
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <string name="anonymous_statistics_title">CarbonROM の統計情報</string>
-  <string name="anonymous_statistics_summary">CarbonROM をより良くするための匿名利用統計報告をオプトインする</string>
+  <string name="anonymous_statistics_summary">CarbonROM をより良くするための匿名利用統計報告を許可する</string>
   <string name="anonymous_statistics_warning_title">概要</string>
   <string name="anonymous_statistics_warning">匿名利用状況の送信を許諾することによって、CarbonROMの開発者がデバイス単位のユニークインストール数を追跡することができます。送信される情報にはユニークIDが含まれますが、これはあなたの個人情報、端末のタイプ及びバージョン情報とは結びつきません。データ送信は端末の起動時に毎回行われ、送信されるデータの例はプレビューをクリックすることにより確認できます。</string>
   <string name="enable_reporting_title">レポートを有効にする</string>
@@ -204,7 +204,7 @@
   <string name="status_bar_show_clock_title">日付と時計を表示</string>
   <string name="status_bar_clock_seconds_title">秒を表示</string>
   <string name="status_bar_am_pm_title">午前/午後</string>
-  <string name="status_bar_am_pm_info">24時間スタイルが有効</string>
+  <string name="status_bar_am_pm_info">24時間スタイルが有効です</string>
   <string name="enable_clock_weekday">曜日</string>
   <string name="enable_clock_weekday_summary">時間の前に曜日を表示する</string>
   <string name="right_clock">右側に表示</string>
@@ -244,9 +244,9 @@
   <string name="immersive_recents_statusbar">ナビゲーションバーを非表示</string>
   <string name="immersive_recents_navbar">ステータスバーを非表示</string>
   <!-- Clear all recents -->
-  <string name="show_clear_all_recents_button_title">履歴クリアボタンをカスタム</string>
-  <string name="show_clear_all_recents_button_summary">カスタム履歴クリアボタンを使う</string>
-  <string name="recents_clear_all_location_title">履歴クリアボタンの位置</string>
+  <string name="show_clear_all_recents_button_title">全て終了ボタンをカスタム</string>
+  <string name="show_clear_all_recents_button_summary">カスタム全て終了ボタンを使う</string>
+  <string name="recents_clear_all_location_title">全て終了ボタンの位置</string>
   <string name="recents_clear_all_location_top_right">右上</string>
   <string name="recents_clear_all_location_top_left">左上</string>
   <string name="recents_clear_all_location_top_center">中央上</string>
