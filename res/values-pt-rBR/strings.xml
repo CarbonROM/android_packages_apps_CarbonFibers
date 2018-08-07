@@ -129,6 +129,7 @@
   <string name="button_backlight_on_touch_only_summary">Acende a luz de fundo do botão ao pressionar</string>
   <!-- HW Keys customization -->
   <string name="advanced_options_title">Opções Avançadas</string>
+  <string name="advanced_options_summary">Ligações de chave de hardware</string>
   <string name="hardware_keys_volume_keys_title">Botões de volume</string>
   <string name="picker_activities">Atividades</string>
   <string name="select_custom_app_title">Escolha um aplicativo personalizado</string>
@@ -158,19 +159,87 @@
   <string name="statusbar_tuner_title">Ícones da barra de status</string>
   <string name="navbar_tuner_title">Editar barra de navegação</string>
   <string name="lockscreen_shortcuts_title">Atalhos da tela de bloqueio</string>
+  <string name="power_notifications_title">Notificações de liga/desliga</string>
+  <string name="power_notifications_summary">Controle de notificações avançadas na impressão longa</string>
+  <string name="vol_dnd_category_title">Modo não perturbe</string>
+  <string name="volbtn_down_zen_title">Diminuir volume até modo Não perturbe</string>
+  <string name="volbtn_down_zen_summary">Permitir que o botão de volume para baixo entre em modo Não pertube</string>
+  <string name="volbtn_up_zen_title">Aumentar volume para sair do Não pertube</string>
+  <string name="volbtn_up_zen_summary">Permitir que o botão de volume para cima saia do modo Não pertube</string>
+  <string name="vol_zen_title">Interruptor Não perturbe</string>
+  <string name="vol_zen_summary">Mostrar o interruptor não perturbe no painel de volume</string>
   <!-- Battery percentage -->
+  <string name="battery_style_category_title">Ícone de bateria</string>
+  <string name="status_bar_battery_percentage_title">Porcentagem da bateria</string>
+  <string name="status_bar_battery_percentage_default">Oculto</string>
+  <string name="status_bar_battery_percentage_text_next">Ao lado do ícone</string>
+  <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
   <!-- Status bar battery style-->
+  <string name="status_bar_battery_style_title">Estilo da bateria</string>
+  <string name="status_bar_battery_style_port">Retrato</string>
+  <string name="status_bar_battery_style_circle">Círculo</string>
+  <string name="status_bar_battery_style_dotted_circle">Círculo pontilhado</string>
+  <string name="status_bar_battery_style_text">Texto</string>
+  <string name="status_bar_battery_style_hidden">Oculto</string>
+  <string name="status_bar_battery_style_square">Quadrado</string>
   <!-- Status bar notification -->
+  <string name="notification_style_title">Estilo de notificação</string>
+  <string name="notify_disabled">Nenhum</string>
+  <string name="headsup_enabled">Notificações flutuantes</string>
+  <string name="ticker_enabled">Ticker de notificação</string>
+  <string name="headsup_ticker_enabled">Heads-up e ticker</string>
   <!-- Status bar music ticker -->
   <!-- Status bar clock options -->
+  <string name="status_bar_clock">Data e hora</string>
+  <string name="clock_title_enable">Alinhamento</string>
+  <string name="clock_enabled">Habilitado</string>
+  <string name="clock_disabled">Desativado</string>
+  <string name="status_bar_clock_style_reset">Redefinir cores</string>
+  <string name="status_bar_show_clock_title">Exibir data e hora</string>
+  <string name="status_bar_clock_seconds_title">Mostrar segundos</string>
+  <string name="status_bar_am_pm_title">AM/PM</string>
+  <string name="status_bar_am_pm_info">Relógio 24 horas está habilitado</string>
+  <string name="enable_clock_weekday">Dia da semana</string>
+  <string name="enable_clock_weekday_summary">Dia da semana abreviado antes da Hora</string>
+  <string name="right_clock">Relógio à direita</string>
+  <string name="left_clock">Relógio à esquerda</string>
+  <string name="dont_show">Não exibir</string>
+  <string name="clock_date_display">Data</string>
+  <string name="clock_date_display_summary">Exibir data personalizada antes do relógio</string>
+  <string name="clock_date_style">Estilo da data</string>
+  <string name="clock_date_format">Formato da data</string>
   <!-- Pin scramble -->
   <!-- Recents Membar -->
   <!-- Immersive Recents -->
   <!-- Clear all recents -->
+  <string name="recents_clear_all_location_title">Limpar todas as posições de botões</string>
+  <string name="recents_clear_all_location_top_right">Superior direito</string>
+  <string name="recents_clear_all_location_top_left">Superior esquerdo</string>
+  <string name="recents_clear_all_location_top_center">Centro superior</string>
   <!-- Face Auto Unlock -->
+  <string name="face_auto_unlock_title">Desbloqueio automático com rosto</string>
+  <string name="face_auto_unlock_summary">Dispensar tela de bloqueio após reconhecer rosto confiável</string>
   <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
+  <string name="unlock_quick_unlock_control_summary">Desbloquear quando o PIN/Senha inserido for correto</string>
   <!-- Overlay toggle -->
+  <string name="untrusted_overlay_toggle_title">Permitir sobreposições não confiáveis</string>
+  <string name="untrusted_overlay_toggle_summary">Habilitar as sobreposições de terceiros (obrigatória para motores de tema)</string>
+  <string name="untrusted_overlay_alert_title">Reinicialização necessária</string>
+  <string name="untrusted_overlay_alert_message">Para permitir sobreposições não confiáveis, uma reinicialização é necessária. Gostaria de reiniciar?</string>
+  <string name="reboot">Reiniciar</string>
   <!-- Statusbar net monitor -->
+  <string name="network_traffic_state_title">Mostrar atividade de tráfego de rede</string>
+  <string name="network_traffic_autohide_threshold_title">Ocultar automaticamente a atividade da rede (KB/s)</string>
   <!-- Smart Pixels -->
+  <string name="smart_pixels_title">Pixels Inteligentes</string>
+  <string name="smart_pixels_summary">Economize bateria desligando os pixels extras</string>
+  <string name="smart_pixels_enable_title">Ativar pixels inteligentes</string>
+  <string name="smart_pixels_enable_summary">Desligue os pixels para reduzir o consumo de energia</string>
+  <string name="smart_pixels_on_power_save_title">Ativar automaticamente economia de bateria</string>
+  <string name="smart_pixels_on_power_save_summary">Ativar pixels inteligentes quando a economia de bateria está ativada</string>
+  <string name="smart_pixels_percent">Porcentagem de pixels para desativar</string>
+  <string name="smart_pixels_shift">Evite o burn-in deslocando pixels a cada</string>
+  <string name="smart_pixels_warning_text">Smart Pixels é um recurso de economia de energia. Dependendo de quantos pixels você decidir desativar, você poderá ver uma melhoria significativa na duração da bateria. Para uma boa experiência do usuário, recomendamos definir a quantidade de pixels desativados para 75 por cento ao alternar a cada 10 minutos.</string>
   <!-- Force Aspect Ratio -->
 </resources>
