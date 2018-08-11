@@ -35,12 +35,25 @@ import java.util.List;
 @SearchIndexable
 public class System extends CustomSettingsPreferenceFragment implements Indexable {
     private static final String TAG = "System";
+    private static final String SMART_PIXELS = "smart_pixels";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system);
+        updateSmartPixelsPreference();
+    }
+
+    private void updateSmartPixelsPreference() {
+        PreferenceScreen prefSet = getPreferenceScreen();
+        boolean enableSmartPixels = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
+        Preference smartPixels = findPreference(SMART_PIXELS);
+
+        if (!enableSmartPixels){
+            prefSet.removePreference(smartPixels);
+        }
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
@@ -60,6 +73,7 @@ public class System extends CustomSettingsPreferenceFragment implements Indexabl
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
+                    keys.add(SMART_PIXELS);
                     return keys;
                 }
             };
