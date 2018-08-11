@@ -25,11 +25,24 @@ import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 
 public class System extends CustomSettingsPreferenceFragment {
     private static final String TAG = "System";
+    private static final String SMART_PIXELS = "smart_pixels";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system);
+        updateSmartPixelsPreference();
+    }
+
+    private void updateSmartPixelsPreference() {
+        PreferenceScreen prefSet = getPreferenceScreen();
+        boolean enableSmartPixels = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
+        Preference smartPixels = findPreference(SMART_PIXELS);
+
+        if (!enableSmartPixels){
+            prefSet.removePreference(smartPixels);
+        }
     }
 }
