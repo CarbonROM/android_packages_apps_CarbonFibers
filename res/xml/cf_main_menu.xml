@@ -22,6 +22,12 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
    <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.gestures.Gestures"
+       android:key="gestures_main_category"
+       android:icon="@drawable/ic_gestures"
+       android:title="@string/gestures_category" />
+
+   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.status_bar.StatusBar"
        android:key="statusbar_main_category"
        android:icon="@drawable/ic_status_bar"
