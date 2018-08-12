@@ -13,6 +13,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="carbonfibers">Carbon Fibers</string>
     <string name="system_category">System</string>
+    <string name="gestures_category">Gestures</string>
     <string name="misc_category">Miscellaneous</string>
     <string name="privacy_category">Privacy</string>
 
@@ -59,5 +60,11 @@
     <string name="hide_apps_from_recents_summary">Hide apps from appearing in recents</string>
     <string name="hide_from_recents_add_app">Add app</string>
     <string name="title_activity_carbon_recents_settings">Recents</string>
+
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Double-tap status bar to sleep</string>
+    <string name="double_tap_status_bar_sleep_summary">Tap status bar twice to sleep</string>
+    <string name="double_tap_lock_sleep_title">Double-tap lock screen to sleep</string>
+    <string name="double_tap_lock_sleep_summary">Tap lock screen twice to sleep</string>
 
 </resources>
