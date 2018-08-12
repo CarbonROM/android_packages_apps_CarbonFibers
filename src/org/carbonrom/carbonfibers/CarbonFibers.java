@@ -63,6 +63,7 @@ import java.util.List;
 public class CarbonFibers extends SettingsPreferenceFragment implements Indexable {
 
     private static final int MENU_HELP  = 0;
+    private static final String KEY_GESTURE_MAIN_CATEGORY = "gestures_main_category";
     private static final String KEY_SYSTEM_MAIN_CATEGORY = "system_main_category";
     private static final String KEY_BUTTONS_MAIN_CATEGORY = "buttons_main_category";
     private static final String KEY_STATUSBAR_MAIN_CATEGORY = "statusbar_main_category";
@@ -149,6 +150,7 @@ public class CarbonFibers extends SettingsPreferenceFragment implements Indexabl
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     ArrayList<String> keys = new ArrayList<String>();
+                    keys.add(KEY_GESTURE_MAIN_CATEGORY);
                     keys.add(KEY_BUTTONS_MAIN_CATEGORY);
                     keys.add(KEY_STATUSBAR_MAIN_CATEGORY);
                     keys.add(KEY_SYSTEM_MAIN_CATEGORY);
