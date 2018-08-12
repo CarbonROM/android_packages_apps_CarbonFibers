@@ -13,6 +13,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="carbonfibers">Carbon Fibers</string>
     <string name="system_category">System</string>
+    <string name="gestures_category">Gestures</string>
     <string name="misc_category">Miscellaneous</string>
     <string name="privacy_category">Privacy</string>
 
@@ -53,5 +54,11 @@
     <string name="smart_pixels_percent">Percent of pixels to disable</string>
     <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
     <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
+
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Double-tap status bar to sleep</string>
+    <string name="double_tap_status_bar_sleep_summary">Tap status bar twice to sleep</string>
+    <string name="double_tap_lock_sleep_title">Double-tap lock screen to sleep</string>
+    <string name="double_tap_lock_sleep_summary">Tap lock screen twice to sleep</string>
 
 </resources>
