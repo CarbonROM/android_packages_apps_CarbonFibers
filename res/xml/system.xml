@@ -27,4 +27,17 @@
         android:summary="@string/smart_pixels_summary"
         android:fragment="org.carbonrom.carbonfibers.fragments.system.SmartPixels" />
 
+    <Preference
+        android:key="global_actions"
+        android:title="@string/global_actions_title"
+        android:summary="@string/global_actions_summary"
+        android:fragment="org.carbonrom.carbonfibers.fragments.system.GlobalActionsSettings"
+        settings:allowDividerAbove="true" />
+
+    <SwitchPreference
+        android:key="advanced_reboot"
+        android:title="@string/global_actions_advanced_reboot_title"
+        android:summary="@string/global_actions_advanced_reboot_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
