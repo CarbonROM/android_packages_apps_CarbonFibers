@@ -26,12 +26,14 @@ import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 public class System extends CustomSettingsPreferenceFragment {
     private static final String TAG = "System";
     private static final String SMART_PIXELS = "smart_pixels";
+    private static final String ADVANCED_REBOOT = "advanced_reboot";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system);
+        addCustomPreference(findPreference(ADVANCED_REBOOT), SECURE_TWO_STATE, STATE_ON);
         updateSmartPixelsPreference();
     }
 
