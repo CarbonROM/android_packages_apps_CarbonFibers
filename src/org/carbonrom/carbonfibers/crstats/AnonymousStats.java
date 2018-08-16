@@ -19,26 +19,20 @@ package org.carbonrom.carbonfibers.crstats;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.provider.SearchIndexableResource;
 
 import com.android.internal.logging.MetricsLogger;
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-
 import com.android.settings.R;
-import com.android.settings.SettingsPreferenceFragment;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import android.provider.SearchIndexableResource;
+import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
 import com.android.settingslib.search.SearchIndexable;
 
 @SearchIndexable
-public class AnonymousStats extends SettingsPreferenceFragment implements Indexable {
-
+public class AnonymousStats extends CustomSettingsPreferenceFragment implements Indexable {
     private static final String PREF_FILE_NAME = "CRStats";
+    private static final String STATS_COLLECTION = "stats_collection";
     /* package */ static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
     /* package */ static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
     /* package */ static final String KEY_LAST_JOB_ID = "last_job_id";
@@ -52,11 +46,7 @@ public class AnonymousStats extends SettingsPreferenceFragment implements Indexa
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.anonymous_stats);
-    }
-
-    @Override
-    public int getMetricsCategory() {
-        return MetricsEvent.CARBONFIBERS;
+        addCustomPreference(findPreference(STATS_COLLECTION), SECURE_TWO_STATE, STATE_ON);
     }
 
     public static void updateLastSynced(Context context) {
