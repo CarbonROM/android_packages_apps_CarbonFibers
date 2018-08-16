@@ -11,24 +11,27 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="carbonfibers">CarbonFibers</string>
+    <string name="carbonfibers">Carbon Fibers</string>
     <string name="system_category">System</string>
-    <string name="misc_category">Misc</string>
+    <string name="misc_category">Miscellaneous</string>
     <string name="privacy_category">Privacy</string>
 
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
-    <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nSo, if you find a bug with any setting in CarbonFibers, please open up a ticket on Jira or contact a Carbon developer with the following.\n\n1. Blame kwoktopus\n2. Logcat and/or last_kmsg\n3. Kernel and mods used\n4. Useful information (subjective)\n\nIf you fail to report something with the above information, do not expect things to be fixed. Remember, we are not as perfect as Patrick, so we do miss things occasionally.</string>
-    <string name="carbonfibers_dialog_toast">READ THE WHOLE THING!</string>
+    <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nIf you find a bug, please open up a ticket on Jira or
+        contact a Carbon developer with the following.\n\n1. Blame kwoktopus\n2. Logcat and/or last_kmsg\n3. Kernel and mods used\n4.
+        Miscallaneous information\n\nIf you fail to report with the above information, do not expect the issue to be considered.</string>
+    <string name="carbonfibers_dialog_toast">Read it all!</string>
 
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">CarbonROM statistics</string>
-    <string name="anonymous_statistics_summary">Help make CarbonROM better by opting into anonymous statistics reporting</string>
+    <string name="anonymous_statistics_title">CarbonoidOS statistics</string>
+    <string name="anonymous_statistics_summary">Help make CarbonoidOS better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">About</string>
-    <string name="anonymous_statistics_warning">Opting into CarbonROM Statistics will allow non-personal data to be submitted to the
-        developers of CarbonROM to track unique installations across devices. The information submitted includes an unique identifier,
-        which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
+    <string name="anonymous_statistics_warning">Opting into CarbonoidOS Statistics will allow non-personal data to be submitted to the
+        developers of Carbonoid to track unique installations across devices. The information submitted includes an unique identifier,
+        which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data
+        that is submitted, tap on Preview data.</string>
     <string name="enable_reporting_title">Enable reporting</string>
     <string name="preview_data_title">Preview data</string>
     <string name="view_stats_title">View stats</string>
@@ -40,7 +43,6 @@
     <string name="preview_version_title">Version</string>
     <string name="preview_country_title">Country</string>
     <string name="preview_carrier_title">Carrier</string>
-    <string name="stats_collection_title">Stats collection</string>
-    <string name="stats_collection_summary">When enabled, allows metrics collection</string>
+    <string name="stats_collection_title">Enable statistics collection</string>
 
 </resources>

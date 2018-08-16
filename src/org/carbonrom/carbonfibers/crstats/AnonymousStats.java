@@ -21,14 +21,12 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.android.internal.logging.MetricsLogger;
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-
 import com.android.settings.R;
-import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 
-public class AnonymousStats extends SettingsPreferenceFragment {
-
+public class AnonymousStats extends CustomSettingsPreferenceFragment {
     private static final String PREF_FILE_NAME = "CRStats";
+    private static final String STATS_COLLECTION = "stats_collection";
     /* package */ static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
     /* package */ static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
     /* package */ static final String KEY_LAST_JOB_ID = "last_job_id";
@@ -42,11 +40,7 @@ public class AnonymousStats extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.anonymous_stats);
-    }
-
-    @Override
-    public int getMetricsCategory() {
-        return MetricsEvent.CARBONFIBERS;
+        addCustomPreference(findPreference(STATS_COLLECTION), SYSTEM_TWO_STATE, STATE_ON);
     }
 
     public static void updateLastSynced(Context context) {
