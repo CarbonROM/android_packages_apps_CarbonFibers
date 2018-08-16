@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 CarbonROM
+ * Copyright (C) 2017 CarbonROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.carbonrom.carbonfibers.fragments.system;
 
-import android.content.Context;
 import android.os.Bundle;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.provider.SearchIndexableResource;
 
 import com.android.settings.R;
@@ -28,30 +28,32 @@ import com.android.settings.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
 @SearchIndexable
-public class System extends CustomSettingsPreferenceFragment implements Indexable {
-    private static final String TAG = "System";
-    private static final String SMART_PIXELS = "smart_pixels";
-    private static final String GLOBAL_ACTIONS = "global_actions";
-    private static final String ADVANCED_REBOOT = "advanced_reboot";
+public class GlobalActionsSettings extends CustomSettingsPreferenceFragment implements Indexable {
+    private static final String GLOBAL_ACTIONS_POWER = "global_actions_power";
+    private static final String GLOBAL_ACTIONS_RESTART = "global_actions_restart";
+    private static final String GLOBAL_ACTIONS_LOCKDOWN = "global_actions_lockdown";
+    private static final String GLOBAL_ACTIONS_SCREENSHOT = "global_actions_screenshot";
+    private static final String GLOBAL_ACTIONS_SCREENRECORD = "global_actions_screenrecord";
+    private static final String GLOBAL_ACTIONS_AIRPLANE = "global_actions_airplane";
+    private static final String GLOBAL_ACTIONS_SETTINGS = "global_actions_settings";
+    private static final String GLOBAL_ACTIONS_FLASHLIGHT = "global_actions_flashlight";
+    private static final String GLOBAL_ACTIONS_USERS = "global_actions_users";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.system);
-        addCustomPreference(findPreference(ADVANCED_REBOOT), SECURE_TWO_STATE, STATE_ON);
-        updateSmartPixelsPreference();
-    }
+        addPreferencesFromResource(R.xml.global_actions);
 
-    private void updateSmartPixelsPreference() {
-        PreferenceScreen prefSet = getPreferenceScreen();
-        boolean enableSmartPixels = getContext().getResources().
-                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
-        Preference smartPixels = findPreference(SMART_PIXELS);
-
-        if (!enableSmartPixels){
-            prefSet.removePreference(smartPixels);
-        }
+        addCustomPreference(findPreference(GLOBAL_ACTIONS_POWER), SYSTEM_TWO_STATE, STATE_ON);
+        addCustomPreference(findPreference(GLOBAL_ACTIONS_RESTART), SYSTEM_TWO_STATE, STATE_ON);
+        addCustomPreference(findPreference(GLOBAL_ACTIONS_LOCKDOWN), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(GLOBAL_ACTIONS_SCREENSHOT), SYSTEM_TWO_STATE, STATE_ON);
+        addCustomPreference(findPreference(GLOBAL_ACTIONS_SCREENRECORD), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(GLOBAL_ACTIONS_AIRPLANE), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(GLOBAL_ACTIONS_SETTINGS), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(GLOBAL_ACTIONS_FLASHLIGHT), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(GLOBAL_ACTIONS_USERS), SYSTEM_TWO_STATE, STATE_OFF);
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
@@ -63,7 +65,7 @@ public class System extends CustomSettingsPreferenceFragment implements Indexabl
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.system;
+                    sir.xmlResId = R.xml.global_actions;
                     result.add(sir);
                     return result;
                 }
@@ -71,8 +73,6 @@ public class System extends CustomSettingsPreferenceFragment implements Indexabl
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     ArrayList<String> result = new ArrayList<String>();
-                    result.add(SMART_PIXELS);
-                    result.add(GLOBAL_ACTIONS);
                     return result;
                 }
             };
