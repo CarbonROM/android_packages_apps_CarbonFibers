@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.carbonrom.carbonfibers.fragments.privacy;
+package org.carbonrom.carbonfibers.fragments.lock_screen;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -45,14 +45,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class Privacy extends SettingsPreferenceFragment implements Indexable {
-    private static final String TAG = "Privacy";
+public class LockScreen extends SettingsPreferenceFragment implements Indexable {
+    private static final String TAG = "LockScreen";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.privacy);
+        addPreferencesFromResource(R.xml.lock_screen);
     }
 
     @Override
@@ -69,7 +69,7 @@ public class Privacy extends SettingsPreferenceFragment implements Indexable {
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.privacy;
+                    sir.xmlResId = R.xml.lock_screen;
                     result.add(sir);
                     return result;
                 }
