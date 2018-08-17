@@ -24,6 +24,13 @@
     android:title="@string/status_bar_icons_category">
 </PreferenceCategory>
 
+    <Preference
+        android:key="status_bar_tuner"
+        android:title="@string/status_bar_tuner_title"
+        android:summary="@string/status_bar_tuner_summary">
+        <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
+    </Preference>
+
 <PreferenceCategory
     android:title="@string/qs_category"
     settings:allowDividerAbove="true">
