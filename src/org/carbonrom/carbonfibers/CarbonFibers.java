@@ -64,7 +64,8 @@ public class CarbonFibers extends SettingsPreferenceFragment implements Indexabl
 
     private static final int MENU_HELP  = 0;
     private static final String KEY_SYSTEM_MAIN_CATEGORY = "system_main_category";
-    private static final String KEY_MISC_MAIN_CATEGORY = "misc_main_category";
+    private static final String KEY_BUTTONS_MAIN_CATEGORY = "buttons_main_category";
+    private static final String KEY_STATUSBAR_MAIN_CATEGORY = "statusbar_main_category";
     private static final String KEY_PRIVACY_MAIN_CATEGORY = "privacy_main_category";
 
     @Override
@@ -162,8 +163,9 @@ public class CarbonFibers extends SettingsPreferenceFragment implements Indexabl
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     ArrayList<String> keys = new ArrayList<String>();
+                    keys.add(KEY_BUTTONS_MAIN_CATEGORY);
+                    keys.add(KEY_STATUSBAR_MAIN_CATEGORY);
                     keys.add(KEY_SYSTEM_MAIN_CATEGORY);
-                    keys.add(KEY_MISC_MAIN_CATEGORY);
                     keys.add(KEY_PRIVACY_MAIN_CATEGORY);
                     return keys;
                 }

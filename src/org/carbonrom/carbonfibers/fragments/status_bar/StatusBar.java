@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.carbonrom.carbonfibers.fragments.misc;
+package org.carbonrom.carbonfibers.fragments.status_bar;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -26,21 +26,21 @@ import androidx.preference.SwitchPreference;
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settingslib.search.Indexable;
+import com.android.settings.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class Misc extends CustomSettingsPreferenceFragment implements Indexable {
-    private static final String TAG = "Misc";
+public class StatusBar extends CustomSettingsPreferenceFragment implements Indexable {
+    private static final String TAG = "StatusBar";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.misc);
+        addPreferencesFromResource(R.xml.status_bar);
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
@@ -52,7 +52,7 @@ public class Misc extends CustomSettingsPreferenceFragment implements Indexable 
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.misc;
+                    sir.xmlResId = R.xml.status_bar;
                     result.add(sir);
                     return result;
                 }
