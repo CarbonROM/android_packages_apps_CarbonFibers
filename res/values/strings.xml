@@ -23,6 +23,7 @@
     <string name="power_save_category">Power saving</string>
 
     <string name="buttons_software_category">Software buttons</string>
+    <string name="buttons_hardware_category">Hardware buttons</string>
 
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
@@ -120,5 +121,12 @@
         <item>Left-leaning</item>
         <item>Right-leaning</item>
     </string-array>
+
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Toggle torch when screen off</string>
+    <string name="torch_power_button_gesture_none">Disabled</string>
+    <string name="torch_power_button_gesture_dt">Double-tap power button</string>
+    <string name="torch_power_button_gesture_dt_toast">Jump to camera gesture is now disabled</string>
+    <string name="torch_power_button_gesture_lp">Hold power button</string>
 
 </resources>
