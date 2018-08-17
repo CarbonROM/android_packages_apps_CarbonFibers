@@ -13,7 +13,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="carbonfibers">Carbon Fibers</string>
     <string name="system_category">System</string>
+    <string name="status_bar_category">Status bar</string>
     <string name="lock_screen_category">Lock screen</string>
+    <string name="buttons_category">Buttons</string>
     <string name="gestures_category">Gestures</string>
     <string name="misc_category">Miscellaneous</string>
     <string name="privacy_category">Privacy</string>
