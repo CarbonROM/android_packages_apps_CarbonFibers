@@ -36,6 +36,19 @@
             android:key="sysui_nav_bar_inverse"
             android:title="@string/navigation_bar_invert_layout_title"
             android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="button_keys"
+        android:title="@string/buttons_hardware_category">
+
+        <ListPreference
+            android:key="torch_power_button_gesture"
+            android:title="@string/torch_power_button_gesture_title"
+            android:dialogTitle="@string/torch_power_button_gesture_title"
+            android:entries="@array/torch_power_button_gesture_entries"
+            android:entryValues="@array/torch_power_button_gesture_values"
+            android:defaultValue="0" />
 
     </PreferenceCategory>
 

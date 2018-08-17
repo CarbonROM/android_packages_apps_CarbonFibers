@@ -21,10 +21,15 @@ import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import android.widget.Toast;
 
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
+
+import com.android.internal.util.cr.CrUtils;
 
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
@@ -41,8 +46,11 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String NAV_BAR_LAYOUT = "nav_bar_layout";
     private static final String SYSUI_NAV_BAR = "sysui_nav_bar";
     private static final String INVERSE_NAVBAR = "sysui_nav_bar_inverse";
+    private static final String CATEGORY_KEYS = "button_keys";
+    private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 
     private ListPreference mNavBarLayout;
+    private ListPreference mTorchPowerButton;
     private ContentResolver mResolver;
 
     @Override
@@ -61,6 +69,19 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         } else {
             mNavBarLayout.setValueIndex(0);
         }
+
+        PreferenceScreen prefSet = getPreferenceScreen();
+        final PreferenceCategory keysCategory =  
+                (PreferenceCategory) prefSet.findPreference(CATEGORY_KEYS);
+        if (!CrUtils.deviceSupportsFlashLight(getContext())) {
+            Preference toRemove = (Preference) prefSet.findPreference(TORCH_POWER_BUTTON_GESTURE);
+            if (toRemove != null) {
+                keysCategory.removePreference(toRemove);
+            }
+        } else {
+            mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
+            mTorchPowerButton.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -68,6 +89,20 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         if (preference == mNavBarLayout) {
             Settings.Secure.putString(mResolver,
                         SYSUI_NAV_BAR, (String) objValue);
+            return true;
+        }
+        if (preference == mTorchPowerButton) {
+            int torchPowerButtonValue = Integer.valueOf((String) objValue);
+            boolean doubleTapCameraGesture = Settings.Secure.getInt(mResolver,
+                    Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED, 0) == 0;
+            if (torchPowerButtonValue == 1 && doubleTapCameraGesture) {
+                // if double-tap for torch is enabled, switch off double-tap for camera
+                Settings.Secure.putInt(mResolver,
+                        Settings.Secure.CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED, 1);
+                Toast.makeText(getActivity(),
+                        (R.string.torch_power_button_gesture_dt_toast),
+                        Toast.LENGTH_SHORT).show();
+            }
             return true;
         }
         return false;
@@ -90,6 +125,9 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
+                    if (!CrUtils.deviceSupportsFlashLight(context)) {
+                        keys.add(TORCH_POWER_BUTTON_GESTURE);
+                    }
                     return keys;
                 }
             };
