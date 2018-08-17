@@ -28,6 +28,7 @@ public class System extends CustomSettingsPreferenceFragment {
     private static final String SMART_PIXELS = "smart_pixels";
     private static final String ADVANCED_REBOOT = "advanced_reboot";
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
