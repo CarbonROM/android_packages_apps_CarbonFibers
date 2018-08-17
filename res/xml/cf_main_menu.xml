@@ -22,10 +22,22 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
    <Preference
-       android:fragment="org.carbonrom.carbonfibers.fragments.misc.Misc"
-       android:key="misc_main_category"
-       android:icon="@drawable/ic_misc"
-       android:title="@string/misc_category" />
+       android:fragment="org.carbonrom.carbonfibers.fragments.status_bar.StatusBar"
+       android:key="statusbar_main_category"
+       android:icon="@drawable/ic_status_bar"
+       android:title="@string/status_bar_category" />
+
+   <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.lock_screen.LockScreen"
+       android:key="lockscreen_main_category"
+       android:icon="@drawable/ic_lock_screen"
+       android:title="@string/lock_screen_category" />
+
+   <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.buttons.Buttons"
+       android:key="buttons_main_category"
+       android:icon="@drawable/ic_buttons"
+       android:title="@string/buttons_category" />
 
    <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.privacy.Privacy"
