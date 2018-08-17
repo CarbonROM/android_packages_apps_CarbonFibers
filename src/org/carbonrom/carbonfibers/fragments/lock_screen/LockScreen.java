@@ -34,12 +34,14 @@ import java.util.List;
 @SearchIndexable
 public class LockScreen extends CustomSettingsPreferenceFragment implements Indexable {
     private static final String TAG = "LockScreen";
+    private static final String LOCKSCREEN_PIN_SCRAMBLE_LAYOUT = "lockscreen_scramble_pin_layout";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.lock_screen);
+        addCustomPreference(findPreference(LOCKSCREEN_PIN_SCRAMBLE_LAYOUT), SYSTEM_TWO_STATE, STATE_OFF);
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
