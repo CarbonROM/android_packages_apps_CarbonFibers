@@ -22,6 +22,8 @@
     <string name="global_actions_category">Power Menu</string>
     <string name="power_save_category">Power saving</string>
 
+    <string name="buttons_software_category">Software buttons</string>
+
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
     <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nIf you find a bug, please open up a ticket on Jira or
@@ -102,4 +104,11 @@
     <string name="aggressive_standby_summary">Restrict apps from running the background</string>
     <string name="aggressive_battery_saver_title">Auto-enable on battery saver </string>
     <string name="aggressive_battery_saver_summary">Enable Aggressive Battery automatically when using battery saver</string>
+
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Status bar items</string>
+    <string name="status_bar_tuner_summary">Edit status bar icons and options</string>
+    <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
+    <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
+
 </resources>

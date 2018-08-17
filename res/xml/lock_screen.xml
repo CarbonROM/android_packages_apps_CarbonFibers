@@ -20,10 +20,20 @@
     android:title="@string/lock_screen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+        android:key="lockscreen_shortcuts"
+        android:title="@string/lock_screen_shortcuts_title"
+        android:summary="@string/lock_screen_shortcuts_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
+    </Preference>
+
     <SwitchPreference
         android:key="lockscreen_scramble_pin_layout"
         android:title="@string/unlock_scramble_pin_layout_title"
         android:summary="@string/unlock_scramble_pin_layout_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        settings:allowDividerAbove="true" />
 
 </PreferenceScreen>
