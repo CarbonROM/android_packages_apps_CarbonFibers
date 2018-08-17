@@ -156,4 +156,10 @@
     <string name="hide_from_recents_add_app">Add app</string>
     <string name="title_activity_carbon_recents_settings">Recents</string>
 
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Status bar items</string>
+    <string name="status_bar_tuner_summary">Edit status bar icons and options</string>
+    <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
+    <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
+
 </resources>
