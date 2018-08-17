@@ -94,4 +94,8 @@
     <string name="doubletap_poweroff_sb">On (Status bar)</string>
     <string name="doubletap_poweroff_ls">On (Lockscreen)</string>
 
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Status bar items</string>
+    <string name="status_bar_tuner_summary">Edit status bar icons and options</string>
+
 </resources>
