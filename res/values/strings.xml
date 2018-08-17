@@ -84,4 +84,8 @@
     <string name="global_actions_advanced_reboot_title">Advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">Show recovery and bootloader restart options</string>
 
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble PIN keyboard</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble the pin keyboard layout</string>
+
 </resources>
