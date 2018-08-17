@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package org.carbonrom.carbonfibers.fragments.misc;
+package org.carbonrom.carbonfibers.fragments.buttons;
 
 import android.os.Bundle;
 
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 
-public class Misc extends CustomSettingsPreferenceFragment {
-    private static final String TAG = "Misc";
+public class Buttons extends CustomSettingsPreferenceFragment {
+    private static final String TAG = "Buttons";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.misc);
+        addPreferencesFromResource(R.xml.buttons);
     }
 }
