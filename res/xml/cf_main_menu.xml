@@ -28,6 +28,11 @@
        android:title="@string/system_category" />
 
    <Preference
+       android:fragment="org.carbonrom.carbonfibers.fragments.lock_screen.LockScreen"
+       android:icon="@drawable/ic_lock_screen"
+       android:title="@string/lock_screen_category" />
+
+   <Preference
        android:fragment="org.carbonrom.carbonfibers.fragments.gestures.Gestures"
        android:key="gestures_main_category"
        android:icon="@drawable/ic_gestures"
