@@ -21,4 +21,9 @@
     android:key="buttons_fragment"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:title="@string/buttons_software_category">
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
