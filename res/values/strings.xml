@@ -181,4 +181,7 @@
     <string name="status_bar_clock_show_am_pm_title">Show AM/PM</string>
     <string name="status_bar_clock_show_day_title">Show day of the week</string>
 
+    <!-- Charging options -->
+    <string name="vibration_on_charge_state_changed_title">Vibrate on plug</string>
+
 </resources>
