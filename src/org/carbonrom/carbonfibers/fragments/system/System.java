@@ -31,6 +31,7 @@ public class System extends CustomSettingsPreferenceFragment
     private static final String SMART_PIXELS = "smart_pixels";
     private static final String ADVANCED_REBOOT = "advanced_reboot";
     private static final String KEY_SCREEN_OFF_ANIMATION = "screen_off_animation";
+    private static final String VIBRATION_ON_CHARGE_STATE_CHANGED = "vibration_on_charge_state_changed";
 
     private ListPreference mScreenOffAnimation;
 
@@ -40,6 +41,7 @@ public class System extends CustomSettingsPreferenceFragment
 
         addPreferencesFromResource(R.xml.system);
         addCustomPreference(findPreference(ADVANCED_REBOOT), SECURE_TWO_STATE, STATE_ON);
+        addCustomPreference(findPreference(VIBRATION_ON_CHARGE_STATE_CHANGED), SYSTEM_TWO_STATE, STATE_ON);
         updateSmartPixelsPreference();
 
         mScreenOffAnimation = (ListPreference) findPreference(KEY_SCREEN_OFF_ANIMATION);
