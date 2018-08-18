@@ -41,6 +41,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String NAV_BAR_LAYOUT = "nav_bar_layout";
     private static final String SYSUI_NAV_BAR = "sysui_nav_bar";
     private static final String INVERSE_NAVBAR = "sysui_nav_bar_inverse";
+    private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
 
     private ListPreference mNavBarLayout;
     private ContentResolver mResolver;
@@ -53,6 +54,8 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
 
         addPreferencesFromResource(R.xml.buttons);
         addCustomPreference(findPreference(INVERSE_NAVBAR), SECURE_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
+
         mNavBarLayout = (ListPreference) findPreference(NAV_BAR_LAYOUT);
         mNavBarLayout.setOnPreferenceChangeListener(this);
         String navBarLayoutValue = Settings.Secure.getString(mResolver, SYSUI_NAV_BAR);
