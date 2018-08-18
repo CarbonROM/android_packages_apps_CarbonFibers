@@ -23,11 +23,13 @@ import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 
 public class Buttons extends CustomSettingsPreferenceFragment {
     private static final String TAG = "Buttons";
+    private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.buttons);
+        addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
     }
 }
