@@ -35,4 +35,10 @@
         android:defaultValue="false"
         settings:allowDividerAbove="true" />
 
+    <SwitchPreference
+        android:key="status_bar_locked_on_secure_keyguard"
+        android:title="@string/block_on_secure_keyguard_title"
+        android:summary="@string/block_on_secure_keyguard_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
