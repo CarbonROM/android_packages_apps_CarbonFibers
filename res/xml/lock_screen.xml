@@ -36,6 +36,12 @@
         settings:allowDividerAbove="true" />
 
     <SwitchPreference
+        android:key="lockscreen_quick_unlock_control"
+        android:title="@string/unlock_quick_unlock_control_title"
+        android:summary="@string/unlock_quick_unlock_control_summary"
+        android:defaultValue="false" />
+
+    <SwitchPreference
         android:key="status_bar_locked_on_secure_keyguard"
         android:title="@string/block_on_secure_keyguard_title"
         android:summary="@string/block_on_secure_keyguard_summary"
