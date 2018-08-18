@@ -109,4 +109,8 @@
     <string name="block_on_secure_keyguard_title">Secure quick settings</string>
     <string name="block_on_secure_keyguard_summary">Prevent quick settings access when device is secured</string>
 
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Secure quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Immediately unlock on correct security entry</string>
+
 </resources>
