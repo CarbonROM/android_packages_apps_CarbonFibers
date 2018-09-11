@@ -48,6 +48,12 @@
             android:persistent="false"
             android:fragment="org.carbonrom.carbonfibers.fragments.buttons.ButtonBrightnessSettings" />
 
+        <Preference
+            android:key="button_hw_settings"
+            android:title="@string/button_hw_title"
+            android:summary="@string/button_hw_summary"
+            android:fragment="org.carbonrom.carbonfibers.fragments.buttons.ButtonsHWSettings" />
+
         <SwitchPreference
             android:key="call_volume_answer"
             android:title="@string/volume_answer_call_title"
