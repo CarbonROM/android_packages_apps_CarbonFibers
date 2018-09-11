@@ -39,6 +39,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String CATEGORY_KEYS = "button_keys";
     private static final String KEY_BUTTON_LIGHT = "button_brightness";
     private static final String NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
+    private static final String BUTTON_HW_SETTINGS = "button_hw_settings";
 
     private ListPreference mTorchPowerButton;
 
@@ -55,10 +56,12 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
                 com.android.internal.R.bool.config_showNavigationBar) ? 1 : 0);
 
         PreferenceScreen prefSet = getPreferenceScreen();
+        final PreferenceCategory keysCategory =	 
+                (PreferenceCategory) prefSet.findPreference(CATEGORY_KEYS);
         if (!CrUtils.deviceSupportsFlashLight(getContext())) {
-            Preference toRemove = prefSet.findPreference(TORCH_POWER_BUTTON_GESTURE);
+            Preference toRemove = (Preference) prefSet.findPreference(TORCH_POWER_BUTTON_GESTURE);
             if (toRemove != null) {
-                prefSet.removePreference(toRemove);
+                keysCategory.removePreference(toRemove);
             }
         } else {
             mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
@@ -67,10 +70,15 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
 
         final boolean buttonLights = getResources().getBoolean(
                 com.android.internal.R.bool.config_button_brightness_support);
-        final PreferenceCategory keysCategory =	 
-                (PreferenceCategory) prefSet.findPreference(CATEGORY_KEYS);
         if (!buttonLights) {
             Preference toRemove = (Preference) prefSet.findPreference(KEY_BUTTON_LIGHT);
+            if (toRemove != null) {
+                keysCategory.removePreference(toRemove);
+            }
+        }
+
+        if (!ButtonsHWSettings.hasHWButtonOfInterest(getResources())) {
+            Preference toRemove = (Preference) prefSet.findPreference(BUTTON_HW_SETTINGS);
             if (toRemove != null) {
                 keysCategory.removePreference(toRemove);
             }
