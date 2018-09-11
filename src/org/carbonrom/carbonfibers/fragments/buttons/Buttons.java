@@ -39,6 +39,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
     private static final String KEY_BUTTON_LIGHT = "button_brightness";
     private static final String NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
+    private static final String BUTTON_HW_SETTINGS = "button_hw_settings";
 
     private ListPreference mTorchPowerButton;
 
@@ -70,6 +71,13 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         if (!getResources().getBoolean(
                 com.android.internal.R.bool.config_button_brightness_support)) {
             Preference toRemove = (Preference) prefSet.findPreference(KEY_BUTTON_LIGHT);
+            if (toRemove != null) {
+                keysCategory.removePreference(toRemove);
+            }
+        }
+        
+        if (!ButtonsHWSettings.hasHWButtonOfInterest(getResources())) {
+            Preference toRemove = (Preference) prefSet.findPreference(BUTTON_HW_SETTINGS);
             if (toRemove != null) {
                 keysCategory.removePreference(toRemove);
             }
