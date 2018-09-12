@@ -36,7 +36,13 @@
             android:key="status_bar_icons"
             android:fragment="org.carbonrom.carbonfibers.fragments.status_bar.StatusBarIcons"
             android:title="@string/status_bar_icons_title"
-	    android:summary="@string/status_bar_icons_title_summary" />
+	    	android:summary="@string/status_bar_icons_title_summary" />
+
+	     <Preference
+         	android:key="batterybar_settings"
+         	android:title="@string/battery_bar_title"
+         	android:summary="@string/battery_bar_summary"
+         	android:fragment="org.carbonrom.carbonfibers.fragments.status_bar.BatterybarSettings" />
 
     </PreferenceCategory>
 
@@ -83,5 +89,4 @@
 	    android:summary="@string/status_bar_clock_title_summary" />
 
     </PreferenceCategory>
-
 </PreferenceScreen>
