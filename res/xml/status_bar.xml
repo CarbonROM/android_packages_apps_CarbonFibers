@@ -60,5 +60,9 @@
         android:title="@string/status_bar_clock_title"
         android:summary="@string/status_bar_clock_title_summary" />
 
-
+    <Preference
+         android:key="batterybar_settings"
+         android:title="@string/battery_bar_title"
+         android:summary="@string/battery_bar_summary"
+         android:fragment="org.carbonrom.carbonfibers.fragments.status_bar.BatterybarSettings" />
 </PreferenceScreen>
