@@ -39,8 +39,8 @@
   <string name="hide_from_recents_add_app">添加应用程序</string>
   <string name="title_activity_carbon_recents_settings">最近任务</string>
   <!-- CarbonGestures -->
-  <string name="carbon_gesture_preference_title">碳手势</string>
-  <string name="carbon_gestures_summary">配置自定义全局笔势</string>
+  <string name="carbon_gesture_preference_title">Carbon 手势</string>
+  <string name="carbon_gestures_summary">全局手势自定义</string>
   <string name="carbon_gestures_fingers_title">用于手势的手指</string>
   <string name="carbon_gestures_right_title">正确的手势</string>
   <string name="carbon_gestures_left_title">左手势</string>
@@ -62,12 +62,10 @@
   <string name="carbon_gesture_launch">启动</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">碳ROM统计</string>
-  <string name="anonymous_statistics_summary">通过选择匿名统计报告帮助使碳ROM更好</string>
+  <string name="anonymous_statistics_title">CarbonROM 统计</string>
+  <string name="anonymous_statistics_summary">匿名统计报告使 CarbonROM 更好</string>
   <string name="anonymous_statistics_warning_title">关于</string>
-  <string name="anonymous_statistics_warning">加入碳ROM统计数据将允许非个人数据提交给
-        碳ROM的开发人员可以跟踪各种设备的独特安装。所提交的信息包括唯一的标识符，
-        这不会危害您的隐私或个人资料。数据在每次启动时提交。\ n \ n有关提交的数据示例，请点击预览数据。</string>
+  <string name="anonymous_statistics_warning">选择 CarbonROM 统计信息将允许将非个人数据提交给 CarbonROM 的开发人员, 以跟踪设备之间的唯一安装。所提交的信息包括一个唯一标识符, 它不会损害您的隐私或个人数据。数据在每次引导过程中提交. 一个提交的数据示例, 点击预览数据。</string>
   <string name="enable_reporting_title">启用报告</string>
   <string name="preview_data_title">预览数据</string>
   <string name="view_stats_title">查看统计信息</string>
@@ -115,7 +113,7 @@
   <string name="volume_rocker_music_controls_title">播放控制</string>
   <string name="volume_rocker_music_controls_summary">屏幕关闭时，长按音量键跳转音乐曲目</string>
   <!-- Torch Power button gestures -->
-  <string name="torch_power_button_gesture_title">屏幕关闭时切换火炬</string>
+  <string name="torch_power_button_gesture_title">关闭屏幕时切换到手电筒</string>
   <string name="torch_power_button_gesture_none">已停用</string>
   <string name="torch_power_button_gesture_dt">双击电源按钮（较慢的单击响应）</string>
   <string name="torch_power_button_gesture_dt_toast">现在禁用跳转到相机手势</string>
@@ -169,7 +167,7 @@
   <string name="vol_dnd_category_title">请勿打扰模式</string>
   <string name="volbtn_down_zen_title">降低音量键打开勿扰模式</string>
   <string name="volbtn_down_zen_summary">允许使用降低音量键进入勿扰模式</string>
-  <string name="volbtn_up_zen_title">音量加按钮退出勿扰模式</string>
+  <string name="volbtn_up_zen_title">提高音量键退出勿扰模式</string>
   <string name="volbtn_up_zen_summary">允许使用提高音量键退出勿扰模式</string>
   <string name="vol_zen_title">勿扰模式开关</string>
   <string name="vol_zen_summary">在音量面板中显示勿扰模式开关</string>
@@ -192,7 +190,7 @@
   <string name="notify_disabled">无</string>
   <string name="headsup_enabled">浮动通知</string>
   <string name="ticker_enabled">字符滚动</string>
-  <string name="headsup_ticker_enabled">浮动</string>
+  <string name="headsup_ticker_enabled">浮动通知与字符滚动</string>
   <!-- Status bar music ticker -->
   <string name="status_bar_music_ticker_title">改变歌曲</string>
   <string name="status_bar_music_ticker_summary">在歌曲更改时显示歌曲信息</string>

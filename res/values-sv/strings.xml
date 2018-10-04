@@ -14,11 +14,16 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="carbonfibers">CarbonFibers</string>
   <string name="system_category">System</string>
+  <string name="statusbar_category">Statusfält</string>
   <string name="lockscreen_category">Låsskärm</string>
   <string name="buttons_category">Knappar</string>
+  <string name="gesture_category">Gester</string>
+  <string name="privacy_category">Privatliv &amp; säkerhet</string>
   <string name="buttons_software_category">Mjukvaruknappar</string>
   <string name="buttons_hardware_category">Hårdvaruknappar</string>
+  <string name="statusbar_notifications_category">Aviseringar</string>
   <string name="statusbar_network_activity_category">Nätverksaktivitet</string>
+  <string name="system_global_actions_category">Globala åtgärder</string>
   <string name="system_volume_category">Volym</string>
   <string name="system_recents_category">Senaste</string>
   <string name="lockscreen_security_category">Säkerhet</string>
@@ -28,20 +33,43 @@
   <string name="carbonfibers_dialog_toast">LÄS ALLTING!</string>
   <!-- Navbar Animation -->
   <!-- Hide Apps from Recents -->
+  <string name="hide_apps_from_recents_title">Göm appar från senaste</string>
   <string name="hide_from_recents_add_app">Lägg till app</string>
   <string name="title_activity_carbon_recents_settings">Senaste</string>
   <!-- CarbonGestures -->
+  <string name="carbon_gesture_preference_title">Carbon-gester</string>
+  <string name="carbon_gestures_summary">Konfigurera anpassade globala gester</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
   <!-- Anonymous Statistics - Preview -->
   <!-- tap-to-sleep -->
+  <string name="double_tap_status_bar_sleep_title">Dubbeltryck på statusfältet för att sova</string>
+  <string name="double_tap_status_bar_sleep_summary">Knacka på statusfältet två gånger för att sova</string>
   <!-- Gestures-->
+  <string name="camera_double_tap_power_gesture_title">Tryck på strömknappen två gånger för kamera</string>
+  <string name="camera_double_tap_power_gesture_desc">Öppna din kamera snabbt utan att låsa upp din skärm</string>
   <!-- Global Actions -->
+  <string name="global_actions_title">Ström-meny</string>
+  <string name="global_actions_restart">Starta om</string>
+  <string name="global_actions_airplane">Flygplan</string>
+  <string name="global_actions_settings">Inställningar</string>
+  <string name="global_actions_users">Användare</string>
+  <string name="global_actions_screenshot">Skärmdump</string>
+  <string name="global_actions_flashlight">Ficklampa</string>
+  <string name="global_actions_advanced_reboot_title">Aktivera avancerad uppstart</string>
+  <string name="global_actions_advanced_reboot_summary">Visa alternativ för återställning och bootloader</string>
   <!-- Lock screen charging current indicator  -->
   <!-- Screen Off animation -->
+  <string name="screen_off_animation_default">Standard</string>
+  <string name="screen_off_animation_crt">CRT</string>
+  <string name="screen_off_animation_scale">Våg</string>
   <!-- Volume rocker music control -->
+  <string name="volume_rocker_music_controls_title">Uppspelningskontroll</string>
+  <string name="volume_rocker_music_controls_summary">Håll in volymknapparna länge för att söka musik-spår när skärmen är av</string>
   <!-- Torch Power button gestures -->
+  <string name="torch_power_button_gesture_none">Inaktiverad</string>
   <!-- Button brightness -->
+  <string name="button_backlight_options_category">Alternativ för ficklampa</string>
   <!-- HW Keys customization -->
   <!-- Toggle navigation bar -->
   <!-- SystemUI Tuner -->

@@ -111,7 +111,7 @@
   <string name="screen_off_animation_scale">縮小</string>
   <!-- Volume rocker music control -->
   <string name="volume_rocker_music_controls_title">再生コントロール</string>
-  <string name="volume_rocker_music_controls_summary">画面オフ時に音量キーの長押しで音楽をシークする</string>
+  <string name="volume_rocker_music_controls_summary">画面オフ時に音量ボタンの長押しで音楽をシークする</string>
   <!-- Torch Power button gestures -->
   <string name="torch_power_button_gesture_title">画面オフ時ライトを切り替える</string>
   <string name="torch_power_button_gesture_none">無効</string>
@@ -175,7 +175,7 @@
   <string name="battery_style_category_title">バッテリーアイコン</string>
   <string name="status_bar_battery_percentage_title">バッテリー残量</string>
   <string name="status_bar_battery_percentage_default">非表示</string>
-  <string name="status_bar_battery_percentage_text_next">アイコンの横</string>
+  <string name="status_bar_battery_percentage_text_next">アイコンの外側</string>
   <string name="status_bar_battery_percentage_text_inside">アイコンの内側</string>
   <!-- Status bar battery style-->
   <string name="status_bar_battery_style_title">バッテリーのスタイル</string>
@@ -258,7 +258,7 @@
   <string name="face_auto_unlock_summary">信頼された顔を認識した後ロック画面を閉じる</string>
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">クイックアンロック</string>
-  <string name="unlock_quick_unlock_control_summary">正しい PIN/パスワードが入力されたらロックを解除する</string>
+  <string name="unlock_quick_unlock_control_summary">正しいPIN/パスワードが入力されたらロックを解除する</string>
   <!-- Overlay toggle -->
   <string name="untrusted_overlay_toggle_title">信頼されていないオーバーレイを許可する</string>
   <string name="untrusted_overlay_toggle_summary">サードパーティのオーバーレイを有効にする（テーマエンジンに必要）</string>
@@ -276,7 +276,7 @@
   <string name="smart_pixels_on_power_save_title">バッテリーセーバーを自動的に有効にする</string>
   <string name="smart_pixels_on_power_save_summary">バッテリーセーバーが有効な時はスマートピクセルを有効にする</string>
   <string name="smart_pixels_percent">無効にする画素の割合</string>
-  <string name="smart_pixels_shift">使う画素を移し替えることで画面の焼付きを防ぐ</string>
+  <string name="smart_pixels_shift">使う画素を遷移させ画面の焼付きを防ぐ</string>
   <string name="smart_pixels_warning_text">スマートピクセルは省電力機能です。消灯する画素数に応じてバッテリーの寿命が大幅に改善されます。ユーザーエクスペリエンスを向上させるには、10分ごとの画素の移動で無効の画素を75％に設定することをおすすめします。</string>
   <!-- Force Aspect Ratio -->
   <string name="full_aspect_ratio_switch_title">強制フルアスペクト比を有効にする</string>

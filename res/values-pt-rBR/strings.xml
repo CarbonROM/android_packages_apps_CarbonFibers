@@ -157,8 +157,11 @@
   <string name="navigation_bar_enabled_summary">Mostrar barra de navegação</string>
   <!-- SystemUI Tuner -->
   <string name="statusbar_tuner_title">Ícones da barra de status</string>
+  <string name="statusbar_tuner_summary">Opções de bateria e ícones da barra de status para desativar</string>
   <string name="navbar_tuner_title">Editar barra de navegação</string>
+  <string name="navbar_tuner_summary">Editar o layout e botões da barra de navegação</string>
   <string name="lockscreen_shortcuts_title">Atalhos da tela de bloqueio</string>
+  <string name="lockscreen_shortcuts_summary">Gerenciar atalhos da parte inferior da tela de bloqueio</string>
   <string name="power_notifications_title">Notificações de liga/desliga</string>
   <string name="power_notifications_summary">Controle de notificações avançadas na impressão longa</string>
   <string name="vol_dnd_category_title">Modo não perturbe</string>
@@ -189,8 +192,11 @@
   <string name="ticker_enabled">Ticker de notificação</string>
   <string name="headsup_ticker_enabled">Heads-up e ticker</string>
   <!-- Status bar music ticker -->
+  <string name="status_bar_music_ticker_title">Tick em mudança de música</string>
+  <string name="status_bar_music_ticker_summary">Mostrar informações de música com o ticker na mudança de faixa</string>
   <!-- Status bar clock options -->
   <string name="status_bar_clock">Data e hora</string>
+  <string name="status_bar_clock_summary">Configurar a aparência do relógio e data</string>
   <string name="clock_title_enable">Alinhamento</string>
   <string name="clock_enabled">Habilitado</string>
   <string name="clock_disabled">Desativado</string>
@@ -208,14 +214,45 @@
   <string name="clock_date_display_summary">Exibir data personalizada antes do relógio</string>
   <string name="clock_date_style">Estilo da data</string>
   <string name="clock_date_format">Formato da data</string>
+  <string name="clock_date_string_edittext_title">Deve ser no formato de data: MM/dd/yy</string>
+  <string name="clock_date_string_edittext_summary">Digite um valor</string>
+  <string name="am_pm_clock_normal">Tamanho de fonte normal</string>
+  <string name="am_pm_clock_small">Tamanho de fonte pequeno</string>
+  <string name="am_pm_clock_none">Não exibir</string>
+  <string name="clock_date_display_none">Não exibir</string>
+  <string name="clock_date_display_small">Tamanho de fonte pequeno</string>
+  <string name="clock_date_display_normal">Tamanho de fonte normal</string>
+  <string name="clock_date_style_normal">Normal</string>
+  <string name="clock_date_style_lowercase">Letras minúsculas</string>
+  <string name="clock_date_style_uppercase">Letras maiúsculas</string>
+  <string name="clock_date_format_custom">Formato em java personalizado</string>
+  <string name="clock_date_right">À direita do relógio</string>
+  <string name="clock_date_left">À esquerda do relógio</string>
+  <string name="clock_date_position">Posição da data</string>
   <!-- Pin scramble -->
+  <string name="unlock_scramble_pin_layout_title">Modo passeio</string>
+  <string name="unlock_scramble_pin_layout_summary">Misturar as teclas PIN quando desbloquear o dispositivo</string>
   <!-- Recents Membar -->
+  <string name="systemui_recents_mem_display_title">Ativar barra de memória</string>
+  <string name="systemui_recents_mem_display_summary">Mostrar uso de memória no recentes</string>
   <!-- Immersive Recents -->
+  <string name="immersive_recents_title">Tela em Aplicativos recentes</string>
+  <string name="immersive_recents_summary">Alterar a exibição das telas recentes</string>
+  <string name="immersive_recents_dialog_title">Selecionar visualização recente</string>
+  <string name="immersive_recents_default">Padrão</string>
+  <string name="immersive_recents_fullscreen">Tela Cheia</string>
+  <string name="immersive_recents_statusbar">Ocultar a barra de navegação</string>
+  <string name="immersive_recents_navbar">Ocultar barra de status</string>
   <!-- Clear all recents -->
+  <string name="show_clear_all_recents_button_title">Botão de limpar todos</string>
+  <string name="show_clear_all_recents_button_summary">Botão de limpar todos</string>
   <string name="recents_clear_all_location_title">Limpar todas as posições de botões</string>
   <string name="recents_clear_all_location_top_right">Superior direito</string>
   <string name="recents_clear_all_location_top_left">Superior esquerdo</string>
   <string name="recents_clear_all_location_top_center">Centro superior</string>
+  <string name="recents_clear_all_location_bottom_right">Canto inferior direito</string>
+  <string name="recents_clear_all_location_bottom_left">Canto inferior esquerdo</string>
+  <string name="recents_clear_all_location_bottom_center">Centro inferior</string>
   <!-- Face Auto Unlock -->
   <string name="face_auto_unlock_title">Desbloqueio automático com rosto</string>
   <string name="face_auto_unlock_summary">Dispensar tela de bloqueio após reconhecer rosto confiável</string>
@@ -242,4 +279,6 @@
   <string name="smart_pixels_shift">Evite o burn-in deslocando pixels a cada</string>
   <string name="smart_pixels_warning_text">Smart Pixels é um recurso de economia de energia. Dependendo de quantos pixels você decidir desativar, você poderá ver uma melhoria significativa na duração da bateria. Para uma boa experiência do usuário, recomendamos definir a quantidade de pixels desativados para 75 por cento ao alternar a cada 10 minutos.</string>
   <!-- Force Aspect Ratio -->
+  <string name="full_aspect_ratio_switch_title">Ativar a força total Relação de Aspecto</string>
+  <string name="force_aspect_ratio_apps_title">Total Relação de Aspecto Apps</string>
 </resources>

@@ -23,11 +23,13 @@
   <string name="buttons_hardware_category">Аппаратные кнопки</string>
   <string name="statusbar_notifications_category">Уведомления</string>
   <string name="statusbar_network_activity_category">Сетевая активность</string>
+  <string name="system_global_actions_category">Глобальные настройки</string>
   <string name="system_volume_category">Громкость</string>
   <string name="system_recents_category">Недавние</string>
   <string name="lockscreen_security_category">Безопасность</string>
   <!-- Dialog -->
   <string name="carbonfibers_dialog_title">Помогите нам помочь вам!</string>
+  <string name="carbonfibers_dialog_message">К сожалению, мы не волшебники.\n\nЕсли вы найдете ошибку в любых настройках CarbonFibers, заведите баг в Jira или свяжитесь с разработчиком Carbon, указывав следующее: \n\n1. #винюсебя * \n2. Логи! \n3. Используемые ядро и моды\n4. Дополнительная полезная информация\n\nЕсли вы не в состоянии сообщить что-то из указанного выше, не надейтесь, что что-то будет исправлено. Помните, что мы не так хороши, как Патрик, поэтому можем иногда промахиваться.</string>
   <string name="carbonfibers_dialog_toast">ЧИТАЙТЕ ВСЕ ЭТО!</string>
   <!-- Navbar Animation -->
   <string name="pixel_navbar_anim_title">Анимация домой из Pixel</string>
@@ -98,6 +100,7 @@
   <string name="global_actions_screenshot">Снимок экрана</string>
   <string name="global_actions_flashlight">Фонарик</string>
   <string name="global_actions_advanced_reboot_title">Включить расширенную перезагрузку</string>
+  <string name="global_actions_advanced_reboot_summary">Показывать кнопки режима восстановления и загрузчика</string>
   <!-- Lock screen charging current indicator  -->
   <string name="lockscreen_charging_current_title">Показывать информацию о зарядке</string>
   <string name="lockscreen_charging_current_summary">Показывать напряжение и силу тока</string>
@@ -110,17 +113,23 @@
   <string name="volume_rocker_music_controls_title">Управление воспроизведением</string>
   <string name="volume_rocker_music_controls_summary">Когда экран выключен, удерживайте клавиши громкости для переключения треков</string>
   <!-- Torch Power button gestures -->
+  <string name="torch_power_button_gesture_title">Включение фонарика при выключенном экране</string>
   <string name="torch_power_button_gesture_none">Отключено</string>
+  <string name="torch_power_button_gesture_dt">Двойное нажатие кнопки питания (разблокировка будет медленнее)</string>
+  <string name="torch_power_button_gesture_dt_toast">Открытие камеры по двойному нажатию кнопки питания теперь выключено</string>
   <string name="torch_power_button_gesture_lp">Долгое нажатие кнопки питания</string>
   <!-- Button brightness -->
   <string name="button_backlight_options_category">Параметры подсветки</string>
   <string name="button_backlight_enable_title">Включить подсветку кнопок</string>
   <string name="button_link_brightness">Привязать к яркости экрана</string>
+  <string name="button_link_brightness_summary">Подстраивать яркость подсветки кнопок под яркость экрана</string>
   <string name="button_manual_brightness">Уровень яркости</string>
   <string name="button_timeout_title">Тайм-аут подсветки</string>
   <string name="button_backlight_on_touch_only_title">Подсветка кнопок при касании</string>
+  <string name="button_backlight_on_touch_only_summary">Включать подсветку кнопок при касании экрана</string>
   <!-- HW Keys customization -->
   <string name="advanced_options_title">Расширенные настройки</string>
+  <string name="advanced_options_summary">Настройки аппаратных кнопок</string>
   <string name="hardware_keys_volume_keys_title">Клавиши громкости</string>
   <string name="picker_activities">Действие</string>
   <string name="select_custom_app_title">Выберите пользовательские приложения</string>
@@ -148,7 +157,9 @@
   <string name="navigation_bar_enabled_summary">Показывать панель навигации</string>
   <!-- SystemUI Tuner -->
   <string name="statusbar_tuner_title">Значки строки состояния</string>
+  <string name="statusbar_tuner_summary">Настройки показа значков строки состояния</string>
   <string name="navbar_tuner_title">Редактировать панель навигации</string>
+  <string name="navbar_tuner_summary">Изменить кнопки и их расположение на навигационной панели</string>
   <string name="lockscreen_shortcuts_title">Ярлыки экрана блокировки</string>
   <string name="lockscreen_shortcuts_summary">Управление ярлыками экрана блокировки</string>
   <string name="power_notifications_title">Уведомления о заряде</string>
@@ -182,6 +193,7 @@
   <string name="headsup_ticker_enabled">Всплывающие уведомления и бегущая строка</string>
   <!-- Status bar music ticker -->
   <string name="status_bar_music_ticker_title">Бегущая строка при смене трека</string>
+  <string name="status_bar_music_ticker_summary">Показывать информацию о песне при смене трека</string>
   <!-- Status bar clock options -->
   <string name="status_bar_clock">Время и дата</string>
   <string name="status_bar_clock_summary">Настройка внешнего вида часов и даты</string>
@@ -221,6 +233,8 @@
   <string name="unlock_scramble_pin_layout_title">Перемешать кнопки при вводе PIN-кода</string>
   <string name="unlock_scramble_pin_layout_summary">Перемешать кнопки ввода PIN-кода при разблокировке устройства</string>
   <!-- Recents Membar -->
+  <string name="systemui_recents_mem_display_title">Включить полоску памяти</string>
+  <string name="systemui_recents_mem_display_summary">Показывать использование оперативной памяти в недавних</string>
   <!-- Immersive Recents -->
   <string name="immersive_recents_title">Режим отображения</string>
   <string name="immersive_recents_summary">Сменить дизайн отображения недавних приложений</string>
@@ -241,11 +255,15 @@
   <string name="recents_clear_all_location_bottom_center">Внизу по центру</string>
   <!-- Face Auto Unlock -->
   <string name="face_auto_unlock_title">Автоматическая разблокировка по лицу</string>
+  <string name="face_auto_unlock_summary">Пропускать экран блокировки после распознания доверенного лица</string>
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
   <string name="unlock_quick_unlock_control_summary">Разблокировать, если введен корректный ПИН/пароль</string>
   <!-- Overlay toggle -->
+  <string name="untrusted_overlay_toggle_title">Разрешать недоверенные оверлеи</string>
+  <string name="untrusted_overlay_toggle_summary">Разрешать оверлеи от третьих лиц (необходимо для движков тем)</string>
   <string name="untrusted_overlay_alert_title">Требуется перезагрузка</string>
+  <string name="untrusted_overlay_alert_message">Чтобы разрешить недоверенные оверлеи, необходимо перезагрузить устройство. Сделать это сейчас?</string>
   <string name="reboot">Перезагрузка</string>
   <!-- Statusbar net monitor -->
   <string name="network_traffic_state_title">Показать активность сетевого трафика</string>
@@ -259,5 +277,8 @@
   <string name="smart_pixels_on_power_save_summary">Включение Smart Pixels при включении энергосбережения</string>
   <string name="smart_pixels_percent">Процент пикселей для отключения</string>
   <string name="smart_pixels_shift">Предотвратить выжигание экрана путем перемещения пикселей каждую</string>
+  <string name="smart_pixels_warning_text">Smart Pixels - это энергосберегающая функция. Чем больше пикселей вы решите выключить, тем больше будет энергосбережение. для приятного использования мы рекомендуем установить количество выключенных пикселей на 75% с перемещением каждые 10 минут.</string>
   <!-- Force Aspect Ratio -->
+  <string name="full_aspect_ratio_switch_title">Включить принудительное полное соотношение экрана</string>
+  <string name="force_aspect_ratio_apps_title">Полное соотношение экрана в приложениях</string>
 </resources>

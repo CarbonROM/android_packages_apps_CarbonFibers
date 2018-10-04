@@ -33,13 +33,13 @@
   <string name="carbonfibers_dialog_toast">HER ŞEYİ OKUYUN!</string>
   <!-- Navbar Animation -->
   <string name="pixel_navbar_anim_title">Ana ekran pixel animasyonu</string>
-  <string name="pixel_navbar_anim_summary">Ana ekran tuşunda pixel animasyonunu göster</string>
+  <string name="pixel_navbar_anim_summary">Ana ekran tuşunda pixel animasyonu göster</string>
   <!-- Hide Apps from Recents -->
   <string name="hide_apps_from_recents_title">Uygulamaları son uygulamalardan gizle</string>
   <string name="hide_from_recents_add_app">Uygulama ekle</string>
   <string name="title_activity_carbon_recents_settings">Son uygulamalar</string>
   <!-- CarbonGestures -->
-  <string name="carbon_gesture_preference_title">Carbon Hareketleri</string>
+  <string name="carbon_gesture_preference_title">Carbon hareketleri</string>
   <string name="carbon_gestures_summary">Özel genel hareketleri yapılandır</string>
   <string name="carbon_gestures_fingers_title">Parmak hareketleri için kullan</string>
   <string name="carbon_gestures_right_title">Sağ hareket</string>
@@ -55,7 +55,7 @@
   <string name="carbon_gesture_volume_up">Ses seviyesini yükseltme</string>
   <string name="carbon_gesture_volume_mute">Ses seviyesini kesme</string>
   <string name="carbon_gesture_screenshot">Ekran görüntüsü</string>
-  <string name="carbon_gesture_media_play_pause">Medyayı Oynat/Duraklat</string>
+  <string name="carbon_gesture_media_play_pause">Medyayı oynat/duraklat</string>
   <string name="carbon_gesture_media_skip">Medyayı atla</string>
   <string name="carbon_gesture_media_previous">Önceki medya</string>
   <string name="carbon_gesture_customapp">Uygulamayı başlat</string>
@@ -82,9 +82,9 @@
   <string name="stats_collection_summary">Metrikleri toplamaya izin ver</string>
   <!-- tap-to-sleep -->
   <string name="double_tap_status_bar_sleep_title">Durum çubuğu</string>
-  <string name="double_tap_status_bar_sleep_summary">Cihazı uyutmak için durum çubuğuna çift dokunun</string>
+  <string name="double_tap_status_bar_sleep_summary">Cihazı uyutmak için durum çubuğuna iki kez hafifçe dokunun</string>
   <string name="double_tap_lock_sleep_title">Kilit ekranı</string>
-  <string name="double_tap_lock_sleep_summary">Cihazı uyutmak için kilit ekranının boş bir alanına çift dokunun</string>
+  <string name="double_tap_lock_sleep_summary">Cihazı uyutmak için kilit ekranının boş bir alanına iki kez hafifçe dokunun</string>
   <!-- Gestures-->
   <string name="camera_gesture_title">Kamera için döndür</string>
   <string name="camera_gesture_desc">Bileğinizi iki kez döndürerek kamera uygulamasını açın</string>
@@ -159,7 +159,7 @@
   <string name="navigation_bar_enabled_summary">Alt gezinme çubuğunu göster</string>
   <!-- SystemUI Tuner -->
   <string name="statusbar_tuner_title">Durum çubuğu öğeleri</string>
-  <string name="statusbar_tuner_summary">Pil seçenekleri ve durum çubuğu simgeleri devre dışı</string>
+  <string name="statusbar_tuner_summary">Pil seçeneklerini veya durum çubuğu simgelerini devre dışı bırakma</string>
   <string name="navbar_tuner_title">Gezinme çubuğunu düzenle</string>
   <string name="navbar_tuner_summary">Gezinme çubuğu düzenini ve tuşları düzenle</string>
   <string name="lockscreen_shortcuts_title">Kilit ekranı kısayolları</string>

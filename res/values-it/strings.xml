@@ -31,13 +31,55 @@
   <string name="carbonfibers_dialog_title">Aiutaci ad aiutare voi!</string>
   <string name="carbonfibers_dialog_toast">LEGGI TUTTO!</string>
   <!-- Navbar Animation -->
+  <string name="pixel_navbar_anim_title">Attivare l\'animazione home Pixel</string>
+  <string name="pixel_navbar_anim_summary">Visualizza animazione tasto home del Pixel</string>
   <!-- Hide Apps from Recents -->
+  <string name="hide_apps_from_recents_title">Nascondere applicazioni dai recenti</string>
+  <string name="hide_from_recents_add_app">Aggiungere app</string>
+  <string name="title_activity_carbon_recents_settings">Recenti</string>
   <!-- CarbonGestures -->
+  <string name="carbon_gesture_preference_title">CarbonGestures</string>
+  <string name="carbon_gestures_summary">Configura i gesti globali personalizzati</string>
+  <string name="carbon_gestures_fingers_title">Dita usate per gesture</string>
+  <string name="carbon_gesture_disabled">Disattivo</string>
+  <string name="carbon_gesture_back">Indietro</string>
+  <string name="carbon_gesture_home">Home</string>
+  <string name="carbon_gesture_recents">Recenti</string>
+  <string name="carbon_gesture_power">Spegni</string>
+  <string name="carbon_gesture_volume_down">Volume giù</string>
+  <string name="carbon_gesture_volume_up">Volume sù</string>
+  <string name="carbon_gesture_volume_mute">Silenzioso</string>
+  <string name="carbon_gesture_screenshot">Screenshot</string>
+  <string name="carbon_gesture_media_play_pause">Riproduci/Pausa</string>
+  <string name="carbon_gesture_media_skip">Salta brano</string>
+  <string name="carbon_gesture_media_previous">Brano precedente</string>
+  <string name="carbon_gesture_customapp">Lanciare l\'applicazione</string>
+  <string name="carbon_gesture_launch">Lancio</string>
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+  <string name="anonymous_statistics_title">Statistiche di CarbonROM</string>
+  <string name="anonymous_statistics_summary">Aiuta a migliorare la CarbonROM acconsentendo ad inviare statistiche anonime</string>
+  <string name="anonymous_statistics_warning_title">Informazioni</string>
+  <string name="anonymous_statistics_warning">Accettando di condividere le statistiche  CarbonROM si permette l\'invio di dati non personali agli sviluppatori di  CarbonROM per monitorare il funzionamento su diversi dispositivi. Le informazioni inviate includono un identificatore unico, che non compromette la tua privacy o io tuoi dati personali. I dati vengono inviati a ogni avvio. Per avere un esempio dei dati inviati, tocca Anteprima Dati.</string>
+  <string name="enable_reporting_title">Abilitare la segnalazione</string>
+  <string name="preview_data_title">Anteprima dati</string>
+  <string name="view_stats_title">Visualizza le statistiche</string>
+  <string name="anonymous_learn_more">Ulteriori informazioni</string>
   <!-- Anonymous Statistics - Preview -->
+  <string name="preview_id_title">ID univoco</string>
+  <string name="preview_device_title">Dispositivo</string>
+  <string name="preview_version_title">Versione</string>
+  <string name="preview_country_title">Paese</string>
+  <string name="preview_carrier_title">Operatore</string>
+  <string name="stats_collection_title">Raccolta di statistiche</string>
+  <string name="stats_collection_summary">Consentire la raccolta di metriche</string>
   <!-- tap-to-sleep -->
+  <string name="double_tap_status_bar_sleep_title">Doppio tocco per spegnere lo schermo sulla barra di stato</string>
+  <string name="double_tap_status_bar_sleep_summary">Toccare la barra di stato due volte a dormire</string>
+  <string name="double_tap_lock_sleep_title">Doppio tocco su lockscreen per spegnere lo schermo</string>
+  <string name="double_tap_lock_sleep_summary">Toccare la schermata di blocco due volte per spegnere lo schermo</string>
   <!-- Gestures-->
+  <string name="camera_gesture_title">Doppia torsione per la macchina fotografica</string>
   <!-- Global Actions -->
   <!-- Lock screen charging current indicator  -->
   <!-- Screen Off animation -->
