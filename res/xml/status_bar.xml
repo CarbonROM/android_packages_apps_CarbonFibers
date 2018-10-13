@@ -32,6 +32,12 @@
             android:targetClass="com.android.systemui.tuner.StatusBarIconsTunerActivity" />
     </Preference>
 
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="show_fourg_icon"
+        android:title="@string/show_fourg_icon_title"
+        android:summary="@string/show_fourg_icon_summary"
+        android:defaultValue="false"/>
+
 </PreferenceCategory>
 
 <PreferenceCategory
