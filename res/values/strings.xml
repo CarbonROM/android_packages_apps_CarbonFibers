@@ -142,4 +142,8 @@
     <string name="carbon_gesture_customapp">Launch application</string>
     <string name="carbon_gesture_launch">Launch</string>
 
+    <!-- Media art -->
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Show media cover art in the background</string>
+
 </resources>
