@@ -156,4 +156,11 @@
     <string name="show_carrier_status_bar">Status bar only</string>
     <string name="show_carrier_enabled">Lock screen and status bar</string>
 
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_fade">Simple fade</string>
+    <string name="screen_off_animation_color">Color fade</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+
 </resources>
