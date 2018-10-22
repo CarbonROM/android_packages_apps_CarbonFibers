@@ -30,6 +30,7 @@ import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 
 public class Buttons extends CustomSettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
     private static final String TAG = "Buttons";
+    private static final String CALL_VOLUME_ANSWER = "call_volume_answer";
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
     private ListPreference mTorchPowerButton;
@@ -39,6 +40,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.buttons);
+        addCustomPreference(findPreference(CALL_VOLUME_ANSWER), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
 
         PreferenceScreen prefSet = getPreferenceScreen();
