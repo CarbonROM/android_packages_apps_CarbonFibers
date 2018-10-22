@@ -16,7 +16,17 @@
 
 package org.carbonrom.carbonfibers.fragments.status_bar;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.telephony.TelephonyManager;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+import android.text.Spannable;
+import android.text.TextUtils;
+import android.widget.EditText;
 
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
@@ -24,10 +34,61 @@ import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 public class StatusBar extends CustomSettingsPreferenceFragment {
     private static final String TAG = "StatusBar";
 
+    private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
+
+    private PreferenceScreen mCustomCarrierLabel;
+    private String mCustomCarrierLabelText;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.status_bar);
+
+        // custom carrier label
+        mCustomCarrierLabel = (PreferenceScreen) findPreference(CUSTOM_CARRIER_LABEL);
+        updateCustomLabelTextSummary();
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        boolean value;
+        if (preference.getKey() == null) return false;
+        if (preference.getKey().equals(CUSTOM_CARRIER_LABEL)) {
+            AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+            alert.setTitle(R.string.custom_carrier_label_title);
+            alert.setMessage(R.string.custom_carrier_label_explain);
+            // Set an EditText view to get user input
+            final EditText input = new EditText(getActivity());
+            input.setText(TextUtils.isEmpty(mCustomCarrierLabelText) ? "" : mCustomCarrierLabelText);
+            input.setSelection(input.getText().length());
+            alert.setView(input);
+            alert.setPositiveButton(getString(android.R.string.ok),
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int whichButton) {
+                            String value = ((Spannable) input.getText()).toString().trim();
+                            Settings.System.putString(getActivity().getContentResolver(),
+                                    Settings.System.CUSTOM_CARRIER_LABEL, value);
+                            updateCustomLabelTextSummary();
+                            Intent i = new Intent();
+                            i.setAction(Intent.ACTION_CUSTOM_CARRIER_LABEL_CHANGED);
+                            getActivity().sendBroadcast(i);
+                }
+            });
+            alert.setNegativeButton(getString(android.R.string.cancel), null);
+            alert.show();
+            return true;
+        }
+        return super.onPreferenceTreeClick(preference);
+    }
+
+    private void updateCustomLabelTextSummary() {
+        mCustomCarrierLabelText = Settings.System.getString(
+            getContentResolver(), Settings.System.CUSTOM_CARRIER_LABEL);
+        if (TextUtils.isEmpty(mCustomCarrierLabelText)) {
+            mCustomCarrierLabel.setSummary(R.string.custom_carrier_label_notset);
+        } else {
+            mCustomCarrierLabel.setSummary(mCustomCarrierLabelText);
+        }
     }
 }
