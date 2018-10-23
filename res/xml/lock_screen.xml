@@ -48,10 +48,16 @@
         android:defaultValue="false"/>
 
     <SwitchPreference
+        android:key="lockscreen_visualizer"
+        android:title="@string/lockscreen_visualizer_title"
+        android:summary="@string/lockscreen_visualizer_summary"
+        android:defaultValue="false"
+        settings:allowDividerAbove="true" />
+
+    <SwitchPreference
         android:key="lockscreen_media_metadata"
         android:title="@string/media_art_title"
         android:summary="@string/media_art_summary"
-        android:defaultValue="true"
-        settings:allowDividerAbove="true" />
+        android:defaultValue="true" />
 
 </PreferenceScreen>
