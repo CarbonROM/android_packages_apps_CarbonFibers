@@ -50,6 +50,7 @@ import java.util.List;
 @SearchIndexable
 public class StatusBarIcons extends CustomSettingsPreferenceFragment implements Indexable {
     private static final String FOURG_ICON = "show_fourg_icon";
+    private static final String VOLTE_ICON = "volte_icon";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,7 @@ public class StatusBarIcons extends CustomSettingsPreferenceFragment implements 
 
         addPreferencesFromResource(R.xml.status_bar_icons);
         addCustomPreference(findPreference(FOURG_ICON), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(VOLTE_ICON), SYSTEM_TWO_STATE, STATE_ON);
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
