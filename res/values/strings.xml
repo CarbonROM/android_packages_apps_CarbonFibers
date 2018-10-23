@@ -167,4 +167,8 @@
     <string name="volume_answer_call_title">Volume button call answer</string>
     <string name="volume_answer_call_summary">Answer incoming calls by pressing a volume button</string>
 
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Music visualizer</string>
+    <string name="lockscreen_visualizer_summary">Visualize playing music on the lock screen</string>
+
 </resources>
