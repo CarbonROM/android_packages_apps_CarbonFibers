@@ -30,13 +30,20 @@ import android.widget.EditText;
 
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
+import com.android.settings.carbon.SystemSettingListPreference;
 
-public class StatusBar extends CustomSettingsPreferenceFragment {
+public class StatusBar extends CustomSettingsPreferenceFragment implements
+	    Preference.OnPreferenceChangeListener {
     private static final String TAG = "StatusBar";
 
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
+    private static final String STATUS_BAR_CLOCK = "status_bar_clock";
+    private static final String STATUS_BAR_CLOCK_SHOW_SECONDS = "status_bar_clock_show_seconds";
+    private static final String STATUS_BAR_CLOCK_SHOW_AM_PM = "status_bar_clock_show_am_pm";
+    private static final String STATUS_BAR_CLOCK_SHOW_DAY = "status_bar_clock_show_day";
 
     private PreferenceScreen mCustomCarrierLabel;
+    private SystemSettingListPreference mStatusBarClock;
     private String mCustomCarrierLabelText;
 
     @Override
@@ -44,6 +51,12 @@ public class StatusBar extends CustomSettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.status_bar);
+
+        addCustomPreference(findPreference(STATUS_BAR_CLOCK_SHOW_SECONDS), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(STATUS_BAR_CLOCK_SHOW_AM_PM), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(STATUS_BAR_CLOCK_SHOW_DAY), SYSTEM_TWO_STATE, STATE_OFF);
+        mStatusBarClock = (SystemSettingListPreference) findPreference(STATUS_BAR_CLOCK);
+        mStatusBarClock.setOnPreferenceChangeListener(this);
 
         // custom carrier label
         mCustomCarrierLabel = (PreferenceScreen) findPreference(CUSTOM_CARRIER_LABEL);
@@ -80,6 +93,19 @@ public class StatusBar extends CustomSettingsPreferenceFragment {
             return true;
         }
         return super.onPreferenceTreeClick(preference);
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (mStatusBarClock.equals(preference)) {
+            int clockConfig = Integer.parseInt((String) newValue);
+            boolean isHidden = clockConfig == 0;
+            getCustomPreference(STATUS_BAR_CLOCK_SHOW_SECONDS).setEnabled(!isHidden);
+            getCustomPreference(STATUS_BAR_CLOCK_SHOW_AM_PM).setEnabled(!isHidden);
+            getCustomPreference(STATUS_BAR_CLOCK_SHOW_DAY).setEnabled(!isHidden);
+            return true;
+        }
+        return false;
     }
 
     private void updateCustomLabelTextSummary() {
