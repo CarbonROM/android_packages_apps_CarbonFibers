@@ -68,4 +68,18 @@
         android:key="custom_carrier_label"
         android:title="@string/custom_carrier_label_title" />
 
+    <SwitchPreference
+        android:key="network_traffic_state"
+        android:title="@string/network_traffic_state_title"
+        android:summary="@string/network_traffic_state_summary"
+        android:defaultValue="false"
+        settings:allowDividerAbove="true" />
+
+    <com.android.settings.carbon.CustomSeekBarPreference
+       android:key="network_traffic_autohide_threshold"
+       android:title="@string/network_traffic_autohide_threshold_title"
+       android:max="10"
+       android:min="0"
+       android:dependency="network_traffic_state" />
+
 </PreferenceScreen>

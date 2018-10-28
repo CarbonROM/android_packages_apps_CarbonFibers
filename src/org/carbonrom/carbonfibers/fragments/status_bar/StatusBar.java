@@ -20,6 +20,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.support.v7.preference.Preference;
@@ -29,6 +30,7 @@ import android.text.TextUtils;
 import android.widget.EditText;
 
 import com.android.settings.R;
+import com.android.settings.carbon.CustomSeekBarPreference;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 import com.android.settings.carbon.SystemSettingListPreference;
 
@@ -41,9 +43,12 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
     private static final String STATUS_BAR_CLOCK_SHOW_SECONDS = "status_bar_clock_show_seconds";
     private static final String STATUS_BAR_CLOCK_SHOW_AM_PM = "status_bar_clock_show_am_pm";
     private static final String STATUS_BAR_CLOCK_SHOW_DAY = "status_bar_clock_show_day";
+    private static final String NETWORK_TRAFFIC_STATE = "network_traffic_state";
+    private static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
 
     private PreferenceScreen mCustomCarrierLabel;
     private SystemSettingListPreference mStatusBarClock;
+    private CustomSeekBarPreference mThreshold;
     private String mCustomCarrierLabelText;
 
     @Override
@@ -55,12 +60,19 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
         addCustomPreference(findPreference(STATUS_BAR_CLOCK_SHOW_SECONDS), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(STATUS_BAR_CLOCK_SHOW_AM_PM), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(STATUS_BAR_CLOCK_SHOW_DAY), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(NETWORK_TRAFFIC_STATE), SYSTEM_TWO_STATE, STATE_OFF);
         mStatusBarClock = (SystemSettingListPreference) findPreference(STATUS_BAR_CLOCK);
         mStatusBarClock.setOnPreferenceChangeListener(this);
 
         // custom carrier label
         mCustomCarrierLabel = (PreferenceScreen) findPreference(CUSTOM_CARRIER_LABEL);
         updateCustomLabelTextSummary();
+
+        int value = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 1, UserHandle.USER_CURRENT);
+        mThreshold = (CustomSeekBarPreference) findPreference(NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD);
+        mThreshold.setValue(value);
+        mThreshold.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -104,6 +116,12 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
             getCustomPreference(STATUS_BAR_CLOCK_SHOW_AM_PM).setEnabled(!isHidden);
             getCustomPreference(STATUS_BAR_CLOCK_SHOW_DAY).setEnabled(!isHidden);
             return true;
+        } else if (mThreshold.equals(preference)) {
+             int val = (Integer) newValue;
+             Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, val,
+                    UserHandle.USER_CURRENT);
+             return true;
         }
         return false;
     }
