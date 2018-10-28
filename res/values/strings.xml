@@ -184,4 +184,9 @@
     <!-- Charging options -->
     <string name="vibration_on_charge_state_changed_title">Vibrate on plug</string>
 
+    <!-- Network traffic -->
+    <string name="network_traffic_state_title">Network traffic indicator</string>
+    <string name="network_traffic_state_summary">Display network activity icons</string>
+    <string name="network_traffic_autohide_threshold_title">Autohide threshold (KB/s)</string>
+
 </resources>
