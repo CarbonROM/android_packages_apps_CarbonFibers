@@ -50,6 +50,7 @@ public class Gestures extends GestureSettings implements Indexable {
     private static final String KEY_GESTURE_GLOBAL_ACTIONS_PANEL = "gesture_global_actions_panel_summary";
     private static final String KEY_ONE_HANDED = "gesture_one_handed";
     private static final String KEY_DOUBLETAP_POWER_OFF = "gesture_doubletap_poweroff_summary";
+    private static final String KEY_TAP_TO_FLASHLIGHT = "double_tap_power_flashlight_summary";
 
     @Override
     public int getMetricsCategory() {
@@ -96,6 +97,7 @@ public class Gestures extends GestureSettings implements Indexable {
                     keys.add(KEY_GESTURE_GLOBAL_ACTIONS_PANEL);
                     keys.add(KEY_ONE_HANDED);
                     keys.add(KEY_DOUBLETAP_POWER_OFF);
+                    keys.add(KEY_TAP_TO_FLASHLIGHT);
                     return keys;
                 }
             };

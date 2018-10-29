@@ -135,4 +135,15 @@
     <string name="hide_from_recents_add_app">Add app</string>
     <string name="title_activity_carbon_recents_settings">Recents</string>
 
+    <!-- Torch Power button gestures -->
+    <string name="double_tap_power_flashlight_screen_title">Activate the torch</string>
+    <string name="double_tap_power_flashlight_title">Screen off power button torch</string>
+    <string name="torch_power_button_gesture_none">Disabled</string>
+    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch</string>
+    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+
+    <string name="torch_power_button_gesture_none_summary">Off</string>
+    <string name="torch_power_button_gesture_dt_summary">On (Double tap)</string>
+    <string name="torch_power_button_gesture_lp_summary">On (Long press)</string>
+
 </resources>
