@@ -189,4 +189,7 @@
     <string name="network_traffic_state_summary">Display network activity icons</string>
     <string name="network_traffic_autohide_threshold_title">Autohide threshold (KB/s)</string>
 
+    <!-- Toggle navigation bar -->
+    <string name="navigation_bar_enabled_title">Enable navigation bar</string>
+
 </resources>
