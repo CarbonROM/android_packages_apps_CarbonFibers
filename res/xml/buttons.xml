@@ -20,8 +20,12 @@
     android:title="@string/buttons_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceCategory
+   <PreferenceCategory
         android:title="@string/buttons_software_category">
+
+	<SwitchPreference
+        android:key="navigation_bar_enabled"
+        android:title="@string/navigation_bar_enabled_title" />
 
         <Preference
             android:title="@string/navbar_tuner_title"
