@@ -18,10 +18,12 @@ package org.carbonrom.carbonfibers.fragments.buttons;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
+import android.support.v14.preference.SwitchPreference;
 import android.widget.Toast;
 
 import com.android.internal.util.cr.CrUtils;
@@ -33,6 +35,8 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String CALL_VOLUME_ANSWER = "call_volume_answer";
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+    private static final String NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
+
     private ListPreference mTorchPowerButton;
 
     @Override
@@ -42,6 +46,9 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         addPreferencesFromResource(R.xml.buttons);
         addCustomPreference(findPreference(CALL_VOLUME_ANSWER), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(NAVIGATION_BAR_ENABLED), SECURE_USER_TWO_STATE,
+                 getActivity().getResources().getBoolean(
+                com.android.internal.R.bool.config_showNavigationBar) ? 1 : 0);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         if (!CrUtils.deviceSupportsFlashLight(getContext())) {
@@ -53,7 +60,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
             mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
             mTorchPowerButton.setOnPreferenceChangeListener(this);
         }
-    }
+   }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
