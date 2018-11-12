@@ -25,6 +25,7 @@ import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.widget.Toast;
+import android.os.UserHandle;
 
 import com.android.internal.util.cr.CrUtils;
 import com.android.settings.R;
@@ -49,6 +50,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
 	addCustomPreference(findPreference(NAVIGATION_BAR_ENABLED),SYSTEM_TWO_STATE, STATE_OFF);
 
+	ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
         if (!CrUtils.deviceSupportsFlashLight(getContext())) {
             Preference toRemove = prefSet.findPreference(TORCH_POWER_BUTTON_GESTURE);
