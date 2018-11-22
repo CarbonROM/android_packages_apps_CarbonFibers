@@ -37,4 +37,8 @@
         android:title="@string/qs_columns_rows_config_title"
         android:summary="@string/qs_columns_rows_config_summary" />
 
+    <Preference
+        android:key="status_bar_clock"
+        android:fragment="org.carbonrom.carbonfibers.fragments.status_bar.StatusBarClock"
+	android:title="@string/status_bar_clock_title" />
 </PreferenceScreen>
