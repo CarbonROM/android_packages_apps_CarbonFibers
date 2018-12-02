@@ -36,19 +36,25 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
     private static final String NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
+    private static final String USE_BOTTOM_NAVIGATION = "use_bottom_gesture_navigation";
 
     private ListPreference mTorchPowerButton;
+    private SwitchPreference mNavbarToggle;
+    private SwitchPreference mBottomNavigation;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.buttons);
+        mNavbarToggle = (SwitchPreference) findPreference(NAVIGATION_BAR_ENABLED);
+        mBottomNavigation = (SwitchPreference) findPreference(USE_BOTTOM_NAVIGATION);
         addCustomPreference(findPreference(CALL_VOLUME_ANSWER), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
-        addCustomPreference(findPreference(NAVIGATION_BAR_ENABLED), SECURE_USER_TWO_STATE,
+        addCustomPreference(mNavbarToggle, SECURE_USER_TWO_STATE,
                  getActivity().getResources().getBoolean(
                 com.android.internal.R.bool.config_showNavigationBar) ? 1 : 0);
+        addCustomPreference(mBottomNavigation, SYSTEM_USER_TWO_STATE, STATE_OFF);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         if (!CrUtils.deviceSupportsFlashLight(getContext())) {
@@ -76,6 +82,24 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
                 Toast.makeText(getActivity(),
                         (R.string.torch_power_button_gesture_dt_toast),
                         Toast.LENGTH_SHORT).show();
+            }
+            return true;
+        } else if (preference == mNavbarToggle) {
+            boolean value = (Boolean) objValue;
+            if(objValue) {
+                Settings.System.putIntForUser(getActivity().getContentResolver(),
+                        Settings.Secure.NAVIGATION_BAR_ENABLED, false,
+                        UserHandle.USER_CURRENT);
+                mNavbarToggle.setChecked(false);
+            }
+            return true;
+        } else if (preference == mBottomNavigation) {
+            boolean value = (Boolean) objValue;
+            if(objValue) {
+                Settings.System.putIntForUser(getActivity().getContentResolver(),
+                        Settings.System.USE_BOTTOM_GESTURE_NAVIGATION, false,
+                        UserHandle.USER_CURRENT);
+                mNavbarToggle.setChecked(false);
             }
             return true;
         }
