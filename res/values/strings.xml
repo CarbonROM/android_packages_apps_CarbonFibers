@@ -19,6 +19,8 @@
     <string name="gestures_category">Gestures</string>
     <string name="privacy_category">Privacy</string>
 
+    <string name="enable">Enable</string>
+
     <string name="buttons_software_category">Software buttons</string>
     <string name="buttons_hardware_category">Hardware buttons</string>
 
@@ -192,4 +194,8 @@
     <!-- Toggle navigation bar -->
     <string name="navigation_bar_enabled_title">Enable navigation bar</string>
 
+    <!-- OnePlus Navigation Gestures -->
+    <string name="use_bottom_gesture_title">OnePlus Navigation gestures</string>
+    <string name="use_bottom_gesture_summary">Enable OnePlus like Navigation gestures</string>
+    <string name="use_bottom_gesture_info">Navigation bar will be disabled!\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\nLong press home\n- Short swipe up and hold in the center</string>
 </resources>
