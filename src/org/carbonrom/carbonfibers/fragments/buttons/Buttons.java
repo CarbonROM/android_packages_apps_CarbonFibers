@@ -50,16 +50,17 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String NAVBAR_TUNER = "navbar_tuner";
 
     private ListPreference mTorchPowerButton;
+    private SwitchPreference mNavbarToggle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.buttons);
-
+        mNavbarToggle = (SwitchPreference) findPreference(NAVIGATION_BAR_ENABLED);
         addCustomPreference(findPreference(CALL_VOLUME_ANSWER), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
-        addCustomPreference(findPreference(NAVIGATION_BAR_ENABLED), SECURE_TWO_STATE,
+        addCustomPreference(mNavbarToggle, SECURE_TWO_STATE,
                  getActivity().getResources().getBoolean(
                 com.android.internal.R.bool.config_showNavigationBar) ? 1 : 0);
 
@@ -90,6 +91,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
                 keysCategory.removePreference(toRemove);
             }
         }
+        mNavbarToggle.setOnPreferenceChangeListener(this);
    }
 
     @Override
@@ -106,6 +108,13 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
                 Toast.makeText(getActivity(),
                         (R.string.torch_power_button_gesture_dt_toast),
                         Toast.LENGTH_SHORT).show();
+            }
+            return true;
+        } else if (preference == mNavbarToggle) {
+            boolean value = (Boolean) objValue;
+            if(value) {
+                Settings.System.putInt(getActivity().getContentResolver(),
+                        Settings.System.USE_BOTTOM_GESTURE_NAVIGATION, STATE_OFF);
             }
             return true;
         }
