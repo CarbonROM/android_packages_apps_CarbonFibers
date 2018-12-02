@@ -26,6 +26,11 @@
         android:summary="@string/carbon_gestures_summary"
         android:fragment="org.carbonrom.carbonfibers.fragments.gestures.CarbonGesturesSettings" />
 
+    <Preference
+        android:title="@string/use_bottom_gesture_title"
+        android:summary="@string/use_bottom_gesture_summary"
+        android:fragment="org.carbonrom.carbonfibers.fragments.gestures.OPGestures" />
+
     <SwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_status_bar_sleep_title"

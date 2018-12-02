@@ -18,6 +18,7 @@
     <string name="buttons_category">Buttons</string>
     <string name="gestures_category">Gestures</string>
     <string name="privacy_category">Privacy</string>
+    <string name="enable">Enable</string>
 
     <string name="buttons_software_category">Software buttons</string>
     <string name="buttons_hardware_category">Hardware buttons</string>
@@ -232,4 +233,9 @@
     <string name="aggressive_idle_summary">Enter device idle more frequently and wake up less</string>
     <string name="aggressive_standby_title">Aggressive Standby</string>
     <string name="aggressive_standby_summary">Restrict apps from running the background</string>
+
+    <!-- OnePlus Navigation Gestures -->
+    <string name="use_bottom_gesture_title">OnePlus Navigation gestures</string>
+    <string name="use_bottom_gesture_summary">Enable OnePlus like Navigation gestures</string>
+    <string name="use_bottom_gesture_info">Navigation bar will be disabled!\n\nBack\n- Swipe up on left or right side\n\nHome\n- Swipe up center\n\nRecent apps\n- Swipe up center and hold\n\nLong press home\n- Short swipe up and hold in the center</string>
 </resources>
