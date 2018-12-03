@@ -240,4 +240,7 @@
     <!--Double Tap to Sleep Statusbar-->
     <string name="double_tap_sleep_gesture_title">Double tap to sleep on status bar</string>
 
+    <!--QS brightness slider at bottom-->
+    <string name="qs_brightness_position_bottom_title">Brightness slider at bottom</string>
+    <string name="qs_brightness_position_bottom_summary">Show the brightness slider on bottom quick settings</string>
 </resources>
