@@ -76,6 +76,12 @@
         android:title="@string/qs_columns_rows_config_title"
         android:summary="@string/qs_columns_rows_config_summary" />
 
+    <com.android.settings.carbon.SecureSettingSwitchPreference
+        android:key="qs_brightness_position_bottom"
+        android:title="@string/qs_brightness_position_bottom_title"
+        android:summary="@string/qs_brightness_position_bottom_summary"
+        android:defaultValue="false" />
+
 </PreferenceCategory>
 
 <PreferenceCategory
