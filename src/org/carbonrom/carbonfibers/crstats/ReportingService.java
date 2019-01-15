@@ -69,6 +69,7 @@ public class ReportingService extends IntentService {
                 .setMinimumLatency(1000)
                 .setExtras(cmBundle)
                 .setPersisted(true)
+                .setOverrideDeadline(172800000)
                 .build());
 
         // reschedule
