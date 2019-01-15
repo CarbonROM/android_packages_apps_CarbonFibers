@@ -40,7 +40,7 @@ public class AnonymousStats extends CustomSettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.anonymous_stats);
-        addCustomPreference(findPreference(STATS_COLLECTION), SYSTEM_TWO_STATE, STATE_ON);
+        addCustomPreference(findPreference(STATS_COLLECTION), SECURE_TWO_STATE, STATE_ON);
     }
 
     public static void updateLastSynced(Context context) {
