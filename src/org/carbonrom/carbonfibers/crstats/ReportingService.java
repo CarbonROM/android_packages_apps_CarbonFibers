@@ -45,6 +45,7 @@ public class ReportingService extends IntentService {
         String deviceCarrier = Utilities.getCarrier(getApplicationContext());
         String deviceCarrierId = Utilities.getCarrierId(getApplicationContext());
 
+        final int cmOldJobId = AnonymousStats.getLastJobId(getApplicationContext());
         final int cmOrgJobId = AnonymousStats.getNextJobId(getApplicationContext());
 
         if (DEBUG) Log.d(TAG, "scheduling job id: " + cmOrgJobId);
@@ -70,6 +71,9 @@ public class ReportingService extends IntentService {
                 .setExtras(cmBundle)
                 .setPersisted(true)
                 .build());
+
+        // cancel old job in case it didn't run yet
+        js.cancel(cmOldJobId);
 
         // reschedule
         AnonymousStats.updateLastSynced(this);
