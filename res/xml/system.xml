@@ -21,12 +21,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <Preference
-        android:key="smart_pixels"
-        android:title="@string/smart_pixels_title"
-        android:summary="@string/smart_pixels_summary"
-        android:fragment="org.carbonrom.carbonfibers.fragments.system.SmartPixels" />
-
-    <Preference
         android:key="global_actions"
         android:title="@string/global_actions_title"
         android:summary="@string/global_actions_summary"
@@ -51,5 +45,20 @@
         android:key="vibration_on_charge_state_changed"
         android:title="@string/vibration_on_charge_state_changed_title"
         android:defaultValue="true" />
+
+    <PreferenceCategory
+        android:title="@string/power_save_category">
+        <Preference
+            android:key="smart_pixels"
+            android:title="@string/smart_pixels_title"
+            android:summary="@string/smart_pixels_summary"
+            android:fragment="org.carbonrom.carbonfibers.fragments.system.SmartPixels" />
+
+        <Preference
+            android:key="aggressive_battery"
+            android:title="@string/aggressive_battery_title"
+            android:summary="@string/aggressive_battery_summary"
+            android:fragment="org.carbonrom.carbonfibers.fragments.system.AggressiveBattery" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
