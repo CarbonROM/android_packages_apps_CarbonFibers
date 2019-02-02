@@ -21,6 +21,7 @@
 
     <string name="buttons_software_category">Software buttons</string>
     <string name="buttons_hardware_category">Hardware buttons</string>
+    <string name="power_save_category">Power saving</string>
 
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
@@ -211,4 +212,9 @@
     <string name="battery_percent_hidden">Hidden</string>
     <string name="battery_percent_outside">Outside</string>
     <string name="battery_percent_inside">Inside</string>
+
+    <!-- Aggressive Idle -->
+    <string name="aggressive_idle_title">Aggressive Idle</string>
+    <string name="aggressive_idle_summary">Idle (doze) more frequently and wake up less</string>
+    <string name="aggressive_idle_warning_text">Aggressive Idle is a power saving feature. It may interfere with services intended to run at idle, like navigation apps. You can whitelist these apps from doze in your regular battery settings.</string>
 </resources>
