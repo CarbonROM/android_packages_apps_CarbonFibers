@@ -133,9 +133,6 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
         if (mStatusBarClock.equals(preference)) {
             int clockConfig = Integer.parseInt((String) newValue);
             boolean isHidden = clockConfig == 0;
-            getCustomPreference(STATUS_BAR_CLOCK_SHOW_SECONDS).setEnabled(!isHidden);
-            getCustomPreference(STATUS_BAR_CLOCK_SHOW_AM_PM).setEnabled(!isHidden);
-            getCustomPreference(STATUS_BAR_CLOCK_SHOW_DAY).setEnabled(!isHidden);
             return true;
         } else if (mThreshold.equals(preference)) {
              int val = (Integer) newValue;
