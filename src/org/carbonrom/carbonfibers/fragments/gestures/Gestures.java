@@ -30,6 +30,7 @@ public class Gestures extends GestureSettings {
     private static final String TAG = "Gestures";
     private static final String DOUBLE_TAP_STATUS_BAR_TO_SLEEP = "double_tap_sleep_gesture";
     private static final String DOUBLE_TAP_LOCK_SCREEN_TO_SLEEP = "double_tap_sleep_anywhere";
+    private static final String ACTIVE_EDGE_CATEGORY = "active_edge_category";
 
     private ContentResolver mContentResolver;
     private SwitchPreference mDoubleTapStatusBarToSleep;
@@ -47,6 +48,16 @@ public class Gestures extends GestureSettings {
         mDoubleTapStatusBarToSleep = (SwitchPreference) findPreference(DOUBLE_TAP_STATUS_BAR_TO_SLEEP);
         mDoubleTapLockScreenToSleep = (SwitchPreference) findPreference(DOUBLE_TAP_LOCK_SCREEN_TO_SLEEP);
         updatePreferences();
+
+        Preference ActiveEdge = findPreference(ACTIVE_EDGE_CATEGORY);
+        if (!getResources().getBoolean(com.android.internal.R.bool.config_has_elmyra_service)) {
+            getPreferenceScreen().removePreference(ActiveEdge);
+        } else {
+            if (!getContext().getPackageManager().hasSystemFeature(
+                    "android.hardware.sensor.assist")) {
+                getPreferenceScreen().removePreference(ActiveEdge);
+            }
+        }
     }
 
     @Override

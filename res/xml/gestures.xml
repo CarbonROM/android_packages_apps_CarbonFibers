@@ -22,6 +22,12 @@
     android:title="@string/gesture_preference_title">
 
     <Preference
+        android:key="active_edge_category"
+        android:title="@string/active_edge_title"
+        android:summary="@string/active_edge_summary"
+        android:fragment="org.carbonrom.carbonfibers.fragments.gestures.ActiveEdge" />
+
+    <Preference
         android:title="@string/carbon_gesture_preference_title"
         android:summary="@string/carbon_gestures_summary"
         android:fragment="org.carbonrom.carbonfibers.fragments.gestures.CarbonGesturesSettings" />
