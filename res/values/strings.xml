@@ -222,4 +222,27 @@
     <string name="theme_accent_picker_default">Default</string>
     <string name="accent_picker_material_colors">Material palette</string>
     <string name="accent_picker_custom_colors">User requested</string>
+
+    <!-- Active Edge -->
+    <string name="active_edge_title">Active Edge</string>
+    <string name="active_edge_summary">Configure Active Edge options</string>
+    <string name="active_edge_actions_title">Squeeze action</string>
+    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
+    <string name="active_edge_wake_title">Allow when screen is off</string>
+    <string name="active_edge_wake_summary">Trigger an action when the screen is off</string>
+    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
+
+    <!-- Active Edge Actions -->
+    <string name="action_nothing">No action</string>
+    <string name="action_search">Assistant</string>
+    <string name="action_voice_search">Voice search</string>
+    <string name="action_launch_camera">Camera</string>
+    <string name="action_flashlight">Flashlight</string>
+    <string name="action_clear_notifications">Clear notifications</string>
+    <string name="action_volume_panel">Volume panel</string>
+    <string name="action_screen_off">Screen off</string>
+    <string name="action_notifications">Notifications</string>
+    <string name="action_screenshot">Screenshot</string>
+    <string name="action_qs_panel">QS panel</string>
+
 </resources>
