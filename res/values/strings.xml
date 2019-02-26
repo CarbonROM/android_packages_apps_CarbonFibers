@@ -29,6 +29,29 @@
         Miscallaneous information\n\nIf you fail to report with the above information, do not expect the issue to be considered.</string>
     <string name="carbonfibers_dialog_toast">Read it all!</string>
 
+    <!-- Welcome screens -->
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+ 
+    <string name="slide_1_title">This your first time?</string>
+    <string name="slide_1_desc">Carbon Fibers is your go-to spot for tweaks and improvements!\n Let\'s go through some of our favorites.</string>
+ 
+    <string name="slide_2_title">Aggressive Battery</string>
+    <string name="slide_2_desc">Aggressive Battery lets you tweak how your system manages your battery. You can force your device to idle sooner,
+         and increase how frequently apps are put to sleep. You can find these under the System category!</string>
+ 
+    <string name="slide_3_title">Smart Pixels</string>
+    <string name="slide_3_desc">High-resolution phones with huge displays are beautiful, and terrible at conserving battery. Smart
+         Pixels lets you disable pixels on your screen and save battery. This one\'s under System too!</string>
+ 
+    <string name="slide_4_title">Scrolling Screenshot</string>
+    <string name="slide_4_desc">lmao like thats actually in here</string>
+ 
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">CarbonROM statistics</string>
