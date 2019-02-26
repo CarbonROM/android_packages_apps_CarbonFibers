@@ -58,6 +58,7 @@ import java.util.List;
 public class CarbonFibers extends SettingsPreferenceFragment {
 
     private static final int MENU_HELP  = 0;
+    private static final boolean DEBUG_WELCOME  = true;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -71,6 +72,10 @@ public class CarbonFibers extends SettingsPreferenceFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        if(DEBUG_WELCOME) {
+            Intent myIntent = new Intent(getActivity(), WelcomeActivity.class);
+            startActivity(myIntent);
+        }
     }
 
     @Override

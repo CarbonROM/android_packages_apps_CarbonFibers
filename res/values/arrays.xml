@@ -197,4 +197,18 @@
         <item>@string/action_value_custom_action</item>
         <item>@string/action_value_select_app</item>
     </string-array>
+
+    <array name="array_dot_active">
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+    </array>
 </resources>
