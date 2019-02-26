@@ -177,4 +177,18 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+
+    <array name="array_dot_active">
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+    </array>
+ 
+    <array name="array_dot_inactive">
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+        <item>@android:color/black</item>
+    </array>
 </resources>
