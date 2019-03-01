@@ -18,7 +18,7 @@
     <string name="gestures_category">Жесты</string>
     <string name="privacy_category">Конфиденциальность</string>
 
-    <string name="buttons_software_category">Экранные кнопки</string>
+    <string name="buttons_software_category">Панель навигации</string>
     <string name="buttons_hardware_category">Аппаратные кнопки</string>
 
     <!-- Global Actions -->
