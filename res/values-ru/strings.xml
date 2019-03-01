@@ -58,4 +58,19 @@
     <string name="status_bar_clock_show_seconds_title">Показывать секунды</string>
     <string name="status_bar_clock_show_am_pm_title">Показывать AM/PM</string>
     <string name="status_bar_clock_show_day_title">Показывать день недели</string>
+
+    <!-- Charging options -->
+    <string name="vibration_on_charge_state_changed_title">Вибрация при подключении</string>
+
+    <!-- Toggle navigation bar -->
+    <string name="navigation_bar_enabled_title">Включить панель навигации</string>
+
+    <!-- Battery styles -->
+    <string name="battery_style_title">Стиль иконки батареи</string>
+    <string name="battery_style_summary">Стиль иконки батареи в строке состояния</string>
+    <string name="battery_style_port">Вертикально</string>
+    <string name="battery_style_circle">Круг</string>
+    <string name="battery_style_dotted_circle">Точечный круг</string>
+    <string name="battery_style_text">Текст</string>
+    <string name="battery_style_hidden">Скрыт</string>
 </resources>
