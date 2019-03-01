@@ -44,4 +44,8 @@
     <string name="navbar_tuner_summary">Настройка кнопок, отображаемых на панели навигации, и панели навигации</string>
     <string name="lock_screen_shortcuts_title">Ярлыки на экране блокировки</string>
     <string name="lock_screen_shortcuts_summary">Настройка нижних ярлыков на экране блокировки</string>
+
+    <!-- Media art -->
+    <string name="media_art_title">Обложка альбома</string>
+    <string name="media_art_summary">Показывать обложку альбома на экране блокировки</string>
 </resources>
