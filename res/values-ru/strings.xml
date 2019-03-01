@@ -48,4 +48,14 @@
     <!-- Media art -->
     <string name="media_art_title">Обложка альбома</string>
     <string name="media_art_summary">Показывать обложку альбома на экране блокировки</string>
+
+    <!-- Status bar clock -->
+    <string name="status_bar_clock_title">Позиция часов</string>
+    <string name="status_bar_clock_hidden">Скрыты</string>
+    <string name="status_bar_clock_right">Справо</string>
+    <string name="status_bar_clock_center">Посередине</string>
+    <string name="status_bar_clock_left">Влево</string>
+    <string name="status_bar_clock_show_seconds_title">Показывать секунды</string>
+    <string name="status_bar_clock_show_am_pm_title">Показывать AM/PM</string>
+    <string name="status_bar_clock_show_day_title">Показывать день недели</string>
 </resources>
