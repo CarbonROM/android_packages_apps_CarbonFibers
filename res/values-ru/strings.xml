@@ -17,4 +17,23 @@
     <string name="buttons_category">Кнопки</string>
     <string name="gestures_category">Жесты</string>
     <string name="privacy_category">Конфиденциальность</string>
+
+    <string name="buttons_software_category">Экранные кнопки</string>
+    <string name="buttons_hardware_category">Аппаратные кнопки</string>
+
+    <!-- Global Actions -->
+    <string name="global_actions_title">Меню питания</string>
+    <string name="global_actions_summary">Добавить кнопки в меню питания</string>
+    <string name="global_actions_power">Выключение</string>
+    <string name="global_actions_restart">Перезагрузка</string>
+    <string name="global_actions_airplane">Режим в самолете</string>
+    <string name="global_actions_settings">Настройки</string>
+    <string name="global_actions_lockdown">Блокировка устройства</string>
+    <string name="global_actions_soundpanel">Звуковая панель</string>
+    <string name="global_actions_users">Пользователь</string>
+    <string name="global_actions_screenshot">Снимок экрана</string>
+    <string name="global_actions_screenrecord">Запись экрана</string>
+    <string name="global_actions_flashlight">Фонарик</string>
+    <string name="global_actions_advanced_reboot_title">Расширенная перезагрузка</string>
+    <string name="global_actions_advanced_reboot_summary">Показать расширенное меню перезагрузки</string>
 </resources>
