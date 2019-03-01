@@ -36,4 +36,12 @@
     <string name="global_actions_flashlight">Фонарик</string>
     <string name="global_actions_advanced_reboot_title">Расширенная перезагрузка</string>
     <string name="global_actions_advanced_reboot_summary">Показать расширенное меню перезагрузки</string>
+
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Значки строки состояния</string>
+    <string name="status_bar_tuner_summary">Настройка значков в строке состояния</string>
+    <string name="navbar_tuner_title">Панель навигации</string>
+    <string name="navbar_tuner_summary">Настройка кнопок, отображаемых на панели навигации, и панели навигации</string>
+    <string name="lock_screen_shortcuts_title">Ярлыки на экране блокировки</string>
+    <string name="lock_screen_shortcuts_summary">Настройка нижних ярлыков на экране блокировки</string>
 </resources>
