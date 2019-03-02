@@ -73,4 +73,22 @@
     <string name="battery_style_dotted_circle">Точечный круг</string>
     <string name="battery_style_text">Текст</string>
     <string name="battery_style_hidden">Скрыт</string>
+
+    <!-- Battery percent -->
+    <string name="show_battery_percent_title">Показывать процент заряда батареи</string>
+    <string name="show_battery_percent_summary">Показывать процент заряда батареи рядом с иконкой</string>
+    <string name="battery_percent_hidden">Спрятан</string>
+    <string name="battery_percent_outside">Рядом со значком</string>
+    <string name="battery_percent_inside">Внутри значка</string>
+
+    <!-- Themes -->
+    <string name="theme_category_title">Настройки темы</string>
+    <string name="disable_themes_installed_title">Темы устройства недоступны во избежание конфликтов с Substratum. Удалите это если вы хотите использовать эти темы вместо Substratum.</string>
+    <string name="disable_accents_installed_title">Выбор акцента недоступен во избежание конфликтов с Substratum. Удалите это если вы хотите использовать выбор акцента.</string>
+    <string name="accent_picker_dialog_title">Выбор цвета акцента</string>
+    <string name="theme_accent_picker_title">Цвет акцента</string>
+    <string name="theme_accent_picker_summary">Выбор цвет акцента</string>
+    <string name="theme_accent_picker_default">Стандартный</string>
+    <string name="accent_picker_material_colors">Material палитра</string>
+    <string name="accent_picker_custom_colors">Пользовательская палитра</string>
 </resources>
