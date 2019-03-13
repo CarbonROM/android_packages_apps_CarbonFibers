@@ -38,6 +38,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="button_keys"
         android:title="@string/buttons_hardware_category">
 
         <SwitchPreference

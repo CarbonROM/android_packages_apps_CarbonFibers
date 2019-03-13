@@ -21,6 +21,7 @@ import android.os.Bundle;
 import android.os.SystemProperties;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
@@ -33,6 +34,7 @@ import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 public class Buttons extends CustomSettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
     private static final String TAG = "Buttons";
     private static final String CALL_VOLUME_ANSWER = "call_volume_answer";
+    private static final String CATEGORY_KEYS = "button_keys";
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
     private static final String NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
@@ -51,10 +53,12 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
                 com.android.internal.R.bool.config_showNavigationBar) ? 1 : 0);
 
         PreferenceScreen prefSet = getPreferenceScreen();
+        final PreferenceCategory keysCategory =	 
+                (PreferenceCategory) prefSet.findPreference(CATEGORY_KEYS);
         if (!CrUtils.deviceSupportsFlashLight(getContext())) {
-            Preference toRemove = prefSet.findPreference(TORCH_POWER_BUTTON_GESTURE);
+            Preference toRemove = (Preference) prefSet.findPreference(TORCH_POWER_BUTTON_GESTURE);
             if (toRemove != null) {
-                prefSet.removePreference(toRemove);
+                keysCategory.removePreference(toRemove);
             }
         } else {
             mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
