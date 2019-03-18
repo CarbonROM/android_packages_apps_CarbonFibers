@@ -39,6 +39,6 @@ public class LockScreen extends CustomSettingsPreferenceFragment {
         addCustomPreference(findPreference(LOCKSCREEN_QUICK_UNLOCK_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(LOCKSCREEN_PIN_SCRAMBLE_LAYOUT), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD), SECURE_TWO_STATE, STATE_OFF);
-        addCustomPreference(findPreference(LOCKSCREEN_VISUALIZER), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(LOCKSCREEN_VISUALIZER), SECURE_TWO_STATE, STATE_OFF);
     }
 }
