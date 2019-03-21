@@ -308,4 +308,9 @@
     <string name="aggressive_standby_summary">Restrict apps from running the background</string>
     <string name="aggressive_battery_saver_title">Auto-enable on battery saver </string>
     <string name="aggressive_battery_saver_summary">Enable Aggressive Battery automatically when using battery saver</string>
+
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatic face unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lock screen after face unlock</string>
+
 </resources>
