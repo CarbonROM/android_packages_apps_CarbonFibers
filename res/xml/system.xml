@@ -20,36 +20,42 @@
     android:title="@string/system_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <Preference
-        android:key="smart_pixels"
-        android:title="@string/smart_pixels_title"
-        android:summary="@string/smart_pixels_summary"
-        android:fragment="org.carbonrom.carbonfibers.fragments.system.SmartPixels" />
+    <PreferenceCategory
+        android:title="@string/global_actions_category">
+        <Preference
+            android:key="global_actions"
+            android:title="@string/global_actions_title"
+            android:summary="@string/global_actions_summary"
+            android:fragment="org.carbonrom.carbonfibers.fragments.system.GlobalActionsSettings"
+            settings:allowDividerAbove="true" />
 
-    <Preference
-        android:key="global_actions"
-        android:title="@string/global_actions_title"
-        android:summary="@string/global_actions_summary"
-        android:fragment="org.carbonrom.carbonfibers.fragments.system.GlobalActionsSettings"
-        settings:allowDividerAbove="true" />
+        <SwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/global_actions_advanced_reboot_title"
+            android:summary="@string/global_actions_advanced_reboot_summary"
+            android:defaultValue="true" />
+    </PreferenceCategory>
 
-    <SwitchPreference
-        android:key="advanced_reboot"
-        android:title="@string/global_actions_advanced_reboot_title"
-        android:summary="@string/global_actions_advanced_reboot_summary"
-        android:defaultValue="true" />
+    <PreferenceCategory
+        android:title="@string/misc_category">
+        <ListPreference
+            android:key="screen_off_animation"
+            android:title="@string/screen_off_animation_title"
+            android:entries="@array/screen_off_animation_entries"
+            android:entryValues="@array/screen_off_animation_values"
+            android:persistent="false"
+            settings:allowDividerAbove="true" />
 
-    <ListPreference
-        android:key="screen_off_animation"
-        android:title="@string/screen_off_animation_title"
-        android:entries="@array/screen_off_animation_entries"
-        android:entryValues="@array/screen_off_animation_values"
-        android:persistent="false"
-        settings:allowDividerAbove="true" />
+        <SwitchPreference
+            android:key="vibration_on_charge_state_changed"
+            android:title="@string/vibration_on_charge_state_changed_title"
+            android:defaultValue="true" />
 
-    <SwitchPreference
-        android:key="vibration_on_charge_state_changed"
-        android:title="@string/vibration_on_charge_state_changed_title"
-        android:defaultValue="true" />
+        <Preference
+            android:key="smart_pixels"
+            android:title="@string/smart_pixels_title"
+            android:summary="@string/smart_pixels_summary"
+            android:fragment="org.carbonrom.carbonfibers.fragments.system.SmartPixels" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
