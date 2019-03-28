@@ -47,6 +47,7 @@ import java.util.List;
 @SearchIndexable
 public class System extends SettingsPreferenceFragment implements Indexable {
     private static final String TAG = "System";
+    private static final String AGGRESSIVE_BATTERY ="aggressive_battery";
     private static final String SMART_PIXELS = "smart_pixels";
     private static final String KEY_SYSTEM_POWER_SAVE_PREFERENCE_CATEGORY = "system_power_save_preference_category";
 
@@ -89,6 +90,7 @@ public class System extends SettingsPreferenceFragment implements Indexable {
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
+                    keys.add(AGGRESSIVE_BATTERY);
                     keys.add(SMART_PIXELS);
                     return keys;
                 }
