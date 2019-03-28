@@ -17,6 +17,8 @@
     <string name="gestures_category">Gestures</string>
     <string name="misc_category">Miscellaneous</string>
     <string name="privacy_category">Privacy</string>
+    <string name="global_actions_category">Power Menu</string>
+    <string name="misc_category">Miscellaneous</string>
 
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
@@ -69,8 +71,8 @@
     <string name="double_tap_lock_sleep_summary">Tap lock screen twice to sleep</string>
 
     <!-- Global Actions -->
-    <string name="global_actions_title">Power menu</string>
-    <string name="global_actions_summary">Add buttons to the power menu</string>
+    <string name="global_actions_title">Shortcuts</string>
+    <string name="global_actions_summary">Add options to the power menu</string>
     <string name="global_actions_power">Power</string>
     <string name="global_actions_restart">Restart</string>
     <string name="global_actions_airplane">Airplane</string>
