@@ -35,6 +35,7 @@ import java.util.List;
 @SearchIndexable
 public class System extends CustomSettingsPreferenceFragment implements Indexable {
     private static final String TAG = "System";
+    private static final String AGGRESSIVE_BATTERY ="aggressive_battery";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class System extends CustomSettingsPreferenceFragment implements Indexabl
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
+                    keys.add(AGGRESSIVE_BATTERY);
                     return keys;
                 }
             };
