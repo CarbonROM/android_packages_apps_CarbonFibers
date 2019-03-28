@@ -37,6 +37,7 @@ public class System extends CustomSettingsPreferenceFragment implements Indexabl
     private static final String TAG = "System";
     private static final String SMART_PIXELS = "smart_pixels";
     private static final String GLOBAL_ACTIONS = "global_actions";
+    private static final String AGGRESSIVE_BATTERY ="aggressive_battery";
     private static final String ADVANCED_REBOOT = "advanced_reboot";
 
     @Override
@@ -77,6 +78,7 @@ public class System extends CustomSettingsPreferenceFragment implements Indexabl
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
                     keys.add(SMART_PIXELS);
+                    keys.add(AGGRESSIVE_BATTERY);
                     keys.add(GLOBAL_ACTIONS);
                     return keys;
                 }
