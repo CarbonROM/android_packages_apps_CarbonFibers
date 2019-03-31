@@ -17,10 +17,12 @@
 package org.carbonrom.carbonfibers.fragments.status_bar;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.support.v7.preference.ListPreference;
@@ -34,9 +36,14 @@ import com.android.settings.R;
 import com.android.settings.carbon.CustomSeekBarPreference;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 import com.android.settings.carbon.SystemSettingListPreference;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class StatusBar extends CustomSettingsPreferenceFragment implements
-	    Preference.OnPreferenceChangeListener {
+	    Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "StatusBar";
 
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
@@ -46,6 +53,7 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
     private static final String STATUS_BAR_CLOCK_SHOW_DAY = "status_bar_clock_show_day";
     private static final String NETWORK_TRAFFIC_STATE = "network_traffic_state";
     private static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
+    private static final String STATUS_BAR_TUNER = "status_bar_tuner";
 
     private PreferenceScreen mCustomCarrierLabel;
     private SystemSettingListPreference mStatusBarClock;
@@ -169,4 +177,25 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
             mCustomCarrierLabel.setSummary(mCustomCarrierLabelText);
         }
     }
+
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.status_bar;
+                    result.add(sir);
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
+                }
+            };
 }

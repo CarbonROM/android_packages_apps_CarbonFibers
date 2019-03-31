@@ -28,6 +28,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.provider.SearchIndexableResource;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -51,6 +52,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,6 +61,13 @@ import java.util.List;
 public class CarbonFibers extends SettingsPreferenceFragment {
 
     private static final int MENU_HELP  = 0;
+    private static final String KEY_SYSTEM_MAIN_CATEGORY = "system_main_category";
+    private static final String KEY_STATUS_BAR_MAIN_CATEGORY = "status_bar_main_category";
+    private static final String KEY_LOCK_SCREEN_MAIN_CATEGORY = "lock_screen_main_category";
+    private static final String KEY_BUTTONS_MAIN_CATEGORY = "buttons_main_category";
+    private static final String KEY_GESTURES_MAIN_CATEGORY = "gestures_main_category";
+    private static final String KEY_PRIVACY_MAIN_CATEGORY = "privacy_main_category";
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -134,4 +144,31 @@ public class CarbonFibers extends SettingsPreferenceFragment {
 
         }
     }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.cf_main_menu;
+                    result.add(sir);
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> keys = new ArrayList<String>();
+                    keys.add(KEY_SYSTEM_MAIN_CATEGORY);
+                    keys.add(KEY_STATUS_BAR_MAIN_CATEGORY);
+                    keys.add(KEY_LOCK_SCREEN_MAIN_CATEGORY);
+                    keys.add(KEY_BUTTONS_MAIN_CATEGORY);
+                    keys.add(KEY_GESTURES_MAIN_CATEGORY);
+                    keys.add(KEY_PRIVACY_MAIN_CATEGORY);
+                    return keys;
+                }
+            };
 }

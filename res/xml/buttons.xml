@@ -18,9 +18,11 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/buttons_category"
+    android:key="buttons_fragment"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
    <PreferenceCategory
+        android:key="sw_button_keys"
         android:title="@string/buttons_software_category">
 
 	<SwitchPreference
@@ -28,6 +30,7 @@
         android:title="@string/navigation_bar_enabled_title" />
 
         <Preference
+            android:key="navbar_tuner"
             android:title="@string/navbar_tuner_title"
             android:summary="@string/navbar_tuner_summary">
             <intent android:action="android.intent.action.MAIN"

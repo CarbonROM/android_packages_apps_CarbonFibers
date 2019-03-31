@@ -17,8 +17,10 @@
 package org.carbonrom.carbonfibers.fragments.gestures;
 
 import android.content.ContentResolver;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v14.preference.SwitchPreference;
@@ -26,12 +28,27 @@ import android.support.v14.preference.SwitchPreference;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.gestures.GestureSettings;
 import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 
-public class Gestures extends GestureSettings {
+import java.util.Arrays;
+import java.util.List;
+
+public class Gestures extends GestureSettings implements Indexable {
     private static final String TAG = "Gestures";
     private static final String DOUBLE_TAP_STATUS_BAR_TO_SLEEP = "double_tap_sleep_gesture";
     private static final String DOUBLE_TAP_LOCK_SCREEN_TO_SLEEP = "double_tap_sleep_anywhere";
     private static final String ACTIVE_EDGE_CATEGORY = "active_edge_category";
+    private static final String CARBON_GESTURES = "carbon_gestures_category";
+
+    private static final String KEY_ASSIST = "gesture_assist_input_summary";
+    private static final String KEY_SWIPE_DOWN = "gesture_swipe_down_fingerprint_input_summary";
+    private static final String KEY_DOUBLE_TAP_POWER = "gesture_double_tap_power_input_summary";
+    private static final String KEY_DOUBLE_TWIST = "gesture_double_twist_input_summary";
+    private static final String KEY_DOUBLE_TAP_SCREEN = "gesture_double_tap_screen_input_summary";
+    private static final String KEY_PICK_UP = "gesture_pick_up_input_summary";
+    private static final String KEY_PREVENT_RINGING = "gesture_prevent_ringing_summary";
+    private static final String KEY_SWIPE_UP = "gesture_swipe_up_input_summary";
 
     private ContentResolver mContentResolver;
     private SwitchPreference mDoubleTapStatusBarToSleep;
@@ -103,4 +120,32 @@ public class Gestures extends GestureSettings {
         updateDoubleTapStatusBarToSleep(false);
         updateDoubleTapLockScreenToSleep(false);
     }
+
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(
+                        Context context, boolean enabled) {
+                    final SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.gestures;
+                    return Arrays.asList(sir);
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+                    // Duplicates in summary and details pages.
+                    keys.add(KEY_ASSIST);
+                    keys.add(KEY_SWIPE_DOWN);
+                    keys.add(KEY_DOUBLE_TAP_POWER);
+                    keys.add(KEY_DOUBLE_TWIST);
+                    keys.add(KEY_SWIPE_UP);
+                    keys.add(KEY_DOUBLE_TAP_SCREEN);
+                    keys.add(KEY_PICK_UP);
+                    keys.add(KEY_PREVENT_RINGING);
+                    keys.add(ACTIVE_EDGE_CATEGORY);
+                    keys.add(CARBON_GESTURES);
+                    return keys;
+                }
+            };
 }

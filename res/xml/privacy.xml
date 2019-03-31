@@ -18,10 +18,12 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/privacy_category"
+    android:key="privacy_fragment"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceScreen
         android:icon="@drawable/ic_appops"
+        android:key="appops_category"
         android:title="@string/appops_title"
         android:summary="@string/appops_summary" >
         <intent android:action="android.intent.action.MAIN"
@@ -31,6 +33,7 @@
 
     <PreferenceScreen
         android:icon="@drawable/ic_hafr"
+        android:key="hide_apps_from_recents_category"
         android:title="@string/hide_apps_from_recents_title"
         android:summary="@string/hide_apps_from_recents_summary" >
         <intent android:action="android.intent.action.MAIN"

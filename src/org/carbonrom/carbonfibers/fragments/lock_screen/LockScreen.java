@@ -16,12 +16,19 @@
 
 package org.carbonrom.carbonfibers.fragments.lock_screen;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.provider.SearchIndexableResource;
 
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 
-public class LockScreen extends CustomSettingsPreferenceFragment {
+import java.util.ArrayList;
+import java.util.List;
+
+public class LockScreen extends CustomSettingsPreferenceFragment implements Indexable {
     private static final String TAG = "LockScreen";
 
     private static final String LOCKSCREEN_MEDIA_METADATA = "lockscreen_media_metadata";
@@ -41,4 +48,25 @@ public class LockScreen extends CustomSettingsPreferenceFragment {
         addCustomPreference(findPreference(STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD), SECURE_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(LOCKSCREEN_VISUALIZER), SECURE_TWO_STATE, STATE_OFF);
     }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.lock_screen;
+                    result.add(sir);
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
+                }
+            };
 }

@@ -37,6 +37,7 @@ import com.android.settings.search.Indexable;
 import com.android.settings.R;
 import com.android.settings.Utils;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 
@@ -120,10 +121,21 @@ public class ButtonBrightnessSettings extends CustomSettingsPreferenceFragment i
             @Override
             public List<SearchIndexableResource> getXmlResourcesToIndex(
                     Context context, boolean enabled) {
+                final ArrayList<SearchIndexableResource> result = new ArrayList<>();
                 final SearchIndexableResource sir = new SearchIndexableResource(context);
                 sir.xmlResId = R.xml.button_brightness_settings;
-                return Arrays.asList(sir);
+                if (context.getResources().getBoolean(
+                        com.android.internal.R.bool.config_button_brightness_support)) {
+                    result.add(sir);
+                }
+                return result;
             }
-    };
+
+            @Override
+            public List<String> getNonIndexableKeys(Context context) {
+                final List<String> keys = super.getNonIndexableKeys(context);
+                return keys;
+            }
+        };
 }
 

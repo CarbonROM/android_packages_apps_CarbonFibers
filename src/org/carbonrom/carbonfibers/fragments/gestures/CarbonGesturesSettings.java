@@ -16,9 +16,11 @@
 
 package org.carbonrom.carbonfibers.fragments.gestures;
 
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.provider.SearchIndexableResource;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.ListPreference;
@@ -27,11 +29,17 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 import com.android.settings.carbon.CustomSeekBarPreference;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+
 import org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppChooserAdapter.AppItem;
 import org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppChooserDialog;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CarbonGesturesSettings extends CustomSettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "CarbonGestures";
     private CustomSeekBarPreference mCarbonGestureFingers;
     private ListPreference mCarbonGestureRight;
@@ -197,7 +205,27 @@ public class CarbonGesturesSettings extends CustomSettingsPreferenceFragment imp
             }
             return true;
         }
-
         return false;
     }
+
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.carbon_gestures;
+                    result.add(sir);
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
+                }
+            };
 }

@@ -17,8 +17,10 @@
 package org.carbonrom.carbonfibers.fragments.buttons;
 
 import android.content.ContentResolver;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.SystemProperties;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
@@ -30,16 +32,23 @@ import android.widget.Toast;
 import com.android.internal.util.cr.CrUtils;
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 
-public class Buttons extends CustomSettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Buttons extends CustomSettingsPreferenceFragment implements Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "Buttons";
     private static final String CALL_VOLUME_ANSWER = "call_volume_answer";
+    private static final String CATEGORY_SW_BUTTONS = "sw_button_keys";
     private static final String CATEGORY_KEYS = "button_keys";
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
     private static final String KEY_BUTTON_LIGHT = "button_brightness";
     private static final String NAVIGATION_BAR_ENABLED = "navigation_bar_enabled";
     private static final String BUTTON_HW_SETTINGS = "button_hw_settings";
+    private static final String NAVBAR_TUNER = "navbar_tuner";
 
     private ListPreference mTorchPowerButton;
 
@@ -103,4 +112,27 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         }
         return false;
     }
+
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    final ArrayList<SearchIndexableResource> result = new ArrayList<>();
+                    final SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.buttons;
+                    result.add(sir);
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    final List<String> keys = super.getNonIndexableKeys(context);
+                    keys.add(CATEGORY_SW_BUTTONS);
+                    keys.add(CATEGORY_KEYS);
+                    keys.add(BUTTON_HW_SETTINGS);
+                    keys.add(KEY_BUTTON_LIGHT);
+                    return keys;
+                }
+            };
 }

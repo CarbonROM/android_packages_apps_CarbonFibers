@@ -28,6 +28,7 @@
         android:fragment="org.carbonrom.carbonfibers.fragments.gestures.ActiveEdge" />
 
     <Preference
+        android:key="carbon_gestures_category"
         android:title="@string/carbon_gesture_preference_title"
         android:summary="@string/carbon_gestures_summary"
         android:fragment="org.carbonrom.carbonfibers.fragments.gestures.CarbonGesturesSettings" />

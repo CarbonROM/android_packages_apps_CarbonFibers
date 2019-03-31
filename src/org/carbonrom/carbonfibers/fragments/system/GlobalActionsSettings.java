@@ -15,14 +15,21 @@
  */
 package org.carbonrom.carbonfibers.fragments.system;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 
-public class GlobalActionsSettings extends CustomSettingsPreferenceFragment {
+import java.util.ArrayList;
+import java.util.List;
+
+public class GlobalActionsSettings extends CustomSettingsPreferenceFragment implements Indexable {
     private static final String GLOBAL_ACTIONS_POWER = "global_actions_power";
     private static final String GLOBAL_ACTIONS_RESTART = "global_actions_restart";
     private static final String GLOBAL_ACTIONS_LOCKDOWN = "global_actions_lockdown";
@@ -49,4 +56,25 @@ public class GlobalActionsSettings extends CustomSettingsPreferenceFragment {
         addCustomPreference(findPreference(GLOBAL_ACTIONS_FLASHLIGHT), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(GLOBAL_ACTIONS_USERS), SYSTEM_TWO_STATE, STATE_OFF);
     }
+
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.global_actions;
+                    result.add(sir);
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
+                }
+            };
 }

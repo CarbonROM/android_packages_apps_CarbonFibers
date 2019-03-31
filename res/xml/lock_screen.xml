@@ -17,10 +17,12 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="lockscreen_fragment"
     android:title="@string/lock_screen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <Preference
+        android:key="lockscreen_shortcuts"
         android:title="@string/lock_screen_shortcuts_title"
         android:summary="@string/lock_screen_shortcuts_summary">
         <intent android:action="android.intent.action.MAIN"

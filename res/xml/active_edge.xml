@@ -17,7 +17,8 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:title="@string/active_edge_title" >
+    android:title="@string/active_edge_title"
+    android:key="active_edge_fragment" >
 
     <com.android.settings.widget.VideoPreference
         android:key="squeeze_video"

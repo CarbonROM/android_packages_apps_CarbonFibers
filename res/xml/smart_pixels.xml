@@ -16,8 +16,9 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/smart_pixels_title" >
+    android:title="@string/smart_pixels_title"
+    android:key="smart_pixels_fragment"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
     <SwitchPreference
         android:key="smart_pixels_enable"

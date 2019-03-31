@@ -17,6 +17,7 @@
  <PreferenceScreen
      xmlns:android="http://schemas.android.com/apk/res/android"
      android:title="@string/carbon_gesture_preference_title"
+     android:key="carbon_gesture_fragment"
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.android.settings.carbon.CustomSeekBarPreference

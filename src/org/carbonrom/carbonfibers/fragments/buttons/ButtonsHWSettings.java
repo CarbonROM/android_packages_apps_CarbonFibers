@@ -65,7 +65,7 @@ import com.android.settings.carbon.ActionFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ButtonsHWSettings extends ActionFragment implements OnPreferenceChangeListener{
+public class ButtonsHWSettings extends ActionFragment implements OnPreferenceChangeListener, Indexable {
 
     private static final String TAG = "ButtonsSettings";
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
@@ -198,7 +198,7 @@ public class ButtonsHWSettings extends ActionFragment implements OnPreferenceCha
         return hasHomeKey || hasBackKey || hasMenuKey || hasAssistKey || hasAppSwitchKey;
     }
 
-    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
                 @Override
                 public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
@@ -208,7 +208,9 @@ public class ButtonsHWSettings extends ActionFragment implements OnPreferenceCha
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
                     sir.xmlResId = R.xml.buttons_hw_settings;
-                    result.add(sir);
+                    if(hasHWButtonOfInterest(context.getResources())) {
+                        result.add(sir);
+                    }
                     return result;
                 }
 

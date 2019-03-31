@@ -19,12 +19,18 @@ package org.carbonrom.carbonfibers.crstats;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.provider.SearchIndexableResource;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 
-public class AnonymousStats extends CustomSettingsPreferenceFragment {
+import java.util.ArrayList;
+import java.util.List;
+
+public class AnonymousStats extends CustomSettingsPreferenceFragment implements Indexable {
     private static final String PREF_FILE_NAME = "CRStats";
     private static final String STATS_COLLECTION = "stats_collection";
     /* package */ static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
@@ -71,4 +77,23 @@ public class AnonymousStats extends CustomSettingsPreferenceFragment {
         setLastJobId(context, lastId);
         return lastId;
     }
+
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    final ArrayList<SearchIndexableResource> result = new ArrayList<>();
+                    final SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.anonymous_stats;
+                    result.add(sir);
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    final List<String> keys = super.getNonIndexableKeys(context);
+                    return keys;
+                }
+            };
 }

@@ -16,13 +16,21 @@
 
 package org.carbonrom.carbonfibers.fragments.privacy;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.provider.SearchIndexableResource;
 
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Privacy extends CustomSettingsPreferenceFragment {
     private static final String TAG = "Privacy";
+    private static final String CARBON_STATS = "crstats";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,4 +38,24 @@ public class Privacy extends CustomSettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.privacy);
     }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    final ArrayList<SearchIndexableResource> result = new ArrayList<>();
+                    final SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.privacy;
+                    result.add(sir);
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    final List<String> keys = super.getNonIndexableKeys(context);
+                    keys.add(CARBON_STATS);
+                    return keys;
+                }
+            };
 }
