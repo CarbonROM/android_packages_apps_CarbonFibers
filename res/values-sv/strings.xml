@@ -12,80 +12,198 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="carbonfibers">CarbonFibers</string>
-  <string name="system_category">System</string>
-  <string name="statusbar_category">Statusfält</string>
-  <string name="lockscreen_category">Låsskärm</string>
-  <string name="buttons_category">Knappar</string>
-  <string name="gesture_category">Gester</string>
-  <string name="privacy_category">Privatliv &amp; säkerhet</string>
-  <string name="buttons_software_category">Mjukvaruknappar</string>
-  <string name="buttons_hardware_category">Hårdvaruknappar</string>
-  <string name="statusbar_notifications_category">Aviseringar</string>
-  <string name="statusbar_network_activity_category">Nätverksaktivitet</string>
-  <string name="system_global_actions_category">Globala åtgärder</string>
-  <string name="system_volume_category">Volym</string>
-  <string name="system_recents_category">Senaste</string>
-  <string name="lockscreen_security_category">Säkerhet</string>
-  <!-- Dialog -->
-  <string name="carbonfibers_dialog_title">Hjälp oss hjälp dig!</string>
-  <string name="carbonfibers_dialog_message">Tyvärr så är vi inga trollkarlar!\n\nSå om du hittar en bug i någon inställning i CarbonFibers, var snäll och lämna ett meddelande på Jira eller kontakta en Carbon utvecklare med följande:\n\n1. #blamemyself*\n2. Loggar!\n3. Kernel samt modifikationer som använts\n4. Extra information\n\nOm du inte lyckats med att rapportera något utöver det som nämnts ovanför, så räkna inte med att något blir åtgärdat. Kom ihåg, vi är inte så pass perfekta som Patrik, så vi tenderar att missa saker till och från.</string>
-  <string name="carbonfibers_dialog_toast">LÄS ALLTING!</string>
-  <!-- Navbar Animation -->
-  <!-- Hide Apps from Recents -->
-  <string name="hide_apps_from_recents_title">Göm appar från senaste</string>
-  <string name="hide_from_recents_add_app">Lägg till app</string>
-  <string name="title_activity_carbon_recents_settings">Senaste</string>
-  <!-- CarbonGestures -->
-  <string name="carbon_gesture_preference_title">Carbon-gester</string>
-  <string name="carbon_gestures_summary">Konfigurera anpassade globala gester</string>
-  <!-- Anonymous Statistics #CM -->
-  <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <!-- Anonymous Statistics - Preview -->
-  <!-- tap-to-sleep -->
-  <string name="double_tap_status_bar_sleep_title">Dubbeltryck på statusfältet för att sova</string>
-  <string name="double_tap_status_bar_sleep_summary">Knacka på statusfältet två gånger för att sova</string>
-  <!-- Gestures-->
-  <string name="camera_double_tap_power_gesture_title">Tryck på strömknappen två gånger för kamera</string>
-  <string name="camera_double_tap_power_gesture_desc">Öppna din kamera snabbt utan att låsa upp din skärm</string>
-  <!-- Global Actions -->
-  <string name="global_actions_title">Ström-meny</string>
-  <string name="global_actions_restart">Starta om</string>
-  <string name="global_actions_airplane">Flygplan</string>
-  <string name="global_actions_settings">Inställningar</string>
-  <string name="global_actions_users">Användare</string>
-  <string name="global_actions_screenshot">Skärmdump</string>
-  <string name="global_actions_flashlight">Ficklampa</string>
-  <string name="global_actions_advanced_reboot_title">Aktivera avancerad uppstart</string>
-  <string name="global_actions_advanced_reboot_summary">Visa alternativ för återställning och bootloader</string>
-  <!-- Lock screen charging current indicator  -->
-  <!-- Screen Off animation -->
-  <string name="screen_off_animation_default">Standard</string>
-  <string name="screen_off_animation_crt">CRT</string>
-  <string name="screen_off_animation_scale">Våg</string>
-  <!-- Volume rocker music control -->
-  <string name="volume_rocker_music_controls_title">Uppspelningskontroll</string>
-  <string name="volume_rocker_music_controls_summary">Håll in volymknapparna länge för att söka musik-spår när skärmen är av</string>
-  <!-- Torch Power button gestures -->
-  <string name="torch_power_button_gesture_none">Inaktiverad</string>
-  <!-- Button brightness -->
-  <string name="button_backlight_options_category">Alternativ för ficklampa</string>
-  <!-- HW Keys customization -->
-  <!-- Toggle navigation bar -->
-  <!-- SystemUI Tuner -->
-  <!-- Battery percentage -->
-  <!-- Status bar battery style-->
-  <!-- Status bar notification -->
-  <!-- Status bar music ticker -->
-  <!-- Status bar clock options -->
-  <!-- Pin scramble -->
-  <!-- Recents Membar -->
-  <!-- Immersive Recents -->
-  <!-- Clear all recents -->
-  <!-- Face Auto Unlock -->
-  <!-- Quick unlock -->
-  <!-- Overlay toggle -->
-  <!-- Statusbar net monitor -->
-  <!-- Smart Pixels -->
-  <!-- Force Aspect Ratio -->
+    <string name="carbonfibers">CarbonFibers</string>
+    <string name="system_category">System</string>
+    <string name="statusbar_category">Statusfält</string>
+    <string name="lockscreen_category">Låsskärm</string>
+    <string name="buttons_category">Knappar</string>
+    <string name="gesture_category">Gester</string>
+    <string name="privacy_category">Privatliv &amp; säkerhet</string>
+    <string name="buttons_software_category">Mjukvaruknappar</string>
+    <string name="buttons_hardware_category">Hårdvaruknappar</string>
+    <string name="statusbar_notifications_category">Aviseringar</string>
+    <string name="statusbar_network_activity_category">Nätverksaktivitet</string>
+    <string name="system_global_actions_category">Globala åtgärder</string>
+    <string name="system_volume_category">Volym</string>
+    <string name="system_recents_category">Senaste</string>
+    <string name="lockscreen_security_category">Säkerhet</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Hjälp oss hjälp dig!</string>
+    <string name="carbonfibers_dialog_message">Tyvärr så är vi inga trollkarlar!\n\nSå om du hittar en bug i någon inställning i CarbonFibers, var snäll och lämna ett meddelande på Jira eller kontakta en Carbon utvecklare med följande:\n\n1. #blamemyself*\n2. Loggar!\n3. Kernel samt modifikationer som använts\n4. Extra information\n\nOm du inte lyckats med att rapportera något utöver det som nämnts ovanför, så räkna inte med att något blir åtgärdat. Kom ihåg, vi är inte så pass perfekta som Patrik, så vi tenderar att missa saker till och från.</string>
+    <string name="carbonfibers_dialog_toast">LÄS ALLTING!</string>
+    <!-- Navbar Animation -->
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Göm appar från senaste</string>
+    <string name="hide_from_recents_add_app">Lägg till app</string>
+    <string name="title_activity_carbon_recents_settings">Senaste</string>
+    <!-- CarbonGestures -->
+    <string name="carbon_gesture_preference_title">Carbon-gester</string>
+    <string name="carbon_gestures_summary">Konfigurera anpassade globala gester</string>
+    <string name="carbon_gestures_fingers_title">Fingrar som används för gesten</string>
+    <string name="carbon_gestures_right_title">Höger-gest</string>
+    <string name="carbon_gestures_left_title">Vänster-gest</string>
+    <string name="carbon_gestures_up_title">Uppåt-gest</string>
+    <string name="carbon_gesture_disabled">Avstängd</string>
+    <string name="carbon_gesture_back">Bakåt</string>
+    <string name="carbon_gesture_home">Hem</string>
+    <string name="carbon_gesture_recents">Senaste</string>
+    <string name="carbon_gesture_power">Ström</string>
+    <string name="carbon_gesture_volume_down">Volym ner</string>
+    <string name="carbon_gesture_volume_up">Volym upp</string>
+    <string name="carbon_gesture_volume_mute">Säng av ljud</string>
+    <string name="carbon_gesture_screenshot">Skärmdump</string>
+    <string name="carbon_gesture_media_play_pause">Spela upp/Pausa media</string>
+    <string name="carbon_gesture_media_skip">Hoppa över media</string>
+    <string name="carbon_gesture_media_previous">Föregående media</string>
+    <string name="carbon_gesture_customapp">Kör applikation</string>
+    <string name="carbon_gesture_launch">Kör</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM-statistik</string>
+    <string name="anonymous_statistics_summary">Hjälp till att göra CarbonROM bättre genom att välja anonym statistik-rapportering</string>
+    <string name="anonymous_statistics_warning_title">Om</string>
+    <string name="enable_reporting_title">Aktivera rapportering</string>
+    <string name="preview_data_title">Förhandsgranska data</string>
+    <string name="view_stats_title">Visa statistik</string>
+    <string name="anonymous_learn_more">Ta reda på mer</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Unikt ID</string>
+    <string name="preview_device_title">Enhet</string>
+    <string name="preview_version_title">Version</string>
+    <string name="preview_country_title">Land</string>
+    <string name="preview_carrier_title">Operatör</string>
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Dubbeltryck på statusfältet för att sova</string>
+    <string name="double_tap_status_bar_sleep_summary">Knacka på statusfältet två gånger för att sova</string>
+    <!-- Gestures-->
+    <string name="camera_double_tap_power_gesture_title">Tryck på strömknappen två gånger för kamera</string>
+    <string name="camera_double_tap_power_gesture_desc">Öppna din kamera snabbt utan att låsa upp din skärm</string>
+    <!-- Global Actions -->
+    <string name="global_actions_title">Ström-meny</string>
+    <string name="global_actions_power">Ström</string>
+    <string name="global_actions_restart">Starta om</string>
+    <string name="global_actions_airplane">Flygplan</string>
+    <string name="global_actions_settings">Inställningar</string>
+    <string name="global_actions_lockdown">Stäng ner</string>
+    <string name="global_actions_users">Användare</string>
+    <string name="global_actions_screenshot">Skärmdump</string>
+    <string name="global_actions_flashlight">Ficklampa</string>
+    <string name="global_actions_advanced_reboot_title">Aktivera avancerad uppstart</string>
+    <string name="global_actions_advanced_reboot_summary">Visa alternativ för återställning och bootloader</string>
+    <!-- Lock screen charging current indicator  -->
+    <string name="lockscreen_charging_current_title">Visa laddningsinfo</string>
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_default">Standard</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Våg</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Uppspelningskontroll</string>
+    <string name="volume_rocker_music_controls_summary">Håll in volymknapparna länge för att söka musik-spår när skärmen är av</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_none">Inaktiverad</string>
+    <!-- Button brightness -->
+    <string name="button_backlight_options_category">Alternativ för ficklampa</string>
+    <string name="button_manual_brightness">Nivå på ljusstyrka</string>
+    <!-- HW Keys customization -->
+    <string name="advanced_options_title">Avancerade alternativ</string>
+    <string name="hardware_keys_volume_keys_title">Volym-knapp</string>
+    <string name="picker_activities">Aktiviteter</string>
+    <string name="select_custom_app_title">Välj anpassad app</string>
+    <string name="profile_applist_title">Applikationer</string>
+    <string name="choose_action_title">Välj åtgärd</string>
+    <string name="action_entry_default_action">Standardinställningar</string>
+    <string name="action_entry_select_app">Välj applikation</string>
+    <string name="hardware_keys_home_key_title">Hem-knapp</string>
+    <string name="hardware_keys_menu_key_title">Meny-knapp</string>
+    <string name="hardware_keys_assist_key_title">Sök-knapp</string>
+    <string name="hardware_keys_back_key_title">Bakåt-knapp</string>
+    <string name="hardware_keys_category">Hårdvarutangenter</string>
+    <string name="hardware_keys_disable_title">Inaktivera tangenter</string>
+    <!-- Toggle navigation bar -->
+    <string name="navigation_bar_enabled_title">Aktivera navigeringsfält</string>
+    <!-- SystemUI Tuner -->
+    <string name="power_notifications_title">Ström-aviseringar</string>
+    <string name="vol_dnd_category_title">Stör ej-läge</string>
+    <string name="volbtn_down_zen_title">Volym ner för stör ej</string>
+    <string name="volbtn_down_zen_summary">Tillåt volym ner att gå in i Stör ej-läge</string>
+    <!-- Battery percentage -->
+    <string name="battery_style_category_title">Batteri-ikon</string>
+    <string name="status_bar_battery_percentage_title">Batteriprocent</string>
+    <string name="status_bar_battery_percentage_default">Gömd</string>
+    <string name="status_bar_battery_percentage_text_next">Intill ikonen</string>
+    <string name="status_bar_battery_percentage_text_inside">Inuti ikonen</string>
+    <!-- Status bar battery style-->
+    <string name="status_bar_battery_style_title">Batteristil</string>
+    <string name="status_bar_battery_style_port">Porträtt</string>
+    <string name="status_bar_battery_style_circle">Cirkel</string>
+    <string name="status_bar_battery_style_dotted_circle">Prickad cirkel</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Gömd</string>
+    <string name="status_bar_battery_style_square">Fyrkant</string>
+    <!-- Status bar notification -->
+    <string name="notification_style_title">Aviseringsstil</string>
+    <string name="notify_disabled">Ingen</string>
+    <string name="headsup_enabled">Se upp</string>
+    <!-- Status bar music ticker -->
+    <!-- Status bar clock options -->
+    <string name="status_bar_clock">Klocka och datum</string>
+    <string name="clock_title_enable">Justering</string>
+    <string name="clock_enabled">Aktiverad</string>
+    <string name="clock_disabled">Avstängd</string>
+    <string name="status_bar_clock_style_reset">Återställ färg</string>
+    <string name="status_bar_show_clock_title">Visa klocka och datum</string>
+    <string name="status_bar_clock_seconds_title">Visa sekunder</string>
+    <string name="status_bar_am_pm_title">FM/EM</string>
+    <string name="status_bar_am_pm_info">24-timmarsklocka är aktiverad</string>
+    <string name="enable_clock_weekday">Veckodag</string>
+    <string name="right_clock">Klocka till höger</string>
+    <string name="left_clock">Klocka till vänster</string>
+    <string name="dont_show">Visa inte</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_display_summary">Visa anpassat datum före klockan</string>
+    <string name="clock_date_style">Datumstil</string>
+    <string name="clock_date_format">Datumformat</string>
+    <string name="clock_date_string_edittext_title">Måste vara i DatumFormatet t.ex MM/dd/åå</string>
+    <string name="clock_date_string_edittext_summary">Fyll i sträng</string>
+    <string name="am_pm_clock_none">Visa inte</string>
+    <string name="clock_date_display_none">Visa inte</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Gemener</string>
+    <string name="clock_date_style_uppercase">Versaler</string>
+    <string name="clock_date_format_custom">Anpassat Java-format</string>
+    <string name="clock_date_right">Höger om klockan</string>
+    <string name="clock_date_left">Vänster om klockan</string>
+    <!-- Pin scramble -->
+    <!-- Recents Membar -->
+    <string name="systemui_recents_mem_display_title">Aktivera minnesfält</string>
+    <string name="systemui_recents_mem_display_summary">Visa minnesanvändning i senaste</string>
+    <!-- Immersive Recents -->
+    <string name="immersive_recents_default">Standard</string>
+    <string name="immersive_recents_fullscreen">Fullskärm</string>
+    <string name="immersive_recents_statusbar">Göm navigeringsfält</string>
+    <string name="immersive_recents_navbar">Göm statusfält</string>
+    <!-- Clear all recents -->
+    <string name="recents_clear_all_location_top_right">Uppe till höger</string>
+    <string name="recents_clear_all_location_top_left">Uppe till vänster</string>
+    <string name="recents_clear_all_location_top_center">Uppe i mitten</string>
+    <string name="recents_clear_all_location_bottom_right">Längst ner till höger</string>
+    <string name="recents_clear_all_location_bottom_left">Längst ner till vänster</string>
+    <string name="recents_clear_all_location_bottom_center">Nere i mitten</string>
+    <!-- Face Auto Unlock -->
+    <string name="face_auto_unlock_title">Lås upp med ansiktet automatiskt</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Snabb-upplåsning</string>
+    <string name="unlock_quick_unlock_control_summary">Lås upp när korrekt PIN-kod/Lösenord är ifyllt</string>
+    <!-- Overlay toggle -->
+    <string name="untrusted_overlay_toggle_title">Tillåt icke-betrodda överläggningar</string>
+    <string name="untrusted_overlay_alert_title">Omstart krävs</string>
+    <string name="reboot">Starta om</string>
+    <!-- Statusbar net monitor -->
+    <string name="network_traffic_state_title">Visa aktivitet för nätverkstrafiken</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smarta Pixlar</string>
+    <string name="smart_pixels_enable_title">Aktivera Smarta Pixlar</string>
+    <string name="smart_pixels_percent">Procent av pixlar att inaktivera</string>
+    <string name="smart_pixels_shift">Förhindra inbränning av skiftande pixlar var</string>
+    <!-- Force Aspect Ratio -->
 </resources>

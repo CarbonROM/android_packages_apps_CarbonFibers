@@ -12,273 +12,273 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="carbonfibers">CarbonFibers</string>
-  <string name="system_category">System</string>
-  <string name="statusbar_category">Benachrichtigungsleiste</string>
-  <string name="lockscreen_category">Sperrbildschirm</string>
-  <string name="buttons_category">Tasten</string>
-  <string name="gesture_category">Gesten</string>
-  <string name="privacy_category">Datenschutz &amp; Sicherheit</string>
-  <string name="buttons_software_category">Software-Tasten</string>
-  <string name="buttons_hardware_category">Hardware-Tasten</string>
-  <string name="statusbar_notifications_category">Benachrichtigungen</string>
-  <string name="statusbar_network_activity_category">Netzwerk-Aktivität</string>
-  <string name="system_global_actions_category">Globale Aktionen</string>
-  <string name="system_volume_category">Lautstärke</string>
-  <string name="system_recents_category">Letzte Apps</string>
-  <string name="lockscreen_security_category">Sicherheit</string>
-  <!-- Dialog -->
-  <string name="carbonfibers_dialog_title">Hilf uns, dir zu helfen!</string>
-  <string name="carbonfibers_dialog_message">Leider sind wir keine Magier!\n\nFalls du also einen Fehler findest, erstelle bitte ein Ticket auf Jira oder kontaktiere einen der CarbonROM Entwickler mit den folgenden Informationen:\n\n1: Logdateien!\n2: Kernel und Mods die genutzt werden\n3. Andere nützliche Informationen\n\nDiese Informationen sind wichtig für uns, um Fehler zu beheben. Ohne sie können wir dir nicht helfen.</string>
-  <string name="carbonfibers_dialog_toast">BITTE LIES ALLES!</string>
-  <!-- Navbar Animation -->
-  <string name="pixel_navbar_anim_title">Pixel Home Animation aktivieren</string>
-  <string name="pixel_navbar_anim_summary">Zeige die Pixel Home Tastenanimation</string>
-  <!-- Hide Apps from Recents -->
-  <string name="hide_apps_from_recents_title">Verstecke Apps in den zuletzt geöffneten Apps</string>
-  <string name="hide_from_recents_add_app">App hinzufügen</string>
-  <string name="title_activity_carbon_recents_settings">Letzte Apps</string>
-  <!-- CarbonGestures -->
-  <string name="carbon_gesture_preference_title">CarbonGestures</string>
-  <string name="carbon_gestures_summary">Konfigurieren Sie benutzerdefinierte globale Gesten</string>
-  <string name="carbon_gestures_fingers_title">Anzahl der Finger für Gesten</string>
-  <string name="carbon_gestures_right_title">Rechts Geste</string>
-  <string name="carbon_gestures_left_title">Links Geste</string>
-  <string name="carbon_gestures_up_title">Hoch Geste</string>
-  <string name="carbon_gestures_down_title">Runter Geste</string>
-  <string name="carbon_gesture_disabled">Deaktiviert</string>
-  <string name="carbon_gesture_back">Zurück</string>
-  <string name="carbon_gesture_home">Home</string>
-  <string name="carbon_gesture_recents">Letzte Apps</string>
-  <string name="carbon_gesture_power">Ein/Aus</string>
-  <string name="carbon_gesture_volume_down">Lautstärke runter</string>
-  <string name="carbon_gesture_volume_up">Lautstärke hoch</string>
-  <string name="carbon_gesture_volume_mute">Lautstärke Stummschalten</string>
-  <string name="carbon_gesture_screenshot">Screenshot</string>
-  <string name="carbon_gesture_media_play_pause">Medien: Play/Pause</string>
-  <string name="carbon_gesture_media_skip">Medien: Nächste</string>
-  <string name="carbon_gesture_media_previous">Medien: Letzte</string>
-  <string name="carbon_gesture_customapp">Anwendung ausführen</string>
-  <string name="carbon_gesture_launch">Ausführen</string>
-  <!-- Anonymous Statistics #CM -->
-  <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-  <string name="anonymous_statistics_title">CarbonROM-Statistik</string>
-  <string name="anonymous_statistics_summary">Durch anonyme Gerätestatistiken dabei helfen, CarbonROM zu verbessern</string>
-  <string name="anonymous_statistics_warning_title">Über</string>
-  <string name="anonymous_statistics_warning">Die bei jedem Neustart des Gerätes übermittelten Daten beeinträchtigen nicht die Privatsphäre, da sie keinerlei Rückschlüsse auf den Benutzer zulassen.\n\nFür ein Beispiel der gesendeten Daten bitte auf Vorschau klicken.</string>
-  <string name="enable_reporting_title">Berichte einschalten</string>
-  <string name="preview_data_title">Daten-Vorschau</string>
-  <string name="view_stats_title">Statistiken ansehen</string>
-  <string name="anonymous_learn_more">Mehr erfahren</string>
-  <!-- Anonymous Statistics - Preview -->
-  <string name="preview_id_title">Eindeutige ID</string>
-  <string name="preview_device_title">Gerät</string>
-  <string name="preview_version_title">Version</string>
-  <string name="preview_country_title">Land</string>
-  <string name="preview_carrier_title">Anbieter</string>
-  <string name="stats_collection_title">Erfassung von Statistiken</string>
-  <string name="stats_collection_summary">Sammeln von Metriken erlauben</string>
-  <!-- tap-to-sleep -->
-  <string name="double_tap_status_bar_sleep_title">Doppeltes Tippen auf die Statusleiste um das Gerät zu sperren</string>
-  <string name="double_tap_status_bar_sleep_summary">Doppeltipp auf die Statusbar für Sleep</string>
-  <string name="double_tap_lock_sleep_title">Doppeltipp auf den Lockscreen für Sleep</string>
-  <string name="double_tap_lock_sleep_summary">Drücke doppelt auf den Lockscreen um in Sleep zu gehen</string>
-  <!-- Gestures-->
-  <string name="camera_gesture_title">Zweimal schütteln für Kamera</string>
-  <string name="camera_gesture_desc">Öffnet die Kamera durch zweimaliges Schütteln des Handgelenk</string>
-  <string name="camera_double_tap_power_gesture_title">Ein/Aus Knopf zweimal drücken für Kamera</string>
-  <string name="camera_double_tap_power_gesture_desc">Kamera ohne Entsperren Ihres Bildschirms schnell öffnen</string>
-  <!-- Global Actions -->
-  <string name="global_actions_title">Powermenü</string>
-  <string name="global_actions_summary">Powermenü Optionen auswählen</string>
-  <string name="global_actions_power">Ein/Aus</string>
-  <string name="global_actions_restart">Neustart</string>
-  <string name="global_actions_airplane">Flugmodus</string>
-  <string name="global_actions_settings">Einstellungen</string>
-  <string name="global_actions_lockdown">Sperren</string>
-  <string name="global_actions_users">Nutzer</string>
-  <string name="global_actions_screenshot">Screenshot</string>
-  <string name="global_actions_flashlight">Taschenlampe</string>
-  <string name="global_actions_advanced_reboot_title">Erweiterten Neustart aktivieren</string>
-  <string name="global_actions_advanced_reboot_summary">Recovery und Bootloader-Optionen anzeigen</string>
-  <!-- Lock screen charging current indicator  -->
-  <string name="lockscreen_charging_current_title">Lade Informationen anzeigen</string>
-  <string name="lockscreen_charging_current_summary">Strom und Spannung zeigen</string>
-  <!-- Screen Off animation -->
-  <string name="screen_off_animation_title">Ausschaltanimation</string>
-  <string name="screen_off_animation_default">Standard</string>
-  <string name="screen_off_animation_crt">CRT</string>
-  <string name="screen_off_animation_scale">Skalieren</string>
-  <!-- Volume rocker music control -->
-  <string name="volume_rocker_music_controls_title">Wiedergabe-Steuerung</string>
-  <string name="volume_rocker_music_controls_summary">Bei ausgeschaltetem Bildschirm die Lautstärke-Tasten lange drücken, um Musiktitel zu suchen</string>
-  <!-- Torch Power button gestures -->
-  <string name="torch_power_button_gesture_title">Taschenlampe einschalten wenn Bildschirm aus ist</string>
-  <string name="torch_power_button_gesture_none">Deaktiviert</string>
-  <string name="torch_power_button_gesture_dt">Doppeltippen auf Ein-/Ausschalter (langsamere Reaktion auf einfaches Tippen)</string>
-  <string name="torch_power_button_gesture_dt_toast">Kamera Geste ist jetzt deaktiviert</string>
-  <string name="torch_power_button_gesture_lp">Ein/Aus (gedrückt halten)</string>
-  <!-- Button brightness -->
-  <string name="button_backlight_options_category">Hintergrundbeleuchtung Optionen</string>
-  <string name="button_backlight_enable_title">Tastenbeleuchtung aktivieren</string>
-  <string name="button_link_brightness">Mit Bildschirmhelligkeit verknüpfen</string>
-  <string name="button_link_brightness_summary">Passen Sie die Helligkeit der Hintergrundbeleuchtung der Helligkeit des Bildschirms an</string>
-  <string name="button_manual_brightness">Helligkeitsstufe</string>
-  <string name="button_timeout_title">Beleuchtungs-Timeout</string>
-  <string name="button_backlight_on_touch_only_title">Schaltflächen-Hintergrundbeleuchtung bei Berührung</string>
-  <string name="button_backlight_on_touch_only_summary">Schalte die Hintergrundbeleuchtung bei Berührung an</string>
-  <!-- HW Keys customization -->
-  <string name="advanced_options_title">Erweiterte Optionen</string>
-  <string name="advanced_options_summary">Hardware-Tasten Neubelegung</string>
-  <string name="hardware_keys_volume_keys_title">Lautstärketaste</string>
-  <string name="picker_activities">Aktivititäten</string>
-  <string name="select_custom_app_title">Benutzerdefinierte App auswählen</string>
-  <string name="select_custom_activity_title">Benutzerdefinierte Aktivität wählen</string>
-  <string name="profile_applist_title">Apps</string>
-  <string name="choose_action_title">Aktion auswählen</string>
-  <string name="action_entry_default_action">Standardeinstellungen</string>
-  <string name="action_entry_select_app">Anwendung auswählen</string>
-  <string name="action_entry_custom_action">Wähle benutzerdefinierte Aktion</string>
-  <string name="hardware_keys_home_key_title">Home-Taste</string>
-  <string name="hardware_keys_menu_key_title">Menü-Taste</string>
-  <string name="hardware_keys_assist_key_title">Suchen-Taste</string>
-  <string name="hardware_keys_appswitch_key_title">Übersichts-Taste</string>
-  <string name="hardware_keys_back_key_title">Zurück-Taste</string>
-  <string name="hardware_keys_double_tap_summary">Wähle eine Zweimal Tippen Aktion</string>
-  <string name="hardware_keys_single_tap_summary">Wähle eine einfaches Tippen Aktion</string>
-  <string name="hardware_keys_long_press_summary">Wähle eine Langes Drücken Aktion</string>
-  <string name="hardware_keys_single_tap_title">Einfaches Tippen Aktion</string>
-  <string name="hardware_keys_long_press_title">Langes Drücken Aktion</string>
-  <string name="hardware_keys_double_tap_title">Doppeltipp-Aktion</string>
-  <string name="hardware_keys_category">Hardware-Tasten</string>
-  <string name="hardware_keys_disable_title">Tasten deaktivieren</string>
-  <!-- Toggle navigation bar -->
-  <string name="navigation_bar_enabled_title">Navigationsleiste aktivieren</string>
-  <string name="navigation_bar_enabled_summary">Zeigt die untere Navigationsleiste an</string>
-  <!-- SystemUI Tuner -->
-  <string name="statusbar_tuner_title">Statusleisten-Symbole</string>
-  <string name="statusbar_tuner_summary">Batterie Optionen und Statusbar Icons zum deaktivieren</string>
-  <string name="navbar_tuner_title">Navigationsleiste editieren</string>
-  <string name="navbar_tuner_summary">Navigationsleisten Layout und Tasten editieren</string>
-  <string name="lockscreen_shortcuts_title">Sperrbildschirm-Verknüpfungen</string>
-  <string name="lockscreen_shortcuts_summary">Untere Sperrbildschirm-Verknüpfungen verwalten</string>
-  <string name="power_notifications_title">Power Benachrichtigungen</string>
-  <string name="power_notifications_summary">Erweiterte Benachrichtigungen über langes Drücken einstellen</string>
-  <string name="vol_dnd_category_title">\"Bitte nicht stören\" Modus</string>
-  <string name="volbtn_down_zen_title">Leiser für \"Nicht stören\"</string>
-  <string name="volbtn_down_zen_summary">Leiser aktiviert den \"Nicht stören\"-Modus wenn bereits im Vibrationsmodus</string>
-  <string name="volbtn_up_zen_title">Lauter bei \"Nicht stören\"</string>
-  <string name="volbtn_up_zen_summary">Lauter deaktiviert den \"Nicht stören\"-Modus und aktiviert den Vibrationsmodus</string>
-  <string name="vol_zen_title">\"Nicht stören\"-Schalter</string>
-  <string name="vol_zen_summary">Zeige \"Nicht stören\"-Schalter im Lautstärkefeld</string>
-  <!-- Battery percentage -->
-  <string name="battery_style_category_title">Batterie-Symbol</string>
-  <string name="status_bar_battery_percentage_title">Batterieprozent</string>
-  <string name="status_bar_battery_percentage_default">Ausgeblendet</string>
-  <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
-  <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
-  <!-- Status bar battery style-->
-  <string name="status_bar_battery_style_title">Batteriesymbol</string>
-  <string name="status_bar_battery_style_port">Porträt</string>
-  <string name="status_bar_battery_style_circle">Kreis</string>
-  <string name="status_bar_battery_style_dotted_circle">Gepunkteter Kreis</string>
-  <string name="status_bar_battery_style_text">Text</string>
-  <string name="status_bar_battery_style_hidden">Ausgeblendet</string>
-  <string name="status_bar_battery_style_square">Quadrat</string>
-  <!-- Status bar notification -->
-  <string name="notification_style_title">Benachrichtigungsstil</string>
-  <string name="notify_disabled">Keine</string>
-  <string name="headsup_enabled">Heads up</string>
-  <string name="ticker_enabled">Ticker</string>
-  <string name="headsup_ticker_enabled">Heads-up und ticker</string>
-  <!-- Status bar music ticker -->
-  <string name="status_bar_music_ticker_title">Zeige Ticker bei Liedwechsel</string>
-  <string name="status_bar_music_ticker_summary">Zeige die Liedinformationen in Ticker, wenn das Lied gewechselt wird</string>
-  <!-- Status bar clock options -->
-  <string name="status_bar_clock">Uhrzeit und Datum</string>
-  <string name="status_bar_clock_summary">Uhrzeit und Datum Erscheinung konfigurieren</string>
-  <string name="clock_title_enable">Ausrichtung</string>
-  <string name="clock_enabled">Aktiviert</string>
-  <string name="clock_disabled">Deaktiviert</string>
-  <string name="status_bar_clock_style_reset">Farbe zurücksetzen</string>
-  <string name="status_bar_show_clock_title">Uhr und Datum anzeigen</string>
-  <string name="status_bar_clock_seconds_title">Sekunden anzeigen</string>
-  <string name="status_bar_am_pm_title">AM/PM</string>
-  <string name="status_bar_am_pm_info">24-Stunden-Anzeige ist aktiviert</string>
-  <string name="enable_clock_weekday">Wochentag</string>
-  <string name="enable_clock_weekday_summary">Abgekürzter Wochentag vor der Uhrzeit</string>
-  <string name="right_clock">Uhr rechts</string>
-  <string name="left_clock">Uhr links</string>
-  <string name="dont_show">Nicht zeigen</string>
-  <string name="clock_date_display">Datum</string>
-  <string name="clock_date_display_summary">Zeige benutzerdefiniertes Datum vor der Uhr</string>
-  <string name="clock_date_style">Datums-Stil</string>
-  <string name="clock_date_format">Datumsformat</string>
-  <string name="clock_date_string_edittext_title">Datumsformat muss z.B. MM/dd/yy sein</string>
-  <string name="clock_date_string_edittext_summary">Zeichenfolge eingeben</string>
-  <string name="am_pm_clock_normal">Normale Schriftgröße</string>
-  <string name="am_pm_clock_small">Kleine Schriftgröße</string>
-  <string name="am_pm_clock_none">Nicht zeigen</string>
-  <string name="clock_date_display_none">Nicht zeigen</string>
-  <string name="clock_date_display_small">Kleine Schriftgröße</string>
-  <string name="clock_date_display_normal">Normale Schriftgröße</string>
-  <string name="clock_date_style_normal">Normal</string>
-  <string name="clock_date_style_lowercase">Kleinbuchstaben</string>
-  <string name="clock_date_style_uppercase">Großbuchstaben</string>
-  <string name="clock_date_format_custom">Benutzerdefiniertes Java Format</string>
-  <string name="clock_date_right">Rechts neben Uhrzeit</string>
-  <string name="clock_date_left">Links neben Uhrzeit</string>
-  <string name="clock_date_position">Datums-Position</string>
-  <!-- Pin scramble -->
-  <string name="unlock_scramble_pin_layout_title">Zufälliges PIN Layout</string>
-  <string name="unlock_scramble_pin_layout_summary">Zufällige Anordnung der Zifferntasten für die PIN-Eingabe</string>
-  <!-- Recents Membar -->
-  <string name="systemui_recents_mem_display_title">Speicher-Bar anzeigen</string>
-  <string name="systemui_recents_mem_display_summary">Speicherauslastung in \"Letzte Apps\" anzeigen</string>
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">\"Letzte Apps\" erweitern</string>
-  <string name="immersive_recents_summary">Ändern Sie die Ansicht des Letzte Apps Bildschirm</string>
-  <string name="immersive_recents_dialog_title">Wähle die Ansicht des Anwendungsverlaufs</string>
-  <string name="immersive_recents_default">Standard</string>
-  <string name="immersive_recents_fullscreen">Vollbild</string>
-  <string name="immersive_recents_statusbar">Navigationsleiste ausblenden</string>
-  <string name="immersive_recents_navbar">Benachrichtigungsleiste ausblenden</string>
-  <!-- Clear all recents -->
-  <string name="show_clear_all_recents_button_title">Alle beenden Taste</string>
-  <string name="show_clear_all_recents_button_summary">Alle beenden Taste zeigen</string>
-  <string name="recents_clear_all_location_title">Position der Alle beenden Taste</string>
-  <string name="recents_clear_all_location_top_right">Oben rechts</string>
-  <string name="recents_clear_all_location_top_left">Oben links</string>
-  <string name="recents_clear_all_location_top_center">Oben in der Mitte</string>
-  <string name="recents_clear_all_location_bottom_right">Unten rechts</string>
-  <string name="recents_clear_all_location_bottom_left">Unten links</string>
-  <string name="recents_clear_all_location_bottom_center">Unten zentriert</string>
-  <!-- Face Auto Unlock -->
-  <string name="face_auto_unlock_title">Automatische Gesichtsentsperrung</string>
-  <string name="face_auto_unlock_summary">Lockscreen verlassen, nachdem ein vertrautes Gesicht erkannt wurde</string>
-  <!-- Quick unlock -->
-  <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
-  <string name="unlock_quick_unlock_control_summary">Nach korrekter Eingabe von PIN/Passwort entsperren</string>
-  <!-- Overlay toggle -->
-  <string name="untrusted_overlay_toggle_title">Erlaube nicht vertrauenswürdige Overlays</string>
-  <string name="untrusted_overlay_toggle_summary">Erlaubt Drittanbieter Overlays (benötigt für Theme Engines)</string>
-  <string name="untrusted_overlay_alert_title">Neustart erforderlich</string>
-  <string name="untrusted_overlay_alert_message">Um nicht vertrauenswürdige Overlays zu erlauben, ist ein Neustart erforderlich. Möchtest du jetzt neu starten?</string>
-  <string name="reboot">Neustarten</string>
-  <!-- Statusbar net monitor -->
-  <string name="network_traffic_state_title">Netzwerk-Verkehr-Aktivität anzeigen</string>
-  <string name="network_traffic_autohide_threshold_title">Schwellenwert für die Netzaktivität (KB/s)</string>
-  <!-- Smart Pixels -->
-  <string name="smart_pixels_title">Smart Pixels</string>
-  <string name="smart_pixels_summary">Spart durch das abschalten zusätzlicher Pixel Strom</string>
-  <string name="smart_pixels_enable_title">Aktiviere Smart Pixels</string>
-  <string name="smart_pixels_enable_summary">Schaltet Pixel aus, um den Stromverbrauch zu senken</string>
-  <string name="smart_pixels_on_power_save_title">Automatisches aktivieren mit dem Stromsparmodus</string>
-  <string name="smart_pixels_on_power_save_summary">Schaltet automatisch Smart Pixel an, wenn der Stromsparmodus aktiviert wird</string>
-  <string name="smart_pixels_percent">Prozentsatz der deaktivierten Pixel</string>
-  <string name="smart_pixels_shift">Burn-in durch die Verlagerung von Pixeln verhindern</string>
-  <string name="smart_pixels_warning_text">Smart Pixels ist ein Stromsparfeature. Je nachdem, wie viele Pixel ausgeschaltet werden, kann man eine signifikante Verbesserung in der Batterielebensdauer sehen. Für eine gute Benutzererfahrung empfehlen wir, den Prozentsatz für ausgeschaltete Pixel auf 75 Prozent zu setzen, und alle 10 Minuten die Pixel zu wechseln.</string>
-  <!-- Force Aspect Ratio -->
-  <string name="full_aspect_ratio_switch_title">Volle Seitenverhältnisse erzwingen</string>
-  <string name="force_aspect_ratio_apps_title">Apps mit erzwungenem vollem Seitenverhältnis</string>
+    <string name="carbonfibers">CarbonFibers</string>
+    <string name="system_category">System</string>
+    <string name="statusbar_category">Benachrichtigungsleiste</string>
+    <string name="lockscreen_category">Sperrbildschirm</string>
+    <string name="buttons_category">Tasten</string>
+    <string name="gesture_category">Gesten</string>
+    <string name="privacy_category">Datenschutz &amp; Sicherheit</string>
+    <string name="buttons_software_category">Software-Tasten</string>
+    <string name="buttons_hardware_category">Hardware-Tasten</string>
+    <string name="statusbar_notifications_category">Benachrichtigungen</string>
+    <string name="statusbar_network_activity_category">Netzwerk-Aktivität</string>
+    <string name="system_global_actions_category">Globale Aktionen</string>
+    <string name="system_volume_category">Lautstärke</string>
+    <string name="system_recents_category">Letzte Apps</string>
+    <string name="lockscreen_security_category">Sicherheit</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Hilf uns, dir zu helfen!</string>
+    <string name="carbonfibers_dialog_message">Leider können wir nicht zaubern!\n\nFalls du also einen Fehler findest, erstelle bitte ein Ticket auf Jira oder kontaktiere einen der CarbonROM-Entwickler mit den folgenden Informationen:\n\n1: Logdateien!\n2: Kernel und Mods, die genutzt werden\n3. Andere nützliche Informationen\n\nDiese Informationen sind wichtig für uns, um Fehler zu beheben. Ohne sie können wir dir nicht helfen.</string>
+    <string name="carbonfibers_dialog_toast">BITTE LIES ALLES!</string>
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel Home Animation aktivieren</string>
+    <string name="pixel_navbar_anim_summary">Zeige die Pixel-Home-Animation beim drücken der Taste</string>
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Verstecke Apps in den zuletzt geöffneten Apps</string>
+    <string name="hide_from_recents_add_app">App hinzufügen</string>
+    <string name="title_activity_carbon_recents_settings">Letzte Apps</string>
+    <!-- CarbonGestures -->
+    <string name="carbon_gesture_preference_title">CarbonGestures</string>
+    <string name="carbon_gestures_summary">Konfigurieren Sie benutzerdefinierte globale Gesten</string>
+    <string name="carbon_gestures_fingers_title">Anzahl der Finger für Gesten</string>
+    <string name="carbon_gestures_right_title">Rechts Geste</string>
+    <string name="carbon_gestures_left_title">Links Geste</string>
+    <string name="carbon_gestures_up_title">Hoch Geste</string>
+    <string name="carbon_gestures_down_title">Runter Geste</string>
+    <string name="carbon_gesture_disabled">Deaktiviert</string>
+    <string name="carbon_gesture_back">Zurück</string>
+    <string name="carbon_gesture_home">Home</string>
+    <string name="carbon_gesture_recents">Letzte Apps</string>
+    <string name="carbon_gesture_power">Ein/Aus</string>
+    <string name="carbon_gesture_volume_down">Lautstärke runter</string>
+    <string name="carbon_gesture_volume_up">Lautstärke hoch</string>
+    <string name="carbon_gesture_volume_mute">Lautstärke Stummschalten</string>
+    <string name="carbon_gesture_screenshot">Screenshot</string>
+    <string name="carbon_gesture_media_play_pause">Medien: Play/Pause</string>
+    <string name="carbon_gesture_media_skip">Medien: Nächste</string>
+    <string name="carbon_gesture_media_previous">Medien: Letzte</string>
+    <string name="carbon_gesture_customapp">Anwendung ausführen</string>
+    <string name="carbon_gesture_launch">Ausführen</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM-Statistik</string>
+    <string name="anonymous_statistics_summary">Durch anonyme Gerätestatistiken dabei helfen, CarbonROM zu verbessern</string>
+    <string name="anonymous_statistics_warning_title">Über</string>
+    <string name="anonymous_statistics_warning">Die bei jedem Neustart des Gerätes übermittelten Daten beeinträchtigen nicht die Privatsphäre, da sie keinerlei Rückschlüsse auf den Benutzer zulassen.\n\nFür ein Beispiel der gesendeten Daten bitte auf Vorschau klicken.</string>
+    <string name="enable_reporting_title">Berichte einschalten</string>
+    <string name="preview_data_title">Daten-Vorschau</string>
+    <string name="view_stats_title">Statistiken ansehen</string>
+    <string name="anonymous_learn_more">Mehr erfahren</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Eindeutige ID</string>
+    <string name="preview_device_title">Gerät</string>
+    <string name="preview_version_title">Version</string>
+    <string name="preview_country_title">Land</string>
+    <string name="preview_carrier_title">Anbieter</string>
+    <string name="stats_collection_title">Erfassung von Statistiken</string>
+    <string name="stats_collection_summary">Sammeln von Metriken erlauben</string>
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Doppeltipp auf die Statusleiste zum sperren</string>
+    <string name="double_tap_status_bar_sleep_summary">Tippe doppelt auf die Statusleiste, um in den Sleep-Modus zu gehen</string>
+    <string name="double_tap_lock_sleep_title">Doppeltipp auf den Lockscreen zum sperren</string>
+    <string name="double_tap_lock_sleep_summary">Tippe doppelt auf den Lockscreen, um in den Sleep-Modus zu gehen</string>
+    <!-- Gestures-->
+    <string name="camera_gesture_title">Zweimal schütteln für Kamera</string>
+    <string name="camera_gesture_desc">Öffnet die Kamera durch zweimaliges Schütteln des Handgelenk</string>
+    <string name="camera_double_tap_power_gesture_title">Ein/Aus Knopf zweimal drücken für Kamera</string>
+    <string name="camera_double_tap_power_gesture_desc">Kamera ohne Entsperren Ihres Bildschirms schnell öffnen</string>
+    <!-- Global Actions -->
+    <string name="global_actions_title">Powermenü</string>
+    <string name="global_actions_summary">Powermenü Optionen auswählen</string>
+    <string name="global_actions_power">Ein/Aus</string>
+    <string name="global_actions_restart">Neustart</string>
+    <string name="global_actions_airplane">Flugmodus</string>
+    <string name="global_actions_settings">Einstellungen</string>
+    <string name="global_actions_lockdown">Sperren</string>
+    <string name="global_actions_users">Nutzer</string>
+    <string name="global_actions_screenshot">Screenshot</string>
+    <string name="global_actions_flashlight">Taschenlampe</string>
+    <string name="global_actions_advanced_reboot_title">Erweiterten Neustart aktivieren</string>
+    <string name="global_actions_advanced_reboot_summary">Recovery- und Bootloader-Optionen anzeigen</string>
+    <!-- Lock screen charging current indicator  -->
+    <string name="lockscreen_charging_current_title">Ladeinformationen anzeigen</string>
+    <string name="lockscreen_charging_current_summary">Strom und Spannung zeigen</string>
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Ausschaltanimation</string>
+    <string name="screen_off_animation_default">Standard</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Skalieren</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Wiedergabe-Steuerung</string>
+    <string name="volume_rocker_music_controls_summary">Bei ausgeschaltetem Bildschirm die Lautstärke-Tasten lange drücken, um Musiktitel zu suchen</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Taschenlampe einschalten, wenn der Bildschirm aus ist</string>
+    <string name="torch_power_button_gesture_none">Deaktiviert</string>
+    <string name="torch_power_button_gesture_dt">Doppeltippen auf Ein-/Ausschalter (langsamere Reaktion auf einfaches Tippen)</string>
+    <string name="torch_power_button_gesture_dt_toast">Kamera Geste ist jetzt deaktiviert</string>
+    <string name="torch_power_button_gesture_lp">Ein/Aus (gedrückt halten)</string>
+    <!-- Button brightness -->
+    <string name="button_backlight_options_category">Hintergrundbeleuchtung Optionen</string>
+    <string name="button_backlight_enable_title">Tastenbeleuchtung aktivieren</string>
+    <string name="button_link_brightness">Mit Bildschirmhelligkeit verknüpfen</string>
+    <string name="button_link_brightness_summary">Passen Sie die Helligkeit der Hintergrundbeleuchtung der Helligkeit des Bildschirms an</string>
+    <string name="button_manual_brightness">Helligkeitsstufe</string>
+    <string name="button_timeout_title">Beleuchtungs-Timeout</string>
+    <string name="button_backlight_on_touch_only_title">Schaltflächen-Hintergrundbeleuchtung bei Berührung</string>
+    <string name="button_backlight_on_touch_only_summary">Schalte die Hintergrundbeleuchtung bei Berührung an</string>
+    <!-- HW Keys customization -->
+    <string name="advanced_options_title">Erweiterte Optionen</string>
+    <string name="advanced_options_summary">Hardware-Tasten Neubelegung</string>
+    <string name="hardware_keys_volume_keys_title">Lautstärketaste</string>
+    <string name="picker_activities">Aktivititäten</string>
+    <string name="select_custom_app_title">Benutzerdefinierte App auswählen</string>
+    <string name="select_custom_activity_title">Benutzerdefinierte Aktivität wählen</string>
+    <string name="profile_applist_title">Apps</string>
+    <string name="choose_action_title">Aktion auswählen</string>
+    <string name="action_entry_default_action">Standardeinstellungen</string>
+    <string name="action_entry_select_app">Anwendung auswählen</string>
+    <string name="action_entry_custom_action">Wähle benutzerdefinierte Aktion</string>
+    <string name="hardware_keys_home_key_title">Home-Taste</string>
+    <string name="hardware_keys_menu_key_title">Menü-Taste</string>
+    <string name="hardware_keys_assist_key_title">Suchen-Taste</string>
+    <string name="hardware_keys_appswitch_key_title">Übersichts-Taste</string>
+    <string name="hardware_keys_back_key_title">Zurück-Taste</string>
+    <string name="hardware_keys_double_tap_summary">Wähle eine Zweimal Tippen Aktion</string>
+    <string name="hardware_keys_single_tap_summary">Wähle eine einfaches Tippen Aktion</string>
+    <string name="hardware_keys_long_press_summary">Wähle eine Langes Drücken Aktion</string>
+    <string name="hardware_keys_single_tap_title">Einfaches Tippen Aktion</string>
+    <string name="hardware_keys_long_press_title">Langes Drücken Aktion</string>
+    <string name="hardware_keys_double_tap_title">Doppeltipp-Aktion</string>
+    <string name="hardware_keys_category">Hardware-Tasten</string>
+    <string name="hardware_keys_disable_title">Tasten deaktivieren</string>
+    <!-- Toggle navigation bar -->
+    <string name="navigation_bar_enabled_title">Navigationsleiste aktivieren</string>
+    <string name="navigation_bar_enabled_summary">Zeigt die untere Navigationsleiste an</string>
+    <!-- SystemUI Tuner -->
+    <string name="statusbar_tuner_title">Statusleisten-Symbole</string>
+    <string name="statusbar_tuner_summary">Symbole und Optionen in der Statusleiste aktiveren oder deaktivieren</string>
+    <string name="navbar_tuner_title">Navigationsleiste editieren</string>
+    <string name="navbar_tuner_summary">Anordnung der Navigationsleiste und Tasten anpassen</string>
+    <string name="lockscreen_shortcuts_title">Sperrbildschirm-Verknüpfungen</string>
+    <string name="lockscreen_shortcuts_summary">Untere Sperrbildschirm-Verknüpfungen verwalten</string>
+    <string name="power_notifications_title">Power Benachrichtigungen</string>
+    <string name="power_notifications_summary">Erweiterte Benachrichtigungen über langes Drücken einstellen</string>
+    <string name="vol_dnd_category_title">\"Bitte nicht stören\" Modus</string>
+    <string name="volbtn_down_zen_title">Leiser für \"Nicht stören\"</string>
+    <string name="volbtn_down_zen_summary">Leiser aktiviert den \"Nicht stören\"-Modus wenn bereits im Vibrationsmodus</string>
+    <string name="volbtn_up_zen_title">Lauter bei \"Nicht stören\"</string>
+    <string name="volbtn_up_zen_summary">Lauter deaktiviert den \"Nicht stören\"-Modus und aktiviert den Vibrationsmodus</string>
+    <string name="vol_zen_title">\"Nicht stören\"-Schalter</string>
+    <string name="vol_zen_summary">Zeige \"Nicht stören\"-Schalter im Lautstärkefeld</string>
+    <!-- Battery percentage -->
+    <string name="battery_style_category_title">Batterie-Symbol</string>
+    <string name="status_bar_battery_percentage_title">Batterieprozent</string>
+    <string name="status_bar_battery_percentage_default">Ausgeblendet</string>
+    <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
+    <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
+    <!-- Status bar battery style-->
+    <string name="status_bar_battery_style_title">Batteriesymbol</string>
+    <string name="status_bar_battery_style_port">Porträt</string>
+    <string name="status_bar_battery_style_circle">Kreis</string>
+    <string name="status_bar_battery_style_dotted_circle">Gepunkteter Kreis</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Ausgeblendet</string>
+    <string name="status_bar_battery_style_square">Quadrat</string>
+    <!-- Status bar notification -->
+    <string name="notification_style_title">Benachrichtigungsstil</string>
+    <string name="notify_disabled">Keine</string>
+    <string name="headsup_enabled">Heads up</string>
+    <string name="ticker_enabled">Ticker</string>
+    <string name="headsup_ticker_enabled">Heads-up und ticker</string>
+    <!-- Status bar music ticker -->
+    <string name="status_bar_music_ticker_title">Zeige Ticker bei Liedwechsel</string>
+    <string name="status_bar_music_ticker_summary">Zeige die Titelinformationen im Ticker, wenn der Titel gewechselt wird</string>
+    <!-- Status bar clock options -->
+    <string name="status_bar_clock">Uhrzeit und Datum</string>
+    <string name="status_bar_clock_summary">Uhrzeit und Datum Erscheinung konfigurieren</string>
+    <string name="clock_title_enable">Ausrichtung</string>
+    <string name="clock_enabled">Aktiviert</string>
+    <string name="clock_disabled">Deaktiviert</string>
+    <string name="status_bar_clock_style_reset">Farbe zurücksetzen</string>
+    <string name="status_bar_show_clock_title">Uhr und Datum anzeigen</string>
+    <string name="status_bar_clock_seconds_title">Sekunden anzeigen</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-Stunden-Anzeige ist aktiviert</string>
+    <string name="enable_clock_weekday">Wochentag</string>
+    <string name="enable_clock_weekday_summary">Abgekürzter Wochentag vor der Uhrzeit</string>
+    <string name="right_clock">Uhr rechts</string>
+    <string name="left_clock">Uhr links</string>
+    <string name="dont_show">Nicht zeigen</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_display_summary">Zeige benutzerdefiniertes Datum vor der Uhr</string>
+    <string name="clock_date_style">Datums-Stil</string>
+    <string name="clock_date_format">Datumsformat</string>
+    <string name="clock_date_string_edittext_title">Datumsformat muss z.B. MM/dd/yy sein</string>
+    <string name="clock_date_string_edittext_summary">Zeichenfolge eingeben</string>
+    <string name="am_pm_clock_normal">Normale Schriftgröße</string>
+    <string name="am_pm_clock_small">Kleine Schriftgröße</string>
+    <string name="am_pm_clock_none">Nicht zeigen</string>
+    <string name="clock_date_display_none">Nicht zeigen</string>
+    <string name="clock_date_display_small">Kleine Schriftgröße</string>
+    <string name="clock_date_display_normal">Normale Schriftgröße</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Kleinbuchstaben</string>
+    <string name="clock_date_style_uppercase">Großbuchstaben</string>
+    <string name="clock_date_format_custom">Benutzerdefiniertes Java Format</string>
+    <string name="clock_date_right">Rechts neben Uhrzeit</string>
+    <string name="clock_date_left">Links neben Uhrzeit</string>
+    <string name="clock_date_position">Datums-Position</string>
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Zufälliges PIN-Layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Zufällige Anordnung der Zifferntasten für die PIN-Eingabe</string>
+    <!-- Recents Membar -->
+    <string name="systemui_recents_mem_display_title">Speicher-Bar anzeigen</string>
+    <string name="systemui_recents_mem_display_summary">Speicherauslastung in \"Letzte Apps\" anzeigen</string>
+    <!-- Immersive Recents -->
+    <string name="immersive_recents_title">\"Letzte Apps\" erweitern</string>
+    <string name="immersive_recents_summary">Ändern Sie die Ansicht des Letzte Apps Bildschirm</string>
+    <string name="immersive_recents_dialog_title">Wähle die Ansicht des Anwendungsverlaufs</string>
+    <string name="immersive_recents_default">Standard</string>
+    <string name="immersive_recents_fullscreen">Vollbild</string>
+    <string name="immersive_recents_statusbar">Navigationsleiste ausblenden</string>
+    <string name="immersive_recents_navbar">Benachrichtigungsleiste ausblenden</string>
+    <!-- Clear all recents -->
+    <string name="show_clear_all_recents_button_title">Alle beenden Taste</string>
+    <string name="show_clear_all_recents_button_summary">Alle beenden Taste zeigen</string>
+    <string name="recents_clear_all_location_title">Position der Alle beenden Taste</string>
+    <string name="recents_clear_all_location_top_right">Oben rechts</string>
+    <string name="recents_clear_all_location_top_left">Oben links</string>
+    <string name="recents_clear_all_location_top_center">Oben in der Mitte</string>
+    <string name="recents_clear_all_location_bottom_right">Unten rechts</string>
+    <string name="recents_clear_all_location_bottom_left">Unten links</string>
+    <string name="recents_clear_all_location_bottom_center">Unten zentriert</string>
+    <!-- Face Auto Unlock -->
+    <string name="face_auto_unlock_title">Automatische Gesichtsentsperrung</string>
+    <string name="face_auto_unlock_summary">Lockscreen verlassen, nachdem ein vertrautes Gesicht erkannt wurde</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
+    <string name="unlock_quick_unlock_control_summary">Nach korrekter Eingabe von PIN/Passwort entsperren</string>
+    <!-- Overlay toggle -->
+    <string name="untrusted_overlay_toggle_title">Erlaube nicht vertrauenswürdige Overlays</string>
+    <string name="untrusted_overlay_toggle_summary">Erlaubt Drittanbieter Overlays (benötigt für Theme Engines)</string>
+    <string name="untrusted_overlay_alert_title">Neustart erforderlich</string>
+    <string name="untrusted_overlay_alert_message">Um nicht vertrauenswürdige Overlays zu erlauben, ist ein Neustart erforderlich. Möchtest du jetzt neu starten?</string>
+    <string name="reboot">Neustarten</string>
+    <!-- Statusbar net monitor -->
+    <string name="network_traffic_state_title">Netzwerk-Verkehr-Aktivität anzeigen</string>
+    <string name="network_traffic_autohide_threshold_title">Schwellenwert für die Netzaktivität (KB/s)</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Spart durch das abschalten zusätzlicher Pixel Strom</string>
+    <string name="smart_pixels_enable_title">Aktiviere Smart Pixels</string>
+    <string name="smart_pixels_enable_summary">Schaltet Pixel aus, um den Stromverbrauch zu senken</string>
+    <string name="smart_pixels_on_power_save_title">Automatisches aktivieren mit dem Stromsparmodus</string>
+    <string name="smart_pixels_on_power_save_summary">Schaltet automatisch Smart Pixel an, wenn der Stromsparmodus aktiviert wird</string>
+    <string name="smart_pixels_percent">Prozentsatz der deaktivierten Pixel</string>
+    <string name="smart_pixels_shift">Burn-in durch die Verlagerung von Pixeln verhindern</string>
+    <string name="smart_pixels_warning_text">Smart Pixels ist ein Stromsparfeature. Je nachdem, wie viele Pixel ausgeschaltet werden, kann man eine signifikante Verbesserung in der Batterielebensdauer sehen. Für eine gute Benutzererfahrung empfehlen wir, den Prozentsatz für ausgeschaltete Pixel auf 75 Prozent zu setzen, und alle 10 Minuten die Pixel zu wechseln.</string>
+    <!-- Force Aspect Ratio -->
+    <string name="full_aspect_ratio_switch_title">Volle Seitenverhältnisse erzwingen</string>
+    <string name="force_aspect_ratio_apps_title">Apps mit erzwungenem vollem Seitenverhältnis</string>
 </resources>
