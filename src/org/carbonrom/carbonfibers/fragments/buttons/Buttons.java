@@ -41,7 +41,6 @@ import java.util.List;
 public class Buttons extends CustomSettingsPreferenceFragment implements Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "Buttons";
     private static final String CALL_VOLUME_ANSWER = "call_volume_answer";
-    private static final String CATEGORY_SW_BUTTONS = "sw_button_keys";
     private static final String CATEGORY_KEYS = "button_keys";
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
@@ -128,8 +127,6 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     final List<String> keys = super.getNonIndexableKeys(context);
-                    keys.add(CATEGORY_SW_BUTTONS);
-                    keys.add(CATEGORY_KEYS);
                     keys.add(BUTTON_HW_SETTINGS);
                     keys.add(KEY_BUTTON_LIGHT);
                     return keys;
