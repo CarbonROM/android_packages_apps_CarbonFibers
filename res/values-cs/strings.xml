@@ -12,11 +12,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
     <string name="system_category">Systém</string>
     <string name="status_bar_category">Stavová lišta</string>
     <string name="lock_screen_category">Zamykací obrazovka</string>
     <string name="buttons_category">Tlačítka</string>
     <string name="gestures_category">Gesta</string>
+    <string name="privacy_category">Soukromí</string>
     <string name="buttons_software_category">Softwarová tlačítka</string>
     <string name="buttons_hardware_category">Hardwarová tlačítka</string>
     <!-- Dialog -->
@@ -26,6 +28,7 @@
     <string name="anonymous_statistics_title">Statistiky CarbonROM</string>
     <string name="anonymous_statistics_summary">Pomozte nám vylepšit CarbonROM tím, že se rozhodnete pro anonymní zasílání statistik</string>
     <string name="anonymous_statistics_warning_title">Informace</string>
+    <string name="anonymous_statistics_warning">Povolení CarbonROM statistik povolí odesílání neosobních dat vývojářům CarbonROM pro sledování jedinečných instalací. Odeslaná data obsahují jednoznačný identifikátor, který neohrožuje vaše soukromí ani data. Data jsou odeslána při každém restartu.\n\nPro zobrazení příkladu odesílaných dat klikněte na Náhled.</string>
     <string name="enable_reporting_title">Povolit hlášení</string>
     <string name="preview_data_title">Náhled dat</string>
     <string name="view_stats_title">Zobrazit statistiky</string>
@@ -36,10 +39,12 @@
     <string name="preview_version_title">Verze</string>
     <string name="preview_country_title">Země</string>
     <string name="preview_carrier_title">Operátor</string>
+    <string name="stats_collection_title">Povolit sběr statistik</string>
     <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smart Pixels</string>
     <string name="smart_pixels_summary">Chcete-li snížit spotřebu energie, vypněte pixely</string>
     <string name="smart_pixels_on_power_save_title">Automatické zapnutí při spořiči baterie</string>
+    <string name="smart_pixels_on_power_save_summary">Použít Smart Pixels, pokud je aktivován spořič baterie</string>
     <string name="smart_pixels_percent">Procenta pixelů k vypnutí</string>
     <string name="smart_pixels_shift">Zabraňuje vypalování zařízení OLED častým přepínáním pixelů</string>
     <string name="smart_pixels_warning_text">Smart Pixels je funkce šetřící energii. V závislosti na na tom, kolik pixelů se rozhodnete vypnout, může dojít k výraznému zlepšení životnosti baterie. Pro dobrou efektivitu doporučujeme nastavit počet vypnutých pixelů na 75 procent.</string>
@@ -55,9 +60,13 @@
     <string name="global_actions_airplane">Letadlo</string>
     <string name="global_actions_settings">Nastavení</string>
     <string name="global_actions_lockdown">Uzamknout</string>
+    <string name="global_actions_soundpanel">Panel zvuků</string>
     <string name="global_actions_users">Uživatelé</string>
     <string name="global_actions_screenshot">Snímek obrazovky</string>
+    <string name="global_actions_screenrecord">Záznam obrazovky</string>
     <string name="global_actions_flashlight">Svítilna</string>
+    <string name="global_actions_advanced_reboot_title">Rozšířený restart</string>
+    <string name="global_actions_advanced_reboot_summary">Zobrazení možností restartování do recovery a bootloaderu</string>
     <!-- Pin scramble -->
     <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Položky stavové lišty</string>
@@ -148,4 +157,6 @@
     <string name="action_flashlight">Svítilna</string>
     <string name="action_notifications">Oznámení</string>
     <string name="action_screenshot">Snímek obrazovky</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

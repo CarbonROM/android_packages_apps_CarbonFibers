@@ -148,4 +148,6 @@
     <string name="action_flashlight">Baterka</string>
     <string name="action_notifications">Upozornenia</string>
     <string name="action_screenshot">Snímka obrazovky</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

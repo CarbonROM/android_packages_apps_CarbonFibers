@@ -148,4 +148,6 @@
     <string name="action_flashlight">フラッシュライト</string>
     <string name="action_notifications">通知</string>
     <string name="action_screenshot">スクリーンショット</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

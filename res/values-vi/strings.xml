@@ -148,4 +148,6 @@
     <string name="action_flashlight">Đèn pin</string>
     <string name="action_notifications">Thông báo</string>
     <string name="action_screenshot">Chụp ảnh màn hình</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

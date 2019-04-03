@@ -12,15 +12,18 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Fibre di carbonio</string>
     <string name="system_category">System</string>
     <string name="status_bar_category">Barra di stato</string>
     <string name="lock_screen_category">Schermata di blocco</string>
     <string name="buttons_category">Pulsanti</string>
     <string name="gestures_category">Gesti</string>
+    <string name="privacy_category">Privacy</string>
     <string name="buttons_software_category">Pulsanti software</string>
     <string name="buttons_hardware_category">Pulsanti hardware</string>
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Aiutaci ad aiutare voi!</string>
+    <string name="carbonfibers_dialog_toast">Leggerlo tutto!</string>
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">Statistiche di CarbonROM</string>
@@ -36,9 +39,14 @@
     <string name="preview_version_title">Versione</string>
     <string name="preview_country_title">Paese</string>
     <string name="preview_carrier_title">Operatore</string>
+    <string name="stats_collection_title">Abilita la raccolta statistiche</string>
     <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smart pixel</string>
+    <string name="smart_pixels_summary">Spegni pixel per ridurre il consumo energetico</string>
+    <string name="smart_pixels_on_power_save_title">Attiva automaticamente il risparmio batteria</string>
+    <string name="smart_pixels_on_power_save_summary">Attiva Smart Pixel quando il risparmio batteria è abilitato</string>
     <string name="smart_pixels_percent">Percentuale di pixel per disabilitare</string>
+    <string name="smart_pixels_shift">Previene il burn-in tramite frequenti passaggi di pixel</string>
     <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">Doppio tocco per spegnere lo schermo sulla barra di stato</string>
     <string name="double_tap_status_bar_sleep_summary">Toccare la barra di stato due volte a dormire</string>
@@ -51,20 +59,31 @@
     <string name="global_actions_airplane">Aeroplano</string>
     <string name="global_actions_settings">Impostazioni</string>
     <string name="global_actions_lockdown">Blocco</string>
+    <string name="global_actions_soundpanel">Pannello audio</string>
     <string name="global_actions_users">Utenti</string>
     <string name="global_actions_screenshot">Screenshot</string>
+    <string name="global_actions_screenrecord">Registra schermo</string>
     <string name="global_actions_flashlight">Torcia</string>
+    <string name="global_actions_advanced_reboot_title">Riavvio avanzato</string>
+    <string name="global_actions_advanced_reboot_summary">Mostra opzioni di riavvio recovery e bootloader</string>
     <!-- Pin scramble -->
     <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Elementi barra di stato</string>
+    <string name="status_bar_tuner_summary">Modifica icone e opzioni della barra di stato</string>
+    <string name="navbar_tuner_title">Barra di navigazione</string>
     <string name="navbar_tuner_summary">Modifica pulsanti e disposizione barra di navigazione</string>
     <string name="lock_screen_shortcuts_title">Scorciatoie schermata di sblocco</string>
     <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Controllo riproduzione schermo spento</string>
+    <string name="volume_rocker_music_controls_summary">Tieni premuto i tasti volume per cercare tracce audio</string>
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Attiva torcia quando lo schermo è spento</string>
     <string name="torch_power_button_gesture_none">Disattivato</string>
+    <string name="torch_power_button_gesture_dt">Doppio tocco pulsante di accensione</string>
     <string name="torch_power_button_gesture_dt_toast">Il gesto vai alla fotocamera è disabilitato</string>
+    <string name="torch_power_button_gesture_lp">Tieni premuto pulsante di accensione</string>
     <!-- Disable QS on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Impostazioni rapide sicure</string>
     <!-- Quick unlock -->
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Nascondere applicazioni dai recenti</string>
@@ -142,4 +161,6 @@
     <string name="action_flashlight">Torcia</string>
     <string name="action_notifications">Notifiche</string>
     <string name="action_screenshot">Screenshot</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

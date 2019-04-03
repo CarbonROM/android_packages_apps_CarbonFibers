@@ -148,4 +148,6 @@
     <string name="action_flashlight">Llanterna</string>
     <string name="action_notifications">Notificacions</string>
     <string name="action_screenshot">Captura de pantalla</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

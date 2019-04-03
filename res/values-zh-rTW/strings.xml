@@ -52,4 +52,6 @@
     <!-- Active Edge -->
     <!-- Active Edge Actions -->
     <string name="action_notifications">通知</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

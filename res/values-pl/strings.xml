@@ -149,4 +149,6 @@ W zależności od tego jak dużo pikseli zdecydujesz się wyłączyć, będziesz
     <string name="action_flashlight">Latarka</string>
     <string name="action_notifications">Powiadomienia</string>
     <string name="action_screenshot">Zrzut ekranu</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

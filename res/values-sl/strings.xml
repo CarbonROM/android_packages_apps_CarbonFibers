@@ -148,4 +148,6 @@
     <string name="action_flashlight">Svetilka</string>
     <string name="action_notifications">Obvestila</string>
     <string name="action_screenshot">Posnetek zaslona</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

@@ -92,4 +92,6 @@
     <!-- Active Edge Actions -->
     <string name="action_flashlight">손전등</string>
     <string name="action_notifications">알림</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

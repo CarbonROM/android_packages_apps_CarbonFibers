@@ -148,4 +148,6 @@
     <string name="action_flashlight">El feneri</string>
     <string name="action_notifications">Bildirimler</string>
     <string name="action_screenshot">Ekran görüntüsü</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

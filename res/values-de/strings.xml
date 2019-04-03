@@ -69,13 +69,20 @@
     <string name="torch_power_button_gesture_title">Taschenlampe einschalten, wenn der Bildschirm aus ist</string>
     <string name="torch_power_button_gesture_none">Deaktiviert</string>
     <string name="torch_power_button_gesture_dt_toast">Kamera Geste ist jetzt deaktiviert</string>
+    <string name="torch_power_button_gesture_lp">Halten Sie die Ein-/Ausschalttaste</string>
     <!-- Disable QS on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Schnelleinstellungen sichern</string>
+    <string name="block_on_secure_keyguard_summary">Schnelleinstellungen verhindern, wenn das Gerät gesperrt ist</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Schnelleinstellungen sichern</string>
+    <string name="unlock_quick_unlock_control_summary">Sofort bei der richtigen Eingabe des Sicherheitseintrags entsperren</string>
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Verstecke Apps in den zuletzt geöffneten Apps</string>
+    <string name="hide_apps_from_recents_summary">Apps im Anwendungsverlauf ausblenden</string>
     <string name="hide_from_recents_add_app">App hinzufügen</string>
     <string name="title_activity_carbon_recents_settings">Letzte Apps</string>
     <!-- CarbonGestures -->
+    <string name="carbon_gesture_preference_title">Carbon Gesten</string>
     <string name="carbon_gestures_summary">Konfigurieren Sie benutzerdefinierte globale Gesten</string>
     <string name="carbon_gestures_fingers_title">Anzahl der Finger für Gesten</string>
     <string name="carbon_gestures_right_title">Rechts Geste</string>
@@ -148,4 +155,6 @@
     <string name="action_flashlight">Taschenlampe</string>
     <string name="action_notifications">Benachrichtigungen</string>
     <string name="action_screenshot">Screenshot</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

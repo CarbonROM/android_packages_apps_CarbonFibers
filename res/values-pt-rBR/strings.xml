@@ -12,11 +12,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Fibra de Carbono</string>
     <string name="system_category">Sistema</string>
     <string name="status_bar_category">Barra de estatus</string>
     <string name="lock_screen_category">Tela de Bloqueio</string>
     <string name="buttons_category">Botões</string>
     <string name="gestures_category">Gestos</string>
+    <string name="privacy_category">Privacidade</string>
     <string name="buttons_software_category">Botões virtuais</string>
     <string name="buttons_hardware_category">Botões físicos</string>
     <!-- Dialog -->
@@ -148,4 +150,6 @@
     <string name="action_flashlight">Lanterna</string>
     <string name="action_notifications">Notificações</string>
     <string name="action_screenshot">Gesto captura de tela</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>

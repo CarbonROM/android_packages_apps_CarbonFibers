@@ -148,4 +148,6 @@
     <string name="action_flashlight">手电筒</string>
     <string name="action_notifications">通知</string>
     <string name="action_screenshot">屏幕截图</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
 </resources>
