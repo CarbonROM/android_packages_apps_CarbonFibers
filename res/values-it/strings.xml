@@ -115,13 +115,17 @@
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Attiva torcia quando lo schermo è spento</string>
     <string name="torch_power_button_gesture_none">Disattivato</string>
+    <string name="torch_power_button_gesture_dt">Doppio tocco pulsante di accensione (risposta a singolo tocco più lenta)</string>
     <string name="torch_power_button_gesture_dt_toast">Il gesto vai alla fotocamera è disabilitato</string>
     <string name="torch_power_button_gesture_lp">Pressione prolungata del tasto Home</string>
     <!-- Button brightness -->
     <string name="button_backlight_options_category">Opzioni Luminosità</string>
     <string name="button_backlight_enable_title">Abilita retroilluminazione pulsanti</string>
+    <string name="button_link_brightness_summary">Regola la luminosità della retroilluminazione con la luminosità dello schermo</string>
     <string name="button_manual_brightness">Livello luminosità</string>
     <string name="button_timeout_title">Timeout retroilluminazione</string>
+    <string name="button_backlight_on_touch_only_title">Pulsante retroilluminato al tocco</string>
+    <string name="button_backlight_on_touch_only_summary">Accendi la retroilluminazione pulsante al tocco</string>
     <!-- HW Keys customization -->
     <string name="advanced_options_title">Opzioni avanzate</string>
     <string name="advanced_options_summary">Mappatura tasti hardware</string>
@@ -156,7 +160,13 @@
     <string name="navbar_tuner_title">Modifica barra di navigazione</string>
     <string name="navbar_tuner_summary">Modifica pulsanti e disposizione barra di navigazione</string>
     <string name="lockscreen_shortcuts_title">Scorciatoie schermata di sblocco</string>
+    <string name="lockscreen_shortcuts_summary">Gestisci le scorciatoie schermata di blocco inferiori</string>
+    <string name="power_notifications_title">Notifiche di alimentazione</string>
+    <string name="power_notifications_summary">Controllo avanzato delle notifiche alla pressione prolungata</string>
     <string name="vol_dnd_category_title">Modalità non disturbare</string>
+    <string name="volbtn_down_zen_title">Volume giù per non disturbare</string>
+    <string name="volbtn_down_zen_summary">Consenti al tasto vol- di far entrare nella modalità non disturbare</string>
+    <string name="volbtn_up_zen_title">Vol+ in modalità non disturbare</string>
     <string name="volbtn_up_zen_summary">Abilita tasto vol+ per uscire dalla modalità \"Non disturbare\"</string>
     <string name="vol_zen_title">Modalità Non disturbare</string>
     <string name="vol_zen_summary">Mostra l\'opzione \"Non Disturbare\" nel pannello volume</string>
@@ -179,9 +189,12 @@
     <string name="notify_disabled">Nessuna</string>
     <string name="headsup_enabled">Notifiche fluttuanti</string>
     <string name="ticker_enabled">Ticker</string>
+    <string name="headsup_ticker_enabled">Heads-up e ticker</string>
     <!-- Status bar music ticker -->
+    <string name="status_bar_music_ticker_summary">Mostra le informazioni della canzone con il ticker al cambio della traccia</string>
     <!-- Status bar clock options -->
     <string name="status_bar_clock">Orologio e data</string>
+    <string name="status_bar_clock_summary">Configura aspetto orologio e data</string>
     <string name="clock_title_enable">Allineamento</string>
     <string name="clock_enabled">Attivato</string>
     <string name="clock_disabled">Disattivato</string>
@@ -217,6 +230,8 @@
     <!-- Pin scramble -->
     <string name="unlock_scramble_pin_layout_summary">Modifica casualmente il layout di inserimento del PIN di sblocco</string>
     <!-- Recents Membar -->
+    <string name="systemui_recents_mem_display_title">Abilita barra di memoria</string>
+    <string name="systemui_recents_mem_display_summary">Mostra utilizzo memoria nei recenti</string>
     <!-- Immersive Recents -->
     <string name="immersive_recents_title">App recenti a schermo intero</string>
     <string name="immersive_recents_summary">Cambia la visualizzazione della schermata dei recenti</string>
@@ -226,15 +241,39 @@
     <string name="immersive_recents_statusbar">Nascondi barra di navigazione</string>
     <string name="immersive_recents_navbar">Nascondi barra di stato</string>
     <!-- Clear all recents -->
+    <string name="show_clear_all_recents_button_title">Pulsante pulisci tutto personalizzato</string>
+    <string name="show_clear_all_recents_button_summary">Usa pulsante pulisci tutto personalizzato</string>
+    <string name="recents_clear_all_location_title">Posizione del pulsante pulisci tutto</string>
+    <string name="recents_clear_all_location_top_right">In alto a destra</string>
+    <string name="recents_clear_all_location_top_left">In alto a sinistra</string>
+    <string name="recents_clear_all_location_top_center">In alto al centro</string>
+    <string name="recents_clear_all_location_bottom_right">In basso a destra</string>
+    <string name="recents_clear_all_location_bottom_left">In basso a sinistra</string>
+    <string name="recents_clear_all_location_bottom_center">In basso al centro</string>
     <!-- Face Auto Unlock -->
+    <string name="face_auto_unlock_title">Sblocco automatico faccia</string>
+    <string name="face_auto_unlock_summary">Abbandona la schermata di blocco dopo aver riconosciuto il volto attendibile</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Sblocco rapido</string>
+    <string name="unlock_quick_unlock_control_summary">Sblocca quando viene inserito il PIN/Password corretto</string>
     <!-- Overlay toggle -->
+    <string name="untrusted_overlay_toggle_title">Consenti sovrapposizioni non attendibili</string>
+    <string name="untrusted_overlay_toggle_summary">Abilita le sovrapposizioni di terze parti (richiesti per i motori di tema)</string>
+    <string name="untrusted_overlay_alert_title">Riavvio richiesto</string>
+    <string name="untrusted_overlay_alert_message">Per consentire sovrapposizioni non attendibili, è necessario un riavvio. Vuoi riavviare?</string>
     <string name="reboot">Riavvio</string>
     <!-- Statusbar net monitor -->
+    <string name="network_traffic_state_title">Mostra attività traffico di rete</string>
+    <string name="network_traffic_autohide_threshold_title">Soglia attività di rete (KB/s)</string>
     <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smart pixel</string>
+    <string name="smart_pixels_summary">Risparmiare batteria spegnendo pixel aggiuntivi</string>
     <string name="smart_pixels_enable_title">Attiva Smart Pixel</string>
+    <string name="smart_pixels_enable_summary">Spegni pixel per ridurre il consumo energetico</string>
+    <string name="smart_pixels_on_power_save_title">Attiva automaticamente il risparmio batteria</string>
     <string name="smart_pixels_on_power_save_summary">Attiva Smart Pixel quando il risparmio batteria è abilitato</string>
     <string name="smart_pixels_percent">Percentuale di pixel per disabilitare</string>
+    <string name="smart_pixels_shift">Previene il burn-in tramite frequenti passaggi di pixel</string>
+    <string name="smart_pixels_warning_text">Smart Pixel è una funzione di risparmio energetico. A seconda di quanti pixel decidi di spegnere, potresti vedere un miglioramento significativo della durata della batteria. Per una buona esperienza utente, raccomandiamo di impostare il numero dei pixel disabilitati al 75% mentre il cambio ogni 10 minuti.</string>
     <!-- Force Aspect Ratio -->
 </resources>
