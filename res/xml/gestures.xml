@@ -109,6 +109,12 @@
         android:fragment="org.carbonrom.carbonfibers.fragments.gestures.DoubleTapLockscreenSettings"
         settings:controller="org.carbonrom.carbonfibers.fragments.gestures.DoubleTapLockscreenPreferenceController" />
 
+    <Preference
+        android:key="gesture_swipe_to_screenshot_summary"
+        android:title="@string/swipe_to_screenshot_gesture_title"
+        android:fragment="org.carbonrom.carbonfibers.fragments.gestures.SwipeToScreenshotGestureSettings"
+        settings:controller="org.carbonrom.carbonfibers.fragments.gestures.SwipeToScreenshotGesturePreferenceController" />
+
 </PreferenceCategory>
 
 </PreferenceScreen>

@@ -49,6 +49,7 @@ public class Gestures extends GestureSettings implements Indexable {
     private static final String KEY_PREVENT_RINGING = "gesture_prevent_ringing_summary";
     private static final String KEY_GESTURE_GLOBAL_ACTIONS_PANEL = "gesture_global_actions_panel_summary";
     private static final String KEY_DOUBLETAP_LOCKSCREEN = "gesture_doubletap_lockscreen_summary";
+    private static final String KEY_SWIPE_TO_SCREENSHOT = "gesture_swipe_to_screenshot_summary";
 
     @Override
     public int getMetricsCategory() {
@@ -94,6 +95,7 @@ public class Gestures extends GestureSettings implements Indexable {
                     keys.add(KEY_PREVENT_RINGING);
                     keys.add(KEY_GESTURE_GLOBAL_ACTIONS_PANEL);
                     keys.add(KEY_DOUBLETAP_LOCKSCREEN);
+                    keys.add(KEY_SWIPE_TO_SCREENSHOT);
                     return keys;
                 }
             };
