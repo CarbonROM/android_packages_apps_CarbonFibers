@@ -1,0 +1,4 @@
+{
+  "pushCert": "certificate version 0.1\npusher 06ABEC1B 1558260894 +0000\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_CarbonFibers\nnonce 1558260894-18D28F66A2AD71C5526BF71E50EFCE7ED426BD35\n\n0000000000000000000000000000000000000000 ffaa86967c9b33ccc92490e648f8a9b65d62c229 refs/for/cr-7.0/q-battery\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQEcBAABAgAGBQJc4SyeAAoJEPzf6osGq+wbfhAH/R1SfBe4J7/So/qVCnPZ7hYV\nARG1CjxzgYqThve7zstp6I51sHI7nsE6gscCEAAQOOmnpFh2wGaKXnkhPaS+Jvgt\nTVlU477Ow+EqjjAlDRbME9fWHyC6PRjC8CwrrGc/1akMrU1dTDq1SFIhMaCPT+7/\nRb/ZvTG5Hy2UDQX2Sr8xqkzr8g2DlPjlRtAYvrS/+OLzMuW0EvzXDsyhRNd4WhfY\nO+lYqK4IjYdaViZCmc5KiBEs1xbNL+ysv4NUKMku3RxgyZ9Q1+UYkB9Sqo9yEbQD\nim0a4EN+Nh2E9vX5ao84rufX1Mz4sBdxyHEzzdExMTvb3pNNBlImBJSgomv/hCk\u003d\n\u003dG3G1\n-----END PGP SIGNATURE-----\n",
+  "comments": []
+}
