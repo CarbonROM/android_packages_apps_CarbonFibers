@@ -21,6 +21,9 @@
     <string name="privacy_category">Конфиденциальность</string>
     <string name="buttons_software_category">Наэкранные кнопки</string>
     <string name="buttons_hardware_category">Аппаратные кнопки</string>
+    <string name="global_actions_category">Меню кнопки питания</string>
+    <string name="misc_category">Прочее</string>
+    <string name="power_save_category">Энергосбережение</string>
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Помогите нам помочь вам!</string>
     <string name="carbonfibers_dialog_toast">Прочитайте это все!!!</string>
@@ -39,10 +42,12 @@
     <string name="preview_version_title">Версия</string>
     <string name="preview_country_title">Страна</string>
     <string name="preview_carrier_title">Оператор</string>
+    <string name="stats_collection_title">Включить сбор статистики</string>
     <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smart Pixels</string>
     <string name="smart_pixels_summary">Выключение отдельных пикселей для снижения энергопотребления</string>
     <string name="smart_pixels_on_power_save_title">Автоматически включать при энергосбережении</string>
+    <string name="smart_pixels_on_power_save_summary">Использовать \"умные пиксели\" при включённом энергосбережении</string>
     <string name="smart_pixels_percent">Процент пикселей для отключения</string>
     <string name="smart_pixels_shift">Предотвратить выжигание экрана путем перемещения пикселей каждую</string>
     <string name="smart_pixels_warning_text">Smart Pixels - это энергосберегающая функция. Чем больше пикселей вы решите выключить, тем больше будет энергосбережение. для приятного использования мы рекомендуем установить количество выключенных пикселей на 75% с перемещением каждые 10 минут.</string>
@@ -67,6 +72,8 @@
     <string name="global_actions_advanced_reboot_title">Расширенная перезагрузка</string>
     <string name="global_actions_advanced_reboot_summary">Показать расширенное меню перезагрузки</string>
     <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Перемешать кнопки при вводе PIN-кода</string>
+    <string name="unlock_scramble_pin_layout_summary">Перемешивать кнопки пин-кода</string>
     <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Значки строки состояния</string>
     <string name="status_bar_tuner_summary">Настройка значков в строке состояния</string>
@@ -75,11 +82,17 @@
     <string name="lock_screen_shortcuts_title">Ярлыки экрана блокировки</string>
     <string name="lock_screen_shortcuts_summary">Управление ярлыками экрана блокировки</string>
     <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Управление воспроизведением при выключенном экране</string>
+    <string name="volume_rocker_music_controls_summary">Удерживайте клавиши громкости для переключения треков</string>
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Включение фонарика при выключенном экране</string>
     <string name="torch_power_button_gesture_none">Отключено</string>
+    <string name="torch_power_button_gesture_dt">Двойное нажатие на кнопку питания</string>
     <string name="torch_power_button_gesture_dt_toast">Открытие камеры по двойному нажатию кнопки питания теперь выключено</string>
+    <string name="torch_power_button_gesture_lp">Удержать кнопку питания</string>
     <!-- Disable QS on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Защитить быстрые настройки</string>
+    <string name="block_on_secure_keyguard_summary">Предотвратить быстрый доступ к настройкам при блокировке устройства</string>
     <!-- Quick unlock -->
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Скрыть приложение в недавних</string>
@@ -112,6 +125,7 @@
     <string name="media_art_summary">Показывать обложку альбома на экране блокировки</string>
     <!-- Custom carrier label and position -->
     <string name="custom_carrier_label_title">Установить имя оператора</string>
+    <string name="custom_carrier_label_notset">Пользовательское название ярлыка не установлено</string>
     <string name="show_carrier_title">Имя оператора</string>
     <string name="show_carrier_disabled">Отключено</string>
     <string name="show_carrier_keyguard">Только на экране блокировки</string>
@@ -124,7 +138,11 @@
     <string name="screen_off_animation_crt">Эффект старого телевизора</string>
     <string name="screen_off_animation_scale">Масштабирование</string>
     <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Ответ на вызов кнопкой громкости</string>
+    <string name="volume_answer_call_summary">Ответ на входящие вызовы нажатием кнопки громкости</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Визуализатор музыки</string>
+    <string name="lockscreen_visualizer_summary">Визуализировать воспроизведение музыки на экране блокировки</string>
     <!-- Status bar clock -->
     <string name="status_bar_clock_title">Позиция часов</string>
     <string name="status_bar_clock_hidden">Не показывать</string>
@@ -143,6 +161,7 @@
     <!-- Toggle navigation bar -->
     <string name="navigation_bar_enabled_title">Включить панель навигации</string>
     <!-- AppOps -->
+    <string name="appops_title">Операции в приложениях</string>
     <!-- Battery styles -->
     <string name="battery_style_title">Стиль иконки батареи</string>
     <string name="battery_style_summary">Стиль иконки батареи в строке состояния</string>
@@ -168,6 +187,8 @@
     <string name="accent_picker_material_colors">Material палитра</string>
     <string name="accent_picker_custom_colors">Пользовательская палитра</string>
     <string name="button_backlight_title">Подсветка</string>
+    <string name="button_backlight_on_touch_only_title">Нажатие на кнопку</string>
+    <string name="button_timeout_title">Время подсветки (секунды)</string>
     <string name="button_timeout_summary">Отключено при значении 0</string>
     <string name="button_link_brightness">Привязать к яркости экрана</string>
     <string name="button_link_brightness_summary">Использовать уровень яркости экрана</string>
@@ -192,13 +213,35 @@
     <string name="hardware_keys_long_press_summary">Выбрать действие на длинное нажатие</string>
     <string name="hardware_keys_single_tap_title">Действие на одиночное нажатие</string>
     <string name="hardware_keys_long_press_title">Действие на длинное нажатие</string>
+    <string name="hardware_keys_double_tap_title">Действие на двойное нажатие</string>
+    <string name="button_hw_title">Действия кнопок</string>
+    <string name="button_hw_summary">Настроить пользовательские действия для кнопок</string>
+    <string name="hardware_keys_category">Кнопки навигации</string>
+    <string name="hardware_keys_disable_title">Отключить кнопки навигации</string>
+    <string name="hardware_keys_right_swipe_key_title">Правый свайп</string>
+    <string name="hardware_keys_left_swipe_key_title">Левый свайп</string>
     <!-- Active Edge -->
+    <string name="active_edge_wake_title">Разрешить, когда экран выключен</string>
+    <string name="active_edge_app_select_title">Выберите приложение</string>
     <!-- Active Edge Actions -->
+    <string name="action_nothing">Нет действия</string>
+    <string name="action_search">Ассистент</string>
+    <string name="action_voice_search">Голосовой поиск</string>
+    <string name="action_launch_camera">Камера</string>
     <string name="action_flashlight">Фонарик</string>
+    <string name="action_clear_notifications">Очистить уведомления</string>
+    <string name="action_volume_panel">Панель громкости</string>
+    <string name="action_screen_off">Выключить экран</string>
     <string name="action_notifications">Уведомления</string>
     <string name="action_screenshot">Снимок экрана</string>
+    <string name="action_qs_panel">Панель быстрых настроек</string>
     <string name="action_app_action">Приложение</string>
+    <string name="action_ringer_modes">Режимы звонка</string>
     <string name="action_power_button">Кнопка питания</string>
     <!-- Aggressive battery -->
+    <string name="aggressive_standby_summary">Ограничить фоновые приложения</string>
+    <string name="aggressive_battery_saver_title">Автоматическое включение экономии заряда батареи </string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Автоматическая разблокировка по лицу</string>
+    <string name="face_auto_unlock_summary">Отключение экрана блокировки автоматически после распознавания лица</string>
 </resources>
