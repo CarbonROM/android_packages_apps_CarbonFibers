@@ -12,6 +12,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
     <string name="system_category">시스템</string>
     <string name="status_bar_category">상태 표시줄</string>
     <string name="lock_screen_category">잠금 화면</string>
@@ -19,15 +20,20 @@
     <string name="gestures_category">제스처</string>
     <string name="buttons_software_category">소프트웨어 버튼</string>
     <string name="buttons_hardware_category">하드웨어 버튼</string>
+    <string name="global_actions_category">전원 메뉴</string>
+    <string name="misc_category">기타</string>
+    <string name="power_save_category">절전</string>
     <!-- Dialog -->
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">CarbonROM 통계</string>
     <string name="preview_data_title">데이터 미리 보기</string>
     <!-- Anonymous Statistics - Preview -->
+    <string name="stats_collection_title">통계 수집 활성화</string>
     <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smart Pixels</string>
     <string name="smart_pixels_summary">전력 소모를 줄이기 위해 픽셀을 끕니다.</string>
+    <string name="smart_pixels_on_power_save_summary">절전 모드가 활성화 되었을 때 Smart Pixels를 사용합니다.</string>
     <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">상태 표시줄을 두 번 두드려서 화면 끄기</string>
     <string name="double_tap_status_bar_sleep_summary">상태 표시줄을 두 번 두드려서 화면을 끕니다.</string>
@@ -35,6 +41,7 @@
     <string name="double_tap_lock_sleep_summary">잠금 화면을 두 번 두드려서 화면을 끕니다.</string>
     <!-- Global Actions -->
     <string name="global_actions_title">전원 메뉴</string>
+    <string name="global_actions_summary">전원 메뉴에 기능을 추가합니다.</string>
     <string name="global_actions_power">종료</string>
     <string name="global_actions_restart">재시작</string>
     <string name="global_actions_airplane">비행기 모드</string>
@@ -42,56 +49,97 @@
     <string name="global_actions_lockdown">화면 잠금</string>
     <string name="global_actions_users">사용자</string>
     <string name="global_actions_screenshot">스크린샷</string>
+    <string name="global_actions_screenrecord">화면 녹화</string>
     <string name="global_actions_flashlight">손전등</string>
+    <string name="global_actions_advanced_reboot_title">다시 시작 메뉴 확장</string>
+    <string name="global_actions_advanced_reboot_summary">복구 모드 및 부트로더 항목을 표시합니다.</string>
     <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">PIN 입력 시 자판 배열 뒤섞기</string>
+    <string name="unlock_scramble_pin_layout_summary">PIN 입력 시에 자판의 배열을 임의로 섞습니다.</string>
     <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_summary">상태표시줄에 표시할 아이콘들과 설정을 편집합니다.</string>
+    <string name="navbar_tuner_title">내비게이션 바 버튼</string>
     <string name="lock_screen_shortcuts_title">잠금 화면 바로가기</string>
     <string name="lock_screen_shortcuts_summary">잠금 화면 하단의 바로가기를 지정합니다.</string>
     <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">화면이 꺼져있을 때 트랙 제어</string>
+    <string name="volume_rocker_music_controls_summary">음량 키를 꾹 눌러서 오디오 트랙을 탐색합니다.</string>
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">화면이 꺼진 상태에서 손전등 켜기</string>
     <string name="torch_power_button_gesture_none">비활성화</string>
+    <string name="torch_power_button_gesture_dt">전원 버튼 두 번 누르기</string>
+    <string name="torch_power_button_gesture_lp">전원 버튼 꾹 누르기</string>
     <!-- Disable QS on lockscreen -->
+    <string name="block_on_secure_keyguard_title">빠른 설정 잠그기</string>
+    <string name="block_on_secure_keyguard_summary">기기가 보호된 상태일 때 빠른 설정에 접근하는 것을 막습니다.</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">빠르게 잠금해제</string>
+    <string name="unlock_quick_unlock_control_summary">PIN 또는 비밀번호를 바르게 입력했을 시에 즉시 잠금을 해제합니다.</string>
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">최근 실행 목록에서 앱 감추기</string>
     <string name="hide_from_recents_add_app">앱 추가</string>
     <string name="title_activity_carbon_recents_settings">최근 실행 목록</string>
     <!-- CarbonGestures -->
+    <string name="carbon_gesture_preference_title">Carbon Gestures</string>
     <string name="carbon_gesture_back">뒤로</string>
     <string name="carbon_gesture_home">홈</string>
     <string name="carbon_gesture_recents">최근 실행 목록</string>
     <string name="carbon_gesture_power">종료</string>
     <!-- Media art -->
+    <string name="media_art_title">앨범 커버 보이기</string>
+    <string name="media_art_summary">잠금화면 배경에 앨범 커버를 보여줍니다.</string>
     <!-- Custom carrier label and position -->
+    <string name="show_carrier_keyguard">잠금 화면에서만</string>
+    <string name="show_carrier_status_bar">상태 표시줄에서만</string>
+    <string name="show_carrier_enabled">잠금 화면과 상태 표시줄</string>
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">화면 꺼짐 효과</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">작아짐</string>
     <!-- The volume key answer -->
+    <string name="volume_answer_call_title">음량 버튼으로 전화 받기</string>
     <!-- Lock screen visualizer -->
     <!-- Status bar clock -->
+    <string name="status_bar_clock_title">시계 위치</string>
     <string name="status_bar_clock_hidden">표시 안함</string>
+    <string name="status_bar_clock_right">오른쪽</string>
+    <string name="status_bar_clock_center">가운데</string>
+    <string name="status_bar_clock_left">왼쪽</string>
     <string name="status_bar_clock_show_seconds_title">초를 표시</string>
+    <string name="status_bar_clock_show_am_pm_title">오전/오후 표시</string>
+    <string name="status_bar_clock_show_day_title">요일 표시</string>
     <!-- Charging options -->
+    <string name="vibration_on_charge_state_changed_title">케이블 연결 시 진동</string>
     <!-- Network traffic -->
     <!-- Toggle navigation bar -->
     <!-- AppOps -->
     <!-- Battery styles -->
+    <string name="battery_style_title">배터리 아이콘 형식</string>
+    <string name="battery_style_summary">상태 표시줄의 배터리 아이콘 형식을 변경합니다.</string>
     <string name="battery_style_port">세로</string>
     <string name="battery_style_circle">원</string>
     <string name="battery_style_dotted_circle">원형 (점선)</string>
     <string name="battery_style_text">텍스트</string>
     <string name="battery_style_hidden">표시 안함</string>
     <!-- Battery percent -->
+    <string name="show_battery_percent_title">배터리 퍼센테이지 표시</string>
+    <string name="show_battery_percent_summary">배터리 아이콘 옆에 퍼센테이지를 표시합니다.</string>
     <string name="battery_percent_hidden">표시 안함</string>
+    <string name="battery_percent_outside">아이콘 옆에</string>
+    <string name="battery_percent_inside">아이콘 안에</string>
     <!-- Themes -->
     <string name="theme_accent_picker_default">기본값</string>
     <!-- HW Keys customization -->
+    <string name="hardware_keys_category">내비게이션 바 버튼</string>
     <!-- Active Edge -->
     <!-- Active Edge Actions -->
     <string name="action_flashlight">손전등</string>
     <string name="action_notifications">알림</string>
+    <string name="action_power_button">전원 버튼</string>
     <!-- Aggressive battery -->
+    <string name="aggressive_battery_title">Aggressive Battery</string>
+    <string name="aggressive_standby_summary">백그라운드에서 동작중인 앱들을 제한합니다.</string>
+    <string name="aggressive_battery_saver_title">절전 모드가 켜졌을 때 자동 활성화</string>
+    <string name="aggressive_battery_saver_summary">절전 모드를 사용하는 중일 때 Aggressive Battery를 활성화합니다.</string>
     <!-- Face auto unlock -->
 </resources>

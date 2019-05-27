@@ -12,20 +12,28 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Ustawienia Carbon ROM</string>
     <string name="system_category">System</string>
     <string name="status_bar_category">Pasek stanu</string>
     <string name="lock_screen_category">Ekran blokady</string>
     <string name="buttons_category">Przyciski</string>
     <string name="gestures_category">Gesty</string>
+    <string name="privacy_category">Prywatność</string>
     <string name="buttons_software_category">Przyciski (programowe)</string>
     <string name="buttons_hardware_category">Przyciski (sprzętowe)</string>
+    <string name="global_actions_category">Menu zasilania</string>
+    <string name="misc_category">Różne</string>
+    <string name="power_save_category">Oszczędzanie energii</string>
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Pomóż nam pomóc!</string>
+    <string name="carbonfibers_dialog_message">Niestety, nie jesteśmy czarodziejami!\n\nWięc, jeśli znajdziesz buga w jakiejkolwiek opcji Carbon ROM, proszę otwórz bilet na Jira lub skontaktuj się z deweloperem Carbona z:\n\n1. #blamemyself*\n2. Logami\n3. Jądrem i użytymi modyfikacjami\n4. Dodatkowymi informacjami.\n\nJeśli nie uda Ci się zgłosić z powyższymi informacjami, nie oczekuj naprawy błędów.</string>
+    <string name="carbonfibers_dialog_toast">Przeczytaj to!</string>
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">Statystyki CarbonROM</string>
     <string name="anonymous_statistics_summary">Pomóż ulepszyć CarbonROM, pozwalając na wysyłanie anonimowych statystyk</string>
     <string name="anonymous_statistics_warning_title">Informacje</string>
+    <string name="anonymous_statistics_warning">Decydując się na statystyki CarbonROM, pozwolisz na przesyłanie anonimowych danych do deweloperów. Wysyłane informacje zawierają unikalne Id urządzenia, które w żaden sposób nie naruszają Twojej prywatności. dane są wysyłane przy każdym uruchomieniu systemu. \n\n Aby zobaczyć przykład wysyłanych danych, kliknij Przeglądaj Dane.</string>
     <string name="enable_reporting_title">Włącz raportowanie</string>
     <string name="preview_data_title">Podgląd danych</string>
     <string name="view_stats_title">Zobacz statystyki</string>
@@ -36,10 +44,12 @@
     <string name="preview_version_title">Wersja</string>
     <string name="preview_country_title">Państwo</string>
     <string name="preview_carrier_title">Operator</string>
+    <string name="stats_collection_title">Włącz zbieranie statystyk</string>
     <!-- Smart Pixels -->
     <string name="smart_pixels_title">Inteligentne Piksele</string>
     <string name="smart_pixels_summary">Wyłącz piksele aby zmniejszyć zużycie energii</string>
     <string name="smart_pixels_on_power_save_title">Automatyczne uruchamianie oszczędzania baterii</string>
+    <string name="smart_pixels_on_power_save_summary">Używaj Smart Pixels kiedy oszczędzanie baterii jest włączone</string>
     <string name="smart_pixels_percent">Procent pikseli do wyłączenia</string>
     <string name="smart_pixels_shift">Zapobiegaj wypaleniu poprzez przesunięcie pikseli</string>
     <string name="smart_pixels_warning_text">Smart Pixels jest funkcją oszczędzania energii.
@@ -51,32 +61,51 @@ W zależności od tego jak dużo pikseli zdecydujesz się wyłączyć, będziesz
     <string name="double_tap_lock_sleep_summary">Dotknij ekran blokady dwa razy aby uśpić</string>
     <!-- Global Actions -->
     <string name="global_actions_title">Menu zasilania</string>
+    <string name="global_actions_summary">Dodaj opcje do menu zasilania</string>
     <string name="global_actions_power">Zasilanie</string>
     <string name="global_actions_restart">Restart</string>
     <string name="global_actions_airplane">Tryb samolotowy</string>
     <string name="global_actions_settings">Ustawienia</string>
     <string name="global_actions_lockdown">Zablokuj</string>
+    <string name="global_actions_soundpanel">Panel dźwiękowy</string>
     <string name="global_actions_users">Użytkownicy</string>
     <string name="global_actions_screenshot">Zrzut ekranu</string>
+    <string name="global_actions_screenrecord">Nagrywanie ekranu</string>
     <string name="global_actions_flashlight">Latarka</string>
+    <string name="global_actions_advanced_reboot_title">Zaawansowany restart</string>
+    <string name="global_actions_advanced_reboot_summary">Pokaż opcje uruchomienia do trybu recovery i bootloader</string>
     <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Pomieszaj klawiaturę PIN</string>
+    <string name="unlock_scramble_pin_layout_summary">Pomieszany układ klawiatury PIN</string>
     <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Ikony paska stanu</string>
+    <string name="status_bar_tuner_summary">Edytuj ikony paska statusu i opcje</string>
+    <string name="navbar_tuner_title">Pasek nawigacji</string>
     <string name="navbar_tuner_summary">Edycja układu i przycisków paska nawigacji</string>
     <string name="lock_screen_shortcuts_title">Skróty ekranu blokady</string>
     <string name="lock_screen_shortcuts_summary">Zarządzaj skrótami ekranu blokady</string>
     <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Odtwarzanie w tle</string>
+    <string name="volume_rocker_music_controls_summary">Przytrzymaj przyciski głośności by przełączyć utwór</string>
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Uruchom latarkę gdy ekran jest wygaszony</string>
     <string name="torch_power_button_gesture_none">Wyłączone</string>
+    <string name="torch_power_button_gesture_dt">Podwójne naciśnięcie przycisku zasilania</string>
     <string name="torch_power_button_gesture_dt_toast">Skok do gestów aparatu jest teraz wyłączony</string>
+    <string name="torch_power_button_gesture_lp">Przytrzymaj przycisk zasilania</string>
     <!-- Disable QS on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Zabezpiecz pasek szybkich ustawień</string>
+    <string name="block_on_secure_keyguard_summary">Wyłącz pasek szybkich ustawień kiedy urządzenie jest zablokowane</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Bezpieczne szybkie odblokowanie</string>
+    <string name="unlock_quick_unlock_control_summary">Od razu odblokuj przy poprawnym haśle</string>
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Schowaj aplikację z ostatnich</string>
+    <string name="hide_apps_from_recents_summary">Wyłącz pojawianie się aplikacji w Ostatnich</string>
     <string name="hide_from_recents_add_app">Dodaj aplikację</string>
     <string name="title_activity_carbon_recents_settings">Ostatnie</string>
     <!-- CarbonGestures -->
+    <string name="carbon_gesture_preference_title">Gesty Carbon</string>
     <string name="carbon_gestures_summary">Skonfiguruj niestandardowe globalne gesty</string>
     <string name="carbon_gestures_fingers_title">Palce używane do gestów</string>
     <string name="carbon_gestures_right_title">Prawy gest</string>
@@ -98,34 +127,83 @@ W zależności od tego jak dużo pikseli zdecydujesz się wyłączyć, będziesz
     <string name="carbon_gesture_customapp">Uruchom aplikację</string>
     <string name="carbon_gesture_launch">Uruchom</string>
     <!-- Media art -->
+    <string name="media_art_title">Okładki albumów</string>
+    <string name="media_art_summary">Pokaż okładki albumów w tle</string>
     <!-- Custom carrier label and position -->
+    <string name="custom_carrier_label_title">Własna etykieta operatora</string>
+    <string name="custom_carrier_label_explain">Pozostaw puste, aby powrócić do domyślnej etykiety.</string>
+    <string name="custom_carrier_label_notset">Etykieta niestandardowa nie ustawiona</string>
+    <string name="show_carrier_title">Etykieta operatora</string>
     <string name="show_carrier_disabled">Wyłączony</string>
+    <string name="show_carrier_keyguard">Tylko na ekranie blokady</string>
+    <string name="show_carrier_status_bar">Tylko pasek stanu</string>
+    <string name="show_carrier_enabled">Ekran blokady i pasek stanu</string>
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">Animacja wygaszania ekranu</string>
+    <string name="screen_off_animation_fade">Proste zanikanie</string>
+    <string name="screen_off_animation_color">Kolorowe zanikanie</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Skala</string>
     <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Odbieranie połączenia przyciskami głośności</string>
+    <string name="volume_answer_call_summary">Odbierz połączenie wciskając przycisk głośności</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Wizualizacja muzyki</string>
+    <string name="lockscreen_visualizer_summary">Wizualizuj odtwarzaną muzykę na ekranie blokady</string>
     <!-- Status bar clock -->
+    <string name="status_bar_clock_title">Pozycja zegara</string>
     <string name="status_bar_clock_hidden">Ukryte</string>
+    <string name="status_bar_clock_right">Prawa strona</string>
+    <string name="status_bar_clock_center">Wyśrodkowany</string>
+    <string name="status_bar_clock_left">Lewa strona</string>
     <string name="status_bar_clock_show_seconds_title">Pokaż sekundy</string>
+    <string name="status_bar_clock_show_am_pm_title">Pokaż AM/PM</string>
+    <string name="status_bar_clock_show_day_title">Pokaż dzień tygodnia</string>
     <!-- Charging options -->
+    <string name="vibration_on_charge_state_changed_title">Wibruj przy podłączeniu</string>
     <!-- Network traffic -->
+    <string name="network_traffic_state_title">Wskaźnik przepływu sieci</string>
+    <string name="network_traffic_state_summary">Wyświetl ikonę aktywności sieci</string>
+    <string name="network_traffic_autohide_threshold_title">Automatycznie ukryj wskaźnik aktywności sieci (KB/s)</string>
     <!-- Toggle navigation bar -->
     <string name="navigation_bar_enabled_title">Włącz pasek nawigacji</string>
     <!-- AppOps -->
+    <string name="appops_title">Uprawnienia aplikacji</string>
+    <string name="appops_summary">Zaawansowana kontrola uprawnień aplikacji</string>
     <!-- Battery styles -->
+    <string name="battery_style_title">Styl ikony baterii</string>
+    <string name="battery_style_summary">Zmiana stylu paska stanu baterii</string>
     <string name="battery_style_port">Pionowo</string>
     <string name="battery_style_circle">Okrąg</string>
     <string name="battery_style_dotted_circle">Wypunktowany okrąg</string>
     <string name="battery_style_text">Tekst</string>
     <string name="battery_style_hidden">Ukryte</string>
     <!-- Battery percent -->
+    <string name="show_battery_percent_title">Pokaż procent baterii</string>
+    <string name="show_battery_percent_summary">Pokaż procent baterii przy ikonie</string>
     <string name="battery_percent_hidden">Ukryte</string>
+    <string name="battery_percent_outside">Zewnątrz</string>
+    <string name="battery_percent_inside">Wewnątrz</string>
     <!-- Themes -->
+    <string name="theme_category_title">Opcje motywu</string>
+    <string name="disable_themes_installed_title">Zmiany wyglądu niedostępne, aby zapobiec konfliktom z Substratum. Odinstaluj go, jeśli chcesz użyć tych motywów.</string>
+    <string name="disable_accents_installed_title">Wybór akcentu jest niedostępny, aby zapobiec konfliktom z Substratum. Odinstaluj go, jeśli chcesz wybrać akcent.</string>
+    <string name="accent_picker_dialog_title">Wybierz kolor akcentu</string>
+    <string name="theme_accent_picker_title">Kolor akcentu</string>
+    <string name="theme_accent_picker_summary">Wybierz kolor akcentu systemu</string>
     <string name="theme_accent_picker_default">Domyślny</string>
+    <string name="accent_picker_material_colors">Paleta Material Design</string>
+    <string name="accent_picker_custom_colors">Zażądano</string>
+    <string name="button_backlight_title">Podświetlenie</string>
+    <string name="button_backlight_summary">Skonfiguruj podświetlenie przycisków</string>
+    <string name="button_backlight_on_touch_only_title">Naciśnięcie przycisku</string>
+    <string name="button_backlight_on_touch_only_summary">Włącz opóźnienie podświetlenia tylko przy naciśnięciu przycisków</string>
+    <string name="button_timeout_title">Czas podświetlania (sekundy)</string>
+    <string name="button_timeout_summary">Wyłączone dla wartości 0</string>
     <string name="button_link_brightness">Połącz z jasnością ekranu</string>
+    <string name="button_link_brightness_summary">Użyj poziomu jasności ekranu</string>
     <string name="button_manual_brightness">Poziom jasności</string>
+    <string name="button_backlight_enable_title">Zezwól na podświetlenie</string>
     <!-- HW Keys customization -->
     <string name="picker_activities">Działania</string>
     <string name="select_custom_app_title">Wybierz niestandardową aplikację</string>
@@ -140,15 +218,54 @@ W zależności od tego jak dużo pikseli zdecydujesz się wyłączyć, będziesz
     <string name="hardware_keys_assist_key_title">Przycisk Szukaj</string>
     <string name="hardware_keys_appswitch_key_title">Przycisk przeglądania</string>
     <string name="hardware_keys_back_key_title">Przycisk Wstecz</string>
+    <string name="hardware_keys_double_tap_summary">Wybierz akcję dwukrotnego stuknięcia</string>
     <string name="hardware_keys_single_tap_summary">Wybierz akcję pojedynczego naciśnięcia</string>
     <string name="hardware_keys_long_press_summary">Wybierz akcje długiego naciśnięcia</string>
     <string name="hardware_keys_single_tap_title">Akcja dla pojedynczego dotknięcia</string>
     <string name="hardware_keys_long_press_title">Akcja dla długiego naciśnięcia</string>
+    <string name="hardware_keys_double_tap_title">Dwukrotne stuknięcie</string>
+    <string name="button_hw_title">Działanie przycisków</string>
+    <string name="button_hw_summary">Skonfiguruj działanie przycisków</string>
+    <string name="hardware_keys_category">Przyciski nawigacji</string>
+    <string name="hardware_keys_disable_title">Wyłącz przyciski nawigacji</string>
+    <string name="hardware_keys_right_swipe_key_title">Przesunięcie palcem w prawo</string>
+    <string name="hardware_keys_left_swipe_key_title">Przesunięcie palcem w lewo</string>
     <!-- Active Edge -->
+    <string name="active_edge_title">Aktywne krawędzie</string>
+    <string name="active_edge_summary">Skonfiguruj ustawienia aktywnej krawędzi</string>
+    <string name="active_edge_actions_title">Działanie ściśnięcia krawędzi</string>
+    <string name="active_edge_sensitivity_title">Czułość ściśnięcia krawędzi</string>
+    <string name="active_edge_wake_title">Pozwól, kiedy ekran jest wyłączony</string>
+    <string name="active_edge_wake_summary">Wyzwalaj akcję, gdy ekran jest wyłączony</string>
+    <string name="active_edge_app_select_title">Wybierz aplikację</string>
+    <string name="active_edge_app_select_summary">Wybierz aplikację do uruchomienia po ściśnięciu krawędzi</string>
+    <string name="active_edge_footer_info">Nie wszystkie ściśnięcia aktywnej krawędzi mogą aktywować wyświetlacz</string>
     <!-- Active Edge Actions -->
+    <string name="action_nothing">Brak akcji</string>
+    <string name="action_search">Asystent</string>
+    <string name="action_voice_search">Wyszukiwanie głosowe</string>
+    <string name="action_launch_camera">Aparat</string>
     <string name="action_flashlight">Latarka</string>
+    <string name="action_clear_notifications">Wyczyść powiadomienia</string>
+    <string name="action_volume_panel">Panel głośności</string>
+    <string name="action_screen_off">Ekran wyłączony</string>
     <string name="action_notifications">Powiadomienia</string>
     <string name="action_screenshot">Zrzut ekranu</string>
+    <string name="action_qs_panel">Panel szybkich ustawień</string>
+    <string name="action_app_action">Aplikacja</string>
+    <string name="action_ringer_modes">Tryb dzwonka</string>
+    <string name="action_power_button">Przycisk zasilania</string>
     <!-- Aggressive battery -->
+    <string name="aggressive_battery_title">Aggressive Battery</string>
+    <string name="aggressive_battery_summary">Surowe oszczędzanie baterii</string>
+    <string name="aggressive_battery_warning_text">Są to opcje oszczędzania baterii. Mogą one wpłynąć na aplikacje działające w tle, np. nawigację samochodową. Możesz wykluczyć aplikacje które zostaną zoptymalizowane w ustawieniach baterii.</string>
+    <string name="aggressive_idle_title">Agresywny tryb bezczynności</string>
+    <string name="aggressive_idle_summary">Wprowadzaj urządzenie w stan bezczynności częściej, a wybudzaj je rzadziej</string>
+    <string name="aggressive_standby_title">Agresywny tryb wstrzymania</string>
+    <string name="aggressive_standby_summary">Ogranicz aplikacje uruchamiane w tle</string>
+    <string name="aggressive_battery_saver_title">Automatyczne uruchamianie oszczędzania baterii</string>
+    <string name="aggressive_battery_saver_summary">Włącz agresywne oszczędzanie baterii automatycznie w trybie oszczędzania baterii</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatyczne odblokowanie twarzą</string>
+    <string name="face_auto_unlock_summary">Pomiń ekran blokady po odblokowaniu twarzą</string>
 </resources>
