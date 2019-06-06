@@ -39,6 +39,7 @@ public class System extends CustomSettingsPreferenceFragment implements Indexabl
     private static final String GLOBAL_ACTIONS = "global_actions";
     private static final String AGGRESSIVE_BATTERY ="aggressive_battery";
     private static final String ADVANCED_REBOOT = "advanced_reboot";
+    private static final String CHARGING_ANIMATION = "charging_animation";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,7 @@ public class System extends CustomSettingsPreferenceFragment implements Indexabl
 
         addPreferencesFromResource(R.xml.system);
         addCustomPreference(findPreference(ADVANCED_REBOOT), SECURE_TWO_STATE, STATE_ON);
+        addCustomPreference(findPreference(CHARGING_ANIMATION), SYSTEM_TWO_STATE, STATE_OFF);
         updateSmartPixelsPreference();
     }
 

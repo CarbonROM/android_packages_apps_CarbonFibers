@@ -203,4 +203,8 @@
     <!-- Lock icon -->
     <string name="lockscreen_lock_icon_title">Lock icon</string>
     <string name="lockscreen_lock_icon_summary">Show current lock status icon on the lockscreen</string>
+
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Charging animation</string>
+    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
 </resources>
