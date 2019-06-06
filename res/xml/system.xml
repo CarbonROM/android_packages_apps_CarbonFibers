@@ -37,6 +37,13 @@
             android:title="@string/global_actions_advanced_reboot_title"
             android:summary="@string/global_actions_advanced_reboot_summary"
             android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="charging_animation"
+            android:title="@string/charging_animation_title"
+            android:summary="@string/charging_animation_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
