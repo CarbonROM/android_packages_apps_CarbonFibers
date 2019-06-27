@@ -20,6 +20,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
@@ -30,6 +31,7 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.text.Spannable;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.EditText;
 
 import com.android.settings.R;
@@ -54,6 +56,7 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
     private static final String NETWORK_TRAFFIC_STATE = "network_traffic_state";
     private static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
     private static final String STATUS_BAR_TUNER = "status_bar_tuner";
+    private static final String SHOW_FOURG = "show_fourg";
 
     private PreferenceScreen mCustomCarrierLabel;
     private SystemSettingListPreference mStatusBarClock;
@@ -68,10 +71,24 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.status_bar);
 
+        boolean mShow4GForLTE;
+
+        try {
+            Context con = getContext().createPackageContext("com.android.systemui", 0);
+            final int id = con.getResources().getIdentifier("config_show4GForLTE",
+                    "bool", "com.android.systemui");
+            mShow4GForLTE = con.getResources().getBoolean(id);
+        } catch (NameNotFoundException e) {
+            Log.e(TAG, "NameNotFoundException for show4GFotLTE");
+            mShow4GForLTE = true;
+        }
+
         addCustomPreference(findPreference(STATUS_BAR_CLOCK_SHOW_SECONDS), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(STATUS_BAR_CLOCK_SHOW_AM_PM), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(STATUS_BAR_CLOCK_SHOW_DAY), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(NETWORK_TRAFFIC_STATE), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(SHOW_FOURG), SYSTEM_TWO_STATE,
+            mShow4GForLTE ? STATE_ON : STATE_OFF);
         mStatusBarClock = (SystemSettingListPreference) findPreference(STATUS_BAR_CLOCK);
         mStatusBarClock.setOnPreferenceChangeListener(this);
 
