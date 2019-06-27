@@ -55,6 +55,7 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
     private static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
     private static final String STATUS_BAR_TUNER = "status_bar_tuner";
     private static final String SHOW_FOURG = "show_fourg";
+    private static final String ROAMING_INDICATOR_ICON = "roaming_indicator_icon";
 
     private PreferenceScreen mCustomCarrierLabel;
     private SystemSettingListPreference mStatusBarClock;
@@ -74,6 +75,7 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
         addCustomPreference(findPreference(STATUS_BAR_CLOCK_SHOW_DAY), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(NETWORK_TRAFFIC_STATE), SYSTEM_TWO_STATE, STATE_OFF);
 	addCustomPreference(findPreference(SHOW_FOURG), SYSTEM_TWO_STATE, STATE_OFF);
+	addCustomPreference(findPreference(ROAMING_INDICATOR_ICON), SYSTEM_TWO_STATE, STATE_ON);
         mStatusBarClock = (SystemSettingListPreference) findPreference(STATUS_BAR_CLOCK);
         mStatusBarClock.setOnPreferenceChangeListener(this);
 
