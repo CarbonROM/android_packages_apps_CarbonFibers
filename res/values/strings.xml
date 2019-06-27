@@ -319,4 +319,8 @@
     <string name="show_fourg_icon_title">4G icon on Statusbar</string>
     <string name="show_fourg_icon_summary">On signal icon, show 4G instead of LTE</string>
 
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Roaming indicator</string>
+    <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
+
 </resources>

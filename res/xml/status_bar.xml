@@ -107,4 +107,10 @@
        android:defaultValue="false"
        settings:allowDividerAbove="true" />
 
+    <SwitchPreference
+       android:key="roaming_indicator_icon"
+       android:title="@string/roaming_indicator_icon_title"
+       android:summary="@string/roaming_indicator_icon_summary"
+       android:defaultValue="true"/>
+
 </PreferenceScreen>
