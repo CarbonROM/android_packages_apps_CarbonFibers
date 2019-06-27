@@ -99,5 +99,12 @@
        android:max="10"
        android:min="0"
        android:dependency="network_traffic_state" />
+     
+    <SwitchPreference
+       android:key="show_fourg"
+       android:title="@string/show_fourg_icon_title"
+       android:summary="@string/show_fourg_icon_summary"
+       android:defaultValue="false"
+       settings:allowDividerAbove="true" />
 
 </PreferenceScreen>
