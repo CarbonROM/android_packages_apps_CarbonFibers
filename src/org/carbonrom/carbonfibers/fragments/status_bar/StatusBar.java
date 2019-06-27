@@ -56,6 +56,7 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
     private static final String STATUS_BAR_TUNER = "status_bar_tuner";
     private static final String SHOW_FOURG = "show_fourg";
     private static final String ROAMING_INDICATOR_ICON = "roaming_indicator_icon";
+    private static final String DATA_DISABLED_ICON = "data_disabled_icon";
 
     private PreferenceScreen mCustomCarrierLabel;
     private SystemSettingListPreference mStatusBarClock;
@@ -89,6 +90,7 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements
         addCustomPreference(findPreference(SHOW_FOURG), SYSTEM_TWO_STATE,
             mShow4GForLTE ? STATE_ON : STATE_OFF);
         addCustomPreference(findPreference(ROAMING_INDICATOR_ICON), SYSTEM_TWO_STATE, STATE_ON);
+        addCustomPreference(findPreference(DATA_DISABLED_ICON), SYSTEM_TWO_STATE, STATE_ON);
         mStatusBarClock = (SystemSettingListPreference) findPreference(STATUS_BAR_CLOCK);
         mStatusBarClock.setOnPreferenceChangeListener(this);
 
