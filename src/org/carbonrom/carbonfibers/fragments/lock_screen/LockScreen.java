@@ -37,6 +37,7 @@ public class LockScreen extends CustomSettingsPreferenceFragment implements Inde
     private static final String STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD = "status_bar_locked_on_secure_keyguard";
     private static final String LOCKSCREEN_VISUALIZER = "lockscreen_visualizer";
     private static final String FACE_AUTO_UNLOCK = "face_auto_unlock";
+    private static final String WEATHER_LOCKSCREEN_ENABLED = "weather_lockscreen_enabled";
 
 
     @Override
@@ -50,6 +51,7 @@ public class LockScreen extends CustomSettingsPreferenceFragment implements Inde
         addCustomPreference(findPreference(STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD), SECURE_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(LOCKSCREEN_VISUALIZER), SECURE_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(FACE_AUTO_UNLOCK), SYSTEM_TWO_STATE, STATE_OFF);
+	addCustomPreference(findPreference(WEATHER_LOCKSCREEN_ENABLED), SYSTEM_TWO_STATE, STATE_OFF);
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
