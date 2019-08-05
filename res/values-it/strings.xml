@@ -121,6 +121,7 @@
     <!-- Button brightness -->
     <string name="button_backlight_options_category">Opzioni Luminosità</string>
     <string name="button_backlight_enable_title">Abilita retroilluminazione pulsanti</string>
+    <string name="button_link_brightness">Collega alla luminosità dello schermo</string>
     <string name="button_link_brightness_summary">Regola la luminosità della retroilluminazione con la luminosità dello schermo</string>
     <string name="button_manual_brightness">Livello luminosità</string>
     <string name="button_timeout_title">Timeout retroilluminazione</string>
@@ -191,6 +192,7 @@
     <string name="ticker_enabled">Ticker</string>
     <string name="headsup_ticker_enabled">Heads-up e ticker</string>
     <!-- Status bar music ticker -->
+    <string name="status_bar_music_ticker_title">Tick al cambio del brano</string>
     <string name="status_bar_music_ticker_summary">Mostra le informazioni della canzone con il ticker al cambio della traccia</string>
     <!-- Status bar clock options -->
     <string name="status_bar_clock">Orologio e data</string>
@@ -228,6 +230,7 @@
     <string name="clock_date_left">A sinistra dell\'ora</string>
     <string name="clock_date_position">Posizione data</string>
     <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Layout tastiera casuale</string>
     <string name="unlock_scramble_pin_layout_summary">Modifica casualmente il layout di inserimento del PIN di sblocco</string>
     <!-- Recents Membar -->
     <string name="systemui_recents_mem_display_title">Abilita barra di memoria</string>

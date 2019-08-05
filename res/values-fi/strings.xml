@@ -12,22 +12,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="system_category">系統</string>
-    <string name="statusbar_category">狀態欄</string>
-    <string name="lockscreen_category">鎖螢螢幕</string>
-    <string name="buttons_category">按鈕</string>
-    <string name="gesture_category">手勢操作</string>
-    <string name="privacy_category">隱私 &amp; 安全性</string>
-    <string name="buttons_software_category">虛擬按鍵</string>
-    <string name="buttons_hardware_category">實體按鍵</string>
-    <string name="statusbar_notifications_category">通知</string>
-    <string name="statusbar_network_activity_category">網路狀態</string>
-    <string name="system_global_actions_category">全域選項</string>
-    <string name="system_volume_category">音量</string>
-    <string name="system_recents_category">最近使用程式</string>
-    <string name="lockscreen_security_category">安全</string>
+    <string name="system_category">Järjestelmä</string>
+    <string name="statusbar_category">Tilapalkki</string>
+    <string name="lockscreen_category">Lukitusnäyttö</string>
+    <string name="buttons_category">Painikkeet</string>
+    <string name="gesture_category">Eleet</string>
+    <string name="privacy_category">Tietosuoja &amp; turvallisuus</string>
+    <string name="statusbar_notifications_category">Ilmoitukset</string>
+    <string name="system_volume_category">Äänenvoimakkuus</string>
     <!-- Dialog -->
-    <string name="carbonfibers_dialog_title">幫助我們提供更好</string>
     <!-- Navbar Animation -->
     <!-- Hide Apps from Recents -->
     <!-- CarbonGestures -->
@@ -37,10 +30,11 @@
     <!-- tap-to-sleep -->
     <!-- Gestures-->
     <!-- Global Actions -->
-    <string name="global_actions_restart">重新啟動</string>
-    <string name="global_actions_advanced_reboot_title">啓用進階重新啓動</string>
+    <string name="global_actions_settings">Asetukset</string>
+    <string name="global_actions_flashlight">Taskulamppu</string>
     <!-- Lock screen charging current indicator  -->
     <!-- Screen Off animation -->
+    <string name="screen_off_animation_default">Oletus</string>
     <!-- Volume rocker music control -->
     <!-- Torch Power button gestures -->
     <!-- Button brightness -->
@@ -52,6 +46,11 @@
     <!-- Status bar notification -->
     <!-- Status bar music ticker -->
     <!-- Status bar clock options -->
+    <string name="status_bar_show_clock_title">Näytä kello ja päivämäärä</string>
+    <string name="status_bar_clock_seconds_title">Näytä sekunnit</string>
+    <string name="clock_date_display">Päivämäärä</string>
+    <string name="clock_date_style">Päiväyksen tyyli</string>
+    <string name="clock_date_format">Päivämäärän muoto</string>
     <!-- Pin scramble -->
     <!-- Recents Membar -->
     <!-- Immersive Recents -->
