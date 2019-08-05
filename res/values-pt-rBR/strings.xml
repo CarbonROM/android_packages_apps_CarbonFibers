@@ -33,6 +33,7 @@
     <string name="anonymous_statistics_title">Estatísticas de CarbonROM</string>
     <string name="anonymous_statistics_summary">Ajudar a fazer CarbonROM melhor opção para o relatório de estatísticas anônimas</string>
     <string name="anonymous_statistics_warning_title">Sobre</string>
+    <string name="anonymous_statistics_warning">Optando por ter estatísticas CarbonROM permitirá que dados não-pessoais ser enviado para os desenvolvedores da CarbonROM para rastrear instalações únicas através de dispositivos. As informações apresentadas incluem um identificador exclusivo, que não compromete a sua privacidade e dados pessoais. Os dados são enviados durante cada inicialização. Para ver um exemplo dos dados que são enviados, toque na visualização de dados.</string>
     <string name="enable_reporting_title">Ativar geração de relatório</string>
     <string name="preview_data_title">Visualizar Atualização</string>
     <string name="view_stats_title">Ver estatísticas</string>
@@ -73,13 +74,18 @@
     <string name="global_actions_advanced_reboot_title">Reinício avançado</string>
     <string name="global_actions_advanced_reboot_summary">Mostrar opções de recuperação e bootloader</string>
     <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Embaralhar teclado PIN</string>
+    <string name="unlock_scramble_pin_layout_summary">Embaralhar o layout do teclado do pin</string>
     <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Ícones da barra de status</string>
+    <string name="status_bar_tuner_summary">Editar ícones e opções da barra de status</string>
     <string name="navbar_tuner_title">Barra de navegação</string>
     <string name="navbar_tuner_summary">Editar o layout e botões da barra de navegação</string>
     <string name="lock_screen_shortcuts_title">Atalhos da tela de bloqueio</string>
     <string name="lock_screen_shortcuts_summary">Gerenciar atalhos da parte inferior da tela de bloqueio</string>
     <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Controle de reprodução de tela desligada</string>
+    <string name="volume_rocker_music_controls_summary">Segure as teclas de volume para procurar faixas de áudio</string>
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Alterna a lanterna quando a tela está desligada</string>
     <string name="torch_power_button_gesture_none">Desativado</string>
@@ -87,12 +93,18 @@
     <string name="torch_power_button_gesture_dt_toast">Ir para o gesto da câmera está agora desativado</string>
     <string name="torch_power_button_gesture_lp">Segurar botão de energia</string>
     <!-- Disable QS on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Configurações rápidas segurança</string>
+    <string name="block_on_secure_keyguard_summary">Evitar acesso às configurações rápidas quando o dispositivo estiver bloqueado</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Desbloqueio rápido seguro</string>
+    <string name="unlock_quick_unlock_control_summary">Desbloqueie imediatamente na entrada de segurança correta</string>
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Esconder apps recentes</string>
+    <string name="hide_apps_from_recents_summary">Ocultar aplicativos de aparecer em recentes</string>
     <string name="hide_from_recents_add_app">Adicionar app</string>
     <string name="title_activity_carbon_recents_settings">Recentes</string>
     <!-- CarbonGestures -->
+    <string name="carbon_gesture_preference_title">Carbon Gestos</string>
     <string name="carbon_gestures_summary">Configurar gestos globais personalizados</string>
     <string name="carbon_gestures_fingers_title">Dedos usados para gesto</string>
     <string name="carbon_gestures_right_title">Gesto para direita</string>
@@ -114,16 +126,33 @@
     <string name="carbon_gesture_customapp">Iniciar aplicativo</string>
     <string name="carbon_gesture_launch">Iniciar</string>
     <!-- Media art -->
+    <string name="media_art_title">Arte do álbum</string>
+    <string name="media_art_summary">Mostrar a arte de capa de mídia em segundo plano</string>
     <!-- Custom carrier label and position -->
+    <string name="custom_carrier_label_title">Personalizar nome de operadora</string>
+    <string name="custom_carrier_label_explain">Deixe em branco para reverter para a etiqueta de estoque.</string>
+    <string name="custom_carrier_label_notset">Rótulo personalizado não definido</string>
+    <string name="show_carrier_title">Nome da operadora</string>
     <string name="show_carrier_disabled">Desativado</string>
+    <string name="show_carrier_keyguard">Somente na tela de bloqueio</string>
+    <string name="show_carrier_status_bar">Apenas barra de status</string>
+    <string name="show_carrier_enabled">Tela de bloqueio e barra de status</string>
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">Animação da tela desligada</string>
+    <string name="screen_off_animation_fade">Fade simples</string>
+    <string name="screen_off_animation_color">Fade de cor</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Escala</string>
     <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Resposta da chamada do botão de volume</string>
+    <string name="volume_answer_call_summary">Atender chamadas recebidas pressionando um botão de volume</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Visualizador de música</string>
+    <string name="lockscreen_visualizer_summary">Visualize música tocando na tela de bloqueio</string>
     <!-- Status bar clock -->
+    <string name="status_bar_clock_title">Posição do relógio</string>
     <string name="status_bar_clock_hidden">Oculto</string>
+    <string name="status_bar_clock_right">Lado direito</string>
     <string name="status_bar_clock_center">Centralizado</string>
     <string name="status_bar_clock_left">Lado esquerdo</string>
     <string name="status_bar_clock_show_seconds_title">Mostrar segundos</string>
@@ -133,19 +162,40 @@
     <string name="vibration_on_charge_state_changed_title">Vibrar ao conectar</string>
     <!-- Network traffic -->
     <string name="network_traffic_state_title">Indicador de tráfego de rede</string>
+    <string name="network_traffic_state_summary">Exibir ícones de atividade de rede</string>
+    <string name="network_traffic_autohide_threshold_title">Limite de autoocultar (KB/s)</string>
     <!-- Toggle navigation bar -->
     <string name="navigation_bar_enabled_title">Ativar a barra de navegação</string>
     <!-- AppOps -->
+    <string name="appops_title">App Ops</string>
+    <string name="appops_summary">Controle avançado de permissões de aplicativos</string>
     <!-- Battery styles -->
+    <string name="battery_style_title">Estilo do ícone da bateria</string>
+    <string name="battery_style_summary">Alterar o estilo da bateria da barra de status</string>
     <string name="battery_style_port">Retrato</string>
     <string name="battery_style_circle">Círculo</string>
     <string name="battery_style_dotted_circle">Círculo pontilhado</string>
     <string name="battery_style_text">Texto</string>
     <string name="battery_style_hidden">Oculto</string>
     <!-- Battery percent -->
+    <string name="show_battery_percent_title">Mostrar porcentagem da bateria</string>
+    <string name="show_battery_percent_summary">Mostrar porcentagem de nível da bateria perto do ícone</string>
     <string name="battery_percent_hidden">Oculto</string>
+    <string name="battery_percent_outside">Fora</string>
+    <string name="battery_percent_inside">Dentro</string>
     <!-- Themes -->
+    <string name="theme_category_title">Opções do tema</string>
+    <string name="disable_themes_installed_title">Os temas do sistema estão indisponíveis para evitar conflitos com o Substratum. Desinstale-o se você quiser usar esses temas.</string>
+    <string name="disable_accents_installed_title">O seletor de fontes não está disponível para evitar conflitos com o Substratum. Desinstale-o se você quiser usar o seletor de fontes.</string>
+    <string name="accent_picker_dialog_title">Selecione uma cor de destaque</string>
+    <string name="theme_accent_picker_title">Cor de destaque</string>
+    <string name="theme_accent_picker_summary">Selecione a cor de destaque do tema do sistema</string>
     <string name="theme_accent_picker_default">Padrão</string>
+    <string name="accent_picker_material_colors">Paleta de material</string>
+    <string name="accent_picker_custom_colors">Usuário solicitado</string>
+    <string name="button_backlight_title">Luz de fundo</string>
+    <string name="button_backlight_summary">Configurar luz de fundo para botões capacitivos</string>
+    <string name="button_backlight_on_touch_only_title">Toque do botão</string>
     <string name="button_backlight_on_touch_only_summary">Ativar a luz de fundo com tempo limite apenas quando o botão é tocado</string>
     <string name="button_timeout_title">Tempo limite da luz de fundo (segundos)</string>
     <string name="button_timeout_summary">Desativado no valor 0</string>
@@ -188,6 +238,7 @@
     <string name="active_edge_wake_summary">Realizar uma ação quando a tela estiver desligada</string>
     <string name="active_edge_app_select_title">Selecione o aplicativo</string>
     <string name="active_edge_app_select_summary">Selecione um aplicativo para iniciar quando eu apertar</string>
+    <string name="active_edge_footer_info">Nem todas as ações de compactação no Active Edge têm a capacidade de ativar a exibição</string>
     <!-- Active Edge Actions -->
     <string name="action_nothing">Nenhuma ação</string>
     <string name="action_search">Assistente</string>
@@ -206,7 +257,13 @@
     <!-- Aggressive battery -->
     <string name="aggressive_battery_title">Bateria agressiva</string>
     <string name="aggressive_battery_summary">Economia agressiva de bateria</string>
+    <string name="aggressive_battery_warning_text">Esses são recursos de economia de energia. Eles podem interferir nos serviços destinados a serem executados em modo inativo, como aplicativos de navegação. Você pode impedir que esses aplicativos sejam afetados nas configurações de bateria do aplicativo.</string>
+    <string name="aggressive_idle_title">Idle Agressivo</string>
+    <string name="aggressive_idle_summary">Insira o dispositivo inativo com mais frequência e acorde menos</string>
+    <string name="aggressive_standby_title">Standby agressivo</string>
+    <string name="aggressive_standby_summary">Restringir apps de rodar em segundo plano</string>
     <string name="aggressive_battery_saver_title">Ativar automaticamente na economia de bateria </string>
+    <string name="aggressive_battery_saver_summary">Ativar bateria agressiva automaticamente ao usar a economia de bateria</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Desbloqueio facial automático</string>
     <string name="face_auto_unlock_summary">Pular a tela de bloqueio após o desbloqueio facial</string>

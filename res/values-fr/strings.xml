@@ -29,6 +29,8 @@
     <string name="enable_reporting_title">Activer les rapports</string>
     <string name="preview_data_title">Prévisualiser les données</string>
     <!-- Anonymous Statistics - Preview -->
+    <string name="preview_country_title">Pays</string>
+    <string name="preview_carrier_title">Opérateur</string>
     <!-- Smart Pixels -->
     <string name="smart_pixels_title">Pixels intelligents</string>
     <string name="smart_pixels_summary">Éteindre des pixels pour réduire la consommation d\'énergie</string>
@@ -37,7 +39,18 @@
     <string name="smart_pixels_shift">Empêcher des dommages en déplaçant des pixels tous les</string>
     <string name="smart_pixels_warning_text">Smart Pixels est une fonctionnalité d\'économie d\'énergie. Selon le nombre de pixels que vous décidez de désactiver, vous pourriez voir une amélioration significative de la durée de vie de la batterie. Pour une bonne expérience utilisateur, nous recommandons de définir le nombre de pixels désactivés à 75 pourcents tout en changeant toutes les 10 minutes.</string>
     <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Double appui sur la barre d\'état pour mettre en veille</string>
+    <string name="double_tap_status_bar_sleep_summary">Appuyez deux fois sur la barre d\'état pour mettre en veille</string>
+    <string name="double_tap_lock_sleep_title">Double-appui sur l\'écran de verrouillage pour mettre en veille</string>
+    <string name="double_tap_lock_sleep_summary">Appuyez deux fois sur l\'écran de verrouillage pour mettre en veille</string>
     <!-- Global Actions -->
+    <string name="global_actions_restart">Redémarrer</string>
+    <string name="global_actions_airplane">Mode avion</string>
+    <string name="global_actions_settings">Paramètres</string>
+    <string name="global_actions_lockdown">Verrouiller</string>
+    <string name="global_actions_users">Utlisateurs</string>
+    <string name="global_actions_screenshot">Capture d\'écran</string>
+    <string name="global_actions_flashlight">Lampe torche</string>
     <!-- Pin scramble -->
     <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Éléments de la barre d\'état</string>
@@ -46,6 +59,7 @@
     <string name="lock_screen_shortcuts_summary">Gérer les raccourcis en bas de l\'écran de verrouillage</string>
     <!-- Volume rocker music control -->
     <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_none">Désactivé</string>
     <!-- Disable QS on lockscreen -->
     <!-- Quick unlock -->
     <!-- Hide Apps from Recents -->
@@ -77,6 +91,8 @@
     <!-- Custom carrier label and position -->
     <string name="show_carrier_disabled">Désactivé</string>
     <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Animation à l\'extinction</string>
+    <string name="screen_off_animation_scale">Échelle</string>
     <!-- The volume key answer -->
     <!-- Lock screen visualizer -->
     <!-- Status bar clock -->
@@ -90,10 +106,13 @@
     <string name="battery_style_port">Portrait</string>
     <string name="battery_style_circle">Cercle</string>
     <string name="battery_style_dotted_circle">Cercle en pointillés</string>
+    <string name="battery_style_text">Texte</string>
     <string name="battery_style_hidden">Masqué</string>
     <!-- Battery percent -->
     <string name="battery_percent_hidden">Masqué</string>
     <!-- Themes -->
+    <string name="theme_accent_picker_default">Défaut</string>
+    <string name="button_manual_brightness">Niveau de luminosité</string>
     <!-- HW Keys customization -->
     <string name="picker_activities">Activités</string>
     <string name="select_custom_app_title">Sélectionner une application personnalisée</string>
@@ -114,6 +133,7 @@
     <string name="hardware_keys_long_press_title">Action de l\'appui long</string>
     <!-- Active Edge -->
     <!-- Active Edge Actions -->
+    <string name="action_flashlight">Lampe torche</string>
     <string name="action_notifications">Notifications</string>
     <string name="action_screenshot">Capture d\'écran</string>
     <!-- Aggressive battery -->

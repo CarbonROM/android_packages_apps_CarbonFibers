@@ -14,13 +14,24 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="system_category">Systeem</string>
     <string name="status_bar_category">Statusbalk</string>
+    <string name="lock_screen_category">Vergrendelscherm</string>
     <string name="buttons_category">Knoppen</string>
     <string name="gestures_category">Gebaren</string>
+    <string name="buttons_software_category">Software knoppen</string>
+    <string name="buttons_hardware_category">Hardware knoppen</string>
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help ons u te helpen!</string>
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM statistieken</string>
+    <string name="anonymous_statistics_summary">Help CarbonROM beter te maken door anonieme statistieken te verzenden</string>
+    <string name="anonymous_statistics_warning_title">Over</string>
+    <string name="enable_reporting_title">Rapporteren inschakelen</string>
+    <string name="preview_data_title">Voorbeeldgegevens</string>
+    <string name="view_stats_title">Bekijk statestieken</string>
+    <string name="anonymous_learn_more">Leer meer</string>
     <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Uniek ID</string>
     <string name="preview_device_title">Apparaat</string>
     <string name="preview_version_title">Versie</string>
     <string name="preview_country_title">Land</string>
@@ -28,9 +39,11 @@
     <!-- Smart Pixels -->
     <!-- tap-to-sleep -->
     <!-- Global Actions -->
+    <string name="global_actions_power">Vermogen</string>
     <string name="global_actions_restart">Herstart</string>
     <string name="global_actions_airplane">Vliegtuig</string>
     <string name="global_actions_settings">Instellingen</string>
+    <string name="global_actions_lockdown">Vergrendelen</string>
     <string name="global_actions_users">Gebruikers</string>
     <string name="global_actions_screenshot">Schermafbeelding</string>
     <string name="global_actions_flashlight">Zaklamp</string>
@@ -38,16 +51,40 @@
     <!-- SystemUI Tuner -->
     <!-- Volume rocker music control -->
     <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Zaklamp inschakelen wanneer het scherm uit is</string>
     <string name="torch_power_button_gesture_none">Uitgeschakeld</string>
     <!-- Disable QS on lockscreen -->
     <!-- Quick unlock -->
     <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Verberg recente apps</string>
     <string name="hide_from_recents_add_app">App toevoegen</string>
+    <string name="title_activity_carbon_recents_settings">Recente</string>
     <!-- CarbonGestures -->
+    <string name="carbon_gestures_summary">Aangepaste algemene gebaren configureren</string>
+    <string name="carbon_gestures_fingers_title">Vingers die worden gebruikt voor de gebaren</string>
+    <string name="carbon_gestures_right_title">Rechter gebaar</string>
+    <string name="carbon_gestures_left_title">Linker gebaar</string>
+    <string name="carbon_gestures_up_title">Gebaar omhoog</string>
+    <string name="carbon_gestures_down_title">Gebaar omlaag</string>
+    <string name="carbon_gesture_disabled">Uitgeschakeld</string>
     <string name="carbon_gesture_back">Terug</string>
+    <string name="carbon_gesture_home">Thuis</string>
+    <string name="carbon_gesture_recents">Recente</string>
+    <string name="carbon_gesture_power">Vermogen</string>
+    <string name="carbon_gesture_volume_down">Volume omlaag</string>
+    <string name="carbon_gesture_volume_up">Volume omhoog</string>
+    <string name="carbon_gesture_volume_mute">Volume dempen</string>
+    <string name="carbon_gesture_screenshot">Schermafdruk</string>
+    <string name="carbon_gesture_media_play_pause">Media afspelen/pauzeren</string>
+    <string name="carbon_gesture_media_skip">Media overslaan</string>
+    <string name="carbon_gesture_media_previous">Vorige media</string>
+    <string name="carbon_gesture_customapp">App opstarten</string>
+    <string name="carbon_gesture_launch">Start</string>
     <!-- Media art -->
     <!-- Custom carrier label and position -->
+    <string name="show_carrier_disabled">Uitgeschakeld</string>
     <!-- Screen off animation -->
+    <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Schaal</string>
     <!-- The volume key answer -->
     <!-- Lock screen visualizer -->
@@ -69,10 +106,16 @@
     <string name="theme_accent_picker_default">Standaard</string>
     <string name="button_manual_brightness">Helderheidsniveau</string>
     <!-- HW Keys customization -->
+    <string name="select_custom_app_title">Selecteer aangepaste app</string>
+    <string name="choose_action_title">Kies actie</string>
+    <string name="action_entry_default_action">Standaardinstellingen</string>
+    <string name="hardware_keys_single_tap_summary">Instellen van één-tik actie</string>
+    <string name="hardware_keys_long_press_summary">Instellen van lang ingedrukt houden actie</string>
     <!-- Active Edge -->
     <!-- Active Edge Actions -->
     <string name="action_flashlight">Zaklamp</string>
     <string name="action_notifications">Meldingen</string>
+    <string name="action_screenshot">Schermafdruk</string>
     <!-- Aggressive battery -->
     <!-- Face auto unlock -->
 </resources>

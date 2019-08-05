@@ -27,6 +27,9 @@
     <!-- Smart Pixels -->
     <!-- tap-to-sleep -->
     <!-- Global Actions -->
+    <string name="global_actions_restart">重新啟動</string>
+    <string name="global_actions_advanced_reboot_title">進階重新啓動</string>
+    <string name="global_actions_advanced_reboot_summary">在重啓選項中顯示恢復模式和開機載入器</string>
     <!-- Pin scramble -->
     <!-- SystemUI Tuner -->
     <!-- Volume rocker music control -->

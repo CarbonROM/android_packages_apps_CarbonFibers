@@ -28,12 +28,18 @@
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">CarbonROM 통계</string>
     <string name="preview_data_title">데이터 미리 보기</string>
+    <string name="anonymous_learn_more">더 알아보기</string>
     <!-- Anonymous Statistics - Preview -->
+    <string name="preview_version_title">버전</string>
+    <string name="preview_country_title">국가</string>
+    <string name="preview_carrier_title">통신사</string>
     <string name="stats_collection_title">통계 수집 활성화</string>
     <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smart Pixels</string>
     <string name="smart_pixels_summary">전력 소모를 줄이기 위해 픽셀을 끕니다.</string>
+    <string name="smart_pixels_on_power_save_title">절전 모드가 켜졌을 때 자동 활성화</string>
     <string name="smart_pixels_on_power_save_summary">절전 모드가 활성화 되었을 때 Smart Pixels를 사용합니다.</string>
+    <string name="smart_pixels_percent">비활성화 할 픽셀의 비율</string>
     <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">상태 표시줄을 두 번 두드려서 화면 끄기</string>
     <string name="double_tap_status_bar_sleep_summary">상태 표시줄을 두 번 두드려서 화면을 끕니다.</string>
@@ -57,8 +63,10 @@
     <string name="unlock_scramble_pin_layout_title">PIN 입력 시 자판 배열 뒤섞기</string>
     <string name="unlock_scramble_pin_layout_summary">PIN 입력 시에 자판의 배열을 임의로 섞습니다.</string>
     <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">상태 표시줄 아이콘</string>
     <string name="status_bar_tuner_summary">상태표시줄에 표시할 아이콘들과 설정을 편집합니다.</string>
     <string name="navbar_tuner_title">내비게이션 바 버튼</string>
+    <string name="navbar_tuner_summary">내비게이션 바의 레이아웃과 버튼을 편집합니다.</string>
     <string name="lock_screen_shortcuts_title">잠금 화면 바로가기</string>
     <string name="lock_screen_shortcuts_summary">잠금 화면 하단의 바로가기를 지정합니다.</string>
     <!-- Volume rocker music control -->
@@ -85,6 +93,12 @@
     <string name="carbon_gesture_home">홈</string>
     <string name="carbon_gesture_recents">최근 실행 목록</string>
     <string name="carbon_gesture_power">종료</string>
+    <string name="carbon_gesture_volume_down">음량 낮춤</string>
+    <string name="carbon_gesture_volume_up">음량 높임</string>
+    <string name="carbon_gesture_volume_mute">음소거</string>
+    <string name="carbon_gesture_screenshot">스크린샷</string>
+    <string name="carbon_gesture_media_play_pause">미디어 재생/일시 정지</string>
+    <string name="carbon_gesture_customapp">어플리케이션 실행</string>
     <!-- Media art -->
     <string name="media_art_title">앨범 커버 보이기</string>
     <string name="media_art_summary">잠금화면 배경에 앨범 커버를 보여줍니다.</string>
@@ -112,6 +126,7 @@
     <string name="vibration_on_charge_state_changed_title">케이블 연결 시 진동</string>
     <!-- Network traffic -->
     <!-- Toggle navigation bar -->
+    <string name="navigation_bar_enabled_title">내비게이션 바 활성화</string>
     <!-- AppOps -->
     <!-- Battery styles -->
     <string name="battery_style_title">배터리 아이콘 형식</string>
@@ -129,12 +144,14 @@
     <string name="battery_percent_inside">아이콘 안에</string>
     <!-- Themes -->
     <string name="theme_accent_picker_default">기본값</string>
+    <string name="button_manual_brightness">밝기 단계</string>
     <!-- HW Keys customization -->
     <string name="hardware_keys_category">내비게이션 바 버튼</string>
     <!-- Active Edge -->
     <!-- Active Edge Actions -->
     <string name="action_flashlight">손전등</string>
     <string name="action_notifications">알림</string>
+    <string name="action_screenshot">스크린샷</string>
     <string name="action_power_button">전원 버튼</string>
     <!-- Aggressive battery -->
     <string name="aggressive_battery_title">Aggressive Battery</string>
