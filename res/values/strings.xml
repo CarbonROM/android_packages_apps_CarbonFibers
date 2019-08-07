@@ -112,10 +112,6 @@
     <string name="block_on_secure_keyguard_title">Secure quick settings</string>
     <string name="block_on_secure_keyguard_summary">Prevent quick settings access when device is secured</string>
 
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Secure quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Immediately unlock on correct security entry</string>
-
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Hide apps from recents</string>
     <string name="hide_apps_from_recents_summary">Hide apps from appearing in recents</string>
@@ -330,5 +326,4 @@
     <!-- Lockscreen Weather -->
    <string name="weather_lockscreen_enabled_title">Lockscreen weather</string>
    <string name="weather_lockscreen_enabled_summary">Display weather on lockscreen</string>
-
 </resources>
