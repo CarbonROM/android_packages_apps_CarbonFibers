@@ -23,7 +23,7 @@
     <PreferenceCategory
       android:title="@string/sb_options">
 
-	<Preference
+	  <Preference
             android:key="status_bar_tuner"
             android:title="@string/status_bar_tuner_title"
             android:summary="@string/status_bar_tuner_summary">
@@ -31,6 +31,30 @@
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.StatusBarIconsTunerActivity" />
         </Preference>
+
+    <PreferenceCategory
+        android:key="battery_style_category"
+        android:title="@string/battery_style_category_title" >
+
+    <ListPreference
+        android:key="status_bar_battery_style"
+        android:title="@string/status_bar_battery_style_title"
+        android:summary="%s"
+        android:dialogTitle="@string/status_bar_battery_style_title"
+        android:entries="@array/status_bar_battery_style_entries"
+        android:entryValues="@array/status_bar_battery_style_values"
+        android:defaultValue="0" />
+
+    <ListPreference
+        android:key="status_bar_show_battery_percent"
+        android:title="@string/battery_percent_title"
+        android:dialogTitle="@string/battery_percent_title"
+        android:entries="@array/battery_percent_entries"
+        android:entryValues="@array/battery_percent_values"
+        android:defaultValue="0" />
+
+    </PreferenceCategory>
+
 
         <Preference
             android:key="status_bar_icons"
