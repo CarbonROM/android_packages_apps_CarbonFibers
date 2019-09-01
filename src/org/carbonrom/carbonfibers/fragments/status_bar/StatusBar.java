@@ -49,6 +49,15 @@ import java.util.List;
 public class StatusBar extends CustomSettingsPreferenceFragment implements Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "StatusBar";
     private ListPreference mQuickPulldown;
+    private ListPreference mBatteryPercent;
+    private ListPreference mBatteryStyle;
+
+    private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+    private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
+
+    private static final int BATTERY_STYLE_PORTRAIT = 0;
+    private static final int BATTERY_STYLE_TEXT = 2;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,6 +73,22 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements Prefe
         mQuickPulldown.setValue(String.valueOf(qpmode));
         mQuickPulldown.setSummary(mQuickPulldown.getEntry());
         mQuickPulldown.setOnPreferenceChangeListener(this);
+
+        int batterystyle = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
+        mBatteryStyle = (ListPreference) findPreference("status_bar_battery_style");
+        mBatteryStyle.setValue(String.valueOf(batterystyle));
+        mBatteryStyle.setSummary(mBatteryStyle.getEntry());
+        mBatteryStyle.setOnPreferenceChangeListener(this);
+
+        int batterypercent = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT);
+        mBatteryPercent = (ListPreference) findPreference("status_bar_show_battery_percent");
+        mBatteryPercent.setValue(String.valueOf(batterypercent));
+        mBatteryPercent.setSummary(mBatteryPercent.getEntry());
+        mBatteryPercent.setOnPreferenceChangeListener(this);
+
+        updateBatteryOptions(batterystyle);
     }
 
     @Override
@@ -78,10 +103,37 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements Prefe
                     UserHandle.USER_CURRENT);
             int index = mQuickPulldown.findIndexOfValue((String) newValue);
             mQuickPulldown.setSummary(
-                    mQuickPulldown.getEntries()[index]);
+            mQuickPulldown.getEntries()[index]);
             return true;
+        } else if (preference == mBatteryStyle) {
+            int batterystyle = Integer.parseInt((String) newValue);
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.STATUS_BAR_BATTERY_STYLE, batterystyle,
+                    UserHandle.USER_CURRENT);
+            int index = mBatteryStyle.findIndexOfValue((String) newValue);
+            mBatteryStyle.setSummary(
+            mBatteryStyle.getEntries()[index]);
+            updateBatteryOptions(batterystyle);
+          return true;
+        } else if (preference == mBatteryPercent) {
+          int batterypercent = Integer.parseInt((String) newValue);
+          Settings.System.putIntForUser(resolver,
+                  Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, batterypercent,
+                  UserHandle.USER_CURRENT);
+          int index = mBatteryPercent.findIndexOfValue((String) newValue);
+          mBatteryPercent.setSummary(
+          mBatteryPercent.getEntries()[index]);
+          return true;
         }
          return false;
+     }
+
+     private void updateBatteryOptions(int batterystyle) {
+        if (batterystyle == BATTERY_STYLE_TEXT) {
+          mBatteryPercent.setEnabled(false);
+        } else {
+          mBatteryPercent.setEnabled(true);
+        }
      }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
