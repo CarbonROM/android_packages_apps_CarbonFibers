@@ -21,6 +21,16 @@
     android:key="buttons_fragment"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:title="@string/buttons_software_category">
+
+        <com.android.settings.carbon.SecureSettingSwitchPreference
+            android:key="sysui_nav_bar_inverse"
+            android:title="@string/navigation_bar_invert_layout_title"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
     <com.android.settings.carbon.SystemSettingSwitchPreference
         android:key="advanced_reboot"
         android:title="@string/powermenu_advanced_reboot_title"
