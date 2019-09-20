@@ -35,12 +35,14 @@ import java.util.List;
 @SearchIndexable
 public class Buttons extends CustomSettingsPreferenceFragment implements Indexable {
     private static final String TAG = "Buttons";
+    private static final String INVERSE_NAVBAR = "sysui_nav_bar_inverse";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.buttons);
+        addCustomPreference(findPreference(INVERSE_NAVBAR), SECURE_TWO_STATE, STATE_OFF);
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
