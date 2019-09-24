@@ -15,6 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
 */
+
 package org.carbonrom.carbonfibers.fragments.buttons;
 
 import android.content.ContentResolver;
@@ -26,15 +27,16 @@ import android.os.UserHandle;
 import android.os.PowerManager;
 import android.os.IPowerManager;
 import android.os.ServiceManager;
-import android.support.v4.app.Fragment;
-import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.PreferenceFragmentCompat;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.support.v14.preference.SwitchPreference;
 import android.content.res.Resources;
+
+import androidx.fragment.app.Fragment;
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.SwitchPreference;
 
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
