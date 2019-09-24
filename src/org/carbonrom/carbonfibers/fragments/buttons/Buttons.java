@@ -22,12 +22,13 @@ import android.os.Bundle;
 import android.os.SystemProperties;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.widget.Toast;
+
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.ListPreference;
 
 import com.android.internal.util.cr.CrUtils;
 import com.android.settings.R;

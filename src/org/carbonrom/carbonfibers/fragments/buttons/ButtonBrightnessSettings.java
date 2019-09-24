@@ -23,8 +23,9 @@ import android.os.Bundle;
 import android.os.PowerManager;
 import android.provider.Settings;
 import android.provider.SearchIndexableResource;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceScreen;
+
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 import com.android.settings.carbon.CustomSeekBarPreference;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
