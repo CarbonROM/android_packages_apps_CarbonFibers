@@ -30,7 +30,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
-import com.android.internal.util.cr.CrUtils;
+// import com.android.internal.util.cr.CrUtils;
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -67,15 +67,15 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         PreferenceScreen prefSet = getPreferenceScreen();
         final PreferenceCategory keysCategory =	 
                 (PreferenceCategory) prefSet.findPreference(CATEGORY_KEYS);
-        if (!CrUtils.deviceSupportsFlashLight(getContext())) {
+//        if (!CrUtils.deviceSupportsFlashLight(getContext())) {
             Preference toRemove = (Preference) prefSet.findPreference(TORCH_POWER_BUTTON_GESTURE);
             if (toRemove != null) {
                 keysCategory.removePreference(toRemove);
-            }
-        } else {
-            mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
-            mTorchPowerButton.setOnPreferenceChangeListener(this);
-        }
+//            }
+//        } else {
+//            mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
+//            mTorchPowerButton.setOnPreferenceChangeListener(this);
+//        }
 
         if (!getResources().getBoolean(
                 com.android.internal.R.bool.config_button_brightness_support)) {

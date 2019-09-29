@@ -18,7 +18,7 @@
 
 package org.carbonrom.carbonfibers.fragments.buttons;
 
-import android.content.ContentResolver;
+/* import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -57,7 +57,6 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.util.cr.CrUtils;
 import com.android.internal.util.hwkeys.ActionConstants;
 import com.android.internal.util.hwkeys.ActionUtils;
 
@@ -222,4 +221,4 @@ public class ButtonsHWSettings extends ActionFragment implements OnPreferenceCha
                     return result;
                 }
             };
-}
+} */

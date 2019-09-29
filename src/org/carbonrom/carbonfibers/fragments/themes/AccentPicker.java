@@ -16,7 +16,7 @@
 
 package org.carbonrom.carbonfibers.fragments.themes;
 
-import android.app.ActivityManager;
+/* import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Fragment;
@@ -215,4 +215,4 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
             });
         }
     }
-}
+} */
