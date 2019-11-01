@@ -90,6 +90,12 @@
         android:fragment="com.android.settings.gestures.PowerMenuSettings"
         settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
 
+    <Preference
+        android:key="gesture_volume_skiptrack_summary"
+        android:title="@string/volume_skiptrack_screen_title"
+        android:fragment="org.carbonrom.carbonfibers.fragments.gestures.VolumeSkipTrackSettings"
+        settings:controller="org.carbonrom.carbonfibers.fragments.gestures.VolumeSkipTrackPreferenceController" />
+
 </PreferenceCategory>
 
 <PreferenceCategory
