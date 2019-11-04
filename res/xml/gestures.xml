@@ -103,6 +103,12 @@
     android:title="@string/tap_swipe_category"
     settings:allowDividerAbove="true">
 
+    <Preference
+        android:key="gesture_doubletap_lockscreen_summary"
+        android:title="@string/doubletap_lockscreen_screen_title"
+        android:fragment="org.carbonrom.carbonfibers.fragments.gestures.DoubleTapLockscreenSettings"
+        settings:controller="org.carbonrom.carbonfibers.fragments.gestures.DoubleTapLockscreenPreferenceController" />
+
 </PreferenceCategory>
 
 </PreferenceScreen>
