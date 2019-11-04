@@ -81,4 +81,9 @@
     <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
     <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
 
+    <!-- Lock screen double tap -->
+    <string name="doubletap_lockscreen_screen_title">Double tap to switch screen off</string>
+    <string name="doubletap_lockscreen_title">Double tap to sleep on lockscreen</string>
+    <string name="doubletap_lockscreen_summary">Double tap on lockscreen to turn screen off</string>
+
 </resources>
