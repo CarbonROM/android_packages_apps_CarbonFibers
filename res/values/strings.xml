@@ -228,4 +228,10 @@
     <string name="network_traffic_state_title">Show net activity in statusbar</string>
     <string name="network_traffic_state_summary">Display network activity in the quick settings statusbar</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold</string>
+
+    <!-- Lock screen double tap -->
+    <string name="doubletap_lockscreen_screen_title">Double tap to switch screen off</string>
+    <string name="doubletap_lockscreen_title">Double tap to sleep on lockscreen</string>
+    <string name="doubletap_lockscreen_summary">Double tap on lockscreen to turn screen off</string>
+
 </resources>
