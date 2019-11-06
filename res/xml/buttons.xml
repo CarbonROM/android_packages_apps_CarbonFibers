@@ -57,6 +57,12 @@
           android:summary="@string/volume_rocker_music_controls_summary"
           android:defaultValue="false" />
 
+        <SwitchPreference
+        android:key="swap_volume_keys_on_rotation"
+        android:title="@string/swap_volume_keys_on_rotation_title"
+        android:summary="@string/swap_volume_keys_on_rotation_summary"
+        android:defaultValue="false" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
