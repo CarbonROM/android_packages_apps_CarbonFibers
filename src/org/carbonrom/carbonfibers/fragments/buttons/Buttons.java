@@ -49,6 +49,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String INVERSE_NAVBAR = "sysui_nav_bar_inverse";
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
+    private static final String SWAP_VOLUME_KEYS_ON_ROTATION = "swap_volume_keys_on_rotation";
 
     private ListPreference mNavBarLayout;
     private ListPreference mTorchPowerButton;
@@ -63,6 +64,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         addPreferencesFromResource(R.xml.buttons);
         addCustomPreference(findPreference(INVERSE_NAVBAR), SECURE_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(SWAP_VOLUME_KEYS_ON_ROTATION), SYSTEM_TWO_STATE, STATE_OFF);
 
         mNavBarLayout = (ListPreference) findPreference(NAV_BAR_LAYOUT);
         mNavBarLayout.setOnPreferenceChangeListener(this);
