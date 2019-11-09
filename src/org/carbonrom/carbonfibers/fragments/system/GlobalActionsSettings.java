@@ -44,6 +44,7 @@ public class GlobalActionsSettings extends CustomSettingsPreferenceFragment impl
     private static final String GLOBAL_ACTIONS_SETTINGS = "global_actions_settings";
     private static final String GLOBAL_ACTIONS_FLASHLIGHT = "global_actions_flashlight";
     private static final String GLOBAL_ACTIONS_USERS = "global_actions_users";
+    private static final String GLOBAL_ACTIONS_EMERGENCY = "global_actions_emergency"
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class GlobalActionsSettings extends CustomSettingsPreferenceFragment impl
         addCustomPreference(findPreference(GLOBAL_ACTIONS_SETTINGS), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(GLOBAL_ACTIONS_FLASHLIGHT), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(GLOBAL_ACTIONS_USERS), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(GLOBAL_ACTIONS_EMERGENCY), SYSTEM_TWO_STATE, STATE_ON);
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

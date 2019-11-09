@@ -87,6 +87,7 @@
     <string name="global_actions_screenshot">Screenshot</string>
     <string name="global_actions_screenrecord">Screenrecord</string>
     <string name="global_actions_flashlight">Flashlight</string>
+    <string name="global_actions_emergency">Emergency Call</string>
     <string name="global_actions_advanced_reboot_title">Advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">Show recovery and bootloader restart options</string>
 
