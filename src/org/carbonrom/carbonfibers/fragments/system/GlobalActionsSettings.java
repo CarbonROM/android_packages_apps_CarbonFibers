@@ -43,6 +43,7 @@ public class GlobalActionsSettings extends CustomSettingsPreferenceFragment impl
     private static final String GLOBAL_ACTIONS_SETTINGS = "global_actions_settings";
     private static final String GLOBAL_ACTIONS_FLASHLIGHT = "global_actions_flashlight";
     private static final String GLOBAL_ACTIONS_USERS = "global_actions_users";
+    private static final String GLOBAL_ACTIONS_EMERGENCY = "global_actions_emergency";
     private static final String LOCKDOWN_IN_POWER_MENU = "lockdown_in_power_menu";
 
     @Override
@@ -59,6 +60,7 @@ public class GlobalActionsSettings extends CustomSettingsPreferenceFragment impl
         addCustomPreference(findPreference(GLOBAL_ACTIONS_SETTINGS), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(GLOBAL_ACTIONS_FLASHLIGHT), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(GLOBAL_ACTIONS_USERS), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(GLOBAL_ACTIONS_EMERGENCY), SYSTEM_TWO_STATE, STATE_ON);
         addCustomPreference(findPreference(LOCKDOWN_IN_POWER_MENU), SECURE_TWO_STATE, STATE_OFF);
     }
 
