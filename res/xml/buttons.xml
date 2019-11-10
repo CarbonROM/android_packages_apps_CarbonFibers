@@ -23,6 +23,15 @@
 
     <PreferenceCategory
         android:title="@string/buttons_software_category">
+
+        <ListPreference
+            android:key="nav_bar_layout"
+            android:title="@string/nav_bar_layout"
+            android:summary="%s"
+            android:persistent="false"
+            android:entries="@array/nav_bar_layouts"
+            android:entryValues="@array/nav_bar_layouts_values" />
+
     </PreferenceCategory>
 
     <com.android.settings.carbon.SystemSettingSwitchPreference
