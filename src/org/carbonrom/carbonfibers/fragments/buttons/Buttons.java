@@ -16,12 +16,15 @@
 
 package org.carbonrom.carbonfibers.fragments.buttons;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
 
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
+import androidx.preference.ListPreference;
 
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
@@ -33,16 +36,41 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class Buttons extends CustomSettingsPreferenceFragment implements Indexable {
+public class Buttons extends CustomSettingsPreferenceFragment implements Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "Buttons";
+    private static final String NAV_BAR_LAYOUT = "nav_bar_layout";
+    private static final String SYSUI_NAV_BAR = "sysui_nav_bar";
     private static final String INVERSE_NAVBAR = "sysui_nav_bar_inverse";
+
+    private ListPreference mNavBarLayout;
+    private ContentResolver mResolver;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        mResolver = getActivity().getContentResolver();
+
         addPreferencesFromResource(R.xml.buttons);
         addCustomPreference(findPreference(INVERSE_NAVBAR), SECURE_TWO_STATE, STATE_OFF);
+        mNavBarLayout = (ListPreference) findPreference(NAV_BAR_LAYOUT);
+        mNavBarLayout.setOnPreferenceChangeListener(this);
+        String navBarLayoutValue = Settings.Secure.getString(mResolver, SYSUI_NAV_BAR);
+        if (navBarLayoutValue != null) {
+            mNavBarLayout.setValue(navBarLayoutValue);
+        } else {
+            mNavBarLayout.setValueIndex(0);
+        }
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mNavBarLayout) {
+            Settings.Secure.putString(mResolver,
+                        SYSUI_NAV_BAR, (String) objValue);
+            return true;
+        }
+        return false;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
