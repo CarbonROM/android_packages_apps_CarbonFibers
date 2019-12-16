@@ -16,10 +16,23 @@
 
 package org.carbonrom.carbonfibers.fragments.status_bar;
 
+import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnCancelListener;
+import android.content.res.Resources;
+import android.database.ContentObserver;
+import android.os.UserHandle;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
+import android.util.Log;
+import android.view.View;
 
+import android.provider.Settings;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.ListPreference;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
 
@@ -33,15 +46,43 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class StatusBar extends CustomSettingsPreferenceFragment implements Indexable {
+public class StatusBar extends CustomSettingsPreferenceFragment implements Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "StatusBar";
+    private ListPreference mQuickPulldown;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.status_bar);
+
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        int qpmode = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
+        mQuickPulldown = (ListPreference) findPreference("status_bar_quick_qs_pulldown");
+        mQuickPulldown.setValue(String.valueOf(qpmode));
+        mQuickPulldown.setSummary(mQuickPulldown.getEntry());
+        mQuickPulldown.setOnPreferenceChangeListener(this);
     }
+
+    @Override
+     public boolean onPreferenceChange(Preference preference, Object newValue) {
+
+        ContentResolver resolver = getActivity().getContentResolver();
+
+         if (preference == mQuickPulldown) {
+            int value = Integer.parseInt((String) newValue);
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, value,
+                    UserHandle.USER_CURRENT);
+            int index = mQuickPulldown.findIndexOfValue((String) newValue);
+            mQuickPulldown.setSummary(
+                    mQuickPulldown.getEntries()[index]);
+            return true;
+        }
+         return false;
+     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
