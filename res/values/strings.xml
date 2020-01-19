@@ -204,4 +204,7 @@
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Display charger max current and voltage and battery temperature on lockscreen while charging</string>
 
+    <!-- Lock icon -->
+    <string name="lockscreen_lock_icon_title">Lock icon</string>
+    <string name="lockscreen_lock_icon_summary">Show current lock status icon on the lockscreen</string>
 </resources>
