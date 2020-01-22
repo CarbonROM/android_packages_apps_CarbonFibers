@@ -40,6 +40,12 @@
         android:summary="@string/show_fourg_icon_summary"
         android:defaultValue="false"/>
 
+    <Preference
+        android:key="traffic"
+        android:fragment="org.carbonrom.carbonfibers.fragments.status_bar.Traffic"
+        android:title="@string/traffic_title"
+        android:summary="@string/traffic_title_summary" />
+
 </PreferenceCategory>
 
 <PreferenceCategory
