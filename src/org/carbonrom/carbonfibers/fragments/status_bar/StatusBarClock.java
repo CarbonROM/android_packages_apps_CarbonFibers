@@ -141,6 +141,7 @@ public class StatusBarClock extends CustomSettingsPreferenceFragment implements 
             mClockDateFormat.setEnabled(false);
             mClockDatePosition.setEnabled(false);
         }
+      mClockDateFormat.setSummary(mClockDateFormat.getEntries()[index]);
     }
     @Override
      public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -226,6 +227,7 @@ public class StatusBarClock extends CustomSettingsPreferenceFragment implements 
                      Settings.Secure.putString(getActivity().getContentResolver(),
                          Settings.Secure.STATUSBAR_CLOCK_DATE_FORMAT, (String) newValue);
                  }
+              mClockDateFormat.setSummary(mClockDateFormat.getEntries()[index]);
              }
              return true;
          } else if (preference == mClockDatePosition) {
