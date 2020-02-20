@@ -56,6 +56,7 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
     private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
     private static final String KEY_BUTTON_BRIGHTNESS_SW = "button_brightness_sw";
     private static final String KEY_BACKLIGHT_TIMEOUT = "backlight_timeout";
+    private static final String KEY_NAVIGATION_BAR_ENABLED = "force_show_navbar";
 
     // category keys
     private static final String CATEGORY_HWKEY = "buttons_hardware_category";
@@ -63,6 +64,7 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
     private ListPreference mBacklightTimeout;
     private CustomSeekBarPreference mButtonBrightness;
     private SwitchPreference mButtonBrightness_sw;
+    private SwitchPreference mNavigationBar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -115,6 +117,18 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
             hwkeyCat.removePreference(mButtonBrightness);
             hwkeyCat.removePreference(mButtonBrightness_sw);
         }
+
+        final boolean defaultToNavigationBar = getResources().getBoolean(
+                com.android.internal.R.bool.config_showNavigationBar);
+        final boolean navigationBarEnabled = Settings.System.getIntForUser(
+                getActivity().getContentResolver(), Settings.System.FORCE_SHOW_NAVBAR,
+                defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
+
+        mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_ENABLED);
+        mNavigationBar.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.FORCE_SHOW_NAVBAR,
+                defaultToNavigationBar ? 1 : 0) == 1));
+        mNavigationBar.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -143,6 +157,12 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
             boolean value = (Boolean) newValue;
             Settings.System.putFloat(getActivity().getContentResolver(),
                     Settings.System.BUTTON_BRIGHTNESS, value ? 1.0f : -1.0f);
+            return true;
+        }
+        if (preference == mNavigationBar) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FORCE_SHOW_NAVBAR, value ? 1 : 0);
             return true;
         }
         return false;
