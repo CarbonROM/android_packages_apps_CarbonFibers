@@ -47,12 +47,14 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String NAV_BAR_LAYOUT = "nav_bar_layout";
     private static final String SYSUI_NAV_BAR = "sysui_nav_bar";
     private static final String INVERSE_NAVBAR = "sysui_nav_bar_inverse";
+    private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
     private static final String SWAP_VOLUME_KEYS_ON_ROTATION = "swap_volume_keys_on_rotation";
 
     private ListPreference mNavBarLayout;
     private ListPreference mTorchPowerButton;
+    private Preference mButtonBrightness;
     private ContentResolver mResolver;
 
     @Override
@@ -86,6 +88,15 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         } else {
             mTorchPowerButton = (ListPreference) findPreference(TORCH_POWER_BUTTON_GESTURE);
             mTorchPowerButton.setOnPreferenceChangeListener(this);
+        }
+
+        mButtonBrightness = (Preference) findPreference(KEY_BUTTON_BRIGHTNESS);
+        //if config_button_brightness_support is false, we need to remove mButtonBrightness from menu
+        if (!getResources().getBoolean(
+                com.android.internal.R.bool.config_button_brightness_support)) {
+            if (mButtonBrightness != null) {
+                keysCategory.removePreference(mButtonBrightness);
+            }
         }
     }
 
