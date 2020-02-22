@@ -48,6 +48,13 @@
             android:summary="@string/hardware_keys_summary"
             android:fragment="org.carbonrom.carbonfibers.fragments.buttons.HardwareKeys" />
 
+        <Preference
+            android:key="button_brightness"
+            android:title="@string/button_backlight_title"
+            android:summary="@string/button_backlight_summary"
+            android:persistent="false"
+            android:fragment="org.carbonrom.carbonfibers.fragments.buttons.ButtonBrightness" />
+
         <com.android.settings.carbon.SecureSettingListPreference
             android:key="torch_power_button_gesture"
             android:title="@string/torch_power_button_gesture_title"
