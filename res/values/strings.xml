@@ -140,6 +140,7 @@
     <!-- Qs brightness slider -->
     <string name="qs_brightness_slider_title">Brightness slider</string>
     <string name="qs_brightness_slider_summary">Show the brightness slider</string>
+    <string name="qs_brightness_position_bottom">Brightness slider on bottom</string>
 
     <!-- Qs auto-brightness icon -->
     <string name="qs_autobrightness_icon_title">Auto-brightness icon</string>
