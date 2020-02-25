@@ -50,6 +50,7 @@ import java.util.List;
 @SearchIndexable
 public class QSBrightness extends CustomSettingsPreferenceFragment implements Indexable {
     private static final String BRIGHTNESS_SLIDER = "qs_show_brightness";
+    private static final String BRIGHTNESS_POSITION = "qs_brightness_position_bottom";
     private static final String AUTO_BRIGHTNESS = "qs_show_brightness_icon";
 
     @Override
@@ -58,6 +59,7 @@ public class QSBrightness extends CustomSettingsPreferenceFragment implements In
 
         addPreferencesFromResource(R.xml.qsbrightness);
         addCustomPreference(findPreference(BRIGHTNESS_SLIDER), SECURE_TWO_STATE, STATE_ON);
+        addCustomPreference(findPreference(BRIGHTNESS_POSITION), SECURE_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(AUTO_BRIGHTNESS), SYSTEM_TWO_STATE, STATE_ON);
     }
 
