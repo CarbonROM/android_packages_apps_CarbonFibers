@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="system_category">Sistem</string>
+    <string name="status_bar_category">Status bar</string>
+    <string name="lock_screen_category">Layar kunci</string>
+    <string name="buttons_category">Tombol</string>
+    <string name="gestures_category">Gestures</string>
+    <string name="buttons_software_category">Tombol perangkat lunak</string>
+    <string name="buttons_hardware_category">Kontrol perangkat keras</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Bantu kami membantu Anda!</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">Statistik CarbonROM</string>
+    <string name="anonymous_statistics_summary">Bantu CarbonROM menjadi lebih baik dengan memilih pelaporan statistik anonim</string>
+    <string name="anonymous_statistics_warning_title">Tentang</string>
+    <string name="enable_reporting_title">Aktifkan pelaporan</string>
+    <string name="preview_data_title">Pratinjau data</string>
+    <string name="view_stats_title">Lihat Statistik</string>
+    <string name="anonymous_learn_more">Pelajari Selengkapnya</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">ID Unik</string>
+    <string name="preview_device_title">Perangkat</string>
+    <string name="preview_version_title">Versi</string>
+    <string name="preview_country_title">Negara</string>
+    <string name="preview_carrier_title">Penyedia</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Matikan pixel untuk mengurangi konsumsi daya</string>
+    <string name="smart_pixels_on_power_save_title">Aktifkan otomatis pada penghemat baterai</string>
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Ketuk dua jari pada bilah status untuk tidur</string>
+    <string name="double_tap_status_bar_sleep_summary">Ketuk bilah status dua kali untuk tidur</string>
+    <string name="double_tap_lock_sleep_title">Ketuk dua jari pada layar kunci untuk tidur</string>
+    <string name="double_tap_lock_sleep_summary">Ketuk layar kunci dua kali untuk tidur</string>
+    <!-- Global Actions -->
+    <string name="global_actions_power">Power</string>
+    <string name="global_actions_restart">Mulai ulang</string>
+    <string name="global_actions_airplane">Mode pesawat</string>
+    <string name="global_actions_settings">Pengaturan</string>
+    <string name="global_actions_lockdown">Kunci</string>
+    <string name="global_actions_users">Pengguna</string>
+    <string name="global_actions_screenshot">Tangkapan Layar</string>
+    <string name="global_actions_flashlight">Senter</string>
+    <!-- Pin scramble -->
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Benda pada bilah status</string>
+    <string name="navbar_tuner_summary">Ubah tombol dan susunan dari bilah navigasi</string>
+    <string name="lock_screen_shortcuts_title">Jalan pintas ke layar kunci</string>
+    <string name="lock_screen_shortcuts_summary">Kelola jalan pintas bawah ke layar kunci</string>
+    <!-- Volume rocker music control -->
+    <!-- Torch Power button gestures -->
+    <!-- Disable QS on lockscreen -->
+    <!-- Quick unlock -->
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Sembunyikan aplikasi dari terbaru</string>
+    <string name="hide_from_recents_add_app">Tambahkan aplikasi</string>
+    <string name="title_activity_carbon_recents_settings">Terkini</string>
+    <!-- CarbonGestures -->
+    <string name="carbon_gestures_summary">Menata isyarat global khusus</string>
+    <string name="carbon_gestures_fingers_title">Jari yang digunakan untuk isyarat</string>
+    <string name="carbon_gestures_right_title">Isyarat kanan</string>
+    <string name="carbon_gestures_left_title">Isyarat kiri</string>
+    <string name="carbon_gestures_up_title">Isyarat naik</string>
+    <string name="carbon_gestures_down_title">Isyarat turun</string>
+    <string name="carbon_gesture_disabled">Dinonaktifkan</string>
+    <string name="carbon_gesture_back">Kembali</string>
+    <string name="carbon_gesture_home">Beranda</string>
+    <string name="carbon_gesture_recents">Terbaru</string>
+    <string name="carbon_gesture_power">Power</string>
+    <string name="carbon_gesture_volume_down">Volume turun</string>
+    <string name="carbon_gesture_volume_up">Volume naik</string>
+    <string name="carbon_gesture_volume_mute">Volume bisu</string>
+    <string name="carbon_gesture_screenshot">Tangkapan Layar</string>
+    <string name="carbon_gesture_media_play_pause">Putar/Jeda media</string>
+    <string name="carbon_gesture_media_skip">Lewati media</string>
+    <string name="carbon_gesture_media_previous">Media sebelumnya</string>
+    <string name="carbon_gesture_customapp">Luncurkan Aplikasi</string>
+    <string name="carbon_gesture_launch">Luncurkan</string>
+    <!-- Media art -->
+    <!-- Custom carrier label and position -->
+    <string name="show_carrier_disabled">Dinonaktifkan</string>
+    <!-- Screen off animation -->
+    <string name="screen_off_animation_title">Animasi layar padam</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Skala</string>
+    <!-- The volume key answer -->
+    <!-- Lock screen visualizer -->
+    <!-- Status bar clock -->
+    <string name="status_bar_clock_hidden">Tersembunyi</string>
+    <!-- Charging options -->
+    <!-- Network traffic -->
+    <!-- Toggle navigation bar -->
+    <string name="navigation_bar_enabled_title">Aktifkan bar navigasi</string>
+    <!-- AppOps -->
+    <!-- Battery styles -->
+    <string name="battery_style_port">Tegak</string>
+    <string name="battery_style_circle">Lingkaran</string>
+    <string name="battery_style_dotted_circle">Lingkaran bertitik</string>
+    <string name="battery_style_text">Teks</string>
+    <string name="battery_style_hidden">Tersembunyi</string>
+    <!-- Battery percent -->
+    <string name="battery_percent_hidden">Tersembunyi</string>
+    <!-- Themes -->
+    <string name="theme_accent_picker_default">Standar</string>
+    <!-- HW Keys customization -->
+    <string name="hardware_keys_home_key_title">Tombol beranda</string>
+    <string name="hardware_keys_menu_key_title">Tombol menu</string>
+    <string name="hardware_keys_assist_key_title">Tombol Pencarian</string>
+    <string name="hardware_keys_appswitch_key_title">Tombol tinjauan</string>
+    <string name="hardware_keys_back_key_title">Tombol kembali</string>
+    <string name="hardware_keys_single_tap_summary">Atur aksi ketuk tunggal</string>
+    <string name="hardware_keys_long_press_summary">Atur aksi tekan lama</string>
+    <string name="hardware_keys_single_tap_title">Aksi ketuk tunggal</string>
+    <string name="hardware_keys_long_press_title">Aksi ketuk lama</string>
+    <!-- Active Edge -->
+    <!-- Active Edge Actions -->
+    <string name="action_flashlight">Senter</string>
+    <string name="action_notifications">Pemberitahuan</string>
+    <string name="action_screenshot">Tangkapan Layar</string>
+    <!-- Aggressive battery -->
+    <!-- Face auto unlock -->
+</resources>

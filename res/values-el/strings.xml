@@ -11,20 +11,22 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="system_category">Järjestelmä</string>
-    <string name="status_bar_category">Tilapalkki</string>
-    <string name="lock_screen_category">Lukitusnäyttö</string>
-    <string name="buttons_category">Painikkeet</string>
-    <string name="gestures_category">Eleet</string>
+    <string name="system_category">Σύστημα</string>
+    <string name="status_bar_category">Γραμμή κατάστασης</string>
+    <string name="lock_screen_category">Οθόνη κλειδώματος</string>
+    <string name="buttons_category">Κουμπιά</string>
+    <string name="gestures_category">Χειρονομίες</string>
     <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Βοηθήστε μας να σας βοηθήσουμε!</string>
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_warning_title">Σχετικά</string>
+    <string name="enable_reporting_title">Ενεργοποίηση αναφοράς</string>
+    <string name="preview_data_title">Προεπισκόπηση δεδομένων</string>
     <!-- Anonymous Statistics - Preview -->
     <!-- Smart Pixels -->
     <!-- tap-to-sleep -->
     <!-- Global Actions -->
-    <string name="global_actions_settings">Asetukset</string>
-    <string name="global_actions_flashlight">Taskulamppu</string>
     <!-- Pin scramble -->
     <!-- SystemUI Tuner -->
     <!-- Volume rocker music control -->
@@ -32,28 +34,36 @@
     <!-- Disable QS on lockscreen -->
     <!-- Quick unlock -->
     <!-- Hide Apps from Recents -->
+    <string name="hide_from_recents_add_app">Προσθήκη εφαρμογής</string>
+    <string name="title_activity_carbon_recents_settings">Πρόσφατα</string>
     <!-- CarbonGestures -->
+    <string name="carbon_gesture_disabled">Έχει απενεργοποιηθεί</string>
+    <string name="carbon_gesture_back">Πίσω</string>
+    <string name="carbon_gesture_home">Αρχική οθόνη</string>
+    <string name="carbon_gesture_recents">Πρόσφατα</string>
+    <string name="carbon_gesture_power">Ενέργεια</string>
+    <string name="carbon_gesture_screenshot">Στιγμιότυπο οθόνης</string>
+    <string name="carbon_gesture_customapp">Εκκίνηση εφαρμογής</string>
+    <string name="carbon_gesture_launch">Εκκίνηση</string>
     <!-- Media art -->
     <!-- Custom carrier label and position -->
+    <string name="show_carrier_disabled">Έχει απενεργοποιηθεί</string>
     <!-- Screen off animation -->
     <!-- The volume key answer -->
     <!-- Lock screen visualizer -->
     <!-- Status bar clock -->
-    <string name="status_bar_clock_show_seconds_title">Näytä sekunnit</string>
     <!-- Charging options -->
     <!-- Network traffic -->
     <!-- Toggle navigation bar -->
     <!-- AppOps -->
     <!-- Battery styles -->
-    <string name="battery_style_title">Akun kuvakkeen tyyli</string>
     <!-- Battery percent -->
     <!-- Themes -->
-    <string name="theme_accent_picker_default">Oletus</string>
     <!-- HW Keys customization -->
     <!-- Active Edge -->
     <!-- Active Edge Actions -->
-    <string name="action_flashlight">Taskulamppu</string>
-    <string name="action_notifications">Ilmoitukset</string>
+    <string name="action_notifications">Ειδοποιήσεις</string>
+    <string name="action_screenshot">Στιγμιότυπο οθόνης</string>
     <!-- Aggressive battery -->
     <!-- Face auto unlock -->
 </resources>
