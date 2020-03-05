@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="system_category">Sistem</string>
+    <string name="status_bar_category">Vrstica stanja</string>
+    <string name="lock_screen_category">Zaklenjen zaslon</string>
+    <string name="buttons_category">Gumbi</string>
+    <string name="gestures_category">Kretnje</string>
+    <string name="buttons_software_category">Programski gumbi</string>
+    <string name="buttons_hardware_category">Fizični gumbi</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Pomagajte nam pomagati vam!</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM statistika</string>
+    <string name="anonymous_statistics_summary">Pomagaj izboljšati CarbonROM z anonimnim pošiljanjem statistike</string>
+    <string name="anonymous_statistics_warning_title">Vizitka</string>
+    <string name="enable_reporting_title">Omogoči pošiljanje</string>
+    <string name="preview_data_title">Predogled podatkov</string>
+    <string name="view_stats_title">Poglej statistiko</string>
+    <string name="anonymous_learn_more">Več o tem</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Edinstven ID</string>
+    <string name="preview_device_title">Naprava</string>
+    <string name="preview_version_title">Različica</string>
+    <string name="preview_country_title">Država</string>
+    <string name="preview_carrier_title">Operater</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Izklopi piksle za zmanjšanje porabe baterije</string>
+    <string name="smart_pixels_on_power_save_title">Samodejni vklop ob varčevanju z baterijo</string>
+    <string name="smart_pixels_percent">Odstotek izklopljenih pikslov</string>
+    <string name="smart_pixels_shift">Prepreči vžiganje z menjavo pikslov vsakih</string>
+    <string name="smart_pixels_warning_text">Smart Pixels je oblika varčevanja z baterijo. Lahko pripelje do občutnega podaljšanja trajanja baterije, odvisno od odstotka izklopljenih pikslov. Za dobro uporabniško izkušnjo priporočamo izklop 75 odstotkov pikslov z menjavo vsakih 10 minut.</string>
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Skrij aplikacije iz nedavnih</string>
+    <string name="hide_from_recents_add_app">Dodaj aplikacijo</string>
+    <string name="title_activity_carbon_recents_settings">Nedavno</string>
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Dvakrat se dotaknite vrstice stanja za spanje</string>
+    <string name="double_tap_status_bar_sleep_summary">Za spanje se dvakrat dotaknite vrstice stanja</string>
+    <string name="double_tap_lock_sleep_title">Dvakrat se dotaknite zaklenjenega zaslona za spanje</string>
+    <string name="double_tap_lock_sleep_summary">Za spanje se dvakrat dotaknite zaklenjenega zaslona</string>
+    <!-- Global Actions -->
+    <string name="global_actions_title">Meni gumba za vklop</string>
+    <string name="global_actions_power">Izklopi</string>
+    <string name="global_actions_restart">Ponovni zagon</string>
+    <string name="global_actions_airplane">Letalski način</string>
+    <string name="global_actions_settings">Nastavitve</string>
+    <string name="global_actions_users">Uporabniki</string>
+    <string name="global_actions_screenshot">Posnetek zaslona</string>
+    <string name="global_actions_flashlight">Svetilka</string>
+    <!-- Pin scramble -->
+    <!-- Aggressive battery -->
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Ikone vrstice stanja</string>
+    <string name="lock_screen_shortcuts_title">Bližnjice zaklenjenega zaslona</string>
+    <string name="lock_screen_shortcuts_summary">Upravljanje bližnjic zaklenjenega zaslona</string>
+    <string-array name="nav_bar_layouts">
+        <item>Normalno</item>
+        <item>Compact</item>
+        <item>Left-leaning</item>
+        <item>Right-leaning</item>
+    </string-array>
+    <!-- Volume rocker music control -->
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Vklopite svetilko ko je zaslon izklopljen</string>
+    <string name="torch_power_button_gesture_none">Onemogočeno</string>
+    <string name="torch_power_button_gesture_dt_toast">Kretnja za preklop na fotoaparat je onemogočena</string>
+    <!-- QS brightness -->
+    <!-- Qs brightness slider -->
+    <!-- Qs auto-brightness icon -->
+    <!-- Status bar clock and date -->
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">Vrstica stanja</string>
+    <string name="clock_enabled">Omogočeno</string>
+    <string name="clock_disabled">Onemogočeno</string>
+    <string name="status_bar_clock_style_reset">Ponastavi barvo</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-urna ura je omogočena</string>
+    <string name="enable_clock_weekday">Dan v tednu</string>
+    <string name="enable_clock_weekday_summary">Okrajšava dneva v tednu pred uro</string>
+    <string name="dont_show">Ne pokaži</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_style">Slog datuma</string>
+    <string name="clock_date_format">Oblika datuma</string>
+    <string name="clock_date_string_edittext_title">Mora biti v obliki datuma npr. DD/MM/LL</string>
+    <string name="clock_date_string_edittext_summary">Vnesite obliko</string>
+    <string name="am_pm_clock_normal">Normalna pisava</string>
+    <string name="am_pm_clock_small">Majhna pisava</string>
+    <string name="am_pm_clock_none">Ne pokaži</string>
+    <string name="clock_date_display_none">Ne pokaži</string>
+    <string name="clock_date_display_small">Majhna pisava</string>
+    <string name="clock_date_display_normal">Normalna pisava</string>
+    <string name="clock_date_style_normal">Normalno</string>
+    <string name="clock_date_style_lowercase">Male črke</string>
+    <string name="clock_date_style_uppercase">Velike črke</string>
+    <string name="clock_date_right">Desno od časa</string>
+    <string name="clock_date_left">Levo od časa</string>
+    <string name="clock_date_position">Položaj datuma</string>
+    <!-- Quick QS pulldown -->
+    <string name="quick_pulldown_none">Onemogočeno</string>
+    <!-- StatusBar Icons -->
+    <!-- 4G icon -->
+    <!-- Show VoLTE icon on statusbar -->
+    <!-- Lockscreen battery info indicator  -->
+    <!-- Lock icon -->
+    <!-- Charging animation -->
+    <!-- Network traffic -->
+    <string name="network_traffic_autohide_threshold_title">Prag skrivanja omrežne aktivnosti (KB/s)</string>
+</resources>

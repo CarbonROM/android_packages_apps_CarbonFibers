@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
+    <string name="system_category">Systém</string>
+    <string name="status_bar_category">Stavová lišta</string>
+    <string name="lock_screen_category">Zamykací obrazovka</string>
+    <string name="buttons_category">Tlačítka</string>
+    <string name="gestures_category">Gesta</string>
+    <string name="misc_category">Různé</string>
+    <string name="privacy_category">Soukromí</string>
+    <string name="global_actions_category">Menu napájení</string>
+    <string name="power_save_category">Šetření energie</string>
+    <string name="buttons_software_category">Softwarová tlačítka</string>
+    <string name="buttons_hardware_category">Hardwarová tlačítka</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Pomozte nám, pomůžem vám!</string>
+    <string name="carbonfibers_dialog_message">Bohužel nejsme čaroději!\n\nPokud zjistíte chybu, otevřete hlášení na Jira nebo kontaktujte vývojáře Carbon s následujícími informacemi:\n\n1. Blame kwoktopus\n2. Logcat a/nebo last_kmsg\n3. Kernel a použité módy\n4. Různe informace\n\nPokud neoznámíte něco s výše uvedenými informacemi, neočekávejte, že bude problém řešen.</string>
+    <string name="carbonfibers_dialog_toast">Přečtěte si vše!</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">Statistiky CarbonROM</string>
+    <string name="anonymous_statistics_summary">Pomozte nám vylepšit CarbonROM tím, že se rozhodnete pro anonymní zasílání statistik</string>
+    <string name="anonymous_statistics_warning_title">Informace</string>
+    <string name="anonymous_statistics_warning">Povolení CarbonROM statistik povolí odesílání neosobních dat vývojářům CarbonROM pro sledování jedinečných instalací. Odeslaná data obsahují jednoznačný identifikátor, který neohrožuje vaše soukromí ani data. Data jsou odeslána při každém restartu.\n\nPro zobrazení příkladu odesílaných dat klikněte na Náhled.</string>
+    <string name="enable_reporting_title">Povolit hlášení</string>
+    <string name="preview_data_title">Náhled dat</string>
+    <string name="view_stats_title">Zobrazit statistiky</string>
+    <string name="anonymous_learn_more">Další informace</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Jedinečné ID</string>
+    <string name="preview_device_title">Zařízení</string>
+    <string name="preview_version_title">Verze</string>
+    <string name="preview_country_title">Země</string>
+    <string name="preview_carrier_title">Operátor</string>
+    <string name="stats_collection_title">Povolit sběr statistik</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Chcete-li snížit spotřebu energie, vypněte pixely</string>
+    <string name="smart_pixels_on_power_save_title">Automatické zapnutí při spořiči baterie</string>
+    <string name="smart_pixels_on_power_save_summary">Použít Smart Pixels, pokud je aktivován spořič baterie</string>
+    <string name="smart_pixels_percent">Procenta pixelů k vypnutí</string>
+    <string name="smart_pixels_shift">Zabraňuje vypalování zařízení OLED častým přepínáním pixelů</string>
+    <string name="smart_pixels_warning_text">Smart Pixels je funkce šetřící energii. V závislosti na na tom, kolik pixelů se rozhodnete vypnout, může dojít k výraznému zlepšení životnosti baterie. Pro dobrou efektivitu doporučujeme nastavit počet vypnutých pixelů na 75 procent.</string>
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Skrýt aplikace z nedávných</string>
+    <string name="hide_apps_from_recents_summary">Skrýt aplikace z nedávných</string>
+    <string name="hide_from_recents_add_app">Přidat aplikaci</string>
+    <string name="title_activity_carbon_recents_settings">Nedávné</string>
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Dvojím poklepáním na stavovou lištu uspat zařízení</string>
+    <string name="double_tap_status_bar_sleep_summary">Klepnutím dvakrát na stavovou lištu uspíte zařízení</string>
+    <string name="double_tap_lock_sleep_title">Dvojím poklepáním na zamykací obrazovku uspat zařízení</string>
+    <string name="double_tap_lock_sleep_summary">Klepnutím dvakrát na zamykací obrazovku uspíte zařízení</string>
+    <!-- Global Actions -->
+    <string name="global_actions_title">Menu napájení</string>
+    <string name="global_actions_summary">Přidat možnosti do menu napájení</string>
+    <string name="global_actions_power">Napájení</string>
+    <string name="global_actions_restart">Restart</string>
+    <string name="global_actions_airplane">Letadlo</string>
+    <string name="global_actions_settings">Nastavení</string>
+    <string name="global_actions_soundpanel">Panel zvuků</string>
+    <string name="global_actions_users">Uživatelé</string>
+    <string name="global_actions_screenshot">Snímek obrazovky</string>
+    <string name="global_actions_screenrecord">Záznam obrazovky</string>
+    <string name="global_actions_flashlight">Svítilna</string>
+    <string name="global_actions_advanced_reboot_title">Rozšířený restart</string>
+    <string name="global_actions_advanced_reboot_summary">Zobrazení možností restartování do recovery a bootloaderu</string>
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Přeházet klávesnici PINu</string>
+    <string name="unlock_scramble_pin_layout_summary">Přeházet rozložení klávesnice zadávání PINu</string>
+    <!-- Aggressive battery -->
+    <string name="aggressive_battery_title">Agresivní baterie</string>
+    <string name="aggressive_battery_summary">Přísnější úspory baterie</string>
+    <string name="aggressive_battery_warning_text">Jedná se o funkce pro úsporu energie. Mohou zasahovat do služeb, které mají běžet v nečinnosti, jako jsou aplikace navigace. Aby tyto aplikace nebyly ovlivněny, můžete je povolit v nastavení baterie.</string>
+    <string name="aggressive_idle_title">Agresivní nečinnost</string>
+    <string name="aggressive_idle_summary">Zařízení bude více v nečinnosti a nebude se často probouzet</string>
+    <string name="aggressive_standby_title">Agresivní pohotovostní režim</string>
+    <string name="aggressive_standby_summary">Omezí používání aplikací na pozadí</string>
+    <string name="aggressive_battery_saver_title">Automatické zapnutí při spořiči baterie </string>
+    <string name="aggressive_battery_saver_summary">Při použití spořiče baterie automaticky zapnout funkci Agresivní baterie</string>
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Položky stavové lišty</string>
+    <string name="status_bar_tuner_summary">Upravit ikony a možnosti stavové lišty</string>
+    <string name="lock_screen_shortcuts_title">Zkratky zamykací obrazovky</string>
+    <string name="lock_screen_shortcuts_summary">Správa dolních zkratek zamykací obrazovky</string>
+    <string-array name="nav_bar_layouts">
+        <item>Normální</item>
+        <item>Compact</item>
+        <item>Left-leaning</item>
+        <item>Right-leaning</item>
+    </string-array>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Ovládání přehrávání při vypnuté obrazovce</string>
+    <string name="volume_rocker_music_controls_summary">Podržte tlačítka hlasitosti pro vyhledávání zvukových stop</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Přepnutí svítilny při vypnuté obrazovce</string>
+    <string name="torch_power_button_gesture_none">Zakázáno</string>
+    <string name="torch_power_button_gesture_dt">Dvojím stisknutím tlačítka napájení</string>
+    <string name="torch_power_button_gesture_dt_toast">Spuštění fotoaparátu pomocí gesta je nyní zakázáno</string>
+    <string name="torch_power_button_gesture_lp">Přidržením tlačítka napájení</string>
+    <!-- QS brightness -->
+    <!-- Qs brightness slider -->
+    <!-- Qs auto-brightness icon -->
+    <!-- Status bar clock and date -->
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">Stavová lišta</string>
+    <string name="clock_enabled">Povoleno</string>
+    <string name="clock_disabled">Zakázáno</string>
+    <string name="status_bar_clock_style_reset">Obnovit barvu</string>
+    <string name="status_bar_am_pm_title">dop./odp</string>
+    <string name="status_bar_am_pm_info">24-hodinový formát je povolen</string>
+    <string name="enable_clock_weekday">Den v týdnu</string>
+    <string name="enable_clock_weekday_summary">Zobrazit zkratku dne v týdnu před hodinami</string>
+    <string name="dont_show">Nezobrazovat</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_style">Styl data</string>
+    <string name="clock_date_format">Formát data</string>
+    <string name="clock_date_string_edittext_title">Musí být ve formátu např. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Vložte textový řetězec</string>
+    <string name="am_pm_clock_normal">Normální velikost písma</string>
+    <string name="am_pm_clock_small">Malá velikost písma</string>
+    <string name="am_pm_clock_none">Nezobrazovat</string>
+    <string name="clock_date_display_none">Nezobrazovat</string>
+    <string name="clock_date_display_small">Malá velikost písma</string>
+    <string name="clock_date_display_normal">Normální velikost písma</string>
+    <string name="clock_date_style_normal">Normální</string>
+    <string name="clock_date_style_lowercase">Malá písmena</string>
+    <string name="clock_date_style_uppercase">Velká písmena</string>
+    <string name="clock_date_right">Vpravo od času</string>
+    <string name="clock_date_left">Vlevo od času</string>
+    <string name="clock_date_position">Pozice data</string>
+    <!-- Quick QS pulldown -->
+    <string name="quick_pulldown_none">Zakázáno</string>
+    <!-- StatusBar Icons -->
+    <!-- 4G icon -->
+    <!-- Show VoLTE icon on statusbar -->
+    <!-- Lockscreen battery info indicator  -->
+    <!-- Lock icon -->
+    <!-- Charging animation -->
+    <!-- Network traffic -->
+    <string name="network_traffic_autohide_threshold_title">Limit pro automatické skrytí síťové aktivity (KB/s)</string>
+</resources>

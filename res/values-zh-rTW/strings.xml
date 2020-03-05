@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="system_category">系統</string>
+    <string name="status_bar_category">狀態欄</string>
+    <string name="lock_screen_category">鎖螢螢幕</string>
+    <string name="buttons_category">按鈕</string>
+    <string name="gestures_category">手勢操作</string>
+    <string name="buttons_software_category">虛擬按鍵</string>
+    <string name="buttons_hardware_category">實體按鍵</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">幫助我們提供更好</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM 統計</string>
+    <string name="anonymous_statistics_summary">發送匿名的統計報告以幫助 CarbonROM 做得更好</string>
+    <string name="anonymous_statistics_warning_title">關於</string>
+    <string name="enable_reporting_title">啓用回報</string>
+    <string name="preview_data_title">預覽資訊</string>
+    <string name="view_stats_title">檢視資訊</string>
+    <string name="anonymous_learn_more">了解詳情</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">識別碼</string>
+    <string name="preview_device_title">裝置</string>
+    <string name="preview_version_title">版本</string>
+    <string name="preview_country_title">國家</string>
+    <string name="preview_carrier_title">電信業者</string>
+    <!-- Smart Pixels -->
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">從最近應用程式隱藏應用</string>
+    <string name="hide_from_recents_add_app">新增應用程式</string>
+    <string name="title_activity_carbon_recents_settings">最近應用程式</string>
+    <!-- tap-to-sleep -->
+    <!-- Global Actions -->
+    <string name="global_actions_power">電源</string>
+    <string name="global_actions_restart">重新啟動</string>
+    <string name="global_actions_airplane">飛行模式</string>
+    <string name="global_actions_settings">設置</string>
+    <string name="global_actions_users">使用者</string>
+    <string name="global_actions_screenshot">擷取螢幕畫面</string>
+    <string name="global_actions_flashlight">手電筒</string>
+    <string name="global_actions_advanced_reboot_title">進階重新啓動</string>
+    <string name="global_actions_advanced_reboot_summary">在重啓選項中顯示恢復模式和開機載入器</string>
+    <!-- Pin scramble -->
+    <!-- Aggressive battery -->
+    <!-- SystemUI Tuner -->
+    <!-- Volume rocker music control -->
+    <!-- Torch Power button gestures -->
+    <!-- QS brightness -->
+    <!-- Qs brightness slider -->
+    <!-- Qs auto-brightness icon -->
+    <!-- Status bar clock and date -->
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">狀態欄</string>
+    <string name="clock_enabled">已啟用</string>
+    <string name="clock_disabled">已停用</string>
+    <string name="status_bar_clock_style_reset">重設顏色</string>
+    <string name="status_bar_am_pm_info">24 小時制已啟用</string>
+    <string name="enable_clock_weekday">星期</string>
+    <string name="enable_clock_weekday_summary">在時間前顯示星期的簡寫</string>
+    <string name="clock_date_display">日期</string>
+    <string name="clock_date_style">日期樣式</string>
+    <string name="clock_date_format">日期格式</string>
+    <!-- Quick QS pulldown -->
+    <string name="quick_pulldown_none">已停用</string>
+    <!-- StatusBar Icons -->
+    <!-- 4G icon -->
+    <!-- Show VoLTE icon on statusbar -->
+    <!-- Lockscreen battery info indicator  -->
+    <!-- Lock icon -->
+    <!-- Charging animation -->
+    <!-- Network traffic -->
+</resources>

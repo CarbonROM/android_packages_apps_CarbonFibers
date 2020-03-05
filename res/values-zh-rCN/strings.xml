@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
+    <string name="system_category">系统</string>
+    <string name="status_bar_category">状态栏</string>
+    <string name="lock_screen_category">锁屏</string>
+    <string name="buttons_category">按钮</string>
+    <string name="gestures_category">手势</string>
+    <string name="misc_category">其它</string>
+    <string name="privacy_category">隐私</string>
+    <string name="global_actions_category">电源菜单</string>
+    <string name="power_save_category">节能</string>
+    <string name="buttons_software_category">软件按钮</string>
+    <string name="buttons_hardware_category">硬件按钮</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">取得支持</string>
+    <string name="carbonfibers_dialog_message">Carbon 可能并不完美。\n\n如果您发现了错误，请在 Jira 上提出问题，或者通过以下步骤联系 Carbon 的开发者。\n\n1. 找到 kwoktopus\n2. 附上使用 Logcat last_kmsg 抓取的日志\n3. 描述您正在使用的内核和模组\n4. 提交其它有用的信息\n\n如果您没有按照上述步骤反馈问题，恕不解决问题。</string>
+    <string name="carbonfibers_dialog_toast">请仔细阅读！</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM 统计</string>
+    <string name="anonymous_statistics_summary">匿名统计报告使 CarbonROM 更好</string>
+    <string name="anonymous_statistics_warning_title">关于</string>
+    <string name="anonymous_statistics_warning">一旦您加入 CarbonROM 统计信息收集计划，我们将收集您的非隐私数据来统计 CarbonROM 的安装情况。我们收集的数据使用唯一识别吗，这将使您的私人信息得到保障。收集的数据将会在每次开机时提交。\n\n点击预览数据按钮来查看要发送信息的示例。</string>
+    <string name="enable_reporting_title">启用报告</string>
+    <string name="preview_data_title">预览数据</string>
+    <string name="view_stats_title">查看统计信息</string>
+    <string name="anonymous_learn_more">了解更多</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">识别码</string>
+    <string name="preview_device_title">设备</string>
+    <string name="preview_version_title">版本</string>
+    <string name="preview_country_title">国家/地区</string>
+    <string name="preview_carrier_title">运营商</string>
+    <string name="stats_collection_title">允许收集统计信息</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">智能像素</string>
+    <string name="smart_pixels_summary">关闭像素以降低功耗</string>
+    <string name="smart_pixels_on_power_save_title">自动启用省电模式</string>
+    <string name="smart_pixels_on_power_save_summary">智能像素将随省电模式开启</string>
+    <string name="smart_pixels_percent">要禁用的像素百分比</string>
+    <string name="smart_pixels_shift">通过每次移动像素来防止老化</string>
+    <string name="smart_pixels_warning_text">智能像素是一种省电功能。 根据您决定关闭的像素数量，您可以看到电池寿命的显着改善。 为了获得良好的用户体验，我们建议将禁用像素数量设置为75％，同时每10分钟移动一次。</string>
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">隐藏最近的应用程序</string>
+    <string name="hide_apps_from_recents_summary">在最近任务中隐藏应用</string>
+    <string name="hide_from_recents_add_app">添加应用程序</string>
+    <string name="title_activity_carbon_recents_settings">最近任务</string>
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">双击状态栏休眠</string>
+    <string name="double_tap_status_bar_sleep_summary">点击状态栏两次休眠</string>
+    <string name="double_tap_lock_sleep_title">在锁定屏幕上双击以休眠</string>
+    <string name="double_tap_lock_sleep_summary">在锁定屏幕上点按两次以进入休眠</string>
+    <!-- Global Actions -->
+    <string name="global_actions_title">电源菜单</string>
+    <string name="global_actions_summary">修改电源菜单中的项目</string>
+    <string name="global_actions_power">电源</string>
+    <string name="global_actions_restart">重新启动</string>
+    <string name="global_actions_airplane">飞行模式</string>
+    <string name="global_actions_settings">设置</string>
+    <string name="global_actions_soundpanel">音量调整面板</string>
+    <string name="global_actions_users">用户</string>
+    <string name="global_actions_screenshot">屏幕截图</string>
+    <string name="global_actions_screenrecord">屏幕录制</string>
+    <string name="global_actions_flashlight">手电筒</string>
+    <string name="global_actions_advanced_reboot_title">高级重启</string>
+    <string name="global_actions_advanced_reboot_summary">将恢复模式和引导程序加入重启选项</string>
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">打乱 PIN 键盘按钮的顺序</string>
+    <string name="unlock_scramble_pin_layout_summary">乱序pin键盘布局</string>
+    <!-- Aggressive battery -->
+    <string name="aggressive_battery_title">高级省电设置</string>
+    <string name="aggressive_battery_summary">更激进地省电</string>
+    <string name="aggressive_battery_warning_text">这些选项都能帮助您节约电量。不过它们可能会影响在待机时运行的应用（例如导航应用）。将它们加入白名单来使它们不受影响。</string>
+    <string name="aggressive_idle_title">休眠优化</string>
+    <string name="aggressive_idle_summary">使设备更快进入休眠并减少唤醒次数</string>
+    <string name="aggressive_standby_title">待机优化</string>
+    <string name="aggressive_standby_summary">限制后台应用活动</string>
+    <string name="aggressive_battery_saver_title">随省电模式启用</string>
+    <string name="aggressive_battery_saver_summary">打开省电模式时自动启用高级省电设置</string>
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">状态栏图标</string>
+    <string name="status_bar_tuner_summary">选择要显示在状态栏上的图标</string>
+    <string name="lock_screen_shortcuts_title">锁定屏幕快捷方式</string>
+    <string name="lock_screen_shortcuts_summary">管理锁定屏幕底部快捷键</string>
+    <string-array name="nav_bar_layouts">
+        <item>正常</item>
+        <item>Compact</item>
+        <item>Left-leaning</item>
+        <item>Right-leaning</item>
+    </string-array>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">锁屏播放控制</string>
+    <string name="volume_rocker_music_controls_summary">按住音量键来切换音乐</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">关闭屏幕时切换手电筒</string>
+    <string name="torch_power_button_gesture_none">已停用</string>
+    <string name="torch_power_button_gesture_dt">双击电源按钮</string>
+    <string name="torch_power_button_gesture_dt_toast">已禁用跳转到相机的手势</string>
+    <string name="torch_power_button_gesture_lp">按住电源按钮</string>
+    <!-- QS brightness -->
+    <!-- Qs brightness slider -->
+    <!-- Qs auto-brightness icon -->
+    <!-- Status bar clock and date -->
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">状态栏</string>
+    <string name="clock_enabled">已启用</string>
+    <string name="clock_disabled">已停用</string>
+    <string name="status_bar_clock_style_reset">重置颜色</string>
+    <string name="status_bar_am_pm_title">上午/下午</string>
+    <string name="status_bar_am_pm_info">24 小时制时钟已启用</string>
+    <string name="enable_clock_weekday">星期</string>
+    <string name="enable_clock_weekday_summary">缩写时间前的星期名</string>
+    <string name="dont_show">不显示</string>
+    <string name="clock_date_display">日期</string>
+    <string name="clock_date_style">日期样式</string>
+    <string name="clock_date_format">日期格式</string>
+    <string name="clock_date_string_edittext_title">日期格式必须为MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">输入字符串</string>
+    <string name="am_pm_clock_normal">正常字体大小</string>
+    <string name="am_pm_clock_small">小字体</string>
+    <string name="am_pm_clock_none">不显示</string>
+    <string name="clock_date_display_none">不显示</string>
+    <string name="clock_date_display_small">小字体</string>
+    <string name="clock_date_display_normal">正常字体大小</string>
+    <string name="clock_date_style_normal">正常</string>
+    <string name="clock_date_style_lowercase">小写字母</string>
+    <string name="clock_date_style_uppercase">大写字母</string>
+    <string name="clock_date_right">时间的右边</string>
+    <string name="clock_date_left">时间的左边</string>
+    <string name="clock_date_position">日期位置</string>
+    <!-- Quick QS pulldown -->
+    <string name="quick_pulldown_none">关闭</string>
+    <!-- StatusBar Icons -->
+    <!-- 4G icon -->
+    <!-- Show VoLTE icon on statusbar -->
+    <!-- Lockscreen battery info indicator  -->
+    <!-- Lock icon -->
+    <!-- Charging animation -->
+    <!-- Network traffic -->
+    <string name="network_traffic_autohide_threshold_title">无活动时自动隐藏阈值（KB / s）</string>
+</resources>

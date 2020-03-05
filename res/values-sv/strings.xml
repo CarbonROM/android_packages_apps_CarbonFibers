@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="system_category">System</string>
+    <string name="status_bar_category">Statusfält</string>
+    <string name="lock_screen_category">Låsskärm</string>
+    <string name="buttons_category">Knappar</string>
+    <string name="gestures_category">Gester</string>
+    <string name="buttons_software_category">Mjukvaruknappar</string>
+    <string name="buttons_hardware_category">Hårdvaruknappar</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Hjälp oss hjälp dig!</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM-statistik</string>
+    <string name="anonymous_statistics_summary">Hjälp till att göra CarbonROM bättre genom att välja anonym statistik-rapportering</string>
+    <string name="anonymous_statistics_warning_title">Om</string>
+    <string name="enable_reporting_title">Aktivera rapportering</string>
+    <string name="preview_data_title">Förhandsgranska data</string>
+    <string name="view_stats_title">Visa statistik</string>
+    <string name="anonymous_learn_more">Ta reda på mer</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Unikt ID</string>
+    <string name="preview_device_title">Enhet</string>
+    <string name="preview_version_title">Version</string>
+    <string name="preview_country_title">Land</string>
+    <string name="preview_carrier_title">Operatör</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smarta Pixlar</string>
+    <string name="smart_pixels_percent">Procent av pixlar att inaktivera</string>
+    <string name="smart_pixels_shift">Förhindra inbränning av skiftande pixlar var</string>
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Göm appar från senaste</string>
+    <string name="hide_from_recents_add_app">Lägg till app</string>
+    <string name="title_activity_carbon_recents_settings">Senaste</string>
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Dubbeltryck på statusfältet för att sova</string>
+    <string name="double_tap_status_bar_sleep_summary">Knacka på statusfältet två gånger för att sova</string>
+    <!-- Global Actions -->
+    <string name="global_actions_title">Ström-meny</string>
+    <string name="global_actions_power">Ström</string>
+    <string name="global_actions_restart">Starta om</string>
+    <string name="global_actions_airplane">Flygplan</string>
+    <string name="global_actions_settings">Inställningar</string>
+    <string name="global_actions_users">Användare</string>
+    <string name="global_actions_screenshot">Skärmdump</string>
+    <string name="global_actions_flashlight">Ficklampa</string>
+    <!-- Pin scramble -->
+    <!-- Aggressive battery -->
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Statusfält-ikoner</string>
+    <string name="lock_screen_shortcuts_title">Låsskärmsgenvägar</string>
+    <string-array name="nav_bar_layouts">
+        <item>Normal</item>
+        <item>Compact</item>
+        <item>Left-leaning</item>
+        <item>Right-leaning</item>
+    </string-array>
+    <!-- Volume rocker music control -->
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_none">Inaktiverad</string>
+    <!-- QS brightness -->
+    <!-- Qs brightness slider -->
+    <!-- Qs auto-brightness icon -->
+    <!-- Status bar clock and date -->
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">Statusfält</string>
+    <string name="clock_enabled">Aktiverad</string>
+    <string name="clock_disabled">Avstängd</string>
+    <string name="status_bar_clock_style_reset">Återställ färg</string>
+    <string name="status_bar_am_pm_title">FM/EM</string>
+    <string name="status_bar_am_pm_info">24-timmarsklocka är aktiverad</string>
+    <string name="enable_clock_weekday">Veckodag</string>
+    <string name="dont_show">Visa inte</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_style">Datumstil</string>
+    <string name="clock_date_format">Datumformat</string>
+    <string name="clock_date_string_edittext_title">Måste vara i DatumFormatet t.ex MM/dd/åå</string>
+    <string name="clock_date_string_edittext_summary">Fyll i sträng</string>
+    <string name="am_pm_clock_none">Visa inte</string>
+    <string name="clock_date_display_none">Visa inte</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Gemener</string>
+    <string name="clock_date_style_uppercase">Versaler</string>
+    <string name="clock_date_right">Höger om klockan</string>
+    <string name="clock_date_left">Vänster om klockan</string>
+    <!-- Quick QS pulldown -->
+    <string name="quick_pulldown_none">Avstängd</string>
+    <!-- StatusBar Icons -->
+    <!-- 4G icon -->
+    <!-- Show VoLTE icon on statusbar -->
+    <!-- Lockscreen battery info indicator  -->
+    <!-- Lock icon -->
+    <!-- Charging animation -->
+    <!-- Network traffic -->
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="system_category">Sistema</string>
+    <string name="status_bar_category">Barra de estado</string>
+    <string name="lock_screen_category">Ecrã de bloqueio</string>
+    <string name="buttons_category">Botões</string>
+    <string name="gestures_category">Gestos</string>
+    <string name="buttons_software_category">Botões virtuais</string>
+    <string name="buttons_hardware_category">Botões físicos</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Ajude-nos a ajudá-lo!</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">Estatísticas do CarbonROM</string>
+    <string name="anonymous_statistics_warning_title">Sobre</string>
+    <string name="preview_data_title">Pré-visualizar dados</string>
+    <string name="view_stats_title">Ver estatísticas</string>
+    <string name="anonymous_learn_more">Saber mais</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">ID único</string>
+    <string name="preview_device_title">Dispositivo</string>
+    <string name="preview_version_title">Versão</string>
+    <string name="preview_country_title">País</string>
+    <string name="preview_carrier_title">Operador</string>
+    <!-- Smart Pixels -->
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Esconder aplicações dos recentes</string>
+    <string name="hide_from_recents_add_app">Adicionar aplicação</string>
+    <string name="title_activity_carbon_recents_settings">Recentes</string>
+    <!-- tap-to-sleep -->
+    <!-- Global Actions -->
+    <string name="global_actions_restart">Reiniciar</string>
+    <string name="global_actions_airplane">Avião</string>
+    <string name="global_actions_settings">Definições</string>
+    <string name="global_actions_users">Utilizadores</string>
+    <string name="global_actions_screenshot">Captura de ecrã</string>
+    <string name="global_actions_flashlight">Lanterna</string>
+    <!-- Pin scramble -->
+    <!-- Aggressive battery -->
+    <!-- SystemUI Tuner -->
+    <!-- Volume rocker music control -->
+    <!-- Torch Power button gestures -->
+    <!-- QS brightness -->
+    <!-- Qs brightness slider -->
+    <!-- Qs auto-brightness icon -->
+    <!-- Status bar clock and date -->
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">Barra de estado</string>
+    <!-- Quick QS pulldown -->
+    <string name="quick_pulldown_none">Desativado</string>
+    <!-- StatusBar Icons -->
+    <!-- 4G icon -->
+    <!-- Show VoLTE icon on statusbar -->
+    <!-- Lockscreen battery info indicator  -->
+    <!-- Lock icon -->
+    <!-- Charging animation -->
+    <!-- Network traffic -->
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
+    <string name="system_category">Sistem</string>
+    <string name="status_bar_category">Durum çubuğu</string>
+    <string name="lock_screen_category">Kilit ekranı</string>
+    <string name="buttons_category">Tuşlar</string>
+    <string name="gestures_category">Hareketler</string>
+    <string name="misc_category">Çeşitli</string>
+    <string name="privacy_category">Gizlilik</string>
+    <string name="global_actions_category">Güç menüsü</string>
+    <string name="power_save_category">Güç tasarrufu</string>
+    <string name="buttons_software_category">Yazılım tuşları</string>
+    <string name="buttons_hardware_category">Donanım tuşları</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Bize yardım et!</string>
+    <string name="carbonfibers_dialog_message">Ne yazık ki, biz sihirbaz değiliz!\n\nBir hata bulursanız, lütfen Jira veya
+        aşağıdakilerle bir Carbon geliştiricisine başvurun.\n\n1. Kwoktopus\'u suçla\n2. Logcat veya last_kmsg\n3. Çekirdek ve kullanılan modlar\n4.
+        Çeşitli bilgiler\n\nBu bilgilerle bildirimde bulunmazsanız, sorunun dikkate alınmasını beklemeyin.</string>
+    <string name="carbonfibers_dialog_toast">Tümünü okuyun!!!</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM istatistikleri</string>
+    <string name="anonymous_statistics_summary">Anonim istatistik raporları göndererek CarbonROM\'un daha iyi olmasına yardım edin</string>
+    <string name="anonymous_statistics_warning_title">Hakkında</string>
+    <string name="anonymous_statistics_warning">Carbon rom istatistiklerini seçmek, kişisel olmayan verilerin
+        Cihazlar arasında benzersiz kurulumları izlemek için carbon geliştiricileri. Sunulan bilgiler benzersiz bir tanımlayıcı içerir,
+        bu gizlilik veya kişisel verilerinizden ödün vermez. Veriler her önyükleme sırasında gönderilir.\n\nBir veri örneği için
+        Bu gönderilen veriler için önizleme üzerine dokunun.</string>
+    <string name="enable_reporting_title">Raporlamayı etkinleştir</string>
+    <string name="preview_data_title">Veriyi önizle</string>
+    <string name="view_stats_title">İstatistikleri görüntüle</string>
+    <string name="anonymous_learn_more">Daha fazla bilgi edin</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Benzersiz ID</string>
+    <string name="preview_device_title">Cihaz</string>
+    <string name="preview_version_title">Sürüm</string>
+    <string name="preview_country_title">Ülke</string>
+    <string name="preview_carrier_title">Oparatör</string>
+    <string name="stats_collection_title">İstatistik koleksiyonunu etkinleştir</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Akıllı pikseller</string>
+    <string name="smart_pixels_summary">Güç tüketimini azaltmak için pikselleri kapatın</string>
+    <string name="smart_pixels_on_power_save_title">Pil tasarrufu için otomatik etkinleştir</string>
+    <string name="smart_pixels_on_power_save_summary">Pil tasarrufu etkinken akıllı pikselleri kullanın</string>
+    <string name="smart_pixels_percent">Devre dışı bırakılan piksel yüzdesi</string>
+    <string name="smart_pixels_shift">Pikselleri her değiştirerek yanmayı önle</string>
+    <string name="smart_pixels_warning_text">Akıllı piksel bir güç tasarrufu özelliğidir. Kaç piksele karar verdiğinize bağlı olarak pil ömründe önemli bir iyileşme görebilirsiniz. İyi bir kullanıcı deneyimi için devre dışı bırakılmış piksel miktarını yüzde 75 olarak ayarlamanızı öneririz.</string>
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Uygulamaları son uygulamalardan gizle</string>
+    <string name="hide_apps_from_recents_summary">Uygulamaları son uygulamalar görünümünden gizle</string>
+    <string name="hide_from_recents_add_app">Uygulama ekle</string>
+    <string name="title_activity_carbon_recents_settings">Son uygulamalar</string>
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Durum çubuğu</string>
+    <string name="double_tap_status_bar_sleep_summary">Cihazı uyutmak için durum çubuğuna iki kez hafifçe dokunun</string>
+    <string name="double_tap_lock_sleep_title">Kilit ekranı</string>
+    <string name="double_tap_lock_sleep_summary">Cihazı uyutmak için kilit ekranının boş bir alanına iki kez hafifçe dokunun</string>
+    <!-- Global Actions -->
+    <string name="global_actions_title">Güç menüsü</string>
+    <string name="global_actions_summary">Güç menüsüne seçenekler ekleyin</string>
+    <string name="global_actions_power">Güç</string>
+    <string name="global_actions_restart">Yeniden başlat</string>
+    <string name="global_actions_airplane">Uçak modu</string>
+    <string name="global_actions_settings">Ayarlar</string>
+    <string name="global_actions_soundpanel">Ses paneli</string>
+    <string name="global_actions_users">Kullanıcılar</string>
+    <string name="global_actions_screenshot">Ekran görüntüsü</string>
+    <string name="global_actions_screenrecord">Ekran kaydı</string>
+    <string name="global_actions_flashlight">El feneri</string>
+    <string name="global_actions_advanced_reboot_title">Gelişmiş yeniden başlatma</string>
+    <string name="global_actions_advanced_reboot_summary">Yeniden başlatma menüsünde kurtarma ve önyükleyici seçeneklerini göster</string>
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Karışık pin düzeni</string>
+    <string name="unlock_scramble_pin_layout_summary">Pin klavye düzenini karıştır</string>
+    <!-- Aggressive battery -->
+    <string name="aggressive_battery_title">Agresif pilde</string>
+    <string name="aggressive_battery_summary">Daha katı pil tasarrufu</string>
+    <string name="aggressive_battery_warning_text">Bunlar güç tasarrufu özellikleri. Gezinme uygulamaları gibi boşta çalışmayı amaçlayan servislere müdahale edebilirler. Bu uygulamaları uygulama pil ayarlarından etkilenmekten beyaz listeye alabilirsiniz.</string>
+    <string name="aggressive_idle_title">Agresif boşta</string>
+    <string name="aggressive_idle_summary">Cihaza daha sık boşta girin ve daha az uyanın</string>
+    <string name="aggressive_standby_title">Agresif bekleme</string>
+    <string name="aggressive_standby_summary">Uygulamaların arka planı çalıştırmasını engelle</string>
+    <string name="aggressive_battery_saver_title">Pil tasarrufu için otomatik etkinleştir </string>
+    <string name="aggressive_battery_saver_summary">Pil tasarrufunu kullanırken agresif pili otomatik olarak etkinleştir</string>
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Durum çubuğu öğeleri</string>
+    <string name="status_bar_tuner_summary">Durum çubuğu simgelerini ve seçeneklerini düzenleme</string>
+    <string name="lock_screen_shortcuts_title">Kilit ekranı kısayolları</string>
+    <string name="lock_screen_shortcuts_summary">Kilit ekranı alt kısayollarını yönetin</string>
+    <string-array name="nav_bar_layouts">
+        <item>Normal</item>
+        <item>Compact</item>
+        <item>Left-leaning</item>
+        <item>Right-leaning</item>
+    </string-array>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Oynatma kontrolü</string>
+    <string name="volume_rocker_music_controls_summary">Ses parçalarını aramak için ses seviyesi tuşlarını basılı tutun</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Ekran kapalıyken feneri değiştir</string>
+    <string name="torch_power_button_gesture_none">Devre dışı</string>
+    <string name="torch_power_button_gesture_dt">Güç tuşuna çift dokunma</string>
+    <string name="torch_power_button_gesture_dt_toast">Kamera hareketini atlamak şimdi devre dışı</string>
+    <string name="torch_power_button_gesture_lp">Güç tuşuna basılı tutma</string>
+    <!-- QS brightness -->
+    <!-- Qs brightness slider -->
+    <!-- Qs auto-brightness icon -->
+    <!-- Status bar clock and date -->
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">Durum çubuğu</string>
+    <string name="clock_enabled">Etkin</string>
+    <string name="clock_disabled">Devre dışı</string>
+    <string name="status_bar_clock_style_reset">Rengi sıfırla</string>
+    <string name="status_bar_am_pm_title">ÖÖ/ÖS</string>
+    <string name="status_bar_am_pm_info">24 saat görünümü etkin</string>
+    <string name="enable_clock_weekday">Haftanın günü</string>
+    <string name="enable_clock_weekday_summary">Haftanın ilk gününü kısaltılmış olarak saatten önce göster</string>
+    <string name="dont_show">Gösterme</string>
+    <string name="clock_date_display">Tarih</string>
+    <string name="clock_date_style">Tarih stili</string>
+    <string name="clock_date_format">Tarih biçimi</string>
+    <string name="clock_date_string_edittext_title">Tarih biçimi örnekteki gibi olmalıdır. AA/gg/yy</string>
+    <string name="clock_date_string_edittext_summary">Dize girin</string>
+    <string name="am_pm_clock_normal">Normal yazı boyutu</string>
+    <string name="am_pm_clock_small">Küçük yazı boyutu</string>
+    <string name="am_pm_clock_none">Gösterme</string>
+    <string name="clock_date_display_none">Gösterme</string>
+    <string name="clock_date_display_small">Küçük yazı boyutu</string>
+    <string name="clock_date_display_normal">Normal yazı boyutu</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Küçük harf</string>
+    <string name="clock_date_style_uppercase">Büyük harf</string>
+    <string name="clock_date_right">Saatin sağında</string>
+    <string name="clock_date_left">Saatin solunda</string>
+    <string name="clock_date_position">Tarih konumu</string>
+    <!-- Quick QS pulldown -->
+    <string name="quick_pulldown_none">Devre dışı</string>
+    <!-- StatusBar Icons -->
+    <!-- 4G icon -->
+    <!-- Show VoLTE icon on statusbar -->
+    <!-- Lockscreen battery info indicator  -->
+    <!-- Lock icon -->
+    <!-- Charging animation -->
+    <!-- Network traffic -->
+    <string name="network_traffic_autohide_threshold_title">Ağ etkinliği otomatik gizlenme eşiği (KB/s)</string>
+</resources>
