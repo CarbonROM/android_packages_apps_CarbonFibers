@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">CarbonFibers</string>
+    <string name="system_category">Süsteem</string>
+    <string name="statusbar_category">Olekuriba</string>
+    <string name="lockscreen_category">Lukustusekraan</string>
+    <string name="buttons_category">Nupud</string>
+    <string name="gesture_category">Viiped</string>
+    <string name="privacy_category">Privaatsus &amp; turvalisus</string>
+    <string name="buttons_software_category">Tarkvaranupud</string>
+    <string name="buttons_hardware_category">Riistvaranupud</string>
+    <string name="statusbar_notifications_category">Teated</string>
+    <string name="system_volume_category">Helitugevus</string>
+    <string name="system_recents_category">Hiljutised</string>
+    <string name="lockscreen_security_category">Turvalisus</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_toast">LUGEGE KÕIK SEE!</string>
+    <!-- Navbar Animation -->
+    <!-- Hide Apps from Recents -->
+    <string name="hide_from_recents_add_app">Lisa rakendused</string>
+    <string name="title_activity_carbon_recents_settings">Hiljutised</string>
+    <!-- CarbonGestures -->
+    <string name="carbon_gesture_preference_title">CarbonGestures</string>
+    <string name="carbon_gesture_disabled">Keelatud</string>
+    <string name="carbon_gesture_back">Tagasi</string>
+    <string name="carbon_gesture_home">Avaleht</string>
+    <string name="carbon_gesture_recents">Hiljutised</string>
+    <string name="carbon_gesture_power">Toide</string>
+    <string name="carbon_gesture_volume_down">Helitugevuse vähendamine</string>
+    <string name="carbon_gesture_volume_up">Helitugevuse suurendamine</string>
+    <string name="carbon_gesture_volume_mute">Hääletu</string>
+    <string name="carbon_gesture_screenshot">Kuvatõmmis</string>
+    <string name="carbon_gesture_media_play_pause">Mängi/Peata meedia</string>
+    <string name="carbon_gesture_launch">Käivita</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM statistika</string>
+    <string name="anonymous_statistics_summary">Aidake muuta CyanogenRomi paremaks valides anonüümse statistika saatmise</string>
+    <string name="anonymous_statistics_warning_title">Teave</string>
+    <string name="anonymous_statistics_warning">Liitumine CyanogenRom Statistikaga võimaldab isikustamata andmete esitatamist
+CyanogenRomi arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teave sisaldab kordumatut tunnusnumbrit, mis ei ohusta teie privaatsust või isikuandmeid. Andmeid esitatakse igal käivitamisel. \n\n Näiteid leiate, kui puudutate Andmete Eelvaadet.</string>
+    <string name="enable_reporting_title">Luba aruandlus</string>
+    <string name="preview_data_title">Andmete eelvaade</string>
+    <string name="view_stats_title">Vaata statistikat</string>
+    <string name="anonymous_learn_more">Lisateave</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Kordumatu ID</string>
+    <string name="preview_device_title">Seade</string>
+    <string name="preview_version_title">Versioon</string>
+    <string name="preview_country_title">Riik</string>
+    <string name="preview_carrier_title">Operaator</string>
+    <string name="stats_collection_title">Statistika kogumine</string>
+    <!-- tap-to-sleep -->
+    <!-- Gestures-->
+    <!-- Global Actions -->
+    <string name="global_actions_title">Käivitusmenüü</string>
+    <string name="global_actions_summary">Vali toitemenüü seaded</string>
+    <string name="global_actions_power">Toide</string>
+    <string name="global_actions_restart">Taaskäivita</string>
+    <string name="global_actions_airplane">Lennuk</string>
+    <string name="global_actions_settings">Sätted</string>
+    <string name="global_actions_users">Kasutajad</string>
+    <string name="global_actions_screenshot">Ekraanipilt</string>
+    <string name="global_actions_flashlight">Taskulamp</string>
+    <string name="global_actions_advanced_reboot_title">Luba täpsem taaskäivitus</string>
+    <string name="global_actions_advanced_reboot_summary">Kuva taastamise ja alglaaduri suvandid</string>
+    <!-- Lock screen charging current indicator  -->
+    <string name="lockscreen_charging_current_title">Kuva laadimis info</string>
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Ekraani väljalülitamise animatsioon</string>
+    <string name="screen_off_animation_default">Vaikimisi</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Mõõtkava</string>
+    <!-- Volume rocker music control -->
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_none">Keelatud</string>
+    <string name="torch_power_button_gesture_lp">Vajuta pikalt toite nuppu</string>
+    <!-- Button brightness -->
+    <string name="button_manual_brightness">Heledustase</string>
+    <string name="button_timeout_title">Taustavalguse ajalõpp</string>
+    <!-- HW Keys customization -->
+    <string name="advanced_options_title">Lisavalikud</string>
+    <string name="hardware_keys_volume_keys_title">Helitugevuse nupud</string>
+    <string name="picker_activities">Tegevused</string>
+    <string name="select_custom_app_title">Valige oma rakendus</string>
+    <string name="select_custom_activity_title">Vali oma tegevus</string>
+    <string name="profile_applist_title">Rakendused</string>
+    <string name="choose_action_title">Toimingu valimine</string>
+    <string name="action_entry_default_action">Vaikeseaded</string>
+    <string name="action_entry_select_app">Rakenduse valimine</string>
+    <string name="action_entry_custom_action">Vali oma tegevus</string>
+    <string name="hardware_keys_home_key_title">Kodu-nupp</string>
+    <string name="hardware_keys_menu_key_title">Menüü nupp</string>
+    <string name="hardware_keys_assist_key_title">Otsingu nupp</string>
+    <string name="hardware_keys_back_key_title">Tagasi nupp</string>
+    <string name="hardware_keys_double_tap_summary">Topeltpuudutuse määramine</string>
+    <string name="hardware_keys_single_tap_summary">Puudutuse määramine</string>
+    <string name="hardware_keys_long_press_summary">Pika vajutuse määramine</string>
+    <string name="hardware_keys_single_tap_title">Puudutuse määramine</string>
+    <string name="hardware_keys_long_press_title">Pika vajutuse tegevus</string>
+    <string name="hardware_keys_double_tap_title">Topeltkoputuse tegevus</string>
+    <string name="hardware_keys_category">Füüsilised nupud</string>
+    <string name="hardware_keys_disable_title">Keela nupud</string>
+    <!-- Toggle navigation bar -->
+    <string name="navigation_bar_enabled_title">Näita navigeerimisriba</string>
+    <string name="navigation_bar_enabled_summary">Kuva navigeerimisriba</string>
+    <!-- SystemUI Tuner -->
+    <string name="navbar_tuner_title">Muuda navigeerimisriba</string>
+    <string name="lockscreen_shortcuts_title">Lukustusekraani otseteed</string>
+    <string name="power_notifications_title">Toiteteated</string>
+    <string name="vol_dnd_category_title">Mitte häirida</string>
+    <!-- Battery percentage -->
+    <string name="battery_style_category_title">Aku ikoon</string>
+    <string name="status_bar_battery_percentage_title">Aku protsent</string>
+    <string name="status_bar_battery_percentage_default">Peidus</string>
+    <string name="status_bar_battery_percentage_text_next">Ikooni kõrval</string>
+    <string name="status_bar_battery_percentage_text_inside">Ikooni sees</string>
+    <!-- Status bar battery style-->
+    <string name="status_bar_battery_style_title">Aku stiil</string>
+    <string name="status_bar_battery_style_port">Portree</string>
+    <string name="status_bar_battery_style_circle">Ring</string>
+    <string name="status_bar_battery_style_dotted_circle">Punktiir ringi</string>
+    <string name="status_bar_battery_style_text">Tekst</string>
+    <string name="status_bar_battery_style_hidden">Peidus</string>
+    <string name="status_bar_battery_style_square">Ristkülik</string>
+    <!-- Status bar notification -->
+    <string name="notification_style_title">Teavituste stiil</string>
+    <string name="notify_disabled">Pole</string>
+    <string name="headsup_enabled">Tähelepanuks</string>
+    <string name="ticker_enabled">Keriv joon</string>
+    <string name="headsup_ticker_enabled">Hüpikteated ja keriv joon</string>
+    <!-- Status bar music ticker -->
+    <string name="status_bar_music_ticker_title">Keriv joon raja vahetamisel</string>
+    <string name="status_bar_music_ticker_summary">Lugude teabe kuvamine lugude vahetamisel</string>
+    <!-- Status bar clock options -->
+    <string name="status_bar_clock">Kell ja aeg</string>
+    <string name="status_bar_clock_summary">Kella ja kuupäeva välimuse määramine</string>
+    <string name="clock_title_enable">Paigutus</string>
+    <string name="clock_enabled">Sees</string>
+    <string name="clock_disabled">Keelatud</string>
+    <string name="status_bar_clock_style_reset">Lähtesta värv</string>
+    <string name="status_bar_show_clock_title">Näita kella ja kuupäeva</string>
+    <string name="status_bar_clock_seconds_title">Kuva sekundeid</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24 tunnine kell on valitud</string>
+    <string name="enable_clock_weekday">Nädalapäev</string>
+    <string name="enable_clock_weekday_summary">Lühendatud nädalapäev enne kella</string>
+    <string name="right_clock">Kell paremal</string>
+    <string name="left_clock">Kell vasakul</string>
+    <string name="dont_show">Ära näita</string>
+    <string name="clock_date_display">Kuupäev</string>
+    <string name="clock_date_display_summary">Näita kohandatud kuupäeva enne kella</string>
+    <string name="clock_date_style">Kuupäeva laad</string>
+    <string name="clock_date_format">Kuupäeva formaat</string>
+    <string name="clock_date_string_edittext_title">Peab olema ajavormingus, nt dd.MM.yy</string>
+    <string name="clock_date_string_edittext_summary">Heleduse reguleerimine</string>
+    <string name="am_pm_clock_normal">Tavaline fondisuurus</string>
+    <string name="am_pm_clock_small">Väike fondisuurus</string>
+    <string name="am_pm_clock_none">Ära näita</string>
+    <string name="clock_date_display_none">Ära näita</string>
+    <string name="clock_date_display_small">Väike fondisuurus</string>
+    <string name="clock_date_display_normal">Tavaline fondisuurus</string>
+    <string name="clock_date_style_normal">Normaalne</string>
+    <string name="clock_date_style_lowercase">Väiketähed</string>
+    <string name="clock_date_style_uppercase">Suurtähed</string>
+    <string name="clock_date_format_custom">Kohandatud Java vorming</string>
+    <string name="clock_date_right">Kellast paremal</string>
+    <string name="clock_date_left">Kellast vasakul</string>
+    <string name="clock_date_position">Kuupäeva asukoht</string>
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Sega PINi paigutust</string>
+    <string name="unlock_scramble_pin_layout_summary">Aja PINi paigutus segamini seadme lahti lukustamisel</string>
+    <!-- Recents Membar -->
+    <string name="systemui_recents_mem_display_title">Luba mäluribal</string>
+    <string name="systemui_recents_mem_display_summary">Kuva hiljutisi mälukasutusi</string>
+    <!-- Immersive Recents -->
+    <string name="immersive_recents_title">Kuvarežiim</string>
+    <string name="immersive_recents_default">Vaikimisi</string>
+    <string name="immersive_recents_fullscreen">Täisekraan</string>
+    <string name="immersive_recents_statusbar">Peida navigeerimisriba</string>
+    <string name="immersive_recents_navbar">Peida olekuriba</string>
+    <!-- Clear all recents -->
+    <string name="recents_clear_all_location_top_right">Üleval paremal</string>
+    <string name="recents_clear_all_location_top_left">Üleval vasakul</string>
+    <string name="recents_clear_all_location_top_center">Üleval keskel</string>
+    <string name="recents_clear_all_location_bottom_right">All paremal</string>
+    <string name="recents_clear_all_location_bottom_left">All vasakul</string>
+    <string name="recents_clear_all_location_bottom_center">All keskel</string>
+    <!-- Face Auto Unlock -->
+    <string name="face_auto_unlock_title">Automaatne näotuvastus</string>
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Kiire lukustuse avamine</string>
+    <!-- Overlay toggle -->
+    <string name="untrusted_overlay_toggle_title">Luba ebausaldusväärsed ülekatted</string>
+    <string name="reboot">Taaskäivita</string>
+    <!-- Statusbar net monitor -->
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Nutikad pikslid</string>
+    <string name="smart_pixels_enable_title">Lubatud nutikad pikslid</string>
+    <string name="smart_pixels_on_power_save_title">Automaatne akusäästja aktiveerimine </string>
+    <string name="smart_pixels_on_power_save_summary">Kui akusäästja on lubatud, lubage rakendus Smart Pixels</string>
+    <!-- Force Aspect Ratio -->
+</resources>

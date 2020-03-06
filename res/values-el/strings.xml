@@ -11,29 +11,42 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="system_category">Järjestelmä</string>
-    <string name="statusbar_category">Tilapalkki</string>
-    <string name="lockscreen_category">Lukitusnäyttö</string>
-    <string name="buttons_category">Painikkeet</string>
-    <string name="gesture_category">Eleet</string>
-    <string name="privacy_category">Tietosuoja &amp; turvallisuus</string>
-    <string name="statusbar_notifications_category">Ilmoitukset</string>
-    <string name="system_volume_category">Äänenvoimakkuus</string>
+    <string name="carbonfibers">Ανθρακονήματα</string>
+    <string name="system_category">Σύστημα</string>
+    <string name="statusbar_category">Γραμμή κατάστασης</string>
+    <string name="lockscreen_category">Οθόνη κλειδώματος</string>
+    <string name="buttons_category">Κουμπιά</string>
+    <string name="gesture_category">Χειρονομίες</string>
+    <string name="statusbar_notifications_category">Ειδοποιήσεις</string>
+    <string name="system_volume_category">Ένταση ήχου</string>
+    <string name="system_recents_category">Πρόσφατα</string>
+    <string name="lockscreen_security_category">Ασφάλεια</string>
     <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Βοηθήστε μας να σας βοηθήσουμε!</string>
     <!-- Navbar Animation -->
     <!-- Hide Apps from Recents -->
+    <string name="hide_from_recents_add_app">Προσθήκη εφαρμογής</string>
+    <string name="title_activity_carbon_recents_settings">Πρόσφατα</string>
     <!-- CarbonGestures -->
+    <string name="carbon_gesture_disabled">Έχει απενεργοποιηθεί</string>
+    <string name="carbon_gesture_back">Πίσω</string>
+    <string name="carbon_gesture_home">Αρχική οθόνη</string>
+    <string name="carbon_gesture_recents">Πρόσφατα</string>
+    <string name="carbon_gesture_power">Ενέργεια</string>
+    <string name="carbon_gesture_screenshot">Στιγμιότυπο οθόνης</string>
+    <string name="carbon_gesture_customapp">Εκκίνηση εφαρμογής</string>
+    <string name="carbon_gesture_launch">Εκκίνηση</string>
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_warning_title">Σχετικά</string>
+    <string name="enable_reporting_title">Ενεργοποίηση αναφοράς</string>
+    <string name="preview_data_title">Προεπισκόπηση δεδομένων</string>
     <!-- Anonymous Statistics - Preview -->
     <!-- tap-to-sleep -->
     <!-- Gestures-->
     <!-- Global Actions -->
-    <string name="global_actions_settings">Asetukset</string>
-    <string name="global_actions_flashlight">Taskulamppu</string>
     <!-- Lock screen charging current indicator  -->
     <!-- Screen Off animation -->
-    <string name="screen_off_animation_default">Oletus</string>
     <!-- Volume rocker music control -->
     <!-- Torch Power button gestures -->
     <!-- Button brightness -->
@@ -45,11 +58,6 @@
     <!-- Status bar notification -->
     <!-- Status bar music ticker -->
     <!-- Status bar clock options -->
-    <string name="status_bar_show_clock_title">Näytä kello ja päivämäärä</string>
-    <string name="status_bar_clock_seconds_title">Näytä sekunnit</string>
-    <string name="clock_date_display">Päivämäärä</string>
-    <string name="clock_date_style">Päiväyksen tyyli</string>
-    <string name="clock_date_format">Päivämäärän muoto</string>
     <!-- Pin scramble -->
     <!-- Recents Membar -->
     <!-- Immersive Recents -->
