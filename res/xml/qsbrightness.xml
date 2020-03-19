@@ -26,17 +26,19 @@
         android:summary="@string/qs_brightness_slider_summary"
         android:defaultValue="true" />
 
+    <com.android.settings.carbon.SecureSettingListPreference
+        android:key="qs_brightness_position_bottom"
+        android:title="@string/qs_brightness_location_title"
+        android:entries="@array/qs_brightness_location_entries"
+        android:entryValues="@array/qs_brightness_location_values"
+        android:defaultValue="0"
+        android:dependency="qs_show_brightness" />
+
     <SwitchPreference
         android:key="qs_show_brightness_icon"
         android:title="@string/qs_autobrightness_icon_title"
         android:summary="@string/qs_autobrightness_icon_summary"
         android:dependency="qs_show_brightness"
         android:defaultValue="true"/>
-
-    <SwitchPreference
-        android:key="qs_brightness_position_bottom"
-        android:title="@string/qs_brightness_position_bottom"
-        android:summary="@string/qs_autobrightness_icon_summary"
-        android:defaultValue="false"/>
 
 </PreferenceScreen>
