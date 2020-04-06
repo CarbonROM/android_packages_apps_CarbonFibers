@@ -21,6 +21,9 @@
     android:key="gesture_settings_screen"
     android:title="@string/gesture_preference_title">
 
+ <PreferenceCategory
+   android:title="@string/double_tap">
+
     <SwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_status_bar_sleep_title"
@@ -32,6 +35,35 @@
         android:title="@string/double_tap_lock_sleep_title"
         android:summary="@string/double_tap_lock_sleep_summary"
         android:defaultValue="false" />
+
+ </PreferenceCategory>
+
+ <PreferenceCategory
+   android:title="@string/nav_ges"
+   settings:allowDividerAbove="true">
+
+    <Preference
+        android:key="gesture_system_navigation_input_summary"
+        android:title="@string/system_navigation_title"
+        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
+	settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
+
+ </PreferenceCategory>
+
+ <PreferenceCategory
+   android:title="@string/screenshot_gesture"
+   settings:allowDividerAbove="true">
+    <Preference
+        android:key="swipe_to_screenshot_summary"
+        android:title="@string/swipe_to_screenshot_title"
+        android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
+	settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />
+
+ </PreferenceCategory>
+
+ <PreferenceCategory
+   android:title="@string/misc_category"
+   settings:allowDividerAbove="true">
 
     <Preference
         android:key="gesture_assist_input_summary"
@@ -56,12 +88,6 @@
         android:title="@string/double_twist_for_camera_mode_title"
         android:fragment="com.android.settings.gestures.DoubleTwistGestureSettings"
         settings:controller="com.android.settings.gestures.DoubleTwistPreferenceController" />
-
-    <Preference
-        android:key="gesture_system_navigation_input_summary"
-        android:title="@string/system_navigation_title"
-        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
-        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
 
     <Preference
         android:key="gesture_tap_screen_input_summary"
@@ -92,11 +118,6 @@
         android:title="@string/global_actions_panel_short_title"
         android:fragment="com.android.settings.gestures.GlobalActionsPanelSettings"
         settings:controller="com.android.settings.gestures.GlobalActionsPanelPreferenceController" />
-
-    <Preference
-        android:key="swipe_to_screenshot_summary"
-        android:title="@string/swipe_to_screenshot_title"
-        android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
-        settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />
-
+ 
+ </PreferenceCategory>
 </PreferenceScreen>

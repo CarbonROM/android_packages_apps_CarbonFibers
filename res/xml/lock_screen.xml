@@ -20,6 +20,9 @@
     android:title="@string/lock_screen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+ <PreferenceCategory
+   android:title="@string/shortcuts">
+
     <Preference
         android:key="lockscreen_shortcuts"
         android:title="@string/lock_screen_shortcuts_title"
@@ -28,13 +31,23 @@
             android:targetPackage="com.android.systemui"
             android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
     </Preference>
+ </PreferenceCategory>
 
-    <SwitchPreference
+ <PreferenceCategory
+   android:title="@string/pin_option"
+   settings:allowDividerAbove="true">
+ 
+     <SwitchPreference
         android:key="lockscreen_scramble_pin_layout"
         android:title="@string/unlock_scramble_pin_layout_title"
         android:summary="@string/unlock_scramble_pin_layout_summary"
-        android:defaultValue="false"
-        settings:allowDividerAbove="true" />
+	android:defaultValue="false" />
+
+ </PreferenceCategory>
+
+ <PreferenceCategory
+   android:title="@string/misc_category"
+   settings:allowDividerAbove="true">
 
     <SwitchPreference
         android:key="lockscreen_battery_info"
@@ -48,4 +61,5 @@
         android:summary="@string/lockscreen_lock_icon_summary"
         android:defaultValue="true" />
 
+ </PreferenceCategory>
 </PreferenceScreen>

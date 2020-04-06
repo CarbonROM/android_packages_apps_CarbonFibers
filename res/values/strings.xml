@@ -24,6 +24,23 @@
 
     <string name="buttons_software_category">Software buttons</string>
     <string name="buttons_hardware_category">Hardware buttons</string>
+    <string name="sb_options">Status bar options</string>
+    <string name="network_traffic">Network Traffic</string>
+    <string name="qs_category">Quick settings options</string>
+    <string name="clock_category">Clock and Date</string>
+    <string name="shortcuts">Shortcuts</string>
+    <string name="pin_option">Pin option</string>
+    <string name="double_tap">Double tap gestures</string>
+    <string name="nav_ges">Gesture navigation</string>
+    <string name="screenshot_gesture">Screenshot gesture</string>
+    <string name="recent_category">Recent</string>
+    <string name="statistics_options">CR stats</string>
+    <string name="system_main_category_summary">Adjust system options</string>
+    <string name="statusbar_main_category_summary">Tune status bar items</string>
+    <string name="lockscreen_main_category_summary">Modify lock screen layout and options</string>
+    <string name="buttons_main_category_summary">Customize hardware and software keys</string>
+    <string name="gestures_main_category_summary">Gesture based options and actions</string>
+    <string name="privacy_main_category_summary">Misc and stats collection settings</string>
 
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help us help you!</string>
