@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="system_category">Systeem</string>
+    <string name="status_bar_category">Statusbalk</string>
+    <string name="lock_screen_category">Vergrendelscherm</string>
+    <string name="buttons_category">Knoppen</string>
+    <string name="gestures_category">Gebaren</string>
+    <string name="buttons_software_category">Software knoppen</string>
+    <string name="buttons_hardware_category">Hardware knoppen</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Help ons u te helpen!</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM statistieken</string>
+    <string name="anonymous_statistics_summary">Help CarbonROM beter te maken door anonieme statistieken te verzenden</string>
+    <string name="anonymous_statistics_warning_title">Over</string>
+    <string name="enable_reporting_title">Rapporteren inschakelen</string>
+    <string name="preview_data_title">Voorbeeldgegevens</string>
+    <string name="view_stats_title">Bekijk statestieken</string>
+    <string name="anonymous_learn_more">Leer meer</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Uniek ID</string>
+    <string name="preview_device_title">Apparaat</string>
+    <string name="preview_version_title">Versie</string>
+    <string name="preview_country_title">Land</string>
+    <string name="preview_carrier_title">Provider</string>
+    <!-- Smart Pixels -->
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Verberg recente apps</string>
+    <string name="hide_from_recents_add_app">App toevoegen</string>
+    <string name="title_activity_carbon_recents_settings">Recente</string>
+    <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Dubbeltik op statusbalk om te slapen</string>
+    <string name="double_tap_status_bar_sleep_summary">Tik twee keer op statusbalk om te slapen</string>
+    <string name="double_tap_lock_sleep_title">Dubbeltik vergrendelscherm om te slapen</string>
+    <string name="double_tap_lock_sleep_summary">Tik twee keer op vergrendelscherm om te slapen</string>
+    <!-- Global Actions -->
+    <string name="global_actions_power">Vermogen</string>
+    <string name="global_actions_restart">Herstart</string>
+    <string name="global_actions_airplane">Vliegtuig</string>
+    <string name="global_actions_settings">Instellingen</string>
+    <string name="global_actions_users">Gebruikers</string>
+    <string name="global_actions_screenshot">Schermafbeelding</string>
+    <string name="global_actions_flashlight">Zaklamp</string>
+    <!-- Pin scramble -->
+    <!-- Aggressive battery -->
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Statusbalk iconen</string>
+    <string name="lock_screen_shortcuts_title">Vergrendelscherm snelkoppelingen</string>
+    <string name="lock_screen_shortcuts_summary">Beheer vergrendelscherm onder snelkoppelingen</string>
+    <!-- Volume rocker music control -->
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Zaklamp inschakelen wanneer het scherm uit is</string>
+    <string name="torch_power_button_gesture_none">Uitgeschakeld</string>
+    <string name="torch_power_button_gesture_dt_toast">Ga naar camera gebaar is nu uitgeschakeld</string>
+    <!-- QS brightness -->
+    <!-- Qs brightness slider -->
+    <!-- Qs auto-brightness icon -->
+    <!-- Status bar clock and date -->
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">Statusbalk</string>
+    <!-- Quick QS pulldown -->
+    <string name="quick_pulldown_none">Uitgeschakeld</string>
+    <!-- StatusBar Icons -->
+    <!-- 4G icon -->
+    <!-- Lockscreen battery info indicator  -->
+    <!-- Lock icon -->
+    <!-- Charging animation -->
+    <!-- Network traffic -->
+    <!-- Battery Bar -->
+    <!-- Color Picker -->
+    <string name="color_default">Standaard</string>
+    <!-- Per App aspect Ratio -->
+    <!-- Hide Statusbar on Lockscreen -->
+    <!-- Dashboard -->
+    <!-- VolumeKeys Swap -->
+    <!-- Lock screen cover art -->
+    <!-- Battery Styles -->
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_circle">Cirkel</string>
+    <string name="status_bar_battery_style_text">Tekst</string>
+    <string name="status_bar_battery_style_hidden">Verborgen</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Baterij percentage</string>
+</resources>

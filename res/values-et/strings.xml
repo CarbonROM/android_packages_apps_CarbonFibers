@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
+    <string name="system_category">Süsteem</string>
+    <string name="status_bar_category">Olekuriba</string>
+    <string name="lock_screen_category">Lukustusekraan</string>
+    <string name="buttons_category">Nupud</string>
+    <string name="gestures_category">Viiped</string>
+    <string name="misc_category">Mitmesugune</string>
+    <string name="privacy_category">Privaatsus</string>
+    <string name="global_actions_category">Käivitusmenüü</string>
+    <string name="power_save_category">Energiasääst</string>
+    <string name="buttons_software_category">Tarkvaranupud</string>
+    <string name="buttons_hardware_category">Riistvaranupud</string>
+    <string name="sb_options">Olekuriba võimalused</string>
+    <string name="network_traffic">Võrguliiklus</string>
+    <string name="qs_category">Kiirseadete võimalused</string>
+    <string name="clock_category">Kell ja kuupäev</string>
+    <string name="shortcuts">Otseteed</string>
+    <string name="double_tap">Topeltpuudutusega žestid</string>
+    <string name="recent_category">Hiljutised</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_message">Kahjuks pole me võlurid!\n\nKui leiate vea, avage pilet Jira või
+         võtke järgmiselt ühendust Carbon arendajaga.\n\n1. Blame kwoktopus\n2. Logcat ja/või last_kmsg\n3. Kernel ja kasutatud moodid\n4.
+        Muu teave\n\nKui te ei teata eelnevat teadet, ärge oodake, et seda küsimust arutatakse.</string>
+    <string name="carbonfibers_dialog_toast">Loe kõik läbi!</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM statistika</string>
+    <string name="anonymous_statistics_summary">Aidake muuta CyanogenRomi paremaks valides anonüümse statistika saatmise</string>
+    <string name="anonymous_statistics_warning_title">Teave</string>
+    <string name="anonymous_statistics_warning">Liitumine CyanogenRom Statistikaga võimaldab isikustamata andmete esitatamist
+Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teave sisaldab kordumatut tunnusnumbrit, mis ei ohusta teie privaatsust või isikuandmeid. Andmeid esitatakse igal käivitamisel. \n\n Näiteid leiate, kui puudutate Andmete Eelvaadet.</string>
+    <string name="enable_reporting_title">Luba aruandlus</string>
+    <string name="preview_data_title">Andmete eelvaade</string>
+    <string name="view_stats_title">Vaata statistikat</string>
+    <string name="anonymous_learn_more">Lisateave</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Kordumatu ID</string>
+    <string name="preview_device_title">Seade</string>
+    <string name="preview_version_title">Versioon</string>
+    <string name="preview_country_title">Riik</string>
+    <string name="preview_carrier_title">Operaator</string>
+    <string name="stats_collection_title">Luba statistika kogumine</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Nutikad pikslid</string>
+    <string name="smart_pixels_on_power_save_title">Automaatne akusäästja aktiveerimine </string>
+    <string name="smart_pixels_on_power_save_summary">Kui akusäästja on lubatud, kasutage rakendust Smart Pixels</string>
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_summary">Peida rakendused hiljutiste rakenduste menüüst</string>
+    <string name="hide_from_recents_add_app">Lisa rakendused</string>
+    <string name="title_activity_carbon_recents_settings">Hiljutised</string>
+    <!-- tap-to-sleep -->
+    <!-- Global Actions -->
+    <string name="global_actions_title">Otseteed</string>
+    <string name="global_actions_summary">Lisage toitemenüüsse suvandid</string>
+    <string name="global_actions_power">Toide</string>
+    <string name="global_actions_restart">Taaskäivita</string>
+    <string name="global_actions_airplane">Lennuk</string>
+    <string name="global_actions_settings">Sätted</string>
+    <string name="global_actions_soundpanel">Helipaneel</string>
+    <string name="global_actions_users">Kasutajad</string>
+    <string name="global_actions_screenshot">Ekraanipilt</string>
+    <string name="global_actions_screenrecord">Kuva lindistamine</string>
+    <string name="global_actions_flashlight">Taskulamp</string>
+    <string name="global_actions_emergency">Hädaabikõne</string>
+    <string name="global_actions_advanced_reboot_title">Täpsem taaskäivitamine</string>
+    <string name="global_actions_advanced_reboot_summary">Kuva taastamise ja alglaaduri taaskäivituse suvandid</string>
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Sega PIN klaviatuur</string>
+    <string name="unlock_scramble_pin_layout_summary">Segage PIN koodi nupud</string>
+    <!-- Aggressive battery -->
+    <string name="aggressive_battery_title">Agressiivne energiasääst</string>
+    <string name="aggressive_battery_summary">Suurem energiasääst</string>
+    <string name="aggressive_battery_warning_text">Need on energiasäästufunktsioonid. Need võivad häirida jõudeolekus kasutamiseks mõeldud teenuseid, nagu navigeerimisrakendused. Rakenduse aku sätetes saate nende rakenduste lubamiseks lisada valgesse nimekirja.</string>
+    <string name="aggressive_idle_title">Agressiivne une režiim</string>
+    <string name="aggressive_idle_summary">Sisenete sagedamini ooterežiimi ja ärkate vähem</string>
+    <string name="aggressive_standby_title">Agressiivne oote režiim</string>
+    <string name="aggressive_standby_summary">Keelake rakenduste taustal töötamine</string>
+    <string name="aggressive_battery_saver_title">Automaatne akusäästja aktiveerimine </string>
+    <string name="aggressive_battery_saver_summary">Lülitage agressiivne aku automaatselt sisse, kui kasutate aku säästmist</string>
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_summary">Olekuriba ikoonide ja suvandite muutmine</string>
+    <string name="lock_screen_shortcuts_title">Lukustusekraani otseteed</string>
+    <string-array name="nav_bar_layouts">
+        <item>Normaalne</item>
+        <item>Kompaktne</item>
+        <item>Left-leaning</item>
+        <item>Right-leaning</item>
+    </string-array>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Ekraani väljalülituse taasesituse juhtimine</string>
+    <string name="volume_rocker_music_controls_summary">Heliribade kuvamiseks hoidke helitugevuse klahve</string>
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_none">Keelatud</string>
+    <string name="torch_power_button_gesture_dt">Topeltpuudutage toitenuppu</string>
+    <string name="torch_power_button_gesture_lp">Hoidke toitenuppu all</string>
+    <!-- QS brightness -->
+    <!-- Qs brightness slider -->
+    <string name="qs_brightness_slider_title">Heledusliugur</string>
+    <string name="qs_brightness_slider_summary">Kuva heledusliugur</string>
+    <string name="qs_brightness_position_bottom">Heledusliugur all</string>
+    <!-- Qs auto-brightness icon -->
+    <!-- Status bar clock and date -->
+    <string name="status_bar_clock_title">Kell ja kuupäev</string>
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_title">Olekuriba</string>
+    <string name="status_bar_style_title">Stiil</string>
+    <string name="status_bar_clock">Kell &amp; kuupäev</string>
+    <string name="clock_enabled">Sees</string>
+    <string name="clock_disabled">Keelatud</string>
+    <string name="status_bar_clock_style_reset">Lähtesta värv</string>
+    <string name="status_bar_show_clock_title">Näita kella &amp; küüpäeva</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24 tunnine kell on valitud</string>
+    <string name="enable_clock_weekday">Nädalapäev</string>
+    <string name="enable_clock_weekday_summary">Lühendatud nädalapäev enne kella</string>
+    <string name="dont_show">Ära näita</string>
+    <string name="clock_date_display">Kuupäev</string>
+    <string name="clock_date_display_summary">Kuva kohandatud kuupäeva enne kella</string>
+    <string name="clock_date_style">Kuupäeva laad</string>
+    <string name="clock_date_format">Kuupäeva formaat</string>
+    <string name="clock_date_string_edittext_title">Peab olema ajavormingus, nt dd.MM.yy</string>
+    <string name="clock_date_string_edittext_summary">Heleduse reguleerimine</string>
+    <string name="am_pm_clock_normal">Tavaline fondisuurus</string>
+    <string name="am_pm_clock_small">Väike fondisuurus</string>
+    <string name="am_pm_clock_none">Ära näita</string>
+    <string name="clock_date_display_none">Ära näita</string>
+    <string name="clock_date_display_small">Väike fondisuurus</string>
+    <string name="clock_date_display_normal">Tavaline fondisuurus</string>
+    <string name="clock_date_style_normal">Normaalne</string>
+    <string name="clock_date_style_lowercase">Väiketähed</string>
+    <string name="clock_date_style_uppercase">Suurtähed</string>
+    <string name="clock_date_right">Kellast paremal</string>
+    <string name="clock_date_left">Kellast vasakul</string>
+    <string name="clock_date_position">Kuupäeva asukoht</string>
+    <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Kiire QS avamine</string>
+    <string name="quick_pulldown_none">Keelatud</string>
+    <!-- StatusBar Icons -->
+    <string name="status_bar_icons_title">Olekuriba ikoonid</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G ikoon</string>
+    <!-- Lockscreen battery info indicator  -->
+    <!-- Lock icon -->
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Laadimis animatsioon</string>
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Võrguliiklus</string>
+    <!-- Battery Bar -->
+    <string name="battery_bar_animate_title">Laadimis animatsioon</string>
+    <string name="battery_bar_hide">Peida</string>
+    <string name="battery_bar_statusbar">Olekuriba</string>
+    <string name="battery_bar_reg">Tavaline</string>
+    <string name="battery_bar_reversed">Ümber pööratud</string>
+    <string name="battery_bar_use_gradient_color">Kasutage gradiendi värvi</string>
+    <string name="battery_bar_gradient_color_summary">Kasutage aku taseme skaalana gradiendi värvi</string>
+    <string name="battery_bar_high_color">Kõrgetasemeline värv\"</string>
+    <string name="battery_bar_low_color">Madalatasemeline värv\"</string>
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Värvi valik</string>
+    <string name="press_color_to_apply">Rakendamiseks klõpsake värvil</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Määra</string>
+    <string name="color_default">Vaikimisi</string>
+    <!-- Per App aspect Ratio -->
+    <!-- Hide Statusbar on Lockscreen -->
+    <!-- Dashboard -->
+    <!-- VolumeKeys Swap -->
+    <!-- Lock screen cover art -->
+    <!-- Battery Styles -->
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Aku stiil</string>
+    <string name="status_bar_battery_style_circle">Ring</string>
+    <string name="status_bar_battery_style_text">Tekst</string>
+    <string name="status_bar_battery_style_hidden">Peidus</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Aku protsent</string>
+    <string name="status_bar_battery_percentage_text_inside">Ikooni sees</string>
+    <string name="status_bar_battery_percentage_text_next">Ikooni kõrval</string>
+</resources>
