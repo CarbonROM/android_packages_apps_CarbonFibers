@@ -237,6 +237,7 @@
     <string name="color_default">По умолчанию</string>
     <!-- Per App aspect Ratio -->
     <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Показать строку состояния</string>
     <!-- Dashboard -->
     <!-- VolumeKeys Swap -->
     <!-- Lock screen cover art -->

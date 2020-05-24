@@ -30,6 +30,7 @@
     <string name="shortcuts">Otseteed</string>
     <string name="double_tap">Topeltpuudutusega žestid</string>
     <string name="recent_category">Hiljutised</string>
+    <string name="statistics_options">CR statistika</string>
     <!-- Dialog -->
     <string name="carbonfibers_dialog_message">Kahjuks pole me võlurid!\n\nKui leiate vea, avage pilet Jira või
          võtke järgmiselt ühendust Carbon arendajaga.\n\n1. Blame kwoktopus\n2. Logcat ja/või last_kmsg\n3. Kernel ja kasutatud moodid\n4.
@@ -96,8 +97,8 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string-array name="nav_bar_layouts">
         <item>Normaalne</item>
         <item>Kompaktne</item>
-        <item>Left-leaning</item>
-        <item>Right-leaning</item>
+        <item>Vasakult</item>
+        <item>Paremalt</item>
     </string-array>
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Ekraani väljalülituse taasesituse juhtimine</string>
@@ -159,6 +160,14 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <!-- Network traffic -->
     <string name="network_traffic_title">Võrguliiklus</string>
     <!-- Battery Bar -->
+    <string name="battery_bar_title">Aku riba</string>
+    <string name="battery_bar_summary">Aku riba muutmine</string>
+    <string name="battery_bar_location">Aku riba asukoht</string>
+    <string name="battery_bar_color">Aku riba värv</string>
+    <string name="battery_bar_charging_color">Aku riba, laadimine värv</string>
+    <string name="battery_bar_battery_low_color">Aku riba, tühi aku värv</string>
+    <string name="battery_bar_style_title">Aku riba stiil</string>
+    <string name="battery_bar_thickness_title">Aku riba laius</string>
     <string name="battery_bar_animate_title">Laadimis animatsioon</string>
     <string name="battery_bar_hide">Peida</string>
     <string name="battery_bar_statusbar">Olekuriba</string>
@@ -178,18 +187,32 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string name="set">Määra</string>
     <string name="color_default">Vaikimisi</string>
     <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">Luba skaleerimine</string>
+    <string name="aspect_ratio_apps_enabled_summary">Luba pärandrakendustel täisekraani kasutada</string>
+    <string name="aspect_ratio_apps_list_title">Rakendused, millel lubatakse skaleerimine</string>
+    <string name="aspect_ratio_category_title">Pärandrakeduste skaleerimine</string>
+    <string name="aspect_ratio_apps_info">Rakendused tuleb peale muutusi taaskäivitada</string>
+    <string name="action_save">Salvesta</string>
     <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Näita olekuriba</string>
     <!-- Dashboard -->
+    <string name="dashboard_category_title">Armatuurlaud</string>
     <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">Vaheta helitugevusklahvid</string>
     <!-- Lock screen cover art -->
     <!-- Battery Styles -->
+    <string name="battery_style_category_title">Aku</string>
+    <string name="battery_percent_title">Aku protsent</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Aku stiil</string>
     <string name="status_bar_battery_style_circle">Ring</string>
+    <string name="status_bar_battery_style_dotted_circle">Ring (katkendlik)</string>
+    <string name="status_bar_battery_style_filled_circle">Ring (täidetud)</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_style_hidden">Peidus</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Aku protsent</string>
+    <string name="status_bar_battery_percentage_default">Varjatud (vaikimisi)</string>
     <string name="status_bar_battery_percentage_text_inside">Ikooni sees</string>
     <string name="status_bar_battery_percentage_text_next">Ikooni kõrval</string>
 </resources>

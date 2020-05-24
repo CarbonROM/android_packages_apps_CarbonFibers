@@ -137,19 +137,30 @@
     <string name="torch_power_button_gesture_lp">Güç tuşuna basılı tutma</string>
     <!-- QS brightness -->
     <!-- Qs brightness slider -->
+    <string name="qs_brightness_slider_title">Parlaklık düzeyi</string>
+    <string name="qs_brightness_slider_summary">Parlaklık kaydırma çubuğunu göster</string>
+    <string name="qs_brightness_position_bottom">Parlaklık kaydırıcısının konumu</string>
     <!-- Qs auto-brightness icon -->
+    <string name="qs_autobrightness_icon_title">Otomatik parlaklık simgesi</string>
+    <string name="qs_autobrightness_icon_summary">Parlaklık kaydırıcısının yanında otomatik parlaklık simgesini göster</string>
     <!-- Status bar clock and date -->
+    <string name="status_bar_clock_title">Durum çubuğu saat ve tarih</string>
+    <string name="status_bar_clock_title_summary">Durum çubuğu saat ve tarih biçimini yönet</string>
     <!-- Status bar clock and date options -->
     <string name="status_bar_title">Durum çubuğu</string>
+    <string name="status_bar_style_title">Stil</string>
+    <string name="status_bar_clock">Saat ve Târih</string>
     <string name="clock_enabled">Etkin</string>
     <string name="clock_disabled">Devre dışı</string>
     <string name="status_bar_clock_style_reset">Rengi sıfırla</string>
+    <string name="status_bar_show_clock_title">Saati ve tarihi göster</string>
     <string name="status_bar_am_pm_title">ÖÖ/ÖS</string>
     <string name="status_bar_am_pm_info">24 saat görünümü etkin</string>
     <string name="enable_clock_weekday">Haftanın günü</string>
     <string name="enable_clock_weekday_summary">Haftanın ilk gününü kısaltılmış olarak saatten önce göster</string>
     <string name="dont_show">Gösterme</string>
     <string name="clock_date_display">Tarih</string>
+    <string name="clock_date_display_summary">Saatten önce özelleştirilmiş tarihi göster</string>
     <string name="clock_date_style">Tarih stili</string>
     <string name="clock_date_format">Tarih biçimi</string>
     <string name="clock_date_string_edittext_title">Tarih biçimi örnekteki gibi olmalıdır. AA/gg/yy</string>
@@ -167,31 +178,80 @@
     <string name="clock_date_left">Saatin solunda</string>
     <string name="clock_date_position">Tarih konumu</string>
     <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Kısayolu aç</string>
     <string name="quick_pulldown_none">Devre dışı</string>
     <!-- StatusBar Icons -->
+    <string name="status_bar_icons_title">Durum çubuğu simgeleri</string>
     <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G simgesi</string>
+    <string name="show_fourg_icon_summary">LTE yerine 4G simgesini göster</string>
     <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Kilit ekranı pil bilgisi</string>
+    <string name="lockscreen_battery_info_summary">Şarj olurken kilit ekranında şarj cihazının maksimum akım voltajını ve pil sıcaklığını görüntüle</string>
     <!-- Lock icon -->
+    <string name="lockscreen_lock_icon_title">Kilit simgesi</string>
+    <string name="lockscreen_lock_icon_summary">Mevcut kilit durumu simgesini kilit ekranında gösterir</string>
     <!-- Charging animation -->
+    <string name="charging_animation_title">Şarj animasyonu</string>
     <!-- Network traffic -->
+    <string name="network_traffic_title">Ağ göstergesi</string>
+    <string name="show_network_traffic_up">Yükleme</string>
+    <string name="show_network_traffic_down">İndirme</string>
+    <string name="show_network_traffic_all">Yükleme ve indirme</string>
     <string name="network_traffic_autohide_threshold_title">Ağ etkinliği otomatik gizlenme eşiği (KB/s)</string>
+    <string name="network_traffic_hidearrow">Okları gizle</string>
     <string name="network_traffic_hidearrow_summary">Ağ trafik göstergesi oklarını gizle</string>
     <!-- Battery Bar -->
+    <string name="battery_bar_title">Pil çubuğu</string>
+    <string name="battery_bar_location">Pil çubuğu konumu</string>
+    <string name="battery_bar_color">Pil çubuğu rengi</string>
+    <string name="battery_bar_charging_color">Pil çubuğu şarj rengi</string>
+    <string name="battery_bar_battery_low_color">Pil çubuğu düşük pil rengi</string>
+    <string name="battery_bar_style_title">Pil çubuğu stili</string>
+    <string name="battery_bar_thickness_title">Pil çubuğu kalınlığı</string>
+    <string name="battery_bar_animate_title">Şarj animasyonu</string>
+    <string name="battery_bar_animate_summary">Şarj animasyonu kötü bir kullanıcı deneyimi ile sonuçlanabilir. Etkinleştirmek size kalmış.</string>
+    <string name="battery_bar_hide">Gizle</string>
+    <string name="battery_bar_statusbar">Durum çubuğu</string>
+    <string name="battery_bar_topnav">Gezinti çubuğunun üstü</string>
+    <string name="battery_bar_bottomnav">Gezinti çubuğunun altı</string>
+    <string name="battery_bar_reg">Normal</string>
+    <string name="battery_bar_center">Orta-yansıtılmış</string>
+    <string name="battery_bar_reversed">Tersine Çevir</string>
+    <string name="battery_bar_use_gradient_color">Gradyan rengi kullan</string>
     <!-- Color Picker -->
+    <string name="dialog_color_picker">Renk Seçici</string>
+    <string name="press_color_to_apply">Uygulamak için rengin üzerine dokunun</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Ayarla</string>
     <string name="color_default">Varsayılan</string>
     <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">Ölçeklemeyi devreye sok</string>
+    <string name="action_save">Kaydet</string>
     <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Durum çubuğunu göster</string>
     <!-- Dashboard -->
     <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">Ses tuşlarının yerini değiştir</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Medya kapak görüntüsü</string>
     <!-- Battery Styles -->
+    <string name="battery_style_category_title">Pil</string>
+    <string name="battery_percent_title">Pil yüzdesi</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Pil stili</string>
+    <string name="status_bar_battery_style_icon_portrait">Dikey simge (Varsayılan)</string>
     <string name="status_bar_battery_style_circle">Daire</string>
+    <string name="status_bar_battery_style_dotted_circle">Daire (Noktalı)</string>
+    <string name="status_bar_battery_style_filled_circle">Daire (Katı)</string>
     <string name="status_bar_battery_style_text">Metin</string>
     <string name="status_bar_battery_style_hidden">Gizle</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Pil yüzdesi</string>
+    <string name="status_bar_battery_percentage_default">Gizle (Varsayılan)</string>
     <string name="status_bar_battery_percentage_text_inside">Simge içinde</string>
     <string name="status_bar_battery_percentage_text_next">Simge yanında</string>
 </resources>

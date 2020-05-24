@@ -30,6 +30,9 @@
     <string name="title_activity_carbon_recents_settings">Πρόσφατα</string>
     <!-- tap-to-sleep -->
     <!-- Global Actions -->
+    <string name="global_actions_restart">Επανεκκίνηση</string>
+    <string name="global_actions_airplane">Λειτουργία πτήσης</string>
+    <string name="global_actions_settings">Ρυθμίσεις</string>
     <!-- Pin scramble -->
     <!-- Aggressive battery -->
     <!-- SystemUI Tuner -->

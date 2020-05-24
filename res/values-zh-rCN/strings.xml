@@ -23,7 +23,23 @@
     <string name="power_save_category">节能</string>
     <string name="buttons_software_category">软件按钮</string>
     <string name="buttons_hardware_category">硬件按钮</string>
+    <string name="sb_options">状态栏选项</string>
+    <string name="network_traffic">网速显示</string>
+    <string name="qs_category">快速设置选项</string>
+    <string name="clock_category">时间和日期</string>
     <string name="shortcuts">电源菜单</string>
+    <string name="pin_option">固定选项</string>
+    <string name="double_tap">双击手势</string>
+    <string name="nav_ges">导航手势</string>
+    <string name="screenshot_gesture">屏幕截图手势</string>
+    <string name="recent_category">后台任务列表</string>
+    <string name="statistics_options">CR统计</string>
+    <string name="system_main_category_summary">调整系统选项</string>
+    <string name="statusbar_main_category_summary">调整状态栏图标</string>
+    <string name="lockscreen_main_category_summary">锁定屏幕布局和选项</string>
+    <string name="buttons_main_category_summary">硬件或软件按钮自定义选项</string>
+    <string name="gestures_main_category_summary">手势操作</string>
+    <string name="privacy_main_category_summary">其他设置</string>
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">取得支持</string>
     <string name="carbonfibers_dialog_message">Carbon 可能并不完美。\n\n如果您发现了错误，请在 Jira 上提出问题，或者通过以下步骤联系 Carbon 的开发者。\n\n1. 找到 kwoktopus\n2. 附上使用 Logcat last_kmsg 抓取的日志\n3. 描述您正在使用的内核和模组\n4. 提交其它有用的信息\n\n如果您没有按照上述步骤反馈问题，恕不解决问题。</string>
@@ -70,11 +86,13 @@
     <string name="global_actions_restart">重新启动</string>
     <string name="global_actions_airplane">飞行模式</string>
     <string name="global_actions_settings">设置</string>
+    <string name="global_actions_lockdown">不在锁定屏幕显示</string>
     <string name="global_actions_soundpanel">音量调整面板</string>
     <string name="global_actions_users">用户</string>
     <string name="global_actions_screenshot">屏幕截图</string>
     <string name="global_actions_screenrecord">屏幕录制</string>
     <string name="global_actions_flashlight">手电筒</string>
+    <string name="global_actions_emergency">紧急通话</string>
     <string name="global_actions_advanced_reboot_title">高级重启</string>
     <string name="global_actions_advanced_reboot_summary">将恢复模式和引导程序加入重启选项</string>
     <!-- Pin scramble -->
@@ -93,13 +111,15 @@
     <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">状态栏图标</string>
     <string name="status_bar_tuner_summary">选择要显示在状态栏上的图标</string>
+    <string name="navigation_bar_invert_layout_title">反转导航栏布局</string>
     <string name="lock_screen_shortcuts_title">锁定屏幕快捷方式</string>
     <string name="lock_screen_shortcuts_summary">管理锁定屏幕底部快捷键</string>
+    <string name="nav_bar_layout">导航栏布局</string>
     <string-array name="nav_bar_layouts">
         <item>正常</item>
-        <item>Compact</item>
-        <item>Left-leaning</item>
-        <item>Right-leaning</item>
+        <item>紧凑</item>
+        <item>靠左</item>
+        <item>靠右</item>
     </string-array>
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">锁屏播放控制</string>
@@ -111,20 +131,33 @@
     <string name="torch_power_button_gesture_dt_toast">已禁用跳转到相机的手势</string>
     <string name="torch_power_button_gesture_lp">按住电源按钮</string>
     <!-- QS brightness -->
+    <string name="qs_brightness_title">快速面板亮度调节</string>
+    <string name="qs_brightness_title_summary">修改快速面板亮度选项</string>
     <!-- Qs brightness slider -->
+    <string name="qs_brightness_slider_title">亮度条</string>
+    <string name="qs_brightness_slider_summary">显示亮度条</string>
+    <string name="qs_brightness_position_bottom">在快速面板底部显示亮度条</string>
     <!-- Qs auto-brightness icon -->
+    <string name="qs_autobrightness_icon_title">自动亮度按钮</string>
+    <string name="qs_autobrightness_icon_summary">在亮度调旁显示自动亮度按钮</string>
     <!-- Status bar clock and date -->
+    <string name="status_bar_clock_title">时间和日期</string>
+    <string name="status_bar_clock_title_summary">调整状态栏时间和日期样式</string>
     <!-- Status bar clock and date options -->
     <string name="status_bar_title">状态栏</string>
+    <string name="status_bar_style_title">样式</string>
+    <string name="status_bar_clock">时间 &amp; 日期</string>
     <string name="clock_enabled">已启用</string>
     <string name="clock_disabled">已停用</string>
     <string name="status_bar_clock_style_reset">重置颜色</string>
+    <string name="status_bar_show_clock_title">显示时间 &amp; 日期</string>
     <string name="status_bar_am_pm_title">上午/下午</string>
     <string name="status_bar_am_pm_info">24 小时制时钟已启用</string>
     <string name="enable_clock_weekday">星期</string>
     <string name="enable_clock_weekday_summary">缩写时间前的星期名</string>
     <string name="dont_show">不显示</string>
     <string name="clock_date_display">日期</string>
+    <string name="clock_date_display_summary">将日期显示在时间左侧</string>
     <string name="clock_date_style">日期样式</string>
     <string name="clock_date_format">日期格式</string>
     <string name="clock_date_string_edittext_title">日期格式必须为MM/dd/yy</string>
@@ -142,30 +175,105 @@
     <string name="clock_date_left">时间的左边</string>
     <string name="clock_date_position">日期位置</string>
     <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">快速设置下拉选项</string>
     <string name="quick_pulldown_none">关闭</string>
+    <string name="quick_pulldown_right">在状态栏右侧下拉显示快速设置面板</string>
+    <string name="quick_pulldown_left">在状态栏左侧下拉显示快速设置面板</string>
     <!-- StatusBar Icons -->
+    <string name="status_bar_icons_title">状态栏图标</string>
+    <string name="status_bar_icons_title_summary">修改状态栏显示的图标</string>
     <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G图标</string>
+    <string name="show_fourg_icon_summary">显示4G图标，而非LTE图标</string>
     <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">锁屏充电信息</string>
+    <string name="lockscreen_battery_info_summary">充电时在锁屏界面显示充电电流、电压及电池温度信息</string>
     <!-- Lock icon -->
+    <string name="lockscreen_lock_icon_title">锁屏图标</string>
+    <string name="lockscreen_lock_icon_summary">在锁屏界面显示锁定状态图标</string>
     <!-- Charging animation -->
+    <string name="charging_animation_title">充电动画</string>
+    <string name="charging_animation_summary">在插入充电器时显示动画</string>
     <!-- Network traffic -->
+    <string name="traffic_title">网速显示</string>
+    <string name="traffic_title_summary">自定义网速显示</string>
+    <string name="network_traffic_title">网速显示</string>
+    <string name="network_traffic_type">选择显示类型</string>
+    <string name="show_network_traffic_up">上传速度</string>
+    <string name="show_network_traffic_down">下载速度</string>
+    <string name="show_network_traffic_all">上传和下载速度</string>
+    <string name="network_traffic_state_title">在状态栏显示网速</string>
     <string name="network_traffic_autohide_threshold_title">无活动时自动隐藏阈值（KB / s）</string>
+    <string name="network_traffic_hidearrow">隐藏箭头</string>
+    <string name="network_traffic_hidearrow_summary">隐藏网速显示中的箭头</string>
     <!-- Battery Bar -->
+    <string name="battery_bar_title">电池栏</string>
+    <string name="battery_bar_summary">电池栏美化</string>
+    <string name="battery_bar_location">电池栏位置</string>
+    <string name="battery_bar_color">电池栏颜色</string>
+    <string name="battery_bar_charging_color">充电时的颜色</string>
+    <string name="battery_bar_battery_low_color">低电量时的颜色</string>
+    <string name="battery_bar_style_title">电池栏样式</string>
+    <string name="battery_bar_thickness_title">电池栏厚度</string>
+    <string name="battery_bar_animate_title">充电动画</string>
+    <string name="battery_bar_animate_summary">充电动画可能会给您带来不好的体验，请自行决定是否启用。</string>
+    <string name="battery_bar_hide">不显示</string>
+    <string name="battery_bar_statusbar">状态栏</string>
+    <string name="battery_bar_topnav">导航栏顶部</string>
+    <string name="battery_bar_bottomnav">导航栏底部</string>
+    <string name="battery_bar_reg">默认</string>
+    <string name="battery_bar_center">中心对称</string>
+    <string name="battery_bar_reversed">反向</string>
+    <string name="battery_bar_use_gradient_color">使用渐变色</string>
+    <string name="battery_bar_gradient_color_summary">使用渐变色显示剩余电量</string>
+    <string name="battery_bar_high_color">高电量色</string>
+    <string name="battery_bar_low_color">低电量色</string>
     <!-- Color Picker -->
+    <string name="dialog_color_picker">拾色器</string>
+    <string name="press_color_to_apply">点击选择颜色</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">十六进制：</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">确定</string>
     <string name="color_default">默认​​​​​</string>
     <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">启用缩放</string>
+    <string name="aspect_ratio_apps_enabled_summary">允许旧版应用使用全屏</string>
+    <string name="aspect_ratio_apps_list_title">允许缩放的程序列表</string>
+    <string name="aspect_ratio_category_title">旧版应用缩放</string>
+    <string name="aspect_ratio_apps_info">修改后需重启应用程序</string>
+    <string name="action_save">保存</string>
     <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_show_status_bar_title">显示状态栏</string>
+    <string name="lockscreen_show_status_bar_summary">锁屏界面的状态栏设置</string>
     <!-- Dashboard -->
+    <string name="dashboard_category_title">控制面板</string>
+    <string name="dashboard_conditions_title">控制面板选项</string>
+    <string name="summary_dashboard_conditions_enabled">控制面板选项已开启</string>
+    <string name="summary_dashboard_conditions_disabled">控制面板选项已关闭</string>
+    <string name="dashboard_suggestions_title">控制面板建议</string>
+    <string name="summary_dashboard_suggestions_enabled">已在控制面板中启用建议</string>
+    <string name="summary_dashboard_suggestions_disabled">已在控制面板中关闭建议</string>
     <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">音量键自动调整</string>
+    <string name="swap_volume_keys_on_rotation_summary">在旋转设备时自动调整音量键功能</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">显示媒体封面</string>
     <!-- Battery Styles -->
+    <string name="battery_style_category_title">电池</string>
+    <string name="battery_percent_title">电量百分比</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">电量图标样式</string>
+    <string name="status_bar_battery_style_icon_portrait">竖形图标（默认）</string>
     <string name="status_bar_battery_style_circle">圆形</string>
+    <string name="status_bar_battery_style_dotted_circle">圆环图标</string>
+    <string name="status_bar_battery_style_filled_circle">圆形图标</string>
     <string name="status_bar_battery_style_text">文字</string>
     <string name="status_bar_battery_style_hidden">隐藏</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">电量百分比</string>
+    <string name="status_bar_battery_percentage_default">隐藏（默认）</string>
     <string name="status_bar_battery_percentage_text_inside">图标内</string>
     <string name="status_bar_battery_percentage_text_next">图标旁边</string>
 </resources>

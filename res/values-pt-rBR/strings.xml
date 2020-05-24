@@ -23,7 +23,23 @@
     <string name="power_save_category">Modo de economia de energia</string>
     <string name="buttons_software_category">Botões virtuais</string>
     <string name="buttons_hardware_category">Botões físicos</string>
+    <string name="sb_options">Opções da barra de status</string>
+    <string name="network_traffic">Tráfego de rede</string>
+    <string name="qs_category">Opções de configurações rápidas</string>
+    <string name="clock_category">Relógio e Data</string>
     <string name="shortcuts">Menu de energia</string>
+    <string name="pin_option">Opção Pin</string>
+    <string name="double_tap">Gestos de toque duplo</string>
+    <string name="nav_ges">Navegação por gestos</string>
+    <string name="screenshot_gesture">Gestos de captura</string>
+    <string name="recent_category">Recente</string>
+    <string name="statistics_options">Estatísticas CR</string>
+    <string name="system_main_category_summary">Ajustar opções do sistema</string>
+    <string name="statusbar_main_category_summary">Ajustar itens da barra de status</string>
+    <string name="lockscreen_main_category_summary">Modificar layout e opções da tela de bloqueio</string>
+    <string name="buttons_main_category_summary">Personalizar teclas de hardware e software</string>
+    <string name="gestures_main_category_summary">Gestos baseados em opções e ações</string>
+    <string name="privacy_main_category_summary">Configurações da coleção de estatísticas variadas</string>
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Ajude-nos a ajudar você!</string>
     <string name="carbonfibers_dialog_message">Infelizmente não somos magos!\n\nSe você encontrou um erro, por favor, envie um ticket no Jira ou entre em contato com um desenvolvedor da CarbonROM com os seguintes dados:\n\n1. Blame kwotopus\n2. Logcat e/ou last_kmsg\n3. Kernel e modos usados\n4. Informações diversas\n\nSe você não conseguir reportar essas informações, não espere que o problema seja resolvido.</string>
@@ -70,6 +86,7 @@
     <string name="global_actions_restart">Reiniciar</string>
     <string name="global_actions_airplane">Avião</string>
     <string name="global_actions_settings">Configurações</string>
+    <string name="global_actions_lockdown">Bloquear na tela de bloqueio</string>
     <string name="global_actions_soundpanel">Painel de som</string>
     <string name="global_actions_users">Usuários</string>
     <string name="global_actions_screenshot">Captura de tela</string>
@@ -190,21 +207,74 @@
     <string name="network_traffic_hidearrow">Ocultar as setas</string>
     <string name="network_traffic_hidearrow_summary">Ocultar as setas do indicador de tráfego de rede</string>
     <!-- Battery Bar -->
+    <string name="battery_bar_title">Barra da bateria</string>
+    <string name="battery_bar_summary">Decorar barra de bateria</string>
+    <string name="battery_bar_location">Localização de barra de bateria</string>
+    <string name="battery_bar_color">Cor de barra de bateria</string>
+    <string name="battery_bar_charging_color">Cor de carregamento da barra de bateria</string>
+    <string name="battery_bar_battery_low_color">Cor de bateria fraca da barra de bateria</string>
+    <string name="battery_bar_style_title">Estilo de barra de bateria</string>
+    <string name="battery_bar_thickness_title">Espessura da barra de bateria</string>
+    <string name="battery_bar_animate_title">Animação ao carregar</string>
+    <string name="battery_bar_animate_summary">A animação ao carregar pode resultar em perdas de desempenho. Habilite a seu próprio critério.</string>
+    <string name="battery_bar_hide">Ocultar</string>
+    <string name="battery_bar_statusbar">Barra de status</string>
+    <string name="battery_bar_topnav">Parte superior da barra de navegação</string>
+    <string name="battery_bar_bottomnav">Parte inferior da barra de navegação</string>
+    <string name="battery_bar_reg">Padrão</string>
+    <string name="battery_bar_center">Centralizado</string>
+    <string name="battery_bar_reversed">Invertido</string>
+    <string name="battery_bar_use_gradient_color">Usar cor gradiente</string>
+    <string name="battery_bar_gradient_color_summary">Usar cor gradiente como uma escala para o nível da bateria</string>
+    <string name="battery_bar_high_color">Cor de nível alto\"</string>
+    <string name="battery_bar_low_color">Cor de nível baixo\"</string>
     <!-- Color Picker -->
+    <string name="dialog_color_picker">Seletor de cores</string>
+    <string name="press_color_to_apply">Selecione a cor abaixo para aplicar</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hexadecimal:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Definir</string>
     <string name="color_default">Padrão</string>
     <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">14/5000
+Ativar escala</string>
+    <string name="aspect_ratio_apps_enabled_summary">Permitir que aplicativos legacy usem tela cheia</string>
+    <string name="aspect_ratio_apps_list_title">Apps autorizados a usar dimensionamento</string>
+    <string name="aspect_ratio_category_title">Dimensionamento de aplicativos legados</string>
+    <string name="aspect_ratio_apps_info">Aplicativos precisam ser reiniciados após alterações</string>
+    <string name="action_save">Salvar</string>
     <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Mostrar barra de status</string>
+    <string name="lockscreen_show_status_bar_summary">Alterna a visibilidade da barra de status na tela de bloqueio</string>
     <!-- Dashboard -->
+    <string name="dashboard_category_title">Painel</string>
+    <string name="dashboard_conditions_title">Condições do painel</string>
+    <string name="summary_dashboard_conditions_enabled">Condições do painel estão habilitadas</string>
+    <string name="summary_dashboard_conditions_disabled">Condições do painel estão desativadas</string>
+    <string name="dashboard_suggestions_title">Sugestões do painel</string>
+    <string name="summary_dashboard_suggestions_enabled">As sugestões do painel estão ativadas</string>
+    <string name="summary_dashboard_suggestions_disabled">Sugestões do painel estão desativadas</string>
     <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">Trocar os botões de volume</string>
+    <string name="swap_volume_keys_on_rotation_summary">Alterar comportamento dos botões de volume ao girar o dispositivo</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Exibir capa do álbum</string>
     <!-- Battery Styles -->
+    <string name="battery_style_category_title">Bateria</string>
+    <string name="battery_percent_title">Porcentagem da bateria</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Estilo da bateria</string>
+    <string name="status_bar_battery_style_icon_portrait">Ícone em retrato (padrão)</string>
     <string name="status_bar_battery_style_circle">Círculo</string>
+    <string name="status_bar_battery_style_dotted_circle">Círculo Pontilhado</string>
+    <string name="status_bar_battery_style_filled_circle">Círculo Pontilhado</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_style_hidden">Oculto</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Porcentagem da bateria</string>
+    <string name="status_bar_battery_percentage_default">Oculto (padrão)</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
     <string name="status_bar_battery_percentage_text_next">Ao lado do ícone</string>
 </resources>

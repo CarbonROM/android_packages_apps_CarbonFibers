@@ -16,15 +16,21 @@
     <string name="lock_screen_category">Vergrendelscherm</string>
     <string name="buttons_category">Knoppen</string>
     <string name="gestures_category">Gebaren</string>
+    <string name="misc_category">Diversen</string>
+    <string name="power_save_category">Energiebesparing</string>
     <string name="buttons_software_category">Software knoppen</string>
     <string name="buttons_hardware_category">Hardware knoppen</string>
+    <string name="shortcuts">Snelkoppelingen</string>
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Help ons u te helpen!</string>
+    <string name="carbonfibers_dialog_message">Helaas zijn we geen tovenaars!\n\nDus, als u een fout vindt bij een instelling in CarbonFiber, opent u alstublieft een supportformulier op Jira of neem contact op met een Carbon ontwikkelaar met het volgende: \n\n1 #Ikmoetmeschamen*\n2. Logs!\n3. Kernel en modificaties gebruikt\n4 Extra nuttige informatie\n\n Als het niet lukt omm iets te melden met de bovenstaande informatie, verwacht niet er iets wordt opgelost. Onthoud dat we niet zo perfect zijn als Patrick, dus het kan zijn dat we dingen over het hoofd zien.</string>
+    <string name="carbonfibers_dialog_toast">Alles lezen!</string>
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">CarbonROM statistieken</string>
     <string name="anonymous_statistics_summary">Help CarbonROM beter te maken door anonieme statistieken te verzenden</string>
     <string name="anonymous_statistics_warning_title">Over</string>
+    <string name="anonymous_statistics_warning">Het inschakelen van CarbonROM statistieken zorgt ervoor dat niet-personelijke statistieken naar de ontwikkelaars van CarbonROM wordt gestuurd om unieke installaties op alle apparaten bij te houden. The informatie die wordt gestuurd heeft een unieke indentificator, die geen van uw privacy of persoonlijke data aantast. De data wordt verstuurd tijdens het opstarten van het apparaat. \n\nVoor een voorbeeld van de data wat wordt verstuurd. Klik op voorbeeldgegevens.</string>
     <string name="enable_reporting_title">Rapporteren inschakelen</string>
     <string name="preview_data_title">Voorbeeldgegevens</string>
     <string name="view_stats_title">Bekijk statestieken</string>
@@ -35,7 +41,9 @@
     <string name="preview_version_title">Versie</string>
     <string name="preview_country_title">Land</string>
     <string name="preview_carrier_title">Provider</string>
+    <string name="stats_collection_title">Statistieken verzamelen inschakelen</string>
     <!-- Smart Pixels -->
+    <string name="smart_pixels_on_power_save_summary">Gebruik Smart Pixels als energiebesparing is ingeschakeld</string>
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Verberg recente apps</string>
     <string name="hide_from_recents_add_app">App toevoegen</string>
@@ -46,30 +54,69 @@
     <string name="double_tap_lock_sleep_title">Dubbeltik vergrendelscherm om te slapen</string>
     <string name="double_tap_lock_sleep_summary">Tik twee keer op vergrendelscherm om te slapen</string>
     <!-- Global Actions -->
+    <string name="global_actions_title">Snelkoppelingen</string>
+    <string name="global_actions_summary">Opties toevoegen aan het power menu</string>
     <string name="global_actions_power">Vermogen</string>
     <string name="global_actions_restart">Herstart</string>
     <string name="global_actions_airplane">Vliegtuig</string>
     <string name="global_actions_settings">Instellingen</string>
+    <string name="global_actions_soundpanel">Geluidsmenu </string>
     <string name="global_actions_users">Gebruikers</string>
     <string name="global_actions_screenshot">Schermafbeelding</string>
+    <string name="global_actions_screenrecord">Schermopname</string>
     <string name="global_actions_flashlight">Zaklamp</string>
+    <string name="global_actions_advanced_reboot_title">Geavanceerd herstarten</string>
+    <string name="global_actions_advanced_reboot_summary">Herstel- en bootloader herstart opties weergeven</string>
     <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble PIN toetsenbord</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN toetsenbord layout</string>
     <!-- Aggressive battery -->
     <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Statusbalk iconen</string>
+    <string name="status_bar_tuner_summary">Statusbalk pictogrammen en opties bewerken</string>
     <string name="lock_screen_shortcuts_title">Vergrendelscherm snelkoppelingen</string>
     <string name="lock_screen_shortcuts_summary">Beheer vergrendelscherm onder snelkoppelingen</string>
+    <string-array name="nav_bar_layouts">
+        <item>Normaal</item>
+        <item>Compact</item>
+        <item>Left-leaning</item>
+        <item>Right-leaning</item>
+    </string-array>
     <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Scherm uit afspeelbediening</string>
+    <string name="volume_rocker_music_controls_summary">Houd de volumeknoppen ingedrukt om audiotracks te zoeken</string>
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Zaklamp inschakelen wanneer het scherm uit is</string>
     <string name="torch_power_button_gesture_none">Uitgeschakeld</string>
+    <string name="torch_power_button_gesture_dt">Dubbeltikken aan/uit knop</string>
     <string name="torch_power_button_gesture_dt_toast">Ga naar camera gebaar is nu uitgeschakeld</string>
+    <string name="torch_power_button_gesture_lp">Houd de aan/uitknop ingedrukt</string>
     <!-- QS brightness -->
     <!-- Qs brightness slider -->
     <!-- Qs auto-brightness icon -->
     <!-- Status bar clock and date -->
     <!-- Status bar clock and date options -->
     <string name="status_bar_title">Statusbalk</string>
+    <string name="clock_enabled">Ingeschakeld</string>
+    <string name="clock_disabled">Uitgeschakeld</string>
+    <string name="status_bar_clock_style_reset">Herstel kleuren</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-uurs klok is ingeschakeld</string>
+    <string name="enable_clock_weekday">Dag van de week</string>
+    <string name="dont_show">Niet weergeven</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_style">Datumnotatie</string>
+    <string name="clock_date_format">Datumnotatie</string>
+    <string name="clock_date_string_edittext_title">Moet in Datum formaat bijv. MM/dd/jj</string>
+    <string name="am_pm_clock_normal">Normale lettergrootte</string>
+    <string name="am_pm_clock_small">Kleine lettergrootte</string>
+    <string name="am_pm_clock_none">Niet weergeven</string>
+    <string name="clock_date_display_none">Niet weergeven</string>
+    <string name="clock_date_display_small">Kleine lettergrootte</string>
+    <string name="clock_date_display_normal">Normale lettergrootte</string>
+    <string name="clock_date_style_normal">Normaal</string>
+    <string name="clock_date_style_lowercase">Kleine letters</string>
+    <string name="clock_date_style_uppercase">Hoofdletters</string>
     <!-- Quick QS pulldown -->
     <string name="quick_pulldown_none">Uitgeschakeld</string>
     <!-- StatusBar Icons -->
@@ -93,4 +140,6 @@
     <string name="status_bar_battery_style_hidden">Verborgen</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Baterij percentage</string>
+    <string name="status_bar_battery_percentage_text_inside">In het icoon</string>
+    <string name="status_bar_battery_percentage_text_next">Naast het icoon</string>
 </resources>
