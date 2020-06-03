@@ -66,6 +66,7 @@ public class System extends CustomSettingsPreferenceFragment implements Preferen
     private static final String KEY_ASPECT_RATIO_APPS_LIST_SCROLLER = "aspect_ratio_apps_list_scroller";
     private static final String DASHBOARD_SUGESSTIONS = "enable_suggestions";
     private static final String DASHBOARD_CONDITIONS = "enable_conditions";
+    private static final String KEY_SYSTEM_POWER_SAVE_PREFERENCE_CATEGORY = "system_power_save_preference_category";
 
     private AppMultiSelectListPreference mAspectRatioAppsSelect;
     private ScrollAppsViewPreference mAspectRatioApps;
@@ -81,7 +82,16 @@ public class System extends CustomSettingsPreferenceFragment implements Preferen
         addCustomPreference(findPreference(KEY_ASPECT_RATIO_APPS_ENABLED), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(DASHBOARD_SUGESSTIONS), SYSTEM_TWO_STATE, STATE_ON);
         addCustomPreference(findPreference(DASHBOARD_CONDITIONS), SYSTEM_TWO_STATE, STATE_ON);
-        updateSmartPixelsPreference();
+
+        final PreferenceCategory powerSaveCategory =
+                (PreferenceCategory) getPreferenceScreen().findPreference(KEY_SYSTEM_POWER_SAVE_PREFERENCE_CATEGORY)
+        final boolean enableSmartPixels =
+                getResources().getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
+        Preference smartPixels = powerSaveCategory.findPreference(SMART_PIXELS);
+
+        if (!enableSmartPixels){
+            powerSaveCategory.removePreference(smartPixels);
+        }
 
         final PreferenceCategory aspectRatioCategory =
                 (PreferenceCategory) getPreferenceScreen().findPreference(KEY_ASPECT_RATIO_CATEGORY);
@@ -106,17 +116,6 @@ public class System extends CustomSettingsPreferenceFragment implements Preferen
         }
         mAspectRatioAppsSelect.setValues(valuesList);
         mAspectRatioAppsSelect.setOnPreferenceChangeListener(this);
-        }
-    }
-
-    private void updateSmartPixelsPreference() {
-        PreferenceScreen prefSet = getPreferenceScreen();
-        boolean enableSmartPixels = getContext().getResources().
-                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
-        Preference smartPixels = findPreference(SMART_PIXELS);
-
-        if (!enableSmartPixels){
-            prefSet.removePreference(smartPixels);
         }
     }
 
