@@ -49,23 +49,22 @@ public class System extends SettingsPreferenceFragment implements Indexable {
     private static final String TAG = "System";
     private static final String AGGRESSIVE_BATTERY ="aggressive_battery";
     private static final String SMART_PIXELS = "smart_pixels";
+    private static final String KEY_SYSTEM_POWER_SAVE_PREFERENCE_CATEGORY = "system_power_save_preference_category";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system);
-        updateSmartPixelsPreference();
-    }
 
-    private void updateSmartPixelsPreference() {
-        PreferenceScreen prefSet = getPreferenceScreen();
-        boolean enableSmartPixels = getContext().getResources().
-                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
-        Preference smartPixels = findPreference(SMART_PIXELS);
+        final PreferenceCategory powerSaveCategory =
+                (PreferenceCategory) getPreferenceScreen().findPreference(KEY_SYSTEM_POWER_SAVE_PREFERENCE_CATEGORY);
+        final boolean enableSmartPixels =
+                getResources().getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
+        Preference smartPixels = powerSaveCategory.findPreference(SMART_PIXELS);
 
         if (!enableSmartPixels){
-            prefSet.removePreference(smartPixels);
+            powerSaveCategory.removePreference(smartPixels);
         }
     }
 
