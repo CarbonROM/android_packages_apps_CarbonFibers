@@ -240,6 +240,7 @@
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Skalierung aktivieren</string>
     <string name="aspect_ratio_apps_enabled_summary">Alte Apps erlauben, den Vollbildmodus zu nutzen</string>
+    <string name="aspect_ratio_apps_list_summary"></string>
     <string name="aspect_ratio_apps_list_title">Apps, welche die Skalierung verwenden dürfen</string>
     <string name="aspect_ratio_category_title">Legacy-App-Skalierung</string>
     <string name="aspect_ratio_apps_info">Nach Änderungen müssen die Anwendungen neu gestartet werden</string>

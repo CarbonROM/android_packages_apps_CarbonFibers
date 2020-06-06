@@ -240,6 +240,7 @@
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Povolit změnu velikosti</string>
     <string name="aspect_ratio_apps_enabled_summary">Povolit starším aplikacím používat celou obrazovku</string>
+    <string name="aspect_ratio_apps_list_summary"></string>
     <string name="aspect_ratio_apps_list_title">Aplikace, které můžou používat změnu velikosti</string>
     <string name="aspect_ratio_category_title">Změna velikosti starších aplikací</string>
     <string name="aspect_ratio_apps_info">Po provedených změnách je nutné aplikaci restartovat</string>

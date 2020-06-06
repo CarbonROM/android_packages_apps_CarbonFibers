@@ -241,6 +241,7 @@ W zależności od tego jak dużo pikseli zdecydujesz się wyłączyć, będziesz
     <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Włącz skalowanie</string>
     <string name="aspect_ratio_apps_enabled_summary">Umożliwia aplikacją do korzystania z trybu pełnego ekranu</string>
+    <string name="aspect_ratio_apps_list_summary"></string>
     <string name="aspect_ratio_apps_list_title">Aplikacje mogące używać skalowania</string>
     <string name="aspect_ratio_category_title">Starsze skalowanie aplikacji</string>
     <string name="aspect_ratio_apps_info">Aplikacja potrzebuje ponownego uruchomienia telefonu by wprowadzić zmiany</string>

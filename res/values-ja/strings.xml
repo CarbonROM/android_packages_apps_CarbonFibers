@@ -238,18 +238,43 @@
     <string name="set">設定</string>
     <string name="color_default">既定</string>
     <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">スケーリングを有効化</string>
+    <string name="aspect_ratio_apps_enabled_summary">従来のアプリが全画面表示を使用するのを許可する</string>
+    <string name="aspect_ratio_apps_list_summary"></string>
+    <string name="aspect_ratio_apps_list_title">アプリはスケーリング使用を許可されています</string>
+    <string name="aspect_ratio_category_title">従来のアプリのスケーリング</string>
+    <string name="aspect_ratio_apps_info">変更後にアプリを再起動する必要があります</string>
+    <string name="action_save">保存</string>
     <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_show_status_bar_title">ステータスバーを表示</string>
+    <string name="lockscreen_show_status_bar_summary">ロック画面でステータスバーを表示する</string>
     <!-- Dashboard -->
+    <string name="dashboard_category_title">ダッシュボード</string>
+    <string name="dashboard_conditions_title">ダッシュボードの状態表示</string>
+    <string name="summary_dashboard_conditions_enabled">ダッシュボードの状態表示が有効です</string>
+    <string name="summary_dashboard_conditions_disabled">ダッシュボードの状態表示が無効です</string>
+    <string name="dashboard_suggestions_title">ダッシュボードの候補表示</string>
+    <string name="summary_dashboard_suggestions_enabled">ダッシュボードの候補表示が有効です</string>
+    <string name="summary_dashboard_suggestions_disabled">ダッシュボードの候補表示が無効です</string>
     <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">音量ボタンの入れ替え</string>
+    <string name="swap_volume_keys_on_rotation_summary">端末回転時に音量ボタンの上下を入れ替える</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">画面のメディアカバーアート</string>
     <!-- Battery Styles -->
+    <string name="battery_style_category_title">バッテリー</string>
+    <string name="battery_percent_title">バッテリー残量</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">バッテリーのスタイル</string>
+    <string name="status_bar_battery_style_icon_portrait">縦アイコン (既定)</string>
     <string name="status_bar_battery_style_circle">円</string>
+    <string name="status_bar_battery_style_dotted_circle">点の円</string>
+    <string name="status_bar_battery_style_filled_circle">塗り潰しの円</string>
     <string name="status_bar_battery_style_text">文字</string>
     <string name="status_bar_battery_style_hidden">非表示</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">バッテリー残量</string>
+    <string name="status_bar_battery_percentage_default">非表示 (既定)</string>
     <string name="status_bar_battery_percentage_text_inside">アイコンの内側</string>
     <string name="status_bar_battery_percentage_text_next">アイコンの外側</string>
 </resources>

@@ -11,19 +11,51 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
     <string name="system_category">Sistema</string>
     <string name="status_bar_category">Barra de estado</string>
     <string name="lock_screen_category">Ecrã de bloqueio</string>
     <string name="buttons_category">Botões</string>
     <string name="gestures_category">Gestos</string>
+    <string name="misc_category">Miscellaneous</string>
+    <string name="privacy_category">Privacy</string>
+    <string name="global_actions_category">Power Menu</string>
+    <string name="power_save_category">Power saving</string>
     <string name="buttons_software_category">Botões virtuais</string>
     <string name="buttons_hardware_category">Botões físicos</string>
+    <string name="sb_options">Status bar options</string>
+    <string name="network_traffic">Network Traffic</string>
+    <string name="qs_category">Quick settings options</string>
+    <string name="clock_category">Clock and Date</string>
+    <string name="shortcuts">Shortcuts</string>
+    <string name="pin_option">Pin option</string>
+    <string name="double_tap">Double tap gestures</string>
+    <string name="nav_ges">Gesture navigation</string>
+    <string name="screenshot_gesture">Screenshot gesture</string>
+    <string name="recent_category">Recent</string>
+    <string name="statistics_options">CR stats</string>
+    <string name="system_main_category_summary">Adjust system options</string>
+    <string name="statusbar_main_category_summary">Tune status bar items</string>
+    <string name="lockscreen_main_category_summary">Modify lock screen layout and options</string>
+    <string name="buttons_main_category_summary">Customize hardware and software keys</string>
+    <string name="gestures_main_category_summary">Gesture based options and actions</string>
+    <string name="privacy_main_category_summary">Misc and stats collection settings</string>
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Ajude-nos a ajudá-lo!</string>
+    <string name="carbonfibers_dialog_message">Unfortunately, we are not wizards!\n\nIf you find a bug, please open up a ticket on Jira or
+        contact a Carbon developer with the following.\n\n1. Blame kwoktopus\n2. Logcat and/or last_kmsg\n3. Kernel and mods used\n4.
+        Miscallaneous information\n\nIf you fail to report with the above information, do not expect the issue to be considered.</string>
+    <string name="carbonfibers_dialog_toast">Read it all!</string>
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">Estatísticas do CarbonROM</string>
+    <string name="anonymous_statistics_summary">Help make CarbonROM better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">Sobre</string>
+    <string name="anonymous_statistics_warning">Opting into CarbonROM Statistics will allow non-personal data to be submitted to the
+        developers of Carbon to track unique installations across devices. The information submitted includes an unique identifier,
+        which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data
+        that is submitted, tap on Preview data.</string>
+    <string name="enable_reporting_title">Enable reporting</string>
     <string name="preview_data_title">Pré-visualizar dados</string>
     <string name="view_stats_title">Ver estatísticas</string>
     <string name="anonymous_learn_more">Saber mais</string>
@@ -33,47 +65,221 @@
     <string name="preview_version_title">Versão</string>
     <string name="preview_country_title">País</string>
     <string name="preview_carrier_title">Operador</string>
+    <string name="stats_collection_title">Enable statistics collection</string>
     <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Shut off pixels to reduce power consumption</string>
+    <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
+    <string name="smart_pixels_on_power_save_summary">Use Smart Pixels when battery saver is enabled</string>
+    <string name="smart_pixels_percent">Percent of pixels to disable</string>
+    <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
+    <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
     <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Esconder aplicações dos recentes</string>
+    <string name="hide_apps_from_recents_summary">Hide apps from appearing in recents</string>
     <string name="hide_from_recents_add_app">Adicionar aplicação</string>
     <string name="title_activity_carbon_recents_settings">Recentes</string>
     <!-- tap-to-sleep -->
+    <string name="double_tap_status_bar_sleep_title">Double-tap status bar to sleep</string>
+    <string name="double_tap_status_bar_sleep_summary">Tap status bar twice to sleep</string>
+    <string name="double_tap_lock_sleep_title">Double-tap lock screen to sleep</string>
+    <string name="double_tap_lock_sleep_summary">Tap lock screen twice to sleep</string>
     <!-- Global Actions -->
+    <string name="global_actions_title">Shortcuts</string>
+    <string name="global_actions_summary">Add options to the power menu</string>
+    <string name="global_actions_power">Power</string>
     <string name="global_actions_restart">Reiniciar</string>
     <string name="global_actions_airplane">Avião</string>
     <string name="global_actions_settings">Definições</string>
+    <string name="global_actions_lockdown">Lock down on lock screen</string>
+    <string name="global_actions_soundpanel">Sound panel</string>
     <string name="global_actions_users">Utilizadores</string>
     <string name="global_actions_screenshot">Captura de ecrã</string>
+    <string name="global_actions_screenrecord">Screenrecord</string>
     <string name="global_actions_flashlight">Lanterna</string>
+    <string name="global_actions_emergency">Emergency Call</string>
+    <string name="global_actions_advanced_reboot_title">Advanced restart</string>
+    <string name="global_actions_advanced_reboot_summary">Show recovery and bootloader restart options</string>
     <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble PIN keyboard</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble the pin keyboard layout</string>
     <!-- Aggressive battery -->
+    <string name="aggressive_battery_title">Aggressive Battery</string>
+    <string name="aggressive_battery_summary">More strict battery savings</string>
+    <string name="aggressive_battery_warning_text">These are power saving features. They may interfere with services intended to run at idle, like navigation apps. You can whitelist these apps from being affected in the app battery settings.</string>
+    <string name="aggressive_idle_title">Aggressive Idle</string>
+    <string name="aggressive_idle_summary">Enter device idle more frequently and wake up less</string>
+    <string name="aggressive_standby_title">Aggressive Standby</string>
+    <string name="aggressive_standby_summary">Restrict apps from running the background</string>
+    <string name="aggressive_battery_saver_title">Auto-enable on battery saver </string>
+    <string name="aggressive_battery_saver_summary">Enable Aggressive Battery automatically when using battery saver</string>
     <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Status bar items</string>
+    <string name="status_bar_tuner_summary">Edit status bar icons and options</string>
+    <string name="navigation_bar_invert_layout_title">Invert navigation bar layout</string>
+    <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
+    <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
+    <string name="nav_bar_layout">Navigation bar layout</string>
+    <string-array name="nav_bar_layouts">
+        <item>Normal</item>
+        <item>Compact</item>
+        <item>Left-leaning</item>
+        <item>Right-leaning</item>
+    </string-array>
     <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Screen off playback control</string>
+    <string name="volume_rocker_music_controls_summary">Hold volume keys to seek audio tracks</string>
     <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Toggle torch when screen off</string>
+    <string name="torch_power_button_gesture_none">Disabled</string>
+    <string name="torch_power_button_gesture_dt">Double-tap power button</string>
+    <string name="torch_power_button_gesture_dt_toast">Jump to camera gesture is now disabled</string>
+    <string name="torch_power_button_gesture_lp">Hold power button</string>
     <!-- QS brightness -->
+    <string name="qs_brightness_title">QS Brightness Design </string>
+    <string name="qs_brightness_title_summary">Modify quick settings brightness design</string>
     <!-- Qs brightness slider -->
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show the brightness slider</string>
+    <string name="qs_brightness_position_bottom">Brightness slider on bottom</string>
     <!-- Qs auto-brightness icon -->
+    <string name="qs_autobrightness_icon_title">Auto-brightness icon</string>
+    <string name="qs_autobrightness_icon_summary">Show an auto-brightness icon next to the brightness slider</string>
     <!-- Status bar clock and date -->
+    <string name="status_bar_clock_title"> Clock and Date</string>
+    <string name="status_bar_clock_title_summary">Manage statusbar clock and date style</string>
     <!-- Status bar clock and date options -->
     <string name="status_bar_title">Barra de estado</string>
+    <string name="status_bar_style_title">Style</string>
+    <string name="status_bar_clock">Clock &amp; Date</string>
+    <string name="clock_enabled">Enabled</string>
+    <string name="clock_disabled">Disabled</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="enable_clock_weekday">Day of the week</string>
+    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
+    <string name="dont_show">Don\'t show</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="am_pm_clock_normal">Normal font size</string>
+    <string name="am_pm_clock_small">Small font size</string>
+    <string name="am_pm_clock_none">Don\'t show</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_date_position">Date position</string>
     <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
     <string name="quick_pulldown_none">Desativado</string>
+    <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
+    <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
     <!-- StatusBar Icons -->
+    <string name="status_bar_icons_title">Status bar icons</string>
+    <string name="status_bar_icons_title_summary">Change Status bar icon visibility</string>
     <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G icon</string>
+    <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
     <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display charger max current and voltage and battery temperature on lockscreen while charging</string>
     <!-- Lock icon -->
+    <string name="lockscreen_lock_icon_title">Lock icon</string>
+    <string name="lockscreen_lock_icon_summary">Show current lock status icon on the lockscreen</string>
     <!-- Charging animation -->
+    <string name="charging_animation_title">Charging animation</string>
+    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
     <!-- Network traffic -->
+    <string name="traffic_title">Traffic indicators</string>
+    <string name="traffic_title_summary">Customize network traffic indicators</string>
+    <string name="network_traffic_title">Network traffic</string>
+    <string name="network_traffic_type">Select net activity type</string>
+    <string name="show_network_traffic_up">Uplink</string>
+    <string name="show_network_traffic_down">Downlink</string>
+    <string name="show_network_traffic_all">Uplink and Downlink</string>
+    <string name="network_traffic_state_title">Show net activity in statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
+    <string name="network_traffic_hidearrow">Hide arrows</string>
+    <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
     <!-- Battery Bar -->
+    <string name="battery_bar_title">Battery Bar</string>
+    <string name="battery_bar_summary">Decorate battery bar</string>
+    <string name="battery_bar_location">Battery bar location</string>
+    <string name="battery_bar_color">Battery bar color</string>
+    <string name="battery_bar_charging_color">Battery bar charging color</string>
+    <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
+    <string name="battery_bar_style_title">Battery bar style</string>
+    <string name="battery_bar_thickness_title">Battery bar thickness</string>
+    <string name="battery_bar_animate_title">Charging animation</string>
+    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
+    <string name="battery_bar_hide">Hide</string>
+    <string name="battery_bar_statusbar">Statusbar</string>
+    <string name="battery_bar_topnav">Top of navbar</string>
+    <string name="battery_bar_bottomnav">Bottom of navbar</string>
+    <string name="battery_bar_reg">Regular</string>
+    <string name="battery_bar_center">Center-mirrored</string>
+    <string name="battery_bar_reversed">Reversed</string>
+    <string name="battery_bar_use_gradient_color">Use gradient color</string>
+    <string name="battery_bar_gradient_color_summary">Use gradient color as a scale for the battery level</string>
+    <string name="battery_bar_high_color">High level color\"</string>
+    <string name="battery_bar_low_color">Low level color\"</string>
     <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
     <string name="color_default">Predefinição</string>
     <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">Enable scaling</string>
+    <string name="aspect_ratio_apps_enabled_summary">Allow legacy apps to use full screen</string>
+    <string name="aspect_ratio_apps_list_summary"></string>
+    <string name="aspect_ratio_apps_list_title">Apps allowed to use scaling</string>
+    <string name="aspect_ratio_category_title">Legacy app scaling</string>
+    <string name="aspect_ratio_apps_info">Applications need to be restarted after changes</string>
+    <string name="action_save">Save</string>
     <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Show status bar</string>
+    <string name="lockscreen_show_status_bar_summary">Toggles status bar visibility on lock screen</string>
     <!-- Dashboard -->
+    <string name="dashboard_category_title">Dashboard</string>
+    <string name="dashboard_conditions_title">Dashboard conditions</string>
+    <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
+    <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
+    <string name="dashboard_suggestions_title">Dashboard suggestions</string>
+    <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
+    <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
     <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">Swap volume buttons</string>
+    <string name="swap_volume_keys_on_rotation_summary">Change volume buttons behaviour when rotating the device</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Display media cover art</string>
     <!-- Battery Styles -->
+    <string name="battery_style_category_title">Battery</string>
+    <string name="battery_percent_title">Battery percent</string>
     <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
     <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 </resources>

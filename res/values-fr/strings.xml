@@ -23,7 +23,23 @@
     <string name="power_save_category">Mode d\'économie d\'énergie</string>
     <string name="buttons_software_category">Boutons virtuels</string>
     <string name="buttons_hardware_category">Boutons physiques</string>
+    <string name="sb_options">Status bar options</string>
+    <string name="network_traffic">Network Traffic</string>
+    <string name="qs_category">Quick settings options</string>
+    <string name="clock_category">Clock and Date</string>
     <string name="shortcuts">Raccourcis</string>
+    <string name="pin_option">Pin option</string>
+    <string name="double_tap">Double tap gestures</string>
+    <string name="nav_ges">Gesture navigation</string>
+    <string name="screenshot_gesture">Screenshot gesture</string>
+    <string name="recent_category">Recent</string>
+    <string name="statistics_options">CR stats</string>
+    <string name="system_main_category_summary">Adjust system options</string>
+    <string name="statusbar_main_category_summary">Tune status bar items</string>
+    <string name="lockscreen_main_category_summary">Modify lock screen layout and options</string>
+    <string name="buttons_main_category_summary">Customize hardware and software keys</string>
+    <string name="gestures_main_category_summary">Gesture based options and actions</string>
+    <string name="privacy_main_category_summary">Misc and stats collection settings</string>
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Aidez-nous à vous aider !</string>
     <string name="carbonfibers_dialog_message">Malheureusement, nous ne sommes pas des magiciens!\n\nSi vous trouvez un bug, veuillez ouvrir un ticket sur Jira ou
@@ -72,11 +88,13 @@
     <string name="global_actions_restart">Redémarrer</string>
     <string name="global_actions_airplane">Mode avion</string>
     <string name="global_actions_settings">Paramètres</string>
+    <string name="global_actions_lockdown">Lock down on lock screen</string>
     <string name="global_actions_soundpanel">Panneau de volume</string>
     <string name="global_actions_users">Utlisateurs</string>
     <string name="global_actions_screenshot">Capture d\'écran</string>
     <string name="global_actions_screenrecord">Capture vidéo</string>
     <string name="global_actions_flashlight">Lampe torche</string>
+    <string name="global_actions_emergency">Emergency Call</string>
     <string name="global_actions_advanced_reboot_title">Redémarrage avancé</string>
     <string name="global_actions_advanced_reboot_summary">Afficher les options de redémarrage recovery et bootloader</string>
     <!-- Pin scramble -->
@@ -95,8 +113,10 @@
     <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Éléments de la barre d\'état</string>
     <string name="status_bar_tuner_summary">Modifier les icônes et options de la barre d\'état</string>
+    <string name="navigation_bar_invert_layout_title">Invert navigation bar layout</string>
     <string name="lock_screen_shortcuts_title">Raccourcis de l\'écran verrouillé</string>
     <string name="lock_screen_shortcuts_summary">Gérer les raccourcis en bas de l\'écran de verrouillage</string>
+    <string name="nav_bar_layout">Navigation bar layout</string>
     <string-array name="nav_bar_layouts">
         <item>Normal</item>
         <item>Compact</item>
@@ -113,20 +133,33 @@
     <string name="torch_power_button_gesture_dt_toast">Les gestes d\'activation de la caméra sont actuellement désactivés</string>
     <string name="torch_power_button_gesture_lp">Maintenir le bouton d\'alimentation</string>
     <!-- QS brightness -->
+    <string name="qs_brightness_title">QS Brightness Design </string>
+    <string name="qs_brightness_title_summary">Modify quick settings brightness design</string>
     <!-- Qs brightness slider -->
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show the brightness slider</string>
+    <string name="qs_brightness_position_bottom">Brightness slider on bottom</string>
     <!-- Qs auto-brightness icon -->
+    <string name="qs_autobrightness_icon_title">Auto-brightness icon</string>
+    <string name="qs_autobrightness_icon_summary">Show an auto-brightness icon next to the brightness slider</string>
     <!-- Status bar clock and date -->
+    <string name="status_bar_clock_title"> Clock and Date</string>
+    <string name="status_bar_clock_title_summary">Manage statusbar clock and date style</string>
     <!-- Status bar clock and date options -->
     <string name="status_bar_title">Barre d\'état</string>
+    <string name="status_bar_style_title">Style</string>
+    <string name="status_bar_clock">Clock &amp; Date</string>
     <string name="clock_enabled">Activé</string>
     <string name="clock_disabled">Désactivé</string>
     <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
+    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">L\'horloge au format 24 heures est activée</string>
     <string name="enable_clock_weekday">Jour de la semaine</string>
     <string name="enable_clock_weekday_summary">Jour de la semaine abrégé devant l\'heure</string>
     <string name="dont_show">Ne pas afficher</string>
     <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
     <string name="clock_date_style">Style de la date</string>
     <string name="clock_date_format">Format de la date</string>
     <string name="clock_date_string_edittext_title">Le format de date doit être par exemple: MM/jj/aa</string>
@@ -144,35 +177,106 @@
     <string name="clock_date_left">A gauche de l\'heure</string>
     <string name="clock_date_position">Emplacement de la date</string>
     <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Quick QS pulldown</string>
     <string name="quick_pulldown_none">Désactivé</string>
+    <string name="quick_pulldown_right">Pulldown statusbar from right side</string>
+    <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
     <!-- StatusBar Icons -->
     <string name="status_bar_icons_title">Icônes de la barre d’état</string>
+    <string name="status_bar_icons_title_summary">Change Status bar icon visibility</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">Icône 4G</string>
+    <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
     <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display charger max current and voltage and battery temperature on lockscreen while charging</string>
     <!-- Lock icon -->
+    <string name="lockscreen_lock_icon_title">Lock icon</string>
+    <string name="lockscreen_lock_icon_summary">Show current lock status icon on the lockscreen</string>
     <!-- Charging animation -->
+    <string name="charging_animation_title">Charging animation</string>
+    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
     <!-- Network traffic -->
+    <string name="traffic_title">Traffic indicators</string>
+    <string name="traffic_title_summary">Customize network traffic indicators</string>
     <string name="network_traffic_title">Trafic réseau</string>
+    <string name="network_traffic_type">Select net activity type</string>
+    <string name="show_network_traffic_up">Uplink</string>
+    <string name="show_network_traffic_down">Downlink</string>
+    <string name="show_network_traffic_all">Uplink and Downlink</string>
+    <string name="network_traffic_state_title">Show net activity in statusbar</string>
     <string name="network_traffic_autohide_threshold_title">Seuil pour masquer automatiquement le débit (KB/s)</string>
     <string name="network_traffic_hidearrow">Cacher les flèches</string>
     <string name="network_traffic_hidearrow_summary">Cacher les flèches indiquant le trafic réseau</string>
     <!-- Battery Bar -->
+    <string name="battery_bar_title">Battery Bar</string>
+    <string name="battery_bar_summary">Decorate battery bar</string>
+    <string name="battery_bar_location">Battery bar location</string>
+    <string name="battery_bar_color">Battery bar color</string>
+    <string name="battery_bar_charging_color">Battery bar charging color</string>
+    <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
+    <string name="battery_bar_style_title">Battery bar style</string>
+    <string name="battery_bar_thickness_title">Battery bar thickness</string>
+    <string name="battery_bar_animate_title">Charging animation</string>
+    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
+    <string name="battery_bar_hide">Hide</string>
+    <string name="battery_bar_statusbar">Statusbar</string>
+    <string name="battery_bar_topnav">Top of navbar</string>
+    <string name="battery_bar_bottomnav">Bottom of navbar</string>
+    <string name="battery_bar_reg">Regular</string>
+    <string name="battery_bar_center">Center-mirrored</string>
+    <string name="battery_bar_reversed">Reversed</string>
+    <string name="battery_bar_use_gradient_color">Use gradient color</string>
+    <string name="battery_bar_gradient_color_summary">Use gradient color as a scale for the battery level</string>
+    <string name="battery_bar_high_color">High level color\"</string>
+    <string name="battery_bar_low_color">Low level color\"</string>
     <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
     <string name="color_default">Défaut</string>
     <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">Enable scaling</string>
+    <string name="aspect_ratio_apps_enabled_summary">Allow legacy apps to use full screen</string>
+    <string name="aspect_ratio_apps_list_summary"></string>
+    <string name="aspect_ratio_apps_list_title">Apps allowed to use scaling</string>
+    <string name="aspect_ratio_category_title">Legacy app scaling</string>
+    <string name="aspect_ratio_apps_info">Applications need to be restarted after changes</string>
+    <string name="action_save">Save</string>
     <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Show status bar</string>
+    <string name="lockscreen_show_status_bar_summary">Toggles status bar visibility on lock screen</string>
     <!-- Dashboard -->
+    <string name="dashboard_category_title">Dashboard</string>
+    <string name="dashboard_conditions_title">Dashboard conditions</string>
+    <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
+    <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
+    <string name="dashboard_suggestions_title">Dashboard suggestions</string>
+    <string name="summary_dashboard_suggestions_enabled">Dashboard suggestions are enabled</string>
+    <string name="summary_dashboard_suggestions_disabled">Dashboard suggestions are disabled</string>
     <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">Swap volume buttons</string>
+    <string name="swap_volume_keys_on_rotation_summary">Change volume buttons behaviour when rotating the device</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Display media cover art</string>
     <!-- Battery Styles -->
+    <string name="battery_style_category_title">Battery</string>
+    <string name="battery_percent_title">Battery percent</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Style de la batterie</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait (default)</string>
     <string name="status_bar_battery_style_circle">Cercle</string>
+    <string name="status_bar_battery_style_dotted_circle">Circle (Dotted)</string>
+    <string name="status_bar_battery_style_filled_circle">Circle (Filled)</string>
     <string name="status_bar_battery_style_text">Texte</string>
     <string name="status_bar_battery_style_hidden">Masqué</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Pourcentage de batterie</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
     <string name="status_bar_battery_percentage_text_inside">À l\'intérieur de l\'icône</string>
     <string name="status_bar_battery_percentage_text_next">À côté de l\'icône</string>
 </resources>
