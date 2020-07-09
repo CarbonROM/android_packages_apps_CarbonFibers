@@ -178,7 +178,7 @@
     <string name="clock_date_position">Posición de la fecha</string>
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Despliegue rápido</string>
-    <string name="quick_pulldown_none">Desactivado</string>
+    <string name="quick_pulldown_none">Deshabilitado</string>
     <string name="quick_pulldown_right">Desplegar barra de estado desde el lado derecho</string>
     <string name="quick_pulldown_left">Desplegar barra de estado desde el lado izquierdo</string>
     <!-- StatusBar Icons -->

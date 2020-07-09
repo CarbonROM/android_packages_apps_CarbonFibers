@@ -47,7 +47,7 @@
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">CarbonROM 统计</string>
-    <string name="anonymous_statistics_summary">匿名统计报告使 CarbonROM 更好</string>
+    <string name="anonymous_statistics_summary">发送匿名统计数据来帮助 CarbonROM 变得更好</string>
     <string name="anonymous_statistics_warning_title">关于</string>
     <string name="anonymous_statistics_warning">一旦您加入 CarbonROM 统计信息收集计划，我们将收集您的非隐私数据来统计 CarbonROM 的安装情况。我们收集的数据使用唯一识别吗，这将使您的私人信息得到保障。收集的数据将会在每次开机时提交。\n\n点击预览数据按钮来查看要发送信息的示例。</string>
     <string name="enable_reporting_title">启用报告</string>
@@ -55,7 +55,7 @@
     <string name="view_stats_title">查看统计信息</string>
     <string name="anonymous_learn_more">了解更多</string>
     <!-- Anonymous Statistics - Preview -->
-    <string name="preview_id_title">识别码</string>
+    <string name="preview_id_title">唯一识别码</string>
     <string name="preview_device_title">设备</string>
     <string name="preview_version_title">版本</string>
     <string name="preview_country_title">国家/地区</string>
@@ -176,7 +176,7 @@
     <string name="clock_date_position">日期位置</string>
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">快速设置下拉选项</string>
-    <string name="quick_pulldown_none">关闭</string>
+    <string name="quick_pulldown_none">已停用</string>
     <string name="quick_pulldown_right">在状态栏右侧下拉显示快速设置面板</string>
     <string name="quick_pulldown_left">在状态栏左侧下拉显示快速设置面板</string>
     <!-- StatusBar Icons -->

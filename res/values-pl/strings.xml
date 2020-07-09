@@ -177,7 +177,7 @@ W zależności od tego jak dużo pikseli zdecydujesz się wyłączyć, będziesz
     <string name="clock_date_position">Pozycja daty</string>
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Szybkie rozwijanie</string>
-    <string name="quick_pulldown_none">Wyłączony</string>
+    <string name="quick_pulldown_none">Wyłączone</string>
     <string name="quick_pulldown_right">Przeciągnij pasek stanu z prawej strony</string>
     <string name="quick_pulldown_left">Przeciągnij pasek stanu z lewej strony</string>
     <!-- StatusBar Icons -->

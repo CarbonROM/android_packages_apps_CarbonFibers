@@ -28,6 +28,7 @@
     <string name="qs_category">Названия плиток</string>
     <string name="clock_category">Дата и время</string>
     <string name="shortcuts">Меню управления питанием</string>
+    <string name="pin_option">Опция Pin</string>
     <string name="double_tap">Жесты двойного нажатия</string>
     <string name="nav_ges">Навигация жестами</string>
     <string name="screenshot_gesture">Жест скриншота</string>
@@ -85,6 +86,7 @@
     <string name="global_actions_restart">Перезагрузка</string>
     <string name="global_actions_airplane">Режим полёта</string>
     <string name="global_actions_settings">Настройки</string>
+    <string name="global_actions_lockdown">Блокировка на экране блокировки</string>
     <string name="global_actions_soundpanel">Звуковая панель</string>
     <string name="global_actions_users">Пользователи</string>
     <string name="global_actions_screenshot">Снимок экрана</string>
@@ -236,18 +238,42 @@
     <string name="set">Установить</string>
     <string name="color_default">По умолчанию</string>
     <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">Включить масштабирование</string>
+    <string name="aspect_ratio_apps_enabled_summary">Разрешить устаревшим приложениям использовать весь экран</string>
+    <string name="aspect_ratio_apps_list_title">Приложениям разрешено использовать масштабирование</string>
+    <string name="aspect_ratio_category_title">Устаревшее масштабирование приложения</string>
+    <string name="aspect_ratio_apps_info">Приложения должны быть перезапущены после изменений</string>
+    <string name="action_save">Сохранить</string>
     <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Показать строку состояния</string>
+    <string name="lockscreen_show_status_bar_summary">Переключение видимости строки состояния на экране блокировки</string>
     <!-- Dashboard -->
+    <string name="dashboard_category_title">Приборная панель</string>
+    <string name="dashboard_conditions_title">Состояние приборной панели</string>
+    <string name="summary_dashboard_conditions_enabled">Состояние в меню настроек выключено</string>
+    <string name="summary_dashboard_conditions_disabled">Состояние в меню настроек включено</string>
+    <string name="dashboard_suggestions_title">Подсказки в меню настроек</string>
+    <string name="summary_dashboard_suggestions_enabled">Подсказки в меню настроек включены</string>
+    <string name="summary_dashboard_suggestions_disabled">Подсказки в меню настроек выключены</string>
     <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">Поменять кнопки громкости</string>
+    <string name="swap_volume_keys_on_rotation_summary">Изменить поведение кнопок громкости при повороте устройства</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Показывать медиа обложку</string>
     <!-- Battery Styles -->
+    <string name="battery_style_category_title">Батарея</string>
+    <string name="battery_percent_title">Процент батареи</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Стиль индикатора батареи</string>
+    <string name="status_bar_battery_style_icon_portrait">Портретная иконка (по умолчанию)</string>
     <string name="status_bar_battery_style_circle">Круглый значок</string>
+    <string name="status_bar_battery_style_dotted_circle">Круг (Точечный)</string>
+    <string name="status_bar_battery_style_filled_circle">Круг (Заполненный)</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Не показывать</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Процент батареи</string>
+    <string name="status_bar_battery_percentage_default">Скрытый (по умолчанию)</string>
     <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
     <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
 </resources>
