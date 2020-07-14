@@ -27,6 +27,8 @@ import org.carbonrom.carbonfibers.R;
 
 public class SwipeToScreenshotGesturePreferenceController extends GesturePreferenceController {
 
+    private static final String PREF_KEY_VIDEO = "swipe_to_screenshot_video";
+
     public SwipeToScreenshotGesturePreferenceController(Context context,
             String key) {
         super(context, key);
@@ -39,7 +41,7 @@ public class SwipeToScreenshotGesturePreferenceController extends GesturePrefere
 
     @Override
     protected String getVideoPrefKey() {
-        return "";
+        return PREF_KEY_VIDEO;
     }
 
     @Override
