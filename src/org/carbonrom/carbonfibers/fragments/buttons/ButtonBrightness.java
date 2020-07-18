@@ -32,6 +32,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
 import com.android.settings.R;
+import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
@@ -39,10 +40,13 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.carbon.CustomSeekBarPreference;
 
-public class ButtonBrightness extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+public class ButtonBrightness extends CustomSettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
+    private static final String KEY_BUTTON_BACKLIGHT_ENABLE = "button_backlight_enable";
+    private static final String KEY_BUTTON_USE_SCREEN_BRIGHTNESS = "custom_button_use_screen_brightness";
     private static final String KEY_BUTTON_MANUAL_BRIGHTNESS_NEW = "button_manual_brightness_new";
     private static final String KEY_BUTTON_TIMEOUT = "button_timeout";
+    private static final String KEY_BUTTON_BACKLIGHT_ON_TOUCH_ONLY = "button_backlight_on_touch_only";
 
     private CustomSeekBarPreference mButtonTimoutBar;
     private CustomSeekBarPreference mManualButtonBrightness;
@@ -51,6 +55,10 @@ public class ButtonBrightness extends SettingsPreferenceFragment implements Pref
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.button_brightness);
+
+        addCustomPreference(findPreference(KEY_BUTTON_BACKLIGHT_ENABLE), SYSTEM_TWO_STATE, STATE_ON);
+        addCustomPreference(findPreference(KEY_BUTTON_USE_SCREEN_BRIGHTNESS), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(KEY_BUTTON_BACKLIGHT_ON_TOUCH_ONLY), SYSTEM_TWO_STATE, STATE_OFF);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
