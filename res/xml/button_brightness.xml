@@ -19,13 +19,13 @@
         android:key="button_brightness"
         android:title="@string/button_backlight_title" >
 
-    <org.carbonrom.carbonfibers.preference.SystemSettingSwitchPreference
+    <SwitchPreference
         android:key="button_backlight_enable"
         android:title="@string/button_backlight_enable_title"
         android:summary="@string/button_backlight_enable_summary"
         android:defaultValue="true"/>
 
-    <org.carbonrom.carbonfibers.preference.SystemSettingSwitchPreference
+    <SwitchPreference
         android:key="custom_button_use_screen_brightness"
         android:title="@string/button_link_brightness"
         android:summary="@string/button_link_brightness_summary"
@@ -49,7 +49,7 @@
         android:persistent="false"
         android:dependency="button_backlight_enable" />
 
-    <org.carbonrom.carbonfibers.preference.SystemSettingSwitchPreference
+    <SwitchPreference
         android:key="button_backlight_on_touch_only"
         android:title="@string/button_backlight_on_touch_only_title"
         android:summary="@string/button_backlight_on_touch_only_summary"
