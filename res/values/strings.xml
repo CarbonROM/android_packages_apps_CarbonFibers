@@ -321,16 +321,8 @@
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
-    <!-- Button backlight -->
-    <string name="button_backlight_title">Backlight</string>
-    <string name="button_backlight_summary">Configure backlight for capacitive keys</string>
-    <string name="button_backlight_on_touch_only_title">Button touch</string>
-    <string name="button_backlight_on_touch_only_summary">Enable backlight with timeout only on button touch</string>
-    <string name="button_timeout_title">Backlight timeout</string>
-    <string name="button_link_brightness">Link to screen brightness</string>
-    <string name="button_link_brightness_summary">Use screen brightness level</string>
-    <string name="button_manual_brightness">Brightness level</string>
-    <string name="button_backlight_enable_title">Allow backlight</string>
-    <string name="button_backlight_enable_summary">Enable backlight for capacitive keys</string>
+    <!-- Proximity sensor for flashlight -->
+    <string name="torch_proximity_check_title">Flip case friendly flashlight</string>
+    <string name="torch_proximity_check_summary">Disables proximity sensor when turning on flashlight</string>
 
 </resources>

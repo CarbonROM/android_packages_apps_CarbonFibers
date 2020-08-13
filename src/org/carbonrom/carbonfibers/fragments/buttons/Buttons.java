@@ -51,6 +51,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
     private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
     private static final String SWAP_VOLUME_KEYS_ON_ROTATION = "swap_volume_keys_on_rotation";
+    private static final String DISABLE_TORCH_PROXIMITY_CHECK = "disable_torch_proximity_check";
 
     private ListPreference mNavBarLayout;
     private ListPreference mTorchPowerButton;
@@ -67,6 +68,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
         addCustomPreference(findPreference(INVERSE_NAVBAR), SECURE_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
         addCustomPreference(findPreference(SWAP_VOLUME_KEYS_ON_ROTATION), SYSTEM_TWO_STATE, STATE_OFF);
+        addCustomPreference(findPreference(DISABLE_TORCH_PROXIMITY_CHECK), SYSTEM_TWO_STATE, STATE_OFF);
 
         mNavBarLayout = (ListPreference) findPreference(NAV_BAR_LAYOUT);
         mNavBarLayout.setOnPreferenceChangeListener(this);
@@ -118,6 +120,7 @@ public class Buttons extends CustomSettingsPreferenceFragment implements Prefere
                         (R.string.torch_power_button_gesture_dt_toast),
                         Toast.LENGTH_SHORT).show();
             }
+            findPreference("disable_torch_proximity_check").setEnabled(torchPowerButtonValue != 0);
             return true;
         }
         return false;
