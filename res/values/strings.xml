@@ -321,4 +321,8 @@
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
+    <!-- Proximity sensor for flashlight -->
+    <string name="torch_proximity_check_title">Flip case friendly flashlight</string>
+    <string name="torch_proximity_check_summary">Disables proximity sensor when turning on flashlight</string>
+
 </resources>
