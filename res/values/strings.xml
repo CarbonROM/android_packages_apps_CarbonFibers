@@ -333,4 +333,8 @@
     <string name="button_backlight_enable_title">Allow backlight</string>
     <string name="button_backlight_enable_summary">Enable backlight for capacitive keys</string>
 
+    <!-- Proximity sensor for flashlight -->
+    <string name="torch_proximity_check_title">Flip case friendly flashlight</string>
+    <string name="torch_proximity_check_summary">Disables proximity sensor when turning on flashlight</string>
+
 </resources>
