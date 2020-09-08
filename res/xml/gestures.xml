@@ -22,7 +22,8 @@
     android:title="@string/gesture_preference_title">
 
  <PreferenceCategory
-   android:title="@string/double_tap">
+   android:title="@string/double_tap"
+   android:key="double_tap_gestures">
 
     <SwitchPreference
         android:key="double_tap_sleep_gesture"
@@ -40,6 +41,7 @@
 
  <PreferenceCategory
    android:title="@string/nav_ges"
+   android:key="nav_ges"
    settings:allowDividerAbove="true">
 
     <Preference
@@ -52,6 +54,7 @@
 
  <PreferenceCategory
    android:title="@string/screenshot_gesture"
+   android:key="screenshot_gesture"
    settings:allowDividerAbove="true">
     <Preference
         android:key="swipe_to_screenshot_summary"

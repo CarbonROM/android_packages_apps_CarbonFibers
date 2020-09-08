@@ -57,6 +57,13 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements Prefe
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
 
+    private static final String STATUS_BAR_ICONS = "status_bar_icons";
+    private static final String STATUS_BAR_BATTERYBAR_SETTINGS = "batterybar_settings";
+    private static final String STATUS_BAR_TRAFFIC = "traffic";
+    private static final String STATUS_BAR_QS_BRIGHTNESS = "qs_brightness";
+    private static final String STATUS_BAR_CLOCK_DATE = "status_bar_clock";
+
+
     private static final int BATTERY_STYLE_PORTRAIT = 0;
     private static final int BATTERY_STYLE_TEXT = 4;
     private static final int BATTERY_STYLE_HIDDEN = 5;
@@ -198,6 +205,11 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements Prefe
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
+                    keys.add(STATUS_BAR_ICONS);
+                    keys.add(STATUS_BAR_BATTERYBAR_SETTINGS);
+                    keys.add(STATUS_BAR_TRAFFIC);
+                    keys.add(STATUS_BAR_QS_BRIGHTNESS);
+                    keys.add(STATUS_BAR_CLOCK_DATE);
                     return keys;
                 }
             };

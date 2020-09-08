@@ -17,6 +17,7 @@
 
 <PreferenceScreen
     android:title="@string/qs_brightness_title"
+    android:key="qs_brightness_title"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
