@@ -21,7 +21,8 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
  <PreferenceCategory
-   android:title="@string/shortcuts">
+   android:title="@string/shortcuts"
+   android:key="ls_shortcuts">
 
     <Preference
         android:key="lockscreen_shortcuts"
@@ -35,6 +36,7 @@
 
  <PreferenceCategory
    android:title="@string/pin_option"
+   android:key="pin_option"
    settings:allowDividerAbove="true">
 
      <SwitchPreference

@@ -25,6 +25,7 @@
    android:title="@string/recent_category" >
     <PreferenceScreen
         android:title="@string/hide_apps_from_recents_title"
+        android:key="hide_apps_from_recents_title"
         android:summary="@string/hide_apps_from_recents_summary" >
         <intent android:action="android.intent.action.MAIN"
             android:targetPackage="com.android.settings"

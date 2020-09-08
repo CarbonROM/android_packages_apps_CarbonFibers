@@ -22,7 +22,8 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
-        android:title="@string/buttons_software_category">
+        android:title="@string/buttons_software_category"
+        android:key="buttons_software_category" >
 
         <ListPreference
             android:key="nav_bar_layout"
