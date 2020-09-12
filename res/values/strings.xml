@@ -333,4 +333,20 @@
     <string name="button_backlight_enable_title">Allow backlight</string>
     <string name="button_backlight_enable_summary">Enable backlight for capacitive keys</string>
 
+    <!-- Captive portal customizer -->
+    <string name="captive_portal_title">Captive portal config</string>
+    <string name="captive_portal_summary">Set a new URL for system to perform connectivity checks</string>
+    <string name="custom_captive_portal_editor">Captive portal config</string>
+    <string name="raw_url_default">http://connectivitycheck.gstatic.com/generate_204</string>
+    <string name="cp_url_default_title">Google (default)</string>
+    <string name="raw_url_ubuntu">https://connectivity-check.ubuntu.com</string>
+    <string name="cp_url_ubuntu_title">Ubuntu</string>
+    <string name="raw_url_yxa">http://conntest.yxa.at/204.php</string>
+    <string name="cp_url_yxa_title">yxa</string>
+    <string name="url_edit_hint">Enter a captive portal URL</string>
+    <string name="submit_button">Submit</string>
+    <string name="done_button">Done</string>
+    <string name="default_button">Default</string>
+    <string name="toast_url_default">Resetting captive portal URL to system default</string>
+
 </resources>
