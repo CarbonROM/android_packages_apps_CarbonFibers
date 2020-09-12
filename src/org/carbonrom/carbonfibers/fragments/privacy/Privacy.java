@@ -16,10 +16,13 @@
 
 package org.carbonrom.carbonfibers.fragments.privacy;
 
+import android.app.FragmentManager;
+import android.app.DialogFragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 
+import androidx.fragment.app.FragmentTransaction;
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
 
@@ -42,6 +45,17 @@ public class Privacy extends CustomSettingsPreferenceFragment implements Indexab
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.privacy);
+
+        Preference mCaptivePortalPref = findPreference("captive_portal");
+        mCaptivePortalPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                CaptivePortalCustomizer newFragment = CaptivePortalCustomizer .newInstance();
+                newFragment.show(ft, "CaptivePortalCustomizer");
+                return true;
+            }
+		});
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
