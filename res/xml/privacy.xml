@@ -32,6 +32,11 @@
             android:targetClass="org.carbonrom.carbonfibers.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
     </PreferenceScreen>
 
+    <Preference
+        android:key="captive_portal"
+        android:title="@string/captive_portal_title"
+        android:summary="@string/captive_portal_summary" />
+
  </PreferenceCategory>
 
  <PreferenceCategory
