@@ -119,7 +119,6 @@ public class ActionFragment extends SettingsPreferenceFragment implements
     public Dialog onCreateDialog(int dialogId) {
         switch (dialogId) {
             case DIALOG_CATEGORY: {
-                Dialog dialog;
                 final DialogInterface.OnClickListener categoryClickListener = new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int item) {
@@ -127,16 +126,14 @@ public class ActionFragment extends SettingsPreferenceFragment implements
                         dialog.dismiss();
                     }
                 };
-                dialog = new AlertDialog.Builder(getActivity())
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
                         .setTitle(R.string.choose_action_title)
                         .setItems(getResources().getStringArray(R.array.action_dialog_entries),
                                 categoryClickListener)
-                        .setNegativeButton(getString(android.R.string.cancel), null)
-                        .create();
-                return dialog;
+                        .setNegativeButton(getString(android.R.string.cancel), null);
+                return builder.create();
             }
             case DIALOG_CUSTOM_ACTIONS: {
-                Dialog dialog;
                 final CustomActionListAdapter adapter = new CustomActionListAdapter(getActivity());
                 if (!usesExtendedActionsList()) {
                     adapter.removeAction(ActionHandler.SYSTEMUI_TASK_HOME);
@@ -149,12 +146,11 @@ public class ActionFragment extends SettingsPreferenceFragment implements
                         dialog.dismiss();
                     }
                 };
-                dialog = new AlertDialog.Builder(getActivity())
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
                         .setTitle(getString(R.string.action_entry_custom_action))
                         .setAdapter(adapter, customActionClickListener)
-                        .setNegativeButton(getString(android.R.string.cancel), null)
-                        .create();
-                return dialog;
+                        .setNegativeButton(getString(android.R.string.cancel), null);
+                return builder.create();
             }
         }
         return super.onCreateDialog(dialogId);
