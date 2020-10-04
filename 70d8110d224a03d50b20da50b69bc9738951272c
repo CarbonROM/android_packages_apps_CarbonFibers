@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e476e5c8_81c71627",
+        "filename": "src/org/carbonrom/carbonfibers/fragments/buttons/Buttons.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2020-10-04T00:29:59Z",
+      "side": 1,
+      "message": "That\u0027s not needed, the customPreference handling takes care of it.",
+      "revId": "70d8110d224a03d50b20da50b69bc9738951272c",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": true
+    }
+  ]
+}
