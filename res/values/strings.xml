@@ -20,6 +20,7 @@
     <string name="privacy_category">Privacy</string>
     <string name="power_save_category">Power saving</string>
     <string name="global_actions_category">Power Menu</string>
+    <string name="miscellaneous_category_title">Miscellaneous</string>
 
     <string name="system_main_category_summary">Adjust system options</string>
     <string name="statusbar_main_category_summary">Tune status bar items</string>
@@ -154,5 +155,9 @@
     <string name="aspect_ratio_category_title">Legacy app scaling</string>
     <string name="aspect_ratio_apps_info">Applications need to be restarted after changes</string>
     <string name="action_save">Save</string>
+
+    <!-- Volume panel switch -->
+    <string name="volume_panel_on_left_title">Switch volume panel location</string>
+    <string name="volume_panel_on_left_summary">Move volume panel to the left</string>
 
 </resources>
