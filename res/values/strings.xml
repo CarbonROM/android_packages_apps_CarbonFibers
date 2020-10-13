@@ -22,6 +22,7 @@
     <string name="power_save_category">Power saving</string>
     <string name="buttons_software_category">Software buttons</string>
     <string name="buttons_hardware_category">Hardware buttons</string>
+    <string name="miscellaneous_category_title">Miscellaneous</string>
 
     <string name="system_main_category_summary">Adjust system options</string>
     <string name="statusbar_main_category_summary">Tune status bar items</string>
@@ -207,5 +208,9 @@
     <!-- VolumeKeys Swap -->
     <string name="swap_volume_keys_on_rotation_title">Swap volume buttons</string>
     <string name="swap_volume_keys_on_rotation_summary">Change volume buttons behaviour when rotating the device</string>
+
+    <!-- Volume panel switch -->
+    <string name="volume_panel_on_left_title">Switch volume panel location</string>
+    <string name="volume_panel_on_left_summary">Move volume panel to the left</string>
 
 </resources>
