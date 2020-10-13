@@ -82,5 +82,17 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+	android:title="@string/miscellaneous_category_title"
+        settings:allowDividerAbove="true">
+
+	<com.android.settings.carbon.SystemSettingSwitchPreference
+            android:key="volume_panel_on_left"
+            android:title="@string/volume_panel_on_left_title"
+            android:summary="@string/volume_panel_on_left_summary"
+            android:defaultValue="false"
+            settings:controller="org.carbonrom.carbonfibers.fragments.system.VolumePanelOnLeftPreferenceController" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
