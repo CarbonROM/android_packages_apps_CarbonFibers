@@ -4,6 +4,7 @@ android_library {
     platform_apis: true,
     defaults: [
         "SettingsLibDefaults",
+        "SettingsLib-search-defaults",
     ],
 
     srcs: ["src/**/*.java"],

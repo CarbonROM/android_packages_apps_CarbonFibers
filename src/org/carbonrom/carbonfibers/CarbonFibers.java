@@ -48,13 +48,15 @@ import android.widget.Toast;
 
 import androidx.fragment.app.FragmentActivity;
 
-import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
+
+import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
+
+import org.carbonrom.carbonfibers.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -23,11 +23,12 @@ import android.provider.SearchIndexableResource;
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
 
-import com.android.settings.R;
-import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
+import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
+
+import org.carbonrom.carbonfibers.preferences.CustomSettingsPreferenceFragment;
+import org.carbonrom.carbonfibers.R;
 
 import java.util.ArrayList;
 import java.util.List;

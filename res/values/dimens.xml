@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2015 The CarbonROM Project
+<!-- Copyright (C) 2009 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,10 +13,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Carbon Fibers -->
-    <string name="cf_settings_title">Carbon Fibers</string>
-    <string name="cf_dashboard_summary">A healthy source of your daily fiber</string>
+<resources>
+    <!-- Dashboard foreground image size -->
+    <dimen name="dashboard_tile_foreground_image_size">24dp</dimen>
 
+    <!-- Dashboard image tile size -->
+    <dimen name="dashboard_tile_image_size">36dp</dimen>
 </resources>
