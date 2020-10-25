@@ -11,6 +11,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Carbon Fibers -->
+    <string name="cf_settings_title">Carbon Fibers</string>
+    <string name="cf_dashboard_summary">A healthy source of your daily fiber</string>
+
     <string name="carbonfibers">Carbon Fibers</string>
     <string name="system_category">System</string>
     <string name="misc_category">Miscellaneous</string>

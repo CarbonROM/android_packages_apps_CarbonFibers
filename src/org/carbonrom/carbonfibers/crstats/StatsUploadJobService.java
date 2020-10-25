@@ -40,7 +40,7 @@ import java.net.URL;
 import java.util.Collections;
 import java.util.Map;
 
-import com.android.settings.R;
+import org.carbonrom.carbonfibers.R;
 
 public class StatsUploadJobService extends JobService {
 

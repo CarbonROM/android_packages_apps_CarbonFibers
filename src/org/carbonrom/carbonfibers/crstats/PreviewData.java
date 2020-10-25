@@ -25,8 +25,9 @@ import androidx.preference.PreferenceScreen;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+
+import org.carbonrom.carbonfibers.R;
 
 public class PreviewData extends SettingsPreferenceFragment {
     private static final String UNIQUE_ID = "preview_id";
