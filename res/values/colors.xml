@@ -20,5 +20,5 @@
     <color name="white">#FFF</color>
     <color name="material_deep_teal_500">@*android:color/material_deep_teal_500</color>
     <color name="icon_tint_color">@color/material_deep_teal_500</color>
-
+    <color name="homepage_cf_background">#424242</color>
 </resources>
