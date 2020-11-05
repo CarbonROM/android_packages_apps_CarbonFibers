@@ -24,7 +24,7 @@ import androidx.preference.Preference;
 import androidx.preference.TwoStatePreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.settings.SettingsPreferenceFragment;
+import org.carbonrom.carbonfibers.preferences.SettingsPreferenceFragment;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -136,10 +136,5 @@ public abstract class CustomSettingsPreferenceFragment extends SettingsPreferenc
             }
         }
         return null;
-    }
-
-    @Override
-    public int getMetricsCategory() {
-        return MetricsEvent.CARBONFIBERS;
     }
 }

@@ -25,8 +25,7 @@ import androidx.preference.PreferenceScreen;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
-import com.android.settings.SettingsPreferenceFragment;
-
+import org.carbonrom.carbonfibers.preferences.SettingsPreferenceFragment;
 import org.carbonrom.carbonfibers.R;
 
 public class PreviewData extends SettingsPreferenceFragment {
@@ -50,10 +49,5 @@ public class PreviewData extends SettingsPreferenceFragment {
         prefSet.findPreference(VERSION).setSummary(Utilities.getModVersion());
         prefSet.findPreference(COUNTRY).setSummary(Utilities.getCountryCode(context));
         prefSet.findPreference(CARRIER).setSummary(Utilities.getCarrier(context));
-    }
-
-    @Override
-    public int getMetricsCategory() {
-        return MetricsEvent.CARBONFIBERS;
     }
 }

@@ -21,10 +21,10 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 
-import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
+import org.carbonrom.carbonfibers.search.BaseSearchIndexProvider;
 import org.carbonrom.carbonfibers.preferences.CustomSettingsPreferenceFragment;
 import org.carbonrom.carbonfibers.R;
 

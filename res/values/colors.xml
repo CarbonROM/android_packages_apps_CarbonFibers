@@ -20,5 +20,12 @@
     <color name="white">#FFF</color>
     <color name="material_deep_teal_500">@*android:color/material_deep_teal_500</color>
     <color name="icon_tint_color">@color/material_deep_teal_500</color>
+    <color name="homepage_cf_background">#424242</color>
 
+    <color name="switchbar_background_color">@*android:color/material_grey_600</color>
+    <color name="switchbar_switch_track_tint">#BFFFFFFF</color>
+    <color name="switchbar_switch_thumb_tint">@android:color/white</color>
+
+    <color name="fab_ripple">#1fffffff</color><!-- 12% white -->
+    <color name="fab_shape">?android:attr/colorAccent</color>
 </resources>
