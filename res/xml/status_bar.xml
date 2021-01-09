@@ -38,4 +38,9 @@
         android:summary="@string/lockscreen_media_art_summary"
         android:defaultValue="false" />
 
+    <Preference
+        android:key="custom_qs_tile_config_dialog"
+        android:title="@string/qs_columns_rows_config_title"
+        android:summary="@string/qs_columns_rows_config_summary" />
+
 </PreferenceScreen>
