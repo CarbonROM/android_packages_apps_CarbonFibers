@@ -32,4 +32,18 @@
         android:title="@string/qs_tile_title_visibility_title"
         android:defaultValue="true" />
 
+<<<<<<< HEAD
+=======
+    <com.android.settings.carbon.SecureSettingSwitchPreference
+        android:key="lockscreen_media_metadata"
+        android:title="@string/lockscreen_media_art_title"
+        android:summary="@string/lockscreen_media_art_summary"
+        android:defaultValue="false" />
+
+    <Preference
+        android:key="custom_qs_tile_config_dialog"
+        android:title="@string/qs_columns_rows_config_title"
+        android:summary="@string/qs_columns_rows_config_summary" />
+
+>>>>>>> 90e9f2f... Introduce a custom dialog for choosing QS tile columns/rows
 </PreferenceScreen>
