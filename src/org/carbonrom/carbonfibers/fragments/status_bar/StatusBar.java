@@ -44,6 +44,8 @@ import com.android.settingslib.search.SearchIndexable;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.carbonrom.carbonfibers.helpers.QsTileConfigDialog;
+
 @SearchIndexable
 public class StatusBar extends SettingsPreferenceFragment implements Indexable {
     private static final String TAG = "StatusBar";
@@ -53,6 +55,25 @@ public class StatusBar extends SettingsPreferenceFragment implements Indexable {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.status_bar);
+
+        Preference qsTileConfig = findPreference("custom_qs_tile_config_dialog");
+        qsTileConfig.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+
+                QsTileConfigDialog newFragment = QsTileConfigDialog .newInstance();
+                newFragment.show(ft, "QsTileConfigDialog");
+                return true;
+
+            }
+        });
+    }
+
+    @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+
     }
 
     @Override
