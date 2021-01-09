@@ -27,4 +27,9 @@
         android:entryValues="@array/quick_pulldown_values"
         android:defaultValue="1" />
 
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+        android:key="qs_tile_title_visibility"
+        android:title="@string/qs_tile_title_visibility_title"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
