@@ -32,4 +32,9 @@
         android:title="@string/qs_tile_title_visibility_title"
         android:defaultValue="true" />
 
+    <Preference
+        android:key="custom_qs_tile_config_dialog"
+        android:title="@string/qs_columns_rows_config_title"
+        android:summary="@string/qs_columns_rows_config_summary" />
+
 </PreferenceScreen>
