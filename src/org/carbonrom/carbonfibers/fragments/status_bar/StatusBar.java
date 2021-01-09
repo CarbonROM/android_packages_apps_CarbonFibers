@@ -20,17 +20,21 @@ import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.preference.Preference;
 import androidx.preference.SwitchPreference;
 
 import com.android.settings.R;
 import com.android.settings.carbon.CustomSettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
+import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.carbonrom.carbonfibers.helpers.QsTileConfigDialog;
 
 @SearchIndexable
 public class StatusBar extends CustomSettingsPreferenceFragment implements Indexable {
@@ -41,6 +45,25 @@ public class StatusBar extends CustomSettingsPreferenceFragment implements Index
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.status_bar);
+
+        Preference qsTileConfig = findPreference("custom_qs_tile_config_dialog");
+        qsTileConfig.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+
+                QsTileConfigDialog newFragment = QsTileConfigDialog .newInstance();
+                newFragment.show(ft, "QsTileConfigDialog");
+                return true;
+
+            }
+        });
+    }
+
+    @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
