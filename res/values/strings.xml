@@ -59,4 +59,8 @@
     <string name="lockscreen_media_art_title">Lockscreen media art</string>
     <string name="lockscreen_media_art_summary">Display media cover art when playing music</string>
 
+    <!-- Global Actions -->
+    <string name="powermenu_advanced_reboot_title">Advanced reboot</string>
+    <string name="powermenu_advanced_reboot_summary">Enables access to recovery and bootloader</string>
+
 </resources>
