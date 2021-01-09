@@ -32,4 +32,10 @@
         android:title="@string/qs_tile_title_visibility_title"
         android:defaultValue="true" />
 
+    <com.android.settings.carbon.SecureSettingSwitchPreference
+        android:key="lockscreen_media_metadata"
+        android:title="@string/lockscreen_media_art_title"
+        android:summary="@string/lockscreen_media_art_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
