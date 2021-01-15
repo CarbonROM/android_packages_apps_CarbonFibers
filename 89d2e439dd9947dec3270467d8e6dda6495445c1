@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8902c484_eda083bf",
+        "filename": "res/xml/status_bar.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 236
+      },
+      "writtenOn": "2021-01-15T11:13:13Z",
+      "side": 1,
+      "message": "oh boy",
+      "revId": "89d2e439dd9947dec3270467d8e6dda6495445c1",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": true
+    }
+  ]
+}
