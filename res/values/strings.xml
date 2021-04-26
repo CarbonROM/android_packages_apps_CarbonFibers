@@ -157,4 +157,8 @@
         <item>Right-leaning</item>
     </string-array>
 
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble PIN keyboard</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble the pin keyboard layout</string>
+
 </resources>
