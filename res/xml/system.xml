@@ -20,4 +20,18 @@
     android:title="@string/system_category"
     android:key="system_fragment"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceCategory
+        android:title="@string/global_actions_category"
+        android:key="system_global_actions_preference_category"
+        settings:allowDividerAbove="true" >
+
+        <com.android.settings.carbon.SecureSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/powermenu_advanced_reboot_title"
+            android:summary="@string/powermenu_advanced_reboot_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
