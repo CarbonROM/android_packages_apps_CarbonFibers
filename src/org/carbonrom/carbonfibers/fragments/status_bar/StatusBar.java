@@ -75,27 +75,18 @@ public class StatusBar extends SettingsPreferenceFragment implements Preference.
 
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        int batterystyle = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
-        mBatteryPercentValue = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT);
-        mBatteryPercentValuePrev = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT_PREV, -1, UserHandle.USER_CURRENT);
-
-        batterystyle = (batterystyle == BATTERY_STYLE_TEXT
-                && mBatteryPercentValue == BATTERY_PERCENT_HIDDEN) ? BATTERY_STYLE_HIDDEN : batterystyle;
-
         mBatteryStyle = (ListPreference) findPreference("status_bar_battery_style");
-        mBatteryStyle.setValue(String.valueOf(batterystyle));
-        mBatteryStyle.setSummary(mBatteryStyle.getEntry());
-        mBatteryStyle.setOnPreferenceChangeListener(this);
-
         mBatteryPercent = (ListPreference) findPreference("status_bar_show_battery_percent");
-        mBatteryPercent.setValue(String.valueOf(mBatteryPercentValue));
-        mBatteryPercent.setSummary(mBatteryPercent.getEntry());
+        mBatteryStyle.setOnPreferenceChangeListener(this);
         mBatteryPercent.setOnPreferenceChangeListener(this);
 
-        updateBatteryOptions(batterystyle, mBatteryPercentValue);
+        updateBatteryPreferences();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateBatteryPreferences();
     }
 
     @Override
@@ -120,6 +111,29 @@ public class StatusBar extends SettingsPreferenceFragment implements Preference.
         }
          return false;
      }
+
+    private void updateBatteryPreferences() {
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        int batterystyle = Settings.System.getIntForUser(resolver,
+                Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
+        mBatteryPercentValue = Settings.System.getIntForUser(resolver,
+                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT);
+        mBatteryPercentValuePrev = Settings.System.getIntForUser(resolver,
+                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT_PREV, -1, UserHandle.USER_CURRENT);
+
+        batterystyle = (batterystyle == BATTERY_STYLE_TEXT
+                && mBatteryPercentValue == BATTERY_PERCENT_HIDDEN) ? BATTERY_STYLE_HIDDEN : batterystyle;
+
+
+        mBatteryStyle.setValue(String.valueOf(batterystyle));
+        mBatteryStyle.setSummary(mBatteryStyle.getEntry());
+
+        mBatteryPercent.setValue(String.valueOf(mBatteryPercentValue));
+        mBatteryPercent.setSummary(mBatteryPercent.getEntry());
+
+        updateBatteryOptions(batterystyle, mBatteryPercentValue);
+    }
 
     private void updateBatteryOptions(int batterystyle, int batterypercent) {
         ContentResolver resolver = getActivity().getContentResolver();
