@@ -22,6 +22,19 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
+        android:title="@string/global_actions_category"
+        android:key="system_global_actions_preference_category"
+        settings:allowDividerAbove="true" >
+
+        <com.android.settings.carbon.SystemSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/powermenu_advanced_reboot_title"
+            android:summary="@string/powermenu_advanced_reboot_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/power_save_category"
         android:key="system_power_save_preference_category"
         settings:allowDividerAbove="true" >

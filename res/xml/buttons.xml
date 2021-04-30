@@ -31,10 +31,4 @@
 
     </PreferenceCategory>
 
-    <com.android.settings.carbon.SystemSettingSwitchPreference
-        android:key="advanced_reboot"
-        android:title="@string/powermenu_advanced_reboot_title"
-        android:summary="@string/powermenu_advanced_reboot_summary"
-        android:defaultValue="false" />
-
 </PreferenceScreen>
