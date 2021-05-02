@@ -21,6 +21,9 @@
     android:key="gesture_settings_screen"
     android:title="@string/gesture_preference_title">
 
+<PreferenceCategory
+    android:title="@string/button_gesture_category">
+
     <Preference
         android:key="gesture_assist_input_summary"
         android:title="@string/assist_gesture_title"
@@ -47,13 +50,6 @@
         android:fragment="com.android.settings.gestures.DoubleTwistGestureSettings"
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTwistPreferenceController" />
-
-    <Preference
-        android:key="gesture_system_navigation_input_summary"
-        android:title="@string/system_navigation_title"
-        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
-        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
-        settings:keywords="@string/keywords_system_navigation" />
 
     <Preference
         android:key="gesture_tap_screen_input_summary"
@@ -87,5 +83,26 @@
         android:title="@string/power_menu_setting_name"
         android:fragment="com.android.settings.gestures.PowerMenuSettings"
         settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
+
+</PreferenceCategory>
+
+<PreferenceCategory
+    android:title="@string/navigation_category"
+    settings:allowDividerAbove="true">
+
+    <Preference
+        android:key="gesture_system_navigation_input_summary"
+        android:title="@string/system_navigation_title"
+        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
+        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
+        settings:keywords="@string/keywords_system_navigation" />
+
+</PreferenceCategory>
+
+<PreferenceCategory
+    android:title="@string/tap_swipe_category"
+    settings:allowDividerAbove="true">
+
+</PreferenceCategory>
 
 </PreferenceScreen>
