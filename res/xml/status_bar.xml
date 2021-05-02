@@ -20,4 +20,23 @@
     android:title="@string/status_bar_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+<PreferenceCategory
+    android:title="@string/status_bar_icons_category">
+</PreferenceCategory>
+
+<PreferenceCategory
+    android:title="@string/qs_category"
+    settings:allowDividerAbove="true">
+</PreferenceCategory>
+
+<PreferenceCategory
+    android:title="@string/clock_category"
+    settings:allowDividerAbove="true">
+</PreferenceCategory>
+
+<PreferenceCategory
+    android:title="@string/battery_category"
+    settings:allowDividerAbove="true">
+</PreferenceCategory>
+
 </PreferenceScreen>
