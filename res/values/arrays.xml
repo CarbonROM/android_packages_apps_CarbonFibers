@@ -82,7 +82,7 @@
         <item>EEE dd MMM</item>
         <item>EEE MMM dd</item>
         <item>EEE MMMM dd</item>
-        <item>EEEE dd/MM</item>
+	<item>EEE dd/MM</item>
     </string-array>
 
     <string-array name="clock_date_position_entries" translatable="false">
