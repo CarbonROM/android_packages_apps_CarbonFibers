@@ -58,4 +58,16 @@
 
 </PreferenceCategory>
 
+<PreferenceCategory
+    android:title="@string/miscellaneous_category_title"
+    settings:allowDividerAbove="true">
+
+    <com.android.settings.carbon.SystemSettingSwitchPreference
+         android:key="status_bar_locked_on_secure_keyguard"
+         android:title="@string/ls_disabled_title"
+         android:summary="@string/ls_qs_disabled_summary"
+	 android:defaultValue="false" />
+
+</PreferenceCategory>
+
 </PreferenceScreen>
