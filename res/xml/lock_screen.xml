@@ -18,10 +18,12 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/lock_screen_category"
+    android:key="lock_screen_category"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
 <PreferenceCategory
-    android:title="@string/lockscreen_layout_category">
+    android:title="@string/lockscreen_layout_category"
+    android:key="lockscreen_layout_category">
 
     <Preference
         android:key="lockscreen_shortcuts"
@@ -42,6 +44,7 @@
 
 <PreferenceCategory
     android:title="@string/lockscreen_info_category"
+    android:key="lockscreen_info_category"
     settings:allowDividerAbove="true">
 
     <com.android.settings.carbon.SecureSettingSwitchPreference
