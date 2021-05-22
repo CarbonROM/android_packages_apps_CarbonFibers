@@ -45,11 +45,13 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
 import com.android.settingslib.search.Indexable;
+import com.android.settingslib.search.SearchIndexable;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@SearchIndexable
 public class StatusBarClock extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, Indexable {
 
