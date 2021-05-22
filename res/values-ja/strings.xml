@@ -42,12 +42,12 @@
     <string name="privacy_main_category_summary">その他の項目と統計情報の設定</string>
     <!-- Dialog -->
     <string name="carbonfibers_dialog_title">互いに助け合いましょう!</string>
-    <string name="carbonfibers_dialog_message">残念ながら私達は魔法使いではありません!\n\nバグを見つけた場合は Jira でチケットを開くか、Carbon 開発者に以下の内容を連絡して下さい。\n\n1. 非難 kwoktopus \n2. Logcat またはlast_kmsg\n3.  使用したカーネルと MOD \n4. その他の情報\n\n上記の情報を報告しなかった場合、問題が対処されることを期待しないで下さい。</string>
+    <string name="carbonfibers_dialog_message">残念ながら私達は魔法使いではありません!\n\nバグを見つけた場合は Jira でチケットを開くか、Carbon 開発者に以下の内容を連絡して下さい。\n\n1. kwoktopus へ連絡\n2. Logcat や last_kmsg のログを提示\n3.  使用したカーネルと MOD の説明\n4. その他の情報\n\n上記の情報を報告しなかった場合、問題が対処されることを期待しないで下さい。</string>
     <string name="carbonfibers_dialog_toast">全てに目を通して下さい!</string>
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">CarbonROM の統計情報</string>
-    <string name="anonymous_statistics_summary">CarbonROM をより良くするための匿名利用統計報告を許可する</string>
+    <string name="anonymous_statistics_summary">CarbonROM をより良くするための匿名の利用統計報告を許可する</string>
     <string name="anonymous_statistics_warning_title">概要</string>
     <string name="anonymous_statistics_warning">CarbonROM 統計を選択すると、個人を特定されないデータを Carbon 開発者に送信して端末間の固有のインストールを追跡することができます。送信された情報にはあなたのプライバシーや個人データを危険に晒さない一意の識別子が含まれています。データは起動ごとに送信されます。\n\n送信されるデータの例はデータのプレビューをタップして下さい。</string>
     <string name="enable_reporting_title">レポートを有効にする</string>
@@ -216,7 +216,7 @@
     <string name="battery_bar_style_title">スタイル</string>
     <string name="battery_bar_thickness_title">太さ</string>
     <string name="battery_bar_animate_title">充電中のアニメーション</string>
-    <string name="battery_bar_animate_summary">充電アニメーションの表示はユーザー体験を低下させる可能性があります。あなたの判断で有効にしてください。</string>
+    <string name="battery_bar_animate_summary">充電アニメーションの表示はユーザー体験を低下させる可能性があります。あなたの判断で有効にして下さい。</string>
     <string name="battery_bar_hide">非表示</string>
     <string name="battery_bar_statusbar">ステータスバー</string>
     <string name="battery_bar_topnav">ナビゲーションバーの上部</string>

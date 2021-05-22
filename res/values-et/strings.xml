@@ -28,9 +28,20 @@
     <string name="qs_category">Kiirseadete võimalused</string>
     <string name="clock_category">Kell ja kuupäev</string>
     <string name="shortcuts">Otseteed</string>
+    <string name="pin_option">Kinnita valik</string>
     <string name="double_tap">Topeltpuudutusega žestid</string>
+    <string name="nav_ges">Viibetega navigeerimine</string>
+    <string name="screenshot_gesture">Ekraanipildi tegemise viibe</string>
     <string name="recent_category">Hiljutised</string>
+    <string name="statistics_options">CR statistika</string>
+    <string name="system_main_category_summary">Kohanda süsteemi valikuid</string>
+    <string name="statusbar_main_category_summary">Timmi olekuriba kirjeid</string>
+    <string name="lockscreen_main_category_summary">Muuda lukustusekraani paigutust ja vlaikuid</string>
+    <string name="buttons_main_category_summary">Kohanda riist- ja tarkvaranuppe</string>
+    <string name="gestures_main_category_summary">Viibete põhised valikud ja tegevused</string>
+    <string name="privacy_main_category_summary">Muud seaded ja statistika kogumise seaded</string>
     <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Aita meil sind aidata!</string>
     <string name="carbonfibers_dialog_message">Kahjuks pole me võlurid!\n\nKui leiate vea, avage pilet Jira või
          võtke järgmiselt ühendust Carbon arendajaga.\n\n1. Blame kwoktopus\n2. Logcat ja/või last_kmsg\n3. Kernel ja kasutatud moodid\n4.
         Muu teave\n\nKui te ei teata eelnevat teadet, ärge oodake, et seda küsimust arutatakse.</string>
@@ -58,6 +69,7 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string name="smart_pixels_on_power_save_title">Automaatne akusäästja aktiveerimine </string>
     <string name="smart_pixels_on_power_save_summary">Kui akusäästja on lubatud, kasutage rakendust Smart Pixels</string>
     <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Peida rakendused hiljutistest</string>
     <string name="hide_apps_from_recents_summary">Peida rakendused hiljutiste rakenduste menüüst</string>
     <string name="hide_from_recents_add_app">Lisa rakendused</string>
     <string name="title_activity_carbon_recents_settings">Hiljutised</string>
@@ -69,6 +81,7 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string name="global_actions_restart">Taaskäivita</string>
     <string name="global_actions_airplane">Lennuk</string>
     <string name="global_actions_settings">Sätted</string>
+    <string name="global_actions_lockdown">Lukusta lukustusekraanil</string>
     <string name="global_actions_soundpanel">Helipaneel</string>
     <string name="global_actions_users">Kasutajad</string>
     <string name="global_actions_screenshot">Ekraanipilt</string>
@@ -91,8 +104,11 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string name="aggressive_battery_saver_title">Automaatne akusäästja aktiveerimine </string>
     <string name="aggressive_battery_saver_summary">Lülitage agressiivne aku automaatselt sisse, kui kasutate aku säästmist</string>
     <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Olekuriba ikoonid</string>
     <string name="status_bar_tuner_summary">Olekuriba ikoonide ja suvandite muutmine</string>
+    <string name="navigation_bar_invert_layout_title">Pööra ümber navigeerimisriba paigutus</string>
     <string name="lock_screen_shortcuts_title">Lukustusekraani otseteed</string>
+    <string name="nav_bar_layout">Navigeerimisriba paigutus</string>
     <string-array name="nav_bar_layouts">
         <item>Normaalne</item>
         <item>Kompaktne</item>
@@ -107,13 +123,18 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string name="torch_power_button_gesture_dt">Topeltpuudutage toitenuppu</string>
     <string name="torch_power_button_gesture_lp">Hoidke toitenuppu all</string>
     <!-- QS brightness -->
+    <string name="qs_brightness_title">QS heleduse disain </string>
+    <string name="qs_brightness_title_summary">Muuda heledusriba disaini kiirseadetes</string>
     <!-- Qs brightness slider -->
     <string name="qs_brightness_slider_title">Heledusliugur</string>
     <string name="qs_brightness_slider_summary">Kuva heledusliugur</string>
     <string name="qs_brightness_position_bottom">Heledusliugur all</string>
     <!-- Qs auto-brightness icon -->
+    <string name="qs_autobrightness_icon_title">Automaatse heleduse ikoon</string>
+    <string name="qs_autobrightness_icon_summary">Näita heleduse slaideri kõrval automaatse heleduse nuppu</string>
     <!-- Status bar clock and date -->
     <string name="status_bar_clock_title">Kell ja kuupäev</string>
+    <string name="status_bar_clock_title_summary">Muuda olekuriba kella ja kuupäeva stiili</string>
     <!-- Status bar clock and date options -->
     <string name="status_bar_title">Olekuriba</string>
     <string name="status_bar_style_title">Stiil</string>
@@ -148,21 +169,52 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Kiire QS avamine</string>
     <string name="quick_pulldown_none">Keelatud</string>
+    <string name="quick_pulldown_right">Olekuriba paremalt servalt allatõmbamine</string>
+    <string name="quick_pulldown_left">Olekuriba vasakult servalt allatõmbamine</string>
     <!-- StatusBar Icons -->
     <string name="status_bar_icons_title">Olekuriba ikoonid</string>
+    <string name="status_bar_icons_title_summary">Muuda olekuriba ikooni nähtavust</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G ikoon</string>
+    <string name="show_fourg_icon_summary">Näita LTE ikooni asemel 4G ikooni</string>
     <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Laadimise info lukustusekraanil</string>
+    <string name="lockscreen_battery_info_summary">Näita laadimise ajal lukustusekraanil maksimaalset voolutugevust ja -pinget ning aku temperatuuri</string>
     <!-- Lock icon -->
+    <string name="lockscreen_lock_icon_title">Lukustamise ikoon</string>
+    <string name="lockscreen_lock_icon_summary">Näita lukustusekraanil praegust lukustamise olekut</string>
     <!-- Charging animation -->
     <string name="charging_animation_title">Laadimis animatsioon</string>
+    <string name="charging_animation_summary">Näita seadme vooluvõrkus olemise ajal animatsiooni</string>
     <!-- Network traffic -->
+    <string name="traffic_title">Liikluse indikaatorid</string>
+    <string name="traffic_title_summary">Kohanda internetiliikluse indikaatoreid</string>
     <string name="network_traffic_title">Võrguliiklus</string>
+    <string name="network_traffic_type">Vali võrguühenduse liik</string>
+    <string name="show_network_traffic_up">Üles</string>
+    <string name="show_network_traffic_down">Alla</string>
+    <string name="show_network_traffic_all">Üles ja alla</string>
+    <string name="network_traffic_state_title">Näita olekuribal internetiühenduse aktiivsust</string>
+    <string name="network_traffic_autohide_threshold_title">Võrguühenduse peitmise lävi (KB/s)</string>
+    <string name="network_traffic_hidearrow">Peida nooled</string>
+    <string name="network_traffic_hidearrow_summary">Peida võrguühenduse liiklluse nooled</string>
     <!-- Battery Bar -->
+    <string name="battery_bar_title">Aku riba</string>
+    <string name="battery_bar_summary">Aku riba muutmine</string>
+    <string name="battery_bar_location">Aku riba asukoht</string>
+    <string name="battery_bar_color">Aku riba värv</string>
+    <string name="battery_bar_charging_color">Aku riba, laadimine värv</string>
+    <string name="battery_bar_battery_low_color">Aku riba, tühi aku värv</string>
+    <string name="battery_bar_style_title">Aku riba stiil</string>
+    <string name="battery_bar_thickness_title">Aku riba laius</string>
     <string name="battery_bar_animate_title">Laadimis animatsioon</string>
+    <string name="battery_bar_animate_summary">Laadimise animatsiooni tulemuseks võib olla vilets kasutajakogemus. Lülita sisse omal vastutusel.</string>
     <string name="battery_bar_hide">Peida</string>
     <string name="battery_bar_statusbar">Olekuriba</string>
+    <string name="battery_bar_topnav">Navigeerimisriba kohal</string>
+    <string name="battery_bar_bottomnav">Navigeerimisriba all</string>
     <string name="battery_bar_reg">Tavaline</string>
+    <string name="battery_bar_center">Keskelt pööratud</string>
     <string name="battery_bar_reversed">Ümber pööratud</string>
     <string name="battery_bar_use_gradient_color">Kasutage gradiendi värvi</string>
     <string name="battery_bar_gradient_color_summary">Kasutage aku taseme skaalana gradiendi värvi</string>
@@ -178,18 +230,42 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string name="set">Määra</string>
     <string name="color_default">Vaikimisi</string>
     <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">Luba skaleerimine</string>
+    <string name="aspect_ratio_apps_enabled_summary">Luba pärandrakendustel täisekraani kasutada</string>
+    <string name="aspect_ratio_apps_list_title">Rakendused, millel lubatakse skaleerimine</string>
+    <string name="aspect_ratio_category_title">Pärandrakeduste skaleerimine</string>
+    <string name="aspect_ratio_apps_info">Rakendused tuleb peale muutusi taaskäivitada</string>
+    <string name="action_save">Salvesta</string>
     <!-- Hide Statusbar on Lockscreen -->
+    <string name="lockscreen_show_status_bar_title">Näita olekuriba</string>
+    <string name="lockscreen_show_status_bar_summary">LÜlitab olekuriba nähtavust lukustusekraanil</string>
     <!-- Dashboard -->
+    <string name="dashboard_category_title">Armatuurlaud</string>
+    <string name="dashboard_conditions_title">Töölaua tingimused</string>
+    <string name="summary_dashboard_conditions_enabled">Töölaua tingimused on sisse lülitatud</string>
+    <string name="summary_dashboard_conditions_disabled">Töölaua tingimused on välja lülitatud</string>
+    <string name="dashboard_suggestions_title">Töölaua soovitused</string>
+    <string name="summary_dashboard_suggestions_enabled">Töölaua soovitused on sisse lülitatud</string>
+    <string name="summary_dashboard_suggestions_disabled">Töölaua soovitused on välja lülitatud</string>
     <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">Vaheta helitugevusklahvid</string>
+    <string name="swap_volume_keys_on_rotation_summary">Muuda helitugevuse nuppude käitumist, kui seadet pööratakse</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Näita meedia kaanepilte</string>
     <!-- Battery Styles -->
+    <string name="battery_style_category_title">Aku</string>
+    <string name="battery_percent_title">Aku protsent</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Aku stiil</string>
+    <string name="status_bar_battery_style_icon_portrait">Püstine ikoon (vaikeväärtus)</string>
     <string name="status_bar_battery_style_circle">Ring</string>
+    <string name="status_bar_battery_style_dotted_circle">Ring (katkendlik)</string>
+    <string name="status_bar_battery_style_filled_circle">Ring (täidetud)</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_style_hidden">Peidus</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Aku protsent</string>
+    <string name="status_bar_battery_percentage_default">Varjatud (vaikimisi)</string>
     <string name="status_bar_battery_percentage_text_inside">Ikooni sees</string>
     <string name="status_bar_battery_percentage_text_next">Ikooni kõrval</string>
 </resources>

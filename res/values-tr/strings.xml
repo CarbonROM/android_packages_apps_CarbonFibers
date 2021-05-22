@@ -123,8 +123,8 @@
     <string-array name="nav_bar_layouts">
         <item>Normal</item>
         <item>Kompakt</item>
-        <item>Left-leaning</item>
-        <item>Right-leaning</item>
+        <item>Sol eğilimli</item>
+        <item>Sağ eğilimli</item>
     </string-array>
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Oynatma kontrolü</string>
@@ -136,12 +136,12 @@
     <string name="torch_power_button_gesture_dt_toast">Kamera hareketini atlamak şimdi devre dışı</string>
     <string name="torch_power_button_gesture_lp">Güç tuşuna basılı tutma</string>
     <!-- QS brightness -->
-    <string name="qs_brightness_title"> QS Parlaklık tasarımı</string>
-    <string name="qs_brightness_title_summary">Hızlı ayarların parlaklık tasarımını değiştirme</string>
+    <string name="qs_brightness_title">Hızlı ayarlar parlaklık tasarımı </string>
+    <string name="qs_brightness_title_summary">Hızlı ayarlar parlaklık tasarımını değiştirin</string>
     <!-- Qs brightness slider -->
-    <string name="qs_brightness_slider_title">Parlaklık düzeyi</string>
-    <string name="qs_brightness_slider_summary">Parlaklık kaydırma çubuğunu göster</string>
-    <string name="qs_brightness_position_bottom">Parlaklık kaydırıcısının konumu</string>
+    <string name="qs_brightness_slider_title">Parlaklık kaydırıcısı</string>
+    <string name="qs_brightness_slider_summary">Parlaklık kaydırıcısı çubuğunu göster</string>
+    <string name="qs_brightness_position_bottom">Parlaklık kaydırıcısı konumu</string>
     <!-- Qs auto-brightness icon -->
     <string name="qs_autobrightness_icon_title">Otomatik parlaklık simgesi</string>
     <string name="qs_autobrightness_icon_summary">Parlaklık kaydırıcısının yanında otomatik parlaklık simgesini göster</string>
@@ -151,7 +151,7 @@
     <!-- Status bar clock and date options -->
     <string name="status_bar_title">Durum çubuğu</string>
     <string name="status_bar_style_title">Stil</string>
-    <string name="status_bar_clock">Saat ve Târih</string>
+    <string name="status_bar_clock">Saat ve Tarih</string>
     <string name="clock_enabled">Etkin</string>
     <string name="clock_disabled">Devre dışı</string>
     <string name="status_bar_clock_style_reset">Rengi sıfırla</string>
@@ -180,7 +180,7 @@
     <string name="clock_date_left">Saatin solunda</string>
     <string name="clock_date_position">Tarih konumu</string>
     <!-- Quick QS pulldown -->
-    <string name="status_bar_quick_qs_pulldown">Kısayolu aç</string>
+    <string name="status_bar_quick_qs_pulldown">Hızlı aşağı çekme</string>
     <string name="quick_pulldown_none">Devre dışı</string>
     <string name="quick_pulldown_right">Sağ taraftan açılan durum çubuğu</string>
     <string name="quick_pulldown_left">Sol taraftan açılan durum çubuğu</string>
@@ -198,10 +198,10 @@
     <string name="lockscreen_lock_icon_summary">Mevcut kilit durumu simgesini kilit ekranında gösterir</string>
     <!-- Charging animation -->
     <string name="charging_animation_title">Şarj animasyonu</string>
-    <string name="charging_animation_summary">Cihaz takıldığında bir animasyon görüntüleme</string>
+    <string name="charging_animation_summary">Cihaz takıldığında bir animasyon görüntüle</string>
     <!-- Network traffic -->
     <string name="traffic_title">Ağ trafiği göstergeleri</string>
-    <string name="traffic_title_summary">Ağ Trafiği göstergelerini özelleştirme</string>
+    <string name="traffic_title_summary">Ağ trafiği göstergelerini özelleştirme</string>
     <string name="network_traffic_title">Ağ göstergesi</string>
     <string name="network_traffic_type">Ağ etkinlik türünü seçin</string>
     <string name="show_network_traffic_up">Yükleme</string>
@@ -224,17 +224,17 @@
     <string name="battery_bar_animate_summary">Şarj animasyonu kötü bir kullanıcı deneyimi ile sonuçlanabilir. Etkinleştirmek size kalmış.</string>
     <string name="battery_bar_hide">Gizle</string>
     <string name="battery_bar_statusbar">Durum çubuğu</string>
-    <string name="battery_bar_topnav">Gezinti çubuğunun üstü</string>
-    <string name="battery_bar_bottomnav">Gezinti çubuğunun altı</string>
-    <string name="battery_bar_reg">Normal</string>
+    <string name="battery_bar_topnav">Gezinme çubuğunun üstünde</string>
+    <string name="battery_bar_bottomnav">Gezinme çubuğunun altında</string>
+    <string name="battery_bar_reg">Düzenli</string>
     <string name="battery_bar_center">Orta-yansıtılmış</string>
-    <string name="battery_bar_reversed">Tersine Çevir</string>
+    <string name="battery_bar_reversed">Tersine çevir</string>
     <string name="battery_bar_use_gradient_color">Gradyan rengi kullan</string>
     <string name="battery_bar_gradient_color_summary">Pil seviyesi için bir ölçek olarak degrade renk kullanın</string>
-    <string name="battery_bar_high_color">Yüksek seviye renk\"</string>
-    <string name="battery_bar_low_color">Düşük seviye renk\"</string>
+    <string name="battery_bar_high_color">Yüksek seviye renk</string>
+    <string name="battery_bar_low_color">Düşük seviye renk</string>
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Renk Seçici</string>
+    <string name="dialog_color_picker">Renk seçici</string>
     <string name="press_color_to_apply">Uygulamak için rengin üzerine dokunun</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
@@ -243,7 +243,7 @@
     <string name="set">Ayarla</string>
     <string name="color_default">Varsayılan</string>
     <!-- Per App aspect Ratio -->
-    <string name="aspect_ratio_apps_enabled_title">Ölçeklemeyi devreye sok</string>
+    <string name="aspect_ratio_apps_enabled_title">Ölçeklendirmeyi etkinleştir</string>
     <string name="aspect_ratio_apps_enabled_summary">Eski uygulamaların ekranın tamamını kullanmasına izin verin</string>
     <string name="aspect_ratio_apps_list_title">Ölçeklemeyi kullanmasına izin verilen uygulamalar</string>
     <string name="aspect_ratio_category_title">Eski uygulama ölçekleme</string>
@@ -253,7 +253,7 @@
     <string name="lockscreen_show_status_bar_title">Durum çubuğunu göster</string>
     <string name="lockscreen_show_status_bar_summary">Kilit ekranında durum çubuğu görünürlüğünü değiştirir</string>
     <!-- Dashboard -->
-    <string name="dashboard_category_title">Kontrol Paneli</string>
+    <string name="dashboard_category_title">Kontrol paneli</string>
     <string name="dashboard_conditions_title">Kontrol paneli koşulları</string>
     <string name="summary_dashboard_conditions_enabled">Kontrol paneli koşulları etkin</string>
     <string name="summary_dashboard_conditions_disabled">Kontrol paneli koşulları devre dışı</string>
@@ -262,7 +262,7 @@
     <string name="summary_dashboard_suggestions_disabled">Kontrol paneli önerileri devre dışı bırakıldı</string>
     <!-- VolumeKeys Swap -->
     <string name="swap_volume_keys_on_rotation_title">Ses tuşlarının yerini değiştir</string>
-    <string name="swap_volume_keys_on_rotation_summary">Cihazı döndürürken ses düğmeleri davranışını değiştirme</string>
+    <string name="swap_volume_keys_on_rotation_summary">Cihazı döndürdükten sonra ses tuşlarının davranışını değiştirin</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Medya kapak görüntüsü</string>
     <!-- Battery Styles -->
