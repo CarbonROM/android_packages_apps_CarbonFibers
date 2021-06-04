@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Углеродные волокна</string>
+    <string name="buttons_category">Кнопки</string>
+    <string name="gestures_category">Жесты</string>
+    <string name="lock_screen_category">Экран блокировки</string>
+    <string name="status_bar_category">Строка состояния</string>
+    <string name="system_category">Система</string>
+    <string name="privacy_category">Конфиденциальность</string>
+    <string name="global_actions_category">Меню кнопки питания</string>
+    <string name="power_save_category">Энергосбережение</string>
+    <string name="buttons_software_category">Наэкранные кнопки</string>
+    <string name="buttons_hardware_category">Аппаратные кнопки</string>
+    <string name="miscellaneous_category_title">Прочее</string>
+    <string name="system_main_category_summary">Настройка системных настроек</string>
+    <string name="statusbar_main_category_summary">Значки строки состояния</string>
+    <string name="lockscreen_main_category_summary">Изменение макета и настроек экрана блокировки</string>
+    <string name="buttons_main_category_summary">Настройка аппаратных и программных кнопок</string>
+    <string name="gestures_main_category_summary">Параметры и действия на основе жестов</string>
+    <string name="clock_category">Часы &amp; Дата</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Помогите нам помочь вам!</string>
+    <string name="carbonfibers_dialog_toast">Прочитайте это все!!!</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">Статистика CarbonROM</string>
+    <string name="anonymous_statistics_summary">Помогите сделать CarbonROM лучше, включив отправку анонимных отчётов</string>
+    <string name="anonymous_statistics_warning_title">О приложении</string>
+    <string name="anonymous_statistics_warning">Анонимные отчёты позволяют разработчикам CarbonROM отслеживать установки на различные устройства. Отсылаемая информацию включает в себя тип устройства, версию прошивки и уникальный идентификатор, отправка которого никаким образом не вредит Вашей конфиденциальности. Отчёт отсылается при каждой загрузке устройства.\n\nЧтобы посмотреть, какие данные отсылаются, нажмите \"Предпросмотр\".</string>
+    <string name="enable_reporting_title">Включить отправку отчётов</string>
+    <string name="preview_data_title">Предпросмотр</string>
+    <string name="view_stats_title">Просмотр статистики</string>
+    <string name="anonymous_learn_more">Узнать больше</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Уникальный идентификатор</string>
+    <string name="preview_device_title">Устройство</string>
+    <string name="preview_version_title">Версия</string>
+    <string name="preview_country_title">Страна</string>
+    <string name="preview_carrier_title">Оператор</string>
+    <string name="stats_collection_title">Включить сбор статистики</string>
+    <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Быстрый доступ</string>
+    <string name="quick_pulldown_none">Отключено</string>
+    <string name="quick_pulldown_right">Потянуть строку состояния справа</string>
+    <string name="quick_pulldown_left">Потянуть строку состояния слева</string>
+    <!-- Lock screen cover art -->
+    <!-- Global Actions -->
+    <!-- QS rows and columns -->
+    <!-- Aggressive battery -->
+    <string name="aggressive_battery_title">Агрессивное энергосбережение</string>
+    <string name="aggressive_battery_summary">Повышенное энергосбережение</string>
+    <string name="aggressive_battery_warning_text">Это функции энергосбережения. Они могут вмешиваться в сервисы, предназначенные для работы в холле, например, навигационные приложения. Вы можете выбрать белый список этих приложений, чтобы повлиять на настройки батареи приложения.</string>
+    <string name="aggressive_idle_title">Агрессивный режим сна</string>
+    <string name="aggressive_idle_summary">Чаще входите в режим ожидания и меньше просыпайтесь</string>
+    <string name="aggressive_standby_title">Агрессивный режим ожидания</string>
+    <string name="aggressive_standby_summary">Ограничить фоновые приложения</string>
+    <string name="aggressive_battery_saver_title">Автоматическое включение экономии заряда батареи </string>
+    <string name="aggressive_battery_saver_summary">Автоматически включать агрессивную батарею при использовании экономии батареи</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Информация о зарядке на экране блокировки</string>
+    <!-- Status bar clock and date options -->
+    <string name="clock_enabled">Включено</string>
+    <string name="clock_disabled">Отключено</string>
+    <string name="status_bar_clock_style_reset">Сбросить цвет</string>
+    <string name="status_bar_show_clock_title">Показать часы &amp; дата</string>
+    <string name="status_bar_am_pm_title">Показывать AM/PM</string>
+    <string name="status_bar_am_pm_info">Включён 24-часовой формат</string>
+    <string name="enable_clock_weekday">День недели</string>
+    <string name="enable_clock_weekday_summary">Сокращенное название дня недели перед временем</string>
+    <string name="dont_show">Не показывать</string>
+    <string name="clock_date_display">Дата</string>
+    <string name="clock_date_display_summary">Показывать настраиваемую дату перед часами</string>
+    <string name="clock_date_style">Стиль даты</string>
+    <string name="clock_date_format">Формат даты</string>
+    <string name="clock_date_string_edittext_title">Должен быть в формате ММ/дд/гг</string>
+    <string name="clock_date_string_edittext_summary">Введите строку</string>
+    <string name="am_pm_clock_normal">Обычный размер шрифта</string>
+    <string name="am_pm_clock_small">Малый размер шрифта</string>
+    <string name="am_pm_clock_none">Не показывать</string>
+    <string name="clock_date_display_none">Не показывать</string>
+    <string name="clock_date_display_small">Малый размер шрифта</string>
+    <string name="clock_date_display_normal">Обычный размер шрифта</string>
+    <string name="clock_date_style_normal">Обычный</string>
+    <string name="clock_date_style_lowercase">строчные</string>
+    <string name="clock_date_style_uppercase">ПРОПИСНЫЕ</string>
+    <string name="clock_date_right">Дата справа от часов</string>
+    <string name="clock_date_left">Дата слева от часов</string>
+    <string name="clock_date_position">Расположение даты</string>
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">Батарея</string>
+    <string name="battery_percent_title">Процент батареи</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Стиль индикатора батареи</string>
+    <string name="status_bar_battery_style_icon_portrait">Портретная иконка (по умолчанию)</string>
+    <string name="status_bar_battery_style_circle">Круглый значок</string>
+    <string name="status_bar_battery_style_dotted_circle">Круг (Точечный)</string>
+    <string name="status_bar_battery_style_filled_circle">Круг (Заполненный)</string>
+    <string name="status_bar_battery_style_text">Текст</string>
+    <string name="status_bar_battery_style_hidden">Не показывать</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Процент батареи</string>
+    <string name="status_bar_battery_percentage_default">Скрытый (по умолчанию)</string>
+    <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
+    <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
+    <!-- Navbar Tuning -->
+    <string name="navigation_bar_invert_layout_title">Инвертировать расположение кнопок панели навигации</string>
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Перемешать кнопки при вводе PIN-кода</string>
+    <string name="unlock_scramble_pin_layout_summary">Перемешивать кнопки пин-кода</string>
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Скрыть приложение в недавних</string>
+    <string name="hide_apps_from_recents_summary">Скрыть приложения из меню недавних приложений</string>
+    <string name="hide_from_recents_add_app">Добавить приложение</string>
+    <string name="title_activity_carbon_recents_settings">Недавние</string>
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Значки строки состояния</string>
+    <string name="status_bar_tuner_summary">Настройка значков в строке состояния</string>
+    <string name="lock_screen_shortcuts_title">Ярлыки экрана блокировки</string>
+    <string name="lock_screen_shortcuts_summary">Управление ярлыками экрана блокировки</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Выключение отдельных пикселей для снижения энергопотребления</string>
+    <string name="smart_pixels_on_power_save_title">Автоматически включать при энергосбережении</string>
+    <string name="smart_pixels_on_power_save_summary">Использовать \"умные пиксели\" при включённом энергосбережении</string>
+    <string name="smart_pixels_percent">Процент пикселей для отключения</string>
+    <string name="smart_pixels_shift">Предотвратить выжигание экрана путем перемещения пикселей каждую</string>
+    <string name="smart_pixels_warning_text">Smart Pixels - это энергосберегающая функция. Чем больше пикселей вы решите выключить, тем больше будет энергосбережение. для приятного использования мы рекомендуем установить количество выключенных пикселей на 75% с перемещением каждые 10 минут.</string>
+    <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">Включить масштабирование</string>
+    <string name="aspect_ratio_apps_enabled_summary">Разрешить устаревшим приложениям использовать весь экран</string>
+    <string name="aspect_ratio_apps_list_title">Приложениям разрешено использовать масштабирование</string>
+    <string name="aspect_ratio_category_title">Устаревшее масштабирование приложения</string>
+    <string name="aspect_ratio_apps_info">Приложения должны быть перезапущены после изменений</string>
+    <string name="action_save">Сохранить</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Управление воспроизведением при выключенном экране</string>
+    <string name="volume_rocker_music_controls_summary">Удерживайте клавиши громкости для переключения треков</string>
+    <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">Поменять кнопки громкости</string>
+    <string name="swap_volume_keys_on_rotation_summary">Изменить поведение кнопок громкости при повороте устройства</string>
+    <!-- Volume panel switch -->
+    <!-- Quick Settings on lockscreen-->
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G значок</string>
+    <string name="show_fourg_icon_summary">Отображать 4G значок сигнала вместо LTE</string>
+</resources>

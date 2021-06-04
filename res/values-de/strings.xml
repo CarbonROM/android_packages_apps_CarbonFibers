@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
+    <string name="buttons_category">Tasten</string>
+    <string name="gestures_category">Gesten</string>
+    <string name="lock_screen_category">Sperrbildschirm</string>
+    <string name="status_bar_category">Benachrichtigungsleiste</string>
+    <string name="system_category">System</string>
+    <string name="privacy_category">Datenschutz</string>
+    <string name="global_actions_category">Power Menü</string>
+    <string name="power_save_category">Energiesparen</string>
+    <string name="buttons_software_category">Software-Tasten</string>
+    <string name="buttons_hardware_category">Hardware-Tasten</string>
+    <string name="miscellaneous_category_title">Verschiedenes</string>
+    <string name="system_main_category_summary">Systemoptionen anpassen</string>
+    <string name="statusbar_main_category_summary">Elemente der Statusleiste konfigurieren</string>
+    <string name="lockscreen_main_category_summary">Sperrbildschirm-Layout und -Optionen ändern</string>
+    <string name="buttons_main_category_summary">Hardware- und Software-Tasten anpassen</string>
+    <string name="gestures_main_category_summary">Gestenbasierte Optionen und Aktionen</string>
+    <string name="status_bar_icons_category">Icons</string>
+    <string name="qs_category">QS-Optionen</string>
+    <string name="clock_category">Uhr &amp; Datum</string>
+    <string name="battery_category">Baterrie-Icon Layout</string>
+    <string name="lockscreen_layout_category">Layout-Optionen</string>
+    <string name="lockscreen_info_category">Sperrbildschirm-Informationen</string>
+    <string name="button_gesture_category">Tastengesten</string>
+    <string name="navigation_category">Navigation</string>
+    <string name="tap_swipe_category">Tipp- &amp; Wischoptionen</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">Hilf uns, dir zu helfen!</string>
+    <string name="carbonfibers_dialog_message">Leider können wir nicht zaubern!\n\nFalls du also einen Fehler findest, kontaktiere uns auf Telegram oder schreibe uns eine E-Mail an support@carbonrom.org mit den folgenden Informationen:\n\n1: CarbonROM Version und Gerät\n2: Logdateien und/oder Kernel Logs\n3: Kernel und Mods, die genutzt werden\n4. Andere nützliche Informationen\n\nDiese Informationen sind wichtig für uns, um Fehler zu beheben. Ohne sie können wir dir nicht helfen.</string>
+    <string name="carbonfibers_dialog_toast">Lesen Sie alles!</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM-Statistik</string>
+    <string name="anonymous_statistics_summary">Durch anonyme Gerätestatistiken dabei helfen, CarbonROM zu verbessern</string>
+    <string name="anonymous_statistics_warning_title">Über</string>
+    <string name="anonymous_statistics_warning">Die bei jedem Neustart des Gerätes übermittelten Daten beeinträchtigen nicht die Privatsphäre, da sie keinerlei Rückschlüsse auf den Benutzer zulassen.\n\nFür ein Beispiel der gesendeten Daten bitte auf Vorschau klicken.</string>
+    <string name="enable_reporting_title">Berichte einschalten</string>
+    <string name="preview_data_title">Daten-Vorschau</string>
+    <string name="view_stats_title">Statistiken ansehen</string>
+    <string name="anonymous_learn_more">Mehr erfahren</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Eindeutige ID</string>
+    <string name="preview_device_title">Gerät</string>
+    <string name="preview_version_title">Version</string>
+    <string name="preview_country_title">Land</string>
+    <string name="preview_carrier_title">Anbieter</string>
+    <string name="stats_collection_title">Erfassung von Statistiken erlauben</string>
+    <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">Schnelles Öffnen der Schnelleinstellungen</string>
+    <string name="quick_pulldown_none">Deaktiviert</string>
+    <string name="quick_pulldown_right">Statusleiste von der rechten Seite ziehen</string>
+    <string name="quick_pulldown_left">Statusleiste von der linken Seite ziehen</string>
+    <!-- Lock screen cover art -->
+    <!-- Global Actions -->
+    <!-- QS rows and columns -->
+    <!-- Aggressive battery -->
+    <string name="aggressive_battery_title">Aggressive Batterie</string>
+    <string name="aggressive_battery_summary">Bessere Akku Einsparungen</string>
+    <string name="aggressive_battery_warning_text">Dies sind Energiesparfunktionen. Sie können Dienste stören, die im Leerlauf laufen sollen, wie z.B. Navigationsanwendungen. Sie können diese Apps in den Akkueinstellungen auf die Whitelist setzen, damit diese nicht ungewollt beendet werden.</string>
+    <string name="aggressive_idle_title">Aggressiv im Leerlauf</string>
+    <string name="aggressive_idle_summary">Eintreten in den Geräteleerlauf häufiger und weniger häufiges Aufwachen</string>
+    <string name="aggressive_standby_title">Aggressiver Standby</string>
+    <string name="aggressive_standby_summary">Einschränkung der Hintergrundausführung von Apps</string>
+    <string name="aggressive_battery_saver_title">Automatisch beim Energiesparmodus aktivieren </string>
+    <string name="aggressive_battery_saver_summary">Aggressive Batterie automatisch aktivieren, wenn der Energiesparmodus verwendet wird</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Sperrbildschirm Ladeinformation</string>
+    <!-- Status bar clock and date options -->
+    <string name="clock_enabled">Aktiviert</string>
+    <string name="clock_disabled">Deaktiviert</string>
+    <string name="status_bar_clock_style_reset">Farbe zurücksetzen</string>
+    <string name="status_bar_show_clock_title">Uhrzeit &amp; Datum anzeigen</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-Stunden-Anzeige ist aktiviert</string>
+    <string name="enable_clock_weekday">Wochentag</string>
+    <string name="enable_clock_weekday_summary">Abgekürzter Wochentag vor der Uhrzeit</string>
+    <string name="dont_show">Nicht zeigen</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_display_summary">Benutzerdefiniertes Datum vor der Uhr anzeigen</string>
+    <string name="clock_date_style">Datums-Stil</string>
+    <string name="clock_date_format">Datumsformat</string>
+    <string name="clock_date_string_edittext_title">Datumsformat muss z.B. MM/dd/yy sein</string>
+    <string name="clock_date_string_edittext_summary">Zeichenfolge eingeben</string>
+    <string name="am_pm_clock_normal">Normale Schriftgröße</string>
+    <string name="am_pm_clock_small">Kleine Schriftgröße</string>
+    <string name="am_pm_clock_none">Nicht zeigen</string>
+    <string name="clock_date_display_none">Nicht zeigen</string>
+    <string name="clock_date_display_small">Kleine Schriftgröße</string>
+    <string name="clock_date_display_normal">Normale Schriftgröße</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Kleinbuchstaben</string>
+    <string name="clock_date_style_uppercase">Großbuchstaben</string>
+    <string name="clock_date_right">Rechts neben Uhrzeit</string>
+    <string name="clock_date_left">Links neben Uhrzeit</string>
+    <string name="clock_date_position">Datums-Position</string>
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">Batterie</string>
+    <string name="battery_percent_title">Batterieprozent</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Batteriesymbol</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon Hochformat (Standard)</string>
+    <string name="status_bar_battery_style_circle">Kreis</string>
+    <string name="status_bar_battery_style_dotted_circle">Kreis (gepunktet)</string>
+    <string name="status_bar_battery_style_filled_circle">Kreis (gefüllt)</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Ausgeblendet</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Batterieprozent</string>
+    <string name="status_bar_battery_percentage_default">Versteckt (Standard)</string>
+    <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
+    <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
+    <!-- Navbar Tuning -->
+    <string name="navigation_bar_invert_layout_title">Navigationsleistenlayout umkehren</string>
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">Durchmische die PIN Tastatur</string>
+    <string name="unlock_scramble_pin_layout_summary">Durchmische das Layout der PIN Tastatur</string>
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Verstecke Apps in den zuletzt geöffneten Apps</string>
+    <string name="hide_apps_from_recents_summary">Apps im Anwendungsverlauf ausblenden</string>
+    <string name="hide_from_recents_add_app">App hinzufügen</string>
+    <string name="title_activity_carbon_recents_settings">Letzte Apps</string>
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">Statusleisten-Symbole</string>
+    <string name="status_bar_tuner_summary">Statusleiste Symbole und Optionen bearbeiten</string>
+    <string name="lock_screen_shortcuts_title">Sperrbildschirm-Verknüpfungen</string>
+    <string name="lock_screen_shortcuts_summary">Untere Sperrbildschirm-Verknüpfungen verwalten</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Schaltet Pixel aus, um den Stromverbrauch zu senken</string>
+    <string name="smart_pixels_on_power_save_title">Automatisches aktivieren mit dem Stromsparmodus</string>
+    <string name="smart_pixels_on_power_save_summary">Smart Pixels verwenden, wenn der Energiesparmodus aktiviert ist</string>
+    <string name="smart_pixels_percent">Prozentsatz der deaktivierten Pixel</string>
+    <string name="smart_pixels_shift">Burn-in durch die Verlagerung von Pixeln verhindern</string>
+    <string name="smart_pixels_warning_text">Smart Pixels ist ein Stromsparfeature. Je nachdem, wie viele Pixel ausgeschaltet werden, kann man eine signifikante Verbesserung in der Batterielebensdauer sehen. Für eine gute Benutzererfahrung empfehlen wir, den Prozentsatz für ausgeschaltete Pixel auf 75 Prozent zu setzen, und alle 10 Minuten die Pixel zu wechseln.</string>
+    <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">Skalierung aktivieren</string>
+    <string name="aspect_ratio_apps_enabled_summary">Alte Apps erlauben, den Vollbildmodus zu nutzen</string>
+    <string name="aspect_ratio_apps_list_title">Apps, welche die Skalierung verwenden dürfen</string>
+    <string name="aspect_ratio_category_title">Legacy-App-Skalierung</string>
+    <string name="aspect_ratio_apps_info">Nach Änderungen müssen die Anwendungen neu gestartet werden</string>
+    <string name="action_save">Speichern</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Wiedergabesteuerung bei ausgeschaltetem Bildschirm</string>
+    <string name="volume_rocker_music_controls_summary">Halten Sie die Lautstärketasten, um die Musik zu steuern</string>
+    <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">Lautstärke-Tasten vertauschen</string>
+    <string name="swap_volume_keys_on_rotation_summary">Ändere das Verhalten der Lautstärketasten beim Drehen des Geräts</string>
+    <!-- Volume panel switch -->
+    <!-- Quick Settings on lockscreen-->
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G-Symbol</string>
+    <string name="show_fourg_icon_summary">4G statt LTE-Symbol im Signalsymbol anzeigen</string>
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
+    <string name="buttons_category">ボタン</string>
+    <string name="gestures_category">ジェスチャー</string>
+    <string name="lock_screen_category">ロック画面</string>
+    <string name="status_bar_category">ステータスバー</string>
+    <string name="system_category">システム</string>
+    <string name="privacy_category">プライバシー</string>
+    <string name="global_actions_category">電源メニュー</string>
+    <string name="power_save_category">省電力</string>
+    <string name="buttons_software_category">ソフトウェアボタン</string>
+    <string name="buttons_hardware_category">ハードウェアボタン</string>
+    <string name="miscellaneous_category_title">その他</string>
+    <string name="system_main_category_summary">システムのオプションを調節する</string>
+    <string name="statusbar_main_category_summary">ステータスバーの項目を設定する</string>
+    <string name="lockscreen_main_category_summary">ロック画面のレイアウトとオプションを変更する</string>
+    <string name="buttons_main_category_summary">ハードウェア/ソフトウェアキーを編集する</string>
+    <string name="gestures_main_category_summary">ジェスチャーに基づくオプションとアクション</string>
+    <string name="clock_category">時計と日付</string>
+    <!-- Dialog -->
+    <string name="carbonfibers_dialog_title">互いに助け合いましょう!</string>
+    <string name="carbonfibers_dialog_toast">全てに目を通して下さい!</string>
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CarbonROM の統計情報</string>
+    <string name="anonymous_statistics_summary">CarbonROM をより良くするための匿名の利用統計報告を許可する</string>
+    <string name="anonymous_statistics_warning_title">概要</string>
+    <string name="anonymous_statistics_warning">CarbonROM 統計を選択すると、個人を特定されないデータを Carbon 開発者に送信して端末間の固有のインストールを追跡することができます。送信された情報にはあなたのプライバシーや個人データを危険に晒さない一意の識別子が含まれています。データは起動ごとに送信されます。\n\n送信されるデータの例はデータのプレビューをタップして下さい。</string>
+    <string name="enable_reporting_title">レポートを有効にする</string>
+    <string name="preview_data_title">データのプレビュー</string>
+    <string name="view_stats_title">統計情報を見る</string>
+    <string name="anonymous_learn_more">詳細</string>
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">ユニーク ID</string>
+    <string name="preview_device_title">端末</string>
+    <string name="preview_version_title">バージョン</string>
+    <string name="preview_country_title">国</string>
+    <string name="preview_carrier_title">キャリア</string>
+    <string name="stats_collection_title">統計情報の収集の有効化</string>
+    <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">クイックプルダウン</string>
+    <string name="quick_pulldown_none">無効</string>
+    <string name="quick_pulldown_right">ステータスバーの左側をプルダウン</string>
+    <string name="quick_pulldown_left">ステータスバーの右側をプルダウン</string>
+    <!-- Lock screen cover art -->
+    <!-- Global Actions -->
+    <!-- QS rows and columns -->
+    <!-- Aggressive battery -->
+    <string name="aggressive_battery_title">アグレッシブバッテリー</string>
+    <string name="aggressive_battery_summary">より厳しくバッテリーを節約する</string>
+    <string name="aggressive_battery_warning_text">これらは節電機能です。ナビゲーションアプリのようにアイドル状態で実行することを目的としたサービスを妨害する可能性があります。アプリのバッテリー設定でこれらのアプリが影響を受けないようにホワイトリストに登録できます。</string>
+    <string name="aggressive_idle_title">アグレッシブアイドル</string>
+    <string name="aggressive_idle_summary">より頻繁にアイドル状態になり起動回数を減らす</string>
+    <string name="aggressive_standby_title">アグレッシブスタンバイ</string>
+    <string name="aggressive_standby_summary">アプリがバックグラウンドで実行されるのを制限する</string>
+    <string name="aggressive_battery_saver_title">自動有効</string>
+    <string name="aggressive_battery_saver_summary">バッテリーセーバー使用時は自動的に有効化する</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">ロック画面の充電情報</string>
+    <!-- Status bar clock and date options -->
+    <string name="clock_enabled">有効</string>
+    <string name="clock_disabled">無効</string>
+    <string name="status_bar_clock_style_reset">色をリセット</string>
+    <string name="status_bar_show_clock_title">日付と時計を表示</string>
+    <string name="status_bar_am_pm_title">午前/午後</string>
+    <string name="status_bar_am_pm_info">24時間スタイルが有効です</string>
+    <string name="enable_clock_weekday">曜日</string>
+    <string name="enable_clock_weekday_summary">時間の前に曜日を表示する</string>
+    <string name="dont_show">非表示</string>
+    <string name="clock_date_display">日付</string>
+    <string name="clock_date_display_summary">時計の前にカスタムの日付を表示する</string>
+    <string name="clock_date_style">日付のスタイル</string>
+    <string name="clock_date_format">日付の形式</string>
+    <string name="clock_date_string_edittext_title">DateFormat 形式で入力して下さい 例. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">文字列を入力</string>
+    <string name="am_pm_clock_normal">標準のフォントサイズ</string>
+    <string name="am_pm_clock_small">小さいフォントサイズ</string>
+    <string name="am_pm_clock_none">非表示</string>
+    <string name="clock_date_display_none">非表示</string>
+    <string name="clock_date_display_small">小さいフォントサイズ</string>
+    <string name="clock_date_display_normal">標準のフォントサイズ</string>
+    <string name="clock_date_style_normal">標準</string>
+    <string name="clock_date_style_lowercase">小文字</string>
+    <string name="clock_date_style_uppercase">大文字</string>
+    <string name="clock_date_right">時刻の右側</string>
+    <string name="clock_date_left">時刻の左側</string>
+    <string name="clock_date_position">日付の位置</string>
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">バッテリー</string>
+    <string name="battery_percent_title">バッテリー残量</string>
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">バッテリーのスタイル</string>
+    <string name="status_bar_battery_style_icon_portrait">縦アイコン (既定)</string>
+    <string name="status_bar_battery_style_circle">円</string>
+    <string name="status_bar_battery_style_dotted_circle">点の円</string>
+    <string name="status_bar_battery_style_filled_circle">塗り潰しの円</string>
+    <string name="status_bar_battery_style_text">文字</string>
+    <string name="status_bar_battery_style_hidden">非表示</string>
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">バッテリー残量</string>
+    <string name="status_bar_battery_percentage_default">非表示 (既定)</string>
+    <string name="status_bar_battery_percentage_text_inside">アイコンの内側</string>
+    <string name="status_bar_battery_percentage_text_next">アイコンの外側</string>
+    <!-- Navbar Tuning -->
+    <string name="navigation_bar_invert_layout_title">ナビゲーションバーのレイアウトを入れ替え</string>
+    <!-- Pin scramble -->
+    <string name="unlock_scramble_pin_layout_title">ランダムな PIN キーボード</string>
+    <string name="unlock_scramble_pin_layout_summary">PIN キーボードのレイアウトをランダムにする</string>
+    <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">アプリ履歴から隠すアプリ</string>
+    <string name="hide_apps_from_recents_summary">アプリ履歴に表示されるアプリを隠す</string>
+    <string name="hide_from_recents_add_app">アプリを追加</string>
+    <string name="title_activity_carbon_recents_settings">アプリ履歴</string>
+    <!-- SystemUI Tuner -->
+    <string name="status_bar_tuner_title">ステータスバーのアイコン</string>
+    <string name="status_bar_tuner_summary">ステータスバーのアイコンとオプションを編集する</string>
+    <string name="lock_screen_shortcuts_title">ショートカット</string>
+    <string name="lock_screen_shortcuts_summary">ロック画面の下部ショートカットを管理する</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">スマートピクセル</string>
+    <string name="smart_pixels_summary">消費電力を削減するために画素を遮断する</string>
+    <string name="smart_pixels_on_power_save_title">自動有効</string>
+    <string name="smart_pixels_on_power_save_summary">バッテリーセーバー有効時はスマートピクセルを有効化する</string>
+    <string name="smart_pixels_percent">無効にする画素の割合</string>
+    <string name="smart_pixels_shift">使う画素を遷移させ画面の焼付きを防ぐ</string>
+    <string name="smart_pixels_warning_text">スマートピクセルは省電力機能です。消灯する画素数に応じてバッテリーの寿命が大幅に改善されます。ユーザーエクスペリエンスを向上させるには、10分ごとの画素の移動で無効の画素を75％に設定することをおすすめします。</string>
+    <!-- Per App aspect Ratio -->
+    <string name="aspect_ratio_apps_enabled_title">スケーリングを有効化</string>
+    <string name="aspect_ratio_apps_enabled_summary">従来のアプリが全画面表示を使用するのを許可する</string>
+    <string name="aspect_ratio_apps_list_title">アプリはスケーリング使用を許可されています</string>
+    <string name="aspect_ratio_category_title">従来のアプリのスケーリング</string>
+    <string name="aspect_ratio_apps_info">変更後にアプリを再起動する必要があります</string>
+    <string name="action_save">保存</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">再生コントロール</string>
+    <string name="volume_rocker_music_controls_summary">音量ボタンを長押しして音楽トラックをシークする</string>
+    <!-- VolumeKeys Swap -->
+    <string name="swap_volume_keys_on_rotation_title">音量ボタンの入れ替え</string>
+    <string name="swap_volume_keys_on_rotation_summary">端末回転時に音量ボタンの上下を入れ替える</string>
+    <!-- Volume panel switch -->
+    <!-- Quick Settings on lockscreen-->
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G アイコン</string>
+    <string name="show_fourg_icon_summary">LTE の代わりに 4G アイコンを表示する</string>
+</resources>
