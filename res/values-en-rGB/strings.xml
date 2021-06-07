@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="buttons_category">Buttons</string>
+    <string name="gestures_category">Gestures</string>
+    <string name="lock_screen_category">Lock screen</string>
+    <string name="status_bar_category">Status bar</string>
+    <string name="system_category">System</string>
+    <string name="buttons_software_category">Software buttons</string>
+    <string name="buttons_hardware_category">Hardware buttons</string>
+    <string name="carbonfibers_dialog_title">Help us help you!</string>
+    <string name="anonymous_statistics_title">CarbonROM analytics &amp; statistics</string>
+    <string name="anonymous_statistics_summary">Help make CarbonROM better by opting into anonymous statistics reporting</string>
+    <string name="anonymous_statistics_warning_title">About</string>
+    <string name="enable_reporting_title">Enable reporting</string>
+    <string name="preview_data_title">Preview data</string>
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <string name="hide_apps_from_recents_title">Hide apps from recents</string>
+    <string name="hide_from_recents_add_app">Add app</string>
+    <string name="title_activity_carbon_recents_settings">Recents</string>
+    <string name="status_bar_tuner_title">Status bar items</string>
+    <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
+    <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Shut off pixels to reduce power usage</string>
+    <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
+    <string name="smart_pixels_percent">Percent of pixels to disable</string>
+    <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
+    <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
+</resources>

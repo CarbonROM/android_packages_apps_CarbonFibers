@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
+    <string name="buttons_category">Tlačidlá</string>
+    <string name="gestures_category">Gestá</string>
+    <string name="lock_screen_category">Obrazovka uzamknutia</string>
+    <string name="status_bar_category">Stavový riadok</string>
+    <string name="system_category">Systém</string>
+    <string name="privacy_category">Súkromie</string>
+    <string name="global_actions_category">Ponuka tlačidla Napájanie</string>
+    <string name="power_save_category">Úsporný režim</string>
+    <string name="buttons_software_category">Softvérové tlačidlá</string>
+    <string name="buttons_hardware_category">Hardvérové tlačidlá</string>
+    <string name="miscellaneous_category_title">Rôzne</string>
+    <string name="system_main_category_summary">Upravenie možností systému</string>
+    <string name="statusbar_main_category_summary">Nastavenie položiek stavového riadku</string>
+    <string name="lockscreen_main_category_summary">Upraviť rozloženie a možnosti zamknutej obrazovky</string>
+    <string name="buttons_main_category_summary">Prispôsobiť hardvérové a softvérové tlačidlá</string>
+    <string name="gestures_main_category_summary">Možnosti založené na gestách a akcie</string>
+    <string name="clock_category">Hodiny a dátum</string>
+    <string name="carbonfibers_dialog_title">Pomôžte nám, pomôžeme vám!</string>
+    <string name="carbonfibers_dialog_toast">Prečítajte si všetko!</string>
+    <string name="anonymous_statistics_title">CarbonROM Štatistiky</string>
+    <string name="anonymous_statistics_summary">Pomôžte tvoriť lepšiu CarbonROM zvolením anonymných štatistických hlásení</string>
+    <string name="anonymous_statistics_warning_title">O aplikácii</string>
+    <string name="anonymous_statistics_warning">Ak povolíte štatistiky CarbonROM, umožníte odoslanie neosobných údajov vývojárom  CarbonROM, na sledovanie jedinečných inštalácií vo všetkých zariadeniach. Zaslané informácie obsahujú jedinečný identifikátor, čo neohrozuje vaše súkromie alebo osobné údaje. Údaje sa odosielajú počas každého zavádzania (boot).\n\nPre príklad zadaných údajov kliknite na Ukážka dát.</string>
+    <string name="enable_reporting_title">Povoliť hlásenie</string>
+    <string name="preview_data_title">Ukážka údajov</string>
+    <string name="view_stats_title">Zobraziť štatistiky</string>
+    <string name="anonymous_learn_more">Dozvedieť sa viac</string>
+    <string name="preview_id_title">Unikátne ID</string>
+    <string name="preview_device_title">Zariadenie</string>
+    <string name="preview_version_title">Verzia</string>
+    <string name="preview_country_title">Krajina</string>
+    <string name="preview_carrier_title">Operátor</string>
+    <string name="stats_collection_title">Povoliť zber štatistík</string>
+    <string name="status_bar_quick_qs_pulldown">Rýchle rozbalenie ponuky Rýchl. nastavení</string>
+    <string name="quick_pulldown_none">Zakázané</string>
+    <string name="quick_pulldown_right">Stiahnutie stavového riadku z pravej strany</string>
+    <string name="quick_pulldown_left">Stiahnutie stavového riadku z ľavej strany</string>
+    <string name="aggressive_battery_title">Agresívna batéria</string>
+    <string name="aggressive_battery_summary">Prísnejšia úspora batérie</string>
+    <string name="aggressive_battery_warning_text">Jedná sa o funkcie pre úsporu energie. Môžu zasahovať do služieb, ktoré majú plynúť v nečinnosti, ako sú aplikácie navigácie. Aby tieto aplikácie neboli ovplyvnené, môžete ich povoliť v nastavení batérie.</string>
+    <string name="aggressive_idle_title">Agresívny spánkový režim</string>
+    <string name="aggressive_idle_summary">Zariadenie bude viac v nečinnosti a nebude sa často prebúdzať</string>
+    <string name="aggressive_standby_title">Agresívny pohotovostný režim</string>
+    <string name="aggressive_standby_summary">Obmedzí používanie aplikácií na pozadí</string>
+    <string name="aggressive_battery_saver_title">Automatické zapnutie pri zapnutí šetriča batérie</string>
+    <string name="aggressive_battery_saver_summary">Pri použití šetriča batérie automaticky zapnúť funkciu Agresívna batéria</string>
+    <string name="lockscreen_battery_info_title">Informácie o nabíjaní na uzamknutej obrazovke</string>
+    <string name="clock_enabled">Zapnuté</string>
+    <string name="clock_disabled">Zakázané</string>
+    <string name="status_bar_clock_style_reset">Resetovať farby</string>
+    <string name="status_bar_show_clock_title">Zobraziť dátum a čas</string>
+    <string name="status_bar_am_pm_title">dop./odp.</string>
+    <string name="status_bar_am_pm_info">24-hodinový formát je povolený</string>
+    <string name="enable_clock_weekday">Deň v týždni</string>
+    <string name="enable_clock_weekday_summary">Skrátený deň v týždni pred časom</string>
+    <string name="dont_show">Nezobrazovať</string>
+    <string name="clock_date_display">Dátum</string>
+    <string name="clock_date_display_summary">Zobraziť vlastný formát dátumu pred hodinami</string>
+    <string name="clock_date_style">Štýl dátumu</string>
+    <string name="clock_date_format">Formát dátumu</string>
+    <string name="clock_date_string_edittext_title">Musí byť vo formáte dátumu napr. MM/dd/rr</string>
+    <string name="clock_date_string_edittext_summary">Vložte textový reťazec</string>
+    <string name="am_pm_clock_normal">Normálna veľkosť písma</string>
+    <string name="am_pm_clock_small">Malá veľkosť písma</string>
+    <string name="am_pm_clock_none">Nezobrazovať</string>
+    <string name="clock_date_display_none">Nezobrazovať</string>
+    <string name="clock_date_display_small">Malá veľkosť písma</string>
+    <string name="clock_date_display_normal">Normálna veľkosť písma</string>
+    <string name="clock_date_style_normal">Normálny</string>
+    <string name="clock_date_style_lowercase">Malé písmená</string>
+    <string name="clock_date_style_uppercase">Veľké písmená</string>
+    <string name="clock_date_right">Vpravo od času</string>
+    <string name="clock_date_left">Vľavo od času</string>
+    <string name="clock_date_position">Umiestnenie dátumu</string>
+    <string name="battery_style_category_title">Batéria</string>
+    <string name="battery_percent_title">Percentá batérie</string>
+    <string name="status_bar_battery_style_title">Štýl batérie</string>
+    <string name="status_bar_battery_style_icon_portrait">Ikona na výšku (predvolené)</string>
+    <string name="status_bar_battery_style_circle">Kruh</string>
+    <string name="status_bar_battery_style_dotted_circle">Kruh (bodový)</string>
+    <string name="status_bar_battery_style_filled_circle">Kruh (vyplnený)</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Nezobrazovať</string>
+    <string name="status_bar_battery_percentage_title">Percentá batérie</string>
+    <string name="status_bar_battery_percentage_default">Nezobrazovať (predvolené)</string>
+    <string name="status_bar_battery_percentage_text_inside">Vo vnútri ikony</string>
+    <string name="status_bar_battery_percentage_text_next">Vedľa ikony</string>
+    <string name="navigation_bar_invert_layout_title">Prevrátiť rozloženie navigačného panela</string>
+    <string name="unlock_scramble_pin_layout_title">Prehádzať klávesnicu PINu</string>
+    <string name="unlock_scramble_pin_layout_summary">Rozhádzať rozloženie klávesnice zadávanie PINu</string>
+    <string name="hide_apps_from_recents_title">Skryť aplikácie z Nedávnych</string>
+    <string name="hide_apps_from_recents_summary">Skryť aplikácie z nedávnych</string>
+    <string name="hide_from_recents_add_app">Pridať aplikáciu</string>
+    <string name="title_activity_carbon_recents_settings">Nedávne</string>
+    <string name="status_bar_tuner_title">Ikony stavového riadku</string>
+    <string name="status_bar_tuner_summary">Upraviť ikony a možnosti stavoveého riadku</string>
+    <string name="lock_screen_shortcuts_title">Odkazy na obrazovke uzamknutia</string>
+    <string name="lock_screen_shortcuts_summary">Správa dolných skratiek obrazovky uzamknutia</string>
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Ak chcete znížiť spotrebu energie, vypnite pixely</string>
+    <string name="smart_pixels_on_power_save_title">Automatické zapnutie pri zapnutí šetriča batérie</string>
+    <string name="smart_pixels_on_power_save_summary">Použiť Smart Pixels, pokiaľ je aktivovaný šetrič batérie</string>
+    <string name="smart_pixels_percent">Percentá pixelov na vypnutie</string>
+    <string name="smart_pixels_shift">Zabraňuje vypaľovaniu displeja častým prepínaním pixelov</string>
+    <string name="smart_pixels_warning_text">Smart Pixels je funkcia šetriaca energiu. V závislosti na na tom, koľko pixelov sa rozhodnete vypnúť, môže dôjsť k výraznému zlepšeniu životnosti batérie. Pre dobrú efektivitu odporúčame nastaviť počet vypnutých pixelov na 75 percent, pri premiestňovaní každých 10 minút.</string>
+    <string name="aspect_ratio_apps_enabled_title">Povoliť zmenu veľkosti</string>
+    <string name="aspect_ratio_apps_enabled_summary">Povoliť starším aplikáciám používať celú obrazovku</string>
+    <string name="aspect_ratio_apps_list_title">Aplikácie, ktoré môžu používať zmenu veľkosti</string>
+    <string name="aspect_ratio_category_title">Zmena veľkosti starších aplikácií</string>
+    <string name="aspect_ratio_apps_info">Po vykonaných zmenách je nutné aplikáciu reštartovať</string>
+    <string name="action_save">Uložiť</string>
+    <string name="volume_rocker_music_controls_title">Ovládanie prehrávania pri vypnutej obrazovke</string>
+    <string name="volume_rocker_music_controls_summary">Podržte tlačidlá hlasitosti pre vyhľadávanie zvukových stôp</string>
+    <string name="swap_volume_keys_on_rotation_title">Prehodiť tlačidlá hlasitosti</string>
+    <string name="swap_volume_keys_on_rotation_summary">Zmeniť správanie tlačidiel hlasitosti pri otočení zariadenia</string>
+    <string name="show_fourg_icon_title">Ikona 4G</string>
+    <string name="show_fourg_icon_summary">Zobraziť ikonu 4G v ikone signálu namiesto LTE</string>
+</resources>

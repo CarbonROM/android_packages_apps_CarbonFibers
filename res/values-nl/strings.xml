@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="buttons_category">Knoppen</string>
+    <string name="gestures_category">Gebaren</string>
+    <string name="lock_screen_category">Vergrendelscherm</string>
+    <string name="status_bar_category">Statusbalk</string>
+    <string name="system_category">Systeem</string>
+    <string name="power_save_category">Energiebesparing</string>
+    <string name="buttons_software_category">Software knoppen</string>
+    <string name="buttons_hardware_category">Hardware knoppen</string>
+    <string name="miscellaneous_category_title">Diversen</string>
+    <string name="carbonfibers_dialog_title">Help ons u te helpen!</string>
+    <string name="carbonfibers_dialog_toast">Alles lezen!</string>
+    <string name="anonymous_statistics_title">CarbonROM statistieken</string>
+    <string name="anonymous_statistics_summary">Help CarbonROM beter te maken door anonieme statistieken te verzenden</string>
+    <string name="anonymous_statistics_warning_title">Over</string>
+    <string name="anonymous_statistics_warning">Het inschakelen van CarbonROM statistieken zorgt ervoor dat niet-personelijke statistieken naar de ontwikkelaars van CarbonROM wordt gestuurd om unieke installaties op alle apparaten bij te houden. The informatie die wordt gestuurd heeft een unieke indentificator, die geen van uw privacy of persoonlijke data aantast. De data wordt verstuurd tijdens het opstarten van het apparaat. \n\nVoor een voorbeeld van de data wat wordt verstuurd. Klik op voorbeeldgegevens.</string>
+    <string name="enable_reporting_title">Rapporteren inschakelen</string>
+    <string name="preview_data_title">Voorbeeldgegevens</string>
+    <string name="view_stats_title">Bekijk statestieken</string>
+    <string name="anonymous_learn_more">Leer meer</string>
+    <string name="preview_id_title">Uniek ID</string>
+    <string name="preview_device_title">Apparaat</string>
+    <string name="preview_version_title">Versie</string>
+    <string name="preview_country_title">Land</string>
+    <string name="preview_carrier_title">Provider</string>
+    <string name="stats_collection_title">Statistieken verzamelen inschakelen</string>
+    <string name="quick_pulldown_none">Uitgeschakeld</string>
+    <string name="clock_enabled">Ingeschakeld</string>
+    <string name="clock_disabled">Uitgeschakeld</string>
+    <string name="status_bar_clock_style_reset">Herstel kleuren</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-uurs klok is ingeschakeld</string>
+    <string name="enable_clock_weekday">Dag van de week</string>
+    <string name="dont_show">Niet weergeven</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_style">Datumnotatie</string>
+    <string name="clock_date_format">Datumnotatie</string>
+    <string name="clock_date_string_edittext_title">Moet in Datum formaat bijv. MM/dd/jj</string>
+    <string name="am_pm_clock_normal">Normale lettergrootte</string>
+    <string name="am_pm_clock_small">Kleine lettergrootte</string>
+    <string name="am_pm_clock_none">Niet weergeven</string>
+    <string name="clock_date_display_none">Niet weergeven</string>
+    <string name="clock_date_display_small">Kleine lettergrootte</string>
+    <string name="clock_date_display_normal">Normale lettergrootte</string>
+    <string name="clock_date_style_normal">Normaal</string>
+    <string name="clock_date_style_lowercase">Kleine letters</string>
+    <string name="clock_date_style_uppercase">Hoofdletters</string>
+    <string name="status_bar_battery_style_circle">Cirkel</string>
+    <string name="status_bar_battery_style_text">Tekst</string>
+    <string name="status_bar_battery_style_hidden">Verborgen</string>
+    <string name="status_bar_battery_percentage_title">Baterij percentage</string>
+    <string name="status_bar_battery_percentage_text_inside">In het icoon</string>
+    <string name="status_bar_battery_percentage_text_next">Naast het icoon</string>
+    <string name="unlock_scramble_pin_layout_title">Scramble PIN toetsenbord</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN toetsenbord layout</string>
+    <string name="hide_apps_from_recents_title">Verberg recente apps</string>
+    <string name="hide_from_recents_add_app">App toevoegen</string>
+    <string name="title_activity_carbon_recents_settings">Recente</string>
+    <string name="status_bar_tuner_title">Statusbalk iconen</string>
+    <string name="status_bar_tuner_summary">Statusbalk pictogrammen en opties bewerken</string>
+    <string name="lock_screen_shortcuts_title">Vergrendelscherm snelkoppelingen</string>
+    <string name="lock_screen_shortcuts_summary">Beheer vergrendelscherm onder snelkoppelingen</string>
+    <string name="smart_pixels_on_power_save_summary">Gebruik Smart Pixels als energiebesparing is ingeschakeld</string>
+    <string name="volume_rocker_music_controls_title">Scherm uit afspeelbediening</string>
+    <string name="volume_rocker_music_controls_summary">Houd de volumeknoppen ingedrukt om audiotracks te zoeken</string>
+</resources>
