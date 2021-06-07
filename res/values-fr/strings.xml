@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Fibres de carbone</string>
+    <string name="buttons_category">Boutons</string>
+    <string name="gestures_category">Gestes</string>
+    <string name="lock_screen_category">Écran de verrouillage</string>
+    <string name="status_bar_category">Barre d\'état</string>
+    <string name="system_category">Système</string>
+    <string name="privacy_category">Confidentialité</string>
+    <string name="global_actions_category">Menu d\'alimentation</string>
+    <string name="power_save_category">Mode d\'économie d\'énergie</string>
+    <string name="buttons_software_category">Boutons virtuels</string>
+    <string name="buttons_hardware_category">Boutons physiques</string>
+    <string name="miscellaneous_category_title">Divers</string>
+    <string name="system_main_category_summary">Ajuster les options système</string>
+    <string name="statusbar_main_category_summary">Ajuster les éléments de la barre d\'état</string>
+    <string name="lockscreen_main_category_summary">Modifier la disposition et les options de l\'écran de verrouillage</string>
+    <string name="buttons_main_category_summary">Personnaliser les clés matérielles et logicielles</string>
+    <string name="gestures_main_category_summary">Options et actions basées sur les gestes</string>
+    <string name="clock_category">Horloge &amp; Date</string>
+    <string name="carbonfibers_dialog_title">Aidez-nous à vous aider !</string>
+    <string name="carbonfibers_dialog_toast">Tout lire !</string>
+    <string name="anonymous_statistics_title">Statistiques de CarbonROM</string>
+    <string name="anonymous_statistics_summary">Aider à améliorer CarbonROM en envoyant des rapports de statistiques anonymes</string>
+    <string name="anonymous_statistics_warning_title">À propos</string>
+    <string name="anonymous_statistics_warning">En activant les statistiques CarbonROM, des données non personnelles seront soumises aux développeurs de CarbonROM pour effectuer un suivi des installations uniques sur les périphériques. Les informations fournies incluent un identificateur unique, qui ne compromet pas votre vie privée ou des données à caractère personnel. Les données sont envoyées au cours de chaque démarrage.\n\nPour des exemples des données qui sont envoyées, tapez sur Aperçu des données.</string>
+    <string name="enable_reporting_title">Activer les rapports</string>
+    <string name="preview_data_title">Prévisualiser les données</string>
+    <string name="view_stats_title">Voir les statistiques</string>
+    <string name="anonymous_learn_more">En savoir plus</string>
+    <string name="preview_id_title">Identifiant unique</string>
+    <string name="preview_device_title">Appareil</string>
+    <string name="preview_version_title">Version</string>
+    <string name="preview_country_title">Pays</string>
+    <string name="preview_carrier_title">Opérateur</string>
+    <string name="stats_collection_title">Activer la collecte de statistiques</string>
+    <string name="quick_pulldown_none">Désactivé</string>
+    <string name="aggressive_battery_title">Aggressive Battery</string>
+    <string name="aggressive_battery_summary">Économie plus stricte de batterie</string>
+    <string name="aggressive_battery_warning_text">Ces options peuvent vous aider à économiser de l\'énergie. Cependant, ils peuvent affecter les applications qui s\'exécutent en idle (telles que les applications de navigation). Ajoutez-les à la liste blanche pour ne pas les affecter.</string>
+    <string name="aggressive_idle_title">Aggressive Idle</string>
+    <string name="aggressive_idle_summary">Faites que l\'appareil se mettent en idle plus rapidement et réduisez le nombre de réveils</string>
+    <string name="aggressive_standby_title">Aggressive Standby</string>
+    <string name="aggressive_standby_summary">Restreindre les applications en cours d\'exécution en arrière-plan</string>
+    <string name="aggressive_battery_saver_title">Activer automatiquement avec l\'économiseur de batterie</string>
+    <string name="aggressive_battery_saver_summary">Activer la Aggressive Battery automatiquement lors de l\'utilisation de l\'économiseur de batterie</string>
+    <string name="clock_enabled">Activé</string>
+    <string name="clock_disabled">Désactivé</string>
+    <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">L\'horloge au format 24 heures est activée</string>
+    <string name="enable_clock_weekday">Jour de la semaine</string>
+    <string name="enable_clock_weekday_summary">Jour de la semaine abrégé devant l\'heure</string>
+    <string name="dont_show">Ne pas afficher</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_style">Style de la date</string>
+    <string name="clock_date_format">Format de la date</string>
+    <string name="clock_date_string_edittext_title">Le format de date doit être par exemple: MM/jj/aa</string>
+    <string name="clock_date_string_edittext_summary">Entrer une valeur</string>
+    <string name="am_pm_clock_normal">Police de taille normale</string>
+    <string name="am_pm_clock_small">Police de petite taille</string>
+    <string name="am_pm_clock_none">Ne pas afficher</string>
+    <string name="clock_date_display_none">Ne pas afficher</string>
+    <string name="clock_date_display_small">Police de petite taille</string>
+    <string name="clock_date_display_normal">Police de taille normale</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Minuscules</string>
+    <string name="clock_date_style_uppercase">Majuscules</string>
+    <string name="clock_date_right">A droite de l\'heure</string>
+    <string name="clock_date_left">A gauche de l\'heure</string>
+    <string name="clock_date_position">Emplacement de la date</string>
+    <string name="status_bar_battery_style_title">Style de la batterie</string>
+    <string name="status_bar_battery_style_circle">Cercle</string>
+    <string name="status_bar_battery_style_text">Texte</string>
+    <string name="status_bar_battery_style_hidden">Masqué</string>
+    <string name="status_bar_battery_percentage_title">Pourcentage de batterie</string>
+    <string name="status_bar_battery_percentage_text_inside">À l\'intérieur de l\'icône</string>
+    <string name="status_bar_battery_percentage_text_next">À côté de l\'icône</string>
+    <string name="unlock_scramble_pin_layout_title">Mélanger le clavier lors de la saisie du code PIN</string>
+    <string name="unlock_scramble_pin_layout_summary">Mélanger de manière aléatoire la disposition du clavier lors de la saisie du code PIN</string>
+    <string name="hide_apps_from_recents_title">Masquer les applications des récents</string>
+    <string name="hide_apps_from_recents_summary">Masquer les applications dans les tâches récentes</string>
+    <string name="hide_from_recents_add_app">Ajouter une application</string>
+    <string name="title_activity_carbon_recents_settings">Récents</string>
+    <string name="status_bar_tuner_title">Éléments de la barre d\'état</string>
+    <string name="status_bar_tuner_summary">Modifier les icônes et options de la barre d\'état</string>
+    <string name="lock_screen_shortcuts_title">Raccourcis de l\'écran verrouillé</string>
+    <string name="lock_screen_shortcuts_summary">Gérer les raccourcis en bas de l\'écran de verrouillage</string>
+    <string name="smart_pixels_title">Pixels intelligents</string>
+    <string name="smart_pixels_summary">Éteindre des pixels pour réduire la consommation d\'énergie</string>
+    <string name="smart_pixels_on_power_save_title">Activer automatiquement avec l\'économiseur de batterie</string>
+    <string name="smart_pixels_on_power_save_summary">Activer Smart Pixels lorsque l\'économiseur de batterie est activé</string>
+    <string name="smart_pixels_percent">Pourcentage de pixels à désactiver</string>
+    <string name="smart_pixels_shift">Empêcher des dommages en déplaçant des pixels tous les</string>
+    <string name="smart_pixels_warning_text">Smart Pixels est une fonctionnalité d\'économie d\'énergie. Selon le nombre de pixels que vous décidez de désactiver, vous pourriez voir une amélioration significative de la durée de vie de la batterie. Pour une bonne expérience utilisateur, nous recommandons de définir le nombre de pixels désactivés à 75 pourcents tout en changeant toutes les 10 minutes.</string>
+    <string name="volume_rocker_music_controls_title">Suivre le contrôle de la lecture lorsque l\'écran est éteint</string>
+    <string name="volume_rocker_music_controls_summary">Maintenez la touche de volume enfoncée pour parcourir les pistes audio</string>
+    <string name="show_fourg_icon_title">Icône 4G</string>
+    <string name="show_fourg_icon_summary">Afficher l\'icône 4G en icône de signal au lieu de LTE</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers"> Sợi Carbon</string>
+    <string name="buttons_category">Nút bấm</string>
+    <string name="gestures_category">Cử chỉ</string>
+    <string name="lock_screen_category">Màn hình khoá</string>
+    <string name="status_bar_category">Thanh trạng thái</string>
+    <string name="system_category">Hệ thống</string>
+    <string name="privacy_category">Riêng tư</string>
+    <string name="global_actions_category">Trình đơn nguồn</string>
+    <string name="power_save_category">Tiết kiệm năng lượng</string>
+    <string name="buttons_software_category">Các phím ảo</string>
+    <string name="buttons_hardware_category">Các phím cứng</string>
+    <string name="miscellaneous_category_title">Các thông báo khác</string>
+    <string name="system_main_category_summary">Điều chỉnh các tùy chọn hệ thống</string>
+    <string name="statusbar_main_category_summary">Biểu tượng trên thanh trạng thái</string>
+    <string name="lockscreen_main_category_summary">Sửa đổi tùy chọn và bố cục màn hình khóa</string>
+    <string name="buttons_main_category_summary">Tùy chỉnh các phím phần cứng và phần mềm</string>
+    <string name="gestures_main_category_summary">Các tùy chọn và hành động dựa trên cử chỉ</string>
+    <string name="carbonfibers_dialog_title">Giúp chúng tôi cũng là giúp bạn!</string>
+    <string name="carbonfibers_dialog_toast">Đọc tất cả!</string>
+    <string name="anonymous_statistics_title">Số liệu thống kê CarbonROM</string>
+    <string name="anonymous_statistics_summary">Giúp làm cho CarbonROM tốt hơn bằng cách tham gia báo cáo thống kê sử dụng</string>
+    <string name="anonymous_statistics_warning_title">Giới thiệu</string>
+    <string name="anonymous_statistics_warning">Tham gia vào CarbonROM Số liệu thống kê sẽ cho phép phi cá nhân dữ liệu được gửi đến
+        các nhà phát triển của CyanogenMod để theo dõi duy nhất cài đặt trên thiết bị. Thông tin gửi bao gồm một định danh duy nhất,
+        mà không thỏa hiệp về quyền riêng tư hoặc dữ liệu cá nhân của bạn. Các dữ liệu được gửi trong mỗi lần khởi động.\n\nFor một ví dụ về các dữ liệu được gửi, nhấp vào Xem trước Dữ liệu.</string>
+    <string name="enable_reporting_title">Kích hoạt báo cáo</string>
+    <string name="preview_data_title">Xem trước dữ liệu</string>
+    <string name="view_stats_title">Xem số liệu thống kê</string>
+    <string name="anonymous_learn_more">Tìm hiểu thêm</string>
+    <string name="preview_id_title">ID duy nhất</string>
+    <string name="preview_device_title">Thiết bị</string>
+    <string name="preview_version_title">Phiên bản</string>
+    <string name="preview_country_title">Quốc gia</string>
+    <string name="preview_carrier_title">Nhà mạng</string>
+    <string name="stats_collection_title">Thống kê bộ sưu tập</string>
+    <string name="quick_pulldown_none">Đã vô hiệu hóa</string>
+    <string name="aggressive_battery_title">Pin hung hãn</string>
+    <string name="aggressive_battery_summary">Tiết kiệm pin nghiêm ngặt hơn</string>
+    <string name="aggressive_battery_warning_text">Đây là những tính năng tiết kiệm điện. Chúng có thể ảnh hưởng đến các dịch vụ dự định chạy khi không hoạt động, chẳng hạn như ứng dụng điều hướng. Bạn có thể đưa các ứng dụng này vào danh sách trắng để không bị ảnh hưởng trong phần cài đặt pin của ứng dụng.</string>
+    <string name="aggressive_idle_title">Hoạt động nhàn rỗi</string>
+    <string name="aggressive_idle_summary">Để thiết bị không hoạt động thường xuyên hơn và thức dậy ít hơn</string>
+    <string name="clock_enabled">Đã kích hoạt</string>
+    <string name="clock_disabled">Đã vô hiệu hóa</string>
+    <string name="status_bar_clock_style_reset">Đặt lại màu</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">Kiểu 24-giờ được kích hoạt</string>
+    <string name="enable_clock_weekday">Ngày trong tuần</string>
+    <string name="enable_clock_weekday_summary">Viết tắt ngày trong tuần trước thời gian</string>
+    <string name="dont_show">Không hiển thị</string>
+    <string name="clock_date_display">Ngày</string>
+    <string name="clock_date_style">Kiểu ngày</string>
+    <string name="clock_date_format">Định dạng ngày</string>
+    <string name="clock_date_string_edittext_title">Phải ở dạng DateFormat ví dụ. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Nhập chuỗi</string>
+    <string name="am_pm_clock_normal">Kích thước phông chữ bình thường</string>
+    <string name="am_pm_clock_small">Cỡ chữ nhỏ</string>
+    <string name="am_pm_clock_none">Không hiển thị</string>
+    <string name="clock_date_display_none">Không hiển thị</string>
+    <string name="clock_date_display_small">Cỡ chữ nhỏ</string>
+    <string name="clock_date_display_normal">Kích thước phông chữ bình thường</string>
+    <string name="clock_date_style_normal">Bình thường</string>
+    <string name="clock_date_style_lowercase">Chữ thường</string>
+    <string name="clock_date_style_uppercase">Chữ hoa</string>
+    <string name="clock_date_right">Bên phải của thời gian</string>
+    <string name="clock_date_left">Bên trái của thời gian</string>
+    <string name="clock_date_position">Vị trí ngày</string>
+    <string name="battery_style_category_title">Pin</string>
+    <string name="battery_percent_title">Phần trăm pin</string>
+    <string name="status_bar_battery_style_title">Kiểu pin</string>
+    <string name="status_bar_battery_style_icon_portrait">Biểu tượng dọc (mặc định)</string>
+    <string name="status_bar_battery_style_circle">Hình tròn</string>
+    <string name="status_bar_battery_style_dotted_circle">Vòng tròn (Chấm)</string>
+    <string name="status_bar_battery_style_filled_circle">Vòng kết nối (Đã lấp đầy)</string>
+    <string name="status_bar_battery_style_text">Văn bản</string>
+    <string name="status_bar_battery_style_hidden">Ẩn</string>
+    <string name="status_bar_battery_percentage_title">Phần trăm pin</string>
+    <string name="status_bar_battery_percentage_default">Ẩn (mặc định)</string>
+    <string name="status_bar_battery_percentage_text_inside">Bên trong biểu tượng</string>
+    <string name="status_bar_battery_percentage_text_next">Bên cạnh biểu tượng</string>
+    <string name="hide_apps_from_recents_title">Ẩn ứng dụng khỏi gần đây</string>
+    <string name="hide_from_recents_add_app">Thêm ứng dụng</string>
+    <string name="title_activity_carbon_recents_settings">Gần đây</string>
+    <string name="status_bar_tuner_title">Biểu tượng trên thanh trạng thái</string>
+    <string name="lock_screen_shortcuts_title">Phím tắt khóa màn hình</string>
+    <string name="lock_screen_shortcuts_summary">Quản lý phím tắt dưới trong màn hình khóa</string>
+    <string name="smart_pixels_title">Điểm ảnh thông minh</string>
+    <string name="smart_pixels_summary">Tắt các điểm ảnh để giảm điện năng tiêu thụ</string>
+    <string name="smart_pixels_on_power_save_title">Tự động kích hoạt trên tiết kiệm pin</string>
+    <string name="smart_pixels_on_power_save_summary">Kích hoạt Điểm ảnh thông minh khi tiết kiệm pin được kích hoạt</string>
+    <string name="smart_pixels_percent">Phần trăm điểm ảnh bị vô hiệu hóa</string>
+    <string name="smart_pixels_shift">Ngăn chặn bóng mờ bằng cách chuyển điểm ảnh luân phiên</string>
+    <string name="smart_pixels_warning_text">Điểm ảnh thông minh là một tính năng tiết kiệm pin. Tùy thuộc vào bao nhiêu điểm ảnh bạn quyết định tắt, bạn có thể thấy tuổi thọ pin cải thiện một cách đáng kể. Để trải nghiệm người dùng tốt, chúng tôi khuyên bạn nên thiết lập số lượng điểm ảnh bị vô hiệu hóa đến 75 phần trăm trong khi chuyển luân phiên mỗi 10 phút.</string>
+    <string name="aspect_ratio_apps_enabled_title">Bật tính năng mở rộng</string>
+    <string name="aspect_ratio_apps_enabled_summary">Cho phép các ứng dụng cũ sử dụng toàn màn hình</string>
+    <string name="aspect_ratio_apps_list_title">Các ứng dụng được phép sử dụng tính năng chia tỷ lệ</string>
+    <string name="aspect_ratio_category_title">Mở rộng ứng dụng kế thừa</string>
+    <string name="aspect_ratio_apps_info">Các ứng dụng cần được khởi động lại sau khi thay đổi</string>
+    <string name="action_save">Lưu</string>
+    <string name="swap_volume_keys_on_rotation_title">Đảo ngược nút âm lượng</string>
+    <string name="swap_volume_keys_on_rotation_summary">Thay đổi hành vi của các nút âm lượng khi xoay thiết bị</string>
+</resources>

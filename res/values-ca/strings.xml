@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="buttons_category">Botons</string>
+    <string name="gestures_category">Gestos</string>
+    <string name="lock_screen_category">Pantalla de bloqueig</string>
+    <string name="status_bar_category">Barra d\'estat</string>
+    <string name="system_category">Sistema</string>
+    <string name="buttons_software_category">Botons del programari</string>
+    <string name="buttons_hardware_category">Botons de hardware</string>
+    <string name="carbonfibers_dialog_title">Ajudeu-nos a ajudar-vos!</string>
+    <string name="anonymous_statistics_title">Estadístiques de CarbonROM</string>
+    <string name="anonymous_statistics_summary">Ajudeu a fer que CarbonROM estigui millor introduint informes d\'estadístics anònims</string>
+    <string name="anonymous_statistics_warning_title">Quant a</string>
+    <string name="enable_reporting_title">Habilita els informes</string>
+    <string name="preview_data_title">Visualització prèvia de dades</string>
+    <string name="view_stats_title">Veure estadístiques</string>
+    <string name="anonymous_learn_more">Aprèn més</string>
+    <string name="preview_id_title">ID únic</string>
+    <string name="preview_device_title">Dispositiu</string>
+    <string name="preview_version_title">Versió</string>
+    <string name="preview_country_title">País</string>
+    <string name="preview_carrier_title">Companyia</string>
+    <string name="quick_pulldown_none">Deshabilitat</string>
+    <string name="clock_enabled">Habilitat</string>
+    <string name="clock_disabled">Deshabilitat</string>
+    <string name="status_bar_clock_style_reset">Restaura el color</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">Format 24 hores habilitat</string>
+    <string name="enable_clock_weekday">Dia de la setmana</string>
+    <string name="enable_clock_weekday_summary">Dia abreujat de la setmana abans de l\'hora</string>
+    <string name="dont_show">No ho mostris</string>
+    <string name="clock_date_display">Data</string>
+    <string name="clock_date_style">Estil de la data</string>
+    <string name="clock_date_format">Format de la data</string>
+    <string name="clock_date_string_edittext_title">Ha d\'estar en format de data, per exemple MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Introduïu una cadena</string>
+    <string name="am_pm_clock_normal">Mida de lletra normal</string>
+    <string name="am_pm_clock_small">Mida de lletra petita</string>
+    <string name="am_pm_clock_none">No ho mostris</string>
+    <string name="clock_date_display_none">No ho mostris</string>
+    <string name="clock_date_display_small">Mida de lletra petita</string>
+    <string name="clock_date_display_normal">Mida de lletra normal</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Minúscula</string>
+    <string name="clock_date_style_uppercase">Majúscules</string>
+    <string name="clock_date_right">A la dreta de l\'hora</string>
+    <string name="clock_date_left">A l\'esquerra de l\'hora</string>
+    <string name="clock_date_position">Posició de la data</string>
+    <string name="status_bar_battery_style_title">Estil de la bateria</string>
+    <string name="status_bar_battery_style_circle">Cercle</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Amagat</string>
+    <string name="status_bar_battery_percentage_title">Percentatge de bateria</string>
+    <string name="status_bar_battery_percentage_text_inside">A l\'interior de la icona</string>
+    <string name="status_bar_battery_percentage_text_next">Al costat de la icona</string>
+    <string name="hide_apps_from_recents_title">Amaga les aplicacions dels recents</string>
+    <string name="hide_from_recents_add_app">Afegeix aplicació</string>
+    <string name="title_activity_carbon_recents_settings">Recents</string>
+    <string name="status_bar_tuner_title">Icones de la barra d\'estat</string>
+    <string name="lock_screen_shortcuts_title">Dreceres a la pantalla de bloqueig</string>
+    <string name="lock_screen_shortcuts_summary">Gestioneu els accessos directes de la pantalla de bloqueig</string>
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Apagueu els píxels per reduir el consum d\'energia</string>
+    <string name="smart_pixels_on_power_save_title">Activa automàticament el estalvi de la bateria</string>
+    <string name="smart_pixels_percent">Percentatge de píxels a desactivar</string>
+    <string name="smart_pixels_shift">Eviteu cremats canviant cada píxels</string>
+    <string name="smart_pixels_warning_text">Smart Pixels és una característica d\'estalvi d\'energia. Depenent de quants píxels us decidiu apagar, podríeu veure una millora significativa de la durada de la bateria. Per obtenir una bona experiència d\'usuari, us recomanem que configureu la quantitat de píxels desactivats al 75 per cent mentre es desplaça cada 10 minuts.</string>
+</resources>
