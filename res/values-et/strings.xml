@@ -125,4 +125,8 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string name="swap_volume_keys_on_rotation_summary">Muuda helitugevuse nuppude käitumist, kui seadet pööratakse</string>
     <string name="show_fourg_icon_title">4G ikoon</string>
     <string name="show_fourg_icon_summary">Näita LTE ikooni asemel 4G ikooni</string>
+    <string name="traffic_title">Liikluse indikaatorid</string>
+    <string name="traffic_title_summary">Kohanda internetiliikluse indikaatoreid</string>
+    <string name="network_traffic_title">Võrguliiklus</string>
+    <string name="network_traffic_state_title">Näita olekuribal internetiühenduse aktiivsust</string>
 </resources>

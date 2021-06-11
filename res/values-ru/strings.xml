@@ -129,4 +129,8 @@
     <string name="swap_volume_keys_on_rotation_summary">Изменить поведение кнопок громкости при повороте устройства</string>
     <string name="show_fourg_icon_title">4G значок</string>
     <string name="show_fourg_icon_summary">Отображать 4G значок сигнала вместо LTE</string>
+    <string name="traffic_title">Индикатор трафика</string>
+    <string name="traffic_title_summary">Настройка индикатора сетевого трафика</string>
+    <string name="network_traffic_title">Трафик сети</string>
+    <string name="network_traffic_state_title">Показать сетевую активность в строке состояния</string>
 </resources>

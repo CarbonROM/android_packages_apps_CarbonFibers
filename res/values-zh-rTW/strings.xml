@@ -129,4 +129,8 @@
     <string name="swap_volume_keys_on_rotation_summary">旋轉設備時更改音量按鍵的行為</string>
     <string name="show_fourg_icon_title">4G 圖示</string>
     <string name="show_fourg_icon_summary">在信號圖示中顯示 4G，而不是 LTE</string>
+    <string name="traffic_title">網路傳輸速度</string>
+    <string name="traffic_title_summary">自定義網路傳輸速度顯示</string>
+    <string name="network_traffic_title">網絡流量</string>
+    <string name="network_traffic_state_title">在狀態欄位中顯示網路活動</string>
 </resources>

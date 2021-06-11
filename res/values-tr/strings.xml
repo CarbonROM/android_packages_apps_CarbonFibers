@@ -167,4 +167,10 @@
     <string name="ls_qs_disabled_summary">Güvenli kilit ekranında hızlı ayarları genişletmeyi devre dışı bırak</string>
     <string name="show_fourg_icon_title">4G simgesi</string>
     <string name="show_fourg_icon_summary">LTE yerine 4G simgesini göster</string>
+    <string name="traffic_title">Ağ trafiği göstergeleri</string>
+    <string name="traffic_title_summary">Ağ trafiği göstergelerini özelleştirme</string>
+    <string name="network_traffic_title">Ağ göstergesi</string>
+    <string name="network_traffic_state_title">Durum çubuğunda ağ etkinliği göster</string>
+    <string name="network_traffic_state_summary">Hızlı ayarlar durum çubuğunda ağ etkinliğini görüntüle</string>
+    <string name="network_traffic_autohide_threshold_title">Net etkinlik otomatik gizleme eşiği</string>
 </resources>

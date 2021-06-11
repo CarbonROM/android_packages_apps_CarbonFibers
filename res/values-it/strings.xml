@@ -129,4 +129,8 @@
     <string name="swap_volume_keys_on_rotation_summary">Cambia il comportamento dei pulsanti del volume quando si ruota il dispositivo</string>
     <string name="show_fourg_icon_title">Icona 4G</string>
     <string name="show_fourg_icon_summary">Visualizza l\'icona 4G nell\'icona del segnale invece LTE</string>
+    <string name="traffic_title">Indicatori di traffico</string>
+    <string name="traffic_title_summary">Personalizza indicatori di traffico di rete</string>
+    <string name="network_traffic_title">Traffico di rete</string>
+    <string name="network_traffic_state_title">Mostra l\'attività di rete nella barra di stato</string>
 </resources>

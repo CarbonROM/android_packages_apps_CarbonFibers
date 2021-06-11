@@ -138,4 +138,8 @@
     <string name="swap_volume_keys_on_rotation_summary">Ändere das Verhalten der Lautstärketasten beim Drehen des Geräts</string>
     <string name="show_fourg_icon_title">4G-Symbol</string>
     <string name="show_fourg_icon_summary">4G statt LTE-Symbol im Signalsymbol anzeigen</string>
+    <string name="traffic_title">Trafficindikatoren</string>
+    <string name="traffic_title_summary">Netzwerkverkehrsindikatoren anpassen</string>
+    <string name="network_traffic_title">Netzwerkmonitor</string>
+    <string name="network_traffic_state_title">Zeigt die Netzaktivität in der Statusleiste an</string>
 </resources>

@@ -130,4 +130,8 @@ Ativar escala</string>
     <string name="swap_volume_keys_on_rotation_summary">Alterar comportamento dos botões de volume ao girar o dispositivo</string>
     <string name="show_fourg_icon_title">Ícone 4G</string>
     <string name="show_fourg_icon_summary">Exibir o ícone \"4G\" ao invés de \"LTE\" no ícone de dados móveis</string>
+    <string name="traffic_title">Indicadores de tráfego de rede</string>
+    <string name="traffic_title_summary">Personalizar indicadores de tráfego de rede</string>
+    <string name="network_traffic_title">Tráfego de rede</string>
+    <string name="network_traffic_state_title">Mostrar atividade de rede na barra de status</string>
 </resources>

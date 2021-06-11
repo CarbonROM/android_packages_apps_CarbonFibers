@@ -129,4 +129,8 @@
     <string name="swap_volume_keys_on_rotation_summary">Zmeniť správanie tlačidiel hlasitosti pri otočení zariadenia</string>
     <string name="show_fourg_icon_title">Ikona 4G</string>
     <string name="show_fourg_icon_summary">Zobraziť ikonu 4G v ikone signálu namiesto LTE</string>
+    <string name="traffic_title">Indikátory sieťovej prevádzky</string>
+    <string name="traffic_title_summary">Prispôsobiť indikátory sieťovej prevádzky</string>
+    <string name="network_traffic_title">Sieťová prevádzka</string>
+    <string name="network_traffic_state_title">Zobraziť indikátor sieťovej prevádzky v stavovom riadku</string>
 </resources>
