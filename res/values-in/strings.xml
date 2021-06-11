@@ -128,4 +128,8 @@
     <string name="swap_volume_keys_on_rotation_summary">Ubah perilaku tombol volume saat memutar perangkat</string>
     <string name="show_fourg_icon_title">Ikon 4G</string>
     <string name="show_fourg_icon_summary">Tampilkan ikon 4G di ikon sinyal, bukan LTE</string>
+    <string name="traffic_title">Lalu lintas jaringan</string>
+    <string name="traffic_title_summary">Sesuaikan indikator lalu lintas jaringan</string>
+    <string name="network_traffic_title">Lalu lintas jaringan</string>
+    <string name="network_traffic_state_title">Tampilkan aktivitas jaringan di bilah status</string>
 </resources>

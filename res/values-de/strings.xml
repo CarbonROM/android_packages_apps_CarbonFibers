@@ -58,6 +58,8 @@
     <string name="quick_pulldown_none">Deaktiviert</string>
     <string name="quick_pulldown_right">Statusleiste von der rechten Seite ziehen</string>
     <string name="quick_pulldown_left">Statusleiste von der linken Seite ziehen</string>
+    <string name="seekbar_columns">Spalten</string>
+    <string name="seekbar_rows">Zeilen</string>
     <string name="aggressive_battery_title">Aggressive Batterie</string>
     <string name="aggressive_battery_summary">Bessere Akku Einsparungen</string>
     <string name="aggressive_battery_warning_text">Dies sind Energiesparfunktionen. Sie können Dienste stören, die im Leerlauf laufen sollen, wie z.B. Navigationsanwendungen. Sie können diese Apps in den Akkueinstellungen auf die Whitelist setzen, damit diese nicht ungewollt beendet werden.</string>
@@ -95,6 +97,7 @@
     <string name="clock_date_right">Rechts neben Uhrzeit</string>
     <string name="clock_date_left">Links neben Uhrzeit</string>
     <string name="clock_date_position">Datums-Position</string>
+    <string name="clock_seconds_display">Sekunden</string>
     <string name="battery_style_category_title">Batterie</string>
     <string name="battery_percent_title">Batterieprozent</string>
     <string name="status_bar_battery_style_title">Batteriesymbol</string>
@@ -138,4 +141,8 @@
     <string name="swap_volume_keys_on_rotation_summary">Ändere das Verhalten der Lautstärketasten beim Drehen des Geräts</string>
     <string name="show_fourg_icon_title">4G-Symbol</string>
     <string name="show_fourg_icon_summary">4G statt LTE-Symbol im Signalsymbol anzeigen</string>
+    <string name="traffic_title">Trafficindikatoren</string>
+    <string name="traffic_title_summary">Netzwerkverkehrsindikatoren anpassen</string>
+    <string name="network_traffic_title">Netzwerkmonitor</string>
+    <string name="network_traffic_state_title">Zeigt die Netzaktivität in der Statusleiste an</string>
 </resources>

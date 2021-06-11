@@ -108,4 +108,5 @@
     <string name="volume_rocker_music_controls_summary">Maintenez la touche de volume enfoncée pour parcourir les pistes audio</string>
     <string name="show_fourg_icon_title">Icône 4G</string>
     <string name="show_fourg_icon_summary">Afficher l\'icône 4G en icône de signal au lieu de LTE</string>
+    <string name="network_traffic_title">Trafic réseau</string>
 </resources>
