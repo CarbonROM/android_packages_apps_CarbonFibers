@@ -164,4 +164,10 @@
     <string name="ls_qs_disabled_summary">Zakázat rozšířené rychlé nastavení na bezpečné uzamčené obrazovce</string>
     <string name="show_fourg_icon_title">Ikona 4G</string>
     <string name="show_fourg_icon_summary">Zobrazit ikonu 4G v ikoně signálu namísto LTE</string>
+    <string name="traffic_title">Indikátory síťového provozu</string>
+    <string name="traffic_title_summary">Přizpůsobit indikátory síťového provozu</string>
+    <string name="network_traffic_title">Síťový provoz</string>
+    <string name="network_traffic_state_title">Zobrazit indikátor síťové aktivity ve stavové liště</string>
+    <string name="network_traffic_state_summary">Zobrazit aktivitu sítě ve stavovém řádku Rychlého nastavení</string>
+    <string name="network_traffic_autohide_threshold_title">Limit pro automatické skrytí síťové aktivity</string>
 </resources>

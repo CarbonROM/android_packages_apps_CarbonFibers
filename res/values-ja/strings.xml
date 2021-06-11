@@ -129,4 +129,8 @@
     <string name="swap_volume_keys_on_rotation_summary">端末回転時に音量ボタンの上下を入れ替える</string>
     <string name="show_fourg_icon_title">4G アイコン</string>
     <string name="show_fourg_icon_summary">LTE の代わりに 4G アイコンを表示する</string>
+    <string name="traffic_title">通信速度</string>
+    <string name="traffic_title_summary">通信速度表示を編集する</string>
+    <string name="network_traffic_title">通信速度</string>
+    <string name="network_traffic_state_title">ステータスバーに通信速度を表示</string>
 </resources>

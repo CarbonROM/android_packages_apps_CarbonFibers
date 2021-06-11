@@ -129,4 +129,8 @@
     <string name="swap_volume_keys_on_rotation_summary">在旋转设备时自动调整音量键功能</string>
     <string name="show_fourg_icon_title">4G图标</string>
     <string name="show_fourg_icon_summary">显示4G图标，而非LTE图标</string>
+    <string name="traffic_title">网速显示</string>
+    <string name="traffic_title_summary">自定义网速显示</string>
+    <string name="network_traffic_title">网速显示</string>
+    <string name="network_traffic_state_title">在状态栏显示网速</string>
 </resources>
