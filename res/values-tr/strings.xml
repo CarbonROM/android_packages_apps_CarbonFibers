@@ -126,7 +126,6 @@
     <string name="qs_brightness_title_summary">Hızlı ayarlar parlaklık tasarımını değiştirin</string>
     <string name="qs_brightness_slider_title">Parlaklık kaydırıcısı</string>
     <string name="qs_brightness_slider_summary">Parlaklık kaydırıcısı çubuğunu göster</string>
-    <string name="qs_brightness_position_bottom">Parlaklık kaydırıcısı konumu</string>
     <string name="qs_autobrightness_icon_title">Otomatik parlaklık simgesi</string>
     <string name="qs_autobrightness_icon_summary">Parlaklık kaydırıcısının yanında otomatik parlaklık simgesini göster</string>
     <string name="status_bar_clock_title">Durum çubuğu saat ve tarih</string>
@@ -246,4 +245,12 @@
     <string name="status_bar_battery_percentage_default">Gizle (Varsayılan)</string>
     <string name="status_bar_battery_percentage_text_inside">Simge içinde</string>
     <string name="status_bar_battery_percentage_text_next">Simge yanında</string>
+    <string name="button_backlight_title">Arka ışık</string>
+    <string name="button_backlight_summary">Kapasitif tuşlar için arka ışığı yapılandır</string>
+    <string name="button_backlight_on_touch_only_title">Dokunulduğuna aydınlat</string>
+    <string name="button_backlight_on_touch_only_summary">Arka plan ışığını yalnızca tuşa dokunulduğunda zaman aşımı ile etkinleştir</string>
+    <string name="button_link_brightness">Ekran parlaklığına bağla</string>
+    <string name="button_link_brightness_summary">Ekran parlaklığı seviyesini kullan</string>
+    <string name="button_manual_brightness">Parlaklık seviyesi</string>
+    <string name="button_backlight_enable_title">Arka ışığa izin ver</string>
 </resources>

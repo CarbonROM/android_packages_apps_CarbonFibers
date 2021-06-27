@@ -178,4 +178,12 @@
     <string name="status_bar_battery_percentage_default">Ẩn (mặc định)</string>
     <string name="status_bar_battery_percentage_text_inside">Bên trong biểu tượng</string>
     <string name="status_bar_battery_percentage_text_next">Bên cạnh biểu tượng</string>
+    <string name="button_backlight_title">Đèn nền</string>
+    <string name="button_backlight_summary">Định cấu hình đèn nền cho các phím điện dung</string>
+    <string name="button_backlight_on_touch_only_title">Nút chạm</string>
+    <string name="button_backlight_on_touch_only_summary">Bật đèn nền với thời gian chờ chỉ khi chạm vào nút</string>
+    <string name="button_link_brightness">Liên kết với độ sáng màn hình</string>
+    <string name="button_link_brightness_summary">Sử dụng mức độ sáng màn hình</string>
+    <string name="button_manual_brightness">Độ sáng</string>
+    <string name="button_backlight_enable_title">Cho phép đèn nền</string>
 </resources>

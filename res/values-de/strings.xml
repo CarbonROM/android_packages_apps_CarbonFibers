@@ -121,7 +121,6 @@
     <string name="qs_brightness_title_summary">Schnelleinstellungen Helligkeitsdesign ändern</string>
     <string name="qs_brightness_slider_title">Helligkeitsregler</string>
     <string name="qs_brightness_slider_summary">Zeige den Helligkeitsregler</string>
-    <string name="qs_brightness_position_bottom">Helligkeitsregler unten</string>
     <string name="qs_autobrightness_icon_title">Auto-Helligkeits-Symbol</string>
     <string name="qs_autobrightness_icon_summary">Zeige ein Auto-Helligkeits-Symbol neben dem Helligkeitsregler</string>
     <string name="status_bar_clock_title">Uhrzeit und Datum</string>
@@ -241,4 +240,12 @@
     <string name="status_bar_battery_percentage_default">Versteckt (Standard)</string>
     <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
     <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
+    <string name="button_backlight_title">Hintergrundbeleuchtung</string>
+    <string name="button_backlight_summary">Hintergrundbeleuchtung für kapazitive Tasten konfigurieren</string>
+    <string name="button_backlight_on_touch_only_title">Tastenberührung</string>
+    <string name="button_backlight_on_touch_only_summary">Hintergrundbeleuchtung mit Timeout nur bei Tastendruck aktivieren</string>
+    <string name="button_link_brightness">Mit Bildschirmhelligkeit verknüpfen</string>
+    <string name="button_link_brightness_summary">Bildschirmhelligkeit verwenden</string>
+    <string name="button_manual_brightness">Helligkeitsstufe</string>
+    <string name="button_backlight_enable_title">Hintergrundbeleuchtung erlauben</string>
 </resources>

@@ -101,4 +101,6 @@
     <string name="status_bar_battery_percentage_title">Percentatge de bateria</string>
     <string name="status_bar_battery_percentage_text_inside">A l\'interior de la icona</string>
     <string name="status_bar_battery_percentage_text_next">Al costat de la icona</string>
+    <string name="button_link_brightness">Enllaç a la brillantor de la pantalla</string>
+    <string name="button_manual_brightness">Nivell de brillantor</string>
 </resources>

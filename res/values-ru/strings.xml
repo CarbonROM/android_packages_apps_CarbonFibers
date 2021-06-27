@@ -121,7 +121,6 @@
     <string name="qs_brightness_title_summary">Изменить дизайн яркости быстрых настроек</string>
     <string name="qs_brightness_slider_title">Слайдер яркости</string>
     <string name="qs_brightness_slider_summary">Отображать ползунок яркости</string>
-    <string name="qs_brightness_position_bottom">Ползунок яркости внизу</string>
     <string name="qs_autobrightness_icon_title">Иконка автояркости</string>
     <string name="qs_autobrightness_icon_summary">Показать значок авто-яркости рядом с ползунком яркости</string>
     <string name="status_bar_clock_title">Дата и время</string>
@@ -241,4 +240,12 @@
     <string name="status_bar_battery_percentage_default">Скрытый (по умолчанию)</string>
     <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
     <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
+    <string name="button_backlight_title">Подсветка</string>
+    <string name="button_backlight_summary">Настроить подсветку для емкостных клавиш</string>
+    <string name="button_backlight_on_touch_only_title">Нажатие на кнопку</string>
+    <string name="button_backlight_on_touch_only_summary">Включать подсветку кнопок только при касании на кнопки</string>
+    <string name="button_link_brightness">Привязать к яркости экрана</string>
+    <string name="button_link_brightness_summary">Использовать уровень яркости экрана</string>
+    <string name="button_manual_brightness">Уровень яркости</string>
+    <string name="button_backlight_enable_title">Разрешить подсветку</string>
 </resources>

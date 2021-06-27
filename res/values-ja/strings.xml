@@ -121,7 +121,6 @@
     <string name="qs_brightness_title_summary">クイック設定の明るさ設定のデザインを編集する</string>
     <string name="qs_brightness_slider_title">明るさスライダー</string>
     <string name="qs_brightness_slider_summary">明るさスライダーを表示する</string>
-    <string name="qs_brightness_position_bottom">下部の明るさスライダー</string>
     <string name="qs_autobrightness_icon_title">自動明るさ調節アイコン</string>
     <string name="qs_autobrightness_icon_summary">明るさスライダーの隣に自動明るさ調節アイコンを表示する</string>
     <string name="status_bar_clock_title">時計と日付</string>
@@ -241,4 +240,12 @@
     <string name="status_bar_battery_percentage_default">非表示 (既定)</string>
     <string name="status_bar_battery_percentage_text_inside">アイコンの内側</string>
     <string name="status_bar_battery_percentage_text_next">アイコンの外側</string>
+    <string name="button_backlight_title">バックライト</string>
+    <string name="button_backlight_summary">静電キーのバックライトを設定する</string>
+    <string name="button_backlight_on_touch_only_title">ボタンタッチ</string>
+    <string name="button_backlight_on_touch_only_summary">ボタンタッチ時の制限時間付きのバックライトを有効にする</string>
+    <string name="button_link_brightness">画面の明るさとリンク</string>
+    <string name="button_link_brightness_summary">画面の明るさレベルを使う</string>
+    <string name="button_manual_brightness">明るさのレベル</string>
+    <string name="button_backlight_enable_title">バックライトを許可</string>
 </resources>

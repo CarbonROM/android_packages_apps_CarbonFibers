@@ -101,4 +101,6 @@
     <string name="status_bar_battery_percentage_title">Odstotek baterije</string>
     <string name="status_bar_battery_percentage_text_inside">Znotraj ikone</string>
     <string name="status_bar_battery_percentage_text_next">Zraven ikone</string>
+    <string name="button_link_brightness">Poveži s svetlostjo zaslona</string>
+    <string name="button_manual_brightness">Raven svetlosti</string>
 </resources>

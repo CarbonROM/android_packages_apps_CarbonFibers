@@ -123,7 +123,6 @@
     <string name="qs_brightness_title_summary">Modificar diseño de brillo de ajustes rápidos</string>
     <string name="qs_brightness_slider_title">Control deslizante de brillo</string>
     <string name="qs_brightness_slider_summary">Mostrar el deslizador de brillo</string>
-    <string name="qs_brightness_position_bottom">Deslizador de brillo en la parte inferior</string>
     <string name="qs_autobrightness_icon_title">Icono de brillo automático</string>
     <string name="qs_autobrightness_icon_summary">Mostrar un icono de brillo automático junto al deslizador de brillo</string>
     <string name="status_bar_clock_title">Reloj y fecha</string>
@@ -243,4 +242,12 @@
     <string name="status_bar_battery_percentage_default">Oculto (por defecto)</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
     <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
+    <string name="button_backlight_title">Retroiluminación</string>
+    <string name="button_backlight_summary">Configurar la retroiluminación para las teclas capacitivas</string>
+    <string name="button_backlight_on_touch_only_title">Toque del botón</string>
+    <string name="button_backlight_on_touch_only_summary">Activar luz de fondo con tiempo de espera sólo al tocar el botón</string>
+    <string name="button_link_brightness">Enlace al brillo de la pantalla</string>
+    <string name="button_link_brightness_summary">Usar nivel de brillo de pantalla</string>
+    <string name="button_manual_brightness">Nivel de brillo</string>
+    <string name="button_backlight_enable_title">Permitir luz de fondo</string>
 </resources>

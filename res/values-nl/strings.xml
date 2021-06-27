@@ -107,4 +107,6 @@
     <string name="status_bar_battery_percentage_title">Baterij percentage</string>
     <string name="status_bar_battery_percentage_text_inside">In het icoon</string>
     <string name="status_bar_battery_percentage_text_next">Naast het icoon</string>
+    <string name="button_link_brightness">Link naar schermhelderheid</string>
+    <string name="button_manual_brightness">Helderheidsniveau</string>
 </resources>

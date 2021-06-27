@@ -122,7 +122,6 @@ W zależności od tego jak dużo pikseli zdecydujesz się wyłączyć, będziesz
     <string name="qs_brightness_title_summary">Modyfikuj wygląd jasności szybkich ustawień</string>
     <string name="qs_brightness_slider_title">Suwak jasność</string>
     <string name="qs_brightness_slider_summary">Pokaż suwak jasności ekranu</string>
-    <string name="qs_brightness_position_bottom">Suwak jasności na dole</string>
     <string name="qs_autobrightness_icon_title">Ikona automatycznej jasności</string>
     <string name="qs_autobrightness_icon_summary">Pokaż ikonę automatycznej jasności obok suwaka jasności</string>
     <string name="status_bar_clock_title">Data i czas</string>
@@ -242,4 +241,12 @@ W zależności od tego jak dużo pikseli zdecydujesz się wyłączyć, będziesz
     <string name="status_bar_battery_percentage_default">Ukryty (domyślnie)</string>
     <string name="status_bar_battery_percentage_text_inside">Wewnątrz ikony</string>
     <string name="status_bar_battery_percentage_text_next">Obok ikony</string>
+    <string name="button_backlight_title">Podświetlenie</string>
+    <string name="button_backlight_summary">Skonfiguruj podświetlenie przycisków</string>
+    <string name="button_backlight_on_touch_only_title">Naciśnięcie przycisku</string>
+    <string name="button_backlight_on_touch_only_summary">Włącz opóźnienie podświetlenia tylko przy naciśnięciu przycisków</string>
+    <string name="button_link_brightness">Połącz z jasnością ekranu</string>
+    <string name="button_link_brightness_summary">Użyj poziomu jasności ekranu</string>
+    <string name="button_manual_brightness">Poziom jasności</string>
+    <string name="button_backlight_enable_title">Zezwól na podświetlenie</string>
 </resources>

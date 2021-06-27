@@ -113,7 +113,6 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string name="qs_brightness_title_summary">Muuda heledusriba disaini kiirseadetes</string>
     <string name="qs_brightness_slider_title">Heledusliugur</string>
     <string name="qs_brightness_slider_summary">Kuva heledusliugur</string>
-    <string name="qs_brightness_position_bottom">Heledusliugur all</string>
     <string name="qs_autobrightness_icon_title">Automaatse heleduse ikoon</string>
     <string name="qs_autobrightness_icon_summary">Näita heleduse slaideri kõrval automaatse heleduse nuppu</string>
     <string name="status_bar_clock_title">Kell ja kuupäev</string>
@@ -233,4 +232,12 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string name="status_bar_battery_percentage_default">Varjatud (vaikimisi)</string>
     <string name="status_bar_battery_percentage_text_inside">Ikooni sees</string>
     <string name="status_bar_battery_percentage_text_next">Ikooni kõrval</string>
+    <string name="button_backlight_title">Taustvalgus</string>
+    <string name="button_backlight_summary">Mahtuvuslike klahvide taustvalgustuse seadistamine</string>
+    <string name="button_backlight_on_touch_only_title">Nupu vajutusel</string>
+    <string name="button_backlight_on_touch_only_summary">Luba ajalõpuga taustavalgustus ainult nupuvajutusel</string>
+    <string name="button_link_brightness">Link ekraaniheledusele</string>
+    <string name="button_link_brightness_summary">Kasuta ekraani heledustaset</string>
+    <string name="button_manual_brightness">Heledustase</string>
+    <string name="button_backlight_enable_title">Luba taustvalgustust</string>
 </resources>

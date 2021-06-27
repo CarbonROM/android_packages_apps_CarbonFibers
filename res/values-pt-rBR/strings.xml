@@ -121,7 +121,6 @@
     <string name="qs_brightness_title_summary">Modificar o design do controlador de brilho</string>
     <string name="qs_brightness_slider_title">Controlador de brilho</string>
     <string name="qs_brightness_slider_summary">Mostrar o controlador de brilho</string>
-    <string name="qs_brightness_position_bottom">Controlador de brilho em baixo</string>
     <string name="qs_autobrightness_icon_title">Ícone de brilho automático</string>
     <string name="qs_autobrightness_icon_summary">Mostrar o ícone de brilho automático ao lado do controlador de brilho</string>
     <string name="status_bar_clock_title">Relógio e data</string>
@@ -242,4 +241,12 @@ Ativar escala</string>
     <string name="status_bar_battery_percentage_default">Oculto (padrão)</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
     <string name="status_bar_battery_percentage_text_next">Ao lado do ícone</string>
+    <string name="button_backlight_title">Luz de fundo</string>
+    <string name="button_backlight_summary">Configurar luz de fundo para botões capacitivos</string>
+    <string name="button_backlight_on_touch_only_title">Toque do botão</string>
+    <string name="button_backlight_on_touch_only_summary">Ativar a luz de fundo com tempo limite apenas quando o botão é tocado</string>
+    <string name="button_link_brightness">Atalho para o brilho da tela</string>
+    <string name="button_link_brightness_summary">Use o nível de brilho da tela</string>
+    <string name="button_manual_brightness">Nível do brilho</string>
+    <string name="button_backlight_enable_title">Permitir luz de fundo</string>
 </resources>

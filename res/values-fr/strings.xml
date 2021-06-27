@@ -117,7 +117,6 @@
     <string name="torch_power_button_gesture_lp">Maintenir le bouton d\'alimentation</string>
     <string name="qs_brightness_slider_title">Curseur de luminosité</string>
     <string name="qs_brightness_slider_summary">Afficher le curseur de luminosité</string>
-    <string name="qs_brightness_position_bottom">Curseur de luminosité en bas</string>
     <string name="qs_autobrightness_icon_title">Icône de luminosité automatique</string>
     <string name="qs_autobrightness_icon_summary">Afficher une icône de luminosité automatique à côté du curseur de luminosité</string>
     <string name="status_bar_clock_title">Date et heure</string>
@@ -171,4 +170,12 @@
     <string name="status_bar_battery_percentage_title">Pourcentage de batterie</string>
     <string name="status_bar_battery_percentage_text_inside">À l\'intérieur de l\'icône</string>
     <string name="status_bar_battery_percentage_text_next">À côté de l\'icône</string>
+    <string name="button_backlight_title">Rétroéclairage</string>
+    <string name="button_backlight_summary">Configurer le rétroéclairage pour les touches capacitives</string>
+    <string name="button_backlight_on_touch_only_title">Bouton tactile</string>
+    <string name="button_backlight_on_touch_only_summary">Activer le rétro-éclairage avec le délai de mise en veille uniquement sur le bouton tactile</string>
+    <string name="button_link_brightness">Lien vers la luminosité de l\'écran</string>
+    <string name="button_link_brightness_summary">Utiliser le niveau de luminosité de l\'écran</string>
+    <string name="button_manual_brightness">Niveau de luminosité</string>
+    <string name="button_backlight_enable_title">Autoriser le rétroéclairage</string>
 </resources>

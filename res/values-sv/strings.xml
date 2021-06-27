@@ -96,4 +96,6 @@
     <string name="status_bar_battery_percentage_title">Batteriprocent</string>
     <string name="status_bar_battery_percentage_text_inside">Inuti ikonen</string>
     <string name="status_bar_battery_percentage_text_next">Intill ikonen</string>
+    <string name="button_link_brightness">Länk till skärmens ljusstyrka</string>
+    <string name="button_manual_brightness">Nivå på ljusstyrka</string>
 </resources>

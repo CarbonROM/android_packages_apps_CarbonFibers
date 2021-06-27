@@ -121,7 +121,6 @@
     <string name="qs_brightness_title_summary">Upravte vzhľad dlaždice jasu Rýchl. nastavení</string>
     <string name="qs_brightness_slider_title">Posuvník jasu</string>
     <string name="qs_brightness_slider_summary">Zobraziť posuvník jasu</string>
-    <string name="qs_brightness_position_bottom">Posuvník jasu v spodnej časti</string>
     <string name="qs_autobrightness_icon_title">Ikona automatického jasu</string>
     <string name="qs_autobrightness_icon_summary">Zobraziť ikonu automatického jasu vedľa posuvníka</string>
     <string name="status_bar_clock_title">Hodiny a dátum</string>
@@ -241,4 +240,12 @@
     <string name="status_bar_battery_percentage_default">Nezobrazovať (predvolené)</string>
     <string name="status_bar_battery_percentage_text_inside">Vo vnútri ikony</string>
     <string name="status_bar_battery_percentage_text_next">Vedľa ikony</string>
+    <string name="button_backlight_title">Podsvietenie</string>
+    <string name="button_backlight_summary">Nastavenie podsvietenia kapacitných tlačidiel</string>
+    <string name="button_backlight_on_touch_only_title">Dotyk tlačidla</string>
+    <string name="button_backlight_on_touch_only_summary">Zapnúť podsvietenie s časovým limitom iba pri dotyku na tlačidlo</string>
+    <string name="button_link_brightness">Zjednotiť s jasom obrazovky</string>
+    <string name="button_link_brightness_summary">Použiť úroveň jasu obrazovky</string>
+    <string name="button_manual_brightness">Úroveň jasu</string>
+    <string name="button_backlight_enable_title">Zapnúť podsvietenie</string>
 </resources>

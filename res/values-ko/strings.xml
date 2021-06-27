@@ -110,4 +110,5 @@
     <string name="status_bar_battery_percentage_title">배터리 퍼센트 표시</string>
     <string name="status_bar_battery_percentage_text_inside">아이콘 안에</string>
     <string name="status_bar_battery_percentage_text_next">아이콘 옆에</string>
+    <string name="button_manual_brightness">밝기 단계</string>
 </resources>

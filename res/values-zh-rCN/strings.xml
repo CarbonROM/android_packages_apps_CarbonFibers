@@ -121,7 +121,6 @@
     <string name="qs_brightness_title_summary">修改快速面板亮度选项</string>
     <string name="qs_brightness_slider_title">亮度条</string>
     <string name="qs_brightness_slider_summary">显示亮度条</string>
-    <string name="qs_brightness_position_bottom">在快速面板底部显示亮度条</string>
     <string name="qs_autobrightness_icon_title">自动亮度按钮</string>
     <string name="qs_autobrightness_icon_summary">在亮度调旁显示自动亮度按钮</string>
     <string name="status_bar_clock_title">时间和日期</string>
@@ -241,4 +240,12 @@
     <string name="status_bar_battery_percentage_default">隐藏（默认）</string>
     <string name="status_bar_battery_percentage_text_inside">图标内</string>
     <string name="status_bar_battery_percentage_text_next">图标旁边</string>
+    <string name="button_backlight_title">按键背光</string>
+    <string name="button_backlight_summary">配置按键背光</string>
+    <string name="button_backlight_on_touch_only_title">按下按钮</string>
+    <string name="button_backlight_on_touch_only_summary">仅在按下按钮时点亮背光</string>
+    <string name="button_link_brightness">连接到屏幕亮度</string>
+    <string name="button_link_brightness_summary">使用屏幕亮度</string>
+    <string name="button_manual_brightness">亮度级别</string>
+    <string name="button_backlight_enable_title">启用背光</string>
 </resources>

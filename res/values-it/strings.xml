@@ -121,7 +121,6 @@
     <string name="qs_brightness_title_summary">Modifica il design della luminosità delle impostazioni rapide</string>
     <string name="qs_brightness_slider_title">Cursore luminosità</string>
     <string name="qs_brightness_slider_summary">Mostra il cursore della luminosità</string>
-    <string name="qs_brightness_position_bottom">Cursore luminosità in basso</string>
     <string name="qs_autobrightness_icon_title">Icona luminosità automatica</string>
     <string name="qs_autobrightness_icon_summary">Mostra un\'icona di luminosità automatica accanto al cursore della luminosità</string>
     <string name="status_bar_clock_title"> Orologio e data</string>
@@ -241,4 +240,12 @@
     <string name="status_bar_battery_percentage_default">Nascosto (predefinito)</string>
     <string name="status_bar_battery_percentage_text_inside">All\'interno dell\'icona</string>
     <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
+    <string name="button_backlight_title">Retroilluminazione</string>
+    <string name="button_backlight_summary">Configura la retroilluminazione per tasti capacitivi</string>
+    <string name="button_backlight_on_touch_only_title">Al tocco del pulsante</string>
+    <string name="button_backlight_on_touch_only_summary">Attivare la retroilluminazione con timeout solo al tocco del tasto</string>
+    <string name="button_link_brightness">Collega alla luminosità dello schermo</string>
+    <string name="button_link_brightness_summary">Usa livello luminosità schermo</string>
+    <string name="button_manual_brightness">Livello luminosità</string>
+    <string name="button_backlight_enable_title">Permetti retroilluminazione</string>
 </resources>
