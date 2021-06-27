@@ -40,13 +40,10 @@
     <string name="buttons_main_category_summary">Sesuaikan kunci perangkat keras dan perangkat lunak</string>
     <string name="gestures_main_category_summary">Opsi dan tindakan berbasis gerakan</string>
     <string name="privacy_main_category_summary">Lain-lain dan pengaturan pengumpulan statistik</string>
-    <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Bantu kami membantu Anda!</string>
     <string name="carbonfibers_dialog_message">Sayangnya, kami tidak sempurna!\n\nJika anda menemukan bug, silakan ambil tiket di Jira atau         kontak pengembang Carbon dengan \n\n1. Blame kwoktopus\n2. Logcat dan atau last_kmsg\n3. Kernel dan mods yg digunakan\n4.
         Informasi lainnya\n\njika anda gagal dalam melaporkan informasi diatas, jangan berharap masalah tersebut dipertimbangkan.</string>
     <string name="carbonfibers_dialog_toast">Baca semua!</string>
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">Statistik CarbonROM</string>
     <string name="anonymous_statistics_summary">Bantu CarbonROM menjadi lebih baik dengan memilih pelaporan statistik anonim</string>
     <string name="anonymous_statistics_warning_title">Tentang</string>
@@ -57,14 +54,12 @@
     <string name="preview_data_title">Pratinjau data</string>
     <string name="view_stats_title">Lihat Statistik</string>
     <string name="anonymous_learn_more">Pelajari Selengkapnya</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">ID Unik</string>
     <string name="preview_device_title">Perangkat</string>
     <string name="preview_version_title">Versi</string>
     <string name="preview_country_title">Negara</string>
     <string name="preview_carrier_title">Penyedia</string>
     <string name="stats_collection_title">Aktifkan pengumpulan data</string>
-    <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smart Pixels</string>
     <string name="smart_pixels_summary">Matikan pixel untuk mengurangi konsumsi daya</string>
     <string name="smart_pixels_on_power_save_title">Aktifkan otomatis pada penghemat baterai</string>
@@ -72,17 +67,14 @@
     <string name="smart_pixels_percent">Persentase piksel dinonaktifkan</string>
     <string name="smart_pixels_shift">Mencegah burn-in dengan menggeser setiap piksel</string>
     <string name="smart_pixels_warning_text">Piksel Cerdas adalah fitur penghemat daya. Tergantung seberapa banyak piksel Anda matikan, Anda dapat melihat perbedaan signifikan kekuatan baterai. Untuk hasil yang baik, kami menyarankan pengaturan piksel pada 75 persen dengan pengaturan setiap 10 menit.</string>
-    <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Sembunyikan aplikasi dari terbaru</string>
     <string name="hide_apps_from_recents_summary">Sembunyikan aplikasi dari recent</string>
     <string name="hide_from_recents_add_app">Tambahkan aplikasi</string>
     <string name="title_activity_carbon_recents_settings">Terkini</string>
-    <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">Ketuk dua jari pada bilah status untuk tidur</string>
     <string name="double_tap_status_bar_sleep_summary">Ketuk bilah status dua kali untuk tidur</string>
     <string name="double_tap_lock_sleep_title">Ketuk dua jari pada layar kunci untuk tidur</string>
     <string name="double_tap_lock_sleep_summary">Ketuk layar kunci dua kali untuk tidur</string>
-    <!-- Global Actions -->
     <string name="global_actions_title">Pintasan</string>
     <string name="global_actions_summary">Tambah opsi ke menu daya</string>
     <string name="global_actions_power">Power</string>
@@ -98,17 +90,14 @@
     <string name="global_actions_emergency">Panggilan Darurat</string>
     <string name="global_actions_advanced_reboot_title">Restart lanjutan</string>
     <string name="global_actions_advanced_reboot_summary">Tampilkan pilihan recovery dan bootloader</string>
-    <!-- Pin scramble -->
     <string name="unlock_scramble_pin_layout_title">Acak susunan PIN</string>
     <string name="unlock_scramble_pin_layout_summary">Acak susunan tampilan pin keyboard</string>
-    <!-- Aggressive battery -->
     <string name="aggressive_battery_title">Baterai agresif</string>
     <string name="aggressive_battery_summary">Pembatasan penyimpanan baterai</string>
     <string name="aggressive_battery_warning_text">Ini adalah fitur pengiritan baterai. Dipengaruhi dari aplikasi latarbelakang yang berjalan, seperti aplikasi navigasi. Anda dapat memasukan dalam pengecualian dalam aplikasi setting baterai.</string>
     <string name="aggressive_standby_summary">Membatasi aplikasi yang berjalan di latarbelakang</string>
     <string name="aggressive_battery_saver_title">Aktifkan otomatis pada penghemat baterai</string>
     <string name="aggressive_battery_saver_summary">Aktifkan otomatis penghemat baterai saat menggunakan penghemat baterai</string>
-    <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Benda pada bilah status</string>
     <string name="status_bar_tuner_summary">Ubah status bar icon dan opsi</string>
     <string name="navigation_bar_invert_layout_title">Balikkan tata letak bilah navigasi</string>
@@ -121,29 +110,22 @@
         <item>Left-leaning</item>
         <item>Right-leaning</item>
     </string-array>
-    <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Pengaturan layar mati</string>
     <string name="volume_rocker_music_controls_summary">Tahan tombol volume untuk mencari audio</string>
-    <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Hidupkan senter ketika layar mati</string>
     <string name="torch_power_button_gesture_none">Nonaktif</string>
     <string name="torch_power_button_gesture_dt">Sentuh dua kali tombol daya</string>
     <string name="torch_power_button_gesture_dt_toast">Loncat ke gestur kamera sekarang dinonaktifkan</string>
     <string name="torch_power_button_gesture_lp">Tahan tombol daya</string>
-    <!-- QS brightness -->
     <string name="qs_brightness_title">Desain Kecerahan QS</string>
     <string name="qs_brightness_title_summary">Ubah desain kecerahan pengaturan cepat</string>
-    <!-- Qs brightness slider -->
     <string name="qs_brightness_slider_title">Penggeser kecerahan</string>
     <string name="qs_brightness_slider_summary">Tampilkan penggeser kecerahan</string>
     <string name="qs_brightness_position_bottom">Penggeser kecerahan di bawah</string>
-    <!-- Qs auto-brightness icon -->
     <string name="qs_autobrightness_icon_title">Ikon kecerahan otomatis</string>
     <string name="qs_autobrightness_icon_summary">Tampilkan ikon kecerahan otomatis di samping penggeser kecerahan</string>
-    <!-- Status bar clock and date -->
     <string name="status_bar_clock_title">Jam dan Tanggal</string>
     <string name="status_bar_clock_title_summary">Kelola jam bilah status dan gaya tanggal</string>
-    <!-- Status bar clock and date options -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_style_title">Gaya</string>
     <string name="status_bar_clock">Jam &amp; Tanggal</string>
@@ -174,27 +156,20 @@
     <string name="clock_date_right">Sebelah kanan jam</string>
     <string name="clock_date_left">Sebelah kiri jam</string>
     <string name="clock_date_position">Letak tanggal</string>
-    <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Menurunkan QS cepat</string>
     <string name="quick_pulldown_none">Nonaktif</string>
     <string name="quick_pulldown_right">Bilah status tarik-cepat dari sisi kanan</string>
     <string name="quick_pulldown_left">Bilah status tarik-cepat dari sisi kiri</string>
-    <!-- StatusBar Icons -->
     <string name="status_bar_icons_title">Ikon bilah status</string>
     <string name="status_bar_icons_title_summary">Ubah visibilitas ikon bilah status</string>
-    <!-- 4G icon -->
     <string name="show_fourg_icon_title">Ikon 4G</string>
     <string name="show_fourg_icon_summary">Tampilkan ikon 4G di ikon sinyal, bukan LTE</string>
-    <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Info pengisian layar kunci</string>
     <string name="lockscreen_battery_info_summary">Tampilkan arus dan voltase maks pengisi daya dan suhu baterai di layar kunci saat mengisi daya</string>
-    <!-- Lock icon -->
     <string name="lockscreen_lock_icon_title">Ikon gembok</string>
     <string name="lockscreen_lock_icon_summary">Tampilkan ikon status kunci saat ini di layar kunci</string>
-    <!-- Charging animation -->
     <string name="charging_animation_title">Animasi pengisian</string>
     <string name="charging_animation_summary">Menampilkan animasi saat perangkat diisi daya</string>
-    <!-- Network traffic -->
     <string name="traffic_title">Lalu lintas jaringan</string>
     <string name="traffic_title_summary">Sesuaikan indikator lalu lintas jaringan</string>
     <string name="network_traffic_title">Lalu lintas jaringan</string>
@@ -206,7 +181,6 @@
     <string name="network_traffic_autohide_threshold_title">Ambang sembunyikan otomatis aktivitas jaringan (KB/d)</string>
     <string name="network_traffic_hidearrow">Sembunyikan panah</string>
     <string name="network_traffic_hidearrow_summary">Sembunyikan panah indikator lalu lintas jaringan</string>
-    <!-- Battery Bar -->
     <string name="battery_bar_title">Bar Baterai</string>
     <string name="battery_bar_summary">Hiasi bar baterai</string>
     <string name="battery_bar_location">Lokasi bar baterai</string>
@@ -228,7 +202,6 @@
     <string name="battery_bar_gradient_color_summary">Gunakan warna gradien sebagai skala untuk level baterai</string>
     <string name="battery_bar_high_color">Warna tingkat tinggi\"</string>
     <string name="battery_bar_low_color">Warna tingkat rendah\"</string>
-    <!-- Color Picker -->
     <string name="dialog_color_picker">Pemilihan Warna</string>
     <string name="press_color_to_apply">Tekan warna di bawah untuk menerapkan</string>
     <string name="arrow_right">→</string>
@@ -237,17 +210,14 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Setel</string>
     <string name="color_default">Standar</string>
-    <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Aktifkan penskalaan</string>
     <string name="aspect_ratio_apps_enabled_summary">Izinkan aplikasi lama menggunakan layar penuh</string>
     <string name="aspect_ratio_apps_list_title">Aplikasi diizinkan untuk menggunakan penskalaan</string>
     <string name="aspect_ratio_category_title">Penskalaan aplikasi lama</string>
     <string name="aspect_ratio_apps_info">Aplikasi perlu dimulai ulang setelah ada perubahan</string>
     <string name="action_save">Simpan</string>
-    <!-- Hide Statusbar on Lockscreen -->
     <string name="lockscreen_show_status_bar_title">Tampilkan bilah status</string>
     <string name="lockscreen_show_status_bar_summary">Tombol visibilitas bilah status di layar kunci</string>
-    <!-- Dashboard -->
     <string name="dashboard_category_title">Dasbor</string>
     <string name="dashboard_conditions_title">Kondisi Dasbor</string>
     <string name="summary_dashboard_conditions_enabled">Kondisi dasbor diaktifkan</string>
@@ -255,15 +225,11 @@
     <string name="dashboard_suggestions_title">Saran dasbor</string>
     <string name="summary_dashboard_suggestions_enabled">Saran dasbor diaktifkan</string>
     <string name="summary_dashboard_suggestions_disabled">Saran dasbor dinonaktifkan</string>
-    <!-- VolumeKeys Swap -->
     <string name="swap_volume_keys_on_rotation_title">Tukar tombol volume</string>
     <string name="swap_volume_keys_on_rotation_summary">Ubah perilaku tombol volume saat memutar perangkat</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Tampilkan seni sampul media</string>
-    <!-- Battery Styles -->
     <string name="battery_style_category_title">Baterai</string>
     <string name="battery_percent_title">Persentase Baterai</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Gaya baterai</string>
     <string name="status_bar_battery_style_icon_portrait">Ikon potret (bawaan)</string>
     <string name="status_bar_battery_style_circle">Lingkaran</string>
@@ -271,7 +237,6 @@
     <string name="status_bar_battery_style_filled_circle">Bulat (Berisi)</string>
     <string name="status_bar_battery_style_text">Teks</string>
     <string name="status_bar_battery_style_hidden">Tersembunyi</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Persentase baterai</string>
     <string name="status_bar_battery_percentage_default">Sembunyi (bawaan)</string>
     <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>

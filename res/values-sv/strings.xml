@@ -19,10 +19,7 @@
     <string name="buttons_software_category">Mjukvaruknappar</string>
     <string name="buttons_hardware_category">Hårdvaruknappar</string>
     <string name="shortcuts">Ström-meny</string>
-    <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Hjälp oss hjälp dig!</string>
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">CarbonROM-statistik</string>
     <string name="anonymous_statistics_summary">Hjälp till att göra CarbonROM bättre genom att välja anonym statistik-rapportering</string>
     <string name="anonymous_statistics_warning_title">Om</string>
@@ -30,26 +27,21 @@
     <string name="preview_data_title">Förhandsgranska data</string>
     <string name="view_stats_title">Visa statistik</string>
     <string name="anonymous_learn_more">Ta reda på mer</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unikt ID</string>
     <string name="preview_device_title">Enhet</string>
     <string name="preview_version_title">Version</string>
     <string name="preview_country_title">Land</string>
     <string name="preview_carrier_title">Operatör</string>
-    <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smarta Pixlar</string>
     <string name="smart_pixels_percent">Procent av pixlar att inaktivera</string>
     <string name="smart_pixels_shift">Förhindra inbränning av skiftande pixlar var</string>
-    <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Göm appar från senaste</string>
     <string name="hide_from_recents_add_app">Lägg till app</string>
     <string name="title_activity_carbon_recents_settings">Senaste</string>
-    <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">Dubbeltryck på statusfältet för att sova</string>
     <string name="double_tap_status_bar_sleep_summary">Knacka på statusfältet två gånger för att sova</string>
     <string name="double_tap_lock_sleep_title">Dubbeltryck på låsskärmen för att låsa</string>
     <string name="double_tap_lock_sleep_summary">Tryck låsskärmen två gånger för att låsa</string>
-    <!-- Global Actions -->
     <string name="global_actions_title">Ström-meny</string>
     <string name="global_actions_power">Ström</string>
     <string name="global_actions_restart">Starta om</string>
@@ -58,9 +50,6 @@
     <string name="global_actions_users">Användare</string>
     <string name="global_actions_screenshot">Skärmdump</string>
     <string name="global_actions_flashlight">Ficklampa</string>
-    <!-- Pin scramble -->
-    <!-- Aggressive battery -->
-    <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Statusfält-ikoner</string>
     <string name="lock_screen_shortcuts_title">Låsskärmsgenvägar</string>
     <string name="lock_screen_shortcuts_summary">Hantera genvägar på låsskärmens nedre ända</string>
@@ -70,19 +59,12 @@
         <item>Left-leaning</item>
         <item>Right-leaning</item>
     </string-array>
-    <!-- Volume rocker music control -->
-    <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Slå på/av ficklampan när skärmen är avstängd</string>
     <string name="torch_power_button_gesture_none">Inaktiverad</string>
     <string name="torch_power_button_gesture_dt_toast">Hoppa till kameragesten är nu inaktiverad</string>
-    <!-- QS brightness -->
-    <!-- Qs brightness slider -->
-    <!-- Qs auto-brightness icon -->
-    <!-- Status bar clock and date -->
-    <!-- Status bar clock and date options -->
     <string name="status_bar_title">Statusfält</string>
     <string name="clock_enabled">Aktiverad</string>
-    <string name="clock_disabled">Avstängd</string>
+    <string name="clock_disabled">Inaktiverad</string>
     <string name="status_bar_clock_style_reset">Återställ färg</string>
     <string name="status_bar_am_pm_title">FM/EM</string>
     <string name="status_bar_am_pm_info">24-timmarsklocka är aktiverad</string>
@@ -105,29 +87,12 @@
     <string name="clock_date_right">Höger om klockan</string>
     <string name="clock_date_left">Vänster om klockan</string>
     <string name="clock_date_position">Datumposition</string>
-    <!-- Quick QS pulldown -->
-    <string name="quick_pulldown_none">Avstängd</string>
-    <!-- StatusBar Icons -->
-    <!-- 4G icon -->
-    <!-- Lockscreen battery info indicator  -->
-    <!-- Lock icon -->
-    <!-- Charging animation -->
-    <!-- Network traffic -->
-    <!-- Battery Bar -->
-    <!-- Color Picker -->
+    <string name="quick_pulldown_none">Inaktiverad</string>
     <string name="color_default">Standard</string>
-    <!-- Per App aspect Ratio -->
-    <!-- Hide Statusbar on Lockscreen -->
-    <!-- Dashboard -->
-    <!-- VolumeKeys Swap -->
-    <!-- Lock screen cover art -->
-    <!-- Battery Styles -->
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Batteristil</string>
     <string name="status_bar_battery_style_circle">Cirkel</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Gömd</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Batteriprocent</string>
     <string name="status_bar_battery_percentage_text_inside">Inuti ikonen</string>
     <string name="status_bar_battery_percentage_text_next">Intill ikonen</string>

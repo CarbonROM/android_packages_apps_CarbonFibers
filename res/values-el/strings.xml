@@ -16,47 +16,14 @@
     <string name="lock_screen_category">Οθόνη κλειδώματος</string>
     <string name="buttons_category">Κουμπιά</string>
     <string name="gestures_category">Χειρονομίες</string>
-    <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Βοηθήστε μας να σας βοηθήσουμε!</string>
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_warning_title">Σχετικά</string>
     <string name="enable_reporting_title">Ενεργοποίηση αναφοράς</string>
     <string name="preview_data_title">Προεπισκόπηση δεδομένων</string>
-    <!-- Anonymous Statistics - Preview -->
-    <!-- Smart Pixels -->
-    <!-- Hide Apps from Recents -->
     <string name="hide_from_recents_add_app">Προσθήκη εφαρμογής</string>
     <string name="title_activity_carbon_recents_settings">Πρόσφατα</string>
-    <!-- tap-to-sleep -->
-    <!-- Global Actions -->
-    <!-- Pin scramble -->
-    <!-- Aggressive battery -->
-    <!-- SystemUI Tuner -->
-    <!-- Volume rocker music control -->
-    <!-- Torch Power button gestures -->
-    <!-- QS brightness -->
-    <!-- Qs brightness slider -->
-    <!-- Qs auto-brightness icon -->
-    <!-- Status bar clock and date -->
-    <!-- Status bar clock and date options -->
+    <string name="global_actions_restart">Επανεκκίνηση</string>
+    <string name="global_actions_airplane">Λειτουργία πτήσης</string>
+    <string name="global_actions_settings">Ρυθμίσεις</string>
     <string name="status_bar_title">Γραμμή κατάστασης</string>
-    <!-- Quick QS pulldown -->
-    <string name="quick_pulldown_none">Έχει απενεργοποιηθεί</string>
-    <!-- StatusBar Icons -->
-    <!-- 4G icon -->
-    <!-- Lockscreen battery info indicator  -->
-    <!-- Lock icon -->
-    <!-- Charging animation -->
-    <!-- Network traffic -->
-    <!-- Battery Bar -->
-    <!-- Color Picker -->
-    <!-- Per App aspect Ratio -->
-    <!-- Hide Statusbar on Lockscreen -->
-    <!-- Dashboard -->
-    <!-- VolumeKeys Swap -->
-    <!-- Lock screen cover art -->
-    <!-- Battery Styles -->
-    <!-- Status bar - Battery -->
-    <!-- Status bar - Battery percentage -->
 </resources>

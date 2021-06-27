@@ -40,12 +40,9 @@
     <string name="buttons_main_category_summary">Přizpůsobit hardwarová a softwarová tlačítka</string>
     <string name="gestures_main_category_summary">Možnosti a založené na gestech a akce</string>
     <string name="privacy_main_category_summary">Nastavení sběru různých statistik</string>
-    <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Pomozte nám, pomůžem vám!</string>
     <string name="carbonfibers_dialog_message">Bohužel nejsme čaroději!\n\nPokud zjistíte chybu, otevřete hlášení na Jira nebo kontaktujte vývojáře Carbon s následujícími informacemi:\n\n1. Blame kwoktopus\n2. Logcat a/nebo last_kmsg\n3. Kernel a použité módy\n4. Různe informace\n\nPokud neoznámíte něco s výše uvedenými informacemi, neočekávejte, že bude problém řešen.</string>
     <string name="carbonfibers_dialog_toast">Přečtěte si vše!</string>
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">Statistiky CarbonROM</string>
     <string name="anonymous_statistics_summary">Pomozte nám vylepšit CarbonROM tím, že se rozhodnete pro anonymní zasílání statistik</string>
     <string name="anonymous_statistics_warning_title">Informace</string>
@@ -54,14 +51,12 @@
     <string name="preview_data_title">Náhled dat</string>
     <string name="view_stats_title">Zobrazit statistiky</string>
     <string name="anonymous_learn_more">Další informace</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Jedinečné ID</string>
     <string name="preview_device_title">Zařízení</string>
     <string name="preview_version_title">Verze</string>
     <string name="preview_country_title">Země</string>
     <string name="preview_carrier_title">Operátor</string>
     <string name="stats_collection_title">Povolit sběr statistik</string>
-    <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smart Pixels</string>
     <string name="smart_pixels_summary">Chcete-li snížit spotřebu energie, vypněte pixely</string>
     <string name="smart_pixels_on_power_save_title">Automatické zapnutí při spořiči baterie</string>
@@ -69,17 +64,14 @@
     <string name="smart_pixels_percent">Procenta pixelů k vypnutí</string>
     <string name="smart_pixels_shift">Zabraňuje vypalování zařízení OLED častým přepínáním pixelů</string>
     <string name="smart_pixels_warning_text">Smart Pixels je funkce šetřící energii. V závislosti na na tom, kolik pixelů se rozhodnete vypnout, může dojít k výraznému zlepšení životnosti baterie. Pro dobrou efektivitu doporučujeme nastavit počet vypnutých pixelů na 75 procent.</string>
-    <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Skrýt aplikace z nedávných</string>
     <string name="hide_apps_from_recents_summary">Skrýt aplikace z nedávných</string>
     <string name="hide_from_recents_add_app">Přidat aplikaci</string>
     <string name="title_activity_carbon_recents_settings">Nedávné</string>
-    <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">Dvojím poklepáním na stavovou lištu uspat zařízení</string>
     <string name="double_tap_status_bar_sleep_summary">Klepnutím dvakrát na stavovou lištu uspíte zařízení</string>
     <string name="double_tap_lock_sleep_title">Dvojím poklepáním na zamykací obrazovku uspat zařízení</string>
     <string name="double_tap_lock_sleep_summary">Klepnutím dvakrát na zamykací obrazovku uspíte zařízení</string>
-    <!-- Global Actions -->
     <string name="global_actions_title">Menu napájení</string>
     <string name="global_actions_summary">Přidat možnosti do menu napájení</string>
     <string name="global_actions_power">Napájení</string>
@@ -95,10 +87,8 @@
     <string name="global_actions_emergency">Tísňové volání</string>
     <string name="global_actions_advanced_reboot_title">Rozšířený restart</string>
     <string name="global_actions_advanced_reboot_summary">Zobrazení možností restartování do recovery a bootloaderu</string>
-    <!-- Pin scramble -->
     <string name="unlock_scramble_pin_layout_title">Přeházet klávesnici PINu</string>
     <string name="unlock_scramble_pin_layout_summary">Přeházet rozložení klávesnice zadávání PINu</string>
-    <!-- Aggressive battery -->
     <string name="aggressive_battery_title">Agresivní baterie</string>
     <string name="aggressive_battery_summary">Přísnější úspory baterie</string>
     <string name="aggressive_battery_warning_text">Jedná se o funkce pro úsporu energie. Mohou zasahovat do služeb, které mají běžet v nečinnosti, jako jsou aplikace navigace. Aby tyto aplikace nebyly ovlivněny, můžete je povolit v nastavení baterie.</string>
@@ -108,7 +98,6 @@
     <string name="aggressive_standby_summary">Omezí používání aplikací na pozadí</string>
     <string name="aggressive_battery_saver_title">Automatické zapnutí při spořiči baterie </string>
     <string name="aggressive_battery_saver_summary">Při použití spořiče baterie automaticky zapnout funkci Agresivní baterie</string>
-    <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Položky stavové lišty</string>
     <string name="status_bar_tuner_summary">Upravit ikony a možnosti stavové lišty</string>
     <string name="navigation_bar_invert_layout_title">Převrátit rozložení navigačního panelu</string>
@@ -121,29 +110,22 @@
         <item>Levé</item>
         <item>Pravé</item>
     </string-array>
-    <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Ovládání přehrávání při vypnuté obrazovce</string>
     <string name="volume_rocker_music_controls_summary">Podržte tlačítka hlasitosti pro vyhledávání zvukových stop</string>
-    <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Přepnutí svítilny při vypnuté obrazovce</string>
     <string name="torch_power_button_gesture_none">Zakázáno</string>
     <string name="torch_power_button_gesture_dt">Dvojím stisknutím tlačítka napájení</string>
     <string name="torch_power_button_gesture_dt_toast">Spuštění fotoaparátu pomocí gesta je nyní zakázáno</string>
     <string name="torch_power_button_gesture_lp">Přidržením tlačítka napájení</string>
-    <!-- QS brightness -->
     <string name="qs_brightness_title">Vzhled QS dlaždice jasu </string>
     <string name="qs_brightness_title_summary">Upravte vzhled dlaždice jasu QS</string>
-    <!-- Qs brightness slider -->
     <string name="qs_brightness_slider_title">Posuvník jasu</string>
     <string name="qs_brightness_slider_summary">Zobrazit posuvník jasu</string>
     <string name="qs_brightness_position_bottom">Posuvník jasu ve spodní části</string>
-    <!-- Qs auto-brightness icon -->
     <string name="qs_autobrightness_icon_title">Ikona automatického jasu</string>
     <string name="qs_autobrightness_icon_summary">Zobrazit ikonu automatického jasu vedle posuvníku</string>
-    <!-- Status bar clock and date -->
     <string name="status_bar_clock_title">Hodiny a datum</string>
     <string name="status_bar_clock_title_summary">Spravovat styl hodin a data stavové lišty</string>
-    <!-- Status bar clock and date options -->
     <string name="status_bar_title">Stavová lišta</string>
     <string name="status_bar_style_title">Styl</string>
     <string name="status_bar_clock">Hodiny &amp; datum</string>
@@ -174,27 +156,20 @@
     <string name="clock_date_right">Vpravo od času</string>
     <string name="clock_date_left">Vlevo od času</string>
     <string name="clock_date_position">Pozice data</string>
-    <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Rychlé stažení nabídky QS</string>
     <string name="quick_pulldown_none">Zakázáno</string>
     <string name="quick_pulldown_right">Stažení stavové lišty z pravé strany</string>
     <string name="quick_pulldown_left">Stažení stavové lišty z levé strany</string>
-    <!-- StatusBar Icons -->
     <string name="status_bar_icons_title">Ikony stavové lišty</string>
     <string name="status_bar_icons_title_summary">Změna viditelnosti ikon stavové lišty</string>
-    <!-- 4G icon -->
     <string name="show_fourg_icon_title">Ikona 4G</string>
     <string name="show_fourg_icon_summary">Zobrazit ikonu 4G v ikoně signálu namísto LTE</string>
-    <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Informace o nabíjení na zamykací obrazovce</string>
     <string name="lockscreen_battery_info_summary">Zobrazit maximální proud, napětí a teplotu baterie při nabíjení na zamykací obrazovce při nabíjení</string>
-    <!-- Lock icon -->
     <string name="lockscreen_lock_icon_title">Ikona zámku</string>
     <string name="lockscreen_lock_icon_summary">Zobrazit aktuální ikonu stavu zámku na zamykací obrazovce</string>
-    <!-- Charging animation -->
     <string name="charging_animation_title">Animace při nabíjení</string>
     <string name="charging_animation_summary">Zobrazit animaci při připojení zařízení k nabíječce</string>
-    <!-- Network traffic -->
     <string name="traffic_title">Indikátory síťového provozu</string>
     <string name="traffic_title_summary">Přizpůsobit indikátory síťového provozu</string>
     <string name="network_traffic_title">Síťový provoz</string>
@@ -206,7 +181,6 @@
     <string name="network_traffic_autohide_threshold_title">Limit pro automatické skrytí síťové aktivity (KB/s)</string>
     <string name="network_traffic_hidearrow">Skrýt šipky</string>
     <string name="network_traffic_hidearrow_summary">Skrýt šipky síťového provozu</string>
-    <!-- Battery Bar -->
     <string name="battery_bar_title">Pruh baterie</string>
     <string name="battery_bar_summary">Úpravy pruhu baterie</string>
     <string name="battery_bar_location">Pozice pruhu baterie</string>
@@ -228,7 +202,6 @@
     <string name="battery_bar_gradient_color_summary">Použít barvu přechodu jako stupnici úrovně nabití baterie</string>
     <string name="battery_bar_high_color">Barva vysoké úrovně</string>
     <string name="battery_bar_low_color">Barva nízké úrovně</string>
-    <!-- Color Picker -->
     <string name="dialog_color_picker">Výběr barvy</string>
     <string name="press_color_to_apply">Klepněte na barvu, kterou chcete použít</string>
     <string name="arrow_right">→</string>
@@ -237,17 +210,14 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Nastavit</string>
     <string name="color_default">Výchozí</string>
-    <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Povolit změnu velikosti</string>
     <string name="aspect_ratio_apps_enabled_summary">Povolit starším aplikacím používat celou obrazovku</string>
     <string name="aspect_ratio_apps_list_title">Aplikace, které můžou používat změnu velikosti</string>
     <string name="aspect_ratio_category_title">Změna velikosti starších aplikací</string>
     <string name="aspect_ratio_apps_info">Po provedených změnách je nutné aplikaci restartovat</string>
     <string name="action_save">Uložit</string>
-    <!-- Hide Statusbar on Lockscreen -->
     <string name="lockscreen_show_status_bar_title">Zobrazit stavový řádek</string>
     <string name="lockscreen_show_status_bar_summary">Přepíná viditelnost stavového řádku na zamykací obrazovce</string>
-    <!-- Dashboard -->
     <string name="dashboard_category_title">Hlavní panel</string>
     <string name="dashboard_conditions_title">Podmínky Hlavního panelu</string>
     <string name="summary_dashboard_conditions_enabled">Podmínky Hlavního panelu jsou povoleny</string>
@@ -255,15 +225,11 @@
     <string name="dashboard_suggestions_title">Návrhy Hlavního panelu</string>
     <string name="summary_dashboard_suggestions_enabled">Návrhy Hlavního panelu jsou povoleny</string>
     <string name="summary_dashboard_suggestions_disabled">Návrhy Hlavního panelu jsou zakázány</string>
-    <!-- VolumeKeys Swap -->
     <string name="swap_volume_keys_on_rotation_title">Prohození tlačítek hlasitosti</string>
     <string name="swap_volume_keys_on_rotation_summary">Změnit chování tlačítek hlasitosti při otočení zařízení</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Zobrazit obal interpreta</string>
-    <!-- Battery Styles -->
     <string name="battery_style_category_title">Baterie</string>
     <string name="battery_percent_title">Procenta baterie</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Styl baterie</string>
     <string name="status_bar_battery_style_icon_portrait">Ikona na výšku (výchozí)</string>
     <string name="status_bar_battery_style_circle">Kruh</string>
@@ -271,7 +237,6 @@
     <string name="status_bar_battery_style_filled_circle">Kruh (vyplněný)</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Skryté</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Procenta baterie</string>
     <string name="status_bar_battery_percentage_default">Nezobrazovat (výchozí)</string>
     <string name="status_bar_battery_percentage_text_inside">Uvnitř ikony</string>

@@ -11,16 +11,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="system_category">Järjestelmä</string>
-    <string name="status_bar_category">Tilapalkki</string>
-    <string name="lock_screen_category">Lukitusnäyttö</string>
-    <string name="buttons_category">Painikkeet</string>
-    <string name="gestures_category">Eleet</string>
-    <string name="global_actions_settings">Asetukset</string>
-    <string name="global_actions_flashlight">Taskulamppu</string>
-    <string name="status_bar_title">Tilapalkki</string>
-    <string name="clock_date_display">Päivämäärä</string>
-    <string name="clock_date_style">Päiväyksen tyyli</string>
-    <string name="clock_date_format">Päivämäärän muoto</string>
-    <string name="color_default">Oletus</string>
+    <string name="carbonfibers">karbon szálak</string>
+    <string name="system_category">Rendszer</string>
+    <string name="status_bar_category">Állapotsáv</string>
+    <string name="lock_screen_category">Zárképernyő</string>
+    <string name="buttons_category">Gombok</string>
+    <string name="status_bar_title">Állapotsáv</string>
 </resources>

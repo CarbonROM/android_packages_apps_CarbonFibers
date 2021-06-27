@@ -11,59 +11,82 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers"> Sợi Carbon</string>
     <string name="system_category">Hệ thống</string>
     <string name="status_bar_category">Thanh trạng thái</string>
     <string name="lock_screen_category">Màn hình khoá</string>
     <string name="buttons_category">Nút bấm</string>
     <string name="gestures_category">Cử chỉ</string>
+    <string name="misc_category">Các thông báo khác</string>
+    <string name="privacy_category">Riêng tư</string>
+    <string name="global_actions_category">Trình đơn nguồn</string>
+    <string name="power_save_category">Tiết kiệm năng lượng</string>
     <string name="buttons_software_category">Các phím ảo</string>
     <string name="buttons_hardware_category">Các phím cứng</string>
+    <string name="sb_options">Tùy chọn tranh trạng thái…</string>
+    <string name="network_traffic">Lưu lượng mạng</string>
+    <string name="qs_category">Bảng cài đặt nhanh</string>
+    <string name="clock_category">Đồng hồ và ngày</string>
     <string name="shortcuts">Trình đơn nguồn</string>
-    <!-- Dialog -->
+    <string name="pin_option">Tùy chọn ghim</string>
+    <string name="double_tap">Cử chỉ nhấn đúp</string>
+    <string name="nav_ges">Điều hướng bằng cử chỉ</string>
+    <string name="screenshot_gesture">Đã chụp ảnh màn hình.</string>
+    <string name="recent_category">Gần đây</string>
+    <string name="statistics_options">Thống kê %s</string>
+    <string name="system_main_category_summary">Điều chỉnh các tùy chọn hệ thống</string>
+    <string name="statusbar_main_category_summary">Biểu tượng trên thanh trạng thái</string>
+    <string name="lockscreen_main_category_summary">Sửa đổi tùy chọn và bố cục màn hình khóa</string>
+    <string name="buttons_main_category_summary">Tùy chỉnh các phím phần cứng và phần mềm</string>
+    <string name="gestures_main_category_summary">Các tùy chọn và hành động dựa trên cử chỉ</string>
     <string name="carbonfibers_dialog_title">Giúp chúng tôi cũng là giúp bạn!</string>
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="carbonfibers_dialog_message">Thật không may, chúng tôi đang không phù thủy! \n\nVì vậy, nếu bạn tìm thấy một lỗi thiết lập bất kỳ trong CarbonFibers, xin vui lòng mở ra một vé trên Jira hoặc liên hệ với một nhà phát triển Cacbon với điều kiện sau: \n\n1. #blamemyself * \n2. Logcat! \n3. Hạt nhân và các mods đã sử dụng\n4. Thêm thông tin hữu ích\n\nNếu bạn không báo cáo một cái gì đó với những thông tin trên, không mong đợi lỗi sẽ được sửa. Hãy nhớ rằng, chúng tôi là không hoàn hảo như Patrick, do đó, thỉnh thoảng chúng tôi cũng quên điều gì đó.</string>
+    <string name="carbonfibers_dialog_toast">Đọc tất cả!</string>
     <string name="anonymous_statistics_title">Số liệu thống kê CarbonROM</string>
     <string name="anonymous_statistics_summary">Giúp làm cho CarbonROM tốt hơn bằng cách tham gia báo cáo thống kê sử dụng</string>
     <string name="anonymous_statistics_warning_title">Giới thiệu</string>
+    <string name="anonymous_statistics_warning">Tham gia vào CarbonROM Số liệu thống kê sẽ cho phép phi cá nhân dữ liệu được gửi đến
+        các nhà phát triển của CyanogenMod để theo dõi duy nhất cài đặt trên thiết bị. Thông tin gửi bao gồm một định danh duy nhất,
+        mà không thỏa hiệp về quyền riêng tư hoặc dữ liệu cá nhân của bạn. Các dữ liệu được gửi trong mỗi lần khởi động.\n\nFor một ví dụ về các dữ liệu được gửi, nhấp vào Xem trước Dữ liệu.</string>
     <string name="enable_reporting_title">Kích hoạt báo cáo</string>
     <string name="preview_data_title">Xem trước dữ liệu</string>
     <string name="view_stats_title">Xem số liệu thống kê</string>
     <string name="anonymous_learn_more">Tìm hiểu thêm</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">ID duy nhất</string>
     <string name="preview_device_title">Thiết bị</string>
     <string name="preview_version_title">Phiên bản</string>
     <string name="preview_country_title">Quốc gia</string>
     <string name="preview_carrier_title">Nhà mạng</string>
-    <!-- Smart Pixels -->
+    <string name="stats_collection_title">Thống kê bộ sưu tập</string>
     <string name="smart_pixels_title">Điểm ảnh thông minh</string>
     <string name="smart_pixels_summary">Tắt các điểm ảnh để giảm điện năng tiêu thụ</string>
     <string name="smart_pixels_on_power_save_title">Tự động kích hoạt trên tiết kiệm pin</string>
+    <string name="smart_pixels_on_power_save_summary">Kích hoạt Điểm ảnh thông minh khi tiết kiệm pin được kích hoạt</string>
     <string name="smart_pixels_percent">Phần trăm điểm ảnh bị vô hiệu hóa</string>
     <string name="smart_pixels_shift">Ngăn chặn bóng mờ bằng cách chuyển điểm ảnh luân phiên</string>
     <string name="smart_pixels_warning_text">Điểm ảnh thông minh là một tính năng tiết kiệm pin. Tùy thuộc vào bao nhiêu điểm ảnh bạn quyết định tắt, bạn có thể thấy tuổi thọ pin cải thiện một cách đáng kể. Để trải nghiệm người dùng tốt, chúng tôi khuyên bạn nên thiết lập số lượng điểm ảnh bị vô hiệu hóa đến 75 phần trăm trong khi chuyển luân phiên mỗi 10 phút.</string>
-    <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Ẩn ứng dụng khỏi gần đây</string>
     <string name="hide_from_recents_add_app">Thêm ứng dụng</string>
     <string name="title_activity_carbon_recents_settings">Gần đây</string>
-    <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">Nhấp đúp vào thanh trạng thái để ngủ</string>
     <string name="double_tap_status_bar_sleep_summary">Bấm vào thanh trạng thái hai lần để ngủ</string>
     <string name="double_tap_lock_sleep_title">Nhấp đúp vào màn hình khóa để ngủ</string>
     <string name="double_tap_lock_sleep_summary">Chạm màn hình hai lần để ngủ</string>
-    <!-- Global Actions -->
     <string name="global_actions_title">Trình đơn nguồn</string>
+    <string name="global_actions_summary">Thêm tùy chọn vào menu nguồn</string>
     <string name="global_actions_power">Nguồn</string>
     <string name="global_actions_restart">Khởi động lại</string>
     <string name="global_actions_airplane">Chế độ máy bay</string>
     <string name="global_actions_settings">Cài đặt</string>
+    <string name="global_actions_soundpanel">Bảng điều khiển âm thanh</string>
     <string name="global_actions_users">Người dùng</string>
     <string name="global_actions_screenshot">Chụp ảnh màn hình</string>
     <string name="global_actions_flashlight">Đèn pin</string>
-    <!-- Pin scramble -->
-    <!-- Aggressive battery -->
-    <!-- SystemUI Tuner -->
+    <string name="aggressive_battery_title">Pin hung hãn</string>
+    <string name="aggressive_battery_summary">Tiết kiệm pin nghiêm ngặt hơn</string>
+    <string name="aggressive_battery_warning_text">Đây là những tính năng tiết kiệm điện. Chúng có thể ảnh hưởng đến các dịch vụ dự định chạy khi không hoạt động, chẳng hạn như ứng dụng điều hướng. Bạn có thể đưa các ứng dụng này vào danh sách trắng để không bị ảnh hưởng trong phần cài đặt pin của ứng dụng.</string>
+    <string name="aggressive_idle_title">Hoạt động nhàn rỗi</string>
+    <string name="aggressive_idle_summary">Để thiết bị không hoạt động thường xuyên hơn và thức dậy ít hơn</string>
     <string name="status_bar_tuner_title">Biểu tượng trên thanh trạng thái</string>
     <string name="lock_screen_shortcuts_title">Phím tắt khóa màn hình</string>
     <string name="lock_screen_shortcuts_summary">Quản lý phím tắt dưới trong màn hình khóa</string>
@@ -73,16 +96,9 @@
         <item>Left-leaning</item>
         <item>Right-leaning</item>
     </string-array>
-    <!-- Volume rocker music control -->
-    <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Bật tắt đèn pin khi màn hình tắt</string>
     <string name="torch_power_button_gesture_none">Đã vô hiệu hóa</string>
     <string name="torch_power_button_gesture_dt_toast">Cử chỉ nhảy đến máy ảnh bị vô hiệu hóa</string>
-    <!-- QS brightness -->
-    <!-- Qs brightness slider -->
-    <!-- Qs auto-brightness icon -->
-    <!-- Status bar clock and date -->
-    <!-- Status bar clock and date options -->
     <string name="status_bar_title">Thanh trạng thái</string>
     <string name="clock_enabled">Đã kích hoạt</string>
     <string name="clock_disabled">Đã vô hiệu hóa</string>
@@ -109,31 +125,57 @@
     <string name="clock_date_right">Bên phải của thời gian</string>
     <string name="clock_date_left">Bên trái của thời gian</string>
     <string name="clock_date_position">Vị trí ngày</string>
-    <!-- Quick QS pulldown -->
     <string name="quick_pulldown_none">Đã vô hiệu hóa</string>
-    <!-- StatusBar Icons -->
-    <!-- 4G icon -->
-    <!-- Lockscreen battery info indicator  -->
-    <!-- Lock icon -->
-    <!-- Charging animation -->
-    <!-- Network traffic -->
     <string name="network_traffic_autohide_threshold_title">Ngưỡng tự ẩn hoạt động mạng (KB/s)</string>
-    <!-- Battery Bar -->
-    <!-- Color Picker -->
+    <string name="battery_bar_animate_summary">Các hiệu ứng sạc có thể dẫn tới trải nghiệm người dùng nghèo nàn. Cho phép tùy quyết định của bạn.</string>
+    <string name="battery_bar_hide">Ẩn</string>
+    <string name="battery_bar_statusbar">Thanh trạng thái</string>
+    <string name="battery_bar_topnav">Phía trên thanh điều hướng</string>
+    <string name="battery_bar_bottomnav">Phía trên thanh điều hướng</string>
+    <string name="battery_bar_reg">Thông thường</string>
+    <string name="battery_bar_center">Trung tâm</string>
+    <string name="battery_bar_reversed">Đã hủy bỏ</string>
+    <string name="battery_bar_use_gradient_color">Sử dụng màu gradient</string>
+    <string name="battery_bar_gradient_color_summary">Sử dụng màu gradient làm thang đo cho mức pin</string>
+    <string name="battery_bar_high_color">Màu cấp cao</string>
+    <string name="battery_bar_low_color">Màu cấp độ thấp </string>
+    <string name="dialog_color_picker">Chọn màu</string>
+    <string name="press_color_to_apply">Bấm vào màu sắc dưới đây để áp dụng</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Đặt</string>
     <string name="color_default">Mặc định</string>
-    <!-- Per App aspect Ratio -->
-    <!-- Hide Statusbar on Lockscreen -->
-    <!-- Dashboard -->
-    <!-- VolumeKeys Swap -->
-    <!-- Lock screen cover art -->
-    <!-- Battery Styles -->
-    <!-- Status bar - Battery -->
+    <string name="aspect_ratio_apps_enabled_title">Bật tính năng mở rộng</string>
+    <string name="aspect_ratio_apps_enabled_summary">Cho phép các ứng dụng cũ sử dụng toàn màn hình</string>
+    <string name="aspect_ratio_apps_list_title">Các ứng dụng được phép sử dụng tính năng chia tỷ lệ</string>
+    <string name="aspect_ratio_category_title">Mở rộng ứng dụng kế thừa</string>
+    <string name="aspect_ratio_apps_info">Các ứng dụng cần được khởi động lại sau khi thay đổi</string>
+    <string name="action_save">Lưu</string>
+    <string name="lockscreen_show_status_bar_title">Hiển thị thanh trạng thái</string>
+    <string name="lockscreen_show_status_bar_summary">Chuyển đổi chế độ hiển thị thanh trạng thái trên màn hình khóa</string>
+    <string name="dashboard_category_title">Bảng điều khiển</string>
+    <string name="dashboard_conditions_title">Điều kiện trang tổng quan</string>
+    <string name="summary_dashboard_conditions_enabled">Điều kiện trang tổng quan được bật</string>
+    <string name="summary_dashboard_conditions_disabled">Điều kiện trang tổng quan bị vô hiệu hóa</string>
+    <string name="dashboard_suggestions_title">Điều kiện trang tổng quan</string>
+    <string name="summary_dashboard_suggestions_enabled">Điều kiện trang tổng quan được bật</string>
+    <string name="summary_dashboard_suggestions_disabled">Điều kiện trang tổng quan bị vô hiệu hóa</string>
+    <string name="swap_volume_keys_on_rotation_title">Đảo ngược nút âm lượng</string>
+    <string name="swap_volume_keys_on_rotation_summary">Thay đổi hành vi của các nút âm lượng khi xoay thiết bị</string>
+    <string name="lockscreen_media_art_title">Hiển thị ảnh bìa phương tiện</string>
+    <string name="battery_style_category_title">Pin</string>
+    <string name="battery_percent_title">Phần trăm pin</string>
     <string name="status_bar_battery_style_title">Kiểu pin</string>
+    <string name="status_bar_battery_style_icon_portrait">Biểu tượng dọc (mặc định)</string>
     <string name="status_bar_battery_style_circle">Hình tròn</string>
+    <string name="status_bar_battery_style_dotted_circle">Vòng tròn (Chấm)</string>
+    <string name="status_bar_battery_style_filled_circle">Vòng kết nối (Đã lấp đầy)</string>
     <string name="status_bar_battery_style_text">Văn bản</string>
     <string name="status_bar_battery_style_hidden">Ẩn</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Phần trăm pin</string>
+    <string name="status_bar_battery_percentage_default">Ẩn (mặc định)</string>
     <string name="status_bar_battery_percentage_text_inside">Bên trong biểu tượng</string>
     <string name="status_bar_battery_percentage_text_next">Bên cạnh biểu tượng</string>
 </resources>

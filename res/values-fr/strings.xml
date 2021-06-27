@@ -23,15 +23,25 @@
     <string name="power_save_category">Mode d\'économie d\'énergie</string>
     <string name="buttons_software_category">Boutons virtuels</string>
     <string name="buttons_hardware_category">Boutons physiques</string>
+    <string name="sb_options">Options de la barre d\'état</string>
+    <string name="network_traffic">Trafic réseau</string>
+    <string name="qs_category">Options des réglages rapides</string>
+    <string name="clock_category">Horloge et date</string>
     <string name="shortcuts">Raccourcis</string>
-    <!-- Dialog -->
+    <string name="nav_ges">Navigation par gestes</string>
+    <string name="screenshot_gesture">Geste de capture d\'écran</string>
+    <string name="recent_category">Récent</string>
+    <string name="statistics_options">Statistiques CR</string>
+    <string name="system_main_category_summary">Ajuster les options système</string>
+    <string name="statusbar_main_category_summary">Ajuster les éléments de la barre d\'état</string>
+    <string name="lockscreen_main_category_summary">Modifier la disposition et les options de l\'écran de verrouillage</string>
+    <string name="buttons_main_category_summary">Personnaliser les clés matérielles et logicielles</string>
+    <string name="gestures_main_category_summary">Options et actions basées sur les gestes</string>
     <string name="carbonfibers_dialog_title">Aidez-nous à vous aider !</string>
     <string name="carbonfibers_dialog_message">Malheureusement, nous ne sommes pas des magiciens!\n\nSi vous trouvez un bug, veuillez ouvrir un ticket sur Jira ou
         contacter un développeur de Carbon avec ce qui suit.\n\n1. Blame kwoktopus\n2. Logcat et/ou last_kmsg\n3. Noyau et mods utilisés\n4.
         Informations erronées\n\nSi vous ne signalez pas avec les informations ci-dessus, ne vous attendez pas à ce que le problème soit pris en considération.</string>
     <string name="carbonfibers_dialog_toast">Tout lire !</string>
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">Statistiques de CarbonROM</string>
     <string name="anonymous_statistics_summary">Aider à améliorer CarbonROM en envoyant des rapports de statistiques anonymes</string>
     <string name="anonymous_statistics_warning_title">À propos</string>
@@ -40,14 +50,12 @@
     <string name="preview_data_title">Prévisualiser les données</string>
     <string name="view_stats_title">Voir les statistiques</string>
     <string name="anonymous_learn_more">En savoir plus</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Identifiant unique</string>
     <string name="preview_device_title">Appareil</string>
     <string name="preview_version_title">Version</string>
     <string name="preview_country_title">Pays</string>
     <string name="preview_carrier_title">Opérateur</string>
     <string name="stats_collection_title">Activer la collecte de statistiques</string>
-    <!-- Smart Pixels -->
     <string name="smart_pixels_title">Pixels intelligents</string>
     <string name="smart_pixels_summary">Éteindre des pixels pour réduire la consommation d\'énergie</string>
     <string name="smart_pixels_on_power_save_title">Activer automatiquement avec l\'économiseur de batterie</string>
@@ -55,34 +63,31 @@
     <string name="smart_pixels_percent">Pourcentage de pixels à désactiver</string>
     <string name="smart_pixels_shift">Empêcher des dommages en déplaçant des pixels tous les</string>
     <string name="smart_pixels_warning_text">Smart Pixels est une fonctionnalité d\'économie d\'énergie. Selon le nombre de pixels que vous décidez de désactiver, vous pourriez voir une amélioration significative de la durée de vie de la batterie. Pour une bonne expérience utilisateur, nous recommandons de définir le nombre de pixels désactivés à 75 pourcents tout en changeant toutes les 10 minutes.</string>
-    <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Masquer les applications des récents</string>
     <string name="hide_apps_from_recents_summary">Masquer les applications dans les tâches récentes</string>
     <string name="hide_from_recents_add_app">Ajouter une application</string>
     <string name="title_activity_carbon_recents_settings">Récents</string>
-    <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">Double appui sur la barre d\'état pour mettre en veille</string>
     <string name="double_tap_status_bar_sleep_summary">Appuyez deux fois sur la barre d\'état pour mettre en veille</string>
     <string name="double_tap_lock_sleep_title">Double-appui sur l\'écran de verrouillage pour mettre en veille</string>
     <string name="double_tap_lock_sleep_summary">Appuyez deux fois sur l\'écran de verrouillage pour mettre en veille</string>
-    <!-- Global Actions -->
     <string name="global_actions_title">Raccourcis</string>
     <string name="global_actions_summary">Ajouter des options au menu d\'alimentation</string>
     <string name="global_actions_power">Éteindre</string>
     <string name="global_actions_restart">Redémarrer</string>
     <string name="global_actions_airplane">Mode avion</string>
     <string name="global_actions_settings">Paramètres</string>
+    <string name="global_actions_lockdown">Verrouiller sur l\'écran de verrouillage</string>
     <string name="global_actions_soundpanel">Panneau de volume</string>
     <string name="global_actions_users">Utlisateurs</string>
     <string name="global_actions_screenshot">Capture d\'écran</string>
     <string name="global_actions_screenrecord">Capture vidéo</string>
     <string name="global_actions_flashlight">Lampe torche</string>
+    <string name="global_actions_emergency">Appel d\'urgence</string>
     <string name="global_actions_advanced_reboot_title">Redémarrage avancé</string>
     <string name="global_actions_advanced_reboot_summary">Afficher les options de redémarrage recovery et bootloader</string>
-    <!-- Pin scramble -->
     <string name="unlock_scramble_pin_layout_title">Mélanger le clavier lors de la saisie du code PIN</string>
     <string name="unlock_scramble_pin_layout_summary">Mélanger de manière aléatoire la disposition du clavier lors de la saisie du code PIN</string>
-    <!-- Aggressive battery -->
     <string name="aggressive_battery_title">Aggressive Battery</string>
     <string name="aggressive_battery_summary">Économie plus stricte de batterie</string>
     <string name="aggressive_battery_warning_text">Ces options peuvent vous aider à économiser de l\'énergie. Cependant, ils peuvent affecter les applications qui s\'exécutent en idle (telles que les applications de navigation). Ajoutez-les à la liste blanche pour ne pas les affecter.</string>
@@ -92,32 +97,33 @@
     <string name="aggressive_standby_summary">Restreindre les applications en cours d\'exécution en arrière-plan</string>
     <string name="aggressive_battery_saver_title">Activer automatiquement avec l\'économiseur de batterie</string>
     <string name="aggressive_battery_saver_summary">Activer la Aggressive Battery automatiquement lors de l\'utilisation de l\'économiseur de batterie</string>
-    <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Éléments de la barre d\'état</string>
     <string name="status_bar_tuner_summary">Modifier les icônes et options de la barre d\'état</string>
     <string name="lock_screen_shortcuts_title">Raccourcis de l\'écran verrouillé</string>
     <string name="lock_screen_shortcuts_summary">Gérer les raccourcis en bas de l\'écran de verrouillage</string>
+    <string name="nav_bar_layout">Style de la barre de navigation</string>
     <string-array name="nav_bar_layouts">
         <item>Normal</item>
         <item>Compact</item>
         <item>Left-leaning</item>
         <item>Right-leaning</item>
     </string-array>
-    <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Suivre le contrôle de la lecture lorsque l\'écran est éteint</string>
     <string name="volume_rocker_music_controls_summary">Maintenez la touche de volume enfoncée pour parcourir les pistes audio</string>
-    <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Autoriser la lampe de poche lorsque l\'écran est éteint</string>
     <string name="torch_power_button_gesture_none">Désactivé</string>
     <string name="torch_power_button_gesture_dt">Appuyez deux fois sur le bouton d\'alimentation</string>
     <string name="torch_power_button_gesture_dt_toast">Les gestes d\'activation de la caméra sont actuellement désactivés</string>
     <string name="torch_power_button_gesture_lp">Maintenir le bouton d\'alimentation</string>
-    <!-- QS brightness -->
-    <!-- Qs brightness slider -->
-    <!-- Qs auto-brightness icon -->
-    <!-- Status bar clock and date -->
-    <!-- Status bar clock and date options -->
+    <string name="qs_brightness_slider_title">Curseur de luminosité</string>
+    <string name="qs_brightness_slider_summary">Afficher le curseur de luminosité</string>
+    <string name="qs_brightness_position_bottom">Curseur de luminosité en bas</string>
+    <string name="qs_autobrightness_icon_title">Icône de luminosité automatique</string>
+    <string name="qs_autobrightness_icon_summary">Afficher une icône de luminosité automatique à côté du curseur de luminosité</string>
+    <string name="status_bar_clock_title">Date et heure</string>
     <string name="status_bar_title">Barre d\'état</string>
+    <string name="status_bar_style_title">Style</string>
+    <string name="status_bar_clock">Horloge &amp; Date</string>
     <string name="clock_enabled">Activé</string>
     <string name="clock_disabled">Désactivé</string>
     <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
@@ -143,35 +149,25 @@
     <string name="clock_date_right">A droite de l\'heure</string>
     <string name="clock_date_left">A gauche de l\'heure</string>
     <string name="clock_date_position">Emplacement de la date</string>
-    <!-- Quick QS pulldown -->
     <string name="quick_pulldown_none">Désactivé</string>
-    <!-- StatusBar Icons -->
     <string name="status_bar_icons_title">Icônes de la barre d’état</string>
-    <!-- 4G icon -->
     <string name="show_fourg_icon_title">Icône 4G</string>
-    <!-- Lockscreen battery info indicator  -->
-    <!-- Lock icon -->
-    <!-- Charging animation -->
-    <!-- Network traffic -->
+    <string name="show_fourg_icon_summary">Afficher l\'icône 4G en icône de signal au lieu de LTE</string>
+    <string name="lockscreen_lock_icon_title">Icône de verrouillage</string>
+    <string name="lockscreen_lock_icon_summary">Afficher l\'icône d\'état de verrouillage actuel sur l\'écran de verrouillage</string>
+    <string name="charging_animation_summary">Afficher une animation lorsque l\'appareil est branché</string>
     <string name="network_traffic_title">Trafic réseau</string>
+    <string name="show_network_traffic_all">Liaison montante et descendante</string>
     <string name="network_traffic_autohide_threshold_title">Seuil pour masquer automatiquement le débit (KB/s)</string>
     <string name="network_traffic_hidearrow">Cacher les flèches</string>
     <string name="network_traffic_hidearrow_summary">Cacher les flèches indiquant le trafic réseau</string>
-    <!-- Battery Bar -->
-    <!-- Color Picker -->
+    <string name="hex">Hexa:</string>
+    <string name="hex_hint">#ff000000</string>
     <string name="color_default">Défaut</string>
-    <!-- Per App aspect Ratio -->
-    <!-- Hide Statusbar on Lockscreen -->
-    <!-- Dashboard -->
-    <!-- VolumeKeys Swap -->
-    <!-- Lock screen cover art -->
-    <!-- Battery Styles -->
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Style de la batterie</string>
     <string name="status_bar_battery_style_circle">Cercle</string>
     <string name="status_bar_battery_style_text">Texte</string>
     <string name="status_bar_battery_style_hidden">Masqué</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Pourcentage de batterie</string>
     <string name="status_bar_battery_percentage_text_inside">À l\'intérieur de l\'icône</string>
     <string name="status_bar_battery_percentage_text_next">À côté de l\'icône</string>

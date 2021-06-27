@@ -40,12 +40,9 @@
     <string name="buttons_main_category_summary">個性化硬件及軟件按鍵</string>
     <string name="gestures_main_category_summary">基於手勢的選項和操作</string>
     <string name="privacy_main_category_summary">雜項和統計數據收集設定</string>
-    <!-- Dialog -->
     <string name="carbonfibers_dialog_title">幫助我們提供更好</string>
     <string name="carbonfibers_dialog_message">抱歉，但我們並不是嚮導！\n\n所以，如果您在 Carbon 設定中存在任何設定相關的錯誤，請在我們的 Jira 上提交您遇到的問題，並提供以下內容：\n\n1. #自我檢查*\n2. 日誌\n3. 內核和使用的模組\n4. 其他有用的資訊\n\n如果您沒有提供以上資料，請不要期待任何問題會被解決。請注意，我們並不像帕特里克一樣完美，所以我們偶爾會做錯某些事情。</string>
     <string name="carbonfibers_dialog_toast">閱讀全部!</string>
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">CarbonROM 統計</string>
     <string name="anonymous_statistics_summary">發送匿名的統計報告以幫助 CarbonROM 做得更好</string>
     <string name="anonymous_statistics_warning_title">關於</string>
@@ -54,14 +51,12 @@
     <string name="preview_data_title">預覽資訊</string>
     <string name="view_stats_title">檢視資訊</string>
     <string name="anonymous_learn_more">了解詳情</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">識別碼</string>
     <string name="preview_device_title">裝置</string>
     <string name="preview_version_title">版本</string>
     <string name="preview_country_title">國家</string>
     <string name="preview_carrier_title">電信業者</string>
     <string name="stats_collection_title">允許收齊資訊用於統計</string>
-    <!-- Smart Pixels -->
     <string name="smart_pixels_title">智慧像素</string>
     <string name="smart_pixels_summary">關閉像素來降低功耗</string>
     <string name="smart_pixels_on_power_save_title">在省電模式下自動啟用</string>
@@ -69,17 +64,14 @@
     <string name="smart_pixels_percent">要禁用的像素百分比</string>
     <string name="smart_pixels_shift">通過移動像素來防止螢幕烙印</string>
     <string name="smart_pixels_warning_text">智慧像素是一種省電功能。 根據您決定關閉多少像素，您可能會看到電池壽命獲得顯著改善。 為了取得良好的用戶體驗，我們建議每10分鐘移動一次，將禁用像素的數量設置為75%。</string>
-    <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">從最近應用程式隱藏應用</string>
     <string name="hide_apps_from_recents_summary">在最近通知中隱藏應用程式</string>
     <string name="hide_from_recents_add_app">新增應用程式</string>
     <string name="title_activity_carbon_recents_settings">最近應用程式</string>
-    <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">連續點擊狀態欄兩次進入睡眠</string>
     <string name="double_tap_status_bar_sleep_summary">點擊狀態欄兩次進入睡眠</string>
     <string name="double_tap_lock_sleep_title">鎖定螢幕時，連續點擊兩次進入睡眠</string>
     <string name="double_tap_lock_sleep_summary">鎖定螢幕時，點擊兩次進入睡眠</string>
-    <!-- Global Actions -->
     <string name="global_actions_title">快捷</string>
     <string name="global_actions_summary">在電源選單中添加選項</string>
     <string name="global_actions_power">電源</string>
@@ -95,10 +87,8 @@
     <string name="global_actions_emergency">緊急電話</string>
     <string name="global_actions_advanced_reboot_title">進階重新啓動</string>
     <string name="global_actions_advanced_reboot_summary">在重啓選項中顯示恢復模式和開機載入器</string>
-    <!-- Pin scramble -->
     <string name="unlock_scramble_pin_layout_title">圖形密碼</string>
     <string name="unlock_scramble_pin_layout_summary">圖形密碼佈局</string>
-    <!-- Aggressive battery -->
     <string name="aggressive_battery_title">高級省電設置</string>
     <string name="aggressive_battery_summary">更嚴格的省電模式</string>
     <string name="aggressive_battery_warning_text">這些是省電功能。可能會干擾在背景運行的服務，例如導航應用程序。 您可以將這些應用列入白名單，以免受到應用電池設置的影響。</string>
@@ -108,7 +98,6 @@
     <string name="aggressive_standby_summary">限制應用程式在後台運行</string>
     <string name="aggressive_battery_saver_title">在省電模式下自動啟用</string>
     <string name="aggressive_battery_saver_summary">打開省電模式時自動啟動高級省電設置</string>
-    <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">狀態欄選項</string>
     <string name="status_bar_tuner_summary">編輯狀態欄圖示和選項</string>
     <string name="navigation_bar_invert_layout_title">反轉導航欄佈局</string>
@@ -121,29 +110,22 @@
         <item>靠左</item>
         <item>靠右</item>
     </string-array>
-    <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">螢幕關閉撥放控制</string>
     <string name="volume_rocker_music_controls_summary">按住音量鍵查找音軌</string>
-    <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">螢幕關閉時，切換手電筒</string>
     <string name="torch_power_button_gesture_none">停用</string>
     <string name="torch_power_button_gesture_dt">連續點擊兩次電源按鈕</string>
     <string name="torch_power_button_gesture_dt_toast">禁用手勢啟動相機</string>
     <string name="torch_power_button_gesture_lp">按住電源按鈕</string>
-    <!-- QS brightness -->
     <string name="qs_brightness_title">QS 亮度設計</string>
     <string name="qs_brightness_title_summary">修改快速設置亮度設計</string>
-    <!-- Qs brightness slider -->
     <string name="qs_brightness_slider_title">亮度條</string>
     <string name="qs_brightness_slider_summary">顯示亮度條</string>
     <string name="qs_brightness_position_bottom">底部的亮度條</string>
-    <!-- Qs auto-brightness icon -->
     <string name="qs_autobrightness_icon_title">自動調整亮度圖示</string>
     <string name="qs_autobrightness_icon_summary">在亮度條旁邊顯示自動調整亮度圖示</string>
-    <!-- Status bar clock and date -->
     <string name="status_bar_clock_title">時鐘和日期</string>
     <string name="status_bar_clock_title_summary">管理狀態欄位的時鐘和日期樣式</string>
-    <!-- Status bar clock and date options -->
     <string name="status_bar_title">狀態欄</string>
     <string name="status_bar_style_title">樣式</string>
     <string name="status_bar_clock">時鐘 &amp; 日期</string>
@@ -174,27 +156,20 @@
     <string name="clock_date_right">時間位於右側</string>
     <string name="clock_date_left">時間位於左側</string>
     <string name="clock_date_position">日期位置</string>
-    <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">快速 QS 下拉</string>
     <string name="quick_pulldown_none">停用</string>
     <string name="quick_pulldown_right">右側下拉狀態欄</string>
     <string name="quick_pulldown_left">左側下拉狀態欄</string>
-    <!-- StatusBar Icons -->
     <string name="status_bar_icons_title">狀態欄位圖示</string>
     <string name="status_bar_icons_title_summary">更改狀態欄位圖示可見性</string>
-    <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G 圖示</string>
     <string name="show_fourg_icon_summary">在信號圖示中顯示 4G，而不是 LTE</string>
-    <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">鎖定螢幕充電信息</string>
     <string name="lockscreen_battery_info_summary">充電時在鎖定螢幕上顯示充電器的最大電流、電壓、電池溫度</string>
-    <!-- Lock icon -->
     <string name="lockscreen_lock_icon_title">鎖定圖示</string>
     <string name="lockscreen_lock_icon_summary">在鎖定螢幕上顯示當前鎖定狀態圖示</string>
-    <!-- Charging animation -->
     <string name="charging_animation_title">充電動畫</string>
     <string name="charging_animation_summary">插入設備後顯示動畫</string>
-    <!-- Network traffic -->
     <string name="traffic_title">網路傳輸速度</string>
     <string name="traffic_title_summary">自定義網路傳輸速度顯示</string>
     <string name="network_traffic_title">網絡流量</string>
@@ -206,7 +181,6 @@
     <string name="network_traffic_autohide_threshold_title">活動低於設定值時，自動隱藏(KB/s)</string>
     <string name="network_traffic_hidearrow">隱藏箭頭</string>
     <string name="network_traffic_hidearrow_summary">隱藏網路流量指示箭頭</string>
-    <!-- Battery Bar -->
     <string name="battery_bar_title">電量條</string>
     <string name="battery_bar_summary">美化電量條</string>
     <string name="battery_bar_location">電量條位置</string>
@@ -228,7 +202,6 @@
     <string name="battery_bar_gradient_color_summary">使用漸變色作為電池電量的尺度</string>
     <string name="battery_bar_high_color">高電量顏色</string>
     <string name="battery_bar_low_color">低電量顏色</string>
-    <!-- Color Picker -->
     <string name="dialog_color_picker">顏色選擇器</string>
     <string name="press_color_to_apply">選擇下方的顏色進行套用</string>
     <string name="arrow_right">→</string>
@@ -237,17 +210,14 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">設定</string>
     <string name="color_default">預設</string>
-    <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">啟用縮放</string>
     <string name="aspect_ratio_apps_enabled_summary">允許舊版應用程式使用全螢幕顯示</string>
     <string name="aspect_ratio_apps_list_title">允許使用縮放的應用程式</string>
     <string name="aspect_ratio_category_title">舊版應用程式的縮放比例</string>
     <string name="aspect_ratio_apps_info">更改後需要重新啟動應用程式</string>
     <string name="action_save">保存</string>
-    <!-- Hide Statusbar on Lockscreen -->
     <string name="lockscreen_show_status_bar_title">顯示狀態欄位</string>
     <string name="lockscreen_show_status_bar_summary">在鎖定螢幕切換狀態欄位可見性</string>
-    <!-- Dashboard -->
     <string name="dashboard_category_title">儀表板</string>
     <string name="dashboard_conditions_title">儀表板狀況</string>
     <string name="summary_dashboard_conditions_enabled">啟用儀表板狀況</string>
@@ -255,15 +225,11 @@
     <string name="dashboard_suggestions_title">儀表板提示</string>
     <string name="summary_dashboard_suggestions_enabled">啟用儀表板提示</string>
     <string name="summary_dashboard_suggestions_disabled">停用儀表板提示</string>
-    <!-- VolumeKeys Swap -->
     <string name="swap_volume_keys_on_rotation_title">交換音量按鍵</string>
     <string name="swap_volume_keys_on_rotation_summary">旋轉設備時更改音量按鍵的行為</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">顯示媒體封面</string>
-    <!-- Battery Styles -->
     <string name="battery_style_category_title">電池</string>
     <string name="battery_percent_title">電量百分比</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">電池樣式</string>
     <string name="status_bar_battery_style_icon_portrait">垂直圖示 (默認)</string>
     <string name="status_bar_battery_style_circle">圓環</string>
@@ -271,7 +237,6 @@
     <string name="status_bar_battery_style_filled_circle">圓 (線)</string>
     <string name="status_bar_battery_style_text">文字</string>
     <string name="status_bar_battery_style_hidden">隱藏</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">電量百分比</string>
     <string name="status_bar_battery_percentage_default">隱藏 (默認)</string>
     <string name="status_bar_battery_percentage_text_inside">圖示內</string>

@@ -19,10 +19,7 @@
     <string name="buttons_software_category">Programski gumbi</string>
     <string name="buttons_hardware_category">Fizični gumbi</string>
     <string name="shortcuts">Meni gumba za vklop</string>
-    <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Pomagajte nam pomagati vam!</string>
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">CarbonROM statistika</string>
     <string name="anonymous_statistics_summary">Pomagaj izboljšati CarbonROM z anonimnim pošiljanjem statistike</string>
     <string name="anonymous_statistics_warning_title">Vizitka</string>
@@ -30,29 +27,24 @@
     <string name="preview_data_title">Predogled podatkov</string>
     <string name="view_stats_title">Poglej statistiko</string>
     <string name="anonymous_learn_more">Več o tem</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Edinstven ID</string>
     <string name="preview_device_title">Naprava</string>
     <string name="preview_version_title">Različica</string>
     <string name="preview_country_title">Država</string>
     <string name="preview_carrier_title">Operater</string>
-    <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smart Pixels</string>
     <string name="smart_pixels_summary">Izklopi piksle za zmanjšanje porabe baterije</string>
     <string name="smart_pixels_on_power_save_title">Samodejni vklop ob varčevanju z baterijo</string>
     <string name="smart_pixels_percent">Odstotek izklopljenih pikslov</string>
     <string name="smart_pixels_shift">Prepreči vžiganje z menjavo pikslov vsakih</string>
     <string name="smart_pixels_warning_text">Smart Pixels je oblika varčevanja z baterijo. Lahko pripelje do občutnega podaljšanja trajanja baterije, odvisno od odstotka izklopljenih pikslov. Za dobro uporabniško izkušnjo priporočamo izklop 75 odstotkov pikslov z menjavo vsakih 10 minut.</string>
-    <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Skrij aplikacije iz nedavnih</string>
     <string name="hide_from_recents_add_app">Dodaj aplikacijo</string>
     <string name="title_activity_carbon_recents_settings">Nedavno</string>
-    <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">Dvakrat se dotaknite vrstice stanja za spanje</string>
     <string name="double_tap_status_bar_sleep_summary">Za spanje se dvakrat dotaknite vrstice stanja</string>
     <string name="double_tap_lock_sleep_title">Dvakrat se dotaknite zaklenjenega zaslona za spanje</string>
     <string name="double_tap_lock_sleep_summary">Za spanje se dvakrat dotaknite zaklenjenega zaslona</string>
-    <!-- Global Actions -->
     <string name="global_actions_title">Meni gumba za vklop</string>
     <string name="global_actions_power">Izklopi</string>
     <string name="global_actions_restart">Ponovni zagon</string>
@@ -61,9 +53,6 @@
     <string name="global_actions_users">Uporabniki</string>
     <string name="global_actions_screenshot">Posnetek zaslona</string>
     <string name="global_actions_flashlight">Svetilka</string>
-    <!-- Pin scramble -->
-    <!-- Aggressive battery -->
-    <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Ikone vrstice stanja</string>
     <string name="lock_screen_shortcuts_title">Bližnjice zaklenjenega zaslona</string>
     <string name="lock_screen_shortcuts_summary">Upravljanje bližnjic zaklenjenega zaslona</string>
@@ -73,16 +62,9 @@
         <item>Left-leaning</item>
         <item>Right-leaning</item>
     </string-array>
-    <!-- Volume rocker music control -->
-    <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Vklopite svetilko ko je zaslon izklopljen</string>
     <string name="torch_power_button_gesture_none">Onemogočeno</string>
     <string name="torch_power_button_gesture_dt_toast">Kretnja za preklop na fotoaparat je onemogočena</string>
-    <!-- QS brightness -->
-    <!-- Qs brightness slider -->
-    <!-- Qs auto-brightness icon -->
-    <!-- Status bar clock and date -->
-    <!-- Status bar clock and date options -->
     <string name="status_bar_title">Vrstica stanja</string>
     <string name="clock_enabled">Omogočeno</string>
     <string name="clock_disabled">Onemogočeno</string>
@@ -109,30 +91,13 @@
     <string name="clock_date_right">Desno od časa</string>
     <string name="clock_date_left">Levo od časa</string>
     <string name="clock_date_position">Položaj datuma</string>
-    <!-- Quick QS pulldown -->
     <string name="quick_pulldown_none">Onemogočeno</string>
-    <!-- StatusBar Icons -->
-    <!-- 4G icon -->
-    <!-- Lockscreen battery info indicator  -->
-    <!-- Lock icon -->
-    <!-- Charging animation -->
-    <!-- Network traffic -->
     <string name="network_traffic_autohide_threshold_title">Prag skrivanja omrežne aktivnosti (KB/s)</string>
-    <!-- Battery Bar -->
-    <!-- Color Picker -->
     <string name="color_default">Privzeto</string>
-    <!-- Per App aspect Ratio -->
-    <!-- Hide Statusbar on Lockscreen -->
-    <!-- Dashboard -->
-    <!-- VolumeKeys Swap -->
-    <!-- Lock screen cover art -->
-    <!-- Battery Styles -->
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Način ikone</string>
     <string name="status_bar_battery_style_circle">Krog</string>
     <string name="status_bar_battery_style_text">Besedilo</string>
     <string name="status_bar_battery_style_hidden">Skrito</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Odstotek baterije</string>
     <string name="status_bar_battery_percentage_text_inside">Znotraj ikone</string>
     <string name="status_bar_battery_percentage_text_next">Zraven ikone</string>

@@ -40,14 +40,11 @@
     <string name="buttons_main_category_summary">Donanım ve yazılım anahtarlarını özelleştirme</string>
     <string name="gestures_main_category_summary">Hareket tabanlı seçenekler ve eylemler</string>
     <string name="privacy_main_category_summary">Çeşitli ve istatistik toplama ayarları</string>
-    <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Bize yardım et!</string>
     <string name="carbonfibers_dialog_message">Ne yazık ki, biz sihirbaz değiliz!\n\nBir hata bulursanız, lütfen Jira veya
         aşağıdakilerle bir Carbon geliştiricisine başvurun.\n\n1. Kwoktopus\'u suçla\n2. Logcat veya last_kmsg\n3. Çekirdek ve kullanılan modlar\n4.
         Çeşitli bilgiler\n\nBu bilgilerle bildirimde bulunmazsanız, sorunun dikkate alınmasını beklemeyin.</string>
     <string name="carbonfibers_dialog_toast">Tümünü okuyun!!!</string>
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">CarbonROM istatistikleri</string>
     <string name="anonymous_statistics_summary">Anonim istatistik raporları göndererek CarbonROM\'un daha iyi olmasına yardım edin</string>
     <string name="anonymous_statistics_warning_title">Hakkında</string>
@@ -59,14 +56,12 @@
     <string name="preview_data_title">Veriyi önizle</string>
     <string name="view_stats_title">İstatistikleri görüntüle</string>
     <string name="anonymous_learn_more">Daha fazla bilgi edin</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Benzersiz ID</string>
     <string name="preview_device_title">Cihaz</string>
     <string name="preview_version_title">Sürüm</string>
     <string name="preview_country_title">Ülke</string>
     <string name="preview_carrier_title">Oparatör</string>
     <string name="stats_collection_title">İstatistik koleksiyonunu etkinleştir</string>
-    <!-- Smart Pixels -->
     <string name="smart_pixels_title">Akıllı pikseller</string>
     <string name="smart_pixels_summary">Güç tüketimini azaltmak için pikselleri kapatın</string>
     <string name="smart_pixels_on_power_save_title">Pil tasarrufu için otomatik etkinleştir</string>
@@ -74,17 +69,14 @@
     <string name="smart_pixels_percent">Devre dışı bırakılan piksel yüzdesi</string>
     <string name="smart_pixels_shift">Pikselleri her değiştirerek yanmayı önle</string>
     <string name="smart_pixels_warning_text">Akıllı piksel bir güç tasarrufu özelliğidir. Kaç piksele karar verdiğinize bağlı olarak pil ömründe önemli bir iyileşme görebilirsiniz. İyi bir kullanıcı deneyimi için devre dışı bırakılmış piksel miktarını yüzde 75 olarak ayarlamanızı öneririz.</string>
-    <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Uygulamaları son uygulamalardan gizle</string>
     <string name="hide_apps_from_recents_summary">Uygulamaları son uygulamalar görünümünden gizle</string>
     <string name="hide_from_recents_add_app">Uygulama ekle</string>
     <string name="title_activity_carbon_recents_settings">Son uygulamalar</string>
-    <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">Durum çubuğu</string>
     <string name="double_tap_status_bar_sleep_summary">Cihazı uyutmak için durum çubuğuna iki kez hafifçe dokunun</string>
     <string name="double_tap_lock_sleep_title">Kilit ekranı</string>
     <string name="double_tap_lock_sleep_summary">Cihazı uyutmak için kilit ekranının boş bir alanına iki kez hafifçe dokunun</string>
-    <!-- Global Actions -->
     <string name="global_actions_title">Güç menüsü</string>
     <string name="global_actions_summary">Güç menüsüne seçenekler ekleyin</string>
     <string name="global_actions_power">Güç</string>
@@ -100,10 +92,8 @@
     <string name="global_actions_emergency">Acil durum çağrısı</string>
     <string name="global_actions_advanced_reboot_title">Gelişmiş yeniden başlatma</string>
     <string name="global_actions_advanced_reboot_summary">Yeniden başlatma menüsünde kurtarma ve önyükleyici seçeneklerini göster</string>
-    <!-- Pin scramble -->
     <string name="unlock_scramble_pin_layout_title">Karışık pin düzeni</string>
     <string name="unlock_scramble_pin_layout_summary">Pin klavye düzenini karıştır</string>
-    <!-- Aggressive battery -->
     <string name="aggressive_battery_title">Agresif pilde</string>
     <string name="aggressive_battery_summary">Daha katı pil tasarrufu</string>
     <string name="aggressive_battery_warning_text">Bunlar güç tasarrufu özellikleri. Gezinme uygulamaları gibi boşta çalışmayı amaçlayan servislere müdahale edebilirler. Bu uygulamaları uygulama pil ayarlarından etkilenmekten beyaz listeye alabilirsiniz.</string>
@@ -113,7 +103,6 @@
     <string name="aggressive_standby_summary">Uygulamaların arka planı çalıştırmasını engelle</string>
     <string name="aggressive_battery_saver_title">Pil tasarrufu için otomatik etkinleştir </string>
     <string name="aggressive_battery_saver_summary">Pil tasarrufunu kullanırken agresif pili otomatik olarak etkinleştir</string>
-    <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Durum çubuğu öğeleri</string>
     <string name="status_bar_tuner_summary">Durum çubuğu simgelerini ve seçeneklerini düzenleme</string>
     <string name="navigation_bar_invert_layout_title">Gezinme çubuğu düzenini ters çevir</string>
@@ -126,29 +115,22 @@
         <item>Sol eğilimli</item>
         <item>Sağ eğilimli</item>
     </string-array>
-    <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Oynatma kontrolü</string>
     <string name="volume_rocker_music_controls_summary">Ses parçalarını aramak için ses seviyesi tuşlarını basılı tutun</string>
-    <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Ekran kapalıyken feneri değiştir</string>
     <string name="torch_power_button_gesture_none">Devre dışı</string>
     <string name="torch_power_button_gesture_dt">Güç tuşuna çift dokunma</string>
     <string name="torch_power_button_gesture_dt_toast">Kamera hareketini atlamak şimdi devre dışı</string>
     <string name="torch_power_button_gesture_lp">Güç tuşuna basılı tutma</string>
-    <!-- QS brightness -->
     <string name="qs_brightness_title">Hızlı ayarlar parlaklık tasarımı </string>
     <string name="qs_brightness_title_summary">Hızlı ayarlar parlaklık tasarımını değiştirin</string>
-    <!-- Qs brightness slider -->
     <string name="qs_brightness_slider_title">Parlaklık kaydırıcısı</string>
     <string name="qs_brightness_slider_summary">Parlaklık kaydırıcısı çubuğunu göster</string>
     <string name="qs_brightness_position_bottom">Parlaklık kaydırıcısı konumu</string>
-    <!-- Qs auto-brightness icon -->
     <string name="qs_autobrightness_icon_title">Otomatik parlaklık simgesi</string>
     <string name="qs_autobrightness_icon_summary">Parlaklık kaydırıcısının yanında otomatik parlaklık simgesini göster</string>
-    <!-- Status bar clock and date -->
     <string name="status_bar_clock_title">Durum çubuğu saat ve tarih</string>
     <string name="status_bar_clock_title_summary">Durum çubuğu saat ve tarih biçimini yönet</string>
-    <!-- Status bar clock and date options -->
     <string name="status_bar_title">Durum çubuğu</string>
     <string name="status_bar_style_title">Stil</string>
     <string name="status_bar_clock">Saat ve Tarih</string>
@@ -179,27 +161,20 @@
     <string name="clock_date_right">Saatin sağında</string>
     <string name="clock_date_left">Saatin solunda</string>
     <string name="clock_date_position">Tarih konumu</string>
-    <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Hızlı aşağı çekme</string>
     <string name="quick_pulldown_none">Devre dışı</string>
     <string name="quick_pulldown_right">Sağ taraftan açılan durum çubuğu</string>
     <string name="quick_pulldown_left">Sol taraftan açılan durum çubuğu</string>
-    <!-- StatusBar Icons -->
     <string name="status_bar_icons_title">Durum çubuğu simgeleri</string>
     <string name="status_bar_icons_title_summary">Durum çubuğu simgesi görünürlüğünü değiştir</string>
-    <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G simgesi</string>
     <string name="show_fourg_icon_summary">LTE yerine 4G simgesini göster</string>
-    <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Kilit ekranı pil bilgisi</string>
     <string name="lockscreen_battery_info_summary">Şarj olurken kilit ekranında şarj cihazının maksimum akım voltajını ve pil sıcaklığını görüntüle</string>
-    <!-- Lock icon -->
     <string name="lockscreen_lock_icon_title">Kilit simgesi</string>
     <string name="lockscreen_lock_icon_summary">Mevcut kilit durumu simgesini kilit ekranında gösterir</string>
-    <!-- Charging animation -->
     <string name="charging_animation_title">Şarj animasyonu</string>
     <string name="charging_animation_summary">Cihaz takıldığında bir animasyon görüntüle</string>
-    <!-- Network traffic -->
     <string name="traffic_title">Ağ trafiği göstergeleri</string>
     <string name="traffic_title_summary">Ağ trafiği göstergelerini özelleştirme</string>
     <string name="network_traffic_title">Ağ göstergesi</string>
@@ -211,7 +186,6 @@
     <string name="network_traffic_autohide_threshold_title">Ağ etkinliği otomatik gizlenme eşiği (KB/s)</string>
     <string name="network_traffic_hidearrow">Okları gizle</string>
     <string name="network_traffic_hidearrow_summary">Ağ trafik göstergesi oklarını gizle</string>
-    <!-- Battery Bar -->
     <string name="battery_bar_title">Pil çubuğu</string>
     <string name="battery_bar_summary">Pil çubuğunu dekore et</string>
     <string name="battery_bar_location">Pil çubuğu konumu</string>
@@ -233,7 +207,6 @@
     <string name="battery_bar_gradient_color_summary">Pil seviyesi için bir ölçek olarak degrade renk kullanın</string>
     <string name="battery_bar_high_color">Yüksek seviye renk</string>
     <string name="battery_bar_low_color">Düşük seviye renk</string>
-    <!-- Color Picker -->
     <string name="dialog_color_picker">Renk seçici</string>
     <string name="press_color_to_apply">Uygulamak için rengin üzerine dokunun</string>
     <string name="arrow_right">→</string>
@@ -242,17 +215,14 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Ayarla</string>
     <string name="color_default">Varsayılan</string>
-    <!-- Per App aspect Ratio -->
     <string name="aspect_ratio_apps_enabled_title">Ölçeklendirmeyi etkinleştir</string>
     <string name="aspect_ratio_apps_enabled_summary">Eski uygulamaların ekranın tamamını kullanmasına izin verin</string>
     <string name="aspect_ratio_apps_list_title">Ölçeklemeyi kullanmasına izin verilen uygulamalar</string>
     <string name="aspect_ratio_category_title">Eski uygulama ölçekleme</string>
     <string name="aspect_ratio_apps_info">Değişikliklerden sonra uygulamaların tekrar başlatılması gerekir</string>
     <string name="action_save">Kaydet</string>
-    <!-- Hide Statusbar on Lockscreen -->
     <string name="lockscreen_show_status_bar_title">Durum çubuğunu göster</string>
     <string name="lockscreen_show_status_bar_summary">Kilit ekranında durum çubuğu görünürlüğünü değiştirir</string>
-    <!-- Dashboard -->
     <string name="dashboard_category_title">Kontrol paneli</string>
     <string name="dashboard_conditions_title">Kontrol paneli koşulları</string>
     <string name="summary_dashboard_conditions_enabled">Kontrol paneli koşulları etkin</string>
@@ -260,15 +230,11 @@
     <string name="dashboard_suggestions_title">Kontrol paneli önerileri</string>
     <string name="summary_dashboard_suggestions_enabled">Kontrol paneli önerileri etkinleştirildi</string>
     <string name="summary_dashboard_suggestions_disabled">Kontrol paneli önerileri devre dışı bırakıldı</string>
-    <!-- VolumeKeys Swap -->
     <string name="swap_volume_keys_on_rotation_title">Ses tuşlarının yerini değiştir</string>
     <string name="swap_volume_keys_on_rotation_summary">Cihazı döndürdükten sonra ses tuşlarının davranışını değiştirin</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Medya kapak görüntüsü</string>
-    <!-- Battery Styles -->
     <string name="battery_style_category_title">Pil</string>
     <string name="battery_percent_title">Pil yüzdesi</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Pil stili</string>
     <string name="status_bar_battery_style_icon_portrait">Dikey simge (Varsayılan)</string>
     <string name="status_bar_battery_style_circle">Daire</string>
@@ -276,7 +242,6 @@
     <string name="status_bar_battery_style_filled_circle">Daire (Katı)</string>
     <string name="status_bar_battery_style_text">Metin</string>
     <string name="status_bar_battery_style_hidden">Gizli</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Pil yüzdesi</string>
     <string name="status_bar_battery_percentage_default">Gizle (Varsayılan)</string>
     <string name="status_bar_battery_percentage_text_inside">Simge içinde</string>

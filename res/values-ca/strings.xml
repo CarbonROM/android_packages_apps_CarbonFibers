@@ -19,10 +19,7 @@
     <string name="buttons_software_category">Botons del programari</string>
     <string name="buttons_hardware_category">Botons de hardware</string>
     <string name="shortcuts">Menú d\'apagar</string>
-    <!-- Dialog -->
     <string name="carbonfibers_dialog_title">Ajudeu-nos a ajudar-vos!</string>
-    <!-- Anonymous Statistics #CM -->
-    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">Estadístiques de CarbonROM</string>
     <string name="anonymous_statistics_summary">Ajudeu a fer que CarbonROM estigui millor introduint informes d\'estadístics anònims</string>
     <string name="anonymous_statistics_warning_title">Quant a</string>
@@ -30,29 +27,24 @@
     <string name="preview_data_title">Visualització prèvia de dades</string>
     <string name="view_stats_title">Veure estadístiques</string>
     <string name="anonymous_learn_more">Aprèn més</string>
-    <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">ID únic</string>
     <string name="preview_device_title">Dispositiu</string>
     <string name="preview_version_title">Versió</string>
     <string name="preview_country_title">País</string>
     <string name="preview_carrier_title">Companyia</string>
-    <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smart Pixels</string>
     <string name="smart_pixels_summary">Apagueu els píxels per reduir el consum d\'energia</string>
     <string name="smart_pixels_on_power_save_title">Activa automàticament el estalvi de la bateria</string>
     <string name="smart_pixels_percent">Percentatge de píxels a desactivar</string>
     <string name="smart_pixels_shift">Eviteu cremats canviant cada píxels</string>
     <string name="smart_pixels_warning_text">Smart Pixels és una característica d\'estalvi d\'energia. Depenent de quants píxels us decidiu apagar, podríeu veure una millora significativa de la durada de la bateria. Per obtenir una bona experiència d\'usuari, us recomanem que configureu la quantitat de píxels desactivats al 75 per cent mentre es desplaça cada 10 minuts.</string>
-    <!-- Hide Apps from Recents -->
     <string name="hide_apps_from_recents_title">Amaga les aplicacions dels recents</string>
     <string name="hide_from_recents_add_app">Afegeix aplicació</string>
     <string name="title_activity_carbon_recents_settings">Recents</string>
-    <!-- tap-to-sleep -->
     <string name="double_tap_status_bar_sleep_title">Toca dues vegades la barra d\'estat per suspendre</string>
     <string name="double_tap_status_bar_sleep_summary">Toqueu la barra d\'estat dues vegades per suspendre</string>
     <string name="double_tap_lock_sleep_title">Toca dues vegades la pantalla de bloqueig per suspendre</string>
     <string name="double_tap_lock_sleep_summary">Toca la pantalla de bloqueig dues vegades per suspendre</string>
-    <!-- Global Actions -->
     <string name="global_actions_title">Menú d\'apagar</string>
     <string name="global_actions_power">Encesa</string>
     <string name="global_actions_restart">Reinicia</string>
@@ -61,9 +53,6 @@
     <string name="global_actions_users">Usuaris</string>
     <string name="global_actions_screenshot">Captura de pantalla</string>
     <string name="global_actions_flashlight">Llanterna</string>
-    <!-- Pin scramble -->
-    <!-- Aggressive battery -->
-    <!-- SystemUI Tuner -->
     <string name="status_bar_tuner_title">Icones de la barra d\'estat</string>
     <string name="lock_screen_shortcuts_title">Dreceres a la pantalla de bloqueig</string>
     <string name="lock_screen_shortcuts_summary">Gestioneu els accessos directes de la pantalla de bloqueig</string>
@@ -73,16 +62,9 @@
         <item>Left-leaning</item>
         <item>Right-leaning</item>
     </string-array>
-    <!-- Volume rocker music control -->
-    <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Alterna la llanterna quan la pantalla s\'apaga</string>
     <string name="torch_power_button_gesture_none">Deshabilitat</string>
     <string name="torch_power_button_gesture_dt_toast">El salt al gest de la càmera està desactivat</string>
-    <!-- QS brightness -->
-    <!-- Qs brightness slider -->
-    <!-- Qs auto-brightness icon -->
-    <!-- Status bar clock and date -->
-    <!-- Status bar clock and date options -->
     <string name="status_bar_title">Barra d\'estat</string>
     <string name="clock_enabled">Habilitat</string>
     <string name="clock_disabled">Deshabilitat</string>
@@ -109,30 +91,13 @@
     <string name="clock_date_right">A la dreta de l\'hora</string>
     <string name="clock_date_left">A l\'esquerra de l\'hora</string>
     <string name="clock_date_position">Posició de la data</string>
-    <!-- Quick QS pulldown -->
     <string name="quick_pulldown_none">Deshabilitat</string>
-    <!-- StatusBar Icons -->
-    <!-- 4G icon -->
-    <!-- Lockscreen battery info indicator  -->
-    <!-- Lock icon -->
-    <!-- Charging animation -->
-    <!-- Network traffic -->
     <string name="network_traffic_autohide_threshold_title">Ocultar automàticament l\'activitat de la xarxa (KB/s)</string>
-    <!-- Battery Bar -->
-    <!-- Color Picker -->
     <string name="color_default">Predeterminat</string>
-    <!-- Per App aspect Ratio -->
-    <!-- Hide Statusbar on Lockscreen -->
-    <!-- Dashboard -->
-    <!-- VolumeKeys Swap -->
-    <!-- Lock screen cover art -->
-    <!-- Battery Styles -->
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Estil de la bateria</string>
     <string name="status_bar_battery_style_circle">Cercle</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_style_hidden">Amagat</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Percentatge de bateria</string>
     <string name="status_bar_battery_percentage_text_inside">A l\'interior de la icona</string>
     <string name="status_bar_battery_percentage_text_next">Al costat de la icona</string>
