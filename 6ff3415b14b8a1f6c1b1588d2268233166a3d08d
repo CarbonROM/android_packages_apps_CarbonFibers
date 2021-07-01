@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c48fb2fd_32c7bb44",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2021-07-01T20:30:22Z",
+      "side": 1,
+      "message": "works, but should go into Gestures, next to the doubletap on lockscreen gesture.",
+      "revId": "6ff3415b14b8a1f6c1b1588d2268233166a3d08d",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
+    }
+  ]
+}
