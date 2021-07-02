@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9799d10c_64f0fb4a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2021-07-02T23:08:27Z",
+      "side": 1,
+      "message": "Should be moved in CF -\u003e Gestures, alongside the doubletap lockscreen preference. Also not in the submenu, as discussed on Slack.\n\n",
+      "revId": "53ddf16338b2f86e9f25bb46b330cafa4bff5752",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
+    }
+  ]
+}
