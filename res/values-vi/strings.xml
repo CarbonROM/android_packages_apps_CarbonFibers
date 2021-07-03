@@ -111,4 +111,5 @@
     <string name="action_save">Lưu</string>
     <string name="swap_volume_keys_on_rotation_title">Đảo ngược nút âm lượng</string>
     <string name="swap_volume_keys_on_rotation_summary">Thay đổi hành vi của các nút âm lượng khi xoay thiết bị</string>
+    <string name="torch_power_button_gesture_none">Đã vô hiệu hóa</string>
 </resources>

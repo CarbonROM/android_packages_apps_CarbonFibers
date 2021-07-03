@@ -76,4 +76,5 @@
     <string name="smart_pixels_percent">Odstotek izklopljenih pikslov</string>
     <string name="smart_pixels_shift">Prepreči vžiganje z menjavo pikslov vsakih</string>
     <string name="smart_pixels_warning_text">Smart Pixels je oblika varčevanja z baterijo. Lahko pripelje do občutnega podaljšanja trajanja baterije, odvisno od odstotka izklopljenih pikslov. Za dobro uporabniško izkušnjo priporočamo izklop 75 odstotkov pikslov z menjavo vsakih 10 minut.</string>
+    <string name="torch_power_button_gesture_none">Onemogočeno</string>
 </resources>

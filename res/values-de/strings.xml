@@ -135,8 +135,6 @@
     <string name="aspect_ratio_category_title">Legacy-App-Skalierung</string>
     <string name="aspect_ratio_apps_info">Nach Änderungen müssen die Anwendungen neu gestartet werden</string>
     <string name="action_save">Speichern</string>
-    <string name="volume_rocker_music_controls_title">Wiedergabesteuerung bei ausgeschaltetem Bildschirm</string>
-    <string name="volume_rocker_music_controls_summary">Halten Sie die Lautstärketasten, um die Musik zu steuern</string>
     <string name="swap_volume_keys_on_rotation_title">Lautstärke-Tasten vertauschen</string>
     <string name="swap_volume_keys_on_rotation_summary">Ändere das Verhalten der Lautstärketasten beim Drehen des Geräts</string>
     <string name="show_fourg_icon_title">4G-Symbol</string>
@@ -145,4 +143,5 @@
     <string name="traffic_title_summary">Netzwerkverkehrsindikatoren anpassen</string>
     <string name="network_traffic_title">Netzwerkmonitor</string>
     <string name="network_traffic_state_title">Zeigt die Netzaktivität in der Statusleiste an</string>
+    <string name="torch_power_button_gesture_none">Deaktiviert</string>
 </resources>

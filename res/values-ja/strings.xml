@@ -123,8 +123,6 @@
     <string name="aspect_ratio_category_title">従来のアプリのスケーリング</string>
     <string name="aspect_ratio_apps_info">変更後にアプリを再起動する必要があります</string>
     <string name="action_save">保存</string>
-    <string name="volume_rocker_music_controls_title">再生コントロール</string>
-    <string name="volume_rocker_music_controls_summary">音量ボタンを長押しして音楽トラックをシークする</string>
     <string name="swap_volume_keys_on_rotation_title">音量ボタンの入れ替え</string>
     <string name="swap_volume_keys_on_rotation_summary">端末回転時に音量ボタンの上下を入れ替える</string>
     <string name="show_fourg_icon_title">4G アイコン</string>
@@ -133,4 +131,5 @@
     <string name="traffic_title_summary">通信速度表示を編集する</string>
     <string name="network_traffic_title">通信速度</string>
     <string name="network_traffic_state_title">ステータスバーに通信速度を表示</string>
+    <string name="torch_power_button_gesture_none">無効</string>
 </resources>

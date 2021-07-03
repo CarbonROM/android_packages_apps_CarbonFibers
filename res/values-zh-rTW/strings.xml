@@ -123,8 +123,6 @@
     <string name="aspect_ratio_category_title">舊版應用程式的縮放比例</string>
     <string name="aspect_ratio_apps_info">更改後需要重新啟動應用程式</string>
     <string name="action_save">保存</string>
-    <string name="volume_rocker_music_controls_title">螢幕關閉撥放控制</string>
-    <string name="volume_rocker_music_controls_summary">按住音量鍵查找音軌</string>
     <string name="swap_volume_keys_on_rotation_title">交換音量按鍵</string>
     <string name="swap_volume_keys_on_rotation_summary">旋轉設備時更改音量按鍵的行為</string>
     <string name="show_fourg_icon_title">4G 圖示</string>
@@ -133,4 +131,5 @@
     <string name="traffic_title_summary">自定義網路傳輸速度顯示</string>
     <string name="network_traffic_title">網絡流量</string>
     <string name="network_traffic_state_title">在狀態欄位中顯示網路活動</string>
+    <string name="torch_power_button_gesture_none">停用</string>
 </resources>
