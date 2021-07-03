@@ -123,8 +123,6 @@
     <string name="aspect_ratio_category_title">Zmena veľkosti starších aplikácií</string>
     <string name="aspect_ratio_apps_info">Po vykonaných zmenách je nutné aplikáciu reštartovať</string>
     <string name="action_save">Uložiť</string>
-    <string name="volume_rocker_music_controls_title">Ovládanie prehrávania pri vypnutej obrazovke</string>
-    <string name="volume_rocker_music_controls_summary">Podržte tlačidlá hlasitosti pre vyhľadávanie zvukových stôp</string>
     <string name="swap_volume_keys_on_rotation_title">Prehodiť tlačidlá hlasitosti</string>
     <string name="swap_volume_keys_on_rotation_summary">Zmeniť správanie tlačidiel hlasitosti pri otočení zariadenia</string>
     <string name="show_fourg_icon_title">Ikona 4G</string>
@@ -133,4 +131,5 @@
     <string name="traffic_title_summary">Prispôsobiť indikátory sieťovej prevádzky</string>
     <string name="network_traffic_title">Sieťová prevádzka</string>
     <string name="network_traffic_state_title">Zobraziť indikátor sieťovej prevádzky v stavovom riadku</string>
+    <string name="torch_power_button_gesture_none">Zakázané</string>
 </resources>

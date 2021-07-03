@@ -154,8 +154,6 @@
     <string name="aspect_ratio_category_title">Změna velikosti starších aplikací</string>
     <string name="aspect_ratio_apps_info">Po provedených změnách je nutné aplikaci restartovat</string>
     <string name="action_save">Uložit</string>
-    <string name="volume_rocker_music_controls_title">Ovládání přehrávání při vypnuté obrazovce</string>
-    <string name="volume_rocker_music_controls_summary">Podržte tlačítka hlasitosti pro vyhledávání zvukových stop</string>
     <string name="swap_volume_keys_on_rotation_title">Prohození tlačítek hlasitosti</string>
     <string name="swap_volume_keys_on_rotation_summary">Změnit chování tlačítek hlasitosti při otočení zařízení</string>
     <string name="volume_panel_on_left_title">Panel hlasitosti na levé straně</string>
@@ -170,4 +168,5 @@
     <string name="network_traffic_state_title">Zobrazit indikátor síťové aktivity ve stavové liště</string>
     <string name="network_traffic_state_summary">Zobrazit aktivitu sítě ve stavovém řádku Rychlého nastavení</string>
     <string name="network_traffic_autohide_threshold_title">Limit pro automatické skrytí síťové aktivity</string>
+    <string name="torch_power_button_gesture_none">Zakázáno</string>
 </resources>

@@ -123,8 +123,6 @@
     <string name="aspect_ratio_category_title">Устаревшее масштабирование приложения</string>
     <string name="aspect_ratio_apps_info">Приложения должны быть перезапущены после изменений</string>
     <string name="action_save">Сохранить</string>
-    <string name="volume_rocker_music_controls_title">Управление воспроизведением при выключенном экране</string>
-    <string name="volume_rocker_music_controls_summary">Удерживайте клавиши громкости для переключения треков</string>
     <string name="swap_volume_keys_on_rotation_title">Поменять кнопки громкости</string>
     <string name="swap_volume_keys_on_rotation_summary">Изменить поведение кнопок громкости при повороте устройства</string>
     <string name="show_fourg_icon_title">4G значок</string>
@@ -133,4 +131,5 @@
     <string name="traffic_title_summary">Настройка индикатора сетевого трафика</string>
     <string name="network_traffic_title">Трафик сети</string>
     <string name="network_traffic_state_title">Показать сетевую активность в строке состояния</string>
+    <string name="torch_power_button_gesture_none">Отключено</string>
 </resources>

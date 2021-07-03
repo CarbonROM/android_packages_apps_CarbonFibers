@@ -73,6 +73,5 @@
     <string name="lock_screen_shortcuts_title">Vergrendelscherm snelkoppelingen</string>
     <string name="lock_screen_shortcuts_summary">Beheer vergrendelscherm onder snelkoppelingen</string>
     <string name="smart_pixels_on_power_save_summary">Gebruik Smart Pixels als energiebesparing is ingeschakeld</string>
-    <string name="volume_rocker_music_controls_title">Scherm uit afspeelbediening</string>
-    <string name="volume_rocker_music_controls_summary">Houd de volumeknoppen ingedrukt om audiotracks te zoeken</string>
+    <string name="torch_power_button_gesture_none">Uitgeschakeld</string>
 </resources>

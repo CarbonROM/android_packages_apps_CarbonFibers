@@ -157,8 +157,6 @@
     <string name="aspect_ratio_category_title">Eski uygulama ölçekleme</string>
     <string name="aspect_ratio_apps_info">Değişikliklerden sonra uygulamaların tekrar başlatılması gerekir</string>
     <string name="action_save">Kaydet</string>
-    <string name="volume_rocker_music_controls_title">Oynatma kontrolü</string>
-    <string name="volume_rocker_music_controls_summary">Ses parçalarını aramak için ses seviyesi tuşlarını basılı tutun</string>
     <string name="swap_volume_keys_on_rotation_title">Ses tuşlarının yerini değiştir</string>
     <string name="swap_volume_keys_on_rotation_summary">Cihazı döndürdükten sonra ses tuşlarının davranışını değiştirin</string>
     <string name="volume_panel_on_left_title">Ses paneli konumunu değiştir</string>
@@ -173,4 +171,5 @@
     <string name="network_traffic_state_title">Durum çubuğunda ağ etkinliği göster</string>
     <string name="network_traffic_state_summary">Hızlı ayarlar durum çubuğunda ağ etkinliğini görüntüle</string>
     <string name="network_traffic_autohide_threshold_title">Net etkinlik otomatik gizleme eşiği</string>
+    <string name="torch_power_button_gesture_none">Devre dışı</string>
 </resources>
