@@ -76,4 +76,5 @@
     <string name="smart_pixels_percent">Percentatge de píxels a desactivar</string>
     <string name="smart_pixels_shift">Eviteu cremats canviant cada píxels</string>
     <string name="smart_pixels_warning_text">Smart Pixels és una característica d\'estalvi d\'energia. Depenent de quants píxels us decidiu apagar, podríeu veure una millora significativa de la durada de la bateria. Per obtenir una bona experiència d\'usuari, us recomanem que configureu la quantitat de píxels desactivats al 75 per cent mentre es desplaça cada 10 minuts.</string>
+    <string name="torch_power_button_gesture_none">Deshabilitat</string>
 </resources>

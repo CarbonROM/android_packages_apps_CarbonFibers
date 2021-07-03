@@ -104,9 +104,8 @@
     <string name="smart_pixels_percent">Pourcentage de pixels à désactiver</string>
     <string name="smart_pixels_shift">Empêcher des dommages en déplaçant des pixels tous les</string>
     <string name="smart_pixels_warning_text">Smart Pixels est une fonctionnalité d\'économie d\'énergie. Selon le nombre de pixels que vous décidez de désactiver, vous pourriez voir une amélioration significative de la durée de vie de la batterie. Pour une bonne expérience utilisateur, nous recommandons de définir le nombre de pixels désactivés à 75 pourcents tout en changeant toutes les 10 minutes.</string>
-    <string name="volume_rocker_music_controls_title">Suivre le contrôle de la lecture lorsque l\'écran est éteint</string>
-    <string name="volume_rocker_music_controls_summary">Maintenez la touche de volume enfoncée pour parcourir les pistes audio</string>
     <string name="show_fourg_icon_title">Icône 4G</string>
     <string name="show_fourg_icon_summary">Afficher l\'icône 4G en icône de signal au lieu de LTE</string>
     <string name="network_traffic_title">Trafic réseau</string>
+    <string name="torch_power_button_gesture_none">Désactivé</string>
 </resources>

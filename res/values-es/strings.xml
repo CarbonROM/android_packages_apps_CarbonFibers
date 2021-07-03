@@ -123,8 +123,6 @@
     <string name="aspect_ratio_category_title">Escalado de las aplicaciones antiguas</string>
     <string name="aspect_ratio_apps_info">Las aplicaciones deben reiniciarse después de los cambios</string>
     <string name="action_save">Guardar</string>
-    <string name="volume_rocker_music_controls_title">Control de reproducción con la pantalla apagada</string>
-    <string name="volume_rocker_music_controls_summary">Mantén pulsadas las teclas de volumen para buscar pistas de audio</string>
     <string name="swap_volume_keys_on_rotation_title">Intercambiar los botones de volumen</string>
     <string name="swap_volume_keys_on_rotation_summary">Cambiar el comportamiento de los botones de volumen al girar el dispositivo</string>
     <string name="show_fourg_icon_title">Icono 4G</string>
@@ -133,4 +131,5 @@
     <string name="traffic_title_summary">Personalizar indicadores de tráfico de red</string>
     <string name="network_traffic_title">Tráfico de red</string>
     <string name="network_traffic_state_title">Mostrar actividad de red en la barra de estado</string>
+    <string name="torch_power_button_gesture_none">Deshabilitado</string>
 </resources>

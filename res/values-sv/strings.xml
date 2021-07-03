@@ -72,4 +72,5 @@
     <string name="smart_pixels_title">Smarta Pixlar</string>
     <string name="smart_pixels_percent">Procent av pixlar att inaktivera</string>
     <string name="smart_pixels_shift">Förhindra inbränning av skiftande pixlar var</string>
+    <string name="torch_power_button_gesture_none">Inaktiverad</string>
 </resources>
