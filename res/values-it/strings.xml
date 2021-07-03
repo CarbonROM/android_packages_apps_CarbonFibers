@@ -123,8 +123,6 @@
     <string name="aspect_ratio_category_title">Ridimensionamento delle app legacy</string>
     <string name="aspect_ratio_apps_info">L\'applicazione dev\'essere riavviata dopo i cambiamenti</string>
     <string name="action_save">Salva</string>
-    <string name="volume_rocker_music_controls_title">Controllo riproduzione schermo spento</string>
-    <string name="volume_rocker_music_controls_summary">Tieni premuto i tasti volume per cercare tracce audio</string>
     <string name="swap_volume_keys_on_rotation_title">Scambia i tasti del volume</string>
     <string name="swap_volume_keys_on_rotation_summary">Cambia il comportamento dei pulsanti del volume quando si ruota il dispositivo</string>
     <string name="show_fourg_icon_title">Icona 4G</string>
@@ -133,4 +131,5 @@
     <string name="traffic_title_summary">Personalizza indicatori di traffico di rete</string>
     <string name="network_traffic_title">Traffico di rete</string>
     <string name="network_traffic_state_title">Mostra l\'attività di rete nella barra di stato</string>
+    <string name="torch_power_button_gesture_none">Disattivato</string>
 </resources>

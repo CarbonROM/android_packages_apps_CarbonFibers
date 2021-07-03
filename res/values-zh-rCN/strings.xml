@@ -123,8 +123,6 @@
     <string name="aspect_ratio_category_title">旧版应用缩放</string>
     <string name="aspect_ratio_apps_info">修改后需重启应用程序</string>
     <string name="action_save">保存</string>
-    <string name="volume_rocker_music_controls_title">锁屏播放控制</string>
-    <string name="volume_rocker_music_controls_summary">按住音量键来切换音乐</string>
     <string name="swap_volume_keys_on_rotation_title">音量键自动调整</string>
     <string name="swap_volume_keys_on_rotation_summary">在旋转设备时自动调整音量键功能</string>
     <string name="show_fourg_icon_title">4G图标</string>
@@ -133,4 +131,5 @@
     <string name="traffic_title_summary">自定义网速显示</string>
     <string name="network_traffic_title">网速显示</string>
     <string name="network_traffic_state_title">在状态栏显示网速</string>
+    <string name="torch_power_button_gesture_none">已停用</string>
 </resources>

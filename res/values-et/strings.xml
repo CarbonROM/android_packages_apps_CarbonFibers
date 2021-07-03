@@ -119,8 +119,6 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string name="aspect_ratio_category_title">Pärandrakeduste skaleerimine</string>
     <string name="aspect_ratio_apps_info">Rakendused tuleb peale muutusi taaskäivitada</string>
     <string name="action_save">Salvesta</string>
-    <string name="volume_rocker_music_controls_title">Ekraani väljalülituse taasesituse juhtimine</string>
-    <string name="volume_rocker_music_controls_summary">Heliribade kuvamiseks hoidke helitugevuse klahve</string>
     <string name="swap_volume_keys_on_rotation_title">Vaheta helitugevusklahvid</string>
     <string name="swap_volume_keys_on_rotation_summary">Muuda helitugevuse nuppude käitumist, kui seadet pööratakse</string>
     <string name="show_fourg_icon_title">4G ikoon</string>
@@ -129,4 +127,5 @@ Cyanogeni arendajatele, et jälgida installe erinevatel seadmetel. Esitatud teav
     <string name="traffic_title_summary">Kohanda internetiliikluse indikaatoreid</string>
     <string name="network_traffic_title">Võrguliiklus</string>
     <string name="network_traffic_state_title">Näita olekuribal internetiühenduse aktiivsust</string>
+    <string name="torch_power_button_gesture_none">Keelatud</string>
 </resources>

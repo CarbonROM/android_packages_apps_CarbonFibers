@@ -124,8 +124,6 @@ Ativar escala</string>
     <string name="aspect_ratio_category_title">Dimensionamento de aplicativos legados</string>
     <string name="aspect_ratio_apps_info">Aplicativos precisam ser reiniciados após alterações</string>
     <string name="action_save">Salvar</string>
-    <string name="volume_rocker_music_controls_title">Controle de reprodução de tela desligada</string>
-    <string name="volume_rocker_music_controls_summary">Segure as teclas de volume para procurar faixas de áudio</string>
     <string name="swap_volume_keys_on_rotation_title">Trocar os botões de volume</string>
     <string name="swap_volume_keys_on_rotation_summary">Alterar comportamento dos botões de volume ao girar o dispositivo</string>
     <string name="show_fourg_icon_title">Ícone 4G</string>
@@ -134,4 +132,5 @@ Ativar escala</string>
     <string name="traffic_title_summary">Personalizar indicadores de tráfego de rede</string>
     <string name="network_traffic_title">Tráfego de rede</string>
     <string name="network_traffic_state_title">Mostrar atividade de rede na barra de status</string>
+    <string name="torch_power_button_gesture_none">Desativado</string>
 </resources>

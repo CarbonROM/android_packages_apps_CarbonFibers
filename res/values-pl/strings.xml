@@ -124,8 +124,6 @@ W zależności od tego jak dużo pikseli zdecydujesz się wyłączyć, będziesz
     <string name="aspect_ratio_category_title">Starsze skalowanie aplikacji</string>
     <string name="aspect_ratio_apps_info">Aplikacja potrzebuje ponownego uruchomienia telefonu by wprowadzić zmiany</string>
     <string name="action_save">Zapisz</string>
-    <string name="volume_rocker_music_controls_title">Odtwarzanie w tle</string>
-    <string name="volume_rocker_music_controls_summary">Przytrzymaj przyciski głośności by przełączyć utwór</string>
     <string name="swap_volume_keys_on_rotation_title">Zamień przyciski głośności</string>
     <string name="swap_volume_keys_on_rotation_summary">Zmień zachowanie przycisków głośności podczas obracania urządzenia</string>
     <string name="show_fourg_icon_title">Ikona 4G</string>
@@ -134,4 +132,5 @@ W zależności od tego jak dużo pikseli zdecydujesz się wyłączyć, będziesz
     <string name="traffic_title_summary">Dostosuj wskaźniki ruchu sieciowego</string>
     <string name="network_traffic_title">Ruch sieciowy</string>
     <string name="network_traffic_state_title">Pokaż aktywność sieci na pasku stanu</string>
+    <string name="torch_power_button_gesture_none">Wyłączone</string>
 </resources>
