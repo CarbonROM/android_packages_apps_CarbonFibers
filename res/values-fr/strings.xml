@@ -28,8 +28,19 @@
     <string name="lockscreen_main_category_summary">Modifier la disposition et les options de l\'écran de verrouillage</string>
     <string name="buttons_main_category_summary">Personnaliser les clés matérielles et logicielles</string>
     <string name="gestures_main_category_summary">Options et actions basées sur les gestes</string>
+    <string name="privacy_main_category_summary">Collecte de statistiques et de confidentialité</string>
+    <string name="status_bar_icons_category">Icônes</string>
+    <string name="qs_category">Options des réglages rapides</string>
     <string name="clock_category">Horloge &amp; Date</string>
+    <string name="battery_category">Disposition de la batterie</string>
+    <string name="lockscreen_layout_category">Option de mise en page</string>
+    <string name="lockscreen_info_category">Informations sur l\'écran de verrouillage</string>
+    <string name="button_gesture_category">Gestes des boutons</string>
+    <string name="navigation_category">Navigation</string>
     <string name="carbonfibers_dialog_title">Aidez-nous à vous aider !</string>
+    <string name="carbonfibers_dialog_message">Malheureusement, nous ne sommes pas des magiciens!\n\nSi vous trouvez un bug, veuillez nous contacter sur telegram
+	    ou nous écrire à support@carbonrom. rg avec les informations suivantes.\n\n1. Version CarbonROM et périphérique\n2. Logcat et/ou last_kmsg\n3. Noyau et mods utilisés\n4.
+	    Informations diverses\n\nSi vous ne signalez pas avec les informations ci-dessus, ne vous attendez pas à ce que le problème soit pris en considération.</string>
     <string name="carbonfibers_dialog_toast">Tout lire !</string>
     <string name="anonymous_statistics_title">Statistiques de CarbonROM</string>
     <string name="anonymous_statistics_summary">Aider à améliorer CarbonROM en envoyant des rapports de statistiques anonymes</string>
@@ -45,7 +56,18 @@
     <string name="preview_country_title">Pays</string>
     <string name="preview_carrier_title">Opérateur</string>
     <string name="stats_collection_title">Activer la collecte de statistiques</string>
+    <string name="stats_collection_summary">Lorsqu\'il est activé, autorise la collection de métriques</string>
     <string name="quick_pulldown_none">Désactivé</string>
+    <string name="quick_pulldown_right">Tirer vers le bas de la barre d\'état depuis le côté droit</string>
+    <string name="lockscreen_media_art_title">Art multimédia de l\'écran de verrouillage</string>
+    <string name="lockscreen_media_art_summary">Afficher la pochette du média lors de la lecture de la musique</string>
+    <string name="powermenu_advanced_reboot_title">Redémarrage avancé</string>
+    <string name="powermenu_advanced_reboot_summary">Autoriser l\'accès au recovery et au bootloader</string>
+    <string name="qs_columns_rows_config_summary">Configurer la façon dont les tuiles des paramètres rapides sont arrangées</string>
+    <string name="portrait_title">Portrait</string>
+    <string name="landscape_title">Paysage</string>
+    <string name="seekbar_rows">Lignes</string>
+    <string name="submit_button">Soumettre</string>
     <string name="aggressive_battery_title">Aggressive Battery</string>
     <string name="aggressive_battery_summary">Économie plus stricte de batterie</string>
     <string name="aggressive_battery_warning_text">Ces options peuvent vous aider à économiser de l\'énergie. Cependant, ils peuvent affecter les applications qui s\'exécutent en idle (telles que les applications de navigation). Ajoutez-les à la liste blanche pour ne pas les affecter.</string>
@@ -55,15 +77,21 @@
     <string name="aggressive_standby_summary">Restreindre les applications en cours d\'exécution en arrière-plan</string>
     <string name="aggressive_battery_saver_title">Activer automatiquement avec l\'économiseur de batterie</string>
     <string name="aggressive_battery_saver_summary">Activer la Aggressive Battery automatiquement lors de l\'utilisation de l\'économiseur de batterie</string>
+    <string name="lockscreen_battery_info_title">Info du chargement sur l’écran de verrouillage</string>
+    <string name="lockscreen_battery_info_summary">Afficher le courant, la tension, le wattage et la température de la batterie sur l\'écran de verrouillage pendant la charge</string>
+    <string name="status_bar_clock_title">Paramètres de l\'horloge</string>
+    <string name="status_bar_clock_summary">Option d\'horloge et de la date</string>
     <string name="clock_enabled">Activé</string>
     <string name="clock_disabled">Désactivé</string>
     <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
+    <string name="status_bar_show_clock_title">Afficher la date et l\'heure</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">L\'horloge au format 24 heures est activée</string>
     <string name="enable_clock_weekday">Jour de la semaine</string>
     <string name="enable_clock_weekday_summary">Jour de la semaine abrégé devant l\'heure</string>
     <string name="dont_show">Ne pas afficher</string>
     <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Afficher la date personnalisée avant l\'horloge</string>
     <string name="clock_date_style">Style de la date</string>
     <string name="clock_date_format">Format de la date</string>
     <string name="clock_date_string_edittext_title">Le format de date doit être par exemple: MM/jj/aa</string>
@@ -80,6 +108,8 @@
     <string name="clock_date_right">A droite de l\'heure</string>
     <string name="clock_date_left">A gauche de l\'heure</string>
     <string name="clock_date_position">Emplacement de la date</string>
+    <string name="clock_seconds_display">Secondes</string>
+    <string name="clock_seconds_display_summary">Afficher les secondes dans l\'horodatage</string>
     <string name="status_bar_battery_style_title">Style de la batterie</string>
     <string name="status_bar_battery_style_circle">Cercle</string>
     <string name="status_bar_battery_style_text">Texte</string>
@@ -87,6 +117,7 @@
     <string name="status_bar_battery_percentage_title">Pourcentage de batterie</string>
     <string name="status_bar_battery_percentage_text_inside">À l\'intérieur de l\'icône</string>
     <string name="status_bar_battery_percentage_text_next">À côté de l\'icône</string>
+    <string name="navigation_bar_invert_layout_title">Inverser la disposition de la barre de navigation</string>
     <string name="unlock_scramble_pin_layout_title">Mélanger le clavier lors de la saisie du code PIN</string>
     <string name="unlock_scramble_pin_layout_summary">Mélanger de manière aléatoire la disposition du clavier lors de la saisie du code PIN</string>
     <string name="hide_apps_from_recents_title">Masquer les applications des récents</string>
@@ -104,8 +135,15 @@
     <string name="smart_pixels_percent">Pourcentage de pixels à désactiver</string>
     <string name="smart_pixels_shift">Empêcher des dommages en déplaçant des pixels tous les</string>
     <string name="smart_pixels_warning_text">Smart Pixels est une fonctionnalité d\'économie d\'énergie. Selon le nombre de pixels que vous décidez de désactiver, vous pourriez voir une amélioration significative de la durée de vie de la batterie. Pour une bonne expérience utilisateur, nous recommandons de définir le nombre de pixels désactivés à 75 pourcents tout en changeant toutes les 10 minutes.</string>
+    <string name="volume_panel_on_left_title">Changer la position du panneau de volume</string>
+    <string name="volume_panel_on_left_summary">Déplacer le panneau de volume vers la gauche</string>
+    <string name="ls_qs_disabled_title">Désactiver les réglages rapides sur l\'écran de verrouillage</string>
+    <string name="ls_qs_disabled_summary">Désactiver l’affichage des paramètres rapides sur l\'écran de verrouillage</string>
     <string name="show_fourg_icon_title">Icône 4G</string>
     <string name="show_fourg_icon_summary">Afficher l\'icône 4G en icône de signal au lieu de LTE</string>
+    <string name="traffic_title">Indicateurs de trafic</string>
+    <string name="traffic_title_summary">Personnaliser les indicateurs de trafic réseau</string>
     <string name="network_traffic_title">Trafic réseau</string>
+    <string name="network_traffic_state_title">Afficher l\'activité réseau dans la barre d\'état</string>
     <string name="torch_power_button_gesture_none">Désactivé</string>
 </resources>

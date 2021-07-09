@@ -16,4 +16,6 @@
     <string name="lock_screen_category">Zárképernyő</string>
     <string name="status_bar_category">Állapotsáv</string>
     <string name="system_category">Rendszer</string>
+    <string name="privacy_main_category_summary">Adatvédelem</string>
+    <string name="status_bar_icons_category">Ikonok</string>
 </resources>

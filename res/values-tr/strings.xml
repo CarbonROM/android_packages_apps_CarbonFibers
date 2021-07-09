@@ -171,5 +171,16 @@
     <string name="network_traffic_state_title">Durum çubuğunda ağ etkinliği göster</string>
     <string name="network_traffic_state_summary">Hızlı ayarlar durum çubuğunda ağ etkinliğini görüntüle</string>
     <string name="network_traffic_autohide_threshold_title">Net etkinlik otomatik gizleme eşiği</string>
+    <string name="doubletap_lockscreen_title">Kilit ekranında uyutmak için iki kez dokunun</string>
+    <string name="doubletap_lockscreen_summary">Ekranı kapatmak için kilit ekranına iki kez dokunun</string>
+    <string name="swipe_to_screenshot_gesture_title">Ekran resmi için kaydırın</string>
+    <string name="swipe_to_screenshot_gesture_summary">Ekran görüntüsü almak için üç parmağınızı kaydırın</string>
+    <string name="double_tap_power_flashlight_screen_title">Feneri etkinleştir</string>
+    <string name="double_tap_power_flashlight_title">Güç tuşu ile fener açma</string>
     <string name="torch_power_button_gesture_none">Devre dışı</string>
+    <string name="torch_power_button_gesture_dt">Feneri değiştirmek için iki kez güç tuşuna dokunun</string>
+    <string name="torch_power_button_gesture_lp">Feneri değiştirmek için güç tuşuna uzun basın</string>
+    <string name="volume_skiptrack_screen_title">Müzik parçalarını atla</string>
+    <string name="volume_skiptrack_title">Ses seviyesi tuşlarına basarak parçaları atla</string>
+    <string name="volume_skiptrack_summary">Müzik çalarken parçaları atlamak için ses düzeyi tuşlarına uzun basın, örneğin TV veya PC\'de uzaktan bile. Spotify (uygulama telefonda çalışmalı ve bildirimi göstermelidir).</string>
 </resources>

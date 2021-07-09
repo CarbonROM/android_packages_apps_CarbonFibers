@@ -28,6 +28,8 @@
     <string name="lockscreen_main_category_summary">Modyfikuj układ i opcje ekranu blokady</string>
     <string name="buttons_main_category_summary">Dostosuj klawisze sprzętowe i programowe</string>
     <string name="gestures_main_category_summary">Opcje i działania oparte na gestach</string>
+    <string name="privacy_main_category_summary">Prywatność i zbieranie statystyk</string>
+    <string name="status_bar_icons_category">Ikony</string>
     <string name="clock_category">Zegar &amp; Data</string>
     <string name="carbonfibers_dialog_title">Pomóż nam pomóc!</string>
     <string name="carbonfibers_dialog_toast">Przeczytaj to!</string>

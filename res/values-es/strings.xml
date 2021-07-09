@@ -28,8 +28,19 @@
     <string name="lockscreen_main_category_summary">Modificar el diseño de la pantalla de bloqueo y opciones</string>
     <string name="buttons_main_category_summary">Personalizar teclas de hardware y software</string>
     <string name="gestures_main_category_summary">Opciones y acciones basadas en gestos</string>
+    <string name="privacy_main_category_summary">Recopilación de estadísticas y privacidad</string>
+    <string name="status_bar_icons_category">Iconos</string>
+    <string name="qs_category">Opciones de ajustes rápidos</string>
     <string name="clock_category">Reloj y fecha</string>
+    <string name="battery_category">Estilo de la batería</string>
+    <string name="lockscreen_layout_category">Opciones de diseño</string>
+    <string name="lockscreen_info_category">Información en la pantalla de bloqueo</string>
+    <string name="button_gesture_category">Gestos de botón</string>
+    <string name="navigation_category">Navegación</string>
     <string name="carbonfibers_dialog_title">¡Ayúdanos a ayudarte!</string>
+    <string name="carbonfibers_dialog_message">¡Desafortunadamente, no somos magos!\n\nSi encuentras un error, por favor contáctenos en Telegram 
+        o escríbanos a support@carbonrom.org con la siguiente información.\n\n1. Versión de CarbonROM y modelo de dispositivo\n2. Logcat y/o last_kmsg\n3. Kernel y mods usados\n4.
+       Otra informacion adicionall\n\nSi no puede proporcionarnos la información anterior, no espere que el problema se tenga en cuenta.</string>
     <string name="carbonfibers_dialog_toast">¡Léalo todo!</string>
     <string name="anonymous_statistics_title">Estadísticas de CarbonROM</string>
     <string name="anonymous_statistics_summary">Ayuda a mejorar CarbonROM mediante el envío anónimo de estadísticas</string>
@@ -45,10 +56,22 @@
     <string name="preview_country_title">País</string>
     <string name="preview_carrier_title">Operador móvil</string>
     <string name="stats_collection_title">Habilitar recopilación de estadísticas</string>
+    <string name="stats_collection_summary">Cuando está habilitado, permite la recopilación de métricas</string>
     <string name="status_bar_quick_qs_pulldown">Despliegue rápido</string>
     <string name="quick_pulldown_none">Deshabilitado</string>
     <string name="quick_pulldown_right">Desplegar barra de estado desde el lado derecho</string>
     <string name="quick_pulldown_left">Desplegar barra de estado desde el lado izquierdo</string>
+    <string name="lockscreen_media_art_title">Carátula en la pantalla de boqueo</string>
+    <string name="lockscreen_media_art_summary">Mostrar carátula al reproducir música</string>
+    <string name="powermenu_advanced_reboot_title">Reinicio avanzado</string>
+    <string name="powermenu_advanced_reboot_summary">Permite el acceso a la recuperación y cargador de arranque</string>
+    <string name="qs_columns_rows_config_title">QS columnas &amp; filas</string>
+    <string name="dialog_title">QS Columnas &amp; Filas</string>
+    <string name="portrait_title">VERTICAL</string>
+    <string name="landscape_title">HORIZONTAL</string>
+    <string name="seekbar_columns">Columnas</string>
+    <string name="seekbar_rows">Filas</string>
+    <string name="submit_button">Enviar</string>
     <string name="aggressive_battery_title">Ahorro agresivo </string>
     <string name="aggressive_battery_summary">Más ajustes de ahorro de energía</string>
     <string name="aggressive_battery_warning_text">Estos son ajustes para el ahorro de energía. Pueden interferir con servicios de segundo plano como las aplicaciones de navegación. Puedes añadir estas aplicaciones a una lista para que no sean afectadas en los ajustes de batería de la aplicación.</string>
@@ -59,6 +82,9 @@
     <string name="aggressive_battery_saver_title">Encendido automático del ahorro de energía</string>
     <string name="aggressive_battery_saver_summary">Encender el ahorro agresivo cuando se use el ahorro de energía</string>
     <string name="lockscreen_battery_info_title">Información de carga en la pantalla de bloqueo</string>
+    <string name="lockscreen_battery_info_summary">Mostrar corriente de carga, voltaje, potencia y temperatura de la batería en la pantalla de bloqueo mientras se carga</string>
+    <string name="status_bar_clock_title">Ajustes del reloj</string>
+    <string name="status_bar_clock_summary">Opciones de reloj y fecha</string>
     <string name="clock_enabled">Habilitado</string>
     <string name="clock_disabled">Deshabilitado</string>
     <string name="status_bar_clock_style_reset">Restablecer color</string>
@@ -86,6 +112,7 @@
     <string name="clock_date_right">A la derecha de la hora</string>
     <string name="clock_date_left">A la izquierda de la hora</string>
     <string name="clock_date_position">Posición de la fecha</string>
+    <string name="clock_seconds_display">Segundos</string>
     <string name="battery_style_category_title">Batería</string>
     <string name="battery_percent_title">Porcentaje de batería</string>
     <string name="status_bar_battery_style_title">Estilo de la batería</string>
@@ -125,11 +152,16 @@
     <string name="action_save">Guardar</string>
     <string name="swap_volume_keys_on_rotation_title">Intercambiar los botones de volumen</string>
     <string name="swap_volume_keys_on_rotation_summary">Cambiar el comportamiento de los botones de volumen al girar el dispositivo</string>
+    <string name="volume_panel_on_left_title">Cambiar ubicación del panel de volumen</string>
+    <string name="volume_panel_on_left_summary">Mover panel de volumen a la izquierda</string>
+    <string name="ls_qs_disabled_title">Desactivar ajustes rápidos en la pantalla de bloqueo</string>
+    <string name="ls_qs_disabled_summary">Desactivar la expansión de ajustes rápidos en la pantalla de bloqueo</string>
     <string name="show_fourg_icon_title">Icono 4G</string>
     <string name="show_fourg_icon_summary">Mostrar icono 4G en lugar de LTE</string>
     <string name="traffic_title">Indicadores de red</string>
     <string name="traffic_title_summary">Personalizar indicadores de tráfico de red</string>
     <string name="network_traffic_title">Tráfico de red</string>
     <string name="network_traffic_state_title">Mostrar actividad de red en la barra de estado</string>
+    <string name="network_traffic_state_summary">Mostrar actividad de red en la barra de estado de ajustes rápidos</string>
     <string name="torch_power_button_gesture_none">Deshabilitado</string>
 </resources>
