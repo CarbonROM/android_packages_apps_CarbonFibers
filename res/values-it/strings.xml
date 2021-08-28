@@ -39,6 +39,9 @@
     <string name="navigation_category">Navigazione</string>
     <string name="tap_swipe_category">Tap&amp; Opzioni di scorrimento</string>
     <string name="carbonfibers_dialog_title">Aiutaci ad aiutare voi!</string>
+    <string name="carbonfibers_dialog_message">Sfortunatamente, non siamo maghi!\n\nSe trovi un bug, contattaci su Telegram
+	    o scrivici a support@carbonrom.org con le seguenti informazioni.\n\n1. Versione CarbonROM e dispositivo \n2. Logcat e/o last_kmsg\n3. Kernel e mod utilizzati\n4.
+	    Informazioni varie\n\nSe non riesci a segnalare il bug con le suddette informazioni, non ti aspettare che il problema venga considerato.</string>
     <string name="carbonfibers_dialog_toast">Leggerlo tutto!</string>
     <string name="anonymous_statistics_title">Statistiche di CarbonROM</string>
     <string name="anonymous_statistics_summary">Aiuta a migliorare la CarbonROM acconsentendo ad inviare statistiche anonime</string>

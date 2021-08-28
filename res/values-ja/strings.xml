@@ -115,6 +115,10 @@
     <string name="clock_date_position">日付の位置</string>
     <string name="clock_seconds_display">秒</string>
     <string name="clock_seconds_display_summary">タイムスタンプに秒を表示する</string>
+    <string name="status_bar_clock_style_title">時計のスタイル</string>
+    <string name="status_bar_clock_style_right">右</string>
+    <string name="status_bar_clock_style_center">中央</string>
+    <string name="status_bar_clock_style_left">左</string>
     <string name="battery_style_category_title">バッテリー</string>
     <string name="battery_percent_title">バッテリー残量</string>
     <string name="status_bar_battery_style_title">バッテリーのスタイル</string>
@@ -166,8 +170,15 @@
     <string name="network_traffic_state_title">ステータスバーに通信速度を表示</string>
     <string name="network_traffic_state_summary">クイック設定のステータスバーに通信速度を表示する</string>
     <string name="network_traffic_autohide_threshold_title">自動非表示にするしきい値</string>
+    <string name="doubletap_poweroff_screen_title">ダブルタップで画面を消灯</string>
     <string name="doubletap_lockscreen_title">ダブルタップでスリープ</string>
     <string name="doubletap_lockscreen_summary">ロック画面をダブルタップして画面を消灯する</string>
+    <string name="doubletap_statusbar_title">ステータスバーのダブルタップでスリープ</string>
+    <string name="doubletap_statusbar_summary">ステータスバー上をダブルタップして画面を消灯する</string>
+    <string name="doubletap_poweroff_disabled">OFF</string>
+    <string name="doubletap_poweroff_all">ON (ロック画面とステータスバー)</string>
+    <string name="doubletap_poweroff_sb">ON (ステータスバー)</string>
+    <string name="doubletap_poweroff_ls">ON (ロック画面)</string>
     <string name="swipe_to_screenshot_gesture_title">スワイプでスクリーンショット</string>
     <string name="swipe_to_screenshot_gesture_summary">3本指でスワイプしてスクリーンショットを取得する</string>
     <string name="double_tap_power_flashlight_screen_title">トーチを有効化</string>
@@ -175,7 +186,14 @@
     <string name="torch_power_button_gesture_none">無効</string>
     <string name="torch_power_button_gesture_dt">電源を2回タップしてトーチを切り替える</string>
     <string name="torch_power_button_gesture_lp">電源を長押ししてトーチを切り替える</string>
+    <string name="torch_power_button_gesture_none_summary">OFF</string>
+    <string name="torch_power_button_gesture_dt_summary">ON (ダブルタップ)</string>
+    <string name="torch_power_button_gesture_lp_summary">ON (長押し)</string>
     <string name="volume_skiptrack_screen_title">音楽をスキップ</string>
     <string name="volume_skiptrack_title">音量ボタンでトラックをスキップ</string>
     <string name="volume_skiptrack_summary">音楽再生時に音量ボタンの長押しでトラックをスキップします。Spotify などで TV や PC をリモート操作している時も動作します。(アプリが端末で実行されていて通知が表示される必要があります)</string>
+    <string name="status_bar_toggle_brightness">明るさの調整</string>
+    <string name="status_bar_toggle_brightness_summary">ステータスバー上をスライドして明るさを調節する</string>
+    <string name="qs_brightness_position_bottom_title">下部の明るさスライダー</string>
+    <string name="qs_brightness_position_bottom_summary">クイック設定下部に明るさスライダーを表示する</string>
 </resources>

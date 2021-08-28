@@ -117,6 +117,10 @@
     <string name="clock_date_position">Vị trí ngày</string>
     <string name="clock_seconds_display">Giây</string>
     <string name="clock_seconds_display_summary">Hiển thị giây trong dấu thời gian</string>
+    <string name="status_bar_clock_style_title">Kiểu đồng hồ</string>
+    <string name="status_bar_clock_style_right">Bên phải</string>
+    <string name="status_bar_clock_style_center">Ở giữa</string>
+    <string name="status_bar_clock_style_left">Bên trái</string>
     <string name="battery_style_category_title">Pin</string>
     <string name="battery_percent_title">Phần trăm pin</string>
     <string name="status_bar_battery_style_title">Kiểu pin</string>
@@ -168,8 +172,15 @@
     <string name="network_traffic_state_title">Hiển thị hoạt động ròng trên thanh trạng thái</string>
     <string name="network_traffic_state_summary">Hiển thị các biểu tượng hoạt động mạng</string>
     <string name="network_traffic_autohide_threshold_title">Ngưỡng tự ẩn hoạt động mạng (KB/s)</string>
+    <string name="doubletap_poweroff_screen_title">Chạm hai lần màn hình khoá để tắt màn hình </string>
     <string name="doubletap_lockscreen_title">Nhấn đúp để chuyển sang chế độ ngủ trên màn hình khóa</string>
     <string name="doubletap_lockscreen_summary">Nhấn đúp vào màn hình khóa để tắt màn hình</string>
+    <string name="doubletap_statusbar_title">Nhấn đúp thanh trạng thái để tắt màn hình</string>
+    <string name="doubletap_statusbar_summary">Chạm hai lần vào thanh trạng thái để tắt màn hình</string>
+    <string name="doubletap_poweroff_disabled">Tắt</string>
+    <string name="doubletap_poweroff_all">Bật (Màn hình khóa và thanh trạng thái)</string>
+    <string name="doubletap_poweroff_sb">Bật (Thanh trạng thái)</string>
+    <string name="doubletap_poweroff_ls">Bật (Màn hình khóa)</string>
     <string name="swipe_to_screenshot_gesture_title">Vuốt ảnh chụp màn hình</string>
     <string name="swipe_to_screenshot_gesture_summary">Vuốt ba ngón tay để chụp ảnh màn hình</string>
     <string name="double_tap_power_flashlight_screen_title">Kích hoạt ngọn đuốc</string>
@@ -177,7 +188,14 @@
     <string name="torch_power_button_gesture_none">Đã vô hiệu hóa</string>
     <string name="torch_power_button_gesture_dt">Nhấn đúp vào nguồn để bật tắt đèn pin</string>
     <string name="torch_power_button_gesture_lp">Nhấn đúp vào nguồn để bật tắt đèn pin</string>
+    <string name="torch_power_button_gesture_none_summary">Tắt</string>
+    <string name="torch_power_button_gesture_dt_summary">Bật (Nhấn đúp)</string>
+    <string name="torch_power_button_gesture_lp_summary">Bật (Nhấn giữ)</string>
     <string name="volume_skiptrack_screen_title">Bỏ qua các bản nhạc</string>
     <string name="volume_skiptrack_title">Nút chỉnh âm lượng bỏ qua bản nhạc</string>
     <string name="volume_skiptrack_summary">Nhấn và giữ nút chỉnh âm lượng để bỏ qua các bản nhạc khi phát nhạc, thậm chí từ xa trên TV hoặc PC với ví dụ: Spotify (ứng dụng phải chạy trên điện thoại và hiển thị thông báo).</string>
+    <string name="status_bar_toggle_brightness">Thanh điều khiển độ sáng</string>
+    <string name="status_bar_toggle_brightness_summary">Vuốt qua lại trên thanh trạng thái để thay đổi độ sáng </string>
+    <string name="qs_brightness_position_bottom_title">Thanh độ sáng ở phía dưới</string>
+    <string name="qs_brightness_position_bottom_summary">Hiển thị thanh điều khiển độ sáng phía dưới trong bảng cài đặt nhanh</string>
 </resources>

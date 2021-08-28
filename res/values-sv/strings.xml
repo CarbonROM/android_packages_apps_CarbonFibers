@@ -18,6 +18,10 @@
     <string name="system_category">System</string>
     <string name="buttons_software_category">Mjukvaruknappar</string>
     <string name="buttons_hardware_category">Hårdvaruknappar</string>
+    <string name="status_bar_icons_category">Ikoner</string>
+    <string name="qs_category">QS-alternativ</string>
+    <string name="button_gesture_category">Knappgester</string>
+    <string name="navigation_category">Navigering</string>
     <string name="carbonfibers_dialog_title">Hjälp oss hjälp dig!</string>
     <string name="anonymous_statistics_title">CarbonROM-statistik</string>
     <string name="anonymous_statistics_summary">Hjälp till att göra CarbonROM bättre genom att välja anonym statistik-rapportering</string>
@@ -32,6 +36,15 @@
     <string name="preview_country_title">Land</string>
     <string name="preview_carrier_title">Operatör</string>
     <string name="quick_pulldown_none">Inaktiverad</string>
+    <string name="powermenu_advanced_reboot_title">Avancerad omstart</string>
+    <string name="powermenu_advanced_reboot_summary">Aktiverar åtkomst till återställning och uppstartsladdare</string>
+    <string name="qs_columns_rows_config_title">QS-kolumner &amp; rader</string>
+    <string name="portrait_title">PORTRÄTT</string>
+    <string name="landscape_title">LANDSKAP</string>
+    <string name="seekbar_columns">Kolumner</string>
+    <string name="seekbar_rows">Rader</string>
+    <string name="submit_button">Skicka in</string>
+    <string name="status_bar_clock_title">Klock-inställningar</string>
     <string name="clock_enabled">Aktiverad</string>
     <string name="clock_disabled">Inaktiverad</string>
     <string name="status_bar_clock_style_reset">Återställ färg</string>
@@ -56,6 +69,12 @@
     <string name="clock_date_right">Höger om klockan</string>
     <string name="clock_date_left">Vänster om klockan</string>
     <string name="clock_date_position">Datumposition</string>
+    <string name="clock_seconds_display">Sekunder</string>
+    <string name="clock_seconds_display_summary">Visa sekunder i tidsstämpel</string>
+    <string name="status_bar_clock_style_title">Klock-stil</string>
+    <string name="status_bar_clock_style_right">Höger</string>
+    <string name="status_bar_clock_style_center">Mitten</string>
+    <string name="status_bar_clock_style_left">Vänster</string>
     <string name="status_bar_battery_style_title">Batteristil</string>
     <string name="status_bar_battery_style_circle">Cirkel</string>
     <string name="status_bar_battery_style_text">Text</string>
@@ -72,5 +91,6 @@
     <string name="smart_pixels_title">Smarta Pixlar</string>
     <string name="smart_pixels_percent">Procent av pixlar att inaktivera</string>
     <string name="smart_pixels_shift">Förhindra inbränning av skiftande pixlar var</string>
+    <string name="doubletap_poweroff_disabled">Av</string>
     <string name="torch_power_button_gesture_none">Inaktiverad</string>
 </resources>

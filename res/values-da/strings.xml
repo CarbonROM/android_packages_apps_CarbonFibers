@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="privacy_main_category_summary">Privatliv og statistik indsamling</string>
+    <string name="status_bar_icons_category">Ikoner</string>
+    <string name="qs_category">Indstillinger for QS</string>
+    <string name="battery_category">Batteri layout</string>
+    <string name="lockscreen_layout_category">Layout indstillinger</string>
+    <string name="lockscreen_info_category">Låseskærms info</string>
+    <string name="button_gesture_category">Knap fagter</string>
+    <string name="navigation_category">Navigering</string>
+    <string name="tap_swipe_category">Tap &amp; Swipe indstillinger</string>
+    <string name="carbonfibers_dialog_message">Desværre er vi ikke troldmand!\n\nHvis du finder en fejl, bedes du kontakte os på telegram eller skrive os på support@carbonrom.org med følgende oplysninger.\n\n1. CarbonROM version og enhed\n2. Logcat og/eller last_kmsg\n3. Kernel og mods brugt\n4. Diverse oplysninger\n\nHvis du ikke rapporterer med ovenstående oplysninger, forvent ikke, at spørgsmålet tages i betragtning.</string>
+    <string name="stats_collection_summary">Når aktiveret, tillades opsamling af metrikker</string>
+    <string name="qs_tile_title_visibility_title">Vis tiles titel</string>
+    <string name="lockscreen_media_art_title">Låseskærm mediekunst</string>
+    <string name="lockscreen_media_art_summary">Vis medie omslagskunst ved afspilning af musik</string>
+    <string name="powermenu_advanced_reboot_title">Avanceret genstart</string>
+    <string name="powermenu_advanced_reboot_summary">Aktiverer adgang til gendannelse og bootloader</string>
+    <string name="qs_columns_rows_config_title">QS kolonner &amp; rækker</string>
+    <string name="qs_columns_rows_config_summary">Indstil den måde hurtig-indstillings tiles er arrangeret</string>
+    <string name="dialog_title">QS kolonner &amp; rækker</string>
+    <string name="portrait_title">PORTRÆT</string>
+    <string name="landscape_title">LANDSKAB</string>
+    <string name="seekbar_columns">Kolonner</string>
+    <string name="seekbar_rows">Rækker</string>
+    <string name="submit_button">Indsend</string>
+    <string name="lockscreen_battery_info_summary">Vis opladningsstrøm, spænding, watt og batteritemperatur på låseskærmen under opladning</string>
+    <string name="status_bar_clock_title">Indstillinger for ur</string>
+    <string name="status_bar_clock_summary">Indstillinger for ur og dato</string>
+    <string name="clock_seconds_display">Sekunder</string>
+    <string name="clock_seconds_display_summary">Vis sekunder i tidsstempel</string>
+    <string name="status_bar_clock_style_title">Ur stil</string>
+    <string name="status_bar_clock_style_right">Højre</string>
+    <string name="status_bar_clock_style_center">Centreret</string>
+    <string name="status_bar_clock_style_left">Venstre</string>
+    <string name="volume_panel_on_left_title">Skift volumenpanelets placering</string>
+    <string name="volume_panel_on_left_summary">Flyt lydstyrkepanel til venstre</string>
+    <string name="ls_qs_disabled_title">Deaktivér QS på låseskærmen</string>
+    <string name="ls_qs_disabled_summary">Deaktivér udvidelse af hurtigindstillinger på sikker låseskærm</string>
+    <string name="network_traffic_state_summary">Vis netværksaktivitet i statusbjælken for hurtigindstillinger</string>
+    <string name="network_traffic_autohide_threshold_title">Netværksaktivitets autoskjul tærskel</string>
+    <string name="doubletap_poweroff_screen_title">Dobbelttap for at slukke skærmen</string>
+    <string name="doubletap_lockscreen_title">Dobbelttap for at aktivere dvale på låseskærmen</string>
+    <string name="doubletap_lockscreen_summary">Dobbelttap på låseskærmen for at slukke skærmen</string>
+    <string name="doubletap_statusbar_title">Dobbelttap for at sove på statusbjælken</string>
+    <string name="doubletap_statusbar_summary">Dobbelttap på statusbjælken for at slukke skærmen</string>
+    <string name="doubletap_poweroff_disabled">Fra</string>
+    <string name="doubletap_poweroff_all">Til (låseskærm og statuslinje)</string>
+    <string name="doubletap_poweroff_sb">Til (Statuslinje)</string>
+    <string name="doubletap_poweroff_ls">Til (Låseskærm)</string>
+    <string name="swipe_to_screenshot_gesture_title">Stryg for skærmbillede</string>
+    <string name="swipe_to_screenshot_gesture_summary">Stryg tre fingre for at tage skærmbillede</string>
+    <string name="double_tap_power_flashlight_screen_title">Aktivér lommelygte</string>
+    <string name="double_tap_power_flashlight_title">Slukket skærm tænd/sluk knap lommelygte</string>
+    <string name="torch_power_button_gesture_dt">Dobbelttap tænd/sluk knap for at tænde/slukke lommelygte</string>
+    <string name="torch_power_button_gesture_lp">Langt tryk på tænd/sluk knap for at tænde/slukke lommelygte</string>
+    <string name="torch_power_button_gesture_none_summary">Fra</string>
+    <string name="torch_power_button_gesture_dt_summary">Til (Dobbelttap)</string>
+    <string name="torch_power_button_gesture_lp_summary">Til (Langt tryk)</string>
+    <string name="volume_skiptrack_screen_title">Spring musiknumre over</string>
+    <string name="volume_skiptrack_title">Lydstyrkeknapper springer numre</string>
+    <string name="volume_skiptrack_summary">Langt tryk på lydstyrkeknap for at springe nummer, når du spiller musik, selv på tv eller PC med f.eks. Spotify (app skal køre på telefonen og vise notifikation).</string>
+    <string name="status_bar_toggle_brightness">Lysstyrkekontrol</string>
+    <string name="status_bar_toggle_brightness_summary">Justér lysstyrken ved at lade fingeren glide langs statusbjælken</string>
+    <string name="qs_brightness_position_bottom_title">Lysstyrkeskyderen nederst</string>
+    <string name="qs_brightness_position_bottom_summary">Vis skyderen for lysstyrke i hurtigindstillinger nederst</string>
+</resources>

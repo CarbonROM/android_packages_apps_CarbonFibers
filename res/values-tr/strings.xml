@@ -120,6 +120,10 @@
     <string name="clock_date_position">Tarih konumu</string>
     <string name="clock_seconds_display">Saniye</string>
     <string name="clock_seconds_display_summary">Zaman damgasında saniye göster</string>
+    <string name="status_bar_clock_style_title">Saat sitili</string>
+    <string name="status_bar_clock_style_right">Sağ</string>
+    <string name="status_bar_clock_style_center">Orta</string>
+    <string name="status_bar_clock_style_left">Sol</string>
     <string name="battery_style_category_title">Pil</string>
     <string name="battery_percent_title">Pil yüzdesi</string>
     <string name="status_bar_battery_style_title">Pil stili</string>
@@ -171,8 +175,15 @@
     <string name="network_traffic_state_title">Durum çubuğunda ağ etkinliği göster</string>
     <string name="network_traffic_state_summary">Hızlı ayarlar durum çubuğunda ağ etkinliğini görüntüle</string>
     <string name="network_traffic_autohide_threshold_title">Net etkinlik otomatik gizleme eşiği</string>
+    <string name="doubletap_poweroff_screen_title">Ekranı kapatmak için iki kez dokunun</string>
     <string name="doubletap_lockscreen_title">Kilit ekranında uyutmak için iki kez dokunun</string>
     <string name="doubletap_lockscreen_summary">Ekranı kapatmak için kilit ekranına iki kez dokunun</string>
+    <string name="doubletap_statusbar_title">Durum çubuğunda uyutmak için iki kez dokunun</string>
+    <string name="doubletap_statusbar_summary">Ekranı kapatmak için durum çubuğuna iki kez dokunun</string>
+    <string name="doubletap_poweroff_disabled">Kapalı</string>
+    <string name="doubletap_poweroff_all">Açık (Kilit ekranı ve durum çubuğu)</string>
+    <string name="doubletap_poweroff_sb">Açık (Durum çubuğu)</string>
+    <string name="doubletap_poweroff_ls">Açık (Kilit ekranı)</string>
     <string name="swipe_to_screenshot_gesture_title">Ekran resmi için kaydırın</string>
     <string name="swipe_to_screenshot_gesture_summary">Ekran görüntüsü almak için üç parmağınızı kaydırın</string>
     <string name="double_tap_power_flashlight_screen_title">Feneri etkinleştir</string>
@@ -180,7 +191,14 @@
     <string name="torch_power_button_gesture_none">Devre dışı</string>
     <string name="torch_power_button_gesture_dt">Feneri değiştirmek için iki kez güç tuşuna dokunun</string>
     <string name="torch_power_button_gesture_lp">Feneri değiştirmek için güç tuşuna uzun basın</string>
+    <string name="torch_power_button_gesture_none_summary">Kapalı</string>
+    <string name="torch_power_button_gesture_dt_summary">Açık (Çift dokunma)</string>
+    <string name="torch_power_button_gesture_lp_summary">Açık (Uzun basma)</string>
     <string name="volume_skiptrack_screen_title">Müzik parçalarını atla</string>
     <string name="volume_skiptrack_title">Ses seviyesi tuşlarına basarak parçaları atla</string>
     <string name="volume_skiptrack_summary">Müzik çalarken parçaları atlamak için ses düzeyi tuşlarına uzun basın, örneğin TV veya PC\'de uzaktan bile. Spotify (uygulama telefonda çalışmalı ve bildirimi göstermelidir).</string>
+    <string name="status_bar_toggle_brightness">Parlaklık kontrolü</string>
+    <string name="status_bar_toggle_brightness_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarlayın</string>
+    <string name="qs_brightness_position_bottom_title">Alt parlaklık kaydırıcısı</string>
+    <string name="qs_brightness_position_bottom_summary">Hızlı ayarlar panelinin altında parlaklık kaydırıcısını göster</string>
 </resources>

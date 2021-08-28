@@ -28,7 +28,15 @@
     <string name="lockscreen_main_category_summary">Modificar layout e opções da tela de bloqueio</string>
     <string name="buttons_main_category_summary">Personalizar teclas de hardware e software</string>
     <string name="gestures_main_category_summary">Gestos baseados em opções e ações</string>
+    <string name="privacy_main_category_summary">Coleção de estatísticas e privacidade</string>
+    <string name="status_bar_icons_category">Ícones</string>
+    <string name="qs_category">Opções das configurações rápidas</string>
     <string name="clock_category">Relógio e data</string>
+    <string name="battery_category">Layout da bateria</string>
+    <string name="lockscreen_layout_category">Opções de layout</string>
+    <string name="lockscreen_info_category">Informações da tela de bloqueio</string>
+    <string name="button_gesture_category">Gestos de botão</string>
+    <string name="navigation_category">Navegação</string>
     <string name="carbonfibers_dialog_title">Ajude-nos a ajudar você!</string>
     <string name="carbonfibers_dialog_toast">Leia tudo!</string>
     <string name="anonymous_statistics_title">Estatísticas de CarbonROM</string>
