@@ -165,6 +165,18 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
+                    final int supportButtonBrightness = context.getResources().getInteger(com.android.internal.R.integer
+                                        .config_deviceSupportsButtonBrightnessControl);
+                    final boolean hasButtonBacklightSupport = supportButtonBrightness != BUTTON_BRIGHTNESS_NOT_SUPPORTED;
+                    if (!hasButtonBacklightSupport) {
+                        keys.add(KEY_BUTTON_BRIGHTNESS);
+                        keys.add(KEY_BUTTON_BRIGHTNESS_SW);
+                        keys.add(KEY_BACKLIGHT_TIMEOUT);
+                    } else if (supportButtonBrightness == BUTTON_BRIGHTNESS_TOGGLE_MODE_ONLY) {
+                        keys.add(KEY_BUTTON_BRIGHTNESS);
+                    } else {
+                        keys.add(KEY_BUTTON_BRIGHTNESS_SW);
+                    }
                     return keys;
                 }
             };
