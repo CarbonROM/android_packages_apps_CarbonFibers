@@ -49,6 +49,8 @@ import java.util.List;
 @SearchIndexable
 public class Buttons extends SettingsPreferenceFragment implements OnPreferenceChangeListener, Indexable {
     private static final String TAG = "Buttons";
+    private static final int BUTTON_BRIGHTNESS_NOT_SUPPORTED = 0;
+    private static final int BUTTON_BRIGHTNESS_TOGGLE_MODE_ONLY = 1;
 
     //Keys
     private static final String KEY_BUTTON_BRIGHTNESS = "button_brightness";
@@ -72,8 +74,9 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
         final PreferenceCategory hwkeyCat = (PreferenceCategory) prefScreen
                 .findPreference(CATEGORY_HWKEY);
 
-        final boolean variableBrightness = getResources().getBoolean(
-                com.android.internal.R.bool.config_deviceHasVariableButtonBrightness);
+        final int supportButtonBrightness = getResources().getInteger(com.android.internal.R.integer
+                            .config_deviceSupportsButtonBrightnessControl);
+        final boolean hasButtonBacklightSupport = supportButtonBrightness != BUTTON_BRIGHTNESS_NOT_SUPPORTED;
 
         mBacklightTimeout =
                 (ListPreference) findPreference(KEY_BACKLIGHT_TIMEOUT);
@@ -82,29 +85,35 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
         mButtonBrightness_sw =
                 (SwitchPreference) findPreference(KEY_BUTTON_BRIGHTNESS_SW);
 
-        if (mBacklightTimeout != null) {
-            mBacklightTimeout.setOnPreferenceChangeListener(this);
-            int BacklightTimeout = Settings.System.getInt(getContentResolver(),
-                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5000);
-            mBacklightTimeout.setValue(Integer.toString(BacklightTimeout));
-            mBacklightTimeout.setSummary(mBacklightTimeout.getEntry());
-        }
+        if (hasButtonBacklightSupport) {
+            if (mBacklightTimeout != null) {
+                mBacklightTimeout.setOnPreferenceChangeListener(this);
+                int BacklightTimeout = Settings.System.getInt(getContentResolver(),
+                        Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5000);
+                mBacklightTimeout.setValue(Integer.toString(BacklightTimeout));
+                mBacklightTimeout.setSummary(mBacklightTimeout.getEntry());
+            }
 
-        if (variableBrightness) {
-            hwkeyCat.removePreference(mButtonBrightness_sw);
-            if (mButtonBrightness != null) {
-                float ButtonBrightness = Settings.System.getFloat(getContentResolver(),
-                        Settings.System.BUTTON_BRIGHTNESS, 1.0f);
-                mButtonBrightness.setValue((int)(ButtonBrightness * 100.0f));
-                mButtonBrightness.setOnPreferenceChangeListener(this);
+            if (supportButtonBrightness == BUTTON_BRIGHTNESS_TOGGLE_MODE_ONLY) {
+                hwkeyCat.removePreference(mButtonBrightness);
+                if (mButtonBrightness_sw != null) {
+                    mButtonBrightness_sw.setChecked((Settings.System.getFloat(getContentResolver(),
+                            Settings.System.BUTTON_BRIGHTNESS, 1.0f) == 1));
+                    mButtonBrightness_sw.setOnPreferenceChangeListener(this);
+                }
+            } else {
+                hwkeyCat.removePreference(mButtonBrightness_sw);
+                if (mButtonBrightness != null) {
+                    float ButtonBrightness = Settings.System.getFloat(getContentResolver(),
+                            Settings.System.BUTTON_BRIGHTNESS, 1.0f);
+                    mButtonBrightness.setValue((int)(ButtonBrightness * 100.0f));
+                    mButtonBrightness.setOnPreferenceChangeListener(this);
+                }
             }
         } else {
+            hwkeyCat.removePreference(mBacklightTimeout);
             hwkeyCat.removePreference(mButtonBrightness);
-            if (mButtonBrightness_sw != null) {
-                mButtonBrightness_sw.setChecked((Settings.System.getFloat(getContentResolver(),
-                        Settings.System.BUTTON_BRIGHTNESS, 1.0f) == 1));
-                mButtonBrightness_sw.setOnPreferenceChangeListener(this);
-            }
+            hwkeyCat.removePreference(mButtonBrightness_sw);
         }
     }
 
