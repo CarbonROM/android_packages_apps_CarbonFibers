@@ -23,6 +23,7 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.content.res.Resources;
 import android.database.ContentObserver;
+import android.os.UserHandle;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
@@ -77,18 +78,27 @@ public class StatusBar extends SettingsPreferenceFragment implements
 
 	final ContentResolver resolver = getActivity().getContentResolver();
 
+        int batterystyle = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
+        mBatteryPercentValue = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT);
+        mBatteryPercentValuePrev = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT + "_prev", -1, UserHandle.USER_CURRENT);
+
+        batterystyle = (batterystyle == BATTERY_STYLE_TEXT
+                && mBatteryPercentValue == BATTERY_PERCENT_HIDDEN) ? BATTERY_STYLE_HIDDEN : batterystyle;
+
         mBatteryStyle = (ListPreference) findPreference("status_bar_battery_style");
-        mBatteryPercent = (ListPreference) findPreference("status_bar_show_battery_percent");
+        mBatteryStyle.setValue(String.valueOf(batterystyle));
+        mBatteryStyle.setSummary(mBatteryStyle.getEntry());
         mBatteryStyle.setOnPreferenceChangeListener(this);
+
+        mBatteryPercent = (ListPreference) findPreference("status_bar_show_battery_percent");
+        mBatteryPercent.setValue(String.valueOf(mBatteryPercentValue));
+        mBatteryPercent.setSummary(mBatteryPercent.getEntry());
         mBatteryPercent.setOnPreferenceChangeListener(this);
 
-        updateBatteryPreferences();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        updateBatteryPreferences();
+        updateBatteryOptions(batterystyle, mBatteryPercentValue);
     }
 
     @Override
@@ -113,29 +123,6 @@ public class StatusBar extends SettingsPreferenceFragment implements
         }
          return false;
      }
-
-    private void updateBatteryPreferences() {
-        final ContentResolver resolver = getActivity().getContentResolver();
-
-        int batterystyle = Settings.System.getIntForUser(resolver,
-                Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
-        mBatteryPercentValue = Settings.System.getIntForUser(resolver,
-                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT);
-        mBatteryPercentValuePrev = Settings.System.getIntForUser(resolver,
-                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT + "_prev", -1, UserHandle.USER_CURRENT);
-
-        batterystyle = (batterystyle == BATTERY_STYLE_TEXT
-                && mBatteryPercentValue == BATTERY_PERCENT_HIDDEN) ? BATTERY_STYLE_HIDDEN : batterystyle;
-
-
-        mBatteryStyle.setValue(String.valueOf(batterystyle));
-        mBatteryStyle.setSummary(mBatteryStyle.getEntry());
-
-        mBatteryPercent.setValue(String.valueOf(mBatteryPercentValue));
-        mBatteryPercent.setSummary(mBatteryPercent.getEntry());
-
-        updateBatteryOptions(batterystyle, mBatteryPercentValue);
-    }
 
     private void updateBatteryOptions(int batterystyle, int batterypercent) {
         ContentResolver resolver = getActivity().getContentResolver();
