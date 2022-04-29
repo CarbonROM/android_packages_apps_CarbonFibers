@@ -141,7 +141,7 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
         if (preference == mBacklightTimeout) {
             String BacklightTimeout = (String) newValue;
             int BacklightTimeoutValue = Integer.parseInt(BacklightTimeout);
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.BUTTON_BACKLIGHT_TIMEOUT, BacklightTimeoutValue);
             int BacklightTimeoutIndex = mBacklightTimeout
                     .findIndexOfValue(BacklightTimeout);
@@ -150,18 +150,18 @@ public class Buttons extends SettingsPreferenceFragment implements OnPreferenceC
             return true;
         } else if (preference == mButtonBrightness) {
             float value = (Integer) newValue;
-            Settings.System.putFloat(getActivity().getContentResolver(),
+            Settings.System.putFloat(resolver,
                     Settings.System.BUTTON_BRIGHTNESS, value / 100.0f);
             return true;
         } else if (preference == mButtonBrightness_sw) {
             boolean value = (Boolean) newValue;
-            Settings.System.putFloat(getActivity().getContentResolver(),
+            Settings.System.putFloat(resolver,
                     Settings.System.BUTTON_BRIGHTNESS, value ? 1.0f : -1.0f);
             return true;
         }
         if (preference == mNavigationBar) {
             boolean value = (Boolean) objValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.FORCE_SHOW_NAVBAR, value ? 1 : 0);
             return true;
         }
