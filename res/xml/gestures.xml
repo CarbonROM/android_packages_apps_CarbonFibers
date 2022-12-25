@@ -24,6 +24,13 @@
     android:title="@string/button_gesture_category">
 
     <com.android.settings.carbon.RemotePreference
+            android:key="device_active_edge_settings"
+            android:title="@string/active_edge_settings_title"
+            android:summary="@string/active_edge_settings_summary">
+        <intent android:action="org.carbonrom.settings.device.ACTIVE_EDGE" />
+    </com.android.settings.carbon.RemotePreference>
+
+    <com.android.settings.carbon.RemotePreference
             android:key="device_touchscreen_gesture_settings"
             android:title="@string/touchscreen_gesture_settings_title"
             android:summary="@string/touchscreen_gesture_settings_summary"
