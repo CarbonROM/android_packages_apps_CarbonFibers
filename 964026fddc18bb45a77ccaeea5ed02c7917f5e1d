@@ -2,6 +2,7 @@
   "pushCert": "certificate version 0.1\npusher B2CA2F21 1499971381 +0200\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_CarbonFibers\nnonce 1499971385-6C0A60FEFF5111F9898E0CC810038CA930ECF4E9\n\n0000000000000000000000000000000000000000 964026fddc18bb45a77ccaeea5ed02c7917f5e1d refs/for/cr-5.1\n-----BEGIN PGP SIGNATURE-----\n\niQEcBAABCAAGBQJZZ781AAoJEDSs0FKyyi8hN1IIAKCf1cqBeCiNpqonE7XesV5f\nFKSsHHLOj6QtDzbL5NmuzE/y4mHAh+RxeKxuMQYQ+8VAlEAYWOsDw4d/WZFO51ld\nPOEJS0biUbHaesKO50lDGzb8NKDP/5tDfI1g9P6/rlSxzafqBBoD6u5MvFjcRrmF\nX1jr7RPw91drzfmZ2U63OohfDT/mEpFk9W6dHzISBHMNMHkonF6gRCd/u09+Was3\nKtd38UP5RkfQ5957yZT8kUA4paFCO0GgVjtt0NhuFunj1iEwRe5VtyXHBNUxZsIk\nc28fnwkMjn1wmUFIsjWDCkKIDwcC0vswbLHC3YEapFrajbvYSf+vuI54lUjbhCg\u003d\n\u003dWXF0\n-----END PGP SIGNATURE-----\n",
   "comments": [
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_d1578425",
         "filename": "res/values-es/strings.xml",
@@ -21,10 +22,10 @@
         "endChar": 156
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_b1541022",
         "filename": "res/values-es/strings.xml",
@@ -44,10 +45,10 @@
         "endChar": 70
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_91310c0e",
         "filename": "res/values-es/strings.xml",
@@ -67,10 +68,10 @@
         "endChar": 82
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_71367805",
         "filename": "res/values-es/strings.xml",
@@ -90,10 +91,10 @@
         "endChar": 99
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_513b74eb",
         "filename": "res/values-es/strings.xml",
@@ -113,10 +114,10 @@
         "endChar": 72
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_31400056",
         "filename": "res/values-es/strings.xml",
@@ -136,10 +137,10 @@
         "endChar": 85
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_1125fcc1",
         "filename": "res/values-es/strings.xml",
@@ -159,10 +160,10 @@
         "endChar": 106
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_f12168b5",
         "filename": "res/values-es/strings.xml",
@@ -182,10 +183,10 @@
         "endChar": 63
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_d12e64a5",
         "filename": "res/values-es/strings.xml",
@@ -205,10 +206,10 @@
         "endChar": 66
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_b12bf093",
         "filename": "res/values-es/strings.xml",
@@ -228,10 +229,10 @@
         "endChar": 72
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_9118ec85",
         "filename": "res/values-es/strings.xml",
@@ -251,10 +252,10 @@
         "endChar": 79
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_711d5873",
         "filename": "res/values-es/strings.xml",
@@ -274,10 +275,10 @@
         "endChar": 103
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_3117e053",
         "filename": "res/values-es/strings.xml",
@@ -297,10 +298,10 @@
         "endChar": 101
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_51125463",
         "filename": "res/values-es/strings.xml",
@@ -320,10 +321,10 @@
         "endChar": 111
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_110cdc41",
         "filename": "res/values-es/strings.xml",
@@ -343,10 +344,10 @@
         "endChar": 87
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_f108482f",
         "filename": "res/values-es/strings.xml",
@@ -366,10 +367,10 @@
         "endChar": 53
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_0c13a35d",
         "filename": "res/values-es/strings.xml",
@@ -389,10 +390,10 @@
         "endChar": 147
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_ec0f4f2d",
         "filename": "res/values-es/strings.xml",
@@ -412,10 +413,10 @@
         "endChar": 60
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_ac19577b",
         "filename": "res/values-es/strings.xml",
@@ -435,10 +436,10 @@
         "endChar": 67
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_8c2693b9",
         "filename": "res/values-es/strings.xml",
@@ -458,10 +459,10 @@
         "endChar": 83
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_6c2b3f83",
         "filename": "res/values-es/strings.xml",
@@ -481,10 +482,10 @@
         "endChar": 113
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_0c3a83cd",
         "filename": "res/values-es/strings.xml",
@@ -504,10 +505,10 @@
         "endChar": 110
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_ec362fe7",
         "filename": "res/values-es/strings.xml",
@@ -527,10 +528,10 @@
         "endChar": 77
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_cc336bf5",
         "filename": "res/values-es/strings.xml",
@@ -550,10 +551,10 @@
         "endChar": 116
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     },
     {
+      "unresolved": false,
       "key": {
         "uuid": "9a0e1d27_cc1c8b6d",
         "filename": "res/values-es/strings.xml",
@@ -573,8 +574,8 @@
         "endChar": 4
       },
       "revId": "964026fddc18bb45a77ccaeea5ed02c7917f5e1d",
-      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
-      "unresolved": false
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
     }
-  ]
+  ],
+  "submitRequirementResults": []
 }
