@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
+    <string name="buttons_category">Painikkeet</string>
+    <string name="gestures_category">Eleet</string>
+    <string name="lock_screen_category">Lukitusnäyttö</string>
+    <string name="status_bar_category">Tilapalkki</string>
+    <string name="system_category">Järjestelmä</string>
+    <string name="privacy_category">Yksityisyys</string>
+    <string name="power_save_category">Virransäästö</string>
+    <string name="global_actions_category">Virtavalikko</string>
+    <string name="miscellaneous_category_title">Sekalaiset</string>
+    <string name="privacy_main_category_summary">Yksityisyys ja tilastojen keruu</string>
+    <string name="status_bar_icons_category">Kuvakkeet</string>
+    <string name="qs_category">QS määritykset</string>
+    <string name="battery_category">Akun ulkoasu</string>
+    <string name="lockscreen_layout_category">Ulkoasun määritykset</string>
+    <string name="lockscreen_info_category">Lukitusnäytön tiedot</string>
+    <string name="button_gesture_category">Painikkeen eleet</string>
+    <string name="navigation_category">Navigointi</string>
+    <string name="tap_swipe_category">Napauta &amp; Pyyhkäisyn määritykset</string>
+    <string name="carbonfibers_dialog_title">Auta meitä auttamaan sinua!</string>
+    <string name="carbonfibers_dialog_message">Valitettavasti emme ole velhoja!\n\nJos löydät virheen, ota meihin yhteyttä telegramissa
+	    tai kirjoita meille osoitteeseen support@carbonrom.org seuraavilla tiedoilla.\n\n1. CarbonROM versio ja laite\n2. Logcat ja/tai last_kmsg\n3. Kernel ja käytetyt modit\n4.
+	    Sekalaista tietoa\n\nJos et ilmoita yllä mainituista tiedoilla, älkää odottako, että asialle tehdään mitään.</string>
+    <string name="carbonfibers_dialog_toast">Lue kaikki!</string>
+    <string name="anonymous_statistics_title">CarbonROM tilastot</string>
+    <string name="anonymous_statistics_summary">Auta tekemään CarbonROM paremmaksi valitsemalla anonyymin tilastoraportoinnin</string>
+    <string name="anonymous_statistics_warning_title">Tietoja</string>
+    <string name="anonymous_statistics_warning">CarbonROM-tilastojen käyttöönotto mahdollistaa sen, että muita kuin henkilökohtaisia tietoja voidaan lähettää
+        Carbonin kehittäjille, jotta voidaan seurata eri laitteiden yksilöllisiä asennuksia. Toimitetut tiedot sisältävät yksilöintitunnisteen
+        , joka ei vaaranna yksityisyyttäsi tai henkilötietojasi. Tiedot toimitetaan jokaisen käynnistyksen aikana.\n\nLähetettävien tietojen tarkistamiseksi
+        napauta esikatselun tietoja. @ info</string>
+    <string name="enable_reporting_title">Ota raportointi käyttöön</string>
+    <string name="preview_data_title">Esikatsele tietoja</string>
+    <string name="view_stats_title">Näytä tilastot</string>
+    <string name="anonymous_learn_more">Lue lisää</string>
+    <string name="preview_id_title">Yksilöintitunniste</string>
+    <string name="preview_device_title">Laite</string>
+    <string name="preview_version_title">Versio</string>
+    <string name="preview_country_title">Maa</string>
+    <string name="preview_carrier_title">Operaattori</string>
+    <string name="stats_collection_title">Ota tilastojen keruu käyttöön</string>
+    <string name="stats_collection_summary">Kun käytössä, sallii metriikan keräyksen</string>
+    <string name="powermenu_advanced_reboot_title">Edistynyt uudelleenkäynnistys</string>
+    <string name="powermenu_advanced_reboot_summary">Kytkee päälle pääsyn palautukseen ja käynnistyslataajaan</string>
+    <string name="smart_pixels_title">Älykkäät pikselit</string>
+    <string name="smart_pixels_summary">Sammuta pikselit vähentääksesi virrankulutusta</string>
+    <string name="smart_pixels_on_power_save_title">Automaattinen päällekytkentä virransäästö</string>
+    <string name="smart_pixels_on_power_save_summary">Käytä älykkäitä pikseleitä kun virransäästö on käytössä</string>
+    <string name="smart_pixels_percent">Pois kytkettävien pikseleiden määrä prosentteina</string>
+    <string name="smart_pixels_shift">Estä kuvan palaminen siirtämällä pikseleitä joka</string>
+    <string name="smart_pixels_warning_text">Smart Pixels on virransäästötoiminto. Riippuen siitä, kuinka monta pikseliä päätät poistaa käytöstä, voit nähdä merkittävän parannuksen akun käyttöiässä. Hyvän käyttäjäkokemuksen saamiseksi suosittelemme asettamaan pois kytkettävien pikselien määrän 75 prosenttiin ja pikseleiden siirtymisen 10 minuutin välein.</string>
+    <string name="doubletap_poweroff_screen_title">Napauta kahdesti sammuttaaksesi näytön</string>
+    <string name="doubletap_lockscreen_title">kaksoisnapauta lukitusnäytöllä aktivoidaksesi lepotilan</string>
+    <string name="doubletap_lockscreen_summary">Kaksoisnapauta lukitusnäyttöä sammuttaaksesi näytön</string>
+    <string name="doubletap_statusbar_title">Kaksoisnapauta tilapalkissa aktivoidaksesi lepotilan</string>
+    <string name="doubletap_statusbar_summary">Kaksoisnapauta lukitusnäyttöä sammuttaaksesi näytön</string>
+    <string name="doubletap_poweroff_disabled">Pois</string>
+    <string name="doubletap_poweroff_all">Käytössä (lukitusnäyttö ja tilapalkki)</string>
+    <string name="doubletap_poweroff_sb">Käytössä (tilapalkki)</string>
+    <string name="doubletap_poweroff_ls">Käytössä (lukitusnäyttö)</string>
+    <string name="status_bar_tuner_title">Tilapalkin kuvakkeet</string>
+    <string name="status_bar_tuner_summary">Muokkaa tilapalkin kuvakkeita ja asetuksia</string>
+    <string name="hide_apps_from_recents_title">Piilota sovellukset viimeksi käytetyistä</string>
+    <string name="hide_apps_from_recents_summary">Piilota sovellukset ilmestymästä viimeksi käytettyihin</string>
+    <string name="hide_from_recents_add_app">Lisää sovellus</string>
+    <string name="title_activity_carbon_recents_settings">Viimeaikaiset</string>
+    <string name="double_tap_power_flashlight_screen_title">Aktivoi taskulamppu</string>
+    <string name="double_tap_power_flashlight_title">Näyttö pois virtapainikkeen taskulamppu</string>
+    <string name="torch_power_button_gesture_none">Pois käytöstä</string>
+    <string name="torch_power_button_gesture_dt">Kaksoisnapauta virtapainiketta käynnistääksesi taskulampun</string>
+    <string name="torch_power_button_gesture_lp">Paina pitkään virtapainiketta taskulampun ohjaamiseksi</string>
+    <string name="torch_power_button_gesture_none_summary">Pois</string>
+    <string name="torch_power_button_gesture_dt_summary">Päällä (kaksoisnapautus)</string>
+    <string name="torch_power_button_gesture_lp_summary">Päällä (pitkä painallus)</string>
+    <string name="volume_panel_on_left_title">Vaihda äänenvoimakkuuspaneelin sijaintia</string>
+    <string name="volume_panel_on_left_summary">Siirrä äänenvoimakkuuspaneeli vasemmalle</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Углеродные волокна</string>
+    <string name="buttons_category">Кнопки</string>
+    <string name="gestures_category">Жесты</string>
+    <string name="lock_screen_category">Экран блокировки</string>
+    <string name="status_bar_category">Строка состояния</string>
+    <string name="system_category">Система</string>
+    <string name="privacy_category">Конфиденциальность</string>
+    <string name="power_save_category">Энергосбережение</string>
+    <string name="global_actions_category">Меню кнопки питания</string>
+    <string name="miscellaneous_category_title">Прочее</string>
+    <string name="system_main_category_summary">Настройка системных настроек</string>
+    <string name="statusbar_main_category_summary">Значки строки состояния</string>
+    <string name="lockscreen_main_category_summary">Изменение макета и настроек экрана блокировки</string>
+    <string name="buttons_main_category_summary">Настройка аппаратных и программных кнопок</string>
+    <string name="gestures_main_category_summary">Параметры и действия на основе жестов</string>
+    <string name="clock_category">Часы &amp; Дата</string>
+    <string name="carbonfibers_dialog_title">Помогите нам помочь вам!</string>
+    <string name="carbonfibers_dialog_toast">Прочитайте это все!!!</string>
+    <string name="anonymous_statistics_title">Статистика CarbonROM</string>
+    <string name="anonymous_statistics_summary">Помогите сделать CarbonROM лучше, включив отправку анонимных отчётов</string>
+    <string name="anonymous_statistics_warning_title">О приложении</string>
+    <string name="anonymous_statistics_warning">Анонимные отчёты позволяют разработчикам CarbonROM отслеживать установки на различные устройства. Отсылаемая информацию включает в себя тип устройства, версию прошивки и уникальный идентификатор, отправка которого никаким образом не вредит Вашей конфиденциальности. Отчёт отсылается при каждой загрузке устройства.\n\nЧтобы посмотреть, какие данные отсылаются, нажмите \"Предпросмотр\".</string>
+    <string name="enable_reporting_title">Включить отправку отчётов</string>
+    <string name="preview_data_title">Предпросмотр</string>
+    <string name="view_stats_title">Просмотр статистики</string>
+    <string name="anonymous_learn_more">Узнать больше</string>
+    <string name="preview_id_title">Уникальный идентификатор</string>
+    <string name="preview_device_title">Устройство</string>
+    <string name="preview_version_title">Версия</string>
+    <string name="preview_country_title">Страна</string>
+    <string name="preview_carrier_title">Оператор</string>
+    <string name="stats_collection_title">Включить сбор статистики</string>
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Выключение отдельных пикселей для снижения энергопотребления</string>
+    <string name="smart_pixels_on_power_save_title">Автоматически включать при энергосбережении</string>
+    <string name="smart_pixels_on_power_save_summary">Использовать \"умные пиксели\" при включённом энергосбережении</string>
+    <string name="smart_pixels_percent">Процент пикселей для отключения</string>
+    <string name="smart_pixels_shift">Предотвратить выжигание экрана путем перемещения пикселей каждую</string>
+    <string name="smart_pixels_warning_text">Smart Pixels - это энергосберегающая функция. Чем больше пикселей вы решите выключить, тем больше будет энергосбережение. для приятного использования мы рекомендуем установить количество выключенных пикселей на 75% с перемещением каждые 10 минут.</string>
+    <string name="status_bar_tuner_title">Значки строки состояния</string>
+    <string name="status_bar_tuner_summary">Настройка значков в строке состояния</string>
+    <string name="battery_style_category_title">Батарея</string>
+    <string name="battery_percent_title">Процент батареи</string>
+    <string name="status_bar_battery_style_title">Стиль индикатора батареи</string>
+    <string name="status_bar_battery_style_icon_portrait">Портретная иконка (по умолчанию)</string>
+    <string name="status_bar_battery_style_circle">Круглый значок</string>
+    <string name="status_bar_battery_style_dotted_circle">Круг (Точечный)</string>
+    <string name="status_bar_battery_style_filled_circle">Круг (Заполненный)</string>
+    <string name="status_bar_battery_style_text">Текст</string>
+    <string name="status_bar_battery_style_hidden">Не показывать</string>
+    <string name="status_bar_battery_percentage_title">Процент батареи</string>
+    <string name="status_bar_battery_percentage_default">Скрытый (по умолчанию)</string>
+    <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
+    <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
+    <string name="active_edge_settings_title">Активировать Edge</string>
+    <string name="show_fourg_icon_title">4G значок</string>
+    <string name="show_fourg_icon_summary">Отображать 4G значок сигнала вместо LTE</string>
+    <string name="hide_apps_from_recents_title">Скрыть приложение в недавних</string>
+    <string name="hide_apps_from_recents_summary">Скрыть приложения из меню недавних приложений</string>
+    <string name="hide_from_recents_add_app">Добавить приложение</string>
+    <string name="title_activity_carbon_recents_settings">Недавние</string>
+    <string name="torch_power_button_gesture_none">Отключено</string>
+    <string name="aspect_ratio_apps_enabled_title">Включить масштабирование</string>
+    <string name="aspect_ratio_apps_enabled_summary">Разрешить устаревшим приложениям использовать весь экран</string>
+    <string name="aspect_ratio_apps_list_title">Приложениям разрешено использовать масштабирование</string>
+    <string name="aspect_ratio_category_title">Устаревшее масштабирование приложения</string>
+    <string name="aspect_ratio_apps_info">Приложения должны быть перезапущены после изменений</string>
+    <string name="action_save">Сохранить</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Fibras de carbono</string>
+    <string name="buttons_category">Botones</string>
+    <string name="gestures_category">Gestos</string>
+    <string name="lock_screen_category">Pantalla de bloqueo</string>
+    <string name="status_bar_category">Barra de estado</string>
+    <string name="system_category">Sistema</string>
+    <string name="privacy_category">Privacidad</string>
+    <string name="power_save_category">Ahorro de energía</string>
+    <string name="global_actions_category">Menú de apagado</string>
+    <string name="miscellaneous_category_title">Misceláneos</string>
+    <string name="system_main_category_summary">Ajustar opciones del sistema</string>
+    <string name="statusbar_main_category_summary">Ajustar elementos de la barra de estado</string>
+    <string name="lockscreen_main_category_summary">Modificar el diseño de la pantalla de bloqueo y opciones</string>
+    <string name="buttons_main_category_summary">Personalizar teclas de hardware y software</string>
+    <string name="gestures_main_category_summary">Opciones y acciones basadas en gestos</string>
+    <string name="privacy_main_category_summary">Recopilación de estadísticas y privacidad</string>
+    <string name="status_bar_icons_category">Iconos</string>
+    <string name="qs_category">Opciones de ajustes rápidos</string>
+    <string name="clock_category">Reloj y fecha</string>
+    <string name="battery_category">Estilo de la batería</string>
+    <string name="lockscreen_layout_category">Opciones de diseño</string>
+    <string name="lockscreen_info_category">Información en la pantalla de bloqueo</string>
+    <string name="button_gesture_category">Gestos de botón</string>
+    <string name="navigation_category">Navegación</string>
+    <string name="carbonfibers_dialog_title">¡Ayúdanos a ayudarte!</string>
+    <string name="carbonfibers_dialog_message">¡Desafortunadamente, no somos magos!\n\nSi encuentras un error, por favor contáctenos en Telegram 
+        o escríbanos a support@carbonrom.org con la siguiente información.\n\n1. Versión de CarbonROM y modelo de dispositivo\n2. Logcat y/o last_kmsg\n3. Kernel y mods usados\n4.
+       Otra informacion adicionall\n\nSi no puede proporcionarnos la información anterior, no espere que el problema se tenga en cuenta.</string>
+    <string name="carbonfibers_dialog_toast">¡Léalo todo!</string>
+    <string name="anonymous_statistics_title">Estadísticas de CarbonROM</string>
+    <string name="anonymous_statistics_summary">Ayuda a mejorar CarbonROM mediante el envío anónimo de estadísticas</string>
+    <string name="anonymous_statistics_warning_title">Acerca de</string>
+    <string name="anonymous_statistics_warning">Entrar en el programa de Estadísticas de CarbonROM permitirá que datos no personales sean subidos a los desarrolladores de CarbonROM para realizar un seguimiento único de instalaciones a través de los dispositivos. La información subida incluye un identificador único, que no compromete tu privacidad o tus datos personales. Los datos son subidos durante cada inicio.\n\nPara obtener un ejemplo de qué datos se suben, toca en Vista previa de los datos.</string>
+    <string name="enable_reporting_title">Habilitar reporte</string>
+    <string name="preview_data_title">Vista previa de los datos</string>
+    <string name="view_stats_title">Ver estado</string>
+    <string name="anonymous_learn_more">Saber más</string>
+    <string name="preview_id_title">ID único</string>
+    <string name="preview_device_title">Dispositivo</string>
+    <string name="preview_version_title">Versión</string>
+    <string name="preview_country_title">País</string>
+    <string name="preview_carrier_title">Operador móvil</string>
+    <string name="stats_collection_title">Habilitar recopilación de estadísticas</string>
+    <string name="stats_collection_summary">Cuando está habilitado, permite la recopilación de métricas</string>
+    <string name="powermenu_advanced_reboot_title">Reinicio avanzado</string>
+    <string name="powermenu_advanced_reboot_summary">Permite el acceso a la recuperación y cargador de arranque</string>
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Apagar píxeles para reducir el consumo de energía</string>
+    <string name="smart_pixels_on_power_save_title">Auto-activar en el ahorro de batería</string>
+    <string name="smart_pixels_on_power_save_summary">Usar píxeles inteligentes cuando el ahorro de batería está activado</string>
+    <string name="smart_pixels_percent">Porcentaje de píxeles para desactivar</string>
+    <string name="smart_pixels_shift">Evitar quemar cambiando píxeles cada</string>
+    <string name="smart_pixels_warning_text">Smart Pixels es una función de ahorro de energía. Dependiendo de cuántos píxeles decidas apagar, puedes ver una mejora significativa en la vida de la batería. Para una buena experiencia de usuario, recomendamos establecer la cantidad de píxeles discapacitados al 75 por ciento mientras se cambia cada 10 minutos.</string>
+    <string name="status_bar_tuner_title">Elementos de la barra de estado</string>
+    <string name="status_bar_tuner_summary">Editar iconos y opciones de barra de estado</string>
+    <string name="battery_style_category_title">Batería</string>
+    <string name="battery_percent_title">Porcentaje de batería</string>
+    <string name="status_bar_battery_style_title">Estilo de la batería</string>
+    <string name="status_bar_battery_style_icon_portrait">Icono vertical (por defecto)</string>
+    <string name="status_bar_battery_style_circle">Círculo</string>
+    <string name="status_bar_battery_style_dotted_circle">Círculo (Dibujado)</string>
+    <string name="status_bar_battery_style_filled_circle">Círculo (lleno)</string>
+    <string name="status_bar_battery_style_text">Texto</string>
+    <string name="status_bar_battery_style_hidden">Oculto</string>
+    <string name="status_bar_battery_percentage_title">Porcentaje de la batería</string>
+    <string name="status_bar_battery_percentage_default">Oculto (por defecto)</string>
+    <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
+    <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
+    <string name="active_edge_settings_title">Borde activo</string>
+    <string name="show_fourg_icon_title">Icono 4G</string>
+    <string name="show_fourg_icon_summary">Mostrar icono 4G en lugar de LTE</string>
+    <string name="hide_apps_from_recents_title">Ocultar apps de los recientes</string>
+    <string name="hide_apps_from_recents_summary">Ocultar aplicaciones de recientes</string>
+    <string name="hide_from_recents_add_app">Agregar app</string>
+    <string name="title_activity_carbon_recents_settings">Recientes</string>
+    <string name="torch_power_button_gesture_none">Deshabilitado</string>
+    <string name="aspect_ratio_apps_enabled_title">Activar escalado</string>
+    <string name="aspect_ratio_apps_enabled_summary">Permitir a aplicaciones antiguas usar la pantalla completa</string>
+    <string name="aspect_ratio_apps_list_title">Aplicaciones permitidas para usar escalado</string>
+    <string name="aspect_ratio_category_title">Escalado de las aplicaciones antiguas</string>
+    <string name="aspect_ratio_apps_info">Las aplicaciones deben reiniciarse después de los cambios</string>
+    <string name="action_save">Guardar</string>
+    <string name="volume_panel_on_left_title">Cambiar ubicación del panel de volumen</string>
+    <string name="volume_panel_on_left_summary">Mover panel de volumen a la izquierda</string>
+</resources>

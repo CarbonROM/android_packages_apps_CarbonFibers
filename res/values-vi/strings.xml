@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers"> Sợi Carbon</string>
+    <string name="buttons_category">Nút bấm</string>
+    <string name="gestures_category">Cử chỉ</string>
+    <string name="lock_screen_category">Màn hình khoá</string>
+    <string name="status_bar_category">Thanh trạng thái</string>
+    <string name="system_category">Hệ thống</string>
+    <string name="privacy_category">Riêng tư</string>
+    <string name="power_save_category">Tiết kiệm năng lượng</string>
+    <string name="global_actions_category">Trình đơn nguồn</string>
+    <string name="miscellaneous_category_title">Các thông báo khác</string>
+    <string name="system_main_category_summary">Điều chỉnh các tùy chọn hệ thống</string>
+    <string name="statusbar_main_category_summary">Biểu tượng trên thanh trạng thái</string>
+    <string name="lockscreen_main_category_summary">Sửa đổi tùy chọn và bố cục màn hình khóa</string>
+    <string name="buttons_main_category_summary">Tùy chỉnh các phím phần cứng và phần mềm</string>
+    <string name="gestures_main_category_summary">Tùy chọn cử chỉ và hành động</string>
+    <string name="privacy_main_category_summary">Quyền và Thống kê các quyền</string>
+    <string name="status_bar_icons_category">Biểu tượng </string>
+    <string name="qs_category">Tùy chọn bảng cài đặt nhanh</string>
+    <string name="clock_category">Đồng hồ &amp; ngày</string>
+    <string name="battery_category">Bố cục pin</string>
+    <string name="lockscreen_layout_category">Tùy chọn Bố cục</string>
+    <string name="lockscreen_info_category">Thông tin ở màn hình khoá</string>
+    <string name="button_gesture_category">Cử chỉ nút</string>
+    <string name="navigation_category">Thanh điều hướng</string>
+    <string name="tap_swipe_category">Tùy chọn Nhấn &amp; Vuốt</string>
+    <string name="carbonfibers_dialog_title">Giúp chúng tôi cũng là giúp bạn!</string>
+    <string name="carbonfibers_dialog_message">Thật không may, chúng tôi đang không phù thủy! \n\nVì vậy, nếu bạn tìm thấy một lỗi thiết lập bất kỳ trong CarbonFibers, xin vui lòng mở ra một vé trên Jira hoặc liên hệ với một nhà phát triển Cacbon với điều kiện sau: \n\n1. #blamemyself * \n2. Logcat! \n3. Hạt nhân và các mods đã sử dụng\n4. Thêm thông tin hữu ích\n\nNếu bạn không báo cáo một cái gì đó với những thông tin trên, không mong đợi lỗi sẽ được sửa. Hãy nhớ rằng, chúng tôi là không hoàn hảo như Patrick, do đó, thỉnh thoảng chúng tôi cũng quên điều gì đó.</string>
+    <string name="carbonfibers_dialog_toast">Đọc tất cả!</string>
+    <string name="anonymous_statistics_title">Số liệu thống kê CarbonROM</string>
+    <string name="anonymous_statistics_summary">Giúp làm cho CarbonROM tốt hơn bằng cách tham gia báo cáo thống kê sử dụng</string>
+    <string name="anonymous_statistics_warning_title">Giới thiệu</string>
+    <string name="anonymous_statistics_warning">Tham gia vào CarbonROM Số liệu thống kê sẽ cho phép phi cá nhân dữ liệu được gửi đến
+        các nhà phát triển của CyanogenMod để theo dõi duy nhất cài đặt trên thiết bị. Thông tin gửi bao gồm một định danh duy nhất,
+        mà không thỏa hiệp về quyền riêng tư hoặc dữ liệu cá nhân của bạn. Các dữ liệu được gửi trong mỗi lần khởi động.\n\nFor một ví dụ về các dữ liệu được gửi, nhấp vào Xem trước Dữ liệu.</string>
+    <string name="enable_reporting_title">Kích hoạt báo cáo</string>
+    <string name="preview_data_title">Xem trước dữ liệu</string>
+    <string name="view_stats_title">Xem số liệu thống kê</string>
+    <string name="anonymous_learn_more">Tìm hiểu thêm</string>
+    <string name="preview_id_title">ID duy nhất</string>
+    <string name="preview_device_title">Thiết bị</string>
+    <string name="preview_version_title">Phiên bản</string>
+    <string name="preview_country_title">Quốc gia</string>
+    <string name="preview_carrier_title">Nhà mạng</string>
+    <string name="stats_collection_title">Thống kê bộ sưu tập</string>
+    <string name="stats_collection_summary">Khi được bật, cho phép thu thập số liệu</string>
+    <string name="powermenu_advanced_reboot_title">Khởi động lại nâng cao</string>
+    <string name="powermenu_advanced_reboot_summary">Cho phép truy cập vào Recovery và Bootloader</string>
+    <string name="smart_pixels_title">Điểm ảnh thông minh</string>
+    <string name="smart_pixels_summary">Tắt các điểm ảnh để giảm điện năng tiêu thụ</string>
+    <string name="smart_pixels_on_power_save_title">Tự động kích hoạt trên tiết kiệm pin</string>
+    <string name="smart_pixels_on_power_save_summary">Kích hoạt Điểm ảnh thông minh khi tiết kiệm pin được kích hoạt</string>
+    <string name="smart_pixels_percent">Phần trăm điểm ảnh bị vô hiệu hóa</string>
+    <string name="smart_pixels_shift">Ngăn chặn bóng mờ bằng cách chuyển điểm ảnh luân phiên</string>
+    <string name="smart_pixels_warning_text">Điểm ảnh thông minh là một tính năng tiết kiệm pin. Tùy thuộc vào bao nhiêu điểm ảnh bạn quyết định tắt, bạn có thể thấy tuổi thọ pin cải thiện một cách đáng kể. Để trải nghiệm người dùng tốt, chúng tôi khuyên bạn nên thiết lập số lượng điểm ảnh bị vô hiệu hóa đến 75 phần trăm trong khi chuyển luân phiên mỗi 10 phút.</string>
+    <string name="doubletap_poweroff_screen_title">Nhấn đúp để tắt màn hình</string>
+    <string name="doubletap_lockscreen_title">Nhấn đúp màn hình khóa để tắt màn hình</string>
+    <string name="doubletap_lockscreen_summary">Nhấn đúp vào màn hình khóa để tắt màn hình</string>
+    <string name="doubletap_statusbar_title">Nhấn đúp thanh trạng thái để tắt màn hình</string>
+    <string name="doubletap_statusbar_summary">Chạm hai lần vào thanh trạng thái để tắt màn hình</string>
+    <string name="doubletap_poweroff_disabled">Tắt</string>
+    <string name="doubletap_poweroff_all">Bật (Màn hình khóa và thanh trạng thái)</string>
+    <string name="doubletap_poweroff_sb">Bật (Thanh trạng thái)</string>
+    <string name="doubletap_poweroff_ls">Bật (Màn hình khóa)</string>
+    <string name="status_bar_tuner_title">Biểu tượng trên thanh trạng thái</string>
+    <string name="status_bar_tuner_summary">Chỉnh sửa các biểu tượng và tùy chọn trên thanh trạng thái</string>
+    <string name="battery_style_category_title">Pin</string>
+    <string name="battery_percent_title">Phần trăm pin</string>
+    <string name="status_bar_battery_style_title">Kiểu pin</string>
+    <string name="status_bar_battery_style_icon_portrait">Biểu tượng dọc (mặc định)</string>
+    <string name="status_bar_battery_style_circle">Hình tròn</string>
+    <string name="status_bar_battery_style_dotted_circle">Vòng tròn (Chấm)</string>
+    <string name="status_bar_battery_style_filled_circle">Vòng kết nối (Đã lấp đầy)</string>
+    <string name="status_bar_battery_style_text">Văn bản</string>
+    <string name="status_bar_battery_style_hidden">Ẩn</string>
+    <string name="status_bar_battery_percentage_title">Phần trăm pin</string>
+    <string name="status_bar_battery_percentage_default">Ẩn (mặc định)</string>
+    <string name="status_bar_battery_percentage_text_inside">Bên trong biểu tượng</string>
+    <string name="status_bar_battery_percentage_text_next">Bên cạnh biểu tượng</string>
+    <string name="active_edge_settings_title">Hoạt động Cạnh</string>
+    <string name="show_fourg_icon_title">Biểu tượng 4G</string>
+    <string name="show_fourg_icon_summary">Hiển thị biểu tượng 4G thay vì LTE</string>
+    <string name="hide_apps_from_recents_title">Ẩn ứng dụng khỏi gần đây</string>
+    <string name="hide_apps_from_recents_summary">Ẩn các ứng dụng không xuất hiện trong những lần gần đây</string>
+    <string name="hide_from_recents_add_app">Thêm ứng dụng</string>
+    <string name="title_activity_carbon_recents_settings">Ứng dụng gần đây</string>
+    <string name="double_tap_power_flashlight_screen_title">Kích hoạt đèn PIN</string>
+    <string name="double_tap_power_flashlight_title">Bật đèn pin khi màn hình tắt</string>
+    <string name="torch_power_button_gesture_none">Đã vô hiệu hóa</string>
+    <string name="torch_power_button_gesture_dt">Nhấn đúp phím nguồn để bật tắt đèn pin</string>
+    <string name="torch_power_button_gesture_lp">Nhấn giữ vào nguồn để bật tắt đèn pin</string>
+    <string name="torch_power_button_gesture_none_summary">Tắt</string>
+    <string name="torch_power_button_gesture_dt_summary">Bật (Nhấn đúp)</string>
+    <string name="torch_power_button_gesture_lp_summary">Bật (Nhấn giữ)</string>
+    <string name="aspect_ratio_apps_enabled_title">Bật tính năng mở rộng màn hình</string>
+    <string name="aspect_ratio_apps_enabled_summary">Cho phép các ứng dụng cũ sử dụng toàn màn hình</string>
+    <string name="aspect_ratio_apps_list_title">Các ứng dụng được phép mở rộng màn hình</string>
+    <string name="aspect_ratio_category_title">Mở rộng ứng dụng kế thừa</string>
+    <string name="aspect_ratio_apps_info">Ứng dụng cần được khởi động lại để áp dụng thay đổi</string>
+    <string name="action_save">Lưu</string>
+    <string name="volume_panel_on_left_title">Vị trí bẳng điều khiển âm lượng</string>
+    <string name="volume_panel_on_left_summary">Di chuyển bảng âm lượng sang trái</string>
+</resources>

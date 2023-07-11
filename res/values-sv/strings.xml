@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="buttons_category">Knappar</string>
+    <string name="gestures_category">Gester</string>
+    <string name="lock_screen_category">Låsskärm</string>
+    <string name="status_bar_category">Statusfält</string>
+    <string name="system_category">System</string>
+    <string name="status_bar_icons_category">Ikoner</string>
+    <string name="qs_category">QS-alternativ</string>
+    <string name="button_gesture_category">Knappgester</string>
+    <string name="navigation_category">Navigering</string>
+    <string name="carbonfibers_dialog_title">Hjälp oss hjälp dig!</string>
+    <string name="anonymous_statistics_title">CarbonROM-statistik</string>
+    <string name="anonymous_statistics_summary">Hjälp till att göra CarbonROM bättre genom att välja anonym statistik-rapportering</string>
+    <string name="anonymous_statistics_warning_title">Om</string>
+    <string name="enable_reporting_title">Aktivera rapportering</string>
+    <string name="preview_data_title">Förhandsgranska data</string>
+    <string name="view_stats_title">Visa statistik</string>
+    <string name="anonymous_learn_more">Ta reda på mer</string>
+    <string name="preview_id_title">Unikt ID</string>
+    <string name="preview_device_title">Enhet</string>
+    <string name="preview_version_title">Version</string>
+    <string name="preview_country_title">Land</string>
+    <string name="preview_carrier_title">Operatör</string>
+    <string name="powermenu_advanced_reboot_title">Avancerad omstart</string>
+    <string name="powermenu_advanced_reboot_summary">Aktiverar åtkomst till återställning och uppstartsladdare</string>
+    <string name="smart_pixels_title">Smarta Pixlar</string>
+    <string name="smart_pixels_percent">Procent av pixlar att inaktivera</string>
+    <string name="smart_pixels_shift">Förhindra inbränning av skiftande pixlar var</string>
+    <string name="doubletap_poweroff_disabled">Av</string>
+    <string name="status_bar_tuner_title">Statusfält-ikoner</string>
+    <string name="status_bar_battery_style_title">Batteristil</string>
+    <string name="status_bar_battery_style_circle">Cirkel</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Gömd</string>
+    <string name="status_bar_battery_percentage_title">Batteriprocent</string>
+    <string name="status_bar_battery_percentage_text_inside">Inuti ikonen</string>
+    <string name="status_bar_battery_percentage_text_next">Intill ikonen</string>
+    <string name="hide_apps_from_recents_title">Göm appar från senaste</string>
+    <string name="hide_from_recents_add_app">Lägg till app</string>
+    <string name="title_activity_carbon_recents_settings">Senaste</string>
+    <string name="torch_power_button_gesture_none">Inaktiverad</string>
+</resources>

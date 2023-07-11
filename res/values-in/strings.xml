@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Serat Carbon</string>
+    <string name="buttons_category">Tombol</string>
+    <string name="gestures_category">Gestures</string>
+    <string name="lock_screen_category">Layar kunci</string>
+    <string name="status_bar_category">Status bar</string>
+    <string name="system_category">Sistem</string>
+    <string name="privacy_category">Privasi</string>
+    <string name="power_save_category">Hemat daya</string>
+    <string name="global_actions_category">Menu Daya</string>
+    <string name="miscellaneous_category_title">Lain-lain</string>
+    <string name="system_main_category_summary">Sesuaikan opsi sistem</string>
+    <string name="statusbar_main_category_summary">Sesuaikan item bilah status</string>
+    <string name="lockscreen_main_category_summary">Ubah tata letak dan opsi layar kunci</string>
+    <string name="buttons_main_category_summary">Sesuaikan kunci perangkat keras dan perangkat lunak</string>
+    <string name="gestures_main_category_summary">Opsi dan tindakan berbasis gerakan</string>
+    <string name="clock_category">Jam &amp; Tanggal</string>
+    <string name="carbonfibers_dialog_title">Bantu kami membantu Anda!</string>
+    <string name="carbonfibers_dialog_toast">Baca semua!</string>
+    <string name="anonymous_statistics_title">Statistik CarbonROM</string>
+    <string name="anonymous_statistics_summary">Bantu CarbonROM menjadi lebih baik dengan memilih pelaporan statistik anonim</string>
+    <string name="anonymous_statistics_warning_title">Tentang</string>
+    <string name="anonymous_statistics_warning">Memilih kedalam Statistik CarbonRom akan memungkinkan bukan data pribadi dikirimkan         pengembang dari Carbon untuk instalasi unik dalam perangkat. Informasi yang dikirimkan termasuk pengenal yang unik.
+        yang tidak membahayakan dari privasi data pribadi. Data akan dikirimkan setiap mulai perangkat dinyalakan\n\nsebagai contoh dari data
+        yang dikirimkan, ketuk Pratinjau data.</string>
+    <string name="enable_reporting_title">Aktifkan pelaporan</string>
+    <string name="preview_data_title">Pratinjau data</string>
+    <string name="view_stats_title">Lihat Statistik</string>
+    <string name="anonymous_learn_more">Pelajari Selengkapnya</string>
+    <string name="preview_id_title">ID Unik</string>
+    <string name="preview_device_title">Perangkat</string>
+    <string name="preview_version_title">Versi</string>
+    <string name="preview_country_title">Negara</string>
+    <string name="preview_carrier_title">Penyedia</string>
+    <string name="stats_collection_title">Aktifkan pengumpulan data</string>
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Matikan pixel untuk mengurangi konsumsi daya</string>
+    <string name="smart_pixels_on_power_save_title">Aktifkan otomatis pada penghemat baterai</string>
+    <string name="smart_pixels_on_power_save_summary">Gunakan Piksel Cerdas ketika pengiritan daya baterai diaktifkan</string>
+    <string name="smart_pixels_percent">Persentase piksel dinonaktifkan</string>
+    <string name="smart_pixels_shift">Mencegah burn-in dengan menggeser setiap piksel</string>
+    <string name="smart_pixels_warning_text">Piksel Cerdas adalah fitur penghemat daya. Tergantung seberapa banyak piksel Anda matikan, Anda dapat melihat perbedaan signifikan kekuatan baterai. Untuk hasil yang baik, kami menyarankan pengaturan piksel pada 75 persen dengan pengaturan setiap 10 menit.</string>
+    <string name="status_bar_tuner_title">Benda pada bilah status</string>
+    <string name="status_bar_tuner_summary">Ubah status bar icon dan opsi</string>
+    <string name="battery_style_category_title">Baterai</string>
+    <string name="battery_percent_title">Persentase Baterai</string>
+    <string name="status_bar_battery_style_title">Gaya baterai</string>
+    <string name="status_bar_battery_style_icon_portrait">Ikon potret (bawaan)</string>
+    <string name="status_bar_battery_style_circle">Lingkaran</string>
+    <string name="status_bar_battery_style_dotted_circle">Bulat (Titik)</string>
+    <string name="status_bar_battery_style_filled_circle">Bulat (Berisi)</string>
+    <string name="status_bar_battery_style_text">Teks</string>
+    <string name="status_bar_battery_style_hidden">Tersembunyi</string>
+    <string name="status_bar_battery_percentage_title">Persentase baterai</string>
+    <string name="status_bar_battery_percentage_default">Sembunyi (bawaan)</string>
+    <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>
+    <string name="status_bar_battery_percentage_text_next">Di sebelah ikon</string>
+    <string name="show_fourg_icon_title">Ikon 4G</string>
+    <string name="show_fourg_icon_summary">Tampilkan ikon 4G di ikon sinyal, bukan LTE</string>
+    <string name="hide_apps_from_recents_title">Sembunyikan aplikasi dari terbaru</string>
+    <string name="hide_apps_from_recents_summary">Sembunyikan aplikasi dari recent</string>
+    <string name="hide_from_recents_add_app">Tambahkan aplikasi</string>
+    <string name="title_activity_carbon_recents_settings">Terkini</string>
+    <string name="torch_power_button_gesture_none">Nonaktif</string>
+    <string name="aspect_ratio_apps_enabled_title">Aktifkan penskalaan</string>
+    <string name="aspect_ratio_apps_enabled_summary">Izinkan aplikasi lama menggunakan layar penuh</string>
+    <string name="aspect_ratio_apps_list_title">Aplikasi diizinkan untuk menggunakan penskalaan</string>
+    <string name="aspect_ratio_category_title">Penskalaan aplikasi lama</string>
+    <string name="aspect_ratio_apps_info">Aplikasi perlu dimulai ulang setelah ada perubahan</string>
+    <string name="action_save">Simpan</string>
+</resources>

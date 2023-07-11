@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Fibra de Carbono</string>
+    <string name="buttons_category">Botões</string>
+    <string name="gestures_category">Gestos</string>
+    <string name="lock_screen_category">Tela de Bloqueio</string>
+    <string name="status_bar_category">Barra de estatus</string>
+    <string name="system_category">Sistema</string>
+    <string name="privacy_category">Privacidade</string>
+    <string name="power_save_category">Modo de economia de energia</string>
+    <string name="global_actions_category">Menu de energia</string>
+    <string name="miscellaneous_category_title">Diversos</string>
+    <string name="system_main_category_summary">Ajustar opções do sistema</string>
+    <string name="statusbar_main_category_summary">Ajustar itens da barra de status</string>
+    <string name="lockscreen_main_category_summary">Modificar layout e opções da tela de bloqueio</string>
+    <string name="buttons_main_category_summary">Personalizar teclas de hardware e software</string>
+    <string name="gestures_main_category_summary">Gestos baseados em opções e ações</string>
+    <string name="privacy_main_category_summary">Coleção de estatísticas e privacidade</string>
+    <string name="status_bar_icons_category">Ícones</string>
+    <string name="qs_category">Opções das configurações rápidas</string>
+    <string name="clock_category">Relógio e data</string>
+    <string name="battery_category">Layout da bateria</string>
+    <string name="lockscreen_layout_category">Opções de layout</string>
+    <string name="lockscreen_info_category">Informações da tela de bloqueio</string>
+    <string name="button_gesture_category">Gestos de botão</string>
+    <string name="navigation_category">Navegação</string>
+    <string name="carbonfibers_dialog_title">Ajude-nos a ajudar você!</string>
+    <string name="carbonfibers_dialog_toast">Leia tudo!</string>
+    <string name="anonymous_statistics_title">Estatísticas de CarbonROM</string>
+    <string name="anonymous_statistics_summary">Ajudar a fazer CarbonROM melhor opção para o relatório de estatísticas anônimas</string>
+    <string name="anonymous_statistics_warning_title">Sobre</string>
+    <string name="anonymous_statistics_warning">Optando por ter estatísticas CarbonROM permitirá que dados não-pessoais ser enviado para os desenvolvedores da CarbonROM para rastrear instalações únicas através de dispositivos. As informações apresentadas incluem um identificador exclusivo, que não compromete a sua privacidade e dados pessoais. Os dados são enviados durante cada inicialização. Para ver um exemplo dos dados que são enviados, toque na visualização de dados.</string>
+    <string name="enable_reporting_title">Ativar geração de relatório</string>
+    <string name="preview_data_title">Visualizar Atualização</string>
+    <string name="view_stats_title">Ver estatísticas</string>
+    <string name="anonymous_learn_more">Mais informações</string>
+    <string name="preview_id_title">ID Único</string>
+    <string name="preview_device_title">Dispositivo</string>
+    <string name="preview_version_title">Versão</string>
+    <string name="preview_country_title">País</string>
+    <string name="preview_carrier_title">Operadora</string>
+    <string name="stats_collection_title">Habilitar coleção de estatísticas</string>
+    <string name="smart_pixels_title">Pixels Inteligentes</string>
+    <string name="smart_pixels_summary">Desligue os pixels para reduzir o consumo de energia</string>
+    <string name="smart_pixels_on_power_save_title">Ativar automaticamente economia de bateria</string>
+    <string name="smart_pixels_on_power_save_summary">Ativar pixels inteligentes quando a economia de bateria está ativada</string>
+    <string name="smart_pixels_percent">Porcentagem de pixels para desativar</string>
+    <string name="smart_pixels_shift">Evite o burn-in deslocando pixels a cada</string>
+    <string name="smart_pixels_warning_text">Smart Pixels é um recurso de economia de energia. Dependendo de quantos pixels você decidir desativar, você poderá ver uma melhoria significativa na duração da bateria. Para uma boa experiência do usuário, recomendamos definir a quantidade de pixels desativados para 75 por cento ao alternar a cada 10 minutos.</string>
+    <string name="status_bar_tuner_title">Ícones da barra de status</string>
+    <string name="status_bar_tuner_summary">Editar ícones e opções da barra de status</string>
+    <string name="battery_style_category_title">Bateria</string>
+    <string name="battery_percent_title">Porcentagem da bateria</string>
+    <string name="status_bar_battery_style_title">Estilo da bateria</string>
+    <string name="status_bar_battery_style_icon_portrait">Ícone em retrato (padrão)</string>
+    <string name="status_bar_battery_style_circle">Círculo</string>
+    <string name="status_bar_battery_style_dotted_circle">Círculo Pontilhado</string>
+    <string name="status_bar_battery_style_filled_circle">Círculo Pontilhado</string>
+    <string name="status_bar_battery_style_text">Texto</string>
+    <string name="status_bar_battery_style_hidden">Oculto</string>
+    <string name="status_bar_battery_percentage_title">Porcentagem da bateria</string>
+    <string name="status_bar_battery_percentage_default">Oculto (padrão)</string>
+    <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
+    <string name="status_bar_battery_percentage_text_next">Ao lado do ícone</string>
+    <string name="active_edge_settings_title">Borda Ativa</string>
+    <string name="show_fourg_icon_title">Ícone 4G</string>
+    <string name="show_fourg_icon_summary">Exibir o ícone \"4G\" ao invés de \"LTE\" no ícone de dados móveis</string>
+    <string name="hide_apps_from_recents_title">Esconder apps recentes</string>
+    <string name="hide_apps_from_recents_summary">Ocultar aplicativos de aparecer em recentes</string>
+    <string name="hide_from_recents_add_app">Adicionar app</string>
+    <string name="title_activity_carbon_recents_settings">Recentes</string>
+    <string name="torch_power_button_gesture_none">Desativado</string>
+    <string name="aspect_ratio_apps_enabled_title">14/5000
+Ativar escala</string>
+    <string name="aspect_ratio_apps_enabled_summary">Permitir que aplicativos legacy usem tela cheia</string>
+    <string name="aspect_ratio_apps_list_title">Apps autorizados a usar dimensionamento</string>
+    <string name="aspect_ratio_category_title">Dimensionamento de aplicativos legados</string>
+    <string name="aspect_ratio_apps_info">Aplicativos precisam ser reiniciados após alterações</string>
+    <string name="action_save">Salvar</string>
+</resources>

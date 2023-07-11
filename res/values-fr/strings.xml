@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Fibres de carbone</string>
+    <string name="buttons_category">Boutons</string>
+    <string name="gestures_category">Gestes</string>
+    <string name="lock_screen_category">Écran de verrouillage</string>
+    <string name="status_bar_category">Barre d\'état</string>
+    <string name="system_category">Système</string>
+    <string name="privacy_category">Confidentialité</string>
+    <string name="power_save_category">Mode d\'économie d\'énergie</string>
+    <string name="global_actions_category">Menu d\'alimentation</string>
+    <string name="miscellaneous_category_title">Divers</string>
+    <string name="system_main_category_summary">Ajuster les options système</string>
+    <string name="statusbar_main_category_summary">Ajuster les éléments de la barre d\'état</string>
+    <string name="lockscreen_main_category_summary">Modifier la disposition et les options de l\'écran de verrouillage</string>
+    <string name="buttons_main_category_summary">Personnaliser les clés matérielles et logicielles</string>
+    <string name="gestures_main_category_summary">Options et actions basées sur les gestes</string>
+    <string name="privacy_main_category_summary">Collecte de statistiques et de confidentialité</string>
+    <string name="status_bar_icons_category">Icônes</string>
+    <string name="qs_category">Options des réglages rapides</string>
+    <string name="clock_category">Horloge &amp; Date</string>
+    <string name="battery_category">Disposition de la batterie</string>
+    <string name="lockscreen_layout_category">Option de mise en page</string>
+    <string name="lockscreen_info_category">Informations sur l\'écran de verrouillage</string>
+    <string name="button_gesture_category">Gestes des boutons</string>
+    <string name="navigation_category">Navigation</string>
+    <string name="carbonfibers_dialog_title">Aidez-nous à vous aider !</string>
+    <string name="carbonfibers_dialog_message">Malheureusement, nous ne sommes pas des magiciens!\n\nSi vous trouvez un bug, veuillez nous contacter sur telegram
+	    ou nous écrire à support@carbonrom. rg avec les informations suivantes.\n\n1. Version CarbonROM et périphérique\n2. Logcat et/ou last_kmsg\n3. Noyau et mods utilisés\n4.
+	    Informations diverses\n\nSi vous ne signalez pas avec les informations ci-dessus, ne vous attendez pas à ce que le problème soit pris en considération.</string>
+    <string name="carbonfibers_dialog_toast">Tout lire !</string>
+    <string name="anonymous_statistics_title">Statistiques de CarbonROM</string>
+    <string name="anonymous_statistics_summary">Aider à améliorer CarbonROM en envoyant des rapports de statistiques anonymes</string>
+    <string name="anonymous_statistics_warning_title">À propos</string>
+    <string name="anonymous_statistics_warning">En activant les statistiques CarbonROM, des données non personnelles seront soumises aux développeurs de CarbonROM pour effectuer un suivi des installations uniques sur les périphériques. Les informations fournies incluent un identificateur unique, qui ne compromet pas votre vie privée ou des données à caractère personnel. Les données sont envoyées au cours de chaque démarrage.\n\nPour des exemples des données qui sont envoyées, tapez sur Aperçu des données.</string>
+    <string name="enable_reporting_title">Activer les rapports</string>
+    <string name="preview_data_title">Prévisualiser les données</string>
+    <string name="view_stats_title">Voir les statistiques</string>
+    <string name="anonymous_learn_more">En savoir plus</string>
+    <string name="preview_id_title">Identifiant unique</string>
+    <string name="preview_device_title">Appareil</string>
+    <string name="preview_version_title">Version</string>
+    <string name="preview_country_title">Pays</string>
+    <string name="preview_carrier_title">Opérateur</string>
+    <string name="stats_collection_title">Activer la collecte de statistiques</string>
+    <string name="stats_collection_summary">Lorsqu\'il est activé, autorise la collection de métriques</string>
+    <string name="powermenu_advanced_reboot_title">Redémarrage avancé</string>
+    <string name="powermenu_advanced_reboot_summary">Autoriser l\'accès au recovery et au bootloader</string>
+    <string name="smart_pixels_title">Pixels intelligents</string>
+    <string name="smart_pixels_summary">Éteindre des pixels pour réduire la consommation d\'énergie</string>
+    <string name="smart_pixels_on_power_save_title">Activer automatiquement avec l\'économiseur de batterie</string>
+    <string name="smart_pixels_on_power_save_summary">Activer Smart Pixels lorsque l\'économiseur de batterie est activé</string>
+    <string name="smart_pixels_percent">Pourcentage de pixels à désactiver</string>
+    <string name="smart_pixels_shift">Empêcher des dommages en déplaçant des pixels tous les</string>
+    <string name="smart_pixels_warning_text">Smart Pixels est une fonctionnalité d\'économie d\'énergie. Selon le nombre de pixels que vous décidez de désactiver, vous pourriez voir une amélioration significative de la durée de vie de la batterie. Pour une bonne expérience utilisateur, nous recommandons de définir le nombre de pixels désactivés à 75 pourcents tout en changeant toutes les 10 minutes.</string>
+    <string name="status_bar_tuner_title">Éléments de la barre d\'état</string>
+    <string name="status_bar_tuner_summary">Modifier les icônes et options de la barre d\'état</string>
+    <string name="status_bar_battery_style_title">Style de la batterie</string>
+    <string name="status_bar_battery_style_circle">Cercle</string>
+    <string name="status_bar_battery_style_text">Texte</string>
+    <string name="status_bar_battery_style_hidden">Masqué</string>
+    <string name="status_bar_battery_percentage_title">Pourcentage de batterie</string>
+    <string name="status_bar_battery_percentage_text_inside">À l\'intérieur de l\'icône</string>
+    <string name="status_bar_battery_percentage_text_next">À côté de l\'icône</string>
+    <string name="active_edge_settings_title">Active Edge</string>
+    <string name="show_fourg_icon_title">Icône 4G</string>
+    <string name="show_fourg_icon_summary">Afficher l\'icône 4G en icône de signal au lieu de LTE</string>
+    <string name="hide_apps_from_recents_title">Masquer les applications des récents</string>
+    <string name="hide_apps_from_recents_summary">Masquer les applications dans les tâches récentes</string>
+    <string name="hide_from_recents_add_app">Ajouter une application</string>
+    <string name="title_activity_carbon_recents_settings">Récents</string>
+    <string name="torch_power_button_gesture_none">Désactivé</string>
+    <string name="volume_panel_on_left_title">Changer la position du panneau de volume</string>
+    <string name="volume_panel_on_left_summary">Déplacer le panneau de volume vers la gauche</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 CarbonROM
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="carbonfibers">Carbon Fibers</string>
+    <string name="buttons_category">Tuşlar</string>
+    <string name="gestures_category">Hareketler</string>
+    <string name="lock_screen_category">Kilit ekranı</string>
+    <string name="status_bar_category">Durum çubuğu</string>
+    <string name="system_category">Sistem</string>
+    <string name="privacy_category">Gizlilik</string>
+    <string name="power_save_category">Güç tasarrufu</string>
+    <string name="global_actions_category">Güç menüsü</string>
+    <string name="miscellaneous_category_title">Çeşitli</string>
+    <string name="system_main_category_summary">Sistem seçeneklerini ayarlayın</string>
+    <string name="statusbar_main_category_summary">Durum çubuğu öğelerini ayarlama</string>
+    <string name="lockscreen_main_category_summary">Kilit ekranı düzenini ve seçeneklerini değiştirme</string>
+    <string name="buttons_main_category_summary">Donanım ve yazılım anahtarlarını özelleştirme</string>
+    <string name="gestures_main_category_summary">Hareket tabanlı seçenekler ve eylemler</string>
+    <string name="privacy_main_category_summary">Gizlilik ve istatistik koleksiyonu</string>
+    <string name="status_bar_icons_category">Simgeler</string>
+    <string name="qs_category">Hızlı ayarlar seçenekleri</string>
+    <string name="clock_category">Saat ve Tarih</string>
+    <string name="battery_category">Pil düzeni</string>
+    <string name="lockscreen_layout_category">Düzen seçenekleri</string>
+    <string name="lockscreen_info_category">Kilit ekranı bilgisi</string>
+    <string name="button_gesture_category">Tuş hareketleri</string>
+    <string name="navigation_category">Gezinme</string>
+    <string name="tap_swipe_category">Dokunma &amp; Kaydırma seçenekleri</string>
+    <string name="carbonfibers_dialog_title">Bize yardım et!</string>
+    <string name="carbonfibers_dialog_message">Maalesef biz sihirbaz değiliz!\n\nBir hata bulursanız lütfen bize telgraf üzerinden ulaşın
+ veya bize support@carbonrom.org adresinden aşağıdaki bilgileri yazın.\n\n1. CarbonROM sürümü ve cihazı\n2. Logcat ve/veya last_kmsg\n3. Çekirdek ve kullanılan modlar\n4.
+ Çeşitli bilgiler\n\nYukarıdaki bilgileri bildirmezseniz, sorunun dikkate alınmasını beklemeyin.</string>
+    <string name="carbonfibers_dialog_toast">Tümünü okuyun!!!</string>
+    <string name="anonymous_statistics_title">CarbonROM istatistikleri</string>
+    <string name="anonymous_statistics_summary">Anonim istatistik raporları göndererek CarbonROM\'un daha iyi olmasına yardım edin</string>
+    <string name="anonymous_statistics_warning_title">Hakkında</string>
+    <string name="anonymous_statistics_warning">Carbon rom istatistiklerini seçmek, kişisel olmayan verilerin
+        Cihazlar arasında benzersiz kurulumları izlemek için carbon geliştiricileri. Sunulan bilgiler benzersiz bir tanımlayıcı içerir,
+        bu gizlilik veya kişisel verilerinizden ödün vermez. Veriler her önyükleme sırasında gönderilir.\n\nBir veri örneği için
+        Bu gönderilen veriler için önizleme üzerine dokunun.</string>
+    <string name="enable_reporting_title">Raporlamayı etkinleştir</string>
+    <string name="preview_data_title">Veriyi önizle</string>
+    <string name="view_stats_title">İstatistikleri görüntüle</string>
+    <string name="anonymous_learn_more">Daha fazla bilgi edin</string>
+    <string name="preview_id_title">Benzersiz ID</string>
+    <string name="preview_device_title">Cihaz</string>
+    <string name="preview_version_title">Sürüm</string>
+    <string name="preview_country_title">Ülke</string>
+    <string name="preview_carrier_title">Oparatör</string>
+    <string name="stats_collection_title">İstatistik koleksiyonunu etkinleştir</string>
+    <string name="stats_collection_summary">Etkinleştirildiğinde, metriklerin toplanmasına izin verir</string>
+    <string name="powermenu_advanced_reboot_title">Gelişmiş yeniden başlatma</string>
+    <string name="powermenu_advanced_reboot_summary">Kurtarma ve ön yükleyiciye erişim sağlar</string>
+    <string name="smart_pixels_title">Akıllı pikseller</string>
+    <string name="smart_pixels_summary">Güç tüketimini azaltmak için pikselleri kapatın</string>
+    <string name="smart_pixels_on_power_save_title">Pil tasarrufu için otomatik etkinleştir</string>
+    <string name="smart_pixels_on_power_save_summary">Pil tasarrufu etkinken akıllı pikselleri kullanın</string>
+    <string name="smart_pixels_percent">Devre dışı bırakılan piksel yüzdesi</string>
+    <string name="smart_pixels_shift">Pikselleri her değiştirerek yanmayı önle</string>
+    <string name="smart_pixels_warning_text">Akıllı piksel bir güç tasarrufu özelliğidir. Kaç piksele karar verdiğinize bağlı olarak pil ömründe önemli bir iyileşme görebilirsiniz. İyi bir kullanıcı deneyimi için devre dışı bırakılmış piksel miktarını yüzde 75 olarak ayarlamanızı öneririz.</string>
+    <string name="doubletap_poweroff_screen_title">Ekranı kapatmak için iki kez dokunun</string>
+    <string name="doubletap_lockscreen_title">Kilit ekranında uyutmak için iki kez dokunun</string>
+    <string name="doubletap_lockscreen_summary">Ekranı kapatmak için kilit ekranına iki kez dokunun</string>
+    <string name="doubletap_statusbar_title">Durum çubuğunda uyutmak için iki kez dokunun</string>
+    <string name="doubletap_statusbar_summary">Ekranı kapatmak için durum çubuğuna iki kez dokunun</string>
+    <string name="doubletap_poweroff_disabled">Kapalı</string>
+    <string name="doubletap_poweroff_all">Açık (Kilit ekranı ve durum çubuğu)</string>
+    <string name="doubletap_poweroff_sb">Açık (Durum çubuğu)</string>
+    <string name="doubletap_poweroff_ls">Açık (Kilit ekranı)</string>
+    <string name="status_bar_tuner_title">Durum çubuğu öğeleri</string>
+    <string name="status_bar_tuner_summary">Durum çubuğu simgelerini ve seçeneklerini düzenleme</string>
+    <string name="battery_style_category_title">Pil</string>
+    <string name="battery_percent_title">Pil yüzdesi</string>
+    <string name="status_bar_battery_style_title">Pil stili</string>
+    <string name="status_bar_battery_style_icon_portrait">Dikey simge (Varsayılan)</string>
+    <string name="status_bar_battery_style_circle">Daire</string>
+    <string name="status_bar_battery_style_dotted_circle">Daire (Noktalı)</string>
+    <string name="status_bar_battery_style_filled_circle">Daire (Katı)</string>
+    <string name="status_bar_battery_style_text">Metin</string>
+    <string name="status_bar_battery_style_hidden">Gizli</string>
+    <string name="status_bar_battery_percentage_title">Pil yüzdesi</string>
+    <string name="status_bar_battery_percentage_default">Gizle (Varsayılan)</string>
+    <string name="status_bar_battery_percentage_text_inside">Simge içinde</string>
+    <string name="status_bar_battery_percentage_text_next">Simge yanında</string>
+    <string name="active_edge_settings_title">Etkin kenar</string>
+    <string name="show_fourg_icon_title">4G simgesi</string>
+    <string name="show_fourg_icon_summary">LTE yerine 4G simgesini göster</string>
+    <string name="hide_apps_from_recents_title">Uygulamaları son uygulamalardan gizle</string>
+    <string name="hide_apps_from_recents_summary">Uygulamaları son uygulamalar görünümünden gizle</string>
+    <string name="hide_from_recents_add_app">Uygulama ekle</string>
+    <string name="title_activity_carbon_recents_settings">Son uygulamalar</string>
+    <string name="double_tap_power_flashlight_screen_title">Feneri etkinleştir</string>
+    <string name="double_tap_power_flashlight_title">Güç tuşu ile fener açma</string>
+    <string name="torch_power_button_gesture_none">Devre dışı</string>
+    <string name="torch_power_button_gesture_dt">Feneri değiştirmek için iki kez güç tuşuna dokunun</string>
+    <string name="torch_power_button_gesture_lp">Feneri değiştirmek için güç tuşuna uzun basın</string>
+    <string name="torch_power_button_gesture_none_summary">Kapalı</string>
+    <string name="torch_power_button_gesture_dt_summary">Açık (Çift dokunma)</string>
+    <string name="torch_power_button_gesture_lp_summary">Açık (Uzun basma)</string>
+    <string name="aspect_ratio_apps_enabled_title">Ölçeklendirmeyi etkinleştir</string>
+    <string name="aspect_ratio_apps_enabled_summary">Eski uygulamaların ekranın tamamını kullanmasına izin verin</string>
+    <string name="aspect_ratio_apps_list_title">Ölçeklemeyi kullanmasına izin verilen uygulamalar</string>
+    <string name="aspect_ratio_category_title">Eski uygulama ölçekleme</string>
+    <string name="aspect_ratio_apps_info">Değişikliklerden sonra uygulamaların tekrar başlatılması gerekir</string>
+    <string name="action_save">Kaydet</string>
+    <string name="volume_panel_on_left_title">Ses paneli konumunu değiştir</string>
+    <string name="volume_panel_on_left_summary">Ses panelini sola taşı</string>
+</resources>
